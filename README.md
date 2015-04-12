@@ -1,7 +1,9 @@
-
+======================================
+Introducción al Desarrollo de Software
+======================================
 
 Objetivo General
-================
+----------------
 
 Que el alumno logre:
 
@@ -11,7 +13,7 @@ Que el alumno logre:
 - Desarrollar p
 
 Contenidos mínimos
-==================
+------------------
 
 - Conceptos básicos: variables, declaraciones, tipos de datos,operadores, expresiones lógicas, estructuras de control, estructuras repetitivas, procedimientos y funciones
 - Programación estructurada, modular y orientada a objetos, tipos de lenguajes
