@@ -34,3 +34,8 @@ Licencia
 
 
     Licencia Creative Commons Atribución-CompartirIgual 2.5 Argentina (CC BY-SA 2.5 AR)
+
+Créditos
+--------
+
+El material fue desarrollado específicamente para el curso "Introducción al desarrollo "
