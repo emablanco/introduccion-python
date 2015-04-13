@@ -26,7 +26,7 @@ Desde estos links se pueden visualizar estáticamente:
 * Unidad 3
 * Unidad 4...
 
-Actualizar el material
+Modificar el material
 ----------------------
 
 Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:

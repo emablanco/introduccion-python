@@ -1,11 +1,8 @@
 
-Introducción al Desarrollo de Software
-======================================
-
-Docente: Emiliano López (emiliano [dot] lopez [at] gmail [dot] com)
-
 Unidad 1
 ========
+
+Docente: Emiliano López (emiliano [dot] lopez [at] gmail [dot] com)
 
 Instalación
 -----------
