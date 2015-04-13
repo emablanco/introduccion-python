@@ -10,7 +10,7 @@ Que el alumno logre:
 - Conocer los conceptos fundamentales de la algorítmica computacional.
 - Resolver problemas aplicando un lenguaje estructurado de programación.
 - Dominar la sintaxis de un lenguaje de programación.
-- Desarrollar p
+- Comprender y reutilizar código desarrollado por terceros
 
 Contenidos mínimos
 ------------------
