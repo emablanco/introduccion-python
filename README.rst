@@ -31,7 +31,12 @@ Actualizar el material
 
 Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:
 
-* Convertir al formato rst haciendo: ipython nbconvert Unidad01.ipynb --to rst
+* Convertir al formato rst haciendo
+
+.. code-block:: bash
+
+	 ipython nbconvert Unidad01.ipynb --to rst
+
 * Mover el archivo generado (Unidad01.rst) al directorio doc 
 * Regenerar la documentación, estando bajo el directorio doc hacer: make html
 
