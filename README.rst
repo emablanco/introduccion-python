@@ -20,7 +20,7 @@ Organización del material
 
 Desde estos links se pueden visualizar estáticamente:
 
-* `Unidad 1 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/doc/Unidad01.ipynb>`_ Instalación e introducción a los algoritmos computacionales.
+* `Unidad 1 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad01.ipynb>`_ Instalación e introducción a los algoritmos computacionales.
 
 * Unidad 2
 * Unidad 3
