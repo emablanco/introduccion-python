@@ -38,7 +38,16 @@ Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:
 	 ipython nbconvert Unidad01.ipynb --to rst
 
 * Mover el archivo generado (Unidad01.rst) al directorio doc 
-* Regenerar la documentación, estando bajo el directorio doc hacer: make html
+
+.. code-block:: bash
+
+	mv Unidad01.rst doc/
+
+* Regenerar la documentación, estando bajo el directorio doc hacer
+
+.. code-block:: bash
+
+	make html
 
 Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
 
