@@ -26,6 +26,17 @@ Desde estos links se pueden visualizar estáticamente:
 * Unidad 3
 * Unidad 4...
 
+Actualizar el material
+----------------------
+
+Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:
+
+* Convertir al formato rst haciendo: ipython nbconvert Unidad01.ipynb --to rst
+* Mover el archivo generado (Unidad01.rst) al directorio doc 
+* Regenerar la documentación, estando bajo el directorio doc hacer: make html
+
+Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
+
 Licencia
 --------
 
