@@ -20,11 +20,7 @@ Contenidos mínimos
 Organización del material
 -------------------------
 
-Descargarlo a su PC
-'''''''''''''''''''
 
-Desde la web
-''''''''''''
 Desde estos links se pueden visualizar estáticamente:
 
-`Unidad 1 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/doc/Unidad01.ipynb>`_
+* `Unidad 1 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/doc/Unidad01.ipynb>`_
