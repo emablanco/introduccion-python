@@ -49,4 +49,10 @@ Licencia
 Créditos
 --------
 
-El material fue desarrollado específicamente para el curso "Introducción al desarrollo "
+El material fue desarrollado específicamente para el curso "Introducción al Desarrollo de Software" de la Tecnicatura Universitaria en Software Libre, perteneciente a la Facultad de Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral. 
+
+Gran parte del material utilizado fue basado en los siguientes recursos:
+
+- https://github.com/mgaitan/curso-python-cientifico
+- 
+- 
