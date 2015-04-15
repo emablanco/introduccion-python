@@ -47,6 +47,7 @@ Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:
 .. code-block:: bash
 
 	make html
+	make latexpdf
 
 Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
 

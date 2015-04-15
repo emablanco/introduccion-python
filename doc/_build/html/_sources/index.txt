@@ -12,6 +12,8 @@ Contents:
    :maxdepth: 2
    
    Unidad01
+   Unidad02
+   Unidad03
    example
 
 Indices and tables
