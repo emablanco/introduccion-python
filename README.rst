@@ -20,10 +20,9 @@ Organización del material
 
 Desde estos links se pueden visualizar estáticamente:
 
-* `Unidad 1 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad01.ipynb>`_ Instalación e introducción a los algoritmos computacionales.
-
-* Unidad 2
-* Unidad 3
+* `Unidad 1 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad01.ipynb>`_ Conceptos básicos
+* `Unidad 2 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad02.ipynb>`_ Control de flujo
+* `Unidad 3 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad03.ipynb>`_ Funciones
 * Unidad 4...
 
 Modificar el material
@@ -67,6 +66,9 @@ El material fue desarrollado específicamente para el curso "Introducción al De
 
 Gran parte del material utilizado fue basado en los siguientes recursos:
 
+- El tutorial de Pytho. Guido van Rossum
+- Aprenda a pensar como un programador con Python. Allen Downey
+- An introduction to computer science. John Zelle
 - https://github.com/mgaitan/curso-python-cientifico
 - 
 - 
