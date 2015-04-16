@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Control de flujo &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
+    <title>Estructuras de control &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" />
-    <link rel="next" title="Funciones" href="Unidad03.html" />
+    <link rel="next" title="Más estructuras de datos y control" href="Unidad03.html" />
     <link rel="prev" title="Conceptos básicos" href="Unidad01.html" /> 
   </head>
   <body>
@@ -37,7 +37,7 @@
           <a href="genindex.html" title="Índice General"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="Unidad03.html" title="Funciones"
+          <a href="Unidad03.html" title="Más estructuras de datos y control"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
           <a href="Unidad01.html" title="Conceptos básicos"
@@ -51,25 +51,49 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="control-de-flujo">
-<h1>Control de flujo<a class="headerlink" href="#control-de-flujo" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="section" id="estructuras-de-control">
+<h1>Estructuras de control<a class="headerlink" href="#estructuras-de-control" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="condicionales">
+<h2>Condicionales<a class="headerlink" href="#condicionales" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="if">
+<h3>if<a class="headerlink" href="#if" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="else">
+<h3>else<a class="headerlink" href="#else" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="estructuras-anidadas">
+<h3>Estructuras anidadas<a class="headerlink" href="#estructuras-anidadas" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="elif">
+<h3>elif<a class="headerlink" href="#elif" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+</div>
+<div class="section" id="repeticiones">
+<h2>Repeticiones<a class="headerlink" href="#repeticiones" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="while">
+<h3>while<a class="headerlink" href="#while" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+</div>
+<div class="section" id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="code python highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">i</span><span class="p">,</span><span class="s">&quot; es par&quot;</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s">&quot;es par&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="s">&quot; es impar&quot;</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">&quot;es impar&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre>1  es impar
-2  es par
-3  es impar
-4  es par
-5  es impar
-6  es par
-7  es impar
-8  es par
-9  es impar
+<div class="highlight-python"><div class="highlight"><pre>1 es impar
+2 es par
+3 es impar
+4 es par
+5 es impar
+6 es par
+7 es impar
+8 es par
+9 es impar
 </pre></div>
+</div>
 </div>
 </div>
 
@@ -79,12 +103,31 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Estructuras de control</a><ul>
+<li><a class="reference internal" href="#condicionales">Condicionales</a><ul>
+<li><a class="reference internal" href="#if">if</a></li>
+<li><a class="reference internal" href="#else">else</a></li>
+<li><a class="reference internal" href="#estructuras-anidadas">Estructuras anidadas</a></li>
+<li><a class="reference internal" href="#elif">elif</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#repeticiones">Repeticiones</a><ul>
+<li><a class="reference internal" href="#while">while</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ejercicios">Ejercicios</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Tema anterior</h4>
   <p class="topless"><a href="Unidad01.html"
                         title="capítulo anterior">Conceptos básicos</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="Unidad03.html"
-                        title="próximo capítulo">Funciones</a></p>
+                        title="próximo capítulo">Más estructuras de datos y control</a></p>
   <h3>Esta página</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/Unidad02.txt"
@@ -114,7 +157,7 @@
           <a href="genindex.html" title="Índice General"
              >índice</a></li>
         <li class="right" >
-          <a href="Unidad03.html" title="Funciones"
+          <a href="Unidad03.html" title="Más estructuras de datos y control"
              >siguiente</a> |</li>
         <li class="right" >
           <a href="Unidad01.html" title="Conceptos básicos"
