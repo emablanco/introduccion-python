@@ -13,8 +13,8 @@
 \usepackage{multirow}
 
 
-\title{Introducción al desarrollo de software Documentation}
-\date{14 de April de 2015}
+\title{Introducción al desarrollo de software}
+\date{15 de April de 2015}
 \release{1.0}
 \author{Emiliano López}
 \newcommand{\sphinxlogo}{}
@@ -127,9 +127,14 @@
 Contents:
 
 
-\chapter{Unidad 1}
-\label{Unidad01:unidad-1}\label{Unidad01::doc}\label{Unidad01:introduccion-al-desarrollo-de-software}
+\chapter{Conceptos básicos}
+\label{Unidad01:conceptos-basicos}\label{Unidad01::doc}\label{Unidad01:introduccion-al-desarrollo-de-software}
 Docente: Emiliano López (emiliano {[}dot{]} lopez {[}at{]} gmail {[}dot{]} com)
+
+En el presente capítulo introduciremos los conceptos necesarios para
+desarrollar los primeros algoritmos computacionales. Además, se explican
+las herramientas necesarias para llevar a cabo el desarrollo y sus
+diferentes alternativas.
 
 
 \section{Instalación}
@@ -149,8 +154,31 @@ IPython Notebooks
 \end{itemize}
 
 
+\section{Elementos de un programa}
+\label{Unidad01:elementos-de-un-programa}
+
 \chapter{Control de flujo}
 \label{Unidad02:control-de-flujo}\label{Unidad02::doc}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{if} \PYG{n}{i}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{2}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{:}
+        \PYG{k}{print} \PYG{n}{i}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{ es par}\PYG{l+s}{\PYGZdq{}}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{k}{print} \PYG{n}{i}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{ es impar}\PYG{l+s}{\PYGZdq{}}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+1  es impar
+2  es par
+3  es impar
+4  es par
+5  es impar
+6  es par
+7  es impar
+8  es par
+9  es impar
+\end{Verbatim}
+
 
 \chapter{Funciones}
 \label{Unidad03::doc}\label{Unidad03:funciones}
