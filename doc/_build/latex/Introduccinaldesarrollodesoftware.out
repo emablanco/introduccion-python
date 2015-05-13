@@ -1,24 +1,25 @@
-\BOOKMARK [0][-]{chapter.1}{Conceptos b\341sicos}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Motivaci\363n}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Instalaci\363n}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{El primer programa ``Adi\363s Mundo!''}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{Elementos de un programa}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.5}{Ejercicios}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Estructuras de control}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Condicionales}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{Repeticiones}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Ejercicios}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{M\341s estructuras de datos y control}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Listas}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{for}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Manipulando textos con strings}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Funciones, archivos, diccionarios}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Definiendo funciones}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{N\372meros aleatorios}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{Lectura y escritura de archivos}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.4}{Diccionarios}{chapter.4}% 19
-\BOOKMARK [0][-]{chapter.5}{Clases y objetos}{}% 20
-\BOOKMARK [0][-]{chapter.6}{This is a Title}{}% 21
-\BOOKMARK [1][-]{section.6.1}{Subject Subtitle}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.2}{Inline Markup}{chapter.6}% 23
-\BOOKMARK [0][-]{chapter.7}{Indices and tables}{}% 24
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Instalando Python}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Entornos de programaci\363n}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Entorno integrado de desarrollo \(IDE\)}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{El primer programa ``Adi\363s mundo!''}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Elementos de un programa}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Ejercicios}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Estructuras de control}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Condicionales}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Repeticiones}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Ejercicios}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{M\341s estructuras de datos y control}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Listas}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{for}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Manipulando textos con strings}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Funciones, archivos, diccionarios}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Definiendo funciones}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{N\372meros aleatorios}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{Lectura y escritura de archivos}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{Diccionarios}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Clases y objetos}{}% 21
+\BOOKMARK [0][-]{chapter.6}{This is a Title}{}% 22
+\BOOKMARK [1][-]{section.6.1}{Subject Subtitle}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.2}{Inline Markup}{chapter.6}% 24
+\BOOKMARK [0][-]{chapter.7}{Indices and tables}{}% 25

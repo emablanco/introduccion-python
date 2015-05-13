@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Conceptos básicos &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
+    <title>Introducción &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -51,28 +51,126 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="conceptos-basicos">
-<h1>Conceptos básicos<a class="headerlink" href="#conceptos-basicos" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="section" id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Docente: Emiliano López (emiliano [dot] lopez [at] gmail [dot] com)</p>
 <p>En el presente capítulo introduciremos los conceptos necesarios para
 desarrollar los primeros algoritmos computacionales. Además, se explican
 las herramientas necesarias para llevar a cabo el desarrollo y sus
 diferentes alternativas.</p>
-<div class="section" id="motivacion">
-<h2>Motivación<a class="headerlink" href="#motivacion" title="Enlazar permanentemente con este título">¶</a></h2>
-</div>
-<div class="section" id="instalacion">
-<h2>Instalación<a class="headerlink" href="#instalacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Tenemos diferentes herramientas donde desarrollar y ejecutar nuestros
-programas. A lo largo del curso vamos a utilizar los siguientes:</p>
+<div class="section" id="instalando-python">
+<h2>Instalando Python<a class="headerlink" href="#instalando-python" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Actualmente existen dos versiones de Python comúnmente utilizadas, la
+versión 2 y 3, ambas son completamente funcionales y muy utilizadas. En
+este curso nos basaremos en la versión 3.</p>
+<div class="section" id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para instalar Python en una máquina con Windows, debemos seguir los
+siguientes pasos:</p>
 <ul class="simple">
-<li>Interactivo</li>
-<li>IPython Notebooks</li>
-<li>IDE</li>
+<li>Apuntar el navegador a: <a class="reference external" href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></li>
+<li>Ir al link de la última versión disponible (por ej: latest python 3
+relase)</li>
+<li>En la sección Files, descargar el instalador correspondiente a su
+arquitectura (64/32 bits), por ej:
+<a class="reference external" href="https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi">https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi</a></li>
+<li>Ejecutar el instalador (por ej: python-3.4.3.msi) aceptando las
+opciones por defecto</li>
 </ul>
 </div>
+<div class="section" id="gnu-linux">
+<h3>GNU/Linux<a class="headerlink" href="#gnu-linux" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En los sistemas operativos serios, es muy probable que ya contemos con
+el intérprete instalado, incluso en sus dos versiones. Para instalarlo
+utilizando los administradores de paquetes debemos ejecutar los
+siguientes comandos desde una terminal:</p>
+<p>Para sistemas basados en Debian (como Ubuntu o sus derivados):</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>apt-get install python3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="entornos-de-programacion">
+<h2>Entornos de programación<a class="headerlink" href="#entornos-de-programacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="el-interprete-interactivo">
+<h3>El intérprete interactivo<a class="headerlink" href="#el-interprete-interactivo" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Ya con el intérprete de Python podemos comenzar programar. Si ejecutamos
+en una terminal <tt class="docutils literal"><span class="pre">python3</span></tt>, ingresaremos al intérprete en modo
+interactivo y veremos una salida similar a la siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>Python 3.4.2 (default, Oct  8 2014, 10:45:20)
+[GCC 4.9.1] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<p>Podemos ejecutar algunas operaciones matemáticas para corroborar su
+funcionamiento.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">*</span><span class="mi">5</span>
+<span class="go">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">*</span><span class="mi">5</span><span class="o">+</span><span class="mi">10</span>
+<span class="go">20</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="mi">19</span><span class="o">+</span><span class="mf">3.1415</span>
+<span class="go">-53.8585</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="el-interprete-interactivo-mejorado">
+<h3>El intérprete interactivo mejorado<a class="headerlink" href="#el-interprete-interactivo-mejorado" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><a class="reference external" href="http://ipython.org">IPython</a> es una interfaz mejorada del intérprete
+nativo. Se lo puede utilizar en modo consola o a través de una interfaz
+web. La instalación en GNU/Linux es: <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">ipython3</span></tt>.</p>
+<p>La ejecución de ipython desde una terminal nos arroja una pantalla
+similar a la siguiente:</p>
+<div class="highlight-python"><div class="highlight"><pre>emiliano@pynandi:~ $ ipython3
+Python 3.4.2 (default, Oct  8 2014, 10:45:20)
+Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+
+IPython 2.3.0 -- An enhanced Interactive Python.
+?         -&gt; Introduction and overview of IPython&#39;s features.
+%quickref -&gt; Quick reference.
+help      -&gt; Python&#39;s own help system.
+object?   -&gt; Details about &#39;object&#39;, use &#39;object??&#39; for extra details.
+
+In [1]:
+</pre></div>
+</div>
+<p>Otra alternativa muy interesante son los notebooks de ipython, una
+interfaz que permite programar utilizando el navegador web como entorno.
+No entraremos en detalle ya que posteriormente analizaremos su
+funcionamiento. Se debe ejecutar en una terminal <tt class="docutils literal"><span class="pre">ipython3</span> <span class="pre">notebook</span></tt> y
+esto abrirá el navegador por defecto con el entorno cargado.</p>
+</div>
+</div>
+<div class="section" id="entorno-integrado-de-desarrollo-ide">
+<h2>Entorno integrado de desarrollo (IDE)<a class="headerlink" href="#entorno-integrado-de-desarrollo-ide" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Un IDE es un entorno que nos facilita las tareas a la hora de programar.
+Consiste en la integración de un editor de texto, con características de
+resaltado de sintaxis autocompletado -entre otras-, y el intérprete de
+Python. Existen cientos de entornos muy buenos, como por ejemplo
+<a class="reference external" href="https://github.com/spyder-ide/spyder">Spyder</a>,
+<a class="reference external" href="https://www.jetbrains.com/pycharm">PyCharm</a> o
+<a class="reference external" href="http://ninja-ide.org">Ninja-IDE</a>. Para el presente curso, nos
+basaremos en Ninja-IDE, software libre que ha sido desarrollado por la
+comunidad de Python Argentina, <a class="reference external" href="http://python.org.ar">PyAr</a>.</p>
+<p>Una lista bastante completa sobre las IDEs disponibles pueden
+encontrarse en la <a class="reference external" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">wiki oficial de
+Python</a></p>
+</div>
 <div class="section" id="el-primer-programa-adios-mundo">
-<h2>El primer programa &#8220;Adiós Mundo!&#8221;<a class="headerlink" href="#el-primer-programa-adios-mundo" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>El primer programa &#8220;Adiós mundo!&#8221;<a class="headerlink" href="#el-primer-programa-adios-mundo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El acercamiento inicial a un lenguaje de programación suele ser con el
+archiconocido programa &#8220;Hola mundo&#8221;. Consiste simmplemente en un
+programa que muestra en pantalla ese mensaje.</p>
+<p>Renunciando a cualquier pretensión de originalidad comenzaremos del
+mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
+<em>print()</em> pasando el mensaje de despedida entre comillas, a continuación
+la instrucción y su salida correspondiente.</p>
+<p><tt class="docutils literal"><span class="pre">print(&quot;Adios</span> <span class="pre">mundo</span> <span class="pre">cruel!&quot;)</span></tt></p>
+<p>Adios mundo cruel!</p>
+<p>Ahora bien, es muchísimo más lo que podemos hacer programando además de
+saludar cordialmente. Veamos los elementos de un programa que nos
+permitirán realizar tareas más complejas y entretenidas.</p>
 </div>
 <div class="section" id="elementos-de-un-programa">
 <h2>Elementos de un programa<a class="headerlink" href="#elementos-de-un-programa" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -99,10 +197,19 @@ programas. A lo largo del curso vamos a utilizar los siguientes:</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Conceptos básicos</a><ul>
-<li><a class="reference internal" href="#motivacion">Motivación</a></li>
-<li><a class="reference internal" href="#instalacion">Instalación</a></li>
-<li><a class="reference internal" href="#el-primer-programa-adios-mundo">El primer programa &#8220;Adiós Mundo!&#8221;</a></li>
+<li><a class="reference internal" href="#">Introducción</a><ul>
+<li><a class="reference internal" href="#instalando-python">Instalando Python</a><ul>
+<li><a class="reference internal" href="#windows">Windows</a></li>
+<li><a class="reference internal" href="#gnu-linux">GNU/Linux</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#entornos-de-programacion">Entornos de programación</a><ul>
+<li><a class="reference internal" href="#el-interprete-interactivo">El intérprete interactivo</a></li>
+<li><a class="reference internal" href="#el-interprete-interactivo-mejorado">El intérprete interactivo mejorado</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#entorno-integrado-de-desarrollo-ide">Entorno integrado de desarrollo (IDE)</a></li>
+<li><a class="reference internal" href="#el-primer-programa-adios-mundo">El primer programa &#8220;Adiós mundo!&#8221;</a></li>
 <li><a class="reference internal" href="#elementos-de-un-programa">Elementos de un programa</a><ul>
 <li><a class="reference internal" href="#variables">Variables</a></li>
 <li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>

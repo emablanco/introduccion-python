@@ -14,7 +14,7 @@
 
 
 \title{Introducción al desarrollo de software}
-\date{16 de April de 2015}
+\date{13 de May de 2015}
 \release{1.0}
 \author{Emiliano López}
 \newcommand{\sphinxlogo}{}
@@ -127,8 +127,8 @@
 Contents:
 
 
-\chapter{Conceptos básicos}
-\label{Unidad01:conceptos-basicos}\label{Unidad01::doc}\label{Unidad01:introduccion-al-desarrollo-de-software}
+\chapter{Introducción}
+\label{Unidad01:introduccion}\label{Unidad01::doc}\label{Unidad01:introduccion-al-desarrollo-de-software}
 Docente: Emiliano López (emiliano {[}dot{]} lopez {[}at{]} gmail {[}dot{]} com)
 
 En el presente capítulo introduciremos los conceptos necesarios para
@@ -137,28 +137,147 @@ las herramientas necesarias para llevar a cabo el desarrollo y sus
 diferentes alternativas.
 
 
-\section{Motivación}
-\label{Unidad01:motivacion}
+\section{Instalando Python}
+\label{Unidad01:instalando-python}
+Actualmente existen dos versiones de Python comúnmente utilizadas, la
+versión 2 y 3, ambas son completamente funcionales y muy utilizadas. En
+este curso nos basaremos en la versión 3.
 
-\section{Instalación}
-\label{Unidad01:instalacion}
-Tenemos diferentes herramientas donde desarrollar y ejecutar nuestros
-programas. A lo largo del curso vamos a utilizar los siguientes:
+
+\subsection{Windows}
+\label{Unidad01:windows}
+Para instalar Python en una máquina con Windows, debemos seguir los
+siguientes pasos:
 \begin{itemize}
 \item {} 
-Interactivo
+Apuntar el navegador a: \href{https://www.python.org/downloads/windows/}{https://www.python.org/downloads/windows/}
 
 \item {} 
-IPython Notebooks
+Ir al link de la última versión disponible (por ej: latest python 3
+relase)
 
 \item {} 
-IDE
+En la sección Files, descargar el instalador correspondiente a su
+arquitectura (64/32 bits), por ej:
+\href{https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi}{https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi}
+
+\item {} 
+Ejecutar el instalador (por ej: python-3.4.3.msi) aceptando las
+opciones por defecto
 
 \end{itemize}
 
 
-\section{El primer programa ``Adiós Mundo!''}
+\subsection{GNU/Linux}
+\label{Unidad01:gnu-linux}
+En los sistemas operativos serios, es muy probable que ya contemos con
+el intérprete instalado, incluso en sus dos versiones. Para instalarlo
+utilizando los administradores de paquetes debemos ejecutar los
+siguientes comandos desde una terminal:
+
+Para sistemas basados en Debian (como Ubuntu o sus derivados):
+
+\begin{Verbatim}[commandchars=\\\{\}]
+apt\PYGZhy{}get install python3
+\end{Verbatim}
+
+
+\section{Entornos de programación}
+\label{Unidad01:entornos-de-programacion}
+
+\subsection{El intérprete interactivo}
+\label{Unidad01:el-interprete-interactivo}
+Ya con el intérprete de Python podemos comenzar programar. Si ejecutamos
+en una terminal \code{python3}, ingresaremos al intérprete en modo
+interactivo y veremos una salida similar a la siguiente:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Python 3.4.2 (default, Oct  8 2014, 10:45:20)
+[GCC 4.9.1] on linux
+Type \PYGZdq{}help\PYGZdq{}, \PYGZdq{}copyright\PYGZdq{}, \PYGZdq{}credits\PYGZdq{} or \PYGZdq{}license\PYGZdq{} for more information.
+\PYGZgt{}\PYGZgt{}\PYGZgt{}
+\end{Verbatim}
+
+Podemos ejecutar algunas operaciones matemáticas para corroborar su
+funcionamiento.
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{l+m+mi}{5}
+\PYG{g+go}{10}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{l+m+mi}{5}\PYG{o}{+}\PYG{l+m+mi}{10}
+\PYG{g+go}{20}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}\PYG{o}{*}\PYG{l+m+mi}{19}\PYG{o}{+}\PYG{l+m+mf}{3.1415}
+\PYG{g+go}{\PYGZhy{}53.8585}
+\PYG{g+go}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}
+\end{Verbatim}
+
+
+\subsection{El intérprete interactivo mejorado}
+\label{Unidad01:el-interprete-interactivo-mejorado}
+\href{http://ipython.org}{IPython}\footnote{http://ipython.org} es una interfaz mejorada del intérprete
+nativo. Se lo puede utilizar en modo consola o a través de una interfaz
+web. La instalación en GNU/Linux es: \code{apt-get install ipython3}.
+
+La ejecución de ipython desde una terminal nos arroja una pantalla
+similar a la siguiente:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+emiliano@pynandi:\PYGZti{} \PYGZdl{} ipython3
+Python 3.4.2 (default, Oct  8 2014, 10:45:20)
+Type \PYGZdq{}copyright\PYGZdq{}, \PYGZdq{}credits\PYGZdq{} or \PYGZdq{}license\PYGZdq{} for more information.
+
+IPython 2.3.0 \PYGZhy{}\PYGZhy{} An enhanced Interactive Python.
+?         \PYGZhy{}\PYGZgt{} Introduction and overview of IPython\PYGZsq{}s features.
+\PYGZpc{}quickref \PYGZhy{}\PYGZgt{} Quick reference.
+help      \PYGZhy{}\PYGZgt{} Python\PYGZsq{}s own help system.
+object?   \PYGZhy{}\PYGZgt{} Details about \PYGZsq{}object\PYGZsq{}, use \PYGZsq{}object??\PYGZsq{} for extra details.
+
+In [1]:
+\end{Verbatim}
+
+Otra alternativa muy interesante son los notebooks de ipython, una
+interfaz que permite programar utilizando el navegador web como entorno.
+No entraremos en detalle ya que posteriormente analizaremos su
+funcionamiento. Se debe ejecutar en una terminal \code{ipython3 notebook} y
+esto abrirá el navegador por defecto con el entorno cargado.
+
+
+\section{Entorno integrado de desarrollo (IDE)}
+\label{Unidad01:entorno-integrado-de-desarrollo-ide}
+Un IDE es un entorno que nos facilita las tareas a la hora de programar.
+Consiste en la integración de un editor de texto, con características de
+resaltado de sintaxis autocompletado -entre otras-, y el intérprete de
+Python. Existen cientos de entornos muy buenos, como por ejemplo
+\href{https://github.com/spyder-ide/spyder}{Spyder}\footnote{https://github.com/spyder-ide/spyder},
+\href{https://www.jetbrains.com/pycharm}{PyCharm}\footnote{https://www.jetbrains.com/pycharm} o
+\href{http://ninja-ide.org}{Ninja-IDE}\footnote{http://ninja-ide.org}. Para el presente curso, nos
+basaremos en Ninja-IDE, software libre que ha sido desarrollado por la
+comunidad de Python Argentina, \href{http://python.org.ar}{PyAr}\footnote{http://python.org.ar}.
+
+Una lista bastante completa sobre las IDEs disponibles pueden
+encontrarse en la \href{https://wiki.python.org/moin/IntegratedDevelopmentEnvironments}{wiki oficial de
+Python}\footnote{https://wiki.python.org/moin/IntegratedDevelopmentEnvironments}
+
+
+\section{El primer programa ``Adiós mundo!''}
 \label{Unidad01:el-primer-programa-adios-mundo}
+El acercamiento inicial a un lenguaje de programación suele ser con el
+archiconocido programa ``Hola mundo''. Consiste simmplemente en un
+programa que muestra en pantalla ese mensaje.
+
+Renunciando a cualquier pretensión de originalidad comenzaremos del
+mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
+\emph{print()} pasando el mensaje de despedida entre comillas, a continuación
+la instrucción y su salida correspondiente.
+
+\code{print("Adios mundo cruel!")}
+
+Adios mundo cruel!
+
+Ahora bien, es muchísimo más lo que podemos hacer programando además de
+saludar cordialmente. Veamos los elementos de un programa que nos
+permitirán realizar tareas más complejas y entretenidas.
+
 
 \section{Elementos de un programa}
 \label{Unidad01:elementos-de-un-programa}
