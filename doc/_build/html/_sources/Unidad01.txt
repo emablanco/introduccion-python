@@ -85,7 +85,7 @@ web. La instalación en GNU/Linux es: ``apt-get install ipython3``.
 La ejecución de ipython desde una terminal nos arroja una pantalla
 similar a la siguiente:
 
-::
+.. code:: python
 
     emiliano@pynandi:~ $ ipython3
     Python 3.4.2 (default, Oct  8 2014, 10:45:20) 
@@ -107,6 +107,9 @@ esto abrirá el navegador por defecto con el entorno cargado.
 
 Entorno integrado de desarrollo (IDE)
 -------------------------------------
+
+.. figure:: files/img/u1/ninja-ide.png
+   :alt: 
 
 Un IDE es un entorno que nos facilita las tareas a la hora de programar.
 Consiste en la integración de un editor de texto, con características de
@@ -132,28 +135,209 @@ programa que muestra en pantalla ese mensaje.
 Renunciando a cualquier pretensión de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 *print()* pasando el mensaje de despedida entre comillas, a continuación
-la instrucción y su salida correspondiente.
+la instrucción.
 
-``print("Adios mundo cruel!")``
+.. code:: python
 
-Adios mundo cruel!
+    print("Adios mundo cruel!")
+
+Podemos probar la intrucción directamente desde el intérprete, creando
+con un editor de texto plano un archivo guardado como ``chau.py`` y
+luego ejecutándolo desde la terminal haciendo ``python3 chau.py``, o
+bien utilizando un IDE y haciendo todo desde ahí mismo.
 
 Ahora bien, es muchísimo más lo que podemos hacer programando además de
 saludar cordialmente. Veamos los elementos de un programa que nos
 permitirán realizar tareas más complejas y entretenidas.
 
+Algoritmos computacionales
+--------------------------
+
+En forma simplificada, un programa o software es un conjunto de
+instrucciones que la computadora puede ejecutar. Este procedimiento
+formado por un conjunto de instrucciones es lo que denominamos algoritmo
+computacional. Una analogía a un algoritmo computacional es una receta
+de cocina, por ejemplo:
+
+::
+
+    Prender el fuego
+    Salar la carne
+    Controlar cada 5 minutos hasta que haya brasas
+    Poner la carne a la parrilla
+    Cocinar hasta que esté la carne, controlar cada 5 minutos
+    Dar vuelta la carne
+    Cocinar hasta que esté la carne, controlar cada 5 minutos
+    Si falta sal al probar, salar
+
+En esta receta se ven una serie de instrucciones que deben ser seguidas
+en un determinado orden, en algunos casos contamos con ingredientes,
+intrucciones, decisiones y acciones que se repiten. No muy distinto a un
+programa de computación, comencemos con algunos *ingredientes* simples
+de Python y veamos lo que podemos hacer con ellos.
+
 Elementos de un programa
 ------------------------
+
+A continuación veremos los ingredientes fundamentales de un lenguaje de
+programación como Python, para llevar a cabo los ejemplos utilizaremos
+el intérprete interactivo mejorado ipython.
+
+Números y expresiones
+~~~~~~~~~~~~~~~~~~~~~
+
+Frecuentemente requerimos resolver cálculos matemáticos, las operaciones
+aritméticas básicas son:
+
+-  adición: +
+-  sustracción: -
+-  multiplicación: \*
+-  división: /
+-  módulo: %
+-  potencia: \*\*
+-  división entera: //
+
+Las operaciones se pueden agrupar con parentesis y tienen precedencia
+estándar. Veamos unos ejemplos.
+
+.. code:: python
+
+    1/3
+
+
+
+.. parsed-literal::
+
+    0.3333333333333333
+
+
+
+.. code:: python
+
+    1//3
+
+
+
+.. parsed-literal::
+
+    0
+
+
+
+.. code:: python
+
+    10%3
+
+
+
+.. parsed-literal::
+
+    1
+
+
+
+.. code:: python
+
+    4%2
+
+
+
+.. parsed-literal::
+
+    0
+
+
+
+El caso de la potencia, también nos sirve para calcularraices. Veamos
+una potencia al cubo y luego una raíz cuadrada, equivalente a una
+potencia a la 1/2.
+
+.. code:: python
+
+    5**3
+
+
+
+.. parsed-literal::
+
+    8
+
+
+
+.. code:: python
+
+    2**(1/2)
+
+
+
+.. parsed-literal::
+
+    1.4142135623730951
+
+
+
+Los datos numéricos que obtenidos en las operaciones previas se
+clasifican en reales y enteros, en python se los clasifica como float e
+int respectivamente, además existe el tipo complex, para números
+complejos.
+
+Utilizando la función type() podemos identificar el tipo de dato.
+Veamos:
+
+.. code:: python
+
+    type(0.333)
+
+
+
+.. parsed-literal::
+
+    float
+
+
+
+.. code:: python
+
+    type(3)
+
+
+
+.. parsed-literal::
+
+    int
+
+
 
 Variables
 ~~~~~~~~~
 
-Operadores relacionales y lógicos
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Las variables son contenedores para almacenar información. Por ejemplo,
+para elevar un número al cubo podemos utilizar 3 variables, para la base
+(*num1*), para el exponenete (*num2*) y para almacenar el *resultado*:
+
+.. code:: python
+
+    num1 = 5                              # A num1 se le asigna el valor numérico 5.
+    num2 = 3                              # A num2 se le asigna 3.    
+    resultado = num1**num2                # A resultado se le asigna num1 elevado a num2. 
+    print("El resultado es", resultado)
+
+Del código podemos rescatar que el operador igual (=) sirve para asignar
+lo que está a la derecha a la variable que se encuentra a la izquierda.
 
 Entrada y salida de datos
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Comunicarnos con el entorno
+
+Operadores relacionales y lógicos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Funciones
+~~~~~~~~~
+
+Módulos
+~~~~~~~
+
 Ejercicios
 ----------
-

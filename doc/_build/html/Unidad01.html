@@ -122,7 +122,7 @@ nativo. Se lo puede utilizar en modo consola o a través de una interfaz
 web. La instalación en GNU/Linux es: <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">ipython3</span></tt>.</p>
 <p>La ejecución de ipython desde una terminal nos arroja una pantalla
 similar a la siguiente:</p>
-<div class="highlight-python"><div class="highlight"><pre>emiliano@pynandi:~ $ ipython3
+<div class="code python highlight-python"><div class="highlight"><pre>emiliano@pynandi:~ $ ipython3
 Python 3.4.2 (default, Oct  8 2014, 10:45:20)
 Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
 
@@ -144,6 +144,9 @@ esto abrirá el navegador por defecto con el entorno cargado.</p>
 </div>
 <div class="section" id="entorno-integrado-de-desarrollo-ide">
 <h2>Entorno integrado de desarrollo (IDE)<a class="headerlink" href="#entorno-integrado-de-desarrollo-ide" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="figure">
+<img alt="" src="files/img/u1/ninja-ide.png" />
+</div>
 <p>Un IDE es un entorno que nos facilita las tareas a la hora de programar.
 Consiste en la integración de un editor de texto, con características de
 resaltado de sintaxis autocompletado -entre otras-, y el intérprete de
@@ -165,23 +168,145 @@ programa que muestra en pantalla ese mensaje.</p>
 <p>Renunciando a cualquier pretensión de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 <em>print()</em> pasando el mensaje de despedida entre comillas, a continuación
-la instrucción y su salida correspondiente.</p>
-<p><tt class="docutils literal"><span class="pre">print(&quot;Adios</span> <span class="pre">mundo</span> <span class="pre">cruel!&quot;)</span></tt></p>
-<p>Adios mundo cruel!</p>
+la instrucción.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Adios mundo cruel!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Podemos probar la intrucción directamente desde el intérprete, creando
+con un editor de texto plano un archivo guardado como <tt class="docutils literal"><span class="pre">chau.py</span></tt> y
+luego ejecutándolo desde la terminal haciendo <tt class="docutils literal"><span class="pre">python3</span> <span class="pre">chau.py</span></tt>, o
+bien utilizando un IDE y haciendo todo desde ahí mismo.</p>
 <p>Ahora bien, es muchísimo más lo que podemos hacer programando además de
 saludar cordialmente. Veamos los elementos de un programa que nos
 permitirán realizar tareas más complejas y entretenidas.</p>
 </div>
+<div class="section" id="algoritmos-computacionales">
+<h2>Algoritmos computacionales<a class="headerlink" href="#algoritmos-computacionales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En forma simplificada, un programa o software es un conjunto de
+instrucciones que la computadora puede ejecutar. Este procedimiento
+formado por un conjunto de instrucciones es lo que denominamos algoritmo
+computacional. Una analogía a un algoritmo computacional es una receta
+de cocina, por ejemplo:</p>
+<div class="highlight-python"><div class="highlight"><pre>Prender el fuego
+Salar la carne
+Controlar cada 5 minutos hasta que haya brasas
+Poner la carne a la parrilla
+Cocinar hasta que esté la carne, controlar cada 5 minutos
+Dar vuelta la carne
+Cocinar hasta que esté la carne, controlar cada 5 minutos
+Si falta sal al probar, salar
+</pre></div>
+</div>
+<p>En esta receta se ven una serie de instrucciones que deben ser seguidas
+en un determinado orden, en algunos casos contamos con ingredientes,
+intrucciones, decisiones y acciones que se repiten. No muy distinto a un
+programa de computación, comencemos con algunos <em>ingredientes</em> simples
+de Python y veamos lo que podemos hacer con ellos.</p>
+</div>
 <div class="section" id="elementos-de-un-programa">
 <h2>Elementos de un programa<a class="headerlink" href="#elementos-de-un-programa" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>A continuación veremos los ingredientes fundamentales de un lenguaje de
+programación como Python, para llevar a cabo los ejemplos utilizaremos
+el intérprete interactivo mejorado ipython.</p>
+<div class="section" id="numeros-y-expresiones">
+<h3>Números y expresiones<a class="headerlink" href="#numeros-y-expresiones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Frecuentemente requerimos resolver cálculos matemáticos, las operaciones
+aritméticas básicas son:</p>
+<ul class="simple">
+<li>adición: +</li>
+<li>sustracción: -</li>
+<li>multiplicación: *</li>
+<li>división: /</li>
+<li>módulo: %</li>
+<li>potencia: **</li>
+<li>división entera: //</li>
+</ul>
+<p>Las operaciones se pueden agrupar con parentesis y tienen precedencia
+estándar. Veamos unos ejemplos.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mf">0.3333333333333333</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">1</span><span class="o">//</span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">0</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">10</span><span class="o">%</span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">4</span><span class="o">%</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">0</span>
+</pre></div>
+</div>
+<p>El caso de la potencia, también nos sirve para calcularraices. Veamos
+una potencia al cubo y luego una raíz cuadrada, equivalente a una
+potencia a la 1/2.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">5</span><span class="o">**</span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">8</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mf">1.4142135623730951</span>
+</pre></div>
+</div>
+<p>Los datos numéricos que obtenidos en las operaciones previas se
+clasifican en reales y enteros, en python se los clasifica como float e
+int respectivamente, además existe el tipo complex, para números
+complejos.</p>
+<p>Utilizando la función type() podemos identificar el tipo de dato.
+Veamos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="nb">type</span><span class="p">(</span><span class="mf">0.333</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">float</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">int</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="variables">
 <h3>Variables<a class="headerlink" href="#variables" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las variables son contenedores para almacenar información. Por ejemplo,
+para elevar un número al cubo podemos utilizar 3 variables, para la base
+(<em>num1</em>), para el exponenete (<em>num2</em>) y para almacenar el <em>resultado</em>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">num1</span> <span class="o">=</span> <span class="mi">5</span>                              <span class="c"># A num1 se le asigna el valor numérico 5.</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">3</span>                              <span class="c"># A num2 se le asigna 3.</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">num1</span><span class="o">**</span><span class="n">num2</span>                <span class="c"># A resultado se le asigna num1 elevado a num2.</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;El resultado es&quot;</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Del código podemos rescatar que el operador igual (=) sirve para asignar
+lo que está a la derecha a la variable que se encuentra a la izquierda.</p>
+</div>
+<div class="section" id="entrada-y-salida-de-datos">
+<h3>Entrada y salida de datos<a class="headerlink" href="#entrada-y-salida-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Comunicarnos con el entorno</p>
 </div>
 <div class="section" id="operadores-relacionales-y-logicos">
 <h3>Operadores relacionales y lógicos<a class="headerlink" href="#operadores-relacionales-y-logicos" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
-<div class="section" id="entrada-y-salida-de-datos">
-<h3>Entrada y salida de datos<a class="headerlink" href="#entrada-y-salida-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="funciones">
+<h3>Funciones<a class="headerlink" href="#funciones" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="modulos">
+<h3>Módulos<a class="headerlink" href="#modulos" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
 </div>
 <div class="section" id="ejercicios">
@@ -210,10 +335,14 @@ permitirán realizar tareas más complejas y entretenidas.</p>
 </li>
 <li><a class="reference internal" href="#entorno-integrado-de-desarrollo-ide">Entorno integrado de desarrollo (IDE)</a></li>
 <li><a class="reference internal" href="#el-primer-programa-adios-mundo">El primer programa &#8220;Adiós mundo!&#8221;</a></li>
+<li><a class="reference internal" href="#algoritmos-computacionales">Algoritmos computacionales</a></li>
 <li><a class="reference internal" href="#elementos-de-un-programa">Elementos de un programa</a><ul>
+<li><a class="reference internal" href="#numeros-y-expresiones">Números y expresiones</a></li>
 <li><a class="reference internal" href="#variables">Variables</a></li>
-<li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>
 <li><a class="reference internal" href="#entrada-y-salida-de-datos">Entrada y salida de datos</a></li>
+<li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>
+<li><a class="reference internal" href="#funciones">Funciones</a></li>
+<li><a class="reference internal" href="#modulos">Módulos</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ejercicios">Ejercicios</a></li>

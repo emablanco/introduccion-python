@@ -8,33 +8,37 @@
 \contentsline {subsection}{\numberline {1.2.2}El int\IeC {\'e}rprete interactivo mejorado}{4}{subsection.1.2.2}
 \contentsline {section}{\numberline {1.3}Entorno integrado de desarrollo (IDE)}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}El primer programa ``Adi\IeC {\'o}s mundo!''}{5}{section.1.4}
-\contentsline {section}{\numberline {1.5}Elementos de un programa}{5}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Variables}{5}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Operadores relacionales y l\IeC {\'o}gicos}{5}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Entrada y salida de datos}{5}{subsection.1.5.3}
-\contentsline {section}{\numberline {1.6}Ejercicios}{5}{section.1.6}
-\contentsline {chapter}{\numberline {2}Estructuras de control}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Condicionales}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}if}{7}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}else}{7}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Estructuras anidadas}{7}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}elif}{7}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Repeticiones}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}while}{7}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Ejercicios}{7}{section.2.3}
-\contentsline {chapter}{\numberline {3}M\IeC {\'a}s estructuras de datos y control}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Listas}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}for}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Manipulando textos con strings}{9}{section.3.3}
-\contentsline {chapter}{\numberline {4}Funciones, archivos, diccionarios}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Definiendo funciones}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Variables globales y locales}{11}{subsection.4.1.1}
-\contentsline {subsubsection}{Agrupando el c\IeC {\'o}digo en m\IeC {\'o}dulos}{11}{subsubsection*.3}
-\contentsline {section}{\numberline {4.2}N\IeC {\'u}meros aleatorios}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}Lectura y escritura de archivos}{11}{section.4.3}
-\contentsline {section}{\numberline {4.4}Diccionarios}{11}{section.4.4}
-\contentsline {chapter}{\numberline {5}Clases y objetos}{13}{chapter.5}
-\contentsline {chapter}{\numberline {6}This is a Title}{15}{chapter.6}
-\contentsline {section}{\numberline {6.1}Subject Subtitle}{15}{section.6.1}
-\contentsline {section}{\numberline {6.2}Inline Markup}{15}{section.6.2}
-\contentsline {chapter}{\numberline {7}Indices and tables}{17}{chapter.7}
+\contentsline {section}{\numberline {1.5}Algoritmos computacionales}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}Elementos de un programa}{6}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}N\IeC {\'u}meros y expresiones}{6}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Variables}{7}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Entrada y salida de datos}{7}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Operadores relacionales y l\IeC {\'o}gicos}{7}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}Funciones}{7}{subsection.1.6.5}
+\contentsline {subsection}{\numberline {1.6.6}M\IeC {\'o}dulos}{7}{subsection.1.6.6}
+\contentsline {section}{\numberline {1.7}Ejercicios}{7}{section.1.7}
+\contentsline {chapter}{\numberline {2}Estructuras de control}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Condicionales}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}if}{9}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}else}{9}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Estructuras anidadas}{9}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}elif}{9}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Repeticiones}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}while}{9}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Ejercicios}{9}{section.2.3}
+\contentsline {chapter}{\numberline {3}M\IeC {\'a}s estructuras de datos y control}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Listas}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}for}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Manipulando textos con strings}{11}{section.3.3}
+\contentsline {chapter}{\numberline {4}Funciones, archivos, diccionarios}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Definiendo funciones}{13}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Variables globales y locales}{13}{subsection.4.1.1}
+\contentsline {subsubsection}{Agrupando el c\IeC {\'o}digo en m\IeC {\'o}dulos}{13}{subsubsection*.3}
+\contentsline {section}{\numberline {4.2}N\IeC {\'u}meros aleatorios}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Lectura y escritura de archivos}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}Diccionarios}{13}{section.4.4}
+\contentsline {chapter}{\numberline {5}Clases y objetos}{15}{chapter.5}
+\contentsline {chapter}{\numberline {6}This is a Title}{17}{chapter.6}
+\contentsline {section}{\numberline {6.1}Subject Subtitle}{17}{section.6.1}
+\contentsline {section}{\numberline {6.2}Inline Markup}{17}{section.6.2}
+\contentsline {chapter}{\numberline {7}Indices and tables}{19}{chapter.7}

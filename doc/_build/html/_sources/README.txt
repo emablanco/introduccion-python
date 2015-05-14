@@ -60,16 +60,16 @@ Licencia
 
     Licencia Creative Commons Atribución-CompartirIgual 2.5 Argentina (CC BY-SA 2.5 AR)
 
-Créditos
---------
+Créditos y referencias
+----------------------
 
 El material fue desarrollado específicamente para el curso "Introducción al Desarrollo de Software" de la Tecnicatura Universitaria en Software Libre, perteneciente a la Facultad de Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral. 
 
 Gran parte del material utilizado fue basado en los siguientes recursos:
 
-- El tutorial de Pytho. Guido van Rossum
+- El tutorial de Python. Guido van Rossum
 - Aprenda a pensar como un programador con Python. Allen Downey
 - An introduction to computer science. John Zelle
 - https://github.com/mgaitan/curso-python-cientifico
-- 
+- Beginning Python. From Novice to Professional. Second Edition. Magnus Lie Hetland
 - 

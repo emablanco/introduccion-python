@@ -14,7 +14,7 @@
 
 
 \title{Introducción al desarrollo de software}
-\date{13 de May de 2015}
+\date{14 de May de 2015}
 \release{1.0}
 \author{Emiliano López}
 \newcommand{\sphinxlogo}{}
@@ -243,7 +243,12 @@ esto abrirá el navegador por defecto con el entorno cargado.
 
 
 \section{Entorno integrado de desarrollo (IDE)}
-\label{Unidad01:entorno-integrado-de-desarrollo-ide}
+\label{Unidad01:entorno-integrado-de-desarrollo-ide}\begin{figure}[htbp]
+\centering
+
+\includegraphics{files/img/u1/ninja-ide.png}
+\end{figure}
+
 Un IDE es un entorno que nos facilita las tareas a la hora de programar.
 Consiste en la integración de un editor de texto, con características de
 resaltado de sintaxis autocompletado -entre otras-, y el intérprete de
@@ -268,28 +273,193 @@ programa que muestra en pantalla ese mensaje.
 Renunciando a cualquier pretensión de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 \emph{print()} pasando el mensaje de despedida entre comillas, a continuación
-la instrucción y su salida correspondiente.
+la instrucción.
 
-\code{print("Adios mundo cruel!")}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Adios mundo cruel!}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}
 
-Adios mundo cruel!
+Podemos probar la intrucción directamente desde el intérprete, creando
+con un editor de texto plano un archivo guardado como \code{chau.py} y
+luego ejecutándolo desde la terminal haciendo \code{python3 chau.py}, o
+bien utilizando un IDE y haciendo todo desde ahí mismo.
 
 Ahora bien, es muchísimo más lo que podemos hacer programando además de
 saludar cordialmente. Veamos los elementos de un programa que nos
 permitirán realizar tareas más complejas y entretenidas.
 
 
+\section{Algoritmos computacionales}
+\label{Unidad01:algoritmos-computacionales}
+En forma simplificada, un programa o software es un conjunto de
+instrucciones que la computadora puede ejecutar. Este procedimiento
+formado por un conjunto de instrucciones es lo que denominamos algoritmo
+computacional. Una analogía a un algoritmo computacional es una receta
+de cocina, por ejemplo:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Prender el fuego
+Salar la carne
+Controlar cada 5 minutos hasta que haya brasas
+Poner la carne a la parrilla
+Cocinar hasta que esté la carne, controlar cada 5 minutos
+Dar vuelta la carne
+Cocinar hasta que esté la carne, controlar cada 5 minutos
+Si falta sal al probar, salar
+\end{Verbatim}
+
+En esta receta se ven una serie de instrucciones que deben ser seguidas
+en un determinado orden, en algunos casos contamos con ingredientes,
+intrucciones, decisiones y acciones que se repiten. No muy distinto a un
+programa de computación, comencemos con algunos \emph{ingredientes} simples
+de Python y veamos lo que podemos hacer con ellos.
+
+
 \section{Elementos de un programa}
 \label{Unidad01:elementos-de-un-programa}
+A continuación veremos los ingredientes fundamentales de un lenguaje de
+programación como Python, para llevar a cabo los ejemplos utilizaremos
+el intérprete interactivo mejorado ipython.
+
+
+\subsection{Números y expresiones}
+\label{Unidad01:numeros-y-expresiones}
+Frecuentemente requerimos resolver cálculos matemáticos, las operaciones
+aritméticas básicas son:
+\begin{itemize}
+\item {} 
+adición: +
+
+\item {} 
+sustracción: -
+
+\item {} 
+multiplicación: *
+
+\item {} 
+división: /
+
+\item {} 
+módulo: \%
+
+\item {} 
+potencia: **
+
+\item {} 
+división entera: //
+
+\end{itemize}
+
+Las operaciones se pueden agrupar con parentesis y tienen precedencia
+estándar. Veamos unos ejemplos.
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{3}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mf}{0.3333333333333333}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{o}{/}\PYG{l+m+mi}{3}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{0}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{10}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{3}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{1}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{4}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{2}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{0}
+\end{Verbatim}
+
+El caso de la potencia, también nos sirve para calcularraices. Veamos
+una potencia al cubo y luego una raíz cuadrada, equivalente a una
+potencia a la 1/2.
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{5}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{3}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{8}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mf}{1.4142135623730951}
+\end{Verbatim}
+
+Los datos numéricos que obtenidos en las operaciones previas se
+clasifican en reales y enteros, en python se los clasifica como float e
+int respectivamente, además existe el tipo complex, para números
+complejos.
+
+Utilizando la función type() podemos identificar el tipo de dato.
+Veamos:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{type}\PYG{p}{(}\PYG{l+m+mf}{0.333}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{float}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{type}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{int}
+\end{Verbatim}
+
 
 \subsection{Variables}
 \label{Unidad01:variables}
+Las variables son contenedores para almacenar información. Por ejemplo,
+para elevar un número al cubo podemos utilizar 3 variables, para la base
+(\emph{num1}), para el exponenete (\emph{num2}) y para almacenar el \emph{resultado}:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{num1} \PYG{o}{=} \PYG{l+m+mi}{5}                              \PYG{c}{\PYGZsh{} A num1 se le asigna el valor numérico 5.}
+\PYG{n}{num2} \PYG{o}{=} \PYG{l+m+mi}{3}                              \PYG{c}{\PYGZsh{} A num2 se le asigna 3.}
+\PYG{n}{resultado} \PYG{o}{=} \PYG{n}{num1}\PYG{o}{*}\PYG{o}{*}\PYG{n}{num2}                \PYG{c}{\PYGZsh{} A resultado se le asigna num1 elevado a num2.}
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{El resultado es}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{resultado}\PYG{p}{)}
+\end{Verbatim}
+
+Del código podemos rescatar que el operador igual (=) sirve para asignar
+lo que está a la derecha a la variable que se encuentra a la izquierda.
+
+
+\subsection{Entrada y salida de datos}
+\label{Unidad01:entrada-y-salida-de-datos}
+Comunicarnos con el entorno
+
 
 \subsection{Operadores relacionales y lógicos}
 \label{Unidad01:operadores-relacionales-y-logicos}
 
-\subsection{Entrada y salida de datos}
-\label{Unidad01:entrada-y-salida-de-datos}
+\subsection{Funciones}
+\label{Unidad01:funciones}
+
+\subsection{Módulos}
+\label{Unidad01:modulos}
 
 \section{Ejercicios}
 \label{Unidad01:ejercicios}
