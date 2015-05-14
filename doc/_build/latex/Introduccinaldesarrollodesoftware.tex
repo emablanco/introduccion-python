@@ -354,35 +354,17 @@ Las operaciones se pueden agrupar con parentesis y tienen precedencia
 estándar. Veamos unos ejemplos.
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{3}
-\end{Verbatim}
+In [9]: 1/3
+Out[9]: 0.3333333333333333
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mf}{0.3333333333333333}
-\end{Verbatim}
+In [10]: 1//3
+Out[10]: 0
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{o}{/}\PYG{l+m+mi}{3}
-\end{Verbatim}
+In [11]: 10\PYGZpc{}3
+Out[11]: 1
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{0}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{10}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{3}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{1}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{4}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{2}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{0}
+In [12]: 4\PYGZpc{}2
+Out[12]: 0
 \end{Verbatim}
 
 El caso de la potencia, también nos sirve para calcularraices. Veamos
@@ -390,19 +372,11 @@ una potencia al cubo y luego una raíz cuadrada, equivalente a una
 potencia a la 1/2.
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{5}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{3}
-\end{Verbatim}
+In [13]: 5**3
+Out[13]: 125
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{8}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{)}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mf}{1.4142135623730951}
+In [14]: 2**(1/2)
+Out[14]: 1.4142135623730951
 \end{Verbatim}
 
 Los datos numéricos que obtenidos en las operaciones previas se
@@ -414,20 +388,17 @@ Utilizando la función type() podemos identificar el tipo de dato.
 Veamos:
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nb}{type}\PYG{p}{(}\PYG{l+m+mf}{0.333}\PYG{p}{)}
+In [15]: type(0.333)
+Out[15]: float
+
+In [16]: type(4)
+Out[16]: int
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nb}{float}
-\end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nb}{type}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nb}{int}
-\end{Verbatim}
+\subsection{Cadenas}
+\label{Unidad01:cadenas}
+...falta...
 
 
 \subsection{Variables}
@@ -443,13 +414,100 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{El resultado es}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{resultado}\PYG{p}{)}
 \end{Verbatim}
 
-Del código podemos rescatar que el operador igual (=) sirve para asignar
-lo que está a la derecha a la variable que se encuentra a la izquierda.
+El operador igual (=) sirve para asignar lo que está a su derecha, a la
+variable que se encuentra a su izquierda. Implementemos la siguiente
+ecuación para dos valores de \emph{x} 0.1 y 0.2.
+\begin{gather}
+\begin{split}y = (x-4)^2-3\end{split}\notag
+\end{gather}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{x1} \PYG{o}{=} \PYG{l+m+mf}{0.1}
+\PYG{n}{y1} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x1}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
+
+\PYG{n}{x2} \PYG{o}{=} \PYG{l+m+mf}{0.2}
+\PYG{n}{y2} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
+
+\PYG{k}{print}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{,}\PYG{n}{y1}\PYG{p}{)}
+\PYG{k}{print}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{,}\PYG{n}{y2}\PYG{p}{)}
+\end{Verbatim}
+
+Veremos la siguiente salida por pantalla:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+0.1 12.209999999999999
+0.2 11.44
+\end{Verbatim}
+
+Los nombres de las variables (identificador o etiqueta) puede estar
+formado por letras, dígitos y guiones bajos teniendo en cuenta ciertas
+restricciones, no pueden comenzar con un número y ni ser algunas de las
+siguientes palabras reservadas:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+False      class      finally    is         return
+None       continue   for        lambda     try
+True       def        from       nonlocal   while
+and        del        global     not        with
+as         elif       if         or         yield
+assert     else       import     pass
+break      except     in         raise
+\end{Verbatim}
+
+Se debe tener en cuenta que las variables diferencian entre mayúsculas y
+minúsculas, de modo que juana, JUANA, JuAnA, JUANa son variables
+diferentes. Esta característica suele denominarse como \emph{case-sensitive}.
 
 
 \subsection{Entrada y salida de datos}
 \label{Unidad01:entrada-y-salida-de-datos}
-Comunicarnos con el entorno
+De los ejemplos que vimos, los valores que almacenan las variables
+fueron ingresadas en el mismo código, difícilmente sea útil contar con
+los valores cargados en el programa en forma estática. Por esta razón,
+generalmente se requiere leer información de diferentes fuentes, puede
+ser desde un archivo o bien interactuando con un usuario.
+
+La lectura de datos desde el teclado se realiza utilizando la sentencia
+\emph{input()} del siguiente modo:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{nombre} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{¿Cómo es su nombre maestro? }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{print} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Hola, }\PYG{l+s}{\PYGZdq{}} \PYG{o}{+} \PYG{n}{nombre} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{!}\PYG{l+s}{\PYGZdq{}}
+\end{Verbatim}
+
+El comportamiento es:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+¿Cómo es su nombre maestro?
+Juan de los palotes
+Hola, Juan de los palotes!
+\end{Verbatim}
+
+Es importante tener en cuenta que toda lectura por teclado utilizando la
+función input() va a almacenar lo ingresado como una variable de tipo
+\emph{str}, es decir una cadena de caracteres. Veamos el error que obtenemos
+al intentar operar directamente el valor leído en una ecuación
+matemática con el siguiente código:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{x = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{y} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
+\PYG{k}{print}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{)}
+\end{Verbatim}
+
+Se obtiene el error:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+TypeError                                 Traceback (most recent call last)
+\PYGZlt{}ipython\PYGZhy{}input\PYGZhy{}12\PYGZhy{}4b6b7082ef31\PYGZgt{} in \PYGZlt{}module\PYGZgt{}()
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} 1 y = (x\PYGZhy{}4)**2\PYGZhy{}3
+
+TypeError: unsupported operand type(s) for \PYGZhy{}: \PYGZsq{}str\PYGZsq{} and \PYGZsq{}int\PYGZsq{}
+\end{Verbatim}
+
+Del mensaje se puede concluir que estamos intentando operar datos de
+diferentes tipos -una cadena de caracteres (str) con enteros- de un modo
+incompatible.
 
 
 \subsection{Operadores relacionales y lógicos}

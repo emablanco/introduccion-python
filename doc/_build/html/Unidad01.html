@@ -223,43 +223,27 @@ aritméticas básicas son:</p>
 </ul>
 <p>Las operaciones se pueden agrupar con parentesis y tienen precedencia
 estándar. Veamos unos ejemplos.</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="mf">0.3333333333333333</span>
-</pre></div>
-</div>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">1</span><span class="o">//</span><span class="mi">3</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="mi">0</span>
-</pre></div>
-</div>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">10</span><span class="o">%</span><span class="mi">3</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="mi">1</span>
-</pre></div>
-</div>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">4</span><span class="o">%</span><span class="mi">2</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="mi">0</span>
+<div class="code python highlight-python"><div class="highlight"><pre>In [9]: 1/3
+Out[9]: 0.3333333333333333
+
+In [10]: 1//3
+Out[10]: 0
+
+In [11]: 10%3
+Out[11]: 1
+
+In [12]: 4%2
+Out[12]: 0
 </pre></div>
 </div>
 <p>El caso de la potencia, también nos sirve para calcularraices. Veamos
 una potencia al cubo y luego una raíz cuadrada, equivalente a una
 potencia a la 1/2.</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">5</span><span class="o">**</span><span class="mi">3</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="mi">8</span>
-</pre></div>
-</div>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="mf">1.4142135623730951</span>
+<div class="code python highlight-python"><div class="highlight"><pre>In [13]: 5**3
+Out[13]: 125
+
+In [14]: 2**(1/2)
+Out[14]: 1.4142135623730951
 </pre></div>
 </div>
 <p>Los datos numéricos que obtenidos en las operaciones previas se
@@ -268,18 +252,17 @@ int respectivamente, además existe el tipo complex, para números
 complejos.</p>
 <p>Utilizando la función type() podemos identificar el tipo de dato.
 Veamos:</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="nb">type</span><span class="p">(</span><span class="mf">0.333</span><span class="p">)</span>
+<div class="code python highlight-python"><div class="highlight"><pre>In [15]: type(0.333)
+Out[15]: float
+
+In [16]: type(4)
+Out[16]: int
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span class="nb">float</span>
-</pre></div>
 </div>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="nb">int</span>
-</pre></div>
-</div>
+<div class="section" id="cadenas">
+<h3>Cadenas<a class="headerlink" href="#cadenas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>...falta...</p>
 </div>
 <div class="section" id="variables">
 <h3>Variables<a class="headerlink" href="#variables" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -292,12 +275,84 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
 <span class="k">print</span><span class="p">(</span><span class="s">&quot;El resultado es&quot;</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Del código podemos rescatar que el operador igual (=) sirve para asignar
-lo que está a la derecha a la variable que se encuentra a la izquierda.</p>
+<p>El operador igual (=) sirve para asignar lo que está a su derecha, a la
+variable que se encuentra a su izquierda. Implementemos la siguiente
+ecuación para dos valores de <em>x</em> 0.1 y 0.2.</p>
+<div class="math">
+\[y = (x-4)^2-3\]</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">x1</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span>
+
+<span class="n">x2</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">y1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Veremos la siguiente salida por pantalla:</p>
+<div class="highlight-python"><div class="highlight"><pre>0.1 12.209999999999999
+0.2 11.44
+</pre></div>
+</div>
+<p>Los nombres de las variables (identificador o etiqueta) puede estar
+formado por letras, dígitos y guiones bajos teniendo en cuenta ciertas
+restricciones, no pueden comenzar con un número y ni ser algunas de las
+siguientes palabras reservadas:</p>
+<div class="highlight-python"><div class="highlight"><pre>False      class      finally    is         return
+None       continue   for        lambda     try
+True       def        from       nonlocal   while
+and        del        global     not        with
+as         elif       if         or         yield
+assert     else       import     pass
+break      except     in         raise
+</pre></div>
+</div>
+<p>Se debe tener en cuenta que las variables diferencian entre mayúsculas y
+minúsculas, de modo que juana, JUANA, JuAnA, JUANa son variables
+diferentes. Esta característica suele denominarse como <em>case-sensitive</em>.</p>
 </div>
 <div class="section" id="entrada-y-salida-de-datos">
 <h3>Entrada y salida de datos<a class="headerlink" href="#entrada-y-salida-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Comunicarnos con el entorno</p>
+<p>De los ejemplos que vimos, los valores que almacenan las variables
+fueron ingresadas en el mismo código, difícilmente sea útil contar con
+los valores cargados en el programa en forma estática. Por esta razón,
+generalmente se requiere leer información de diferentes fuentes, puede
+ser desde un archivo o bien interactuando con un usuario.</p>
+<p>La lectura de datos desde el teclado se realiza utilizando la sentencia
+<em>input()</em> del siguiente modo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;¿Cómo es su nombre maestro? &quot;</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;Hola, &quot;</span> <span class="o">+</span> <span class="n">nombre</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span>
+</pre></div>
+</div>
+<p>El comportamiento es:</p>
+<div class="highlight-python"><div class="highlight"><pre>¿Cómo es su nombre maestro?
+Juan de los palotes
+Hola, Juan de los palotes!
+</pre></div>
+</div>
+<p>Es importante tener en cuenta que toda lectura por teclado utilizando la
+función input() va a almacenar lo ingresado como una variable de tipo
+<em>str</em>, es decir una cadena de caracteres. Veamos el error que obtenemos
+al intentar operar directamente el valor leído en una ecuación
+matemática con el siguiente código:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;x = &quot;</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Se obtiene el error:</p>
+<div class="highlight-python"><div class="highlight"><pre>---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-12-4b6b7082ef31&gt; in &lt;module&gt;()
+----&gt; 1 y = (x-4)**2-3
+
+TypeError: unsupported operand type(s) for -: &#39;str&#39; and &#39;int&#39;
+</pre></div>
+</div>
+<p>Del mensaje se puede concluir que estamos intentando operar datos de
+diferentes tipos -una cadena de caracteres (str) con enteros- de un modo
+incompatible.</p>
 </div>
 <div class="section" id="operadores-relacionales-y-logicos">
 <h3>Operadores relacionales y lógicos<a class="headerlink" href="#operadores-relacionales-y-logicos" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -338,6 +393,7 @@ lo que está a la derecha a la variable que se encuentra a la izquierda.</p>
 <li><a class="reference internal" href="#algoritmos-computacionales">Algoritmos computacionales</a></li>
 <li><a class="reference internal" href="#elementos-de-un-programa">Elementos de un programa</a><ul>
 <li><a class="reference internal" href="#numeros-y-expresiones">Números y expresiones</a></li>
+<li><a class="reference internal" href="#cadenas">Cadenas</a></li>
 <li><a class="reference internal" href="#variables">Variables</a></li>
 <li><a class="reference internal" href="#entrada-y-salida-de-datos">Entrada y salida de datos</a></li>
 <li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>

@@ -202,51 +202,17 @@ estándar. Veamos unos ejemplos.
 
 .. code:: python
 
-    1/3
+    In [9]: 1/3
+    Out[9]: 0.3333333333333333
 
+    In [10]: 1//3
+    Out[10]: 0
 
+    In [11]: 10%3
+    Out[11]: 1
 
-.. parsed-literal::
-
-    0.3333333333333333
-
-
-
-.. code:: python
-
-    1//3
-
-
-
-.. parsed-literal::
-
-    0
-
-
-
-.. code:: python
-
-    10%3
-
-
-
-.. parsed-literal::
-
-    1
-
-
-
-.. code:: python
-
-    4%2
-
-
-
-.. parsed-literal::
-
-    0
-
-
+    In [12]: 4%2
+    Out[12]: 0
 
 El caso de la potencia, también nos sirve para calcularraices. Veamos
 una potencia al cubo y luego una raíz cuadrada, equivalente a una
@@ -254,27 +220,11 @@ potencia a la 1/2.
 
 .. code:: python
 
-    5**3
+    In [13]: 5**3
+    Out[13]: 125
 
-
-
-.. parsed-literal::
-
-    8
-
-
-
-.. code:: python
-
-    2**(1/2)
-
-
-
-.. parsed-literal::
-
-    1.4142135623730951
-
-
+    In [14]: 2**(1/2)
+    Out[14]: 1.4142135623730951
 
 Los datos numéricos que obtenidos en las operaciones previas se
 clasifican en reales y enteros, en python se los clasifica como float e
@@ -286,27 +236,16 @@ Veamos:
 
 .. code:: python
 
-    type(0.333)
+    In [15]: type(0.333)
+    Out[15]: float
 
+    In [16]: type(4)
+    Out[16]: int
 
+Cadenas
+~~~~~~~
 
-.. parsed-literal::
-
-    float
-
-
-
-.. code:: python
-
-    type(3)
-
-
-
-.. parsed-literal::
-
-    int
-
-
+...falta...
 
 Variables
 ~~~~~~~~~
@@ -322,13 +261,100 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
     resultado = num1**num2                # A resultado se le asigna num1 elevado a num2. 
     print("El resultado es", resultado)
 
-Del código podemos rescatar que el operador igual (=) sirve para asignar
-lo que está a la derecha a la variable que se encuentra a la izquierda.
+El operador igual (=) sirve para asignar lo que está a su derecha, a la
+variable que se encuentra a su izquierda. Implementemos la siguiente
+ecuación para dos valores de *x* 0.1 y 0.2.
+
+.. math:: y = (x-4)^2-3
+
+.. code:: python
+
+    x1 = 0.1                              
+    y1 = (x1-4)**2-3
+
+    x2 = 0.2                              
+    y2 = (x2-4)**2-3
+
+    print(x1,y1)
+    print(x2,y2)
+
+Veremos la siguiente salida por pantalla:
+
+::
+
+    0.1 12.209999999999999
+    0.2 11.44
+
+Los nombres de las variables (identificador o etiqueta) puede estar
+formado por letras, dígitos y guiones bajos teniendo en cuenta ciertas
+restricciones, no pueden comenzar con un número y ni ser algunas de las
+siguientes palabras reservadas:
+
+::
+
+    False      class      finally    is         return
+    None       continue   for        lambda     try
+    True       def        from       nonlocal   while
+    and        del        global     not        with
+    as         elif       if         or         yield
+    assert     else       import     pass
+    break      except     in         raise
+
+Se debe tener en cuenta que las variables diferencian entre mayúsculas y
+minúsculas, de modo que juana, JUANA, JuAnA, JUANa son variables
+diferentes. Esta característica suele denominarse como *case-sensitive*.
 
 Entrada y salida de datos
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Comunicarnos con el entorno
+De los ejemplos que vimos, los valores que almacenan las variables
+fueron ingresadas en el mismo código, difícilmente sea útil contar con
+los valores cargados en el programa en forma estática. Por esta razón,
+generalmente se requiere leer información de diferentes fuentes, puede
+ser desde un archivo o bien interactuando con un usuario.
+
+La lectura de datos desde el teclado se realiza utilizando la sentencia
+*input()* del siguiente modo:
+
+.. code:: python
+
+    nombre = input("¿Cómo es su nombre maestro? ")
+    print "Hola, " + nombre + "!"
+
+El comportamiento es:
+
+::
+
+    ¿Cómo es su nombre maestro?
+    Juan de los palotes
+    Hola, Juan de los palotes!
+
+Es importante tener en cuenta que toda lectura por teclado utilizando la
+función input() va a almacenar lo ingresado como una variable de tipo
+*str*, es decir una cadena de caracteres. Veamos el error que obtenemos
+al intentar operar directamente el valor leído en una ecuación
+matemática con el siguiente código:
+
+.. code:: python
+
+    x = input("x = ") 
+    y = (x-4)**2-3
+    print(x,y)
+
+Se obtiene el error:
+
+::
+
+    ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+    <ipython-input-12-4b6b7082ef31> in <module>()
+    ----> 1 y = (x-4)**2-3
+
+    TypeError: unsupported operand type(s) for -: 'str' and 'int'
+
+Del mensaje se puede concluir que estamos intentando operar datos de
+diferentes tipos -una cadena de caracteres (str) con enteros- de un modo
+incompatible.
 
 Operadores relacionales y lógicos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,3 +367,4 @@ Módulos
 
 Ejercicios
 ----------
+

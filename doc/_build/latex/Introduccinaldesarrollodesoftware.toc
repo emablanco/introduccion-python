@@ -11,12 +11,13 @@
 \contentsline {section}{\numberline {1.5}Algoritmos computacionales}{5}{section.1.5}
 \contentsline {section}{\numberline {1.6}Elementos de un programa}{6}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}N\IeC {\'u}meros y expresiones}{6}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Variables}{7}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Entrada y salida de datos}{7}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Operadores relacionales y l\IeC {\'o}gicos}{7}{subsection.1.6.4}
-\contentsline {subsection}{\numberline {1.6.5}Funciones}{7}{subsection.1.6.5}
-\contentsline {subsection}{\numberline {1.6.6}M\IeC {\'o}dulos}{7}{subsection.1.6.6}
-\contentsline {section}{\numberline {1.7}Ejercicios}{7}{section.1.7}
+\contentsline {subsection}{\numberline {1.6.2}Cadenas}{7}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Variables}{7}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Entrada y salida de datos}{7}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}Operadores relacionales y l\IeC {\'o}gicos}{8}{subsection.1.6.5}
+\contentsline {subsection}{\numberline {1.6.6}Funciones}{8}{subsection.1.6.6}
+\contentsline {subsection}{\numberline {1.6.7}M\IeC {\'o}dulos}{8}{subsection.1.6.7}
+\contentsline {section}{\numberline {1.7}Ejercicios}{8}{section.1.7}
 \contentsline {chapter}{\numberline {2}Estructuras de control}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Condicionales}{9}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}if}{9}{subsection.2.1.1}
