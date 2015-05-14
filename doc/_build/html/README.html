@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introducción al Desarrollo de Software &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduccion-al-desarrollo-de-software">
+<h1>Introducción al Desarrollo de Software<a class="headerlink" href="#introduccion-al-desarrollo-de-software" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="objetivo-general">
+<h2>Objetivo General<a class="headerlink" href="#objetivo-general" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li>Conocer los conceptos fundamentales de la algorítmica computacional</li>
+<li>Resolver problemas aplicando un lenguaje estructurado de programación</li>
+<li>Dominar la sintaxis de un lenguaje de programación</li>
+<li>Comprender y reutilizar código desarrollado por terceros</li>
+</ul>
+</div>
+<div class="section" id="contenidos-minimos">
+<h2>Contenidos mínimos<a class="headerlink" href="#contenidos-minimos" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li>Conceptos básicos: variables, declaraciones, tipos de datos, operadores, expresiones lógicas, estructuras de control, estructuras repetitivas, procedimientos y funciones</li>
+<li>Programación estructurada, modular y orientada a objetos, tipos de lenguajes</li>
+</ul>
+</div>
+<div class="section" id="organizacion-del-material">
+<h2>Organización del material<a class="headerlink" href="#organizacion-del-material" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Desde estos links se pueden visualizar estáticamente:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad01.ipynb">Unidad 1</a> Conceptos básicos</li>
+<li><a class="reference external" href="http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad02.ipynb">Unidad 2</a> Control de flujo</li>
+<li><a class="reference external" href="http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad03.ipynb">Unidad 3</a> Funciones</li>
+<li>Unidad 4...</li>
+</ul>
+</div>
+<div class="section" id="modificar-el-material">
+<h2>Modificar el material<a class="headerlink" href="#modificar-el-material" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:</p>
+<ul class="simple">
+<li>Convertir al formato rst haciendo</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre>ipython nbconvert Unidad01.ipynb --to rst
+</pre></div>
+</div>
+<ul class="simple">
+<li>Mover el archivo generado (Unidad01.rst) al directorio doc</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre>mv Unidad01.rst doc/
+</pre></div>
+</div>
+<ul class="simple">
+<li>Regenerar la documentación, estando bajo el directorio doc hacer</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre>make html
+make latexpdf
+</pre></div>
+</div>
+<p>Estos pasos actualizarán la documentación estática almacenada bajo doc/_build</p>
+</div>
+<div class="section" id="licencia">
+<h2>Licencia<a class="headerlink" href="#licencia" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="figure">
+<a class="reference external image-reference" href="http://creativecommons.org/licenses/by-sa/2.5/ar/deed.es_AR"><img alt="http://i.creativecommons.org/l/by-sa/2.5/ar/88x31.png" src="http://i.creativecommons.org/l/by-sa/2.5/ar/88x31.png" /></a>
+</div>
+</div>
+<div class="section" id="creditos">
+<h2>Créditos<a class="headerlink" href="#creditos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El material fue desarrollado específicamente para el curso &#8220;Introducción al Desarrollo de Software&#8221; de la Tecnicatura Universitaria en Software Libre, perteneciente a la Facultad de Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral.</p>
+<p>Gran parte del material utilizado fue basado en los siguientes recursos:</p>
+<ul class="simple">
+<li>El tutorial de Pytho. Guido van Rossum</li>
+<li>Aprenda a pensar como un programador con Python. Allen Downey</li>
+<li>An introduction to computer science. John Zelle</li>
+<li><a class="reference external" href="https://github.com/mgaitan/curso-python-cientifico">https://github.com/mgaitan/curso-python-cientifico</a></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introducción al Desarrollo de Software</a><ul>
+<li><a class="reference internal" href="#objetivo-general">Objetivo General</a></li>
+<li><a class="reference internal" href="#contenidos-minimos">Contenidos mínimos</a></li>
+<li><a class="reference internal" href="#organizacion-del-material">Organización del material</a></li>
+<li><a class="reference internal" href="#modificar-el-material">Modificar el material</a></li>
+<li><a class="reference internal" href="#licencia">Licencia</a></li>
+<li><a class="reference internal" href="#creditos">Créditos</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>Esta página</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/README.txt"
+           rel="nofollow">Mostrar el código</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             >índice</a></li>
+        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Emiliano López.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
