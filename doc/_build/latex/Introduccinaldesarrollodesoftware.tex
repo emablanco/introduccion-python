@@ -11,10 +11,10 @@
 \usepackage{longtable}
 \usepackage{sphinx}
 \usepackage{multirow}
-
+\setcounter{tocdepth}{2}
 
 \title{Introducción al desarrollo de software}
-\date{14 de May de 2015}
+\date{18 de May de 2015}
 \release{1.0}
 \author{Emiliano López}
 \newcommand{\sphinxlogo}{}
@@ -137,6 +137,17 @@ las herramientas necesarias para llevar a cabo el desarrollo y sus
 diferentes alternativas.
 
 
+\section{Motivación}
+\label{Unidad01:motivacion}
+que lindo es programar
+
+
+\subsection{¿Por qué Python?}
+\label{Unidad01:por-que-python}
+lo lindo que es python y quienes lo usan, su crecimiento, su ámbito de
+aplicación: web, científico, etc.
+
+
 \section{Instalando Python}
 \label{Unidad01:instalando-python}
 Actualmente existen dos versiones de Python comúnmente utilizadas, la
@@ -242,7 +253,7 @@ funcionamiento. Se debe ejecutar en una terminal \code{ipython3 notebook} y
 esto abrirá el navegador por defecto con el entorno cargado.
 
 
-\section{Entorno integrado de desarrollo (IDE)}
+\subsection{Entorno integrado de desarrollo (IDE)}
 \label{Unidad01:entorno-integrado-de-desarrollo-ide}\begin{figure}[htbp]
 \centering
 
@@ -396,9 +407,45 @@ Out[16]: int
 \end{Verbatim}
 
 
-\subsection{Cadenas}
-\label{Unidad01:cadenas}
-...falta...
+\subsection{Cadenas de carateres}
+\label{Unidad01:cadenas-de-carateres}
+Además de números, es posible manipular texto. Las cadenas son
+secuencias de caracteres encerradas en comillas simples (`...') o dobles
+(''...''), el tipo de datos es denominado \emph{str}. Sin adentrarnos en
+detalles, que posteriormente veremos, aquí trataremos lo indispensable
+para poder desarrollar los primeros programas. Veamos unos ejemplos:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{huevos y pan}\PYG{l+s}{\PYGZsq{}}         \PYG{c}{\PYGZsh{} comillas simples}
+\PYG{g+go}{\PYGZsq{}huevos y pan\PYGZsq{}}
+\end{Verbatim}
+
+Los operadores algebraicos para la suma y multiplicación tienen efecto
+sobre las cadenas:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{eco }\PYG{l+s}{\PYGZsq{}}\PYG{o}{*}\PYG{l+m+mi}{4}               \PYG{c}{\PYGZsh{} La multiplicación repite la cadena}
+\PYG{g+go}{\PYGZsq{}eco eco eco eco \PYGZsq{}}
+
+\PYG{g+go}{\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZsq{}yo y \PYGZsq{}+ \PYGZsq{}mi otro yo\PYGZsq{}   \PYGZsh{} La suma concatena dos o mas cadenas}
+\PYG{g+go}{\PYGZsq{}yo y mi otro yo\PYGZsq{}}
+\end{Verbatim}
+
+Es posible utilizar cadenas de más de una línea, anteponiendo \textbf{triples
+comillas} simples o dobles al inicio y al final, por ejemplo (fragmento
+del poema de Fortunato Ramos \emph{Yo jamás fui un niño}):
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{Mi sonrisa es seca y mi rostro es serio,}
+\PYG{l+s+sd}{mis espaldas anchas, mis músculos duros}
+\PYG{l+s+sd}{mis manos partidas por el crudo frío}
+\PYG{l+s+sd}{sólo ocho años tengo, pero no soy un niño.}
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\end{Verbatim}
+\begin{alltt}
+`nMi sonrisa es seca y mi rostro es serio,nmis espaldas anchas, mis músculos durosnmis manos partidas por el crudo fríonsólo ocho años tengo, pero no soy un niño.n'
+\end{alltt}
 
 
 \subsection{Variables}
@@ -411,12 +458,12 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
 \PYG{n}{num1} \PYG{o}{=} \PYG{l+m+mi}{5}                              \PYG{c}{\PYGZsh{} A num1 se le asigna el valor numérico 5.}
 \PYG{n}{num2} \PYG{o}{=} \PYG{l+m+mi}{3}                              \PYG{c}{\PYGZsh{} A num2 se le asigna 3.}
 \PYG{n}{resultado} \PYG{o}{=} \PYG{n}{num1}\PYG{o}{*}\PYG{o}{*}\PYG{n}{num2}                \PYG{c}{\PYGZsh{} A resultado se le asigna num1 elevado a num2.}
-\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{El resultado es}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{resultado}\PYG{p}{)}
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{El resultado es}\PYG{l+s}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{resultado}\PYG{p}{)}
 \end{Verbatim}
 
 El operador igual (=) sirve para asignar lo que está a su derecha, a la
 variable que se encuentra a su izquierda. Implementemos la siguiente
-ecuación para dos valores de \emph{x} 0.1 y 0.2.
+ecuación para dos valores de \emph{x}, 0.1 y 0.2.
 \begin{gather}
 \begin{split}y = (x-4)^2-3\end{split}\notag
 \end{gather}
@@ -438,8 +485,20 @@ Veremos la siguiente salida por pantalla:
 0.2 11.44
 \end{Verbatim}
 
-Los nombres de las variables (identificador o etiqueta) puede estar
-formado por letras, dígitos y guiones bajos teniendo en cuenta ciertas
+Otros ejemplos utilizando variables que contengan \textbf{cadenas de
+caracteres}:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{cadena1} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{siento que }\PYG{l+s}{\PYGZsq{}}
+\PYG{n}{cadena2} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{nací en el viento }\PYG{l+s}{\PYGZsq{}}
+
+\PYG{n}{cadena3} \PYG{o}{=} \PYG{n}{cadena1} \PYG{o}{+} \PYG{n}{cadena2}
+
+\PYG{k}{print}\PYG{p}{(}\PYG{n}{cadena3}\PYG{p}{)}
+\end{Verbatim}
+
+Los nombres de las variables (identificador o etiqueta) pueden estar
+formados por letras, dígitos y guiones bajos, teniendo en cuenta ciertas
 restricciones, no pueden comenzar con un número y ni ser algunas de las
 siguientes palabras reservadas:
 
@@ -470,14 +529,14 @@ La lectura de datos desde el teclado se realiza utilizando la sentencia
 \emph{input()} del siguiente modo:
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{nombre} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{¿Cómo es su nombre maestro? }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{nombre} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{¿Cómo es su nombre, maestro? }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \PYG{k}{print} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Hola, }\PYG{l+s}{\PYGZdq{}} \PYG{o}{+} \PYG{n}{nombre} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{!}\PYG{l+s}{\PYGZdq{}}
 \end{Verbatim}
 
 El comportamiento es:
 
 \begin{Verbatim}[commandchars=\\\{\}]
-¿Cómo es su nombre maestro?
+¿Cómo es su nombre, maestro?
 Juan de los palotes
 Hola, Juan de los palotes!
 \end{Verbatim}
@@ -489,25 +548,31 @@ al intentar operar directamente el valor leído en una ecuación
 matemática con el siguiente código:
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{x = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese x = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \PYG{n}{y} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
 \PYG{k}{print}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{)}
 \end{Verbatim}
 
-Se obtiene el error:
+\begin{Verbatim}[commandchars=\\\{\}]
+Ingrese x = 3
+\end{Verbatim}
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
 TypeError                                 Traceback (most recent call last)
-\PYGZlt{}ipython\PYGZhy{}input\PYGZhy{}12\PYGZhy{}4b6b7082ef31\PYGZgt{} in \PYGZlt{}module\PYGZgt{}()
-\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} 1 y = (x\PYGZhy{}4)**2\PYGZhy{}3
+
+\PYGZlt{}ipython\PYGZhy{}input\PYGZhy{}15\PYGZhy{}3baa5c95d16e\PYGZgt{} in \PYGZlt{}module\PYGZgt{}()
+      1 x = input(\PYGZdq{}Ingrese x = \PYGZdq{})
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} 2 y = (x\PYGZhy{}4)**2\PYGZhy{}3
+      3 print(x,y)
+
 
 TypeError: unsupported operand type(s) for \PYGZhy{}: \PYGZsq{}str\PYGZsq{} and \PYGZsq{}int\PYGZsq{}
 \end{Verbatim}
 
-Del mensaje se puede concluir que estamos intentando operar datos de
-diferentes tipos -una cadena de caracteres (str) con enteros- de un modo
-incompatible.
+El error que obtenido se debe a que estamos realizando operaciones
+incompatibles entre diferentes tipos, una cadena de caracteres (str) con
+enteros (int).
 
 
 \subsection{Operadores relacionales y lógicos}

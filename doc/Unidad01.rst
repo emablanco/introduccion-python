@@ -9,6 +9,17 @@ desarrollar los primeros algoritmos computacionales. Además, se explican
 las herramientas necesarias para llevar a cabo el desarrollo y sus
 diferentes alternativas.
 
+Motivación
+----------
+
+que lindo es programar
+
+¿Por qué Python?
+~~~~~~~~~~~~~~~~
+
+lo lindo que es python y quienes lo usan, su crecimiento, su ámbito de
+aplicación: web, científico, etc.
+
 Instalando Python
 -----------------
 
@@ -106,7 +117,7 @@ funcionamiento. Se debe ejecutar en una terminal ``ipython3 notebook`` y
 esto abrirá el navegador por defecto con el entorno cargado.
 
 Entorno integrado de desarrollo (IDE)
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: files/img/u1/ninja-ide.png
    :alt: 
@@ -242,10 +253,51 @@ Veamos:
     In [16]: type(4)
     Out[16]: int
 
-Cadenas
-~~~~~~~
+Cadenas de carateres
+~~~~~~~~~~~~~~~~~~~~
 
-...falta...
+Además de números, es posible manipular texto. Las cadenas son
+secuencias de caracteres encerradas en comillas simples ('...') o dobles
+("..."), el tipo de datos es denominado *str*. Sin adentrarnos en
+detalles, que posteriormente veremos, aquí trataremos lo indispensable
+para poder desarrollar los primeros programas. Veamos unos ejemplos:
+
+.. code:: python
+
+    >>> 'huevos y pan'         # comillas simples
+    'huevos y pan'
+
+Los operadores algebraicos para la suma y multiplicación tienen efecto
+sobre las cadenas:
+
+.. code:: python
+
+    >>> 'eco '*4               # La multiplicación repite la cadena
+    'eco eco eco eco '
+
+    >>>'yo y '+ 'mi otro yo'   # La suma concatena dos o mas cadenas
+    'yo y mi otro yo'
+
+Es posible utilizar cadenas de más de una línea, anteponiendo **triples
+comillas** simples o dobles al inicio y al final, por ejemplo (fragmento
+del poema de Fortunato Ramos *Yo jamás fui un niño*):
+
+.. code:: python
+
+    '''
+    Mi sonrisa es seca y mi rostro es serio,
+    mis espaldas anchas, mis músculos duros
+    mis manos partidas por el crudo frío
+    sólo ocho años tengo, pero no soy un niño.
+    '''
+
+
+
+.. parsed-literal::
+
+    '\nMi sonrisa es seca y mi rostro es serio,\nmis espaldas anchas, mis músculos duros\nmis manos partidas por el crudo frío\nsólo ocho años tengo, pero no soy un niño.\n'
+
+
 
 Variables
 ~~~~~~~~~
@@ -259,11 +311,11 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
     num1 = 5                              # A num1 se le asigna el valor numérico 5.
     num2 = 3                              # A num2 se le asigna 3.    
     resultado = num1**num2                # A resultado se le asigna num1 elevado a num2. 
-    print("El resultado es", resultado)
+    print('El resultado es', resultado)
 
 El operador igual (=) sirve para asignar lo que está a su derecha, a la
 variable que se encuentra a su izquierda. Implementemos la siguiente
-ecuación para dos valores de *x* 0.1 y 0.2.
+ecuación para dos valores de *x*, 0.1 y 0.2.
 
 .. math:: y = (x-4)^2-3
 
@@ -285,8 +337,20 @@ Veremos la siguiente salida por pantalla:
     0.1 12.209999999999999
     0.2 11.44
 
-Los nombres de las variables (identificador o etiqueta) puede estar
-formado por letras, dígitos y guiones bajos teniendo en cuenta ciertas
+Otros ejemplos utilizando variables que contengan **cadenas de
+caracteres**:
+
+.. code:: python
+
+    cadena1 = 'siento que '
+    cadena2 = 'nací en el viento '
+
+    cadena3 = cadena1 + cadena2
+
+    print(cadena3)
+
+Los nombres de las variables (identificador o etiqueta) pueden estar
+formados por letras, dígitos y guiones bajos, teniendo en cuenta ciertas
 restricciones, no pueden comenzar con un número y ni ser algunas de las
 siguientes palabras reservadas:
 
@@ -318,14 +382,14 @@ La lectura de datos desde el teclado se realiza utilizando la sentencia
 
 .. code:: python
 
-    nombre = input("¿Cómo es su nombre maestro? ")
+    nombre = input("¿Cómo es su nombre, maestro? ")
     print "Hola, " + nombre + "!"
 
 El comportamiento es:
 
 ::
 
-    ¿Cómo es su nombre maestro?
+    ¿Cómo es su nombre, maestro?
     Juan de los palotes
     Hola, Juan de los palotes!
 
@@ -337,24 +401,33 @@ matemática con el siguiente código:
 
 .. code:: python
 
-    x = input("x = ") 
+    x = input("Ingrese x = ") 
     y = (x-4)**2-3
     print(x,y)
 
-Se obtiene el error:
+.. parsed-literal::
+
+    Ingrese x = 3
+
 
 ::
 
+
     ---------------------------------------------------------------------------
     TypeError                                 Traceback (most recent call last)
-    <ipython-input-12-4b6b7082ef31> in <module>()
-    ----> 1 y = (x-4)**2-3
+
+    <ipython-input-15-3baa5c95d16e> in <module>()
+          1 x = input("Ingrese x = ")
+    ----> 2 y = (x-4)**2-3
+          3 print(x,y)
+
 
     TypeError: unsupported operand type(s) for -: 'str' and 'int'
 
-Del mensaje se puede concluir que estamos intentando operar datos de
-diferentes tipos -una cadena de caracteres (str) con enteros- de un modo
-incompatible.
+
+El error que obtenido se debe a que estamos realizando operaciones
+incompatibles entre diferentes tipos, una cadena de caracteres (str) con
+enteros (int).
 
 Operadores relacionales y lógicos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

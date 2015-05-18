@@ -58,6 +58,15 @@
 desarrollar los primeros algoritmos computacionales. Además, se explican
 las herramientas necesarias para llevar a cabo el desarrollo y sus
 diferentes alternativas.</p>
+<div class="section" id="motivacion">
+<h2>Motivación<a class="headerlink" href="#motivacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>que lindo es programar</p>
+<div class="section" id="por-que-python">
+<h3>¿Por qué Python?<a class="headerlink" href="#por-que-python" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>lo lindo que es python y quienes lo usan, su crecimiento, su ámbito de
+aplicación: web, científico, etc.</p>
+</div>
+</div>
 <div class="section" id="instalando-python">
 <h2>Instalando Python<a class="headerlink" href="#instalando-python" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Actualmente existen dos versiones de Python comúnmente utilizadas, la
@@ -141,9 +150,8 @@ No entraremos en detalle ya que posteriormente analizaremos su
 funcionamiento. Se debe ejecutar en una terminal <tt class="docutils literal"><span class="pre">ipython3</span> <span class="pre">notebook</span></tt> y
 esto abrirá el navegador por defecto con el entorno cargado.</p>
 </div>
-</div>
 <div class="section" id="entorno-integrado-de-desarrollo-ide">
-<h2>Entorno integrado de desarrollo (IDE)<a class="headerlink" href="#entorno-integrado-de-desarrollo-ide" title="Enlazar permanentemente con este título">¶</a></h2>
+<h3>Entorno integrado de desarrollo (IDE)<a class="headerlink" href="#entorno-integrado-de-desarrollo-ide" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="figure">
 <img alt="" src="files/img/u1/ninja-ide.png" />
 </div>
@@ -159,6 +167,7 @@ comunidad de Python Argentina, <a class="reference external" href="http://python
 <p>Una lista bastante completa sobre las IDEs disponibles pueden
 encontrarse en la <a class="reference external" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">wiki oficial de
 Python</a></p>
+</div>
 </div>
 <div class="section" id="el-primer-programa-adios-mundo">
 <h2>El primer programa &#8220;Adiós mundo!&#8221;<a class="headerlink" href="#el-primer-programa-adios-mundo" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -260,9 +269,40 @@ Out[16]: int
 </pre></div>
 </div>
 </div>
-<div class="section" id="cadenas">
-<h3>Cadenas<a class="headerlink" href="#cadenas" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>...falta...</p>
+<div class="section" id="cadenas-de-carateres">
+<h3>Cadenas de carateres<a class="headerlink" href="#cadenas-de-carateres" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Además de números, es posible manipular texto. Las cadenas son
+secuencias de caracteres encerradas en comillas simples (&#8216;...&#8217;) o dobles
+(&#8221;...&#8221;), el tipo de datos es denominado <em>str</em>. Sin adentrarnos en
+detalles, que posteriormente veremos, aquí trataremos lo indispensable
+para poder desarrollar los primeros programas. Veamos unos ejemplos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;huevos y pan&#39;</span>         <span class="c"># comillas simples</span>
+<span class="go">&#39;huevos y pan&#39;</span>
+</pre></div>
+</div>
+<p>Los operadores algebraicos para la suma y multiplicación tienen efecto
+sobre las cadenas:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;eco &#39;</span><span class="o">*</span><span class="mi">4</span>               <span class="c"># La multiplicación repite la cadena</span>
+<span class="go">&#39;eco eco eco eco &#39;</span>
+
+<span class="go">&gt;&gt;&gt;&#39;yo y &#39;+ &#39;mi otro yo&#39;   # La suma concatena dos o mas cadenas</span>
+<span class="go">&#39;yo y mi otro yo&#39;</span>
+</pre></div>
+</div>
+<p>Es posible utilizar cadenas de más de una línea, anteponiendo <strong>triples
+comillas</strong> simples o dobles al inicio y al final, por ejemplo (fragmento
+del poema de Fortunato Ramos <em>Yo jamás fui un niño</em>):</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Mi sonrisa es seca y mi rostro es serio,</span>
+<span class="sd">mis espaldas anchas, mis músculos duros</span>
+<span class="sd">mis manos partidas por el crudo frío</span>
+<span class="sd">sólo ocho años tengo, pero no soy un niño.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+<pre class="literal-block">
+'nMi sonrisa es seca y mi rostro es serio,nmis espaldas anchas, mis músculos durosnmis manos partidas por el crudo fríonsólo ocho años tengo, pero no soy un niño.n'
+</pre>
 </div>
 <div class="section" id="variables">
 <h3>Variables<a class="headerlink" href="#variables" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -272,12 +312,12 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
 <div class="code python highlight-python"><div class="highlight"><pre><span class="n">num1</span> <span class="o">=</span> <span class="mi">5</span>                              <span class="c"># A num1 se le asigna el valor numérico 5.</span>
 <span class="n">num2</span> <span class="o">=</span> <span class="mi">3</span>                              <span class="c"># A num2 se le asigna 3.</span>
 <span class="n">resultado</span> <span class="o">=</span> <span class="n">num1</span><span class="o">**</span><span class="n">num2</span>                <span class="c"># A resultado se le asigna num1 elevado a num2.</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;El resultado es&quot;</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;El resultado es&#39;</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>El operador igual (=) sirve para asignar lo que está a su derecha, a la
 variable que se encuentra a su izquierda. Implementemos la siguiente
-ecuación para dos valores de <em>x</em> 0.1 y 0.2.</p>
+ecuación para dos valores de <em>x</em>, 0.1 y 0.2.</p>
 <div class="math">
 \[y = (x-4)^2-3\]</div>
 <div class="code python highlight-python"><div class="highlight"><pre><span class="n">x1</span> <span class="o">=</span> <span class="mf">0.1</span>
@@ -295,8 +335,18 @@ ecuación para dos valores de <em>x</em> 0.1 y 0.2.</p>
 0.2 11.44
 </pre></div>
 </div>
-<p>Los nombres de las variables (identificador o etiqueta) puede estar
-formado por letras, dígitos y guiones bajos teniendo en cuenta ciertas
+<p>Otros ejemplos utilizando variables que contengan <strong>cadenas de
+caracteres</strong>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">cadena1</span> <span class="o">=</span> <span class="s">&#39;siento que &#39;</span>
+<span class="n">cadena2</span> <span class="o">=</span> <span class="s">&#39;nací en el viento &#39;</span>
+
+<span class="n">cadena3</span> <span class="o">=</span> <span class="n">cadena1</span> <span class="o">+</span> <span class="n">cadena2</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">cadena3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Los nombres de las variables (identificador o etiqueta) pueden estar
+formados por letras, dígitos y guiones bajos, teniendo en cuenta ciertas
 restricciones, no pueden comenzar con un número y ni ser algunas de las
 siguientes palabras reservadas:</p>
 <div class="highlight-python"><div class="highlight"><pre>False      class      finally    is         return
@@ -321,12 +371,12 @@ generalmente se requiere leer información de diferentes fuentes, puede
 ser desde un archivo o bien interactuando con un usuario.</p>
 <p>La lectura de datos desde el teclado se realiza utilizando la sentencia
 <em>input()</em> del siguiente modo:</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;¿Cómo es su nombre maestro? &quot;</span><span class="p">)</span>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;¿Cómo es su nombre, maestro? &quot;</span><span class="p">)</span>
 <span class="k">print</span> <span class="s">&quot;Hola, &quot;</span> <span class="o">+</span> <span class="n">nombre</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span>
 </pre></div>
 </div>
 <p>El comportamiento es:</p>
-<div class="highlight-python"><div class="highlight"><pre>¿Cómo es su nombre maestro?
+<div class="highlight-python"><div class="highlight"><pre>¿Cómo es su nombre, maestro?
 Juan de los palotes
 Hola, Juan de los palotes!
 </pre></div>
@@ -336,23 +386,29 @@ función input() va a almacenar lo ingresado como una variable de tipo
 <em>str</em>, es decir una cadena de caracteres. Veamos el error que obtenemos
 al intentar operar directamente el valor leído en una ecuación
 matemática con el siguiente código:</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;x = &quot;</span><span class="p">)</span>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingrese x = &quot;</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span>
 <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Se obtiene el error:</p>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese x = 3
+</pre></div>
+</div>
 <div class="highlight-python"><div class="highlight"><pre>---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
-&lt;ipython-input-12-4b6b7082ef31&gt; in &lt;module&gt;()
-----&gt; 1 y = (x-4)**2-3
+
+&lt;ipython-input-15-3baa5c95d16e&gt; in &lt;module&gt;()
+      1 x = input(&quot;Ingrese x = &quot;)
+----&gt; 2 y = (x-4)**2-3
+      3 print(x,y)
+
 
 TypeError: unsupported operand type(s) for -: &#39;str&#39; and &#39;int&#39;
 </pre></div>
 </div>
-<p>Del mensaje se puede concluir que estamos intentando operar datos de
-diferentes tipos -una cadena de caracteres (str) con enteros- de un modo
-incompatible.</p>
+<p>El error que obtenido se debe a que estamos realizando operaciones
+incompatibles entre diferentes tipos, una cadena de caracteres (str) con
+enteros (int).</p>
 </div>
 <div class="section" id="operadores-relacionales-y-logicos">
 <h3>Operadores relacionales y lógicos<a class="headerlink" href="#operadores-relacionales-y-logicos" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -378,6 +434,10 @@ incompatible.</p>
   <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Introducción</a><ul>
+<li><a class="reference internal" href="#motivacion">Motivación</a><ul>
+<li><a class="reference internal" href="#por-que-python">¿Por qué Python?</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#instalando-python">Instalando Python</a><ul>
 <li><a class="reference internal" href="#windows">Windows</a></li>
 <li><a class="reference internal" href="#gnu-linux">GNU/Linux</a></li>
@@ -386,14 +446,14 @@ incompatible.</p>
 <li><a class="reference internal" href="#entornos-de-programacion">Entornos de programación</a><ul>
 <li><a class="reference internal" href="#el-interprete-interactivo">El intérprete interactivo</a></li>
 <li><a class="reference internal" href="#el-interprete-interactivo-mejorado">El intérprete interactivo mejorado</a></li>
+<li><a class="reference internal" href="#entorno-integrado-de-desarrollo-ide">Entorno integrado de desarrollo (IDE)</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#entorno-integrado-de-desarrollo-ide">Entorno integrado de desarrollo (IDE)</a></li>
 <li><a class="reference internal" href="#el-primer-programa-adios-mundo">El primer programa &#8220;Adiós mundo!&#8221;</a></li>
 <li><a class="reference internal" href="#algoritmos-computacionales">Algoritmos computacionales</a></li>
 <li><a class="reference internal" href="#elementos-de-un-programa">Elementos de un programa</a><ul>
 <li><a class="reference internal" href="#numeros-y-expresiones">Números y expresiones</a></li>
-<li><a class="reference internal" href="#cadenas">Cadenas</a></li>
+<li><a class="reference internal" href="#cadenas-de-carateres">Cadenas de carateres</a></li>
 <li><a class="reference internal" href="#variables">Variables</a></li>
 <li><a class="reference internal" href="#entrada-y-salida-de-datos">Entrada y salida de datos</a></li>
 <li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>
