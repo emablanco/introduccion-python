@@ -187,8 +187,6 @@ Contents:
 
 \chapter{Introducción}
 \label{Unidad01:introduccion}\label{Unidad01::doc}\label{Unidad01:introduccion-al-desarrollo-de-software}
-Docente: Emiliano López (emiliano {[}dot{]} lopez {[}at{]} gmail {[}dot{]} com)
-
 En el presente capítulo introduciremos los conceptos necesarios para
 desarrollar los primeros algoritmos computacionales. Además, se explican
 las herramientas necesarias para llevar a cabo el desarrollo y sus
@@ -333,31 +331,6 @@ encontrarse en la \href{https://wiki.python.org/moin/IntegratedDevelopmentEnviro
 Python}\footnote{https://wiki.python.org/moin/IntegratedDevelopmentEnvironments}
 
 
-\section{El primer programa ``Adiós mundo!''}
-\label{Unidad01:el-primer-programa-adios-mundo}
-El acercamiento inicial a un lenguaje de programación suele ser con el
-archiconocido programa ``Hola mundo''. Consiste simmplemente en un
-programa que muestra en pantalla ese mensaje.
-
-Renunciando a cualquier pretensión de originalidad comenzaremos del
-mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
-\emph{print()} pasando el mensaje de despedida entre comillas, a continuación
-la instrucción.
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Adios mundo cruel!}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
-\end{Verbatim}
-
-Podemos probar la intrucción directamente desde el intérprete, creando
-con un editor de texto plano un archivo guardado como \code{chau.py} y
-luego ejecutándolo desde la terminal haciendo \code{python3 chau.py}, o
-bien utilizando un IDE y haciendo todo desde ahí mismo.
-
-Ahora bien, es muchísimo más lo que podemos hacer programando además de
-saludar cordialmente. Veamos los elementos de un programa que nos
-permitirán realizar tareas más complejas y entretenidas.
-
-
 \section{Algoritmos computacionales}
 \label{Unidad01:algoritmos-computacionales}
 En forma simplificada, un programa o software es un conjunto de
@@ -382,6 +355,31 @@ en un determinado orden, en algunos casos contamos con ingredientes,
 intrucciones, decisiones y acciones que se repiten. No muy distinto a un
 programa de computación, comencemos con algunos \emph{ingredientes} simples
 de Python y veamos lo que podemos hacer con ellos.
+
+
+\subsection{El primer programa ``Adiós mundo!''}
+\label{Unidad01:el-primer-programa-adios-mundo}
+El acercamiento inicial a un lenguaje de programación suele ser con el
+archiconocido programa ``Hola mundo''. Consiste simmplemente en un
+programa que muestra en pantalla ese mensaje.
+
+Renunciando a cualquier pretensión de originalidad comenzaremos del
+mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
+\emph{print()} pasando el mensaje de despedida entre comillas, a continuación
+la instrucción.
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Adios mundo cruel!}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}
+
+Podemos probar la intrucción directamente desde el intérprete, creando
+con un editor de texto plano un archivo guardado como \code{chau.py} y
+luego ejecutándolo desde la terminal haciendo \code{python3 chau.py}, o
+bien utilizando un IDE y haciendo todo desde ahí mismo.
+
+Ahora bien, es muchísimo más lo que podemos hacer programando además de
+saludar cordialmente. Veamos los elementos de un programa que nos
+permitirán realizar tareas más complejas y entretenidas.
 
 
 \section{Elementos de un programa}
@@ -436,7 +434,7 @@ In [12]: 4\PYGZpc{}2
 Out[12]: 0
 \end{Verbatim}
 
-El caso de la potencia, también nos sirve para calcularraices. Veamos
+El caso de la potencia, también nos sirve para calcular raices. Veamos
 una potencia al cubo y luego una raíz cuadrada, equivalente a una
 potencia a la 1/2.
 
@@ -501,9 +499,6 @@ del poema de Fortunato Ramos \emph{Yo jamás fui un niño}):
 \PYG{l+s+sd}{sólo ocho años tengo, pero no soy un niño.}
 \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
 \end{Verbatim}
-\begin{alltt}
-`nMi sonrisa es seca y mi rostro es serio,nmis espaldas anchas, mis músculos durosnmis manos partidas por el crudo fríonsólo ocho años tengo, pero no soy un niño.n'
-\end{alltt}
 
 
 \subsection{Variables}
@@ -513,9 +508,9 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
 (\emph{num1}), para el exponenete (\emph{num2}) y para almacenar el \emph{resultado}:
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{num1} \PYG{o}{=} \PYG{l+m+mi}{5}                              \PYG{c}{\PYGZsh{} A num1 se le asigna el valor numérico 5.}
-\PYG{n}{num2} \PYG{o}{=} \PYG{l+m+mi}{3}                              \PYG{c}{\PYGZsh{} A num2 se le asigna 3.}
-\PYG{n}{resultado} \PYG{o}{=} \PYG{n}{num1}\PYG{o}{*}\PYG{o}{*}\PYG{n}{num2}                \PYG{c}{\PYGZsh{} A resultado se le asigna num1 elevado a num2.}
+\PYG{n}{num1} \PYG{o}{=} \PYG{l+m+mi}{5}                   \PYG{c}{\PYGZsh{} num1 toma valor 5.}
+\PYG{n}{num2} \PYG{o}{=} \PYG{l+m+mi}{3}                   \PYG{c}{\PYGZsh{} num2 toma 3.}
+\PYG{n}{resultado} \PYG{o}{=} \PYG{n}{num1}\PYG{o}{*}\PYG{o}{*}\PYG{n}{num2}     \PYG{c}{\PYGZsh{} resultado toma num1 elevado a num2.}
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{El resultado es}\PYG{l+s}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{resultado}\PYG{p}{)}
 \end{Verbatim}
 
@@ -575,8 +570,8 @@ minúsculas, de modo que juana, JUANA, JuAnA, JUANa son variables
 diferentes. Esta característica suele denominarse como \emph{case-sensitive}.
 
 
-\subsection{Entrada y salida de datos}
-\label{Unidad01:entrada-y-salida-de-datos}
+\subsection{Lectura de datos}
+\label{Unidad01:lectura-de-datos}
 De los ejemplos que vimos, los valores que almacenan las variables
 fueron ingresadas en el mismo código, difícilmente sea útil contar con
 los valores cargados en el programa en forma estática. Por esta razón,
@@ -600,10 +595,46 @@ Hola, Juan de los palotes!
 \end{Verbatim}
 
 Es importante tener en cuenta que toda lectura por teclado utilizando la
-función input() va a almacenar lo ingresado como una variable de tipo
-\emph{str}, es decir una cadena de caracteres. Veamos el error que obtenemos
-al intentar operar directamente el valor leído en una ecuación
-matemática con el siguiente código:
+función \emph{input()} va a almacenar lo ingresado como una variable de tipo
+\emph{str}, es decir una cadena de caracteres. Veamos el comportamiento al
+sumar dos números:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{num1} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese un número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{num2} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese otro número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{El resultado es =}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{num1}\PYG{o}{+}\PYG{n}{num2}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Ingrese un número = 28
+Ingrese otro número = 03
+El resultado es = 2803
+\end{Verbatim}
+
+Claramente la suma de los valores ingresados no da el resultado
+observado. El inconveniente se debe a que ambos valores son tomados como
+cadenas de caracteres y la operación de suma entre cadenas de caracteres
+produce la concatenación de las mismas. Es necesaria convertir la cadena
+de caracteres (str) a un valor numérico, ya sea entero o real (int o
+float).
+
+Para convertir datos de diferentes tipo se utilizan las funciones int(),
+float() o str(). Modificando el caso anterior:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{num1} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese un número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{num2} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese otro número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{El resultado es =}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{num1}\PYG{o}{+}\PYG{n}{num2}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Ingrese un número = 28
+Ingrese otro número = 03
+El resultado es = 31
+\end{Verbatim}
+
+Veamos un ejemplo para operar directamente el valor leído en una
+ecuación matemática con el siguiente código:
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese x = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
@@ -628,9 +659,152 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unsupported operand type(s) for \PYGZhy{}: \PYGZsq{}str\PYGZsq{} and \PYGZsq{}int\PYGZsq{}
 \end{Verbatim}
 
-El error que obtenido se debe a que estamos realizando operaciones
-incompatibles entre diferentes tipos, una cadena de caracteres (str) con
-enteros (int).
+A diferencia del ejemplo visto anteriormente, donde la suma de dos
+cadenas era una operación perfectamente válida, ahora nos encontramos
+con operaciones entre diferentes tipos pero incompatibles. En este caso,
+podemos convertir la entrada en un número flotante para opearar con
+normalidad:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese x = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{y} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
+\PYG{k}{print}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Ingrese x = 3
+3.0 \PYGZhy{}2.0
+\end{Verbatim}
+
+Es posible combinar distintos tipos de datos haciendo la conversión
+correspondiente, en el último ejemplo, tanto \emph{x} como \emph{y} son de tipo
+\emph{float} y es posible concatenarlos a una cadena de caracteres haciendo
+la conversión correspondiente, utilizando la función \emph{str()}:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{mensaje} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{y vale }\PYG{l+s}{\PYGZsq{}} \PYG{o}{+} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)} \PYG{o}{+} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{ para un valor de x = }\PYG{l+s}{\PYGZsq{}}\PYG{o}{+} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+\end{Verbatim}
+
+
+\subsection{Escritura de datos}
+\label{Unidad01:escritura-de-datos}
+Hemos hecho uso de la función \emph{print()} en su mínima expresión. Iremos
+viendo diferentes usos a partir de las siguientes variables:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZsh{} Variables a imprimir}
+\PYG{n}{cad} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Pi es}\PYG{l+s}{\PYGZsq{}}
+\PYG{n}{pi} \PYG{o}{=} \PYG{l+m+mf}{3.1415}
+\PYG{n}{mil} \PYG{o}{=} \PYG{l+m+mi}{1000}
+\PYG{n}{uno} \PYG{o}{=} \PYG{l+m+mi}{1}
+\end{Verbatim}
+
+\textbf{Como argumentos}
+
+La forma más simple es separar los argumentos a ser impresos mediante
+comas.
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{print}\PYG{p}{(}\PYG{n}{cad}\PYG{p}{,}\PYG{n}{pi}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{aproximadamente}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Pi es 3.1415 aproximadamente
+\end{Verbatim}
+
+Por defecto, la separación que se obtiene entre cada argumento es un
+espacio en blanco, sin embargo, se puede cambiar este comportamiento
+agregando como argumento \textbf{*sep=' `*} y entre las comillas incluir el
+separador deseado, por ejemplo:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+print(cad,pi,\PYGZsq{}aproximadamente\PYGZsq{}, sep=\PYGZsq{};\PYGZsq{})
+print(cad,pi,\PYGZsq{}aproximadamente\PYGZsq{}, sep=\PYGZsq{},\PYGZsq{})
+print(cad,pi,\PYGZsq{}aproximadamente\PYGZsq{}, sep=\PYGZsq{}:\PYGZhy{})\PYGZsq{})
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Pi es;3.1415;aproximadamente
+Pi es,3.1415,aproximadamente
+Pi es:\PYGZhy{})3.1415:\PYGZhy{})aproximadamente
+\end{Verbatim}
+
+Como vemos, en cada ejecución la impresión se realiza en diferentes
+renglones, este es el comportamiento por defecto, que puede ser
+modificando agregando el parámetro \textbf{*end='' ``*}. Reflejemos esto con un
+ejemplo:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+print(1, end=\PYGZdq{} \PYGZdq{})
+print(2, end=\PYGZdq{} \PYGZdq{})
+print(3)
+print(4)
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+1 2 3
+4
+\end{Verbatim}
+
+\textbf{Usando comodines}
+
+Los comodines consisten en una marca especial en la cadena a imprimir
+que es reemplazada por la variable y el formato que se le indique.
+Existen tres tipos de comodines, para números enteros, reales
+(flotantes) y para cadenas de caracteres:
+\begin{itemize}
+\item {} 
+Comodín para reales: \%f
+
+\item {} 
+Comodín para enteros: \%d
+
+\item {} 
+Comodín para cadenas: \%s
+
+\end{itemize}
+
+Se utiliza del siguiente modo:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Pi es }\PYG{l+s+si}{\PYGZpc{}f}\PYG{l+s}{ aproximadamente}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{n}{pi}\PYG{p}{)}
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{El número }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s}{ es }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s}{ que }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{mil}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{menor}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}\PYG{n}{mil}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+Pi es 3.141500 aproximadamente
+El número 1000 es menor que 999
+\end{Verbatim}
+
+Es posible formatear los valores, elegir el ancho del campo, la cantidad
+de decimales, entre muchas otras funciones.
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}.2f}\PYG{l+s}{ }\PYG{l+s+si}{\PYGZpc{}.4f}\PYG{l+s}{ }\PYG{l+s+si}{\PYGZpc{}.3f}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{pi}\PYG{p}{,}\PYG{n}{pi}\PYG{p}{,}\PYG{n}{pi}\PYG{p}{)}\PYG{p}{)}
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}4d}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{n}{uno}\PYG{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+3.14 3.1415 3.142
+   1
+\end{Verbatim}
+
+Algunas variantes de lo visto se explica en la siguiente lista:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZpc{}d : un entero
+\PYGZpc{}5d: un entero escrito en un campo de 5 caracteres, alineado a la derecha
+\PYGZpc{}\PYGZhy{}5d: un entero escrito en un campo de 5 caracteres, alineado a la izquierda
+\PYGZpc{}05d: un entero escrito en un campo de 5 caracteres, completado con ceros desde la izquierda (ej. 00041)
+\PYGZpc{}e: flotante escrito en notación científica
+\PYGZpc{}E: como \PYGZpc{}e, pero E en mayúscula
+\PYGZpc{}11.3e: flotante escrito en notación científica con 3 decimales en un campo de 11 caracteres
+\PYGZpc{}.3e: flotante escrito en notación científica con 3 decimales en un campo de ancho mínimo
+\PYGZpc{}5.1f: flotante con un decimal en un campo de 5 de caracteres
+\PYGZpc{}.3f: flotante con 3 decimales en un campo de mínimo ancho
+\PYGZpc{}s: una cadena
+\PYGZpc{}\PYGZhy{}20s: una cadena alineada a la izquierda en un campo de 20 caracteres de ancho
+\end{Verbatim}
 
 
 \subsection{Operadores relacionales y lógicos}

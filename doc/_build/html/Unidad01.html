@@ -53,7 +53,6 @@
             
   <div class="section" id="introduccion">
 <h1>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Docente: Emiliano López (emiliano [dot] lopez [at] gmail [dot] com)</p>
 <p>En el presente capítulo introduciremos los conceptos necesarios para
 desarrollar los primeros algoritmos computacionales. Además, se explican
 las herramientas necesarias para llevar a cabo el desarrollo y sus
@@ -169,26 +168,6 @@ encontrarse en la <a class="reference external" href="https://wiki.python.org/mo
 Python</a></p>
 </div>
 </div>
-<div class="section" id="el-primer-programa-adios-mundo">
-<h2>El primer programa &#8220;Adiós mundo!&#8221;<a class="headerlink" href="#el-primer-programa-adios-mundo" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>El acercamiento inicial a un lenguaje de programación suele ser con el
-archiconocido programa &#8220;Hola mundo&#8221;. Consiste simmplemente en un
-programa que muestra en pantalla ese mensaje.</p>
-<p>Renunciando a cualquier pretensión de originalidad comenzaremos del
-mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
-<em>print()</em> pasando el mensaje de despedida entre comillas, a continuación
-la instrucción.</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Adios mundo cruel!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Podemos probar la intrucción directamente desde el intérprete, creando
-con un editor de texto plano un archivo guardado como <tt class="docutils literal"><span class="pre">chau.py</span></tt> y
-luego ejecutándolo desde la terminal haciendo <tt class="docutils literal"><span class="pre">python3</span> <span class="pre">chau.py</span></tt>, o
-bien utilizando un IDE y haciendo todo desde ahí mismo.</p>
-<p>Ahora bien, es muchísimo más lo que podemos hacer programando además de
-saludar cordialmente. Veamos los elementos de un programa que nos
-permitirán realizar tareas más complejas y entretenidas.</p>
-</div>
 <div class="section" id="algoritmos-computacionales">
 <h2>Algoritmos computacionales<a class="headerlink" href="#algoritmos-computacionales" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>En forma simplificada, un programa o software es un conjunto de
@@ -211,6 +190,26 @@ en un determinado orden, en algunos casos contamos con ingredientes,
 intrucciones, decisiones y acciones que se repiten. No muy distinto a un
 programa de computación, comencemos con algunos <em>ingredientes</em> simples
 de Python y veamos lo que podemos hacer con ellos.</p>
+<div class="section" id="el-primer-programa-adios-mundo">
+<h3>El primer programa &#8220;Adiós mundo!&#8221;<a class="headerlink" href="#el-primer-programa-adios-mundo" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El acercamiento inicial a un lenguaje de programación suele ser con el
+archiconocido programa &#8220;Hola mundo&#8221;. Consiste simmplemente en un
+programa que muestra en pantalla ese mensaje.</p>
+<p>Renunciando a cualquier pretensión de originalidad comenzaremos del
+mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
+<em>print()</em> pasando el mensaje de despedida entre comillas, a continuación
+la instrucción.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Adios mundo cruel!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Podemos probar la intrucción directamente desde el intérprete, creando
+con un editor de texto plano un archivo guardado como <tt class="docutils literal"><span class="pre">chau.py</span></tt> y
+luego ejecutándolo desde la terminal haciendo <tt class="docutils literal"><span class="pre">python3</span> <span class="pre">chau.py</span></tt>, o
+bien utilizando un IDE y haciendo todo desde ahí mismo.</p>
+<p>Ahora bien, es muchísimo más lo que podemos hacer programando además de
+saludar cordialmente. Veamos los elementos de un programa que nos
+permitirán realizar tareas más complejas y entretenidas.</p>
+</div>
 </div>
 <div class="section" id="elementos-de-un-programa">
 <h2>Elementos de un programa<a class="headerlink" href="#elementos-de-un-programa" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -245,7 +244,7 @@ In [12]: 4%2
 Out[12]: 0
 </pre></div>
 </div>
-<p>El caso de la potencia, también nos sirve para calcularraices. Veamos
+<p>El caso de la potencia, también nos sirve para calcular raices. Veamos
 una potencia al cubo y luego una raíz cuadrada, equivalente a una
 potencia a la 1/2.</p>
 <div class="code python highlight-python"><div class="highlight"><pre>In [13]: 5**3
@@ -300,18 +299,15 @@ del poema de Fortunato Ramos <em>Yo jamás fui un niño</em>):</p>
 <span class="sd">&#39;&#39;&#39;</span>
 </pre></div>
 </div>
-<pre class="literal-block">
-'nMi sonrisa es seca y mi rostro es serio,nmis espaldas anchas, mis músculos durosnmis manos partidas por el crudo fríonsólo ocho años tengo, pero no soy un niño.n'
-</pre>
 </div>
 <div class="section" id="variables">
 <h3>Variables<a class="headerlink" href="#variables" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Las variables son contenedores para almacenar información. Por ejemplo,
 para elevar un número al cubo podemos utilizar 3 variables, para la base
 (<em>num1</em>), para el exponenete (<em>num2</em>) y para almacenar el <em>resultado</em>:</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="n">num1</span> <span class="o">=</span> <span class="mi">5</span>                              <span class="c"># A num1 se le asigna el valor numérico 5.</span>
-<span class="n">num2</span> <span class="o">=</span> <span class="mi">3</span>                              <span class="c"># A num2 se le asigna 3.</span>
-<span class="n">resultado</span> <span class="o">=</span> <span class="n">num1</span><span class="o">**</span><span class="n">num2</span>                <span class="c"># A resultado se le asigna num1 elevado a num2.</span>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">num1</span> <span class="o">=</span> <span class="mi">5</span>                   <span class="c"># num1 toma valor 5.</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">3</span>                   <span class="c"># num2 toma 3.</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">num1</span><span class="o">**</span><span class="n">num2</span>     <span class="c"># resultado toma num1 elevado a num2.</span>
 <span class="k">print</span><span class="p">(</span><span class="s">&#39;El resultado es&#39;</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -362,8 +358,8 @@ break      except     in         raise
 minúsculas, de modo que juana, JUANA, JuAnA, JUANa son variables
 diferentes. Esta característica suele denominarse como <em>case-sensitive</em>.</p>
 </div>
-<div class="section" id="entrada-y-salida-de-datos">
-<h3>Entrada y salida de datos<a class="headerlink" href="#entrada-y-salida-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="lectura-de-datos">
+<h3>Lectura de datos<a class="headerlink" href="#lectura-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>De los ejemplos que vimos, los valores que almacenan las variables
 fueron ingresadas en el mismo código, difícilmente sea útil contar con
 los valores cargados en el programa en forma estática. Por esta razón,
@@ -382,10 +378,39 @@ Hola, Juan de los palotes!
 </pre></div>
 </div>
 <p>Es importante tener en cuenta que toda lectura por teclado utilizando la
-función input() va a almacenar lo ingresado como una variable de tipo
-<em>str</em>, es decir una cadena de caracteres. Veamos el error que obtenemos
-al intentar operar directamente el valor leído en una ecuación
-matemática con el siguiente código:</p>
+función <em>input()</em> va a almacenar lo ingresado como una variable de tipo
+<em>str</em>, es decir una cadena de caracteres. Veamos el comportamiento al
+sumar dos números:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">num1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingrese un número = &quot;</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingrese otro número = &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;El resultado es =&quot;</span><span class="p">,</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese un número = 28
+Ingrese otro número = 03
+El resultado es = 2803
+</pre></div>
+</div>
+<p>Claramente la suma de los valores ingresados no da el resultado
+observado. El inconveniente se debe a que ambos valores son tomados como
+cadenas de caracteres y la operación de suma entre cadenas de caracteres
+produce la concatenación de las mismas. Es necesaria convertir la cadena
+de caracteres (str) a un valor numérico, ya sea entero o real (int o
+float).</p>
+<p>Para convertir datos de diferentes tipo se utilizan las funciones int(),
+float() o str(). Modificando el caso anterior:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingrese un número = &quot;</span><span class="p">))</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingrese otro número = &quot;</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;El resultado es =&quot;</span><span class="p">,</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese un número = 28
+Ingrese otro número = 03
+El resultado es = 31
+</pre></div>
+</div>
+<p>Veamos un ejemplo para operar directamente el valor leído en una
+ecuación matemática con el siguiente código:</p>
 <div class="code python highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingrese x = &quot;</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span>
 <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
@@ -406,9 +431,120 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unsupported operand type(s) for -: &#39;str&#39; and &#39;int&#39;
 </pre></div>
 </div>
-<p>El error que obtenido se debe a que estamos realizando operaciones
-incompatibles entre diferentes tipos, una cadena de caracteres (str) con
-enteros (int).</p>
+<p>A diferencia del ejemplo visto anteriormente, donde la suma de dos
+cadenas era una operación perfectamente válida, ahora nos encontramos
+con operaciones entre diferentes tipos pero incompatibles. En este caso,
+podemos convertir la entrada en un número flotante para opearar con
+normalidad:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingrese x = &quot;</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese x = 3
+3.0 -2.0
+</pre></div>
+</div>
+<p>Es posible combinar distintos tipos de datos haciendo la conversión
+correspondiente, en el último ejemplo, tanto <em>x</em> como <em>y</em> son de tipo
+<em>float</em> y es posible concatenarlos a una cadena de caracteres haciendo
+la conversión correspondiente, utilizando la función <em>str()</em>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">mensaje</span> <span class="o">=</span> <span class="s">&#39;y vale &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39; para un valor de x = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="escritura-de-datos">
+<h3>Escritura de datos<a class="headerlink" href="#escritura-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hemos hecho uso de la función <em>print()</em> en su mínima expresión. Iremos
+viendo diferentes usos a partir de las siguientes variables:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Variables a imprimir</span>
+<span class="n">cad</span> <span class="o">=</span> <span class="s">&#39;Pi es&#39;</span>
+<span class="n">pi</span> <span class="o">=</span> <span class="mf">3.1415</span>
+<span class="n">mil</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">uno</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p><strong>Como argumentos</strong></p>
+<p>La forma más simple es separar los argumentos a ser impresos mediante
+comas.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">cad</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="s">&#39;aproximadamente&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Pi es 3.1415 aproximadamente
+</pre></div>
+</div>
+<p>Por defecto, la separación que se obtiene entre cada argumento es un
+espacio en blanco, sin embargo, se puede cambiar este comportamiento
+agregando como argumento <strong>*sep=&#8217; &#8216;*</strong> y entre las comillas incluir el
+separador deseado, por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>print(cad,pi,&#39;aproximadamente&#39;, sep=&#39;;&#39;)
+print(cad,pi,&#39;aproximadamente&#39;, sep=&#39;,&#39;)
+print(cad,pi,&#39;aproximadamente&#39;, sep=&#39;:-)&#39;)
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Pi es;3.1415;aproximadamente
+Pi es,3.1415,aproximadamente
+Pi es:-)3.1415:-)aproximadamente
+</pre></div>
+</div>
+<p>Como vemos, en cada ejecución la impresión se realiza en diferentes
+renglones, este es el comportamiento por defecto, que puede ser
+modificando agregando el parámetro <strong>*end=&#8221; &#8220;*</strong>. Reflejemos esto con un
+ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>print(1, end=&quot; &quot;)
+print(2, end=&quot; &quot;)
+print(3)
+print(4)
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>1 2 3
+4
+</pre></div>
+</div>
+<p><strong>Usando comodines</strong></p>
+<p>Los comodines consisten en una marca especial en la cadena a imprimir
+que es reemplazada por la variable y el formato que se le indique.
+Existen tres tipos de comodines, para números enteros, reales
+(flotantes) y para cadenas de caracteres:</p>
+<ul class="simple">
+<li>Comodín para reales: %f</li>
+<li>Comodín para enteros: %d</li>
+<li>Comodín para cadenas: %s</li>
+</ul>
+<p>Se utiliza del siguiente modo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&#39;Pi es </span><span class="si">%f</span><span class="s"> aproximadamente&#39;</span> <span class="o">%</span><span class="n">pi</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;El número </span><span class="si">%d</span><span class="s"> es </span><span class="si">%s</span><span class="s"> que </span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">mil</span><span class="p">,</span><span class="s">&quot;menor&quot;</span><span class="p">,</span><span class="n">mil</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Pi es 3.141500 aproximadamente
+El número 1000 es menor que 999
+</pre></div>
+</div>
+<p>Es posible formatear los valores, elegir el ancho del campo, la cantidad
+de decimales, entre muchas otras funciones.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%.2f</span><span class="s"> </span><span class="si">%.4f</span><span class="s"> </span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%4d</span><span class="s">&#39;</span> <span class="o">%</span><span class="n">uno</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>3.14 3.1415 3.142
+   1
+</pre></div>
+</div>
+<p>Algunas variantes de lo visto se explica en la siguiente lista:</p>
+<div class="highlight-python"><div class="highlight"><pre>%d : un entero
+%5d: un entero escrito en un campo de 5 caracteres, alineado a la derecha
+%-5d: un entero escrito en un campo de 5 caracteres, alineado a la izquierda
+%05d: un entero escrito en un campo de 5 caracteres, completado con ceros desde la izquierda (ej. 00041)
+%e: flotante escrito en notación científica
+%E: como %e, pero E en mayúscula
+%11.3e: flotante escrito en notación científica con 3 decimales en un campo de 11 caracteres
+%.3e: flotante escrito en notación científica con 3 decimales en un campo de ancho mínimo
+%5.1f: flotante con un decimal en un campo de 5 de caracteres
+%.3f: flotante con 3 decimales en un campo de mínimo ancho
+%s: una cadena
+%-20s: una cadena alineada a la izquierda en un campo de 20 caracteres de ancho
+</pre></div>
+</div>
 </div>
 <div class="section" id="operadores-relacionales-y-logicos">
 <h3>Operadores relacionales y lógicos<a class="headerlink" href="#operadores-relacionales-y-logicos" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -449,13 +585,16 @@ enteros (int).</p>
 <li><a class="reference internal" href="#entorno-integrado-de-desarrollo-ide">Entorno integrado de desarrollo (IDE)</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#algoritmos-computacionales">Algoritmos computacionales</a><ul>
 <li><a class="reference internal" href="#el-primer-programa-adios-mundo">El primer programa &#8220;Adiós mundo!&#8221;</a></li>
-<li><a class="reference internal" href="#algoritmos-computacionales">Algoritmos computacionales</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#elementos-de-un-programa">Elementos de un programa</a><ul>
 <li><a class="reference internal" href="#numeros-y-expresiones">Números y expresiones</a></li>
 <li><a class="reference internal" href="#cadenas-de-carateres">Cadenas de carateres</a></li>
 <li><a class="reference internal" href="#variables">Variables</a></li>
-<li><a class="reference internal" href="#entrada-y-salida-de-datos">Entrada y salida de datos</a></li>
+<li><a class="reference internal" href="#lectura-de-datos">Lectura de datos</a></li>
+<li><a class="reference internal" href="#escritura-de-datos">Escritura de datos</a></li>
 <li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>
 <li><a class="reference internal" href="#funciones">Funciones</a></li>
 <li><a class="reference internal" href="#modulos">Módulos</a></li>

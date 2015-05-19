@@ -2,8 +2,6 @@
 Introducción
 ============
 
-Docente: Emiliano López (emiliano [dot] lopez [at] gmail [dot] com)
-
 En el presente capítulo introduciremos los conceptos necesarios para
 desarrollar los primeros algoritmos computacionales. Además, se explican
 las herramientas necesarias para llevar a cabo el desarrollo y sus
@@ -136,31 +134,6 @@ Una lista bastante completa sobre las IDEs disponibles pueden
 encontrarse en la `wiki oficial de
 Python <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`__
 
-El primer programa "Adiós mundo!"
----------------------------------
-
-El acercamiento inicial a un lenguaje de programación suele ser con el
-archiconocido programa "Hola mundo". Consiste simmplemente en un
-programa que muestra en pantalla ese mensaje.
-
-Renunciando a cualquier pretensión de originalidad comenzaremos del
-mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
-*print()* pasando el mensaje de despedida entre comillas, a continuación
-la instrucción.
-
-.. code:: python
-
-    print("Adios mundo cruel!")
-
-Podemos probar la intrucción directamente desde el intérprete, creando
-con un editor de texto plano un archivo guardado como ``chau.py`` y
-luego ejecutándolo desde la terminal haciendo ``python3 chau.py``, o
-bien utilizando un IDE y haciendo todo desde ahí mismo.
-
-Ahora bien, es muchísimo más lo que podemos hacer programando además de
-saludar cordialmente. Veamos los elementos de un programa que nos
-permitirán realizar tareas más complejas y entretenidas.
-
 Algoritmos computacionales
 --------------------------
 
@@ -186,6 +159,31 @@ en un determinado orden, en algunos casos contamos con ingredientes,
 intrucciones, decisiones y acciones que se repiten. No muy distinto a un
 programa de computación, comencemos con algunos *ingredientes* simples
 de Python y veamos lo que podemos hacer con ellos.
+
+El primer programa "Adiós mundo!"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+El acercamiento inicial a un lenguaje de programación suele ser con el
+archiconocido programa "Hola mundo". Consiste simmplemente en un
+programa que muestra en pantalla ese mensaje.
+
+Renunciando a cualquier pretensión de originalidad comenzaremos del
+mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
+*print()* pasando el mensaje de despedida entre comillas, a continuación
+la instrucción.
+
+.. code:: python
+
+    print("Adios mundo cruel!")
+
+Podemos probar la intrucción directamente desde el intérprete, creando
+con un editor de texto plano un archivo guardado como ``chau.py`` y
+luego ejecutándolo desde la terminal haciendo ``python3 chau.py``, o
+bien utilizando un IDE y haciendo todo desde ahí mismo.
+
+Ahora bien, es muchísimo más lo que podemos hacer programando además de
+saludar cordialmente. Veamos los elementos de un programa que nos
+permitirán realizar tareas más complejas y entretenidas.
 
 Elementos de un programa
 ------------------------
@@ -225,7 +223,7 @@ estándar. Veamos unos ejemplos.
     In [12]: 4%2
     Out[12]: 0
 
-El caso de la potencia, también nos sirve para calcularraices. Veamos
+El caso de la potencia, también nos sirve para calcular raices. Veamos
 una potencia al cubo y luego una raíz cuadrada, equivalente a una
 potencia a la 1/2.
 
@@ -291,14 +289,6 @@ del poema de Fortunato Ramos *Yo jamás fui un niño*):
     sólo ocho años tengo, pero no soy un niño.
     '''
 
-
-
-.. parsed-literal::
-
-    '\nMi sonrisa es seca y mi rostro es serio,\nmis espaldas anchas, mis músculos duros\nmis manos partidas por el crudo frío\nsólo ocho años tengo, pero no soy un niño.\n'
-
-
-
 Variables
 ~~~~~~~~~
 
@@ -308,9 +298,9 @@ para elevar un número al cubo podemos utilizar 3 variables, para la base
 
 .. code:: python
 
-    num1 = 5                              # A num1 se le asigna el valor numérico 5.
-    num2 = 3                              # A num2 se le asigna 3.    
-    resultado = num1**num2                # A resultado se le asigna num1 elevado a num2. 
+    num1 = 5                   # num1 toma valor 5.
+    num2 = 3                   # num2 toma 3.    
+    resultado = num1**num2     # resultado toma num1 elevado a num2. 
     print('El resultado es', resultado)
 
 El operador igual (=) sirve para asignar lo que está a su derecha, a la
@@ -368,8 +358,8 @@ Se debe tener en cuenta que las variables diferencian entre mayúsculas y
 minúsculas, de modo que juana, JUANA, JuAnA, JUANa son variables
 diferentes. Esta característica suele denominarse como *case-sensitive*.
 
-Entrada y salida de datos
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Lectura de datos
+~~~~~~~~~~~~~~~~
 
 De los ejemplos que vimos, los valores que almacenan las variables
 fueron ingresadas en el mismo código, difícilmente sea útil contar con
@@ -394,10 +384,48 @@ El comportamiento es:
     Hola, Juan de los palotes!
 
 Es importante tener en cuenta que toda lectura por teclado utilizando la
-función input() va a almacenar lo ingresado como una variable de tipo
-*str*, es decir una cadena de caracteres. Veamos el error que obtenemos
-al intentar operar directamente el valor leído en una ecuación
-matemática con el siguiente código:
+función *input()* va a almacenar lo ingresado como una variable de tipo
+*str*, es decir una cadena de caracteres. Veamos el comportamiento al
+sumar dos números:
+
+.. code:: python
+
+    num1 = input("Ingrese un número = ")
+    num2 = input("Ingrese otro número = ")
+    print("El resultado es =", num1+num2)
+
+.. parsed-literal::
+
+    Ingrese un número = 28
+    Ingrese otro número = 03
+    El resultado es = 2803
+
+
+Claramente la suma de los valores ingresados no da el resultado
+observado. El inconveniente se debe a que ambos valores son tomados como
+cadenas de caracteres y la operación de suma entre cadenas de caracteres
+produce la concatenación de las mismas. Es necesaria convertir la cadena
+de caracteres (str) a un valor numérico, ya sea entero o real (int o
+float).
+
+Para convertir datos de diferentes tipo se utilizan las funciones int(),
+float() o str(). Modificando el caso anterior:
+
+.. code:: python
+
+    num1 = int(input("Ingrese un número = "))
+    num2 = int(input("Ingrese otro número = "))
+    print("El resultado es =", num1+num2)
+
+.. parsed-literal::
+
+    Ingrese un número = 28
+    Ingrese otro número = 03
+    El resultado es = 31
+
+
+Veamos un ejemplo para operar directamente el valor leído en una
+ecuación matemática con el siguiente código:
 
 .. code:: python
 
@@ -425,9 +453,149 @@ matemática con el siguiente código:
     TypeError: unsupported operand type(s) for -: 'str' and 'int'
 
 
-El error que obtenido se debe a que estamos realizando operaciones
-incompatibles entre diferentes tipos, una cadena de caracteres (str) con
-enteros (int).
+A diferencia del ejemplo visto anteriormente, donde la suma de dos
+cadenas era una operación perfectamente válida, ahora nos encontramos
+con operaciones entre diferentes tipos pero incompatibles. En este caso,
+podemos convertir la entrada en un número flotante para opearar con
+normalidad:
+
+.. code:: python
+
+    x = float(input("Ingrese x = "))
+    y = (x-4)**2-3
+    print(x,y)
+
+.. parsed-literal::
+
+    Ingrese x = 3
+    3.0 -2.0
+
+
+Es posible combinar distintos tipos de datos haciendo la conversión
+correspondiente, en el último ejemplo, tanto *x* como *y* son de tipo
+*float* y es posible concatenarlos a una cadena de caracteres haciendo
+la conversión correspondiente, utilizando la función *str()*:
+
+.. code:: python
+
+    mensaje = 'y vale ' + str(y) + ' para un valor de x = '+ str(x)
+Escritura de datos
+~~~~~~~~~~~~~~~~~~
+
+Hemos hecho uso de la función *print()* en su mínima expresión. Iremos
+viendo diferentes usos a partir de las siguientes variables:
+
+.. code:: python
+
+    # Variables a imprimir
+    cad = 'Pi es'
+    pi = 3.1415
+    mil = 1000
+    uno = 1
+**Como argumentos**
+
+La forma más simple es separar los argumentos a ser impresos mediante
+comas.
+
+.. code:: python
+
+    print(cad,pi,'aproximadamente')
+
+.. parsed-literal::
+
+    Pi es 3.1415 aproximadamente
+
+
+Por defecto, la separación que se obtiene entre cada argumento es un
+espacio en blanco, sin embargo, se puede cambiar este comportamiento
+agregando como argumento ***sep=' '*** y entre las comillas incluir el
+separador deseado, por ejemplo:
+
+.. code:: python
+
+    print(cad,pi,'aproximadamente', sep=';')
+    print(cad,pi,'aproximadamente', sep=',')
+    print(cad,pi,'aproximadamente', sep=':-)')
+
+.. parsed-literal::
+
+    Pi es;3.1415;aproximadamente
+    Pi es,3.1415,aproximadamente
+    Pi es:-)3.1415:-)aproximadamente
+
+
+Como vemos, en cada ejecución la impresión se realiza en diferentes
+renglones, este es el comportamiento por defecto, que puede ser
+modificando agregando el parámetro ***end=" "***. Reflejemos esto con un
+ejemplo:
+
+.. code:: python
+
+    print(1, end=" ")
+    print(2, end=" ")
+    print(3)
+    print(4)
+
+.. parsed-literal::
+
+    1 2 3
+    4
+
+
+**Usando comodines**
+
+Los comodines consisten en una marca especial en la cadena a imprimir
+que es reemplazada por la variable y el formato que se le indique.
+Existen tres tipos de comodines, para números enteros, reales
+(flotantes) y para cadenas de caracteres:
+
+-  Comodín para reales: %f
+-  Comodín para enteros: %d
+-  Comodín para cadenas: %s
+
+Se utiliza del siguiente modo:
+
+.. code:: python
+
+    print('Pi es %f aproximadamente' %pi)   
+    print('El número %d es %s que %d' %(mil,"menor",mil-1))
+
+.. parsed-literal::
+
+    Pi es 3.141500 aproximadamente
+    El número 1000 es menor que 999
+
+
+Es posible formatear los valores, elegir el ancho del campo, la cantidad
+de decimales, entre muchas otras funciones.
+
+.. code:: python
+
+    print('%.2f %.4f %.3f' %(pi,pi,pi))
+    print('%4d' %uno)
+
+.. parsed-literal::
+
+    3.14 3.1415 3.142
+       1
+
+
+Algunas variantes de lo visto se explica en la siguiente lista:
+
+::
+
+    %d : un entero
+    %5d: un entero escrito en un campo de 5 caracteres, alineado a la derecha
+    %-5d: un entero escrito en un campo de 5 caracteres, alineado a la izquierda
+    %05d: un entero escrito en un campo de 5 caracteres, completado con ceros desde la izquierda (ej. 00041)
+    %e: flotante escrito en notación científica
+    %E: como %e, pero E en mayúscula
+    %11.3e: flotante escrito en notación científica con 3 decimales en un campo de 11 caracteres
+    %.3e: flotante escrito en notación científica con 3 decimales en un campo de ancho mínimo
+    %5.1f: flotante con un decimal en un campo de 5 de caracteres
+    %.3f: flotante con 3 decimales en un campo de mínimo ancho
+    %s: una cadena
+    %-20s: una cadena alineada a la izquierda en un campo de 20 caracteres de ancho
 
 Operadores relacionales y lógicos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
