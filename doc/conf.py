@@ -187,15 +187,74 @@ htmlhelp_basename = 'Introduccinaldesarrollodesoftwaredoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
+
+_PREAMBLE = ur"""
+  \setcounter{tocdepth}{2}
+  \fancypagestyle{normal}{
+    \fancyhf{}
+    % Footer
+
+    \fancyfoot[LE,RO]{{\textbf{\textsf{\thepage}}}}
+    \fancyfoot[LO]{{\sffamily\bfseries\nouppercase{\textbf{\rightmark}}}}
+    \fancyfoot[RE]{{\sffamily\bfseries\nouppercase{\textbf{\leftmark}}}}
+
+    \fancyhead[LE,RO]{{\sffamily\bfseries\nouppercase{\textit{Introducción al desarrollo de software}}}}
+
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+  }
+  % Update the plain style so we get the page number & footer line,
+  % but not a chapter or section title.  This is to keep the first
+  % page of a chapter and the blank page between chapters `clean.'
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[RO,RE]{{\textbf{\textsf{\thepage}}}}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+  }
+"""
+
+_TITLE = ur"""
+\begin{titlepage}%
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \rule{\textwidth}{1pt}%
+    \begin{flushright}%
+      \sphinxlogo%
+      \vspace{15 mm}
+      {\rm\Huge Introducción al desarrollo de software\\ }
+      {\em\large Tecnicatura Universitaria en Software Libre}
+      \vfill
+      {
+        \begin{tabular}[t]{c}
+          \large Emiliano P. López
+        \end{tabular}
+        \par}
+      \vfill\vfill
+      {\large
+        Mayo de 2015
+       \vfill
+       UNIVERSIDAD NACIONAL DEL LITORAL\\
+          Facutlad de Ingeniería y Ciencias Hídricas\\
+      }%
+    \end{flushright}%\par
+  \end{titlepage}%
+  %\vspace{\fill}
+  %\includegraphics{cc.png}
+  \cleardoublepage%
+  \phantomsection\label{pre:dedication}
+  \vspace*{\fill}
+  \begin{flushright}
+    \emph{A todos los que están mirando,\\por el amor}
+  \end{flushright}
+  \vspace{\fill}
+"""
+
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
-
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
-
-# Additional stuff for the LaTeX preamble.
-'preamble': '\setcounter{tocdepth}{2}',
+'papersize': 'a4paper',
+'pointsize': '12pt',
+'preamble': _PREAMBLE,
+'maketitle': _TITLE,
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

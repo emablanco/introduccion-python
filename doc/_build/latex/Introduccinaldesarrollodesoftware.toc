@@ -4,22 +4,22 @@
 \contentsline {subsection}{\numberline {1.1.1}\IeC {\textquestiondown }Por qu\IeC {\'e} Python?}{3}{subsection.1.1.1}
 \contentsline {section}{\numberline {1.2}Instalando Python}{3}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Windows}{3}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}GNU/Linux}{3}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}GNU/Linux}{4}{subsection.1.2.2}
 \contentsline {section}{\numberline {1.3}Entornos de programaci\IeC {\'o}n}{4}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}El int\IeC {\'e}rprete interactivo}{4}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}El int\IeC {\'e}rprete interactivo mejorado}{4}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Entorno integrado de desarrollo (IDE)}{4}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.3}Entorno integrado de desarrollo (IDE)}{5}{subsection.1.3.3}
 \contentsline {section}{\numberline {1.4}El primer programa ``Adi\IeC {\'o}s mundo!''}{5}{section.1.4}
-\contentsline {section}{\numberline {1.5}Algoritmos computacionales}{5}{section.1.5}
+\contentsline {section}{\numberline {1.5}Algoritmos computacionales}{6}{section.1.5}
 \contentsline {section}{\numberline {1.6}Elementos de un programa}{6}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}N\IeC {\'u}meros y expresiones}{6}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Cadenas de carateres}{7}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Variables}{7}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Entrada y salida de datos}{8}{subsection.1.6.4}
-\contentsline {subsection}{\numberline {1.6.5}Operadores relacionales y l\IeC {\'o}gicos}{9}{subsection.1.6.5}
-\contentsline {subsection}{\numberline {1.6.6}Funciones}{9}{subsection.1.6.6}
-\contentsline {subsection}{\numberline {1.6.7}M\IeC {\'o}dulos}{9}{subsection.1.6.7}
-\contentsline {section}{\numberline {1.7}Ejercicios}{9}{section.1.7}
+\contentsline {subsection}{\numberline {1.6.3}Variables}{8}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Entrada y salida de datos}{9}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}Operadores relacionales y l\IeC {\'o}gicos}{10}{subsection.1.6.5}
+\contentsline {subsection}{\numberline {1.6.6}Funciones}{10}{subsection.1.6.6}
+\contentsline {subsection}{\numberline {1.6.7}M\IeC {\'o}dulos}{10}{subsection.1.6.7}
+\contentsline {section}{\numberline {1.7}Ejercicios}{10}{section.1.7}
 \contentsline {chapter}{\numberline {2}Estructuras de control}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Condicionales}{11}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}if}{11}{subsection.2.1.1}
@@ -36,7 +36,7 @@
 \contentsline {chapter}{\numberline {4}Funciones, archivos, diccionarios}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Definiendo funciones}{15}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Variables globales y locales}{15}{subsection.4.1.1}
-\contentsline {subsubsection}{Agrupando el c\IeC {\'o}digo en m\IeC {\'o}dulos}{15}{subsubsection*.3}
+\contentsline {subsubsection}{Agrupando el c\IeC {\'o}digo en m\IeC {\'o}dulos}{15}{subsubsection*.4}
 \contentsline {section}{\numberline {4.2}N\IeC {\'u}meros aleatorios}{15}{section.4.2}
 \contentsline {section}{\numberline {4.3}Lectura y escritura de archivos}{15}{section.4.3}
 \contentsline {section}{\numberline {4.4}Diccionarios}{15}{section.4.4}
