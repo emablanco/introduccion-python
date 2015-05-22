@@ -38,7 +38,7 @@
 
 
 \title{Introducción al desarrollo de software}
-\date{19 de May de 2015}
+\date{21 de May de 2015}
 \release{1.0}
 \author{Emiliano López}
 \newcommand{\sphinxlogo}{}
@@ -244,7 +244,7 @@ siguientes comandos desde una terminal:
 
 Para sistemas basados en Debian (como Ubuntu o sus derivados):
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 apt\PYGZhy{}get install python3
 \end{Verbatim}
 
@@ -258,7 +258,7 @@ Ya con el intérprete de Python podemos comenzar programar. Si ejecutamos
 en una terminal \code{python3}, ingresaremos al intérprete en modo
 interactivo y veremos una salida similar a la siguiente:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Python 3.4.2 (default, Oct  8 2014, 10:45:20)
 [GCC 4.9.1] on linux
 Type \PYGZdq{}help\PYGZdq{}, \PYGZdq{}copyright\PYGZdq{}, \PYGZdq{}credits\PYGZdq{} or \PYGZdq{}license\PYGZdq{} for more information.
@@ -268,7 +268,7 @@ Type \PYGZdq{}help\PYGZdq{}, \PYGZdq{}copyright\PYGZdq{}, \PYGZdq{}credits\PYGZd
 Podemos ejecutar algunas operaciones matemáticas para corroborar su
 funcionamiento.
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{l+m+mi}{5}
 \PYG{g+go}{10}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{l+m+mi}{5}\PYG{o}{+}\PYG{l+m+mi}{10}
@@ -288,7 +288,7 @@ web. La instalación en GNU/Linux es: \code{apt-get install ipython3}.
 La ejecución de ipython desde una terminal nos arroja una pantalla
 similar a la siguiente:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 emiliano@pynandi:\PYGZti{} \PYGZdl{} ipython3
 Python 3.4.2 (default, Oct  8 2014, 10:45:20)
 Type \PYGZdq{}copyright\PYGZdq{}, \PYGZdq{}credits\PYGZdq{} or \PYGZdq{}license\PYGZdq{} for more information.
@@ -339,7 +339,7 @@ formado por un conjunto de instrucciones es lo que denominamos algoritmo
 computacional. Una analogía a un algoritmo computacional es una receta
 de cocina, por ejemplo:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Prender el fuego
 Salar la carne
 Controlar cada 5 minutos hasta que haya brasas
@@ -368,7 +368,7 @@ mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 \emph{print()} pasando el mensaje de despedida entre comillas, a continuación
 la instrucción.
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Adios mundo cruel!}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \end{Verbatim}
 
@@ -420,7 +420,7 @@ división entera: //
 Las operaciones se pueden agrupar con parentesis y tienen precedencia
 estándar. Veamos unos ejemplos.
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 In [9]: 1/3
 Out[9]: 0.3333333333333333
 
@@ -438,7 +438,7 @@ El caso de la potencia, también nos sirve para calcular raices. Veamos
 una potencia al cubo y luego una raíz cuadrada, equivalente a una
 potencia a la 1/2.
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 In [13]: 5**3
 Out[13]: 125
 
@@ -454,7 +454,7 @@ complejos.
 Utilizando la función type() podemos identificar el tipo de dato.
 Veamos:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 In [15]: type(0.333)
 Out[15]: float
 
@@ -471,7 +471,7 @@ secuencias de caracteres encerradas en comillas simples (`...') o dobles
 detalles, que posteriormente veremos, aquí trataremos lo indispensable
 para poder desarrollar los primeros programas. Veamos unos ejemplos:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{huevos y pan}\PYG{l+s}{\PYGZsq{}}         \PYG{c}{\PYGZsh{} comillas simples}
 \PYG{g+go}{\PYGZsq{}huevos y pan\PYGZsq{}}
 \end{Verbatim}
@@ -479,7 +479,7 @@ para poder desarrollar los primeros programas. Veamos unos ejemplos:
 Los operadores algebraicos para la suma y multiplicación tienen efecto
 sobre las cadenas:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{eco }\PYG{l+s}{\PYGZsq{}}\PYG{o}{*}\PYG{l+m+mi}{4}               \PYG{c}{\PYGZsh{} La multiplicación repite la cadena}
 \PYG{g+go}{\PYGZsq{}eco eco eco eco \PYGZsq{}}
 
@@ -491,7 +491,7 @@ Es posible utilizar cadenas de más de una línea, anteponiendo \textbf{triples
 comillas} simples o dobles al inicio y al final, por ejemplo (fragmento
 del poema de Fortunato Ramos \emph{Yo jamás fui un niño}):
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
 \PYG{l+s+sd}{Mi sonrisa es seca y mi rostro es serio,}
 \PYG{l+s+sd}{mis espaldas anchas, mis músculos duros}
@@ -507,7 +507,7 @@ Las variables son contenedores para almacenar información. Por ejemplo,
 para elevar un número al cubo podemos utilizar 3 variables, para la base
 (\emph{num1}), para el exponenete (\emph{num2}) y para almacenar el \emph{resultado}:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{num1} \PYG{o}{=} \PYG{l+m+mi}{5}                   \PYG{c}{\PYGZsh{} num1 toma valor 5.}
 \PYG{n}{num2} \PYG{o}{=} \PYG{l+m+mi}{3}                   \PYG{c}{\PYGZsh{} num2 toma 3.}
 \PYG{n}{resultado} \PYG{o}{=} \PYG{n}{num1}\PYG{o}{*}\PYG{o}{*}\PYG{n}{num2}     \PYG{c}{\PYGZsh{} resultado toma num1 elevado a num2.}
@@ -520,7 +520,7 @@ ecuación para dos valores de \emph{x}, 0.1 y 0.2.
 \begin{gather}
 \begin{split}y = (x-4)^2-3\end{split}\notag
 \end{gather}
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{x1} \PYG{o}{=} \PYG{l+m+mf}{0.1}
 \PYG{n}{y1} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x1}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
 
@@ -533,7 +533,7 @@ ecuación para dos valores de \emph{x}, 0.1 y 0.2.
 
 Veremos la siguiente salida por pantalla:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 0.1 12.209999999999999
 0.2 11.44
 \end{Verbatim}
@@ -541,7 +541,7 @@ Veremos la siguiente salida por pantalla:
 Otros ejemplos utilizando variables que contengan \textbf{cadenas de
 caracteres}:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{cadena1} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{siento que }\PYG{l+s}{\PYGZsq{}}
 \PYG{n}{cadena2} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{nací en el viento }\PYG{l+s}{\PYGZsq{}}
 
@@ -555,7 +555,7 @@ formados por letras, dígitos y guiones bajos, teniendo en cuenta ciertas
 restricciones, no pueden comenzar con un número y ni ser algunas de las
 siguientes palabras reservadas:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 False      class      finally    is         return
 None       continue   for        lambda     try
 True       def        from       nonlocal   while
@@ -581,14 +581,14 @@ ser desde un archivo o bien interactuando con un usuario.
 La lectura de datos desde el teclado se realiza utilizando la sentencia
 \emph{input()} del siguiente modo:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{nombre} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{¿Cómo es su nombre, maestro? }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \PYG{k}{print} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Hola, }\PYG{l+s}{\PYGZdq{}} \PYG{o}{+} \PYG{n}{nombre} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{!}\PYG{l+s}{\PYGZdq{}}
 \end{Verbatim}
 
 El comportamiento es:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 ¿Cómo es su nombre, maestro?
 Juan de los palotes
 Hola, Juan de los palotes!
@@ -599,13 +599,13 @@ función \emph{input()} va a almacenar lo ingresado como una variable de tipo
 \emph{str}, es decir una cadena de caracteres. Veamos el comportamiento al
 sumar dos números:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{num1} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese un número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \PYG{n}{num2} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese otro número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{El resultado es =}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{num1}\PYG{o}{+}\PYG{n}{num2}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Ingrese un número = 28
 Ingrese otro número = 03
 El resultado es = 2803
@@ -621,13 +621,13 @@ float).
 Para convertir datos de diferentes tipo se utilizan las funciones int(),
 float() o str(). Modificando el caso anterior:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{num1} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese un número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
 \PYG{n}{num2} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese otro número = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{El resultado es =}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{num1}\PYG{o}{+}\PYG{n}{num2}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Ingrese un número = 28
 Ingrese otro número = 03
 El resultado es = 31
@@ -636,17 +636,17 @@ El resultado es = 31
 Veamos un ejemplo para operar directamente el valor leído en una
 ecuación matemática con el siguiente código:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese x = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \PYG{n}{y} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
 \PYG{k}{print}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Ingrese x = 3
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
 TypeError                                 Traceback (most recent call last)
 
@@ -665,13 +665,13 @@ con operaciones entre diferentes tipos pero incompatibles. En este caso,
 podemos convertir la entrada en un número flotante para opearar con
 normalidad:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Ingrese x = }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
 \PYG{n}{y} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}
 \PYG{k}{print}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Ingrese x = 3
 3.0 \PYGZhy{}2.0
 \end{Verbatim}
@@ -681,7 +681,7 @@ correspondiente, en el último ejemplo, tanto \emph{x} como \emph{y} son de tipo
 \emph{float} y es posible concatenarlos a una cadena de caracteres haciendo
 la conversión correspondiente, utilizando la función \emph{str()}:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{n}{mensaje} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{y vale }\PYG{l+s}{\PYGZsq{}} \PYG{o}{+} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)} \PYG{o}{+} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{ para un valor de x = }\PYG{l+s}{\PYGZsq{}}\PYG{o}{+} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
 \end{Verbatim}
 
@@ -691,7 +691,7 @@ la conversión correspondiente, utilizando la función \emph{str()}:
 Hemos hecho uso de la función \emph{print()} en su mínima expresión. Iremos
 viendo diferentes usos a partir de las siguientes variables:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{c}{\PYGZsh{} Variables a imprimir}
 \PYG{n}{cad} \PYG{o}{=} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Pi es}\PYG{l+s}{\PYGZsq{}}
 \PYG{n}{pi} \PYG{o}{=} \PYG{l+m+mf}{3.1415}
@@ -704,11 +704,11 @@ viendo diferentes usos a partir de las siguientes variables:
 La forma más simple es separar los argumentos a ser impresos mediante
 comas.
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{k}{print}\PYG{p}{(}\PYG{n}{cad}\PYG{p}{,}\PYG{n}{pi}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{aproximadamente}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Pi es 3.1415 aproximadamente
 \end{Verbatim}
 
@@ -717,16 +717,17 @@ espacio en blanco, sin embargo, se puede cambiar este comportamiento
 agregando como argumento \textbf{*sep=' `*} y entre las comillas incluir el
 separador deseado, por ejemplo:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 print(cad,pi,\PYGZsq{}aproximadamente\PYGZsq{}, sep=\PYGZsq{};\PYGZsq{})
 print(cad,pi,\PYGZsq{}aproximadamente\PYGZsq{}, sep=\PYGZsq{},\PYGZsq{})
 print(cad,pi,\PYGZsq{}aproximadamente\PYGZsq{}, sep=\PYGZsq{}:\PYGZhy{})\PYGZsq{})
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
-Pi es;3.1415;aproximadamente
-Pi es,3.1415,aproximadamente
-Pi es:\PYGZhy{})3.1415:\PYGZhy{})aproximadamente
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
+  File \PYGZdq{}\PYGZlt{}ipython\PYGZhy{}input\PYGZhy{}2\PYGZhy{}1b79b6c15965\PYGZgt{}\PYGZdq{}, line 1
+    print(cad,pi,\PYGZsq{}aproximadamente\PYGZsq{}, sep=\PYGZsq{};\PYGZsq{})
+                                       \PYGZca{}
+SyntaxError: invalid syntax
 \end{Verbatim}
 
 Como vemos, en cada ejecución la impresión se realiza en diferentes
@@ -734,14 +735,14 @@ renglones, este es el comportamiento por defecto, que puede ser
 modificando agregando el parámetro \textbf{*end='' ``*}. Reflejemos esto con un
 ejemplo:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 print(1, end=\PYGZdq{} \PYGZdq{})
 print(2, end=\PYGZdq{} \PYGZdq{})
 print(3)
 print(4)
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 1 2 3
 4
 \end{Verbatim}
@@ -764,14 +765,14 @@ Comodín para cadenas: \%s
 
 \end{itemize}
 
-Se utiliza del siguiente modo:
+Se utilizan del siguiente modo:
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Pi es }\PYG{l+s+si}{\PYGZpc{}f}\PYG{l+s}{ aproximadamente}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{n}{pi}\PYG{p}{)}
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{El número }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s}{ es }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s}{ que }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{mil}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{menor}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}\PYG{n}{mil}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 Pi es 3.141500 aproximadamente
 El número 1000 es menor que 999
 \end{Verbatim}
@@ -779,32 +780,61 @@ El número 1000 es menor que 999
 Es posible formatear los valores, elegir el ancho del campo, la cantidad
 de decimales, entre muchas otras funciones.
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}.2f}\PYG{l+s}{ }\PYG{l+s+si}{\PYGZpc{}.4f}\PYG{l+s}{ }\PYG{l+s+si}{\PYGZpc{}.3f}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{pi}\PYG{p}{,}\PYG{n}{pi}\PYG{p}{,}\PYG{n}{pi}\PYG{p}{)}\PYG{p}{)}
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}4d}\PYG{l+s}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{n}{uno}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 3.14 3.1415 3.142
    1
 \end{Verbatim}
 
 Algunas variantes de lo visto se explica en la siguiente lista:
+\begin{itemize}
+\item {} 
+\%d : un entero
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYGZpc{}d : un entero
-\PYGZpc{}5d: un entero escrito en un campo de 5 caracteres, alineado a la derecha
-\PYGZpc{}\PYGZhy{}5d: un entero escrito en un campo de 5 caracteres, alineado a la izquierda
-\PYGZpc{}05d: un entero escrito en un campo de 5 caracteres, completado con ceros desde la izquierda (ej. 00041)
-\PYGZpc{}e: flotante escrito en notación científica
-\PYGZpc{}E: como \PYGZpc{}e, pero E en mayúscula
-\PYGZpc{}11.3e: flotante escrito en notación científica con 3 decimales en un campo de 11 caracteres
-\PYGZpc{}.3e: flotante escrito en notación científica con 3 decimales en un campo de ancho mínimo
-\PYGZpc{}5.1f: flotante con un decimal en un campo de 5 de caracteres
-\PYGZpc{}.3f: flotante con 3 decimales en un campo de mínimo ancho
-\PYGZpc{}s: una cadena
-\PYGZpc{}\PYGZhy{}20s: una cadena alineada a la izquierda en un campo de 20 caracteres de ancho
-\end{Verbatim}
+\item {} 
+\%5d: un entero escrito en un campo de 5 caracteres, alineado a la
+derecha
+
+\item {} 
+\%-5d: un entero escrito en un campo de 5 caracteres, alineado a la
+izquierda
+
+\item {} 
+\%05d: un entero escrito en un campo de 5 caracteres, completado con
+ceros desde la izquierda (ej. 00041)
+
+\item {} 
+\%e: flotante escrito en notación científica
+
+\item {} 
+\%E: como \%e, pero E en mayúscula
+
+\item {} 
+\%11.3e: flotante escrito en notación científica con 3 decimales en un
+campo de 11 caracteres
+
+\item {} 
+\%.3e: flotante escrito en notación científica con 3 decimales en un
+campo de ancho mínimo
+
+\item {} 
+\%5.1f: flotante con un decimal en un campo de 5 de caracteres
+
+\item {} 
+\%.3f: flotante con 3 decimales en un campo de mínimo ancho
+
+\item {} 
+\%s: una cadena
+
+\item {} 
+\%-20s: una cadena alineada a la izquierda en un campo de 20
+caracteres de ancho
+
+\end{itemize}
 
 
 \subsection{Operadores relacionales y lógicos}
@@ -845,7 +875,7 @@ Algunas variantes de lo visto se explica en la siguiente lista:
 
 \section{Ejercicios}
 \label{Unidad02:ejercicios}
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{:}
     \PYG{k}{if} \PYG{n}{i}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{2}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{:}
         \PYG{k}{print}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{es par}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
@@ -853,7 +883,7 @@ Algunas variantes de lo visto se explica en la siguiente lista:
         \PYG{k}{print}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{es impar}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
 \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{Verbatim}[commandchars=\\\{\},formatcom=\footnotesize]
 1 es impar
 2 es par
 3 es impar

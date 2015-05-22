@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {1.5.2}Cadenas de carateres}{7}{subsection.1.5.2}
 \contentsline {subsection}{\numberline {1.5.3}Variables}{8}{subsection.1.5.3}
 \contentsline {subsection}{\numberline {1.5.4}Lectura de datos}{9}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Escritura de datos}{11}{subsection.1.5.5}
+\contentsline {subsection}{\numberline {1.5.5}Escritura de datos}{10}{subsection.1.5.5}
 \contentsline {subsection}{\numberline {1.5.6}Operadores relacionales y l\IeC {\'o}gicos}{12}{subsection.1.5.6}
 \contentsline {subsection}{\numberline {1.5.7}Funciones}{12}{subsection.1.5.7}
 \contentsline {subsection}{\numberline {1.5.8}M\IeC {\'o}dulos}{12}{subsection.1.5.8}

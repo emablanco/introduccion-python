@@ -394,6 +394,7 @@ sumar dos números:
     num2 = input("Ingrese otro número = ")
     print("El resultado es =", num1+num2)
 
+
 .. parsed-literal::
 
     Ingrese un número = 28
@@ -417,6 +418,7 @@ float() o str(). Modificando el caso anterior:
     num2 = int(input("Ingrese otro número = "))
     print("El resultado es =", num1+num2)
 
+
 .. parsed-literal::
 
     Ingrese un número = 28
@@ -432,6 +434,7 @@ ecuación matemática con el siguiente código:
     x = input("Ingrese x = ") 
     y = (x-4)**2-3
     print(x,y)
+
 
 .. parsed-literal::
 
@@ -465,6 +468,7 @@ normalidad:
     y = (x-4)**2-3
     print(x,y)
 
+
 .. parsed-literal::
 
     Ingrese x = 3
@@ -479,6 +483,7 @@ la conversión correspondiente, utilizando la función *str()*:
 .. code:: python
 
     mensaje = 'y vale ' + str(y) + ' para un valor de x = '+ str(x)
+
 Escritura de datos
 ~~~~~~~~~~~~~~~~~~
 
@@ -492,6 +497,7 @@ viendo diferentes usos a partir de las siguientes variables:
     pi = 3.1415
     mil = 1000
     uno = 1
+
 **Como argumentos**
 
 La forma más simple es separar los argumentos a ser impresos mediante
@@ -500,6 +506,7 @@ comas.
 .. code:: python
 
     print(cad,pi,'aproximadamente')
+
 
 .. parsed-literal::
 
@@ -517,11 +524,15 @@ separador deseado, por ejemplo:
     print(cad,pi,'aproximadamente', sep=',')
     print(cad,pi,'aproximadamente', sep=':-)')
 
-.. parsed-literal::
 
-    Pi es;3.1415;aproximadamente
-    Pi es,3.1415,aproximadamente
-    Pi es:-)3.1415:-)aproximadamente
+::
+
+
+      File "<ipython-input-2-1b79b6c15965>", line 1
+        print(cad,pi,'aproximadamente', sep=';')
+                                           ^
+    SyntaxError: invalid syntax
+
 
 
 Como vemos, en cada ejecución la impresión se realiza en diferentes
@@ -535,6 +546,7 @@ ejemplo:
     print(2, end=" ")
     print(3)
     print(4)
+
 
 .. parsed-literal::
 
@@ -553,12 +565,13 @@ Existen tres tipos de comodines, para números enteros, reales
 -  Comodín para enteros: %d
 -  Comodín para cadenas: %s
 
-Se utiliza del siguiente modo:
+Se utilizan del siguiente modo:
 
 .. code:: python
 
     print('Pi es %f aproximadamente' %pi)   
     print('El número %d es %s que %d' %(mil,"menor",mil-1))
+
 
 .. parsed-literal::
 
@@ -574,6 +587,7 @@ de decimales, entre muchas otras funciones.
     print('%.2f %.4f %.3f' %(pi,pi,pi))
     print('%4d' %uno)
 
+
 .. parsed-literal::
 
     3.14 3.1415 3.142
@@ -582,20 +596,24 @@ de decimales, entre muchas otras funciones.
 
 Algunas variantes de lo visto se explica en la siguiente lista:
 
-::
-
-    %d : un entero
-    %5d: un entero escrito en un campo de 5 caracteres, alineado a la derecha
-    %-5d: un entero escrito en un campo de 5 caracteres, alineado a la izquierda
-    %05d: un entero escrito en un campo de 5 caracteres, completado con ceros desde la izquierda (ej. 00041)
-    %e: flotante escrito en notación científica
-    %E: como %e, pero E en mayúscula
-    %11.3e: flotante escrito en notación científica con 3 decimales en un campo de 11 caracteres
-    %.3e: flotante escrito en notación científica con 3 decimales en un campo de ancho mínimo
-    %5.1f: flotante con un decimal en un campo de 5 de caracteres
-    %.3f: flotante con 3 decimales en un campo de mínimo ancho
-    %s: una cadena
-    %-20s: una cadena alineada a la izquierda en un campo de 20 caracteres de ancho
+-  %d : un entero
+-  %5d: un entero escrito en un campo de 5 caracteres, alineado a la
+   derecha
+-  %-5d: un entero escrito en un campo de 5 caracteres, alineado a la
+   izquierda
+-  %05d: un entero escrito en un campo de 5 caracteres, completado con
+   ceros desde la izquierda (ej. 00041)
+-  %e: flotante escrito en notación científica
+-  %E: como %e, pero E en mayúscula
+-  %11.3e: flotante escrito en notación científica con 3 decimales en un
+   campo de 11 caracteres
+-  %.3e: flotante escrito en notación científica con 3 decimales en un
+   campo de ancho mínimo
+-  %5.1f: flotante con un decimal en un campo de 5 de caracteres
+-  %.3f: flotante con 3 decimales en un campo de mínimo ancho
+-  %s: una cadena
+-  %-20s: una cadena alineada a la izquierda en un campo de 20
+   caracteres de ancho
 
 Operadores relacionales y lógicos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
