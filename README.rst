@@ -73,3 +73,4 @@ Gran parte del material utilizado fue basado en los siguientes recursos:
 - https://github.com/mgaitan/curso-python-cientifico
 - Beginning Python. From Novice to Professional. Second Edition. Magnus Lie Hetland
 - The Python Language Reference: https://docs.python.org/3/reference/index.html#reference-index
+- The Hitchhiker’s Guide to Python! http://docs.python-guide.org/en/latest/
