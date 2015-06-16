@@ -28,7 +28,9 @@ Desde estos links se pueden visualizar estáticamente:
 Modificar el material
 ----------------------
 
-Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:
+Correr el notebook de ipython3 (versión IPython 3.1.0) bajo el directorio que se encuentran los .ipynb haciendo: ipython3 notebook
+
+Modificar sobre el notebook (por ej, Unidad01.ipynb) y, luego de guardar, se debe:
 
 * Convertir al formato rst haciendo
 
