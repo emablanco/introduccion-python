@@ -10,37 +10,30 @@ diferentes alternativas.
 Motivación
 ----------
 
-¡¡¡¡REVISAR!!! (que lindo es programar)
-
-Para comprender el mundo actual es fundamental entender cómo funcionan
-las tecnologías que lo rige. Gran parte de estas tecnologías tienen algo
-en común, y es que por lo general responden a algún tipo de programa.
-Saber programar nos permite comprender su funcionamiento y con esto nos
-abre una gran avanico de posibilidades, limitadas unicamente por nuestra
-imaginación y habilidad. Pensemos por un momento en todas las
-aplicaciones que usamos a diario en el smartphone, en el smartTv, los
-programas que utilizamos en la PC ó los juegos a que jugamos
-habitualmente. Saber que si necesitamos algo en concreto seremos capaces
-de crearlo nosotros mismos es pura libertad.
+Gran parte de las tecnologías utilizadas en la actualidad tienen algo en
+común, y es que por lo general baasan su lógica en algún tipo de
+programa. Saber programar nos permite comprender su funcionamiento y con
+esto nos abre un gran abanico de posibilidades, limitadas únicamente por
+nuestra imaginación. Pensemos por un momento en todas las aplicaciones
+que usamos a diario en el teléfono celular, en la PC, en la tablet, etc.
+Saber que si necesitamos algo en concreto seremos capaces de crearlo
+nosotros mismos es pura libertad.
 
 Lo más importante de todo, es que no es necesario ser un genio para
-poder aprender a programar, simplemente tenemos que aprender un conjunto
-de reglas básicas, saber como aplicarlas y tener muchas ganas de crear
-cosas nuevas. Además, programar es muy divertido, al contrario de lo que
-mucha gente podría pensar en un principio. Es como un gran rompecabezas
-en el que debemos encajar ciertas piezas de una forma específica para
+poder programar, simplemente tenemos que aprender un conjunto de reglas
+básicas, saber como aplicarlas y tener muchas ganas de crear cosas
+nuevas. Además, programar es muy divertido, al contrario de lo que mucha
+gente podría pensar en un principio. Es como un gran rompecabezas en el
+que debemos encajar ciertas piezas de una forma específica para
 conseguir el resultado deseado.
-
-¿Por qué Python?
-~~~~~~~~~~~~~~~~
-
-¡¡¡¡REVISAR!!! (lo lindo que es python y quienes lo usan, su
-crecimiento, su ámbito de aplicación: web, científico, etc.)
 
 A lo largo de esta materia utilizaremos como lenguaje de programación a
 Python (http://www.python.org).
 
-Python es un lenguaje de programación multiproposito, poderoso y fácil
+¿Por qué Python?
+~~~~~~~~~~~~~~~~
+
+| Python es un lenguaje de programación multiproposito, poderoso y fácil
 de aprender. Es del tipo interpretado, lo que quiere decir que los
 programas realizados con python no necesitan ser compilados, en su
 lugar, simplemente requieren que el equipo donde van a ser ejecutados
@@ -49,7 +42,8 @@ con estructuras de datos eficientes y de alto nivel. Su elegante
 sintaxis y su tipado dinámico hacen de éste un lenguaje ideal para el
 desarrollo rápido de aplicaciones en diversas áreas como ser: \*
 Aplicaciones WEB \* Aplicaciones científicas \* Gráficas \* Multimedia
-\* Juegos \* Etc.
+\* Juegos
+| \* Etc.
 
 Otra de las grandes virtudes de python, es que su interprete puede
 ejecutarse en la mayoría de los sistemas operativos utilizados en la
@@ -111,8 +105,8 @@ Entornos de programación
 El intérprete interactivo
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ya con el intérprete de Python instalado, podemos comenzar programar. Si
-ejecutamos en una terminal ``python3``, ingresaremos al intérprete en
+Ya con el intérprete de Python instalado, podemos comenzar a programar.
+Si ejecutamos en una terminal ``python3``, ingresaremos al intérprete en
 modo interactivo y veremos una salida similar a la siguiente:
 
 .. code:: python
@@ -125,9 +119,9 @@ modo interactivo y veremos una salida similar a la siguiente:
 Con esto, el interprete de python esta listo para empezar a interpretar
 las instrucciones (las cuales llamaremos sentencias) que forman parte de
 nuestro programa, por lo que podemos decir que ya estamos listos para
-empezar a programar. Pero vayamos de lo mas sencillo a lo mas complejo,
+empezar a programar. Pero vayamos de lo más sencillo a lo más complejo,
 y lo mejor para comenzar es realizando ciertos cálculos matemáticos
-sencillos, y corroboremos su resultado. Por ejemplo, escribamos lo
+sencillos, y corroborando su resultado. Por ejemplo, escribamos lo
 siguiente:
 
 .. code:: python
@@ -152,9 +146,6 @@ Hagamos otros calculos para entrar en calor
     >>> 2/10.0
     0.2
     >>> 
-
-Tranquilos, que esto recién empieza, ya haremos cosas más interesantes
-que simplemente realizar algunos calculos sencillos como los anteriores.
 
 IPython, el intérprete interactivo mejorado
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,8 +182,8 @@ Entorno integrado de desarrollo (IDE)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Un IDE es un entorno que nos facilita las tareas a la hora de programar.
-Consiste en la integración de un editor de texto, con características de
-resaltado de sintaxis autocompletado -entre otras-, y el intérprete de
+Consiste en la integración de un editor de texto con características de
+resaltado de sintaxis, autocompletado -entre otras-, y el intérprete de
 Python. Existen cientos de entornos muy buenos, como por ejemplo
 `Spyder <https://github.com/spyder-ide/spyder>`__,
 `PyCharm <https://www.jetbrains.com/pycharm>`__ o
@@ -240,7 +231,7 @@ El acercamiento inicial a un lenguaje de programación suele ser con el
 archiconocido programa "Hola mundo". Consiste simmplemente en un
 programa que muestra en pantalla ese mensaje.
 
-Renunciando a cualquier pretensión de originalidad comenzaremos del
+Renunciando a cualquier pretención de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 *print()* pasando el mensaje de despedida entre comillas, a continuación
 la instrucción.
@@ -329,7 +320,7 @@ aritméticas básicas son:
 -  potencia: \*\*
 -  división entera: //
 
-Las operaciones se pueden agrupar con parentesis y tienen precedencia
+Las operaciones se pueden agrupar con paréntesis y tienen precedencia
 estándar. Veamos unos ejemplos.
 
 .. code:: python
@@ -358,10 +349,9 @@ potencia a la 1/2.
     In [14]: 2**(1/2)
     Out[14]: 1.4142135623730951
 
-Los datos numéricos que obtenidos en las operaciones previas se
-clasifican en reales y enteros, en python se los clasifica como float e
-int respectivamente, además existe el tipo complex, para números
-complejos.
+Los datos numéricos obtenidos en las operaciones previas se clasifican
+en reales y enteros, en python se los clasifica como float e int
+respectivamente, además existe el tipo complex, para números complejos.
 
 Utilizando la función type() podemos identificar el tipo de dato.
 Veamos:
@@ -379,9 +369,10 @@ Cadenas de carateres
 
 Además de números, es posible manipular texto. Las cadenas son
 secuencias de caracteres encerradas en comillas simples ('...') o dobles
-("..."), el tipo de datos es denominado *str*. Sin adentrarnos en
-detalles, que posteriormente veremos, aquí trataremos lo indispensable
-para poder desarrollar los primeros programas. Veamos unos ejemplos:
+("..."), el tipo de datos es denominado *str* (string). Sin adentrarnos
+en detalles, que posteriormente veremos, aquí trataremos lo
+indispensable para poder desarrollar los primeros programas. Veamos unos
+ejemplos:
 
 .. code:: python
 
@@ -413,7 +404,7 @@ del poema de Fortunato Ramos *Yo jamás fui un niño*):
     '''
 
 Comentarios
-===========
+~~~~~~~~~~~
 
 En los ejemplos previos y siguientes, veremos dentro del código
 comentarios explicativos que no serán ejecutados por el intérprete. Su
@@ -428,7 +419,7 @@ Los comentarios de múltiples líneas se deben escribir entre triples
 comillas, ya sean simples o dobles.
 
 Variables
-=========
+~~~~~~~~~
 
 Las variables son contenedores para almacenar información. Por ejemplo,
 para elevar un número al cubo podemos utilizar 3 variables, para la base
@@ -497,10 +488,10 @@ minúsculas, de modo que juana, JUANA, JuAnA, JUANa son variables
 diferentes. Esta característica suele denominarse como *case-sensitive*.
 
 Lectura de datos
-================
+~~~~~~~~~~~~~~~~
 
 De los ejemplos que vimos, los valores que almacenan las variables
-fueron ingresadas en el mismo código, difícilmente sea útil contar con
+fueron ingresados en el mismo código, difícilmente sea útil contar con
 los valores cargados en el programa en forma estática. Por esta razón,
 generalmente se requiere leer información de diferentes fuentes, puede
 ser desde un archivo o bien interactuando con un usuario.
@@ -623,7 +614,7 @@ la conversión correspondiente, utilizando la función *str()*:
     mensaje = 'y vale ' + str(y) + ' para un valor de x = '+ str(x)
 
 Escritura de datos
-==================
+~~~~~~~~~~~~~~~~~~
 
 Hemos hecho uso de la función *print()* en su mínima expresión. Iremos
 viendo diferentes usos a partir de las siguientes variables:
@@ -637,7 +628,7 @@ viendo diferentes usos a partir de las siguientes variables:
     uno = 1
 
 Como argumentos
-===============
+^^^^^^^^^^^^^^^
 
 La forma más simple es separar los argumentos a ser impresos mediante
 comas.
@@ -691,7 +682,7 @@ ejemplo:
 
 
 Usando comodines
-================
+^^^^^^^^^^^^^^^^
 
 Los comodines consisten en una marca especial en la cadena a imprimir
 que es reemplazada por la variable y el formato que se le indique.
@@ -725,10 +716,19 @@ de decimales, entre muchas otras funciones.
     print('%4d' %uno)
 
 
-.. parsed-literal::
+::
 
-    3.14 3.1415 3.142
-       1
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-1-f45a2755e54d> in <module>()
+    ----> 1 print('%.2f %.4f %.3f' %(pi,pi,pi))
+          2 print('%4d' %uno)
+
+
+    NameError: name 'pi' is not defined
 
 
 La sintaxis general del uso de comodines es:
@@ -764,16 +764,16 @@ imprimir en pantalla utilizando el método format, el lector interesado
 puede indagar más al respecto en
 http://docs.python.org.ar/tutorial/3/inputoutput.html , en el capítulo
 Entrada y Salida del tutorial de Python oficial
-http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf o también en
+http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf ó también en
 http://www.python-course.eu/python3\_formatted\_output.php
 
 Operadores relacionales y lógicos
-=================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-¿¿¿capaz va a la unidad siguiente!!!
+¿¿¿capaz va a la unidad siguiente!!! - Coincido :D
 
 Funciones
-=========
+~~~~~~~~~
 
 Las funciones son programas o subprogramas que realizan una determinada
 acción y pueden ser invocados desde otro programa. En los capítulos
@@ -801,14 +801,14 @@ función, ***len()***, que recibe como dato de entrada una cadena de
 caracteres y calcula la cantidad de caracteres de la misma y lo retorna
 de manera tal que lo podemos asignar a una variable (num\_letras).
 
-ver ejemplo 2-3 pag 38 de Begining Python from novice to professional
+ver ejemplo 2-3 pág 38 de Begining Python from novice to professional
 2nd edition.
 
 Estos subprogramas pueden están vinculadas, de modo que se organizan en
 módulos.
 
 Módulos
-=======
+~~~~~~~
 
 Python posee cientos de funciones que se organizan o agrupan en módulos.
 Veamos un ejemplo para calcular la raiz cuadrada, el seno y coseno de un
@@ -841,7 +841,7 @@ En capítulos posteriores veremos en profundidad distintos modos de
 importar módulos e invocar sus funciones.
 
 Ejercicios
-==========
+----------
 
 1- Realice un programa que permita al usuario ingresar una temperatura
 en grados centígrados y que muestre su equivalente en grados fahrenheit.
@@ -857,7 +857,7 @@ letras posea el nombre.
 
 3- Ingrese el nombre y edad de dos personas en variables separadas
 (nom1, edad1, nom2, edad2). Luego, intercambie la edad y muestre el
-resutlado en pantalla. Indague de qué manera puede intercambiar el
+resultado en pantalla. Indague de qué manera puede intercambiar el
 contenido de variables en Python.
 
 4- La simple tarea de realizar la cocción de un huevo pasado por agua
@@ -913,6 +913,6 @@ tiempo sean ingresadas por un usuario.
 
 .. parsed-literal::
 
-    Diferencia de tiempo: 1 hs 1 min 1 seg
+    ('Diferencia de tiempo:', 1, 'hs', 1, 'min', 1, 'seg')
 
 

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Estructuras de control &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
+    <title>Tipos básicos &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -27,7 +27,7 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" />
     <link rel="next" title="Más estructuras de datos y control" href="Unidad03.html" />
-    <link rel="prev" title="Conceptos básicos" href="Unidad01.html" /> 
+    <link rel="prev" title="Introducción" href="Unidad01.html" /> 
   </head>
   <body>
     <div class="related">
@@ -40,7 +40,7 @@
           <a href="Unidad03.html" title="Más estructuras de datos y control"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad01.html" title="Conceptos básicos"
+          <a href="Unidad01.html" title="Introducción"
              accesskey="P">anterior</a> |</li>
         <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
@@ -51,21 +51,547 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="estructuras-de-control">
+  <div class="section" id="tipos-basicos">
+<h1>Tipos básicos<a class="headerlink" href="#tipos-basicos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Como vimos en la Unidad 1, las variables pueden contener diferentes
+tipos de datos, y al ser distintos, son tratados de manera diferente por
+Python (por ejemplo no podemos sumar un número con una letra).</p>
+<p>Hemos visto 2 de los 3 tipos básicos que utiliza python, los cuales se
+dividen en: * <strong>Números</strong> * <strong>Cadenas de texto</strong> * <strong>Booleanos</strong></p>
+<div class="section" id="numeros">
+<h2>Números<a class="headerlink" href="#numeros" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los números como vimos pueden ser enteros, reales (también denominados
+de coma flotante) ó complejos. ### Enteros Los números enteros son
+aquellos números positivos o negativos que no tienen decimales (además
+del cero). En Python se pueden representar mediante el tipo int (de
+integer, entero) o el tipo long (largo). La única diferencia es que el
+tipo long permite almacenar números más grandes. Por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">int</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">b</span> <span class="o">=</span> <span class="il">28L</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">long</span>
+</pre></div>
+</div>
+<div class="section" id="reales">
+<h3>Reales<a class="headerlink" href="#reales" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los números reales son los que tienen decimales. En Python se expresan
+mediante el tipo float.</p>
+<p>Para representar un número real en Python se escribe primero la parte
+entera, seguido de un punto y por último la parte decimal. Por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">real</span> <span class="o">=</span> <span class="mf">6.2231</span>
+</pre></div>
+</div>
+<p>También se puede utilizar notación científica, y añadir una e (de
+exponente) para indicar un exponente en base 10. Por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">real</span> <span class="o">=</span> <span class="mf">0.6e-3</span>
+</pre></div>
+</div>
+<p>Lo que sería equivalente a 0.6 x 10-3 = 0.6 x 0.001 = 0.0006</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">real</span> <span class="o">=</span> <span class="mf">8.21</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">real</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">float</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="complejos">
+<h3>Complejos<a class="headerlink" href="#complejos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los números complejos son aquellos que tienen parte imaginaria. Si no
+conocías de su existencia, es más que probable que nunca lo vayas a
+necesitar, de hecho la mayor parte de los lenguajes de programación
+carecen de este tipo, aunque sea muy utilizado por ingenieros y
+científicos en general.</p>
+<p>En el caso de que necesites utilizar números complejos, debes saber que
+son llamados complex en Python, y que se representan de la siguiente
+forma:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">c</span><span class="o">=</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">5j</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">complex</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cadenas-de-texto">
+<h2>Cadenas de texto<a class="headerlink" href="#cadenas-de-texto" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Tal como hemos visto en la unidad anterior, las cadenas (string en
+inglés ó str) no son más que texto encerrado entre comillas simples
+(‘cadena’), dobles (“cadena”) ó triples(&#8216;&#8217;&#8216;Cadenas multilíneas&#8217;&#8216;&#8217;). Por
+ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="s">&#39;El futuro mostrará los resultados y juzgará a cada uno de acuerdo a sus logros (Nikola Tesla)&#39;</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">str</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">b</span> <span class="o">=</span> <span class="s">&quot;En realidad no me preocupa que quieran robar mis ideas, me preocupa que ellos no las tengan (Nikola Tesla)&quot;</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">str</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">c</span> <span class="o">=</span> <span class="s">&#39;&#39;&#39;Un instrumento de poco costo y no más grande que un reloj, permitirá a su portador escuchar en</span>
+<span class="s">cualquier parte, ya sea en el mar o en la tierra, música, canciones o un discurso de un líder político,</span>
+<span class="s">dictado en cualquier otro sitio distante. Del mismo modo, cualquier dibujo o impresión podrá ser</span>
+<span class="s">transferida de un lugar a otro (Nikola Tesla, ~ año 1891).</span>
+<span class="s">&#39;&#39;&#39;</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">str</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="booleanos">
+<h2>Booleanos<a class="headerlink" href="#booleanos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Por último, nos queda el tipo básico booleano. Una variable de tipo
+booleano sólo puede tener dos valores: True (cierto) y False (falso).
+Estos valores son especialmente importantes para las expresiones
+condicionales y los bucles, como veremos más adelante. Pero veamos
+algunos ejemplos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">bool</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">b</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">bool</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">c</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">2</span>
+<span class="k">print</span> <span class="n">c</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>En este último ejemplo vemos algo particular, hemos asignado a la
+variable <strong>c</strong> el resultado de una expresión lógica (10 &gt; 2). Python en
+este caso opera con la misma y asigna a la variable <strong>c</strong> el resultado
+de dicha operación, la cual en este caso es verdadera (True), dado que
+10 es mayor que 2. Al tratarse se una operación lógica, el resultado
+siempre será de tipo booleando (bool), es decir, será verdadero o será
+falso.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">bool</span>
+</pre></div>
+</div>
+<div class="section" id="operadores-relacionales">
+<h3>Operadores relacionales<a class="headerlink" href="#operadores-relacionales" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Como vimos en el ejemplo anterior, los valores booleanos son además el
+resultado de expresiones que utilizan operadores relacionales
+(comparaciones entre valores).</p>
+<p>Estos operadores, siempre se utilizan de la siguiente manera:</p>
+<p>operando_A (operador) operando_B</p>
+<p>Por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>En este caso el operando A es 10 y el B es 4, el resultado de aplicar el
+operador &#8220;&gt;&#8221; a los operandos A y B en este caso es True (cierto) dado
+qeu 10 es mayor que 4.</p>
+<p>La lista completa de operadores que podemos utilizar en python es:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="41%" />
+<col width="18%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operador</th>
+<th class="head">Descripción</th>
+<th class="head">Ejemplo</th>
+<th class="head">Resultado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>==</td>
+<td>¿son iguales a y b?</td>
+<td>5 == 3</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>¿son distintos a y b?</td>
+<td>5 != 3</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>&lt;</td>
+<td>¿es a menor que b?</td>
+<td>5 &lt; 3</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>¿es a mayor que b?</td>
+<td>5 &gt; 3</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>Veamos otro ejemplo, ahora con cadenas de texto:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">d</span> <span class="o">=</span> <span class="s">&quot;Una cosa&quot;</span> <span class="o">==</span> <span class="s">&quot;Otra cosa&quot;</span>
+<span class="k">print</span> <span class="n">d</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">False</span>
+</pre></div>
+</div>
+<p>En este caso el operador == se utiliza para comparar si son iguales los
+operandos. Esta comparación se hace caracter a caracter, por lo que al
+ser diferentes las cadenas, el resultado es False. Lo siquiente también
+es False</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">d</span> <span class="o">=</span> <span class="s">&quot;Una cosa&quot;</span> <span class="o">==</span> <span class="s">&quot;una cosa&quot;</span>
+<span class="k">print</span> <span class="n">d</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">False</span>
+</pre></div>
+</div>
+<p>Solo cuando ambas cadenas son iguales, la comparación devuelve verdadero</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">d</span> <span class="o">=</span> <span class="s">&quot;Una cosa&quot;</span> <span class="o">==</span> <span class="s">&quot;Una cosa&quot;</span>
+<span class="k">print</span> <span class="n">d</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>El tipo como hemos visto, es booleano:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="nb">type</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">bool</span>
+</pre></div>
+</div>
+<p>También podemos comparar números, expresiones algebráicas y expresiones
+lógicas.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">resultado</span> <span class="o">=</span> <span class="mi">24</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="o">*</span><span class="mi">7</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span> <span class="o">==</span> <span class="bp">True</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">False</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="mi">8</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="mi">8</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>En Python, una expresión que es cierta tiene el valor 1, y una expresión
+que es falsa tiene el valor 0.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">b</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operadores-logicos">
+<h3>Operadores lógicos<a class="headerlink" href="#operadores-logicos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Además de los operadores relacionales, tenemos los operadores lógicos.
+Existen 3 tipos de operadores lógicos: <strong>**and (y), or (ó), y not
+(no)**</strong>. Por ejemplo:</p>
+<p><em>x &gt; 0 **and*</em> x &lt; 10*</p>
+<p>es verdadero sólo si <em>x</em> es mayor que 0 <strong>*y*</strong> menor que 10.</p>
+<p><em>n%2 == 0 **or*</em> n %3 == 0*</p>
+<p>es verdadero si cualquiera de las condiciones es verdadera, o sea, si el
+número es divisible por 2 o por 3. O sea, podemos leer la línea anterior
+como <em>n divido 2 es igual a 0 ***ó**</em> n dividido 3 es igual a 0*.</p>
+<p>Finalmente, el operador <strong>not</strong> niega una expresión booleana, de forma
+que</p>
+<p><strong>**not*</strong>(x &gt; y)* es cierto si <em>(x &gt; y)</em> es falso, o sea, si x es
+menor o igual que y.</p>
+<p>En resumen tenemos los siguientes operadores lógicos</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="31%" />
+<col width="32%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operador</th>
+<th class="head">Descripción</th>
+<th class="head">Ejemplo</th>
+<th class="head">Resultado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>and</strong></td>
+<td>¿se cumple a y b?</td>
+<td>True <strong>and</strong> False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td><strong>or</strong></td>
+<td>¿se cumple a o b?</td>
+<td>True <strong>or</strong> False</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td><strong>not</strong></td>
+<td>No a</td>
+<td><strong>not</strong> True</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>Veamos algunos ejemplos</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>En este caso, como ambas operaciones devuelven True (verdadero), el
+resultado es verdadero.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">c</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">False</span>
+</pre></div>
+</div>
+<p>Por el contrario, si una de las condiciones devuelve False, el resultado
+será False.</p>
+<p>Veamos algunos ejemplos con el operador <strong>*or*</strong></p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">c</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>En este caso la primer operación es verdadera y la segunda es falsa,
+pero como estamos utilizando el operador <strong>*or*</strong>, la variable resultado
+tendrá como valor True.</p>
+<p>Por último, veamos un ejemplo con el operador <strong>*not*</strong></p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>En este ejemplo <em>a</em> es menor que <em>b</em>, por lo que la expresión es falsa.
+Sin embargo al utilizarse el operador <strong>*not*</strong> estamos cambiando el
+resultado por su opuesto (en este caso True). La expresión podría leer
+como &#8220;no es cierto que a es mayor que b&#8221;, lo cual es una expresión
+cierta, y por lo tanto el valor correspondiente es True.</p>
+<p>Veamos un ejemplo un poco mas complicado</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="ow">not</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">))</span> <span class="ow">and</span> <span class="p">(</span><span class="ow">not</span><span class="p">(</span><span class="n">b</span> <span class="o">&lt;</span> <span class="n">c</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">True</span>
+</pre></div>
+</div>
+<p>Desglocemos un poco este ejemplo:</p>
+<p>En este caso la expresión (a &gt; b) es falsa, al igual que (b &lt; c), por lo
+que podríamos ver a lo anterior como</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="ow">not</span><span class="p">(</span><span class="bp">False</span><span class="p">))</span> <span class="ow">and</span> <span class="p">(</span><span class="ow">not</span><span class="p">(</span><span class="bp">False</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Dijimos que el operador <strong>*not*</strong> cambia el resultado de una expresión
+booleana por su opuesto, por lo que si seguimos desarrollando esta línea
+tenemos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="bp">True</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Como ambas expresiones son verdaderas, el valor de la variable
+<em>resultado</em> será <em>True</em>.</p>
+<p>Se debe tener un especial cuidado con el orden en que se utilizan los
+operadores. Para asegurarnos de que estamos aplicando los operadores a
+una expresión particular, siempre es recomendable utilizar paréntesis
+para demarcar la expresión sobre la que deseamos operar.</p>
+</div>
+</div>
+</div>
+<div class="section" id="estructuras-de-control">
 <h1>Estructuras de control<a class="headerlink" href="#estructuras-de-control" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Si un programa no fuera más que una lista de órdenes a ejecutar de forma
+secuencial, una por una, no tendría mucha utilidad. Es por ello que en
+la mayoría de los lenguajes de programación existen lo que se denominan
+estructuras de control. Estas estructuras permiten que, ante
+determinadas condiciones, un programa se comporte de diferentes maneras.</p>
+<p>Supongamos por ejemplo que queremos hacer un programa que nos pregunte
+ciertas cosas, y en base a esto determine si nos conviene ir al trabajo
+en bicicleta o en auto. Este programa prodría considerar inicialmente la
+temperatura ambiente, la hora y la distancia. Estos indicadores
+(variables), determinarán si el programa se debe comportar de una forma
+u de otra para de este modo recomendarnos una cosa (el uso de la
+bicicleta) u otra (el auto).</p>
 <div class="section" id="condicionales">
 <h2>Condicionales<a class="headerlink" href="#condicionales" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="if">
-<h3>if<a class="headerlink" href="#if" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La primer estructura de control que veremos son los condicionales, los
+cuales nos permiten comprobar condiciones y hacer que ejecute un
+fragmento de código u otro, dependiendo de esta condición. Aquí es donde
+cobra su importancia el tipo booleano que aprendimos en la sección
+anterior sobre los tipos básicos.</p>
+<div class="section" id="sentencia-if">
+<h3>Sentencia if<a class="headerlink" href="#sentencia-if" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La forma más simple de un estamento condicional es un <strong>*if*</strong> (del
+inglés si) seguido de la condición a evaluar, dos puntos (:) y en la
+siguiente línea e indentado, el código a ejecutar en caso de que se
+cumpla dicha condición. Por ejemplo, si consideramos lo anterior, y
+hacemos que el programa por ahora solo considere la temperatura,
+podríamos hacer lo siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Deberías ser amable con el medio ambiente e ir en bicicleta&#39;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="else">
-<h3>else<a class="headerlink" href="#else" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta sentencia se lee como: si (if) temperatura es menor o igual a 10, y
+temperatura es menor a 30, entonces ejecutar: print(&#8216;Deberías ser amable
+con el medio ambiente e ir en bicicleta&#8217;). Estas sentencias solo se
+ejecutarán si se cumple la condición de que la variable temperatura
+contenga un valor que este entre 10 y 29, para el caso donde temperatura
+sea menor a 10 o mayor a 29, el programa no hará nada.</p>
+<p>Una cuestión muy importante es asegurarnos de que el código esta
+indentado tal cual se ha hecho en el ejemplo, es decir, aseguraros de
+pulsar Tabulación en la línea que esta debajo de los 2 puntos (:), dado
+que esta es la forma de Python de saber que nuestra intención es que las
+sentencias que están indentadas, se ejecute sólo en el caso de que se
+cumpla la condición.</p>
+</div>
+<div class="section" id="sentencia-if-else">
+<h3>Sentencia if..else<a class="headerlink" href="#sentencia-if-else" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Nuestro interés inicial era que el programa nos dijera si podemos ir en
+auto o en bicicleta, y el ejemplo anterior solo nos dice algo cuando
+podemos ir en bici, pero no dice o hace nada cuando la condición no se
+cumple. Para estos casos existe un condicional llamado <strong>*else*</strong>(del inglés si no), que se usa conjuntamente con if y que sirve para
+ejecutar ciertas instrucciones en caso de que la condición de la
+sentencia if no se cumpla. Por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Deberías ser amable con el medio ambiente e ir en bicicleta&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;La temperatura no es agradable, te recomiendo ir en auto.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Esto se lee como <em>si temperatura es mayor o igual a 10 y temperatura es
+menor que 30, entonces mostrar el mensaje &#8216;Deberías ser amable con el
+medio ambiente e ir en bicicleta&#8217;, sino mostrar el mensaje &#8216;La
+temperatura no es agradable, te recomiendo ir en auto.&#8217;</em>. Siempre se
+ejecutará una opción u otra, dependiendo del valor de la variable
+temperatura. Por lo que en este punto podemos decir que el código se
+bifurca en dos caminos diferentes dependiendo de una condición (que en
+este caso es el valor de la variable temperatura).</p>
+<p>En este caso también tenemos que prestar atención a la indentación
+utilizada. La sentencia <em>else</em> se escribe al mismo nivel que la
+sentencia <em>if</em>, y las sentencias que se deben ejecutar en caso de no se
+cumpla la condición if, deben ir indentadas también.</p>
+<p>Una versión más completa del programa podría ser la siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">temperatura</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la temperatura en ºC:&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Deberías ser amable con el medio ambiente e ir en bicicleta&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;La temperatura no es agradable, le recomiendo ir en auto&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Que tenga buen día!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En este caso consultamos por la temperatura, pidiendole al usuario que
+la ingrese por teclado (para esto utilizamos la función <em>input</em> que
+vimos en la Unidad 1). Luego mostramos en patalla lo que corresponda
+según el valor ingresado, y por último mostramos el mensaje &#8216;Que tenga
+buen día!&#8217;. Es importante mencionar que la última sentencia siempre se
+ejecutará, la bifurcación se produce solamente entre las sentencias que
+estan dentro del if y el else, lo restante se seguirá ejecutando de
+manera secuencial.</p>
 </div>
 <div class="section" id="estructuras-anidadas">
 <h3>Estructuras anidadas<a class="headerlink" href="#estructuras-anidadas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Supongamos ahora que también queremos considerar la distancia que se
+debe recorrer. En este caso deberíamos preguntar por la distancia, pero
+también por la temperatura. Para que en los casos donde la temperatura
+sea agradable, la distancia no sea demasiado larga como para ir en
+bicicleta.</p>
+<p>Para estos casos, se pueden utilizar estructuras anidadas, es decir, en
+el bloque de código que se ejecutará en caso de cumplirse o no una
+determina condición, podemos poner una nueva estructura de control, por
+ejemplo un nuevo <em>if</em>.</p>
+<p>Reescribamos el código anterior para que considere esta nueva condición,
+y veamos como usar estructuras anidadas:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">temperatura</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la temperatura en ºC:&#39;</span><span class="p">)</span>
+<span class="n">distancia</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la distancia a recorrer en km:&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">distancia</span> <span class="o">&lt;=</span> <span class="mi">15</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;Deberías ser amable con el medio ambiente e ir en bicicleta&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;El clima es agradable, pero la distancia es muy larga. Le recomiendo ir en auto&#39;</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;La temperatura no es agradable, le recomiendo ir en auto.&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Que tenga buen día!&#39;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="elif">
-<h3>elif<a class="headerlink" href="#elif" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En este caso si se cumple la condición de que la variable temperatura
+contiene un valor entre 10 y 29, se pasa a considerar el valor de la
+variable distancia; si esta es menor o igual a 15, se muestra el mensaje
+<em>&#8216;Deberías ser amable con el medio ambiente e ir en bicicleta&#8217;</em>, en caso
+contrario, se muestra el mensaje <em>&#8216;El clima es agradable, pero la
+distancia es muy larga. Le recomiendo ir en auto&#8217;</em>. Por otro lado, si el
+valor de la variable temperatura no esta entre 10 y 29, se seguirá
+mostrando el mensaje <em>&#8216;La temperatura no es agradable, le recomiendo ir
+en auto&#8217;</em>. Lo mismo sucede con la última sentencia, la cual mostrará el
+mensaje <em>&#8216;Que tenga buen día!&#8217;</em> independientemente del valor de las
+variables <em>temperatura</em> y <em>distancia</em></p>
 </div>
 </div>
 <div class="section" id="repeticiones">
@@ -76,6 +602,11 @@
 </div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic simple">
+<li>Modifique el código de la sección &#8220;Estructuras anidadas&#8221;, para que la
+distancia se pregunte solamente en caso de que la temperatura sea
+agradable para ir en bicicleta.</li>
+</ol>
 <div class="code python highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s">&quot;es par&quot;</span><span class="p">)</span>
@@ -83,17 +614,21 @@
         <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">&quot;es impar&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre>1 es impar
-2 es par
-3 es impar
-4 es par
-5 es impar
-6 es par
-7 es impar
-8 es par
-9 es impar
+<div class="highlight-python"><div class="highlight"><pre><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#39;es impar&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">&#39;es par&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">&#39;es impar&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s">&#39;es par&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s">&#39;es impar&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s">&#39;es par&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s">&#39;es impar&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s">&#39;es par&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="s">&#39;es impar&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><strong>*Python para todos*</strong>, Raúl González Duque,
+<a class="reference external" href="http://mundogeek.net/tutorial-python">http://mundogeek.net/tutorial-python</a></li>
+</ul>
 </div>
 </div>
 
@@ -105,12 +640,25 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Estructuras de control</a><ul>
+<li><a class="reference internal" href="#">Tipos básicos</a><ul>
+<li><a class="reference internal" href="#numeros">Números</a><ul>
+<li><a class="reference internal" href="#reales">Reales</a></li>
+<li><a class="reference internal" href="#complejos">Complejos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cadenas-de-texto">Cadenas de texto</a></li>
+<li><a class="reference internal" href="#booleanos">Booleanos</a><ul>
+<li><a class="reference internal" href="#operadores-relacionales">Operadores relacionales</a></li>
+<li><a class="reference internal" href="#operadores-logicos">Operadores lógicos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#estructuras-de-control">Estructuras de control</a><ul>
 <li><a class="reference internal" href="#condicionales">Condicionales</a><ul>
-<li><a class="reference internal" href="#if">if</a></li>
-<li><a class="reference internal" href="#else">else</a></li>
+<li><a class="reference internal" href="#sentencia-if">Sentencia if</a></li>
+<li><a class="reference internal" href="#sentencia-if-else">Sentencia if..else</a></li>
 <li><a class="reference internal" href="#estructuras-anidadas">Estructuras anidadas</a></li>
-<li><a class="reference internal" href="#elif">elif</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#repeticiones">Repeticiones</a><ul>
@@ -124,7 +672,7 @@
 
   <h4>Tema anterior</h4>
   <p class="topless"><a href="Unidad01.html"
-                        title="capítulo anterior">Conceptos básicos</a></p>
+                        title="capítulo anterior">Introducción</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="Unidad03.html"
                         title="próximo capítulo">Más estructuras de datos y control</a></p>
@@ -160,7 +708,7 @@
           <a href="Unidad03.html" title="Más estructuras de datos y control"
              >siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad01.html" title="Conceptos básicos"
+          <a href="Unidad01.html" title="Introducción"
              >anterior</a> |</li>
         <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>

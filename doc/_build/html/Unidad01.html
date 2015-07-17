@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" />
-    <link rel="next" title="Estructuras de control" href="Unidad02.html" />
+    <link rel="next" title="Tipos básicos" href="Unidad02.html" />
     <link rel="prev" title="Introducción al Desarrollo de Software" href="index.html" /> 
   </head>
   <body>
@@ -37,7 +37,7 @@
           <a href="genindex.html" title="Índice General"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="Unidad02.html" title="Estructuras de control"
+          <a href="Unidad02.html" title="Tipos básicos"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
           <a href="index.html" title="Introducción al Desarrollo de Software"
@@ -59,11 +59,44 @@ las herramientas necesarias para llevar a cabo el desarrollo y sus
 diferentes alternativas.</p>
 <div class="section" id="motivacion">
 <h2>Motivación<a class="headerlink" href="#motivacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>que lindo es programar</p>
+<p>Gran parte de las tecnologías utilizadas en la actualidad tienen algo en
+común, y es que por lo general baasan su lógica en algún tipo de
+programa. Saber programar nos permite comprender su funcionamiento y con
+esto nos abre un gran abanico de posibilidades, limitadas únicamente por
+nuestra imaginación. Pensemos por un momento en todas las aplicaciones
+que usamos a diario en el teléfono celular, en la PC, en la tablet, etc.
+Saber que si necesitamos algo en concreto seremos capaces de crearlo
+nosotros mismos es pura libertad.</p>
+<p>Lo más importante de todo, es que no es necesario ser un genio para
+poder programar, simplemente tenemos que aprender un conjunto de reglas
+básicas, saber como aplicarlas y tener muchas ganas de crear cosas
+nuevas. Además, programar es muy divertido, al contrario de lo que mucha
+gente podría pensar en un principio. Es como un gran rompecabezas en el
+que debemos encajar ciertas piezas de una forma específica para
+conseguir el resultado deseado.</p>
+<p>A lo largo de esta materia utilizaremos como lenguaje de programación a
+Python (<a class="reference external" href="http://www.python.org">http://www.python.org</a>).</p>
 <div class="section" id="por-que-python">
 <h3>¿Por qué Python?<a class="headerlink" href="#por-que-python" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>lo lindo que es python y quienes lo usan, su crecimiento, su ámbito de
-aplicación: web, científico, etc.</p>
+<div class="line-block">
+<div class="line">Python es un lenguaje de programación multiproposito, poderoso y fácil</div>
+</div>
+<p>de aprender. Es del tipo interpretado, lo que quiere decir que los
+programas realizados con python no necesitan ser compilados, en su
+lugar, simplemente requieren que el equipo donde van a ser ejecutados
+cuente con un interprete de python instalado. Es un lenguaje que cuenta
+con estructuras de datos eficientes y de alto nivel. Su elegante
+sintaxis y su tipado dinámico hacen de éste un lenguaje ideal para el
+desarrollo rápido de aplicaciones en diversas áreas como ser: *
+Aplicaciones WEB * Aplicaciones científicas * Gráficas * Multimedia
+* Juegos
+| * Etc.</p>
+<p>Otra de las grandes virtudes de python, es que su interprete puede
+ejecutarse en la mayoría de los sistemas operativos utilizados en la
+actualidad (GNU/Linux, Microsoft Windows, Mac OSX, etc.).</p>
+<p>Dada su versatilidad y simplicidad, Python es utilizado por companías
+como Google, Youtube, Netflix, Yahoo, NSA, NASA, Canonical, IBM, entre
+otras tantas.</p>
 </div>
 </div>
 <div class="section" id="instalando-python">
@@ -71,6 +104,8 @@ aplicación: web, científico, etc.</p>
 <p>Actualmente existen dos versiones de Python comúnmente utilizadas, la
 versión 2 y 3, ambas son completamente funcionales y muy utilizadas. En
 este curso nos basaremos en la versión 3.</p>
+<p><strong>Ver como funcionaría miniconda en windows y linux:</strong>
+<a class="reference external" href="http://conda.pydata.org/miniconda.html">http://conda.pydata.org/miniconda.html</a></p>
 <div class="section" id="windows">
 <h3>Windows<a class="headerlink" href="#windows" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Para instalar Python en una máquina con Windows, debemos seguir los
@@ -88,12 +123,17 @@ opciones por defecto</li>
 </div>
 <div class="section" id="gnu-linux">
 <h3>GNU/Linux<a class="headerlink" href="#gnu-linux" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>En los sistemas operativos serios, es muy probable que ya contemos con
-el intérprete instalado, incluso en sus dos versiones. Para instalarlo
-utilizando los administradores de paquetes debemos ejecutar los
-siguientes comandos desde una terminal:</p>
+<p>En la mayoría de las distribuciones GNU/Linux, es muy probable que ya
+contemos con el intérprete instalado, incluso en sus dos versiones. En
+caso de no ser así, para instalarlo utilizando los administradores de
+paquetes debemos ejecutar los siguientes comandos desde una terminal:</p>
 <p>Para sistemas basados en Debian (como Ubuntu o sus derivados):</p>
-<div class="code bash highlight-python"><div class="highlight"><pre>apt-get install python3
+<div class="code bash highlight-python"><div class="highlight"><pre>sudo apt-get install python3
+</pre></div>
+</div>
+<p>Para sistemas que utilizan yum como sistema de paquetes (Fedora, CentOS,
+RedHat)</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>sudo yum install *python*
 </pre></div>
 </div>
 </div>
@@ -102,32 +142,48 @@ siguientes comandos desde una terminal:</p>
 <h2>Entornos de programación<a class="headerlink" href="#entornos-de-programacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="el-interprete-interactivo">
 <h3>El intérprete interactivo<a class="headerlink" href="#el-interprete-interactivo" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Ya con el intérprete de Python podemos comenzar programar. Si ejecutamos
-en una terminal <tt class="docutils literal"><span class="pre">python3</span></tt>, ingresaremos al intérprete en modo
-interactivo y veremos una salida similar a la siguiente:</p>
+<p>Ya con el intérprete de Python instalado, podemos comenzar a programar.
+Si ejecutamos en una terminal <tt class="docutils literal"><span class="pre">python3</span></tt>, ingresaremos al intérprete en
+modo interactivo y veremos una salida similar a la siguiente:</p>
 <div class="code python highlight-python"><div class="highlight"><pre>Python 3.4.2 (default, Oct  8 2014, 10:45:20)
 [GCC 4.9.1] on linux
 Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
 &gt;&gt;&gt;
 </pre></div>
 </div>
-<p>Podemos ejecutar algunas operaciones matemáticas para corroborar su
-funcionamiento.</p>
+<p>Con esto, el interprete de python esta listo para empezar a interpretar
+las instrucciones (las cuales llamaremos sentencias) que forman parte de
+nuestro programa, por lo que podemos decir que ya estamos listos para
+empezar a programar. Pero vayamos de lo más sencillo a lo más complejo,
+y lo mejor para comenzar es realizando ciertos cálculos matemáticos
+sencillos, y corroborando su resultado. Por ejemplo, escribamos lo
+siguiente:</p>
 <div class="code python highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">*</span><span class="mi">5</span>
 <span class="go">10</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">*</span><span class="mi">5</span><span class="o">+</span><span class="mi">10</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>Como vemos, si ingresamos 2*5, le estamos diciendo al interprete de
+python que debe realizar la multiplicación entre 2 y 5. El interprete
+analiza la instrucción ingresada (2*5), y contesta con el resultado (10
+en este caso).</p>
+<p>Hagamos otros calculos para entrar en calor</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">*</span><span class="mi">5</span><span class="o">+</span><span class="mi">10</span>
 <span class="go">20</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="mi">19</span><span class="o">+</span><span class="mf">3.1415</span>
 <span class="go">-53.8585</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">/</span><span class="mf">10.0</span>
+<span class="go">0.2</span>
 <span class="go">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="el-interprete-interactivo-mejorado">
-<h3>El intérprete interactivo mejorado<a class="headerlink" href="#el-interprete-interactivo-mejorado" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="ipython-el-interprete-interactivo-mejorado">
+<h3>IPython, el intérprete interactivo mejorado<a class="headerlink" href="#ipython-el-interprete-interactivo-mejorado" title="Enlazar permanentemente con este título">¶</a></h3>
 <p><a class="reference external" href="http://ipython.org">IPython</a> es una interfaz mejorada del intérprete
 nativo. Se lo puede utilizar en modo consola o a través de una interfaz
-web. La instalación en GNU/Linux es: <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">ipython3</span></tt>.</p>
+web. La instalación en sistemas basados en Debian GNU/Linux es similar a
+la de python: <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">ipython3</span></tt>.</p>
 <p>La ejecución de ipython desde una terminal nos arroja una pantalla
 similar a la siguiente:</p>
 <div class="code python highlight-python"><div class="highlight"><pre>emiliano@pynandi:~ $ ipython3
@@ -151,18 +207,18 @@ esto abrirá el navegador por defecto con el entorno cargado.</p>
 </div>
 <div class="section" id="entorno-integrado-de-desarrollo-ide">
 <h3>Entorno integrado de desarrollo (IDE)<a class="headerlink" href="#entorno-integrado-de-desarrollo-ide" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="figure">
-<img alt="" src="files/img/u1/ninja-ide.png" />
-</div>
 <p>Un IDE es un entorno que nos facilita las tareas a la hora de programar.
-Consiste en la integración de un editor de texto, con características de
-resaltado de sintaxis autocompletado -entre otras-, y el intérprete de
+Consiste en la integración de un editor de texto con características de
+resaltado de sintaxis, autocompletado -entre otras-, y el intérprete de
 Python. Existen cientos de entornos muy buenos, como por ejemplo
 <a class="reference external" href="https://github.com/spyder-ide/spyder">Spyder</a>,
 <a class="reference external" href="https://www.jetbrains.com/pycharm">PyCharm</a> o
 <a class="reference external" href="http://ninja-ide.org">Ninja-IDE</a>. Para el presente curso, nos
 basaremos en Ninja-IDE, software libre que ha sido desarrollado por la
 comunidad de Python Argentina, <a class="reference external" href="http://python.org.ar">PyAr</a>.</p>
+<div class="figure">
+<img alt="" src="files/img/u1/ninja-ide.png" />
+</div>
 <p>Una lista bastante completa sobre las IDEs disponibles pueden
 encontrarse en la <a class="reference external" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">wiki oficial de
 Python</a></p>
@@ -190,12 +246,12 @@ en un determinado orden, en algunos casos contamos con ingredientes,
 intrucciones, decisiones y acciones que se repiten. No muy distinto a un
 programa de computación, comencemos con algunos <em>ingredientes</em> simples
 de Python y veamos lo que podemos hacer con ellos.</p>
-<div class="section" id="el-primer-programa-adios-mundo">
-<h3>El primer programa &#8220;Adiós mundo!&#8221;<a class="headerlink" href="#el-primer-programa-adios-mundo" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="el-primer-programa">
+<h3>El primer programa<a class="headerlink" href="#el-primer-programa" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El acercamiento inicial a un lenguaje de programación suele ser con el
 archiconocido programa &#8220;Hola mundo&#8221;. Consiste simmplemente en un
 programa que muestra en pantalla ese mensaje.</p>
-<p>Renunciando a cualquier pretensión de originalidad comenzaremos del
+<p>Renunciando a cualquier pretención de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 <em>print()</em> pasando el mensaje de despedida entre comillas, a continuación
 la instrucción.</p>
@@ -209,6 +265,47 @@ bien utilizando un IDE y haciendo todo desde ahí mismo.</p>
 <p>Ahora bien, es muchísimo más lo que podemos hacer programando además de
 saludar cordialmente. Veamos los elementos de un programa que nos
 permitirán realizar tareas más complejas y entretenidas.</p>
+</div>
+</div>
+<div class="section" id="modos-de-ejecutar-tus-programas">
+<h2>Modos de ejecutar tus programas<a class="headerlink" href="#modos-de-ejecutar-tus-programas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El intérprete interactivo de Python es una gran ayuda para realizar
+pruebas y experimentar en tiempo real sobre el lenguaje. Sin embargo,
+cuando cerramos el intérprete perdemos lo escrito, por lo que no es una
+solución para escribir programas mas largos y con mayores complejidades.
+Por otro lado, tampoco resulta poco práctico abrir el IDE para correr un
+script Python. Entonces, para un programa guardado con el nombre
+hola_mundo.py, lo podemos ejecutar de las siguientes maneras:</p>
+<div class="section" id="desde-la-linea-de-comandos">
+<h3>Desde la línea de comandos<a class="headerlink" href="#desde-la-linea-de-comandos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Abriendo una terminal, e invocando al intérprete python y luego la ruta
+y nombre del archivo:</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>$python3 hola_mundo.py
+</pre></div>
+</div>
+</div>
+<div class="section" id="como-un-script">
+<h3>Como un script<a class="headerlink" href="#como-un-script" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Es posible ejecutarlo sin invocar al intérprete desde la línea de
+comandos, para esto, se debe incluir al principio del programa la
+siguiente línea:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c">#!/usr/bin/env python3</span>
+</pre></div>
+</div>
+<p>Con esa línea, estaremos especificando en el mismo programa la ruta del
+intérprete que debe ejecutarlo. Antes de poder ejecutarlo, debemos
+otorgarle permisos de ejecución con el comando del sistema operativo
+chmod:</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>$chmod +x hola_mundo.py
+</pre></div>
+</div>
+<p>Una vez realizado lo anterior, es posible ejecutarlo desde la terminal,
+como cualquier ejecutable del sistema operativo, llamándolo con el
+nombre del programa antecediendo &#8221;./&#8221; (punto barra, sin comillas):</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>$./hola_mundo.py
+Adiós mundo cruel
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="elementos-de-un-programa">
@@ -229,7 +326,7 @@ aritméticas básicas son:</p>
 <li>potencia: **</li>
 <li>división entera: //</li>
 </ul>
-<p>Las operaciones se pueden agrupar con parentesis y tienen precedencia
+<p>Las operaciones se pueden agrupar con paréntesis y tienen precedencia
 estándar. Veamos unos ejemplos.</p>
 <div class="code python highlight-python"><div class="highlight"><pre>In [9]: 1/3
 Out[9]: 0.3333333333333333
@@ -254,10 +351,9 @@ In [14]: 2**(1/2)
 Out[14]: 1.4142135623730951
 </pre></div>
 </div>
-<p>Los datos numéricos que obtenidos en las operaciones previas se
-clasifican en reales y enteros, en python se los clasifica como float e
-int respectivamente, además existe el tipo complex, para números
-complejos.</p>
+<p>Los datos numéricos obtenidos en las operaciones previas se clasifican
+en reales y enteros, en python se los clasifica como float e int
+respectivamente, además existe el tipo complex, para números complejos.</p>
 <p>Utilizando la función type() podemos identificar el tipo de dato.
 Veamos:</p>
 <div class="code python highlight-python"><div class="highlight"><pre>In [15]: type(0.333)
@@ -272,9 +368,10 @@ Out[16]: int
 <h3>Cadenas de carateres<a class="headerlink" href="#cadenas-de-carateres" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Además de números, es posible manipular texto. Las cadenas son
 secuencias de caracteres encerradas en comillas simples (&#8216;...&#8217;) o dobles
-(&#8221;...&#8221;), el tipo de datos es denominado <em>str</em>. Sin adentrarnos en
-detalles, que posteriormente veremos, aquí trataremos lo indispensable
-para poder desarrollar los primeros programas. Veamos unos ejemplos:</p>
+(&#8221;...&#8221;), el tipo de datos es denominado <em>str</em> (string). Sin adentrarnos
+en detalles, que posteriormente veremos, aquí trataremos lo
+indispensable para poder desarrollar los primeros programas. Veamos unos
+ejemplos:</p>
 <div class="code python highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;huevos y pan&#39;</span>         <span class="c"># comillas simples</span>
 <span class="go">&#39;huevos y pan&#39;</span>
 </pre></div>
@@ -299,6 +396,18 @@ del poema de Fortunato Ramos <em>Yo jamás fui un niño</em>):</p>
 <span class="sd">&#39;&#39;&#39;</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="comentarios">
+<h3>Comentarios<a class="headerlink" href="#comentarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En los ejemplos previos y siguientes, veremos dentro del código
+comentarios explicativos que no serán ejecutados por el intérprete. Su
+uso solamente está destinado a quien lea el código, como texto
+explicativo para orientar sobre lo que se realiza.</p>
+<p>Los comentarios pueden ser de una única o múltiples líneas. Para el
+primer caso se utiliza el símbolo numeral. Lo que continúa a la derecha
+de su uso no es ejecutado.</p>
+<p>Los comentarios de múltiples líneas se deben escribir entre triples
+comillas, ya sean simples o dobles.</p>
 </div>
 <div class="section" id="variables">
 <h3>Variables<a class="headerlink" href="#variables" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -361,7 +470,7 @@ diferentes. Esta característica suele denominarse como <em>case-sensitive</em>.
 <div class="section" id="lectura-de-datos">
 <h3>Lectura de datos<a class="headerlink" href="#lectura-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>De los ejemplos que vimos, los valores que almacenan las variables
-fueron ingresadas en el mismo código, difícilmente sea útil contar con
+fueron ingresados en el mismo código, difícilmente sea útil contar con
 los valores cargados en el programa en forma estática. Por esta razón,
 generalmente se requiere leer información de diferentes fuentes, puede
 ser desde un archivo o bien interactuando con un usuario.</p>
@@ -464,7 +573,8 @@ viendo diferentes usos a partir de las siguientes variables:</p>
 <span class="n">uno</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<p><strong>Como argumentos</strong></p>
+<div class="section" id="como-argumentos">
+<h4>Como argumentos<a class="headerlink" href="#como-argumentos" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>La forma más simple es separar los argumentos a ser impresos mediante
 comas.</p>
 <div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">cad</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="s">&#39;aproximadamente&#39;</span><span class="p">)</span>
@@ -482,10 +592,9 @@ print(cad,pi,&#39;aproximadamente&#39;, sep=&#39;,&#39;)
 print(cad,pi,&#39;aproximadamente&#39;, sep=&#39;:-)&#39;)
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre>  File &quot;&lt;ipython-input-2-1b79b6c15965&gt;&quot;, line 1
-    print(cad,pi,&#39;aproximadamente&#39;, sep=&#39;;&#39;)
-                                       ^
-SyntaxError: invalid syntax
+<div class="highlight-python"><div class="highlight"><pre>Pi es;3.1415;aproximadamente
+Pi es,3.1415,aproximadamente
+Pi es:-)3.1415:-)aproximadamente
 </pre></div>
 </div>
 <p>Como vemos, en cada ejecución la impresión se realiza en diferentes
@@ -502,7 +611,9 @@ print(4)
 4
 </pre></div>
 </div>
-<p><strong>Usando comodines</strong></p>
+</div>
+<div class="section" id="usando-comodines">
+<h4>Usando comodines<a class="headerlink" href="#usando-comodines" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Los comodines consisten en una marca especial en la cadena a imprimir
 que es reemplazada por la variable y el formato que se le indique.
 Existen tres tipos de comodines, para números enteros, reales
@@ -527,35 +638,172 @@ de decimales, entre muchas otras funciones.</p>
 <span class="k">print</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%4d</span><span class="s">&#39;</span> <span class="o">%</span><span class="n">uno</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre>3.14 3.1415 3.142
-   1
+<div class="highlight-python"><div class="highlight"><pre>---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-1-f45a2755e54d&gt; in &lt;module&gt;()
+----&gt; 1 print(&#39;%.2f %.4f %.3f&#39; %(pi,pi,pi))
+      2 print(&#39;%4d&#39; %uno)
+
+
+NameError: name &#39;pi&#39; is not defined
+</pre></div>
+</div>
+<p>La sintaxis general del uso de comodines es:</p>
+<div class="highlight-python"><div class="highlight"><pre>%[opciones][ancho][.precisión]tipo
 </pre></div>
 </div>
 <p>Algunas variantes de lo visto se explica en la siguiente lista:</p>
-<p>%d : un entero %5d: un entero escrito en un campo de 5 caracteres,
-alineado a la derecha %-5d: un entero escrito en un campo de 5
-caracteres, alineado a la izquierda %05d: un entero escrito en un campo
-de 5 caracteres, completado con ceros desde la izquierda (ej. 00041) %e:
-flotante escrito en notación científica %E: como %e, pero E en mayúscula
-%11.3e: flotante escrito en notación científica con 3 decimales en un
-campo de 11 caracteres %.3e: flotante escrito en notación científica con
-3 decimales en un campo de ancho mínimo %5.1f: flotante con un decimal
-en un campo de 5 de caracteres %.3f: flotante con 3 decimales en un
-campo de mínimo ancho %s: una cadena %-20s: una cadena alineada a la
-izquierda en un campo de 20 caracteres de ancho</p>
+<ul class="simple">
+<li>%d : un entero</li>
+<li>%5d: un entero escrito en un campo de 5 caracteres, alineado a la
+derecha</li>
+<li>%-5d: un entero escrito en un campo de 5 caracteres, alineado a la
+izquierda</li>
+<li>%05d: un entero escrito en un campo de 5 caracteres, completado con
+ceros desde la izquierda (ej. 00041)</li>
+<li>%e: flotante escrito en notación científica</li>
+<li>%E: como %e, pero E en mayúscula</li>
+<li>%11.3e: flotante escrito en notación científica con 3 decimales en un
+campo de 11 caracteres</li>
+<li>%.3e: flotante escrito en notación científica con 3 decimales en un
+campo de ancho mínimo</li>
+<li>%5.1f: flotante con un decimal en un campo de 5 de caracteres</li>
+<li>%.3f: flotante con 3 decimales en un campo de mínimo ancho</li>
+<li>%s: una cadena</li>
+<li>%-20s: una cadena alineada a la izquierda en un campo de 20
+caracteres de ancho</li>
+</ul>
+<p>Con lo visto hasta aquí tenemos suficientes alternativas para mostrar en
+pantalla información de diferentes tipos. Existen una alternativa para
+imprimir en pantalla utilizando el método format, el lector interesado
+puede indagar más al respecto en
+<a class="reference external" href="http://docs.python.org.ar/tutorial/3/inputoutput.html">http://docs.python.org.ar/tutorial/3/inputoutput.html</a> , en el capítulo
+Entrada y Salida del tutorial de Python oficial
+<a class="reference external" href="http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf">http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf</a> ó también en
+<a class="reference external" href="http://www.python-course.eu/python3_formatted_output.php">http://www.python-course.eu/python3_formatted_output.php</a></p>
+</div>
 </div>
 <div class="section" id="operadores-relacionales-y-logicos">
 <h3>Operadores relacionales y lógicos<a class="headerlink" href="#operadores-relacionales-y-logicos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>¿¿¿capaz va a la unidad siguiente!!! - Coincido :D</p>
 </div>
 <div class="section" id="funciones">
 <h3>Funciones<a class="headerlink" href="#funciones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las funciones son programas o subprogramas que realizan una determinada
+acción y pueden ser invocados desde otro programa. En los capítulos
+posteriores trabajaremos intensamente con funciones creando propias, sin
+embargo en esta sección, con el fin de comprender su uso, presentaremos
+algunas pocas de las que nos provee Python.</p>
+<p>El uso de funciones nativas en Python es directo, veamos algunas:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">frase</span> <span class="o">=</span> <span class="s">&#39;simple es mejor que complejo&#39;</span>
+<span class="n">num_letras</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">frase</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">num_letras</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">28</span>
+</pre></div>
+</div>
+<p>El ejemplo previo hicimos uso de dos funciones, por un lado la función
+<strong>*print()*</strong>, presentada ya desde el primer programa y una nueva
+función, <strong>*len()*</strong>, que recibe como dato de entrada una cadena de
+caracteres y calcula la cantidad de caracteres de la misma y lo retorna
+de manera tal que lo podemos asignar a una variable (num_letras).</p>
+<p>ver ejemplo 2-3 pág 38 de Begining Python from novice to professional
+2nd edition.</p>
+<p>Estos subprogramas pueden están vinculadas, de modo que se organizan en
+módulos.</p>
 </div>
 <div class="section" id="modulos">
 <h3>Módulos<a class="headerlink" href="#modulos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Python posee cientos de funciones que se organizan o agrupan en módulos.
+Veamos un ejemplo para calcular la raiz cuadrada, el seno y coseno de un
+número haciendo uso de las funciones <em>sqrt()</em>, <em>sin()</em> y <em>cos()</em>, todas
+ubicadas bajo el módulo math.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">nro</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">raiz</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">nro</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;La raiz de </span><span class="si">%d</span><span class="s"> es </span><span class="si">%.4f</span><span class="s">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">nro</span><span class="p">,</span><span class="n">raiz</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;El seno de </span><span class="si">%d</span><span class="s"> es </span><span class="si">%.4f</span><span class="s">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">nro</span><span class="p">,</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">nro</span><span class="p">)))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;El coseno de </span><span class="si">%d</span><span class="s"> es </span><span class="si">%.4f</span><span class="s">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">nro</span><span class="p">,</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">nro</span><span class="p">)))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>La raiz de 2 es 1.4142
+El seno de 2 es 0.9093
+El coseno de 2 es -0.4161
+</pre></div>
+</div>
+<p>Del ejemplo previo, hemos visto como indicarle a Python que importe -o
+haga uso de- un módulo en particular y de algunas de sus funciones
+incluidas.</p>
+<p>En capítulos posteriores veremos en profundidad distintos modos de
+importar módulos e invocar sus funciones.</p>
 </div>
 </div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>1- Realice un programa que permita al usuario ingresar una temperatura
+en grados centígrados y que muestre su equivalente en grados fahrenheit.</p>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese temperatura en °C: 33.8
+Conversión a Fahrenheit: 92.84
+</pre></div>
+</div>
+<p>2- Realice un programa que permita al usuario ingresar su nombre y que
+luego lo muestre repetido en pantalla tantas vees como cantidad de
+letras posea el nombre.</p>
+<p>3- Ingrese el nombre y edad de dos personas en variables separadas
+(nom1, edad1, nom2, edad2). Luego, intercambie la edad y muestre el
+resultado en pantalla. Indague de qué manera puede intercambiar el
+contenido de variables en Python.</p>
+<p>4- La simple tarea de realizar la cocción de un huevo pasado por agua
+tiene sus secretos. Con la ecuación a continuación se puede conocer el
+tiempo en alcanzar el punto exacto. Programe la ecuación para valores de
+bla bla bla</p>
+<p>5- Lea por teclado el valor del cuenta kilómetros de un automovil,
+posteriormente, permita ingresar el nuevo valor luego de realizar un
+viaje y muestre en pantalla los kilómetros recorridos, así como también
+ese valor en metros, centímetros, yardas y pies.</p>
+<p>6- Las benévolas companías telefónicas cobran la tarifa de cada llamada
+del siguiente modo: un valor fijo de $0.80 cuando se establece la
+llamada, luego, fracciona por tiempo, donde el primer minuto tiene un
+valor de $1.30 y los subsiguientes de $1.45. Realice un programa que
+permita ingresar la duración de una llamada y que muestre luego el costo
+total de la misma, a la que se le debe agregar un porcentaje del 20%
+correspondiente a impuestos.</p>
+<p>7- Un atleta realiza sus entrenamientos para una maratón (42.195km) y
+desea conocer su velocidad promedio. Desarrolle un programa donde se
+ingrese el tiempo transcurrido en tres variables diferentes: horas,
+minutos y segundos. Luego, muestre la velocidad promedio en km/h y
+km/seg.</p>
+<p>8- En el siguiente programa se calcula la diferencia de tiempo entre dos
+marcas de tiempo. Analice el código del programa y explique las acciones
+que se llevan a cabo. Luego, modifiquelo para que las dos marcas de
+tiempo sean ingresadas por un usuario.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># dos marcas de tiempo</span>
+<span class="n">hora1</span><span class="p">,</span><span class="n">min1</span><span class="p">,</span><span class="n">seg1</span> <span class="o">=</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span><span class="mi">59</span>
+<span class="n">hora2</span><span class="p">,</span><span class="n">min2</span><span class="p">,</span><span class="n">seg2</span> <span class="o">=</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+
+<span class="c"># conversión del tiempo a segundos</span>
+<span class="n">t1s</span> <span class="o">=</span> <span class="n">hora1</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">min1</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">seg1</span>
+<span class="n">t2s</span> <span class="o">=</span> <span class="n">hora2</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">min2</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">seg2</span>
+
+<span class="c"># diferencia</span>
+<span class="n">t</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">t1s</span><span class="o">-</span><span class="n">t2s</span><span class="p">)</span>
+
+<span class="c"># cálculos de hora, minuto y segundos</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">t</span><span class="o">//</span><span class="mi">3600</span>
+<span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">t</span><span class="o">-</span><span class="n">h</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">//</span><span class="mi">60</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">t</span><span class="o">-</span><span class="n">h</span><span class="o">*</span><span class="mi">3600</span><span class="o">-</span><span class="n">m</span><span class="o">*</span><span class="mi">60</span>
+
+<span class="c"># impresión en pantalla</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">&#39;Diferencia de tiempo:&#39;</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="s">&#39;hs&#39;</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="s">&#39;min&#39;</span><span class="p">,</span><span class="n">s</span><span class="p">,</span> <span class="s">&#39;seg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">(</span><span class="s">&#39;Diferencia de tiempo:&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;hs&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;min&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;seg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -579,20 +827,30 @@ izquierda en un campo de 20 caracteres de ancho</p>
 </li>
 <li><a class="reference internal" href="#entornos-de-programacion">Entornos de programación</a><ul>
 <li><a class="reference internal" href="#el-interprete-interactivo">El intérprete interactivo</a></li>
-<li><a class="reference internal" href="#el-interprete-interactivo-mejorado">El intérprete interactivo mejorado</a></li>
+<li><a class="reference internal" href="#ipython-el-interprete-interactivo-mejorado">IPython, el intérprete interactivo mejorado</a></li>
 <li><a class="reference internal" href="#entorno-integrado-de-desarrollo-ide">Entorno integrado de desarrollo (IDE)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#algoritmos-computacionales">Algoritmos computacionales</a><ul>
-<li><a class="reference internal" href="#el-primer-programa-adios-mundo">El primer programa &#8220;Adiós mundo!&#8221;</a></li>
+<li><a class="reference internal" href="#el-primer-programa">El primer programa</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#modos-de-ejecutar-tus-programas">Modos de ejecutar tus programas</a><ul>
+<li><a class="reference internal" href="#desde-la-linea-de-comandos">Desde la línea de comandos</a></li>
+<li><a class="reference internal" href="#como-un-script">Como un script</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#elementos-de-un-programa">Elementos de un programa</a><ul>
 <li><a class="reference internal" href="#numeros-y-expresiones">Números y expresiones</a></li>
 <li><a class="reference internal" href="#cadenas-de-carateres">Cadenas de carateres</a></li>
+<li><a class="reference internal" href="#comentarios">Comentarios</a></li>
 <li><a class="reference internal" href="#variables">Variables</a></li>
 <li><a class="reference internal" href="#lectura-de-datos">Lectura de datos</a></li>
-<li><a class="reference internal" href="#escritura-de-datos">Escritura de datos</a></li>
+<li><a class="reference internal" href="#escritura-de-datos">Escritura de datos</a><ul>
+<li><a class="reference internal" href="#como-argumentos">Como argumentos</a></li>
+<li><a class="reference internal" href="#usando-comodines">Usando comodines</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>
 <li><a class="reference internal" href="#funciones">Funciones</a></li>
 <li><a class="reference internal" href="#modulos">Módulos</a></li>
@@ -608,7 +866,7 @@ izquierda en un campo de 20 caracteres de ancho</p>
                         title="capítulo anterior">Introducción al Desarrollo de Software</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="Unidad02.html"
-                        title="próximo capítulo">Estructuras de control</a></p>
+                        title="próximo capítulo">Tipos básicos</a></p>
   <h3>Esta página</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/Unidad01.txt"
@@ -638,7 +896,7 @@ izquierda en un campo de 20 caracteres de ancho</p>
           <a href="genindex.html" title="Índice General"
              >índice</a></li>
         <li class="right" >
-          <a href="Unidad02.html" title="Estructuras de control"
+          <a href="Unidad02.html" title="Tipos básicos"
              >siguiente</a> |</li>
         <li class="right" >
           <a href="index.html" title="Introducción al Desarrollo de Software"

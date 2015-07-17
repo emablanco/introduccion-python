@@ -6,41 +6,52 @@
 \BOOKMARK [2][-]{subsection.1.2.2}{GNU/Linux}{section.1.2}% 6
 \BOOKMARK [1][-]{section.1.3}{Entornos de programaci\363n}{chapter.1}% 7
 \BOOKMARK [2][-]{subsection.1.3.1}{El int\351rprete interactivo}{section.1.3}% 8
-\BOOKMARK [2][-]{subsection.1.3.2}{El int\351rprete interactivo mejorado}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.2}{IPython, el int\351rprete interactivo mejorado}{section.1.3}% 9
 \BOOKMARK [2][-]{subsection.1.3.3}{Entorno integrado de desarrollo \(IDE\)}{section.1.3}% 10
 \BOOKMARK [1][-]{section.1.4}{Algoritmos computacionales}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.4.1}{El primer programa ``Adi\363s mundo!''}{section.1.4}% 12
-\BOOKMARK [1][-]{section.1.5}{Elementos de un programa}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.5.1}{N\372meros y expresiones}{section.1.5}% 14
-\BOOKMARK [2][-]{subsection.1.5.2}{Cadenas de carateres}{section.1.5}% 15
-\BOOKMARK [2][-]{subsection.1.5.3}{Variables}{section.1.5}% 16
-\BOOKMARK [2][-]{subsection.1.5.4}{Lectura de datos}{section.1.5}% 17
-\BOOKMARK [2][-]{subsection.1.5.5}{Escritura de datos}{section.1.5}% 18
-\BOOKMARK [2][-]{subsection.1.5.6}{Operadores relacionales y l\363gicos}{section.1.5}% 19
-\BOOKMARK [2][-]{subsection.1.5.7}{Funciones}{section.1.5}% 20
-\BOOKMARK [2][-]{subsection.1.5.8}{M\363dulos}{section.1.5}% 21
-\BOOKMARK [1][-]{section.1.6}{Ejercicios}{chapter.1}% 22
-\BOOKMARK [0][-]{chapter.2}{Estructuras de control}{}% 23
-\BOOKMARK [1][-]{section.2.1}{Condicionales}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.1.1}{if}{section.2.1}% 25
-\BOOKMARK [2][-]{subsection.2.1.2}{else}{section.2.1}% 26
-\BOOKMARK [2][-]{subsection.2.1.3}{Estructuras anidadas}{section.2.1}% 27
-\BOOKMARK [2][-]{subsection.2.1.4}{elif}{section.2.1}% 28
-\BOOKMARK [1][-]{section.2.2}{Repeticiones}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.1}{while}{section.2.2}% 30
-\BOOKMARK [1][-]{section.2.3}{Ejercicios}{chapter.2}% 31
-\BOOKMARK [0][-]{chapter.3}{M\341s estructuras de datos y control}{}% 32
-\BOOKMARK [1][-]{section.3.1}{Listas}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.2}{for}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.3}{Manipulando textos con strings}{chapter.3}% 35
-\BOOKMARK [0][-]{chapter.4}{Funciones, archivos, diccionarios}{}% 36
-\BOOKMARK [1][-]{section.4.1}{Definiendo funciones}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.1.1}{Variables globales y locales}{section.4.1}% 38
-\BOOKMARK [1][-]{section.4.2}{N\372meros aleatorios}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.3}{Lectura y escritura de archivos}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.4}{Diccionarios}{chapter.4}% 41
-\BOOKMARK [0][-]{chapter.5}{Clases y objetos}{}% 42
-\BOOKMARK [0][-]{chapter.6}{This is a Title}{}% 43
-\BOOKMARK [1][-]{section.6.1}{Subject Subtitle}{chapter.6}% 44
-\BOOKMARK [1][-]{section.6.2}{Inline Markup}{chapter.6}% 45
-\BOOKMARK [0][-]{chapter.7}{Indices and tables}{}% 46
+\BOOKMARK [2][-]{subsection.1.4.1}{El primer programa}{section.1.4}% 12
+\BOOKMARK [1][-]{section.1.5}{Modos de ejecutar tus programas}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.5.1}{Desde la l\355nea de comandos}{section.1.5}% 14
+\BOOKMARK [2][-]{subsection.1.5.2}{Como un script}{section.1.5}% 15
+\BOOKMARK [1][-]{section.1.6}{Elementos de un programa}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.6.1}{N\372meros y expresiones}{section.1.6}% 17
+\BOOKMARK [2][-]{subsection.1.6.2}{Cadenas de carateres}{section.1.6}% 18
+\BOOKMARK [2][-]{subsection.1.6.3}{Comentarios}{section.1.6}% 19
+\BOOKMARK [2][-]{subsection.1.6.4}{Variables}{section.1.6}% 20
+\BOOKMARK [2][-]{subsection.1.6.5}{Lectura de datos}{section.1.6}% 21
+\BOOKMARK [2][-]{subsection.1.6.6}{Escritura de datos}{section.1.6}% 22
+\BOOKMARK [2][-]{subsection.1.6.7}{Operadores relacionales y l\363gicos}{section.1.6}% 23
+\BOOKMARK [2][-]{subsection.1.6.8}{Funciones}{section.1.6}% 24
+\BOOKMARK [2][-]{subsection.1.6.9}{M\363dulos}{section.1.6}% 25
+\BOOKMARK [1][-]{section.1.7}{Ejercicios}{chapter.1}% 26
+\BOOKMARK [0][-]{chapter.2}{Tipos b\341sicos}{}% 27
+\BOOKMARK [1][-]{section.2.1}{N\372meros}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.1.1}{Reales}{section.2.1}% 29
+\BOOKMARK [2][-]{subsection.2.1.2}{Complejos}{section.2.1}% 30
+\BOOKMARK [1][-]{section.2.2}{Cadenas de texto}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.3}{Booleanos}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.3.1}{Operadores relacionales}{section.2.3}% 33
+\BOOKMARK [2][-]{subsection.2.3.2}{Operadores l\363gicos}{section.2.3}% 34
+\BOOKMARK [0][-]{chapter.3}{Estructuras de control}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Condicionales}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.1.1}{Sentencia if}{section.3.1}% 37
+\BOOKMARK [2][-]{subsection.3.1.2}{Sentencia if..else}{section.3.1}% 38
+\BOOKMARK [2][-]{subsection.3.1.3}{Estructuras anidadas}{section.3.1}% 39
+\BOOKMARK [1][-]{section.3.2}{Repeticiones}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.2.1}{while}{section.3.2}% 41
+\BOOKMARK [1][-]{section.3.3}{Ejercicios}{chapter.3}% 42
+\BOOKMARK [0][-]{chapter.4}{M\341s estructuras de datos y control}{}% 43
+\BOOKMARK [1][-]{section.4.1}{Listas}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.2}{for}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.3}{Manipulando textos con strings}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Funciones, archivos, diccionarios}{}% 47
+\BOOKMARK [1][-]{section.5.1}{Definiendo funciones}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.1.1}{Variables globales y locales}{section.5.1}% 49
+\BOOKMARK [1][-]{section.5.2}{N\372meros aleatorios}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.3}{Lectura y escritura de archivos}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.4}{Diccionarios}{chapter.5}% 52
+\BOOKMARK [0][-]{chapter.6}{Clases y objetos}{}% 53
+\BOOKMARK [0][-]{chapter.7}{This is a Title}{}% 54
+\BOOKMARK [1][-]{section.7.1}{Subject Subtitle}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.2}{Inline Markup}{chapter.7}% 56
+\BOOKMARK [0][-]{chapter.8}{Indices and tables}{}% 57
