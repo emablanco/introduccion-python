@@ -161,7 +161,8 @@
       \vfill
       {
         \begin{tabular}[t]{c}
-          \large Emiliano P. López
+          \large Emiliano P. López \\
+          \large Maximiliano Boscovich
         \end{tabular}
         \par}
       \vfill\vfill
@@ -1674,8 +1675,17 @@ una expresión particular, siempre es recomendable utilizar paréntesis
 para demarcar la expresión sobre la que deseamos operar.
 
 
-\chapter{Estructuras de control}
-\label{Unidad02:estructuras-de-control}
+\subsubsection{Referencias utilizadas en esta unidad:}
+\label{Unidad02:referencias-utilizadas-en-esta-unidad}\begin{itemize}
+\item {} 
+\textbf{*Python para todos*}, Raúl González Duque,
+\href{http://mundogeek.net/tutorial-python}{http://mundogeek.net/tutorial-python}
+
+\end{itemize}
+
+
+\chapter{Estructuras de datos y control de flujo}
+\label{Unidad03:estructuras-de-datos-y-control-de-flujo}\label{Unidad03::doc}
 Si un programa no fuera más que una lista de órdenes a ejecutar de forma
 secuencial, una por una, no tendría mucha utilidad. Es por ello que en
 la mayoría de los lenguajes de programación existen lo que se denominan
@@ -1691,8 +1701,8 @@ u de otra para de este modo recomendarnos una cosa (el uso de la
 bicicleta) u otra (el auto).
 
 
-\section{Condicionales}
-\label{Unidad02:condicionales}
+\section{Estructuras condicionales}
+\label{Unidad03:estructuras-condicionales}
 La primer estructura de control que veremos son los condicionales, los
 cuales nos permiten comprobar condiciones y hacer que ejecute un
 fragmento de código u otro, dependiendo de esta condición. Aquí es donde
@@ -1701,7 +1711,7 @@ anterior sobre los tipos básicos.
 
 
 \subsection{Sentencia if}
-\label{Unidad02:sentencia-if}
+\label{Unidad03:sentencia-if}
 La forma más simple de un estamento condicional es un \textbf{*if*} (del
 inglés si) seguido de la condición a evaluar, dos puntos (:) y en la
 siguiente línea e indentado, el código a ejecutar en caso de que se
@@ -1730,7 +1740,7 @@ cumpla la condición.
 
 
 \subsection{Sentencia if..else}
-\label{Unidad02:sentencia-if-else}
+\label{Unidad03:sentencia-if-else}
 Nuestro interés inicial era que el programa nos dijera si podemos ir en
 auto o en bicicleta, y el ejemplo anterior solo nos dice algo cuando
 podemos ir en bici, pero no dice o hace nada cuando la condición no se
@@ -1772,6 +1782,26 @@ Una versión más completa del programa podría ser la siguiente:
 \PYG{k}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Que tenga buen día!}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
 \end{Verbatim}
 
+\begin{Verbatim}[commandchars=\\\{\}]
+Ingrese la temperatura en ºC:21
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+
+TypeError                                 Traceback (most recent call last)
+
+\PYGZlt{}ipython\PYGZhy{}input\PYGZhy{}1\PYGZhy{}286b3e307026\PYGZgt{} in \PYGZlt{}module\PYGZgt{}()
+      1 temperatura = input(\PYGZsq{}Ingrese la temperatura en ºC:\PYGZsq{})
+      2
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} 3 if (temperatura \PYGZgt{}= 10) and (temperatura \PYGZlt{} 30):
+      4     print(\PYGZsq{}Deberías ser amable con el medio ambiente e ir en bicicleta\PYGZsq{})
+      5 else:
+
+
+TypeError: unorderable types: str() \PYGZgt{}= int()
+\end{Verbatim}
+
 En este caso consultamos por la temperatura, pidiendole al usuario que
 la ingrese por teclado (para esto utilizamos la función \emph{input} que
 vimos en la Unidad 1). Luego mostramos en patalla lo que corresponda
@@ -1783,7 +1813,7 @@ manera secuencial.
 
 
 \subsection{Estructuras anidadas}
-\label{Unidad02:estructuras-anidadas}
+\label{Unidad03:estructuras-anidadas}
 Supongamos ahora que también queremos considerar la distancia que se
 debe recorrer. En este caso deberíamos preguntar por la distancia, pero
 también por la temperatura. Para que en los casos donde la temperatura
@@ -1827,56 +1857,23 @@ mensaje \emph{`Que tenga buen día!'} independientemente del valor de las
 variables \emph{temperatura} y \emph{distancia}
 
 
-\section{Repeticiones}
-\label{Unidad02:repeticiones}
+\section{Estructuras repetitivas}
+\label{Unidad03:estructuras-repetitivas}
 
-\subsection{while}
-\label{Unidad02:while}
+\subsection{Estructura repetitiva \emph{while}}
+\label{Unidad03:estructura-repetitiva-while}
 
-\section{Ejercicios}
-\label{Unidad02:ejercicios}\begin{enumerate}
-\item {} 
-Modifique el código de la sección ``Estructuras anidadas'', para que la
-distancia se pregunte solamente en caso de que la temperatura sea
-agradable para ir en bicicleta.
+\subsection{Estructura repetitiva \emph{for}}
+\label{Unidad03:estructura-repetitiva-for}
 
-\end{enumerate}
+\section{Estructura de datos \emph{listas} y \emph{diccionarios}}
+\label{Unidad03:estructura-de-datos-listas-y-diccionarios}
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{:}
-    \PYG{k}{if} \PYG{n}{i}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{2}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{:}
-        \PYG{k}{print}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{es par}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
-    \PYG{k}{else}\PYG{p}{:}
-        \PYG{k}{print}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{es impar}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
-\end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es impar}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es par}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es impar}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es par}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es impar}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es par}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es impar}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es par}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\PYG{p}{(}\PYG{l+m+mi}{9}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{es impar}\PYG{l+s}{\PYGZsq{}}\PYG{p}{)}
-\end{Verbatim}
-\begin{itemize}
-\item {} 
-\textbf{*Python para todos*}, Raúl González Duque,
-\href{http://mundogeek.net/tutorial-python}{http://mundogeek.net/tutorial-python}
-
-\end{itemize}
-
-
-\chapter{Más estructuras de datos y control}
-\label{Unidad03:mas-estructuras-de-datos-y-control}\label{Unidad03::doc}
-
-\section{Listas}
+\subsection{Listas}
 \label{Unidad03:listas}
 
-\section{for}
-\label{Unidad03:for}
+\subsection{Diccionarios}
+\label{Unidad03:diccionarios}
 
 \section{Manipulando textos con strings}
 \label{Unidad03:manipulando-textos-con-strings}
@@ -1904,45 +1901,6 @@ agradable para ir en bicicleta.
 
 \chapter{Clases y objetos}
 \label{Unidad05::doc}\label{Unidad05:clases-y-objetos}
-
-\chapter{This is a Title}
-\label{example::doc}\label{example:this-is-a-title}
-That has a paragraph about a main subject and is set when the `='
-is at least the same length of the title itself.
-
-
-\section{Subject Subtitle}
-\label{example:subject-subtitle}
-Subtitles are set with `-` and are required to have the same length
-of the subtitle itself, just like titles.
-
-Lists can be unnumbered like:
-\begin{itemize}
-\item {} 
-Item Foo
-
-\item {} 
-Item Bar
-
-\end{itemize}
-
-Or automatically numbered:
-\begin{enumerate}
-\item {} 
-Item 1
-
-\item {} 
-Item 2
-
-\end{enumerate}
-
-
-\section{Inline Markup}
-\label{example:inline-markup}
-Words can have \emph{emphasis in italics} or be \textbf{bold} and you can define
-code samples with back quotes, like when you talk about a command: \code{sudo}
-gives you super user powers!
-
 
 \chapter{Indices and tables}
 \label{index:indices-and-tables}\begin{itemize}

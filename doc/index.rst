@@ -10,13 +10,12 @@ Contents:
 
 .. toctree::
    :maxdepth: 3
-   
+
    Unidad01
    Unidad02
    Unidad03
    Unidad04
    Unidad05
-   example
 
 Indices and tables
 ==================
@@ -24,4 +23,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

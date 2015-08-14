@@ -32,26 +32,23 @@
 \BOOKMARK [1][-]{section.2.3}{Booleanos}{chapter.2}% 32
 \BOOKMARK [2][-]{subsection.2.3.1}{Operadores relacionales}{section.2.3}% 33
 \BOOKMARK [2][-]{subsection.2.3.2}{Operadores l\363gicos}{section.2.3}% 34
-\BOOKMARK [0][-]{chapter.3}{Estructuras de control}{}% 35
-\BOOKMARK [1][-]{section.3.1}{Condicionales}{chapter.3}% 36
+\BOOKMARK [0][-]{chapter.3}{Estructuras de datos y control de flujo}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Estructuras condicionales}{chapter.3}% 36
 \BOOKMARK [2][-]{subsection.3.1.1}{Sentencia if}{section.3.1}% 37
 \BOOKMARK [2][-]{subsection.3.1.2}{Sentencia if..else}{section.3.1}% 38
 \BOOKMARK [2][-]{subsection.3.1.3}{Estructuras anidadas}{section.3.1}% 39
-\BOOKMARK [1][-]{section.3.2}{Repeticiones}{chapter.3}% 40
-\BOOKMARK [2][-]{subsection.3.2.1}{while}{section.3.2}% 41
-\BOOKMARK [1][-]{section.3.3}{Ejercicios}{chapter.3}% 42
-\BOOKMARK [0][-]{chapter.4}{M\341s estructuras de datos y control}{}% 43
-\BOOKMARK [1][-]{section.4.1}{Listas}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.2}{for}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.3}{Manipulando textos con strings}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Funciones, archivos, diccionarios}{}% 47
-\BOOKMARK [1][-]{section.5.1}{Definiendo funciones}{chapter.5}% 48
-\BOOKMARK [2][-]{subsection.5.1.1}{Variables globales y locales}{section.5.1}% 49
-\BOOKMARK [1][-]{section.5.2}{N\372meros aleatorios}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.3}{Lectura y escritura de archivos}{chapter.5}% 51
-\BOOKMARK [1][-]{section.5.4}{Diccionarios}{chapter.5}% 52
-\BOOKMARK [0][-]{chapter.6}{Clases y objetos}{}% 53
-\BOOKMARK [0][-]{chapter.7}{This is a Title}{}% 54
-\BOOKMARK [1][-]{section.7.1}{Subject Subtitle}{chapter.7}% 55
-\BOOKMARK [1][-]{section.7.2}{Inline Markup}{chapter.7}% 56
-\BOOKMARK [0][-]{chapter.8}{Indices and tables}{}% 57
+\BOOKMARK [1][-]{section.3.2}{Estructuras repetitivas}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.2.1}{Estructura repetitiva while}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.2}{Estructura repetitiva for}{section.3.2}% 42
+\BOOKMARK [1][-]{section.3.3}{Estructura de datos listas y diccionarios}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.1}{Listas}{section.3.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.2}{Diccionarios}{section.3.3}% 45
+\BOOKMARK [1][-]{section.3.4}{Manipulando textos con strings}{chapter.3}% 46
+\BOOKMARK [0][-]{chapter.4}{Funciones, archivos, diccionarios}{}% 47
+\BOOKMARK [1][-]{section.4.1}{Definiendo funciones}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.1.1}{Variables globales y locales}{section.4.1}% 49
+\BOOKMARK [1][-]{section.4.2}{N\372meros aleatorios}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.3}{Lectura y escritura de archivos}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.4}{Diccionarios}{chapter.4}% 52
+\BOOKMARK [0][-]{chapter.5}{Clases y objetos}{}% 53
+\BOOKMARK [0][-]{chapter.6}{Indices and tables}{}% 54
