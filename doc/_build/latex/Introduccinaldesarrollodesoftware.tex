@@ -12,6 +12,11 @@
 \usepackage{sphinx}
 \usepackage{multirow}
 
+\addto\captionsspanish{\renewcommand{\figurename}{Figura }}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla }}
+\floatname{literal-block}{Lista }
+
+
   \setcounter{tocdepth}{2}
   \fancypagestyle{normal}{
     \fancyhf{}
@@ -38,7 +43,7 @@
 
 
 \title{Introducción al desarrollo de software}
-\date{17 de July de 2015}
+\date{14 de August de 2015}
 \release{1.0}
 \author{Emiliano López}
 \newcommand{\sphinxlogo}{}
@@ -1942,13 +1947,13 @@ gives you super user powers!
 \chapter{Indices and tables}
 \label{index:indices-and-tables}\begin{itemize}
 \item {} 
-\emph{genindex}
+\DUspan{xref,std,std-ref}{genindex}
 
 \item {} 
-\emph{modindex}
+\DUspan{xref,std,std-ref}{modindex}
 
 \item {} 
-\emph{search}
+\DUspan{xref,std,std-ref}{search}
 
 \end{itemize}
 
