@@ -1,10 +1,3 @@
-
-Plan de Trabajo 1
-=================
-
-Primer contacto con un lenguaje de programación
-
-
 PdT1
 ====
 
