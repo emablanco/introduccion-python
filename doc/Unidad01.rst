@@ -1,4 +1,34 @@
 
+.. raw:: html
+
+   <h1 id="tocheading">
+
+Tabla de Contenidos
+
+.. raw:: html
+
+   </h1>
+
+.. raw:: html
+
+   <div id="toc">
+
+.. raw:: html
+
+   </div>
+
+.. code:: python
+
+    %%javascript
+    $.getScript('https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js')
+
+
+
+.. parsed-literal::
+
+    <IPython.core.display.Javascript object>
+
+
 Introducción
 ============
 
@@ -403,6 +433,7 @@ del poema de Fortunato Ramos *Yo jamás fui un niño*):
     sólo ocho años tengo, pero no soy un niño.
     '''
 
+
 Comentarios
 ~~~~~~~~~~~
 
@@ -574,9 +605,10 @@ ecuación matemática con el siguiente código:
 
 
     ---------------------------------------------------------------------------
+
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-15-3baa5c95d16e> in <module>()
+    <ipython-input-3-3baa5c95d16e> in <module>()
           1 x = input("Ingrese x = ")
     ----> 2 y = (x-4)**2-3
           3 print(x,y)
@@ -767,11 +799,6 @@ Entrada y Salida del tutorial de Python oficial
 http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf ó también en
 http://www.python-course.eu/python3\_formatted\_output.php
 
-Operadores relacionales y lógicos
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-¿¿¿capaz va a la unidad siguiente!!! - Coincido :D
-
 Funciones
 ~~~~~~~~~
 
@@ -913,6 +940,5 @@ tiempo sean ingresadas por un usuario.
 
 .. parsed-literal::
 
-    ('Diferencia de tiempo:', 1, 'hs', 1, 'min', 1, 'seg')
-
+    Diferencia de tiempo: 1 hs 1 min 1 seg
 

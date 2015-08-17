@@ -1,4 +1,34 @@
 
+.. raw:: html
+
+   <h1 id="tocheading">
+
+Tabla de Contenidos
+
+.. raw:: html
+
+   </h1>
+
+.. raw:: html
+
+   <div id="toc">
+
+.. raw:: html
+
+   </div>
+
+.. code:: python
+
+    %%javascript
+    $.getScript('https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js')
+
+
+
+.. parsed-literal::
+
+    <IPython.core.display.Javascript object>
+
+
 Tipos básicos
 =============
 
@@ -557,3 +587,12 @@ Referencias utilizadas en esta unidad:
 
 -  ***Python para todos***, Raúl González Duque,
    http://mundogeek.net/tutorial-python
+
+
+
+
+.. parsed-literal::
+
+    <IPython.core.display.Javascript object>
+
+
