@@ -28,6 +28,8 @@ Desde estos links se pueden visualizar estáticamente:
 Modificar el material
 ----------------------
 
+Apunte principal
+''''''''''''''''
 Correr el notebook de ipython3 (versión IPython 3.1.0) bajo el directorio que se encuentran los .ipynb haciendo: ipython3 notebook
 
 Modificar sobre el notebook (por ej, Unidad01.ipynb) y, luego de guardar, se debe:
@@ -52,6 +54,14 @@ Modificar sobre el notebook (por ej, Unidad01.ipynb) y, luego de guardar, se deb
 	make latexpdf
 
 Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
+
+Slides
+''''''
+.. code-block:: bash
+
+    ipython3 nbconvert SlidesU1-01.ipynb --to slides --post serve
+    
+Sin el último parámetro las guarda como html
 
 Licencia
 --------
