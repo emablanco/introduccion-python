@@ -12,10 +12,14 @@ Contents:
    :maxdepth: 3
 
    Unidad01
+   Unidad01-ejercicios
    Unidad02
    Unidad03
+   Unidad03-ejercicios
    Unidad04
+   Unidad04-ejercicios
    Unidad05
+   Unidad05-ejercicios
 
 Indices and tables
 ==================
