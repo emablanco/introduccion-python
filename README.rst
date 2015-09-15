@@ -38,7 +38,11 @@ Modificar sobre el notebook (por ej, Unidad01.ipynb) y, luego de guardar, se deb
 
 .. code-block:: bash
 
-	 ipython nbconvert Unidad01.ipynb --to rst
+	 ipython3 nbconvert Unidad01.ipynb --to rst
+
+Ahora hay dos opciones:
+
+1. USANDO SPHINX: Generar todo el apunte en un único pdf
 
 * Mover el archivo generado (Unidad01.rst) al directorio doc 
 
@@ -54,6 +58,12 @@ Modificar sobre el notebook (por ej, Unidad01.ipynb) y, luego de guardar, se deb
 	make latexpdf
 
 Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
+
+2. USANDO RST2PDF: genera un pdf por unidad (la salida es mas atractiva)
+
+.. code-block:: bash
+
+	rst2pdf Unidad01.rst
 
 Slides
 ''''''
