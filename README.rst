@@ -44,26 +44,26 @@ Ahora hay dos opciones:
 
 1. USANDO SPHINX: Generar todo el apunte en un único pdf
 
-* Mover el archivo generado (Unidad01.rst) al directorio doc 
+    * Mover el archivo generado (Unidad01.rst) al directorio doc 
 
-.. code-block:: bash
+    .. code-block:: bash
 
-	mv Unidad01.rst doc/
+	    mv Unidad01.rst doc/
 
-* Regenerar la documentación, estando bajo el directorio doc hacer
+    * Regenerar la documentación, estando bajo el directorio doc hacer
 
-.. code-block:: bash
+    .. code-block:: bash
 
-	make html
-	make latexpdf
+	    make html
+	    make latexpdf
 
-Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
+    Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
 
 2. USANDO RST2PDF: genera un pdf por unidad (la salida es mas atractiva)
 
-.. code-block:: bash
+    .. code-block:: bash
 
-	rst2pdf Unidad01.rst
+	    rst2pdf Unidad01.rst
 
 Slides
 ''''''
