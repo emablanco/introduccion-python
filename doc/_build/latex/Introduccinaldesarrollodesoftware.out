@@ -16,39 +16,54 @@
 \BOOKMARK [1][-]{section.1.6}{Elementos de un programa}{chapter.1}% 16
 \BOOKMARK [2][-]{subsection.1.6.1}{N\372meros y expresiones}{section.1.6}% 17
 \BOOKMARK [2][-]{subsection.1.6.2}{Cadenas de carateres}{section.1.6}% 18
-\BOOKMARK [2][-]{subsection.1.6.3}{Comentarios}{section.1.6}% 19
+\BOOKMARK [2][-]{subsection.1.6.3}{Comentarios en el c\363digo}{section.1.6}% 19
 \BOOKMARK [2][-]{subsection.1.6.4}{Variables}{section.1.6}% 20
 \BOOKMARK [2][-]{subsection.1.6.5}{Lectura de datos}{section.1.6}% 21
 \BOOKMARK [2][-]{subsection.1.6.6}{Escritura de datos}{section.1.6}% 22
-\BOOKMARK [2][-]{subsection.1.6.7}{Operadores relacionales y l\363gicos}{section.1.6}% 23
-\BOOKMARK [2][-]{subsection.1.6.8}{Funciones}{section.1.6}% 24
-\BOOKMARK [2][-]{subsection.1.6.9}{M\363dulos}{section.1.6}% 25
-\BOOKMARK [1][-]{section.1.7}{Ejercicios}{chapter.1}% 26
-\BOOKMARK [0][-]{chapter.2}{Tipos b\341sicos}{}% 27
-\BOOKMARK [1][-]{section.2.1}{N\372meros}{chapter.2}% 28
-\BOOKMARK [2][-]{subsection.2.1.1}{Reales}{section.2.1}% 29
-\BOOKMARK [2][-]{subsection.2.1.2}{Complejos}{section.2.1}% 30
-\BOOKMARK [1][-]{section.2.2}{Cadenas de texto}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.3}{Booleanos}{chapter.2}% 32
-\BOOKMARK [2][-]{subsection.2.3.1}{Operadores relacionales}{section.2.3}% 33
-\BOOKMARK [2][-]{subsection.2.3.2}{Operadores l\363gicos}{section.2.3}% 34
-\BOOKMARK [0][-]{chapter.3}{Estructuras de datos y control de flujo}{}% 35
-\BOOKMARK [1][-]{section.3.1}{Estructuras condicionales}{chapter.3}% 36
-\BOOKMARK [2][-]{subsection.3.1.1}{Sentencia if}{section.3.1}% 37
-\BOOKMARK [2][-]{subsection.3.1.2}{Sentencia if..else}{section.3.1}% 38
-\BOOKMARK [2][-]{subsection.3.1.3}{Estructuras anidadas}{section.3.1}% 39
-\BOOKMARK [1][-]{section.3.2}{Estructuras repetitivas}{chapter.3}% 40
-\BOOKMARK [2][-]{subsection.3.2.1}{Estructura repetitiva while}{section.3.2}% 41
-\BOOKMARK [2][-]{subsection.3.2.2}{Estructura repetitiva for}{section.3.2}% 42
-\BOOKMARK [1][-]{section.3.3}{Estructura de datos listas y diccionarios}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.3.1}{Listas}{section.3.3}% 44
-\BOOKMARK [2][-]{subsection.3.3.2}{Diccionarios}{section.3.3}% 45
-\BOOKMARK [1][-]{section.3.4}{Manipulando textos con strings}{chapter.3}% 46
-\BOOKMARK [0][-]{chapter.4}{Funciones, archivos, diccionarios}{}% 47
-\BOOKMARK [1][-]{section.4.1}{Definiendo funciones}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.1.1}{Variables globales y locales}{section.4.1}% 49
-\BOOKMARK [1][-]{section.4.2}{N\372meros aleatorios}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.3}{Lectura y escritura de archivos}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.4}{Diccionarios}{chapter.4}% 52
-\BOOKMARK [0][-]{chapter.5}{Clases y objetos}{}% 53
-\BOOKMARK [0][-]{chapter.6}{Indices and tables}{}% 54
+\BOOKMARK [2][-]{subsection.1.6.7}{Funciones}{section.1.6}% 23
+\BOOKMARK [2][-]{subsection.1.6.8}{M\363dulos}{section.1.6}% 24
+\BOOKMARK [0][-]{chapter.2}{Ejercicios}{}% 25
+\BOOKMARK [0][-]{chapter.3}{Tipos b\341sicos}{}% 26
+\BOOKMARK [1][-]{section.3.1}{N\372meros}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.1.1}{Reales}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.2}{Complejos}{section.3.1}% 29
+\BOOKMARK [1][-]{section.3.2}{Cadenas de texto}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.3}{Booleanos}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.1}{Operadores relacionales}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.2}{Operadores l\363gicos}{section.3.3}% 33
+\BOOKMARK [0][-]{chapter.4}{Estructuras de datos y control de flujo}{}% 34
+\BOOKMARK [1][-]{section.4.1}{Estructuras condicionales}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.1.1}{Sentencia if}{section.4.1}% 36
+\BOOKMARK [2][-]{subsection.4.1.2}{Sentencia if..else}{section.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.1.3}{Estructura de selecci\363n m\372ltiple if..elif..else}{section.4.1}% 38
+\BOOKMARK [2][-]{subsection.4.1.4}{Estructuras anidadas}{section.4.1}% 39
+\BOOKMARK [1][-]{section.4.2}{Estructuras repetitivas}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.2.1}{Sentencia while}{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.2}{Sentencia for}{section.4.2}% 42
+\BOOKMARK [2][-]{subsection.4.2.3}{Iteraciones sobre secuencias num\351ricas}{section.4.2}% 43
+\BOOKMARK [1][-]{section.4.3}{Estructura de datos}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{Listas}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.2}{Diccionarios}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.3}{Tuplas}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.4}{Conversi\363n entre listas y diccionarios}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.5}{Cadenas de caracteres}{section.4.3}% 49
+\BOOKMARK [0][-]{chapter.5}{Ejercicios}{}% 50
+\BOOKMARK [0][-]{chapter.6}{Funciones y archivos}{}% 51
+\BOOKMARK [1][-]{section.6.1}{Funciones}{chapter.6}% 52
+\BOOKMARK [2][-]{subsection.6.1.1}{Definici\363n y uso}{section.6.1}% 53
+\BOOKMARK [2][-]{subsection.6.1.2}{Variables globales y locales}{section.6.1}% 54
+\BOOKMARK [2][-]{subsection.6.1.3}{Agrupando el c\363digo en m\363dulos}{section.6.1}% 55
+\BOOKMARK [1][-]{section.6.2}{La biblioteca est\341ndar}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.3}{Archivos}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.3.1}{Lectura}{section.6.3}% 58
+\BOOKMARK [2][-]{subsection.6.3.2}{Escritura}{section.6.3}% 59
+\BOOKMARK [0][-]{chapter.7}{Ejercicios}{}% 60
+\BOOKMARK [0][-]{chapter.8}{Introducci\363n a la Programaci\363n Orientada a Objetos}{}% 61
+\BOOKMARK [1][-]{section.8.1}{Atributos y m\351todos}{chapter.8}% 62
+\BOOKMARK [1][-]{section.8.2}{M\351todos especiales}{chapter.8}% 63
+\BOOKMARK [2][-]{subsection.8.2.1}{Impresi\363n}{section.8.2}% 64
+\BOOKMARK [2][-]{subsection.8.2.2}{Comparaci\363n}{section.8.2}% 65
+\BOOKMARK [2][-]{subsection.8.2.3}{Algebraicos}{section.8.2}% 66
+\BOOKMARK [1][-]{section.8.3}{Herencia y polimorfismo}{chapter.8}% 67
+\BOOKMARK [0][-]{chapter.9}{Ejercicios}{}% 68
+\BOOKMARK [0][-]{chapter.10}{Indices and tables}{}% 69
