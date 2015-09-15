@@ -6,9 +6,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Más estructuras de datos y control &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
+    <title>Estructuras de datos y control de flujo &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -24,43 +24,1462 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" />
-    <link rel="next" title="Funciones, archivos, diccionarios" href="Unidad04.html" />
-    <link rel="prev" title="Estructuras de control" href="Unidad02.html" /> 
+    <link rel="next" title="Ejercicios" href="Unidad03-ejercicios.html" />
+    <link rel="prev" title="Tipos básicos" href="Unidad02.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="Unidad04.html" title="Funciones, archivos, diccionarios"
+          <a href="Unidad03-ejercicios.html" title="Ejercicios"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad02.html" title="Estructuras de control"
+          <a href="Unidad02.html" title="Tipos básicos"
              accesskey="P">anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
-  <div class="section" id="mas-estructuras-de-datos-y-control">
-<h1>Más estructuras de datos y control<a class="headerlink" href="#mas-estructuras-de-datos-y-control" title="Enlazar permanentemente con este título">¶</a></h1>
+  <h1 id="tocheading"><p>Tabla de Contenidos</p>
+</h1><div id="toc"></div><div class="code python highlight-python"><div class="highlight"><pre>%%javascript
+$.getScript(&#39;https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js&#39;)
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>&lt;IPython.core.display.Javascript object&gt;
+</pre></div>
+</div>
+<div class="section" id="estructuras-de-datos-y-control-de-flujo">
+<h1>Estructuras de datos y control de flujo<a class="headerlink" href="#estructuras-de-datos-y-control-de-flujo" title="Enlazar permanentemente con este título">¶</a></h1>
+<p><strong>NOTA EMI: Poner algo sobre las instrucciones secuenciales, donde el
+flujo del programa es inevitablemente único y donde el recorrido
+consiste en ejecutar una secuencia de pasos, sin podér cambiar o saltear
+algunas instrucciones, sin poder repetir etc, etc, etc... Teorema
+fundamental de la programación estructurada</strong></p>
+<p>Si un programa no fuera más que una lista de órdenes a ejecutar de forma
+secuencial, una por una, no tendría mucha utilidad. Es por ello que en
+la mayoría de los lenguajes de programación existen lo que se denominan
+estructuras de control. Estas estructuras permiten que, ante
+determinadas condiciones, un programa se comporte de diferentes maneras.</p>
+<p>Supongamos que queremos hacer un programa que nos haga ciertas preguntas
+y en base a las respuestas determine si nos conviene ir al trabajo en
+bicicleta o en auto. Este programa prodría considerar inicialmente la
+temperatura ambiente, la hora y la distancia. Estos indicadores
+(variables), determinarán si el programa se debe comportar de una forma
+u de otra para de este modo recomendarnos una cosa (el uso de la
+bicicleta) u otra (el auto).</p>
+<div class="section" id="estructuras-condicionales">
+<h2>Estructuras condicionales<a class="headerlink" href="#estructuras-condicionales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La primer estructura de control que veremos son los condicionales, los
+cuales nos permiten comprobar condiciones y hacer que se ejecute un
+fragmento de código u otro, dependiendo de esta condición. Aquí es donde
+cobra su importancia el tipo booleano que aprendimos en la sección
+anterior sobre los tipos básicos.</p>
+<div class="section" id="sentencia-if">
+<h3>Sentencia <em>if</em><a class="headerlink" href="#sentencia-if" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La forma más simple de un estamento condicional es un <strong>*if*</strong> (del
+inglés si) seguido de la condición a evaluar, dos puntos (:) y en la
+siguiente línea e indentado(con sangría), el código a ejecutar en caso
+de que se cumpla dicha condición. Por ejemplo, si consideramos lo
+anterior, y hacemos que el programa por ahora solo considere la
+temperatura, podríamos hacer lo siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">temperatura</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Está lindo para bici!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Deberías ser amable con el medio ambiente e ir en bicicleta
+</pre></div>
+</div>
+<p>Esta sentencia se lee como: si (if) temperatura mayor a 10 y menor a 30,
+entonces ejecutar: print(&#8216;Está lindo para bici!&#8217;). Estas sentencias solo
+se ejecutarán si se cumple la condición de que la variable temperatura
+contenga un valor que este entre 10 y 29, para el caso donde temperatura
+sea menor a 10 o mayor a 29, el programa no hará nada.</p>
+<div class="figure">
+<img alt="" src="files/img/u3/ej_sentencia_if.png" />
+</div>
+<p>Una característica saliente para este tipo de comparaciones en Python es
+la de asemejar al lenguaje natural, por lo que podemos implementar la
+comparación previa haciendo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">10</span> <span class="o">&lt;</span> <span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Está lindo para bici!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>¿Qué acciones se ejecutan al cumplirse la condición?</strong></p>
+<p>Una cuestión muy importante es indentar tal como se ha hecho en el
+ejemplo, es decir, aseguraros de dejar una sangría en las líneas debajo
+de los 2 puntos (:) que se deben ejecutar en caso que la condición de la
+pregunta se cumpla.</p>
+<p>Todo lenguaje de programación tiene en su sintaxis un modo de
+identificar las acciones que forman parte de un bloque, en Python esto
+es a partir de la sangría.</p>
+</div>
+<div class="section" id="sentencia-if-else">
+<h3>Sentencia <em>if..else</em><a class="headerlink" href="#sentencia-if-else" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Nuestro interés inicial era que el programa nos dijera si podemos ir en
+auto o en bicicleta, y el ejemplo anterior solo nos dice algo cuando
+podemos ir en bici, pero no dice o hace nada cuando la condición no se
+cumple. Para estos casos existe un condicional llamado <strong>*else*</strong>(del inglés si no), que se usa conjuntamente con if y que sirve para
+ejecutar ciertas instrucciones en caso de que la condición de la
+sentencia if no se cumpla. Por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Está lindo para ir en bici&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Te recomiendo ir en cole&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Está lindo para ir en bici
+</pre></div>
+</div>
+<p>Esto se lee como <em>si temperatura es mayor o igual a 10 y temperatura es
+menor que 30, entonces mostrar el mensaje &#8216;Está lindo para ir en bici&#8217;,
+sino mostrar el mensaje &#8216;Te recomiendo ir en cole&#8217;</em>. Siempre se
+ejecutará una opción u otra, dependiendo del valor de la variable
+temperatura. Por lo que en este punto podemos decir que el código se
+bifurca en dos caminos diferentes dependiendo de una condición (que en
+este caso es el valor de la variable temperatura).</p>
+<div class="figure">
+<img alt="" src="files/img/u3/ej_sentencia_if_else.png" />
+</div>
+<p>En este caso también tenemos que prestar atención a la indentación
+utilizada. La sentencia <em>else</em> se escribe al mismo nivel que la
+sentencia <em>if</em>, y las sentencias que se deben ejecutar en caso de no se
+cumpla la condición if, deben ir indentadas también.</p>
+<p>Una versión más completa del programa podría ser la siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">temperatura</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la temperatura en ºC:&#39;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Está lindo para ir en bici&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Te recomiendo ir en cole&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Que tenga buen día!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese la temperatura en ºC:12
+Deberías ser amable con el medio ambiente e ir en bicicleta
+Que tenga buen día!
+</pre></div>
+</div>
+<p>En este caso consultamos por la temperatura, pidiendole al usuario que
+la ingrese por teclado (para esto utilizamos la función <em>input</em> que
+vimos en la Unidad 1). Luego mostramos en patalla lo que corresponda
+según el valor ingresado, y por último mostramos el mensaje &#8216;Que tenga
+buen día!&#8217;. Es importante mencionar que la última sentencia siempre se
+ejecutará, la bifurcación se produce solamente entre las sentencias que
+estan dentro del if y el else, lo restante se seguirá ejecutando de
+manera secuencial.</p>
+<div class="figure">
+<img alt="" src="files/img/u3/ej_sentencia_if_else_completa.png" />
+</div>
+</div>
+<div class="section" id="estructura-de-seleccion-multiple-if-elif-else">
+<h3>Estructura de selección múltiple <em>if..elif..else</em><a class="headerlink" href="#estructura-de-seleccion-multiple-if-elif-else" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En los dos casos previos la secuencia de ejecución del programa tiene
+solamente dos alternativas, si la condición es verdadera (<code class="docutils literal"><span class="pre">True</span></code>) o si
+es falsa (<code class="docutils literal"><span class="pre">False</span></code>), incluso puede no existir un camino por la
+alternativa falsa, tal como se planteó en el primer ejemplo.</p>
+<p>Las estructuras de selección múltiple sirven para evaluar mas de una
+condición y por ende posibilitar varios caminos de ejecución del
+programa. En Python, la forma de esta estructura es del siguiente modo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="n">condicion1</span><span class="p">:</span>
+    <span class="n">acciones</span>
+    <span class="o">...</span>
+<span class="k">elif</span> <span class="n">condicion2</span><span class="p">:</span>
+    <span class="n">acciones</span>
+    <span class="o">...</span>
+<span class="k">elif</span> <span class="n">condicion3</span><span class="p">:</span>
+    <span class="n">acciones</span>
+    <span class="o">...</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">acciones</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>La interpretación de esta sentencia significa que cuando cumpla alguna
+de las condiciones ingresará al bloque de acciones correspondientes y,
+en caso que no cumpla con ninguna, ejecutará las acciones del <code class="docutils literal"><span class="pre">else</span></code>,
+que podría ser omitido si no son necesarias acciones por defecto.</p>
+<p>Veamos un ejemplo para mejorar la comprensión. Se lee una nota numérica
+de una evaluación (0..100) y el programa debe mostrar una calificación
+cualitativa según la siguiente escala:</p>
+<ul class="simple">
+<li>Insuficiente (nota &lt; 60)</li>
+<li>Aprobado (60 &lt;= nota &lt; 70)</li>
+<li>Bueno (70 &lt;= nota &lt; 80)</li>
+<li>Muy Bueno (80 &lt;= nota &lt; 90)</li>
+<li>Distinguido (90 &lt;= nota &lt; 100)</li>
+<li>Sobresaliente (nota = 100)</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Lectura de la nota</span>
+<span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la nota (0..100): &#39;</span><span class="p">))</span>
+<span class="c"># Decide la calif. correspondiente</span>
+<span class="k">if</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="n">calif</span> <span class="o">=</span> <span class="s">&quot;Insuficiente&quot;</span>
+<span class="k">elif</span> <span class="mi">60</span> <span class="o">&lt;=</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">70</span><span class="p">:</span>
+    <span class="n">calif</span> <span class="o">=</span> <span class="s">&quot;Aprobado&quot;</span>
+<span class="k">elif</span> <span class="mi">70</span> <span class="o">&lt;=</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">80</span><span class="p">:</span>
+    <span class="n">calif</span> <span class="o">=</span> <span class="s">&quot;Bueno&quot;</span>
+<span class="k">elif</span> <span class="mi">80</span> <span class="o">&lt;=</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="n">calif</span> <span class="o">=</span> <span class="s">&quot;Muy Bueno&quot;</span>
+<span class="k">elif</span> <span class="mi">90</span> <span class="o">&lt;=</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">calif</span> <span class="o">=</span> <span class="s">&quot;Distinguido&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">calif</span> <span class="o">=</span> <span class="s">&quot;Sobresaliente&quot;</span>
+<span class="c"># Mensaje alusivo</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Calificación: &quot;</span><span class="p">,</span> <span class="n">calif</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese la nota (0..100): 98
+Calificación:  Distinguido
+</pre></div>
+</div>
+<p>Como se observa, cada expresión condicional planteada es exluyente de
+las demás, por lo que no puede cumplir con mas de una a la vez. Ahora,
+podría existir un planteo donde se cumplan más de una condición y la
+pregunta obvia es, ¿qué sucede en ese caso?</p>
+<p>En el siguiente programa, ¿qué mensaje se muestra en pantalla?</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">val</span> <span class="o">=</span> <span class="mi">85</span>
+<span class="k">if</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="mi">81</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;opción 1&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="mi">82</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;opción 2&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="mi">83</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;opción 3&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="estructuras-anidadas">
+<h3>Estructuras anidadas<a class="headerlink" href="#estructuras-anidadas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Retomando el ejemplo del programa anterior, supongamos ahora que también
+queremos considerar la distancia que se debe recorrer. En este caso
+deberíamos preguntar por la distancia, pero también por la temperatura.
+Para que en los casos donde la temperatura sea agradable, la distancia
+no sea demasiado larga como para ir en bicicleta.</p>
+<p>Para estos casos, se pueden utilizar estructuras anidadas, es decir, en
+el bloque de código que se ejecutará en caso de cumplirse o no una
+determina condición, podemos poner una nueva estructura de control, por
+ejemplo un nuevo <em>if</em>.</p>
+<p>Reescribamos el código anterior para que considere esta nueva condición,
+y veamos como usar estructuras anidadas:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">temperatura</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la temperatura en ºC:&#39;</span><span class="p">))</span>
+<span class="n">distancia</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la distancia a recorrer en km:&#39;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">distancia</span> <span class="o">&lt;=</span> <span class="mi">15</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;Está lindo para ir en bici&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;Está lindo, pero es lejos, le recomiendo ir en auto&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;La temperatura no es agradable, le recomiendo ir en auto.&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Que tenga buen día!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese la temperatura en ºC:15
+Ingrese la distancia a recorrer en km:1
+Está lindo para ir en bici
+Que tenga buen día!
+</pre></div>
+</div>
+<p>En este caso si se cumple la condición de que la variable temperatura
+contiene un valor entre 10 y 29, se pasa a considerar el valor de la
+variable distancia; si esta es menor o igual a 15, se muestra el mensaje
+<em>&#8216;Está lindo para ir en bici&#8217;</em>, en caso contrario, se muestra el mensaje
+<em>&#8216;Está lindo, pero es lejos, le recomiendo ir en auto&#8217;</em>. Por otro lado,
+si el valor de la variable temperatura no esta entre 10 y 29, se seguirá
+mostrando el mensaje <em>&#8216;La temperatura no es agradable, le recomiendo ir
+en auto&#8217;</em>. Lo mismo sucede con la última sentencia, la cual mostrará el
+mensaje <em>&#8216;Que tenga buen día!&#8217;</em> independientemente del valor de las
+variables <em>temperatura</em> y <em>distancia</em></p>
+</div>
+</div>
+<div class="section" id="estructuras-repetitivas">
+<h2>Estructuras repetitivas<a class="headerlink" href="#estructuras-repetitivas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Ahora podemos dotar a nuestros programas de mayor complejidad,
+combinando y anidando las estructuras condicionales vistas. Sin embargo,
+aún tenemos una limitante, cada instrucción tendrá vida al momento de
+ser ejecutada e inmediamente después no se ejecutará más hasta que se el
+programa se invoque nuevamente.</p>
+<p>Imaginemos que debemos consultar la pregunta de la temperatura a cientos
+de miles de personas, deberíamos ejecutar cientos de miles de veces el
+programa, iniciandolo y esperando su finalización para repetir el
+proceso una y otra vez. Se hace evidente la ausencia de una estructura
+que permita repetir cuantas veces se requiera una determinada acción,
+aquí es donde entran en acción las estructuras repetitivas.</p>
+<div class="section" id="sentencia-while">
+<h3>Sentencia <em>while</em><a class="headerlink" href="#sentencia-while" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El <em>while</em> permite repetir una serie de acciones mientras que una
+determinada expresión (o condición) se cumpla, en caso contrario, se
+finaliza la repetición.</p>
+<p>Una expresión se cumple cuando arroja un resultado verdadero, que en
+Python es <code class="docutils literal"><span class="pre">True</span></code>. La estructura del <em>while</em> es la siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>while &lt;expresion&gt;
+    accion1
+    accion2
+    ...
+    accionN
+</pre></div>
+</div>
+<p>Tal como se explicó previamente, las acciones que se repiten en cada
+iteración son aquellas que tienen sangría, lo que indica que son partes
+del ciclo <em>while</em>.</p>
+<div class="section" id="bucles-condicionales">
+<h4>Bucles condicionales<a class="headerlink" href="#bucles-condicionales" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Veamos un ejemplo donde se le pregunte el valor de temperatura a 5
+personas y sugiera ir caminando si el clima es agradable (mayor a 16°C)
+o en caso contrario en vehículo. Tomemos una estrategia para resolver el
+problema:</p>
+<ol class="arabic simple">
+<li>Leemos una temperatura que se ingresa por teclado</li>
+<li>Escribimos en pantalla un mensaje según la temperatura</li>
+<li>Repetir los dos pasos previos un total de cinco veces</li>
+</ol>
+<p><strong>Pasos 1 y 2</strong></p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">temperatura</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la temperatura en ºC:&#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;</span> <span class="mi">16</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Vas caminando&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Mucho frío, en vehículo&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Paso 3</strong></p>
+<p>Debemos englobar los pasos previos en una estructura que repita 5 veces.
+Pensemos lo anterior como un único bloque denominado <em>Pasos1y2</em>, y una
+manera de controlar cinco repeticiones. Para ésto, usamos una variable
+con un valor inicial conocido (1) que incrementamos en una unidad luego
+de cada ejecución del bloque que denominamos <em>Pasos1y2</em>. La estructura
+de nuestro programa podría ser la siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">vez</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">vez</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">Pasos1y2</span>
+    <span class="n">vez</span> <span class="o">=</span> <span class="n">vez</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Ahora bien, cuando finaliza la ejecución de la instrucción
+<code class="docutils literal"><span class="pre">vez</span> <span class="pre">=</span> <span class="pre">vez</span> <span class="pre">+</span> <span class="pre">1</span></code> la estructura iterativa evalúa nuevamente la expresión
+<code class="docutils literal"><span class="pre">vez</span> <span class="pre">&lt;=</span> <span class="pre">5</span></code> cuyo resultado puede ser cierto o no (<code class="docutils literal"><span class="pre">True</span></code> o
+<code class="docutils literal"><span class="pre">False</span></code>). Si el resultado es <code class="docutils literal"><span class="pre">True</span></code>, entonces el ciclo continuará
+con las acciones contenidas, re-evaluando la expresión en cada
+itereación y finalizando cuando sea <code class="docutils literal"><span class="pre">False</span></code>, es decir, cuando la
+variable <code class="docutils literal"><span class="pre">vez</span></code> ya no sea menor o igual que 5.</p>
+<p>Ahora que ya hemos desmenuzado el inofensivo código previo, podemos
+pasar a la versión final del pequeño programa.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">vez</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">vez</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">temperatura</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese la temperatura en ºC:&#39;</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">temperatura</span> <span class="o">&gt;</span> <span class="mi">16</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;Vas caminando&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;Mucho frío, en vehículo&#39;</span><span class="p">)</span>
+    <span class="n">vez</span> <span class="o">=</span> <span class="n">vez</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese la temperatura en ºC:12
+Mucho frío, en vehículo
+Ingrese la temperatura en ºC:16
+Mucho frío, en vehículo
+Ingrese la temperatura en ºC:17
+Vas caminando
+Ingrese la temperatura en ºC:18
+Vas caminando
+Ingrese la temperatura en ºC:20
+Vas caminando
+</pre></div>
+</div>
+<p>Este tipo de bucle, donde la cantidad de iteraciones depende de una
+condición es denominado como <strong>bucles o lazos condicionales</strong> y cuenta
+con dos características destacables:</p>
+<ul class="simple">
+<li>El valor a ser evaluado en la expresión debe estar definido</li>
+<li>En cada iteración el valor a ser evaluado en la expresión debe
+modificarse</li>
+</ul>
+<p>El primer item evita obtener un mensaje de error, ya que no es posible
+evaluar una expresión con un valor que aún no ha sido definido, es
+decir, que no tiene asignado algún valor válido.</p>
+<p>La segunda característica evita tener un <strong>bucle infinito</strong> y por ende
+un programa que nunca finalice. Este tipo de errores es más difícil de
+detectar, ya que a priori el ejemplo parecería correcto.</p>
+</div>
+<div class="section" id="bucles-interactivos">
+<h4>Bucles interactivos<a class="headerlink" href="#bucles-interactivos" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Otro tipo bucle para el que la estructura <em>while</em> se adapta fácilmente
+es aquellos donde la repetición depende de un valor que ingresa el
+usuario, es decir, para aquellos programas donde la condición de corte o
+repetición sea interactiva. Veamos un ejemplo en el que se calcula el
+promedio a partir del ingreso por parte del usuario de valores numéricos
+enteros.</p>
+<p>Pensemos una posible estrategia para su solución: el programa le
+solicitará ingresar un nuevo valor numérico mientras que el usuario
+ingrese <em>si</em>, a su vez deberá ir sumando estos valores y contándolos.
+Veamos el pseudocódigo del algoritmo mencionado:</p>
+<div class="highlight-python"><div class="highlight"><pre>Inicializar variable suma para sumar los números
+Inicializar variable cant para contar los números
+Inicializar variable mas_datos donde se almacenará la respuesta del usuario (si/no)
+Mientras la variable mas_datos sea si:
+    Leer en x el nuevo valor numérico
+    Sumarlo a la variable suma
+    Contarlo
+    Pregutar al usuario si sigue ingresando números
+Mostrar en pantalla el promedio
+</pre></div>
+</div>
+<p>Ahora veamos lo directa que es la traducción del algoritmo al lenguaje
+Python:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">suma</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">cant</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">mas_datos</span> <span class="o">=</span> <span class="s">&#39;si&#39;</span>
+<span class="k">while</span> <span class="n">mas_datos</span> <span class="o">==</span> <span class="s">&#39;si&#39;</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese valor&#39;</span><span class="p">))</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">x</span>
+    <span class="n">cant</span> <span class="o">=</span> <span class="n">cant</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">mas_datos</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;¿Mas valores (si/no)?&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;El promedio de valores es&#39;</span><span class="p">,</span> <span class="n">suma</span><span class="o">/</span><span class="n">cant</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese valor12
+¿Mas valores (si/no)?si
+Ingrese valor3
+¿Mas valores (si/no)?si
+Ingrese valor44
+¿Mas valores (si/no)?no
+El promedio de valores es 19.666666666666668
+</pre></div>
+</div>
+<p>La limitación que encontramos está dada por la incomodidad de tener que
+ingresar dos valores por ciclo, uno para el dato numérico y otro para
+controlar si el usuario desea continuar o no. En ciertos casos puede ser
+la única alternativa, sin embargo, en otros se puede utilizar los bucles
+centinelas que se describen a continuación.</p>
+</div>
+<div class="section" id="bucles-centinelas">
+<h4>Bucles centinelas<a class="headerlink" href="#bucles-centinelas" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Otro tipo de bucles denominados centinelas, son aquellos donde la
+condición de corte tiene que ver con un valor que se diferencia del
+patrón que se ingresará y, será útil para discernir el momento en que
+corresponda continuar o bien finalizar la repetición.</p>
+<p>Para el caso del cálculo del promedio, suponiendo que todos los valores
+serán siempre positivos podríamos tomar la estrategia de controlar que
+el valor ingresado sea mayor a cero para continuar la iteración. El
+pseudocódigo, sin detalles, sería similar al siguiente:</p>
+<div class="highlight-python"><div class="highlight"><pre>Leer en x el primer valor numérico
+Mientras el valor x no sea el centinela:
+    Sumarlo a la variable suma
+    Contarlo
+    Leer en x el nuevo valor numérico
+Mostrar en pantalla el promedio
+</pre></div>
+</div>
+<p>Veamos la implementación del amigable programa en Python:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">suma</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">cant</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese valor (negativo para salir)&#39;</span><span class="p">))</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">x</span>
+    <span class="n">cant</span> <span class="o">=</span> <span class="n">cant</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese valor (negativo para salir)&#39;</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;El promedio de valores es&#39;</span><span class="p">,</span> <span class="n">suma</span><span class="o">/</span><span class="n">cant</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Se debe ser cuidadoso en mantener exactamente el mismo mensaje previo a
+ingresar al ciclo y en la última instrucción para dar al usuario una
+idea de continuidad viendo una y otra vez el mismo comportamiento.</p>
+<p>Para el ejemplo expuesto, la limitación esta dada para aquellos casos
+donde se ingresen valores negativos para ser incluídos en el cálculo del
+promedio. Sin embargo, Python provee herramientas que permiten salvar
+este inconveniente.</p>
+<p>El problema consiste en:</p>
+<ol class="arabic simple">
+<li>Solicitar al usuario ingrese el valor numérico o que presione <em>enter</em>
+para salir</li>
+<li>Evaluar en la expresión de corte para iterar mientras que el valor
+ingresado no sea vacío</li>
+<li>Realizar los cálculos</li>
+</ol>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">suma</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">cant</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese valor (&lt;enter&gt; para salir)&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">!=</span> <span class="s">&#39;&#39;</span><span class="p">:</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">cant</span> <span class="o">=</span> <span class="n">cant</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese valor (&lt;enter&gt; para salir)&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;El promedio de valores es&#39;</span><span class="p">,</span> <span class="n">suma</span><span class="o">/</span><span class="n">cant</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingrese valor (&lt;enter&gt; para salir)12
+Ingrese valor (&lt;enter&gt; para salir)-2
+Ingrese valor (&lt;enter&gt; para salir)-3
+Ingrese valor (&lt;enter&gt; para salir)23
+Ingrese valor (&lt;enter&gt; para salir)2
+Ingrese valor (&lt;enter&gt; para salir)
+El promedio de valores es 6.4
+</pre></div>
+</div>
+<p>El valor leído en <em>x</em> no se convierte en un número entero, sino que se
+lo mantiene como <em>str</em> hasta el momento de sumarlo a la variable <em>suma</em>
+utilizando la función <em>eval()</em>. Cuando el usuario presione enter el
+caracter en <em>x</em> será igual al caracter vacío y no ingresará al ciclo
+<em>while</em>.</p>
+</div>
+</div>
+<div class="section" id="sentencia-for">
+<h3>Sentencia <em>for</em><a class="headerlink" href="#sentencia-for" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La sentencia <em>for</em> provee otro modo de realizar bucles repetitivos en
+Python. Si bien la elección de un bucle u otro muchas veces dependerá
+del gusto o preferencia del programador, para ciertos casos suele ser
+más cómoda una estructura que otra.</p>
+<p>Veamos la sintaxis básica del bucle for:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>for &lt;var&gt; in &lt;secuencia&gt;:
+    accion1
+    accion2
+    ...
+    accionN
+</pre></div>
+</div>
+<p>El <em>for</em> ejecuta el bloque de acciones tantas veces como elementos
+contenga la <em>secuencia</em>, y en cada iteración la variable <em>var</em>
+almacenará uno a uno sus valores.</p>
+<p>El significado de secuencia para Python puede variar desde cadenas de
+caracteres a listas de valores de tipos de datos ya vistos, simplifando
+la definición, podemos definir una secuencia como todo tipo o estructura
+de datos formada por elementos por los que se puede iterar.</p>
+<p>Veamos un ejemplo, donde mostramos los caracteres de una cadena.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">palabra</span> <span class="o">=</span> <span class="s">&#39;estimados&#39;</span>
+<span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">palabra</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">e</span>
+<span class="n">s</span>
+<span class="n">t</span>
+<span class="n">i</span>
+<span class="n">m</span>
+<span class="n">a</span>
+<span class="n">d</span>
+<span class="n">o</span>
+<span class="n">s</span>
+</pre></div>
+</div>
+<p>Al analizar el ejemplo vemos que la variable <em>palabra</em> que contiene una
+<strong>cadena de caracteres, funciona como una secuencia</strong>, y la variable
+<em>letra</em> en cada iteración toma automáticamente el caracter subsiguiente.</p>
+</div>
+<div class="section" id="iteraciones-sobre-secuencias-numericas">
+<h3>Iteraciones sobre secuencias numéricas<a class="headerlink" href="#iteraciones-sobre-secuencias-numericas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para iterar sobre secuencias numéricas combinamos el uso del <code class="docutils literal"><span class="pre">for</span></code> con
+la función <code class="docutils literal"><span class="pre">range()</span></code>. Veamos un ejemplo de una iteración sobre 3
+valores:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+</pre></div>
+</div>
+<p>Cuando utilizamos la función <code class="docutils literal"><span class="pre">range()</span></code> con un único argumento como
+dato, para el ejemplo previo el número 3, nos genera una secuencia de 3
+valores, comenzando desde 0 y avanzando de a un valor, es decir, con
+paso 1. Sin embargo, podemos cambiar este comportamiento indicando el
+valor inicial y final haciendo <code class="docutils literal"><span class="pre">range(inicio,fin)</span></code>, por ejemplo, se se
+desea iterar por valores numéricos entre 10 y 14:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">14</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">10</span>
+<span class="mi">11</span>
+<span class="mi">12</span>
+<span class="mi">13</span>
+</pre></div>
+</div>
+<p>Se debe notar que el valor final no es alcanzado en la iteración.
+También es posible indicarle el paso del incremento, como se deduce del
+ejemplo previo, al indicar solamente el valor inicial y final, se da por
+sentado que el incremento es de 1, cambiemos este comportamiento
+utilizando <code class="docutils literal"><span class="pre">range(inicio,</span> <span class="pre">fin,</span> <span class="pre">paso)</span></code>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">10</span>
+<span class="mi">12</span>
+<span class="mi">14</span>
+<span class="mi">16</span>
+<span class="mi">18</span>
+</pre></div>
+</div>
+<p>Otra posibilidad es recorrer una secuencia numérica en sentido sentido
+inverso, utilizando un incremento negativo y los valores de inicio y fin
+consistentes:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">19</span>
+<span class="mi">17</span>
+<span class="mi">15</span>
+<span class="mi">13</span>
+<span class="mi">11</span>
+</pre></div>
+</div>
+<p>Del resultado previo queda en evidencia que se mantiene la coherencia
+respecto a excluir el último valor de la secuencia y a incluir el
+inicial.</p>
+<p>Veamos un ejemplo que resolvimos anteriormente utilizando el <code class="docutils literal"><span class="pre">while</span></code>,
+ahora usando <code class="docutils literal"><span class="pre">for</span></code>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>for vez in range(5)
+    temperatura = int(input(&#39;Ingrese la temperatura en ºC:&#39;))
+    if (temperatura &gt; 16):
+        print(&#39;Vas caminando&#39;)
+    else:
+        print(&#39;Mucho frío, en vehículo&#39;)
+</pre></div>
+</div>
+<p>Como vemos, nos despreocupamos de la inicialización de la variable <em>vez</em>
+y de controlar su incremento, ya que esto se realiza automáticamente,
+por lo que para ciclos que conocemos de antemano la cantidad de
+iteraciones suele ser más simple y directo que el <code class="docutils literal"><span class="pre">while</span></code>.</p>
+<p>La sentencia <code class="docutils literal"><span class="pre">for</span></code> en combinación con <code class="docutils literal"><span class="pre">range()</span></code> es una instrucción
+muy potente y flexible, más aún al ser combinadas con otro tipo de
+estructuras de datos como cadenas de caracteres y listas, que veremos en
+secciones posteriores.</p>
+</div>
+</div>
+<div class="section" id="estructura-de-datos">
+<h2>Estructura de datos<a class="headerlink" href="#estructura-de-datos" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="listas">
-<h2>Listas<a class="headerlink" href="#listas" title="Enlazar permanentemente con este título">¶</a></h2>
+<h3>Listas<a class="headerlink" href="#listas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hasta aquí todo dato procesado, manipulado y operado ha sido almacenado
+en variables, sin embargo, para ciertos problemas no son suficientes.
+Supongamos un caso donde leemos una serie de temperaturas mensuales
+durante los últimos 10 años y que posteriormente queremos saber las
+temperaturas que han superado la media.</p>
+<p>Si utilizamos variables, deberíamos leer los 120 valores para calcular
+el promedio y reingresar nuevamente las temperaturas mensuales para
+corroborar aquellas que superaron la media. Claramente el usuario de
+este programa no estará muy feliz de tener que tipear nuevamente la
+totalidad de los datos.</p>
+<p>Para este tipo de problemas y muchos otros más existe una estructuras
+más compleja y de gran utilidad denominada <strong>lista</strong>.</p>
+<p>A diferencia de una variable que contiene un dato por vez, una lista
+puede almacenar varios en forma simultánea en diferentes posiciones, por
+lo que para referirnos a uno de ellos necesitamos especificarle el
+índice. Por ejemplo, en la siguiente lista denominada <em>tempC</em> hay
+almacenados tres valores numéricos flotantes, el primero está en la
+posición 0, el segundo en la posición 1 y, el tercero en la posición 2:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">12.2</th>
+<th class="head">33.3</th>
+<th class="head">12.1</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Para <strong>declarar e inicializar</strong> una lista vacía y otra con esos tres
+valores haremos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Lista vacia</span>
+<span class="n">vacia</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c"># Lista con 3 valores flotantes</span>
+<span class="n">tempC</span> <span class="o">=</span> <span class="p">[</span><span class="mf">12.2</span><span class="p">,</span> <span class="mf">33.3</span><span class="p">,</span> <span class="mf">12.1</span><span class="p">]</span>
+</pre></div>
 </div>
-<div class="section" id="for">
-<h2>for<a class="headerlink" href="#for" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para acceder a un elemento específico, debemos utilizar el identificador
+de la lista, seguido del índice entre corchetes (cualquier expresión
+entera), veamos un ejemplo donde realizamos las siguientes acciones:</p>
+<ol class="arabic simple">
+<li>Imprimir en pantalla el segundo valor (la posición 1 porque empezamos
+a contar desde 0)</li>
+<li>Asignarle un nuevo valor que lo reemplace y volver a imprimirlo</li>
+<li>Mostrar todo el contenido de la lista usando un bucle <em>for</em></li>
+<li>Mostrar aquellas temperaturas que superaron el promedio</li>
+</ol>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Elemento 1 de la lista</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;2do elemento:&quot;</span><span class="p">,</span> <span class="n">tempC</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c"># Reemplaza el elemento 1 con 100</span>
+<span class="n">tempC</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;2do elemento modificado:&quot;</span><span class="p">,</span><span class="n">tempC</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c"># Lista completa y calculo de promedio</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Lista:&quot;</span><span class="p">)</span>
+<span class="n">media</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tempC</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">media</span> <span class="o">=</span> <span class="n">media</span> <span class="o">+</span> <span class="n">i</span>
+<span class="n">media</span> <span class="o">=</span> <span class="n">media</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="c"># Elementos que superan el promedio</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tempC</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">media</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&quot;La temperatura&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">&quot;superó la media&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="manipulando-textos-con-strings">
-<h2>Manipulando textos con strings<a class="headerlink" href="#manipulando-textos-con-strings" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>2do elemento: 100
+2do elemento modificado: 100
+Lista:
+12.2
+100
+12.1
+La temperatura 100 superó la media
+</pre></div>
+</div>
+<p>Como se observa en el ciclo iterativo previo, las listas son
+perfectamente iterables en el <code class="docutils literal"><span class="pre">for</span></code>, ya que al igual que una cadena de
+caracteres, es una secuencia de valores, la diferencia radica que en una
+cadena los valores son caracteres mientras que en una lista pueden ser
+de cualquier tipo y son llamados elementos o items.</p>
+<p>Otro detalle es que una lista puede contener elementos de diferente
+tipo, incluso otra lista. Veamos una lista que combine elementos de
+distintos tipos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Lista que almacena distintos tipos de datos</span>
+<span class="n">popurri</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mf">3.1415</span><span class="p">,</span> <span class="s">&quot;amapola del 66&quot;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="n">tempC</span><span class="p">]</span>
+
+<span class="c"># Imprimen los elementos</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;1er elemento: &quot;</span><span class="p">,</span> <span class="n">popurri</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;2do elemento: &quot;</span><span class="p">,</span> <span class="n">popurri</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;3er elemento: &quot;</span><span class="p">,</span> <span class="n">popurri</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;4to elemento: &quot;</span><span class="p">,</span> <span class="n">popurri</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;5to elemento: &quot;</span><span class="p">,</span> <span class="n">popurri</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>1er elemento:  12
+2do elemento:  3.1415
+3er elemento:  amapola del 66
+4to elemento:  True
+5to elemento:  [12.2, 100, 12.1]
+</pre></div>
+</div>
+<p>Ahora bien, seguramente el lector estará intrigado sobre el acceso a un
+elemento en particular de la lista <em>tempC</em>, ubicada en la 5ta posición
+de la lista <em>popurri</em>. En <em>popurri[4]</em> se referencia el elemento en
+cuestión, que es una lista, por lo que agregando un índice más
+accedemos, veamos el código:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">popurri</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">popurri</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">popurri</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mf">12.2</span>
+<span class="mi">100</span>
+<span class="mf">12.1</span>
+</pre></div>
+</div>
+<p>Una de las funcionalidades que nos provee Python para obtener
+información sobre la cantidad de elementos de las listas es <code class="docutils literal"><span class="pre">len()</span></code>.
+Veamos los resultados que arroja aplicado a la lista <em>popurri</em>.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">popurri</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">popurri</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">5</span>
+<span class="mi">3</span>
+</pre></div>
+</div>
+<p>Otra alternativa para iterar sobre una lista es combinando la función
+range que vimos anteriormente y la cantidad de elementos de la lista, de
+manera que podemos acceder a los items a partir de su índice:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tempC</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Temperatura&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">&quot;:&quot;</span><span class="p">,</span><span class="n">tempC</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Temperatura 0 : 12.2
+Temperatura 1 : 33.3
+Temperatura 2 : 12.1
+</pre></div>
+</div>
+<p>La función <code class="docutils literal"><span class="pre">len()</span></code> retornó la cantidad de elementos de la lista
+<em>tempC</em>, ese resultado, almacenado en n, fué utilizado como el valor
+para la función <code class="docutils literal"><span class="pre">range()</span></code> que generó una secuencia numérica (una
+lista!!!) que va desde 0 hasta <code class="docutils literal"><span class="pre">n-1</span></code>.</p>
+<p>Veamos otro ejemplo de una lista de cadenas de caracteres. Tenemos
+algunos equipos de fútbol santafesino de primera división y queremos
+imprimir el fixture con todas las combinaciones de los partidos de ida,
+es decir, si el equipo A ya jugó con el B, no tendremos en cuenta que el
+equipo B juegue con el A.</p>
+<p><strong>Analicemos la estrategia:</strong> Por cada equipo de la lista debemos
+imprimir uno a uno los rivales subsiguientes, es decir, imprimimos el
+primer equipo con el segundo, luego con el tercero y finalmente con el
+cuarto. Luego, al pasar al segundo equipo de la lista, no debemos
+imprimir el primero, porque ya fué rival, sino que los restantes y así
+sucesivamente.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">equipos</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Colón&quot;</span><span class="p">,</span> <span class="s">&quot;A. Rafaela&quot;</span><span class="p">,</span> <span class="s">&quot;Central&quot;</span><span class="p">,</span> <span class="s">&quot;Newell&quot;</span><span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">equipos</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">equipos</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s">&quot;vs&quot;</span><span class="p">,</span><span class="n">equipos</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Colón vs A. Rafaela
+Colón vs Central
+Colón vs Newell
+A. Rafaela vs Central
+A. Rafaela vs Newell
+Central vs Newell
+</pre></div>
+</div>
+<div class="section" id="listas-bidimensionales">
+<h4>Listas bidimensionales<a class="headerlink" href="#listas-bidimensionales" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Una lista unidimensional es aquella donde se utiliza un único índice
+para acceder a sus elementos, en el caso que utilicemos dos índices la
+lista es bidimensional y se la denomina matriz.</p>
+<p>Veamos un caso de una lista bidimensional de tres filas y cinco columnas
+(3x5)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">0</th>
+<th class="head">1</th>
+<th class="head">2</th>
+<th class="head">3</th>
+<th class="head">4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>0</strong></td>
+<td>12.2</td>
+<td>33.3</td>
+<td>12.1</td>
+<td>0.3</td>
+<td>1.21</td>
+</tr>
+<tr class="row-odd"><td><strong>1</strong></td>
+<td>3.14</td>
+<td>2.1</td>
+<td>9.8</td>
+<td>28.1</td>
+<td>19.8</td>
+</tr>
+<tr class="row-even"><td><strong>2</strong></td>
+<td>10.8</td>
+<td>0.1</td>
+<td>0.2</td>
+<td>22.1</td>
+<td>9.38</td>
+</tr>
+</tbody>
+</table>
+<p>Veamos el modo de definirla:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">matriz</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mf">12.2</span><span class="p">,</span> <span class="mf">33.3</span><span class="p">,</span> <span class="mf">12.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">1.21</span><span class="p">],</span>
+    <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">,</span> <span class="mf">9.8</span><span class="p">,</span> <span class="mf">28.1</span><span class="p">,</span> <span class="mf">19.9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mf">10.8</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">22.1</span><span class="p">,</span> <span class="mf">9.38</span><span class="p">]</span>
+    <span class="p">]</span>
+</pre></div>
+</div>
+<p>El acceso a cada dato se realiza utilizando los dos índices, donde el
+primero hace referencia a la fila y el segundo a la columna. Así, si se
+accede al segundo elemento (1) de la tercer fila sería (2):
+<code class="docutils literal"><span class="pre">matriz[2][1]</span></code>.</p>
+<p>El recorrido de una matriz se simplifica utilizando ciclos repetitivos
+anidados, veamos un posible modo de iterar por las columnas de la matriz
+previamente definida.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Columna&quot;</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">f</span><span class="p">][</span><span class="n">c</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">(</span><span class="s">&#39;Columna&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="mf">12.2</span>
+<span class="mf">3.14</span>
+<span class="mf">10.8</span>
+<span class="p">()</span>
+<span class="p">(</span><span class="s">&#39;Columna&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="mf">33.3</span>
+<span class="mf">2.1</span>
+<span class="mf">0.1</span>
+<span class="p">()</span>
+<span class="p">(</span><span class="s">&#39;Columna&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="mf">12.1</span>
+<span class="mf">9.8</span>
+<span class="mf">0.2</span>
+<span class="p">()</span>
+<span class="p">(</span><span class="s">&#39;Columna&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="mf">0.3</span>
+<span class="mf">28.1</span>
+<span class="mf">22.1</span>
+<span class="p">()</span>
+<span class="p">(</span><span class="s">&#39;Columna&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="mf">1.21</span>
+<span class="mf">19.9</span>
+<span class="mf">9.38</span>
+<span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operaciones">
+<h4>Operaciones<a class="headerlink" href="#operaciones" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>En Python, las listas, las tuplas y las cadenas de caracteres son parte
+del conjunto de las secuencias. Todas las secuencias cuentan con las
+siguientes operaciones:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operación</th>
+<th class="head">Resultado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">x</span> <span class="pre">in</span> <span class="pre">s</span></code></td>
+<td>Indica si la variable x se encuentra en s</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">s</span> <span class="pre">+</span> <span class="pre">t</span></code></td>
+<td>Concantena las secuencias s y t.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">s</span> <span class="pre">*</span> <span class="pre">n</span></code></td>
+<td>Concatena n copias de s.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">s[i]</span></code></td>
+<td>Elemento i de s, empezando por 0.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">s[i:j]</span></code></td>
+<td>Porción de la secuencia s desde i hasta j (no inclusive).</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">s[i:j:k</span></code>]</td>
+<td>Porción de la secuencia s desde i hasta j (no inclusive), con paso k.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">len(s)</span></code></td>
+<td>Cantidad de elementos de la secuencia s.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">min(s)</span></code></td>
+<td>Mínimo elemento de la secuencia s.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">max(s)</span></code></td>
+<td>Máximo elemento de la secuencia s.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rebanadas-slices">
+<h4>Rebanadas (slices)<a class="headerlink" href="#rebanadas-slices" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Para acceder a los elementos de una lista se puede usar como índice
+cualquier expresión entera, por lo que <code class="docutils literal"><span class="pre">tempC[1+1]</span></code> o
+<code class="docutils literal"><span class="pre">matriz[2*0+1][2*2]</span></code> son operaciones perfectamente válidas. Además, se
+pueden extraer conjuntos de elementos de la lista a partir de porciones
+o rebanadas (slices). Veamos unos ejemplos.</p>
+<div class="code python highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; lista = [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
+&gt;&gt;&gt; lista[1:3]
+[’b’, ’c’]
+&gt;&gt;&gt; lista[:4]
+[’a’, ’b’, ’c’, ’d’]
+&gt;&gt;&gt; lista[3:]
+[’d’, ’e’, ’f’]
+&gt;&gt;&gt; lista[:]
+[’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
+</pre></div>
+</div>
+<p>Podemos reemplazar varios elementos a la vez:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; lista = [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
+&gt;&gt;&gt; lista[1:3] = [’x’, ’y’]
+&gt;&gt;&gt; print lista
+[’a’, ’x’, ’y’, ’d’, ’e’, ’f’]
+</pre></div>
+</div>
+<p>Además, puede eliminar elementos de una lista asignándoles la lista
+vacía:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; lista = [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
+&gt;&gt;&gt; lista[1:3] = []
+&gt;&gt;&gt; lista
+[’a’, ’d’, ’e’, ’f’]
+</pre></div>
+</div>
+<p>Y se puede añadir elementos a la lista insertándolos en una porción
+vacía en la posición deseada:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; lista = [’a’, ’d’, ’f’]
+&gt;&gt;&gt; lista[1:1] = [’b’, ’c’]
+&gt;&gt;&gt; print lista
+[’a’, ’b’, ’c’, ’d’, ’f’]
+&gt;&gt;&gt; lista[4:4] = [’e’]
+&gt;&gt;&gt; print lista
+[’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
+</pre></div>
+</div>
+</div>
+<div class="section" id="metodos">
+<h4>Métodos<a class="headerlink" href="#metodos" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Una lista provee una serie de funcionalidades asociadas denominados
+métodos. Se propone profundizar sobre los métodos disponibles con la
+lectura del <em>Tutorial de Python</em> (pág. 26, <em>Más sobre listas</em>)</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">list.append(x)</span></code> Agrega un ítem al final de la lista. Equivale a
+<code class="docutils literal"><span class="pre">a[len(a):]</span> <span class="pre">=</span> <span class="pre">[x]</span></code></li>
+<li><code class="docutils literal"><span class="pre">list.extend(L)</span></code> Extiende la lista agregándole todos los ítems de
+la lista dada. Equivale a <code class="docutils literal"><span class="pre">a[len(a):]</span> <span class="pre">=</span> <span class="pre">L</span></code></li>
+<li><code class="docutils literal"><span class="pre">list.insert(i,x)</span></code> Inserta un ítem en una posición dada. El primer
+argumento es el índice del ítem delante del cual se insertará, por lo
+tanto <code class="docutils literal"><span class="pre">a.insert(0,</span> <span class="pre">x)</span></code> inserta al principio de la lista, y
+<code class="docutils literal"><span class="pre">a.insert(len(a),x)</span></code> <code class="docutils literal"><span class="pre">equivale</span> <span class="pre">a</span> <span class="pre">a.append(x)</span></code></li>
+<li><code class="docutils literal"><span class="pre">list.remove(x)</span></code> Quita el primer ítem de la lista cuyo valor sea x.
+Es un error si no existe tal ítem</li>
+<li><code class="docutils literal"><span class="pre">list.pop([,i])</span></code> Quita el ítem en la posición dada de la lista, y
+lo devuelve. Si no se especifica un índice a.pop() quita y devuelve
+el último ítem de la lista. (Los corchetes que encierran a i en la
+firma del método denotan que el parámetro es opcional, no que
+deberías escribir corchetes en esa posición. Verás esta notación con
+frecuencia en la Referencia de la Biblioteca de Python.)</li>
+<li><code class="docutils literal"><span class="pre">list.clear()</span></code> Quita todos los elementos de la lista. Equivalente a
+<code class="docutils literal"><span class="pre">del</span> <span class="pre">a[:]</span></code></li>
+<li><code class="docutils literal"><span class="pre">list.index(x)</span></code> Devuelve el índice en la lista del primer ítem cuyo
+valor sea x. Es un error si no existe tal ítem</li>
+<li><code class="docutils literal"><span class="pre">list.count(x)</span></code> Devuelve el número de veces que x aparece en la
+lista</li>
+<li><code class="docutils literal"><span class="pre">list.sort()</span></code> Ordena los ítems de la lista in situ</li>
+<li><code class="docutils literal"><span class="pre">list.reverse()</span></code> Invierte los elementos de la lista in situ</li>
+<li><code class="docutils literal"><span class="pre">list.copy()</span></code> Devuelve una copia superficial de la lista.
+Equivalente a <code class="docutils literal"><span class="pre">a[:]</span></code></li>
+</ul>
+<p>Una manera de quitar un ítem de una lista dado su índice en lugar de su
+valor es la instrucción <code class="docutils literal"><span class="pre">del</span></code>, que también puede usarse para quitar
+secciones de una lista o vaciar la lista completa. Por ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">66.25</span><span class="p">,</span> <span class="mi">333</span><span class="p">,</span> <span class="mi">333</span><span class="p">,</span> <span class="mf">1234.5</span><span class="p">]</span>
+<span class="k">del</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">a</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">66.25</span><span class="p">,</span> <span class="mi">333</span><span class="p">,</span> <span class="mi">333</span><span class="p">,</span> <span class="mf">1234.5</span><span class="p">]</span>
+<span class="k">del</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">a</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">66.25</span><span class="p">,</span> <span class="mf">1234.5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="diccionarios">
+<h3>Diccionarios<a class="headerlink" href="#diccionarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hemos visto que las listas son útiles cuando se quiere agrupar valores
+en una estructura y acceder a cada uno de ellos a través del un valor
+numérico, un índice.</p>
+<p>Otro tipo de estructura, que nos permite referirnos a un determinado
+valor a través de un nombre es un diccionario. Muchas veces este tipo de
+estructura es más apropiado que una lista.</p>
+<p>El nombre <em>diccionario</em> da una idea sobre el propósito de esta
+estructura ya que uno puede realizar fácilmente una búsqueda a partir de
+una palabra específica (<em>clave</em>) para obtener su definición (<em>valor</em>).</p>
+<p>Un ejemplo podría ser una agenda telefónica, que nos permita obtener el
+número de teléfono de una persona a partir de su nombre. Veamos entonces
+el modo de crear diccionarios.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">agenda</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;Marado&#39;</span><span class="p">:</span><span class="s">&#39;1552123&#39;</span><span class="p">,</span> <span class="s">&#39;JPFeinman&#39;</span><span class="p">:</span><span class="s">&#39;1523443&#39;</span><span class="p">,</span> <span class="s">&#39;Dolina&#39;</span><span class="p">:</span><span class="s">&#39;4584129&#39;</span><span class="p">,</span>
+          <span class="s">&#39;Spasiuk&#39;</span><span class="p">:</span><span class="s">&#39;65748&#39;</span><span class="p">,</span> <span class="s">&#39;Fontanarrosa&#39;</span><span class="p">:</span><span class="s">&#39;32456&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Los <em>diccionarios</em> consisten en pares (llamados <em>items</em>) de <em>claves</em> y
+sus <em>valores</em> correspondientes. En este ejemplo, los nombres son las
+claves y los números de teléfono son los valores. Cada clave es separada
+de su valor por los dos puntos (:), los items son separados por comas, y
+toda la estructura es encerrada entre llaves. Un diccionario vacío, sin
+items, se escribe con solo dos llaves: <code class="docutils literal"><span class="pre">{}</span></code>.</p>
+<p>Las claves, debido a que funcionan como índices, no pueden ser
+repetidas.</p>
+<p>Veamos las formas más comunes de iterar sobre un diccionario:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Imprime claves</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Claves&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;======&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">nom</span> <span class="ow">in</span> <span class="n">agenda</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">nom</span><span class="p">)</span>
+<span class="k">print</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Valores&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;=======&quot;</span><span class="p">)</span>
+<span class="c"># Imprime valores</span>
+<span class="k">for</span> <span class="n">tel</span> <span class="ow">in</span> <span class="n">agenda</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">tel</span><span class="p">)</span>
+<span class="k">print</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Clave y valor&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;=============&quot;</span><span class="p">)</span>
+<span class="c"># Imprime items: clave valor</span>
+<span class="k">for</span> <span class="n">nom</span><span class="p">,</span> <span class="n">tel</span> <span class="ow">in</span> <span class="n">agenda</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">nom</span><span class="p">,</span><span class="n">tel</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Claves
+======
+JPFeinman
+Spasiuk
+Marado
+Dolina
+Fontanarrosa
+
+Valores
+=======
+1523443
+65748
+1552123
+4584129
+32456
+
+Clave y valor
+=============
+JPFeinman 1523443
+Spasiuk 65748
+Marado 1552123
+Dolina 4584129
+Fontanarrosa 32456
+</pre></div>
+</div>
+<p>Al igual que las listas, los diccionarios son sumamente flexibles y
+pueden estar formados por otros diccionarios (o inclusive listas).
+Analicemos un breve ejemplo de un diccionario que está conformado del
+siguiente modo:</p>
+<ul class="simple">
+<li>Cuenta con tres items</li>
+<li>El valor de cada item es otro diccionario que a su vez contiene:<ul>
+<li>Tres items con las claves <em>titulo</em>, <em>fecha</em> y <em>autor</em></li>
+</ul>
+</li>
+</ul>
+<p>A continuación veamos la implementación de esta estructura, la impresión
+manual y mediante iteración:</p>
+<div class="code python highlight-python"><div class="highlight"><pre>referencia = { &quot;libro1&quot;:{&quot;titulo&quot;:&quot;El tutorial de Python&quot;,
+                         &quot;fecha&quot;:&quot;2013&quot;,
+                         &quot;autor&quot;:&quot;Guido van Rossum&quot;},
+               &quot;libro2&quot;:{&quot;titulo&quot;:&quot;Aprenda a Pensar Como un Programador con Python&quot;,
+                         &quot;fecha&quot;:&quot;2002&quot;,
+                         &quot;autor&quot;:&quot;Allen Downey&quot;},
+               &quot;libro3&quot;:{&quot;titulo&quot;:&quot;Inmersión en Python 3&quot;,
+                         &quot;fecha&quot;:&quot;2009&quot;,
+                         &quot;autor&quot;:&quot;Mark Pilgrim&quot;}
+              }
+# acceso a los valores de titulo de cada libro
+print(&quot;Titulos&quot;)
+print(&quot;=======&quot;)
+print(referencia[&quot;libro1&quot;][&quot;titulo&quot;])
+print(referencia[&quot;libro2&quot;][&quot;titulo&quot;])
+print(referencia[&quot;libro3&quot;][&quot;titulo&quot;])
+print()
+
+# Mezcladito
+for clave in referencia:
+    print(clave)
+    print(&quot;======&quot;)
+    for clave2, val in referencia[clave].items():
+        print(clave2, val, sep=&quot;: &quot;)
+    print()
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Titulos
+=======
+El tutorial de Python
+Aprenda a Pensar Como un Programador con Python
+Inmersión en Python 3
+
+libro3
+======
+autor: Mark Pilgrim
+titulo: Inmersión en Python 3
+fecha: 2009
+
+libro2
+======
+autor: Allen Downey
+titulo: Aprenda a Pensar Como un Programador con Python
+fecha: 2002
+
+libro1
+======
+autor: Guido van Rossum
+titulo: El tutorial de Python
+fecha: 2013
+</pre></div>
+</div>
+<div class="section" id="id1">
+<h4>Operaciones<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h4>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">len(d)</span></code> retorna el número de items (pares clave-valor) en d</li>
+<li><code class="docutils literal"><span class="pre">d[k]</span></code> retorna el valor asociado con la clave k</li>
+<li><code class="docutils literal"><span class="pre">d[k]</span> <span class="pre">=</span> <span class="pre">v</span></code> asocia el valor v con la clave k</li>
+<li><code class="docutils literal"><span class="pre">del</span> <span class="pre">d[k]</span></code> elimina el item con clave k</li>
+<li><code class="docutils literal"><span class="pre">k</span> <span class="pre">in</span> <span class="pre">d</span></code> evalúa si existe un item en d que tenga la clave k</li>
+</ul>
+<p>Aunque las listas y los diccionarios comparten varias características en
+común, existen ciertas distinciones importantes:</p>
+<ul class="simple">
+<li>Tipos de claves: Las claves de los diccionarios no deben ser enteros
+(aunque pueden serlo). Deben ser tipos de datos inmutables (números
+flotantes, cadenas de caracteres o tuplas)</li>
+<li>Agregado automático: En un diccionario se crea un item
+automáticamente al asignar un valor a una clave inexistente, en una
+lista no se puede agregar un valor en un índice que esté fuera del
+rango.</li>
+<li>Contenido: La expresión <code class="docutils literal"><span class="pre">k</span> <span class="pre">in</span> <span class="pre">d</span></code> (d es un diccionario) evalúa por
+la existencia de una clave, no de un valor. Por otro lado, la
+expresión <code class="docutils literal"><span class="pre">v</span> <span class="pre">in</span> <span class="pre">l</span></code> (siendo l una lista), busca por un valor en vez
+de por un índice.</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>Métodos<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>A continuación se describen brevemente algunos de los métodos más
+utilizados:</p>
+<p>clear()</p>
+<div class="highlight-python"><div class="highlight"><pre>Elimina todos los items
+</pre></div>
+</div>
+<p>copy()</p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna una copia superficial del diccionario
+</pre></div>
+</div>
+<p>get(key[, default])</p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna el valor de la clave key si existe, sino el valor default. Si no se proporciona un valor default, entonces retorna None.
+</pre></div>
+</div>
+<p>items()</p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna el par de valores del item clave, valor.
+</pre></div>
+</div>
+<p>keys()</p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna las claves.
+</pre></div>
+</div>
+<p>pop(key[, default])</p>
+<div class="highlight-python"><div class="highlight"><pre>Si la clave key está presente en el diccionario la elimina y retorna su valor, sino retorna default. Si no se proporciona un valor default y la clave no existe se produce un error (KeyError).
+</pre></div>
+</div>
+<p>popitem()</p>
+<div class="highlight-python"><div class="highlight"><pre>Elimina y retorna un par (clave, valor) arbitrario.
+</pre></div>
+</div>
+<p>setdefault(key[, default])</p>
+<div class="highlight-python"><div class="highlight"><pre>Si la clave key está presente en el diccionario retorna su valor. Si no, inserta la clave con un valor de default y retorna default
+</pre></div>
+</div>
+<p>update([other])</p>
+<div class="highlight-python"><div class="highlight"><pre>Actualiza los items de un diccionario en otro. Es útil para concatenar diccionarios.
+</pre></div>
+</div>
+<p>values()</p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna los valores del diccionario.
+</pre></div>
+</div>
+<p>Los diccionarios pueden ser comparados por su igualdad si y solo si
+tienen los mismos items. Otras comparaciones (‘&lt;’, ‘&lt;=’, ‘&gt;=’, ‘&gt;’) no
+son permitidas.</p>
+<p>Para profundizar sobre diccionarios se recomienda la lectura del
+<em>Tutorial de Python</em> (pág. 32, <em>Diccionarios</em>).</p>
+</div>
+</div>
+<div class="section" id="tuplas">
+<h3>Tuplas<a class="headerlink" href="#tuplas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las tuplas son secuencias, al igual que las listas. La única diferencia
+es que no pueden ser modificadas, son inmutables (al igual que las
+cadenas de caracteres).</p>
+<p>La sintaxis de las tuplas es simple, al separar varios valores con
+comas, automáticamente se crea una tupla.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">t</span> <span class="o">=</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="s">&#39;hola!&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+<span class="c"># desempaquetado de una tupla</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">t</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">28</span>
+<span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="s">&#39;hola!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para mayor detalle sobre esta estructura se recomienda leer el Tutorial
+de Python, <em>Tuplas y secuencias</em>, pag. 30.</p>
+</div>
+<div class="section" id="conversion-entre-listas-y-diccionarios">
+<h3>Conversión entre listas y diccionarios<a class="headerlink" href="#conversion-entre-listas-y-diccionarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="de-diccionarios-a-listas">
+<h4>De diccionarios a listas<a class="headerlink" href="#de-diccionarios-a-listas" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Es posible crear listas a partir de diccionarios usando los métodos
+<code class="docutils literal"><span class="pre">items()</span></code>, <code class="docutils literal"><span class="pre">keys()</span></code> y <code class="docutils literal"><span class="pre">values()</span></code>. El método <code class="docutils literal"><span class="pre">keys()</span></code> crea una
+lista que consiste solamente en las claves del diccionario, mientras que
+<code class="docutils literal"><span class="pre">values()</span></code> produce una lista que contiene los valores. <code class="docutils literal"><span class="pre">items()</span></code>
+puede ser usado para crear una lista que conste de tuplas de dos pares
+(clave, valor). Utilicemos el diccionario agenda creado anteriomente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Lista de items&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;==============&quot;</span><span class="p">)</span>
+<span class="n">items_vista</span> <span class="o">=</span> <span class="n">agenda</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="n">items</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">items_vista</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+<span class="k">print</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Lista de claves&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;===============&quot;</span><span class="p">)</span>
+<span class="n">claves_vista</span> <span class="o">=</span> <span class="n">agenda</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="n">nombres</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">claves_vista</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">nombres</span><span class="p">)</span>
+<span class="k">print</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Lista de valores&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;===============&quot;</span><span class="p">)</span>
+<span class="n">valores_vista</span> <span class="o">=</span> <span class="n">agenda</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="n">telefonos</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">valores_vista</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">telefonos</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Lista de items
+==============
+[(&#39;Dolina&#39;, &#39;4584129&#39;), (&#39;Fontanarrosa&#39;, &#39;32456&#39;), (&#39;JPFeinman&#39;, &#39;1523443&#39;), (&#39;Spasiuk&#39;, &#39;65748&#39;), (&#39;Marado&#39;, &#39;1552123&#39;)]
+
+Lista de claves
+===============
+[&#39;Dolina&#39;, &#39;Fontanarrosa&#39;, &#39;JPFeinman&#39;, &#39;Spasiuk&#39;, &#39;Marado&#39;]
+
+Lista de valores
+===============
+[&#39;4584129&#39;, &#39;32456&#39;, &#39;1523443&#39;, &#39;65748&#39;, &#39;1552123&#39;]
+</pre></div>
+</div>
+</div>
+<div class="section" id="de-listas-a-diccionarios">
+<h4>De listas a diccionarios<a class="headerlink" href="#de-listas-a-diccionarios" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Ahora realizaremos el proceso inverso, para armar un diccionario a
+partir de dos listas. Ya en el ejemplo previo obtuvimos dos listas, una
+con los nombres y otra con los teléfonos. Las funciones a utilizar son
+3: zip(), list() y dict(). Veamos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">lista_de_tuplas</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">nombres</span><span class="p">,</span> <span class="n">telefonos</span><span class="p">))</span>
+<span class="n">agenda2</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">lista_de_tuplas</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">agenda2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span><span class="s">&#39;JPFeinman&#39;</span><span class="p">:</span> <span class="s">&#39;1523443&#39;</span><span class="p">,</span> <span class="s">&#39;Fontanarrosa&#39;</span><span class="p">:</span> <span class="s">&#39;32456&#39;</span><span class="p">,</span> <span class="s">&#39;Dolina&#39;</span><span class="p">:</span> <span class="s">&#39;4584129&#39;</span><span class="p">,</span> <span class="s">&#39;Spasiuk&#39;</span><span class="p">:</span> <span class="s">&#39;65748&#39;</span><span class="p">,</span> <span class="s">&#39;Marado&#39;</span><span class="p">:</span> <span class="s">&#39;1552123&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cadenas-de-caracteres">
+<h3>Cadenas de caracteres<a class="headerlink" href="#cadenas-de-caracteres" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Una cadena es una secuencia de caracteres. Las hemos usado para mostrar
+mensajes, pero sus usos son mucho más amplios que sólo ése, a
+continuación las veremos mas en profundidad.</p>
+<p>Es importante destacar:</p>
+<ul class="simple">
+<li>Las cadenas son inmutables: una vez creadas no podemos modificarlas
+accediendo manualmente a sus caracteres.</li>
+<li>El acceso a sus caracteres es igual al de los elementos de una lista.
+El primer caracter se encuentra en la posición cero y soporta el
+indexado y las rebanadas o porciones tal como las listas.</li>
+</ul>
+<p>Veamos la siguiente cadena:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">frase</span> <span class="o">=</span> <span class="s">&#39;siento que nací en el viento&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Obtenemos la cantidad de caracteres utilizando la función
+<code class="docutils literal"><span class="pre">len(frase)</span></code></li>
+<li>Accedemos a los caracteres usando índices, por ejemplo, el cuarto
+caracter se encuentra en <code class="docutils literal"><span class="pre">frase[3]</span></code></li>
+<li>Soporta rebanadas, podemos extraer por ejemplo la segunda palabra,
+<code class="docutils literal"><span class="pre">frase[7:10]</span></code></li>
+<li>La última palabra: <code class="docutils literal"><span class="pre">frase[-6:]</span></code></li>
+</ul>
+<div class="section" id="id3">
+<h4>Operaciones<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Hemos visto ya dos operadores matemáticos que son compatibles para su
+uso con cadenas de caracteres: operador suma (+) y el multiplicación
+(*). Recordemos su funcionamiento con un simple ejemplo</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">w</span> <span class="o">=</span> <span class="s">&quot;libertad&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">w</span><span class="o">+</span><span class="s">&#39; &#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>libertad libertad libertad
+</pre></div>
+</div>
+<p>Las cadenas de caracteres pueden ser comparadas entre si mediante los
+símbolos: &gt;, &gt;=, &lt;, &lt;=, ==, !=. Veamos un ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">palabra</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ingresá una palabra: &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">palabra</span> <span class="o">&lt;</span> <span class="n">w</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Tu palabra, &quot;</span><span class="o">+</span><span class="n">palabra</span><span class="o">+</span> <span class="s">&quot;, va antes que &quot;</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">palabra</span> <span class="o">&gt;</span> <span class="n">w</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Tu palabra, &quot;</span><span class="o">+</span><span class="n">palabra</span><span class="o">+</span> <span class="s">&quot;, va después que &quot;</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Tu palabra, &quot;</span><span class="o">+</span><span class="n">palabra</span><span class="o">+</span> <span class="s">&quot;, es &quot;</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Ingresá una palabra: cadenas
+Tu palabra, cadenas, va antes que libertad
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>Métodos<a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Las cadenas también cuentan con métodos que realizan una función
+específica, a continuación vemos los más usuales:</p>
+<p><code class="docutils literal"><span class="pre">find</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre>Busca una subcadena dentro de otra.
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">lower</span></code> y <code class="docutils literal"><span class="pre">upper</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna la cadena en minúsculas
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">replace</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna una cadena donde todas las ocurrencias de una cadena son reemplazadas por otra
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">split</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre>Separa una cadena según un caracter separador y retorna una lista con los elementos separados.
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">strip</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre>Retorna una cadena donde los espacios en blanco al inicio y al final de la cadena son eliminados, pero no los interiores.
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">join</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre>Es el inverso de split. Une elementos de una lista en una cadena de caracteres usando un caracter de separación.
+</pre></div>
+</div>
+<p>Apliquemos algunos de estos métodos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">frase</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&quot;nací&quot;</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">frase</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">frase</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">frase</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;viento&quot;</span><span class="p">,</span> <span class="s">&quot;hospital&quot;</span><span class="p">))</span>
+<span class="n">lista_frase</span> <span class="o">=</span> <span class="n">frase</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lista_frase</span><span class="p">)</span>
+<span class="n">sep</span> <span class="o">=</span> <span class="s">&quot;-&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sep</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lista_frase</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>11
+siento que nací en el viento
+SIENTO QUE NACÍ EN EL VIENTO
+siento que nací en el hospital
+[&#39;siento&#39;, &#39;que&#39;, &#39;nací&#39;, &#39;en&#39;, &#39;el&#39;, &#39;viento&#39;]
+siento-que-nací-en-el-viento
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -68,30 +1487,73 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Más estructuras de datos y control</a><ul>
-<li><a class="reference internal" href="#listas">Listas</a></li>
-<li><a class="reference internal" href="#for">for</a></li>
-<li><a class="reference internal" href="#manipulando-textos-con-strings">Manipulando textos con strings</a></li>
+<li><a class="reference internal" href="#">Estructuras de datos y control de flujo</a><ul>
+<li><a class="reference internal" href="#estructuras-condicionales">Estructuras condicionales</a><ul>
+<li><a class="reference internal" href="#sentencia-if">Sentencia <em>if</em></a></li>
+<li><a class="reference internal" href="#sentencia-if-else">Sentencia <em>if..else</em></a></li>
+<li><a class="reference internal" href="#estructura-de-seleccion-multiple-if-elif-else">Estructura de selección múltiple <em>if..elif..else</em></a></li>
+<li><a class="reference internal" href="#estructuras-anidadas">Estructuras anidadas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#estructuras-repetitivas">Estructuras repetitivas</a><ul>
+<li><a class="reference internal" href="#sentencia-while">Sentencia <em>while</em></a><ul>
+<li><a class="reference internal" href="#bucles-condicionales">Bucles condicionales</a></li>
+<li><a class="reference internal" href="#bucles-interactivos">Bucles interactivos</a></li>
+<li><a class="reference internal" href="#bucles-centinelas">Bucles centinelas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sentencia-for">Sentencia <em>for</em></a></li>
+<li><a class="reference internal" href="#iteraciones-sobre-secuencias-numericas">Iteraciones sobre secuencias numéricas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#estructura-de-datos">Estructura de datos</a><ul>
+<li><a class="reference internal" href="#listas">Listas</a><ul>
+<li><a class="reference internal" href="#listas-bidimensionales">Listas bidimensionales</a></li>
+<li><a class="reference internal" href="#operaciones">Operaciones</a></li>
+<li><a class="reference internal" href="#rebanadas-slices">Rebanadas (slices)</a></li>
+<li><a class="reference internal" href="#metodos">Métodos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diccionarios">Diccionarios</a><ul>
+<li><a class="reference internal" href="#id1">Operaciones</a></li>
+<li><a class="reference internal" href="#id2">Métodos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tuplas">Tuplas</a></li>
+<li><a class="reference internal" href="#conversion-entre-listas-y-diccionarios">Conversión entre listas y diccionarios</a><ul>
+<li><a class="reference internal" href="#de-diccionarios-a-listas">De diccionarios a listas</a></li>
+<li><a class="reference internal" href="#de-listas-a-diccionarios">De listas a diccionarios</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cadenas-de-caracteres">Cadenas de caracteres</a><ul>
+<li><a class="reference internal" href="#id3">Operaciones</a></li>
+<li><a class="reference internal" href="#id4">Métodos</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 
   <h4>Tema anterior</h4>
   <p class="topless"><a href="Unidad02.html"
-                        title="capítulo anterior">Estructuras de control</a></p>
+                        title="capítulo anterior">Tipos básicos</a></p>
   <h4>Próximo tema</h4>
-  <p class="topless"><a href="Unidad04.html"
-                        title="próximo capítulo">Funciones, archivos, diccionarios</a></p>
-  <h3>Esta página</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/Unidad03.txt"
-           rel="nofollow">Mostrar el código</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <p class="topless"><a href="Unidad03-ejercicios.html"
+                        title="próximo capítulo">Ejercicios</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Unidad03.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -108,24 +1570,24 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              >índice</a></li>
         <li class="right" >
-          <a href="Unidad04.html" title="Funciones, archivos, diccionarios"
+          <a href="Unidad03-ejercicios.html" title="Ejercicios"
              >siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad02.html" title="Estructuras de control"
+          <a href="Unidad02.html" title="Tipos básicos"
              >anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2015, Emiliano López.
-      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
     </div>
   </body>
 </html>

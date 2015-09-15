@@ -6,9 +6,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Funciones, archivos, diccionarios &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
+    <title>Funciones y archivos &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -24,52 +24,577 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" />
-    <link rel="next" title="Clases y objetos" href="Unidad05.html" />
-    <link rel="prev" title="Más estructuras de datos y control" href="Unidad03.html" /> 
+    <link rel="next" title="Ejercicios" href="Unidad04-ejercicios.html" />
+    <link rel="prev" title="Ejercicios" href="Unidad03-ejercicios.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="Unidad05.html" title="Clases y objetos"
+          <a href="Unidad04-ejercicios.html" title="Ejercicios"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad03.html" title="Más estructuras de datos y control"
+          <a href="Unidad03-ejercicios.html" title="Ejercicios"
              accesskey="P">anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
-  <div class="section" id="funciones-archivos-diccionarios">
-<h1>Funciones, archivos, diccionarios<a class="headerlink" href="#funciones-archivos-diccionarios" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="definiendo-funciones">
-<h2>Definiendo funciones<a class="headerlink" href="#definiendo-funciones" title="Enlazar permanentemente con este título">¶</a></h2>
+  <h1 id="tocheading"><p>Tabla de Contenidos</p>
+</h1><div id="toc"></div><div class="code python highlight-python"><div class="highlight"><pre>%%javascript
+$.getScript(&#39;https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js&#39;)
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>&lt;IPython.core.display.Javascript object&gt;
+</pre></div>
+</div>
+<div class="section" id="funciones-y-archivos">
+<h1>Funciones y archivos<a class="headerlink" href="#funciones-y-archivos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="funciones">
+<h2>Funciones<a class="headerlink" href="#funciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Las funciones son subprogramas que pueden ser invocados para realizar
+una tarea específica, siendo capaz de recibir información (datos de
+entrada) desde donde son llamados y a su vez de retornar algún valor
+(datos de salida).</p>
+<p>Cuando una función es invocada, el programa principal transfiere el
+control a la función hasta que finalice su ejecución, volviendo luego al
+punto desde donde fue llamada.</p>
+<p>En los programas desarrollados anteriormente hicimos uso de la función
+<code class="docutils literal"><span class="pre">len()</span></code>, que recibe como información de entrada una secuencia (lista o
+una cadena de caracteres por ejemplo) y retorna un valor numérico entero
+que representa la cantidad de elementos (o de caracteres). <code class="docutils literal"><span class="pre">len()</span></code> es
+una de las tantas funciones prefedinidas por el lenguaje Python en la
+biblioteca estándar y, en la presente sección veremos cómo definir
+nuestras propias funciones.</p>
+<p>El uso de funciones en el desarrollo de programas tiene un conjunto de
+ventajas, dentro de las que se destacan:</p>
+<ul class="simple">
+<li>Subdividir un problema complejo en problemas mas simples: divide y
+vencerás.</li>
+<li>Mejoran la legibilidad del código, los programas modulares son más
+fáciles de mantener y entender.</li>
+<li>Posibilitan la reusabilidad del código, llamar funciones desde
+distintos programas.</li>
+</ul>
+<div class="section" id="definicion-y-uso">
+<h3>Definición y uso<a class="headerlink" href="#definicion-y-uso" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Una función se define anteponiendo la palabra clave <code class="docutils literal"><span class="pre">def</span></code> seguida del
+nombre de la función, paréntesis de apertura y cierra y los dos puntos
+(:). Luego, el bloque de acciones que la conforman. Veamos la
+estructura:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">nombre_funcion</span><span class="p">(</span><span class="n">argumento1</span><span class="p">,</span> <span class="n">argumento2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">argumentoN</span><span class="p">):</span>
+    <span class="n">accion1</span>
+    <span class="n">accion2</span>
+    <span class="o">...</span>
+    <span class="n">accionN</span>
+</pre></div>
+</div>
+<p>En el caso previo la función recibe como entrada argumentos y realiza
+una serie de acciones. Las funciones pueden ser definidas en el mismo
+programa, con la finalidad de organizar mejor el código. Veamos un
+ejemplo de un programa que define y utiliza una función denominada
+<code class="docutils literal"><span class="pre">muestra_doble()</span></code>.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Definición de la función</span>
+<span class="k">def</span> <span class="nf">muestra_doble</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Imprime en pantalla el doble de x&#39;&#39;&#39;</span>
+    <span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c"># Programa principal</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">3.5</span>
+<span class="c"># invoca a la funcion</span>
+<span class="n">muestra_doble</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Todo OK&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>7.0
+Todo OK
+</pre></div>
+</div>
+<p>Analicemos en detalle la secuencia de ejecución:</p>
+<ul class="simple">
+<li>Desde el programa principal se invoca a la función enviándo la
+variable <code class="docutils literal"><span class="pre">a</span></code> como parámetro</li>
+<li>La función recibe la entrada haciendo una copia de <code class="docutils literal"><span class="pre">a</span></code> en la
+variable <code class="docutils literal"><span class="pre">x</span></code></li>
+<li>La función ejecuta sus acciones y vuelve el control al programa
+principal</li>
+<li>El programa principal continúa la ejecución hasta finalizar</li>
+</ul>
+<p>Como vemos, la función no ha retornado valor alguno al programa
+principal, modifiquemos la función de manera que en vez de imprimir en
+pantalla el doble del valor, lo retorne al programa principal.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Definición de la función</span>
+<span class="k">def</span> <span class="nf">calc_doble</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Retorna el doble de x&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
+
+<span class="c"># Programa principal</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">3.5</span>
+<span class="c"># invoca a la funcion</span>
+<span class="n">doble</span> <span class="o">=</span> <span class="n">calc_doble</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">doble</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mf">7.0</span>
+</pre></div>
+</div>
+<p>Al igual que en el ejemplo anterior, la función es invocada desde el
+programa principal con el parámetro <code class="docutils literal"><span class="pre">a</span></code> y es copiado automáticamente
+como <code class="docutils literal"><span class="pre">x</span></code> dentro de la función. Destaquemos las diferencias:</p>
+<ul class="simple">
+<li>El programa principal invoca la función desde una asignación
+(<code class="docutils literal"><span class="pre">doble</span> <span class="pre">=</span> <span class="pre">calc_doble(a)</span></code>)</li>
+<li>Antes de realizarse la asignación, la ejecución pasa el control a la
+función.</li>
+<li>La función realiza las acciones programadas y al ejecutar la palabra
+reservada <code class="docutils literal"><span class="pre">return</span></code> asigna la operación a su nombre y vuelve el
+control al programa principal</li>
+<li>El nombre de la función contiene el resultado y es asignado a la
+variable <code class="docutils literal"><span class="pre">doble</span></code></li>
+<li>Finaliza el programa</li>
+</ul>
+<p>Si bien parece trivial, es importante que el nombre de la función sea
+acorde a las acciones que realiza e identifique su comportamiento, por
+este motivo la función fue renombrada a <code class="docutils literal"><span class="pre">calc_doble</span></code>.</p>
+<p>El retorno de valores de una función es completamente flexible, se
+pueden retornar más de una variable, listas, tuplas, diccionarios o
+cualquier combinación de ellas. Veamos un caso de una función que recibe
+dos listas de nombres y teléfonos y retorna una agenda en una estructura
+de diccionario, donde la primer lista conforma las claves y la segunda
+los valores.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">arma_agenda</span><span class="p">(</span><span class="n">lista_nom</span><span class="p">,</span> <span class="n">lista_tel</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;recibe 2 listas y retorna un diccionario&#39;&#39;&#39;</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">nom</span><span class="p">,</span> <span class="n">tel</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">lista_nom</span><span class="p">,</span> <span class="n">lista_tel</span><span class="p">):</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">nom</span><span class="p">]</span> <span class="o">=</span> <span class="n">tel</span>
+    <span class="k">return</span> <span class="n">d</span>
+
+<span class="c"># Programa principal</span>
+<span class="n">n</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;Kliksberg&#39;</span><span class="p">,</span> <span class="s">&#39;Stiglitz&#39;</span><span class="p">,</span> <span class="s">&#39;Zaffaroni&#39;</span><span class="p">]</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;23444&#39;</span><span class="p">,</span> <span class="s">&#39;54556&#39;</span><span class="p">,</span> <span class="s">&#39;66554&#39;</span><span class="p">]</span>
+<span class="n">agenda</span> <span class="o">=</span> <span class="n">arma_agenda</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">t</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">agenda</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span><span class="s">&#39;Kliksberg&#39;</span><span class="p">:</span> <span class="s">&#39;23444&#39;</span><span class="p">,</span> <span class="s">&#39;Stiglitz&#39;</span><span class="p">:</span> <span class="s">&#39;54556&#39;</span><span class="p">,</span> <span class="s">&#39;Zaffaroni&#39;</span><span class="p">:</span> <span class="s">&#39;66554&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>El lector atento abrá notado que en todas las funciones debajo de su
+definición existe un texto encerrado entre comillas triples (como por
+ejemplo <code class="docutils literal"><span class="pre">&quot;&quot;&quot;Retorna</span> <span class="pre">el</span> <span class="pre">doble</span> <span class="pre">de</span> <span class="pre">x&quot;&quot;&quot;</span></code>). Esto es un comentario que se
+utiliza para documentar brevemente, y con nuestras palabras, que es lo
+que realiza dicha función. Su uso es opcional, pero es muy recomendable,
+dado que puede ser de mucha utilidad tanto para nostros como para otros
+desarrolladores.</p>
+</div>
 <div class="section" id="variables-globales-y-locales">
 <h3>Variables globales y locales<a class="headerlink" href="#variables-globales-y-locales" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hemos visto que las funciones reciben un conjunto de valores a través de
+sus parámetros, sin embargo no fueron modificados dentro de la función.
+La pregunta que surge es: ¿Podemos cambiarlos? ¿Qué sucede si los
+modificamos?</p>
+<p>Veamos un ejemplo y su comportamiento:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">trata_de_cambiar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+    <span class="n">nombre</span> <span class="o">=</span> <span class="s">&#39;Luis Alberto Spinetta&#39;</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="s">&#39;Norberto Napolitano&#39;</span>
+<span class="n">trata_de_cambiar</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Norberto Napolitano
+</pre></div>
+</div>
+<p>Observamos que la variable no fué modificada o al menos no se ve
+reflejado desde el programa principal. Esto sucede debido a que la
+variable <code class="docutils literal"><span class="pre">n</span></code> es copiada en la variable <code class="docutils literal"><span class="pre">nombre</span></code> y todo cambio que se
+realice en el interior de <code class="docutils literal"><span class="pre">trata_de_cambiar</span></code> será local, es decir, su
+ámbito de validez se limita a la función, de manera tal que tanto
+<code class="docutils literal"><span class="pre">Spinetta</span></code> como <code class="docutils literal"><span class="pre">Napolitano</span></code> son irremplazables.</p>
+<p>No obstante, existen estructuras de datos que al ser modificadas dentro
+la función su cambio se verá reflejado en el programa principal. La
+única condición para que sea posible este comportamiento es que la
+estructura a ser modificada como argumentos sea <em>mutable</em>, tal es el
+caso de los diccionarios y listas.</p>
+<p>Veamos un caso donde definimos una función que recibe dos argumentos,
+una cadena de caracteres y una lista, de tipo <em>inmutable</em> y <em>mutable</em>
+respectivamente.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">todo_cambia</span><span class="p">(</span><span class="n">musico</span><span class="p">,</span> <span class="n">listam</span><span class="p">):</span>
+    <span class="n">listam</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">musico</span><span class="p">)</span>
+
+<span class="n">artistas</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">todo_cambia</span><span class="p">(</span><span class="s">&#39;Luis Alberto Spinetta&#39;</span><span class="p">,</span> <span class="n">artistas</span><span class="p">)</span>
+<span class="n">todo_cambia</span><span class="p">(</span><span class="s">&#39;Chango Spasiuk&#39;</span><span class="p">,</span><span class="n">artistas</span><span class="p">)</span>
+<span class="n">todo_cambia</span><span class="p">(</span><span class="s">&#39;Norberto Napolitano&#39;</span><span class="p">,</span><span class="n">artistas</span><span class="p">)</span>
+<span class="n">todo_cambia</span><span class="p">(</span><span class="s">&#39;Charly García&#39;</span><span class="p">,</span><span class="n">artistas</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">artistas</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span><span class="s">&#39;Luis Alberto Spinetta&#39;</span><span class="p">,</span> <span class="s">&#39;Chango Spasiuk&#39;</span><span class="p">,</span> <span class="s">&#39;Norberto Napolitano&#39;</span><span class="p">,</span> <span class="s">&#39;Charly García&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>El primer argumento, <code class="docutils literal"><span class="pre">musico</span></code>, es una cadena de caracteres que
+contiene el nombre de un artista y el segundo argumento, <code class="docutils literal"><span class="pre">listam</span></code>, es
+una lista donde se agrega el músico.</p>
+<p>Es importante notar que el ejemplo es equivalente al anterior, la
+diferencia radica únicamente en que el argumento que es modificado en la
+función es la misma lista del programa principal, no una copia,
+independientemente que en el programa principal utilice un identificador
+diferente al de la función.</p>
+<p>Ahora bien, existen casos donde es necesario modificar una variable del
+programa principal desde una función sin que sea recibida a través de
+sus argumentos. Para realizar este tipo de acciones necesitamos utilizar
+variables cuyo ámbito de validez sea tanto el programa principal como la
+función, es decir, variables globales.</p>
+<p>Veamos un ejemplo de una función que incrementa una variable global
+cuando el número que recibe por argumentos es par:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">contar</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">pares</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">pares</span> <span class="o">=</span> <span class="n">pares</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="n">pares</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">contar</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">contar</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">contar</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">pares</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">2</span>
+</pre></div>
+</div>
+<p>Algunos detalles a destacar sobre variables globales:</p>
+<ul class="simple">
+<li>Se debe anteponer a la variable la palabra reservada <code class="docutils literal"><span class="pre">global</span></code></li>
+<li>Toda modificación repercutirá en el programa principal</li>
+</ul>
+<p>El uso de variables globales es una práctica que generalmente debe ser
+evitada. En la mayoría de los casos es preferible utilizar un parámetro
+y que la función retorne en su nombre el valor modificado.</p>
+</div>
 <div class="section" id="agrupando-el-codigo-en-modulos">
-<h4>Agrupando el código en módulos<a class="headerlink" href="#agrupando-el-codigo-en-modulos" title="Enlazar permanentemente con este título">¶</a></h4>
+<h3>Agrupando el código en módulos<a class="headerlink" href="#agrupando-el-codigo-en-modulos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hemos visto como organizar mejor el código a través de funciones, sin
+embargo, una de las ventajas de utilizar funciones propias es evitar la
+reescritura. Carece de sentido tener que reprogramar una misma función
+por cada programa y, por otro lado, con el paso del tiempo es muy
+probable que no todas las versiones sean idénticas y por ende, su
+comportamiento puede diferir.</p>
+<p>Para solucionar este tipo de problemas y sacar provecho del uso de
+funciones existen los módulos, cuya utilidad es la de contener varias
+funciones que realicen algún tipo de tarea afin.</p>
+<p>Por ejemplo, una serie de funciones para cálculo matemático sería útil
+que estén contenidas en un mismo módulo, otras funciones para
+procesamiento de sonido en un módulo destinado a tal fin, o bien, una
+serie de funciones destinadas a almacenar todas las funciones relativas
+a un determinado proyecto.</p>
+<p>Para comprender la implementación veamos un módulo trivial, que contenga
+saludos en diferentes idiomas. Almacenamos en el archivo <code class="docutils literal"><span class="pre">saludo.py</span></code>
+las siguientes funciones:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">espanol</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Hola&#39;</span><span class="p">,</span> <span class="n">nom</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">quechua</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Napaykullayki&#39;</span><span class="p">,</span> <span class="n">nom</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">italiano</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Ciao&#39;</span><span class="p">,</span> <span class="n">nom</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">guarani</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Buen dia, cómo estas?&#39;&#39;&#39;</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Mba&#39;éichapa ndepyhareve&quot;</span><span class="p">,</span> <span class="n">nom</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">aymara</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;¿cómo estás?&#39;&#39;&#39;</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Kamisaraki&#39;</span><span class="p">,</span> <span class="n">nom</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">maya</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;¿cómo estás?&#39;&#39;&#39;</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Biix yanilech?&#39;</span><span class="p">,</span> <span class="n">nom</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Luego, creamos el programa desde donde será importado el módulo e
+invocadas las funciones que contiene. Por ejemplo, en <code class="docutils literal"><span class="pre">charlando.py</span></code>
+hacemos lo siguiente:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">saludo</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese su nombre: &#39;</span><span class="p">)</span>
+<span class="n">saludo</span><span class="o">.</span><span class="n">italiano</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">saludo</span><span class="o">.</span><span class="n">guarani</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Como observamos, el módulo es importado a través del nombre del archivo
+(sin la extensión <em>.py</em>) y luego, se invocan las funciones utilizando el
+nombre del módulo y la función separado por un punto (.).</p>
+<p>De esta manera, tenemos acceso a la totalidad de las funciones definidas
+bajo el módulo, pero, para el caso que únicamente se utilice una función
+específica, es posible especificarlo en la cláusula import del siguiente
+modo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">saludo</span> <span class="kn">import</span> <span class="n">italiano</span><span class="p">,</span> <span class="n">guarani</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Ingrese su nombre: &#39;</span><span class="p">)</span>
+<span class="n">italiano</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">guarani</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>De esta manera, es posible invocar solamente las funciones importadas.</p>
 </div>
 </div>
+<div class="section" id="la-biblioteca-estandar">
+<h2>La biblioteca estándar<a class="headerlink" href="#la-biblioteca-estandar" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se recomienda la lectura del capítulo <em>Pequeño paseo por la Biblioteca
+Estándar. Parte I</em> (pag. 72) del Tutorial de Python.</p>
 </div>
-<div class="section" id="numeros-aleatorios">
-<h2>Números aleatorios<a class="headerlink" href="#numeros-aleatorios" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="archivos">
+<h2>Archivos<a class="headerlink" href="#archivos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Hasta aquí hemos trabajado con información almacenada en estructuras de
+datos, ya sea a partir de la lectura interactiva (utilizando la función
+<code class="docutils literal"><span class="pre">input</span></code>) o cargada estáticamente en el mismo código del programa y, la
+salida ha sido siempre a través de la impresión en pantalla (utilizando
+la función <code class="docutils literal"><span class="pre">print</span></code>).</p>
+<p>La limitación de este modo de trabajo es que la información no se
+almacena de modo persistente. Para resolver este inconveniente veremos
+en la presente sección la manera de utilizar información de entrada y
+salida para nuestros programas a través de archivos de texto.</p>
+<p>Incorporar el uso de archivos a un programa generalmente requiere las
+siguientes acciones:</p>
+<ul class="simple">
+<li>Abrir el archivo: la apertura de un achivo se realiza a partir de la
+primitiva <code class="docutils literal"><span class="pre">open</span></code> y consiste en asociar un elemento del programa con
+un archivo en particular.</li>
+<li>Elegir el modo de apertura: un archivo puede abrirse para lectura
+(r), escritura (w), agregado (a), binario (b), lectura/escritura (+)</li>
+<li>Leer ó escribir en el archivo</li>
+<li>Cerrar el archivo</li>
+</ul>
+<p>Trabajemos con un archivo de texto, por ejemplo <code class="docutils literal"><span class="pre">archi01.txt</span></code>, con el
+siguiente contenido:</p>
+<div class="highlight-python"><div class="highlight"><pre>enero 30
+febrero 60
+marzo 55
+</pre></div>
 </div>
-<div class="section" id="lectura-y-escritura-de-archivos">
-<h2>Lectura y escritura de archivos<a class="headerlink" href="#lectura-y-escritura-de-archivos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="lectura">
+<h3>Lectura<a class="headerlink" href="#lectura" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Vamos a realizar la lectura de este archivo e imprimir por pantalla su
+contenido. Dos de los métodos más comunes son:</p>
+<ul class="simple">
+<li>readline(): lee de a una línea por vez</li>
+<li>readlines(): lee todo el contenido del archivo y lo retorna en una
+lista</li>
+</ul>
+<p>Veamos como sería el funcionamiento del primer caso:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Apertura del archivo en modo lectura</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi01.txt&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c"># Lee la primer línea</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+<span class="c"># Lee la segunda línea</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+<span class="c"># Cierra el archivo</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
 </div>
-<div class="section" id="diccionarios">
-<h2>Diccionarios<a class="headerlink" href="#diccionarios" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>enero 30
+
+febrero 60
+</pre></div>
+</div>
+<p>Probablemente sea más práctico realizar la lectura línea por línea en un
+ciclo iterativo hasta que se llegue al final del archivo. Esto se puede
+realizar combinando lo anterior con un ciclo repetitivo <code class="docutils literal"><span class="pre">while</span></code>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Apertura del archivo en modo lectura</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi01.txt&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c"># Lee la primer línea</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="k">while</span> <span class="n">r</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+    <span class="c"># lee la sgte</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>enero 30
+
+febrero 60
+
+marzo 55
+</pre></div>
+</div>
+<p>En este caso, la función <code class="docutils literal"><span class="pre">readline</span></code> retornara <code class="docutils literal"><span class="pre">False</span></code> cuando se
+llegue al final del archivo, y por lo tanto se saldrá del ciclo
+<code class="docutils literal"><span class="pre">while</span></code>. Otro método más directo y elegante -en general preferido-
+para realizar un comportamiento equivalente (agregado desde la versión
+de Python 2.2) es iterar sobre los mismos archivos, esto es:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Apertura en modo lectura (por defecto)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi01.txt&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>---------------------------------------------------------------------------
+
+IOError                                   Traceback (most recent call last)
+
+&lt;ipython-input-2-048e5e9434f7&gt; in &lt;module&gt;()
+      1 # Apertura en modo lectura (por defecto)
+----&gt; 2 f = open(&#39;ejemplos/u4/archi01.txt&#39;)
+      3
+      4 for r in f:
+      5     print(r)
+
+
+IOError: [Errno 2] No such file or directory: &#39;ejemplos/u4/archi01.txt&#39;
+</pre></div>
+</div>
+<p>El método <code class="docutils literal"><span class="pre">readlines()</span></code> lee el contenido completo del archivo
+retornando una lista con su contenido, donde cada elemento corresponde a
+un renglón del archivo.</p>
+<p>Este método es más directo y suele ser útil para archivos que no son
+excesivamente grandes. Veamos un ejemplo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Apertura del archivo en modo lectura</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi01.txt&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c"># Lee todo el achivo</span>
+<span class="n">todo</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+<span class="c"># 1er linea</span>
+<span class="k">print</span><span class="p">(</span><span class="n">todo</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c"># lista con todo el contenido</span>
+<span class="k">print</span><span class="p">(</span><span class="n">todo</span><span class="p">)</span>
+
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">
+enero 30
+
+['enero 30n', 'febrero 60n', 'marzo 55n']
+</pre>
+<p>Ahora bien, podemos procesar los datos que son leidos del archivo.
+Hagamos el cálculo de un promedio con los valores numéricos de cada mes,
+para esto debemos extraer de la cadena de caracteres solamente aquellos
+valores que siguen a la cadena de caracteres correspondiente al mes.
+Para esto haremos uso de la función <code class="docutils literal"><span class="pre">split()</span></code>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Apertura del archivo en modo lectura</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi01.txt&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c"># Lee todo el achivo</span>
+<span class="n">todo</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+<span class="c"># para promedio</span>
+<span class="n">acum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">todo</span><span class="p">:</span>
+    <span class="n">mes</span><span class="p">,</span> <span class="n">val</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>    <span class="c"># separo por espacio</span>
+    <span class="n">acum</span> <span class="o">=</span> <span class="n">acum</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>  <span class="c"># sumo convirtiendo a entero</span>
+    <span class="n">cont</span> <span class="o">=</span> <span class="n">cont</span> <span class="o">+</span> <span class="mi">1</span>         <span class="c"># cuento los valores</span>
+
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">promedio</span> <span class="o">=</span> <span class="n">acum</span><span class="o">/</span><span class="n">cont</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Promedio: &#39;</span><span class="p">,</span> <span class="n">promedio</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Promedio:  48.333333333333336
+</pre></div>
+</div>
+</div>
+<div class="section" id="escritura">
+<h3>Escritura<a class="headerlink" href="#escritura" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para escribir datos en un archivo, inicialmente se lo abre para
+escritura, luego se pueden utilizar dos métodos:</p>
+<ul class="simple">
+<li>write(r): escribe el contenido de r en un renglón del archivo</li>
+<li>writelines(L): escribe el contenido completo de la lista L en el
+archivo</li>
+</ul>
+<p>Veamos un ejemplo de <code class="docutils literal"><span class="pre">write</span></code>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Crea archivo en modo escritura</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi02.txt&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="c"># Lee todo el achivo</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="s">&#39;nace una flor</span><span class="se">\n</span><span class="s">&#39;</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r1</span><span class="p">)</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="s">&#39;todos los dias</span><span class="se">\n</span><span class="s">&#39;</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r1</span><span class="p">)</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="s">&#39;sale el sol</span><span class="se">\n</span><span class="s">&#39;</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r1</span><span class="p">)</span>
+
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>El programa creó el archivo y luego escribió los tres renglones. Se debe
+notar que al final de cada cadena se utilizó el caracter especial <code class="docutils literal"><span class="pre">\n</span></code>
+que se traduce en un salto de línea, sino cada texto se hubiese escrito
+a continuación.</p>
+<p>Ahora veremos un ejemplo haciendo uso del método <code class="docutils literal"><span class="pre">writelines()</span></code>:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Crea archivo en modo escritura</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi03.txt&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="c"># Lee todo el achivo</span>
+<span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;nace una flor</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;todos los dias</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;sale el sol</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">]</span>
+<span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Como se observa, al igual que en el método anterior se debe agregar el
+caracter especial de retorno de línea al finalizar cada cadena. Se debe
+tener en cuenta que de no existir el archivo es creado pero, es borrado
+su contenido en caso contrario, por lo que debe prestarte especial
+atención para evitar la pérdida de datos involuntaria.</p>
+<p>En aquellos casos donde sea necesario agregar contenido a un archivo ya
+existente entonces se debe utilizar el modo de apertura <code class="docutils literal"><span class="pre">a</span></code>
+(proveniente de Append). Veamos un ejemplo en el que se agregan unas
+líneas de datos al archivo <code class="docutils literal"><span class="pre">archi01.txt</span></code>.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Abre archivo en modo append</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;ejemplos/u4/archi01.txt&#39;</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">)</span>
+
+<span class="c"># Lee todo el achivo</span>
+<span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;abril 33</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;mayo 21</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;junio 88</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">]</span>
+<span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Finalmente el archivo quedará con el siguiente contenido:</p>
+<div class="highlight-python"><div class="highlight"><pre>enero 30
+febrero 60
+marzo 55
+abril 33
+mayo 21
+junio 88
+</pre></div>
+</div>
+<p>Es muy importante recordar que siempre debemos cerrar el archivo una vez
+que hemos trabajado con el mismo (función <code class="docutils literal"><span class="pre">close()</span></code>),
+independientemente de si lo hemos utilizado para lectura o para
+escritura.</p>
+</div>
 </div>
 </div>
 
@@ -77,37 +602,41 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Funciones, archivos, diccionarios</a><ul>
-<li><a class="reference internal" href="#definiendo-funciones">Definiendo funciones</a><ul>
-<li><a class="reference internal" href="#variables-globales-y-locales">Variables globales y locales</a><ul>
+<li><a class="reference internal" href="#">Funciones y archivos</a><ul>
+<li><a class="reference internal" href="#funciones">Funciones</a><ul>
+<li><a class="reference internal" href="#definicion-y-uso">Definición y uso</a></li>
+<li><a class="reference internal" href="#variables-globales-y-locales">Variables globales y locales</a></li>
 <li><a class="reference internal" href="#agrupando-el-codigo-en-modulos">Agrupando el código en módulos</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#la-biblioteca-estandar">La biblioteca estándar</a></li>
+<li><a class="reference internal" href="#archivos">Archivos</a><ul>
+<li><a class="reference internal" href="#lectura">Lectura</a></li>
+<li><a class="reference internal" href="#escritura">Escritura</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#numeros-aleatorios">Números aleatorios</a></li>
-<li><a class="reference internal" href="#lectura-y-escritura-de-archivos">Lectura y escritura de archivos</a></li>
-<li><a class="reference internal" href="#diccionarios">Diccionarios</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Tema anterior</h4>
-  <p class="topless"><a href="Unidad03.html"
-                        title="capítulo anterior">Más estructuras de datos y control</a></p>
+  <p class="topless"><a href="Unidad03-ejercicios.html"
+                        title="capítulo anterior">Ejercicios</a></p>
   <h4>Próximo tema</h4>
-  <p class="topless"><a href="Unidad05.html"
-                        title="próximo capítulo">Clases y objetos</a></p>
-  <h3>Esta página</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/Unidad04.txt"
-           rel="nofollow">Mostrar el código</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <p class="topless"><a href="Unidad04-ejercicios.html"
+                        title="próximo capítulo">Ejercicios</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Unidad04.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -124,24 +653,24 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              >índice</a></li>
         <li class="right" >
-          <a href="Unidad05.html" title="Clases y objetos"
+          <a href="Unidad04-ejercicios.html" title="Ejercicios"
              >siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad03.html" title="Más estructuras de datos y control"
+          <a href="Unidad03-ejercicios.html" title="Ejercicios"
              >anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2015, Emiliano López.
-      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
     </div>
   </body>
 </html>

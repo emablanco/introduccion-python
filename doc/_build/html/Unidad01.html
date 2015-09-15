@@ -8,7 +8,7 @@
     
     <title>Introducción &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -24,34 +24,42 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" />
-    <link rel="next" title="Tipos básicos" href="Unidad02.html" />
+    <link rel="next" title="Ejercicios" href="Unidad01-ejercicios.html" />
     <link rel="prev" title="Introducción al Desarrollo de Software" href="index.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="Unidad02.html" title="Tipos básicos"
+          <a href="Unidad01-ejercicios.html" title="Ejercicios"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
           <a href="index.html" title="Introducción al Desarrollo de Software"
              accesskey="P">anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
-  <div class="section" id="introduccion">
+  <h1 id="tocheading"><p>Tabla de Contenidos</p>
+</h1><div id="toc"></div><div class="code python highlight-python"><div class="highlight"><pre>%%javascript
+$.getScript(&#39;https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js&#39;)
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>&lt;IPython.core.display.Javascript object&gt;
+</pre></div>
+</div>
+<div class="section" id="introduccion">
 <h1>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>En el presente capítulo introduciremos los conceptos necesarios para
 desarrollar los primeros algoritmos computacionales. Además, se explican
@@ -60,7 +68,7 @@ diferentes alternativas.</p>
 <div class="section" id="motivacion">
 <h2>Motivación<a class="headerlink" href="#motivacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Gran parte de las tecnologías utilizadas en la actualidad tienen algo en
-común, y es que por lo general baasan su lógica en algún tipo de
+común, y es que por lo general basan su lógica en algún tipo de
 programa. Saber programar nos permite comprender su funcionamiento y con
 esto nos abre un gran abanico de posibilidades, limitadas únicamente por
 nuestra imaginación. Pensemos por un momento en todas las aplicaciones
@@ -143,7 +151,7 @@ RedHat)</p>
 <div class="section" id="el-interprete-interactivo">
 <h3>El intérprete interactivo<a class="headerlink" href="#el-interprete-interactivo" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Ya con el intérprete de Python instalado, podemos comenzar a programar.
-Si ejecutamos en una terminal <tt class="docutils literal"><span class="pre">python3</span></tt>, ingresaremos al intérprete en
+Si ejecutamos en una terminal <code class="docutils literal"><span class="pre">python3</span></code>, ingresaremos al intérprete en
 modo interactivo y veremos una salida similar a la siguiente:</p>
 <div class="code python highlight-python"><div class="highlight"><pre>Python 3.4.2 (default, Oct  8 2014, 10:45:20)
 [GCC 4.9.1] on linux
@@ -183,7 +191,7 @@ en este caso).</p>
 <p><a class="reference external" href="http://ipython.org">IPython</a> es una interfaz mejorada del intérprete
 nativo. Se lo puede utilizar en modo consola o a través de una interfaz
 web. La instalación en sistemas basados en Debian GNU/Linux es similar a
-la de python: <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">ipython3</span></tt>.</p>
+la de python: <code class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">ipython3</span></code>.</p>
 <p>La ejecución de ipython desde una terminal nos arroja una pantalla
 similar a la siguiente:</p>
 <div class="code python highlight-python"><div class="highlight"><pre>emiliano@pynandi:~ $ ipython3
@@ -202,7 +210,7 @@ In [1]:
 <p>Otra alternativa muy interesante son los notebooks de ipython, una
 interfaz que permite programar utilizando el navegador web como entorno.
 No entraremos en detalle ya que posteriormente analizaremos su
-funcionamiento. Se debe ejecutar en una terminal <tt class="docutils literal"><span class="pre">ipython3</span> <span class="pre">notebook</span></tt> y
+funcionamiento. Se debe ejecutar en una terminal <code class="docutils literal"><span class="pre">ipython3</span> <span class="pre">notebook</span></code> y
 esto abrirá el navegador por defecto con el entorno cargado.</p>
 </div>
 <div class="section" id="entorno-integrado-de-desarrollo-ide">
@@ -259,8 +267,8 @@ la instrucción.</p>
 </pre></div>
 </div>
 <p>Podemos probar la intrucción directamente desde el intérprete, creando
-con un editor de texto plano un archivo guardado como <tt class="docutils literal"><span class="pre">chau.py</span></tt> y
-luego ejecutándolo desde la terminal haciendo <tt class="docutils literal"><span class="pre">python3</span> <span class="pre">chau.py</span></tt>, o
+con un editor de texto plano un archivo guardado como <code class="docutils literal"><span class="pre">chau.py</span></code> y
+luego ejecutándolo desde la terminal haciendo <code class="docutils literal"><span class="pre">python3</span> <span class="pre">chau.py</span></code>, o
 bien utilizando un IDE y haciendo todo desde ahí mismo.</p>
 <p>Ahora bien, es muchísimo más lo que podemos hacer programando además de
 saludar cordialmente. Veamos los elementos de un programa que nos
@@ -397,8 +405,8 @@ del poema de Fortunato Ramos <em>Yo jamás fui un niño</em>):</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="comentarios">
-<h3>Comentarios<a class="headerlink" href="#comentarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="comentarios-en-el-codigo">
+<h3>Comentarios en el código<a class="headerlink" href="#comentarios-en-el-codigo" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>En los ejemplos previos y siguientes, veremos dentro del código
 comentarios explicativos que no serán ejecutados por el intérprete. Su
 uso solamente está destinado a quien lea el código, como texto
@@ -529,9 +537,10 @@ ecuación matemática con el siguiente código:</p>
 </pre></div>
 </div>
 <div class="highlight-python"><div class="highlight"><pre>---------------------------------------------------------------------------
+
 TypeError                                 Traceback (most recent call last)
 
-&lt;ipython-input-15-3baa5c95d16e&gt; in &lt;module&gt;()
+&lt;ipython-input-3-3baa5c95d16e&gt; in &lt;module&gt;()
       1 x = input(&quot;Ingrese x = &quot;)
 ----&gt; 2 y = (x-4)**2-3
       3 print(x,y)
@@ -685,10 +694,6 @@ Entrada y Salida del tutorial de Python oficial
 <a class="reference external" href="http://www.python-course.eu/python3_formatted_output.php">http://www.python-course.eu/python3_formatted_output.php</a></p>
 </div>
 </div>
-<div class="section" id="operadores-relacionales-y-logicos">
-<h3>Operadores relacionales y lógicos<a class="headerlink" href="#operadores-relacionales-y-logicos" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>¿¿¿capaz va a la unidad siguiente!!! - Coincido :D</p>
-</div>
 <div class="section" id="funciones">
 <h3>Funciones<a class="headerlink" href="#funciones" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Las funciones son programas o subprogramas que realizan una determinada
@@ -742,76 +747,13 @@ incluidas.</p>
 importar módulos e invocar sus funciones.</p>
 </div>
 </div>
-<div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>1- Realice un programa que permita al usuario ingresar una temperatura
-en grados centígrados y que muestre su equivalente en grados fahrenheit.</p>
-<div class="highlight-python"><div class="highlight"><pre>Ingrese temperatura en °C: 33.8
-Conversión a Fahrenheit: 92.84
-</pre></div>
-</div>
-<p>2- Realice un programa que permita al usuario ingresar su nombre y que
-luego lo muestre repetido en pantalla tantas vees como cantidad de
-letras posea el nombre.</p>
-<p>3- Ingrese el nombre y edad de dos personas en variables separadas
-(nom1, edad1, nom2, edad2). Luego, intercambie la edad y muestre el
-resultado en pantalla. Indague de qué manera puede intercambiar el
-contenido de variables en Python.</p>
-<p>4- La simple tarea de realizar la cocción de un huevo pasado por agua
-tiene sus secretos. Con la ecuación a continuación se puede conocer el
-tiempo en alcanzar el punto exacto. Programe la ecuación para valores de
-bla bla bla</p>
-<p>5- Lea por teclado el valor del cuenta kilómetros de un automovil,
-posteriormente, permita ingresar el nuevo valor luego de realizar un
-viaje y muestre en pantalla los kilómetros recorridos, así como también
-ese valor en metros, centímetros, yardas y pies.</p>
-<p>6- Las benévolas companías telefónicas cobran la tarifa de cada llamada
-del siguiente modo: un valor fijo de $0.80 cuando se establece la
-llamada, luego, fracciona por tiempo, donde el primer minuto tiene un
-valor de $1.30 y los subsiguientes de $1.45. Realice un programa que
-permita ingresar la duración de una llamada y que muestre luego el costo
-total de la misma, a la que se le debe agregar un porcentaje del 20%
-correspondiente a impuestos.</p>
-<p>7- Un atleta realiza sus entrenamientos para una maratón (42.195km) y
-desea conocer su velocidad promedio. Desarrolle un programa donde se
-ingrese el tiempo transcurrido en tres variables diferentes: horas,
-minutos y segundos. Luego, muestre la velocidad promedio en km/h y
-km/seg.</p>
-<p>8- En el siguiente programa se calcula la diferencia de tiempo entre dos
-marcas de tiempo. Analice el código del programa y explique las acciones
-que se llevan a cabo. Luego, modifiquelo para que las dos marcas de
-tiempo sean ingresadas por un usuario.</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># dos marcas de tiempo</span>
-<span class="n">hora1</span><span class="p">,</span><span class="n">min1</span><span class="p">,</span><span class="n">seg1</span> <span class="o">=</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span><span class="mi">59</span>
-<span class="n">hora2</span><span class="p">,</span><span class="n">min2</span><span class="p">,</span><span class="n">seg2</span> <span class="o">=</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-
-<span class="c"># conversión del tiempo a segundos</span>
-<span class="n">t1s</span> <span class="o">=</span> <span class="n">hora1</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">min1</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">seg1</span>
-<span class="n">t2s</span> <span class="o">=</span> <span class="n">hora2</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">min2</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">seg2</span>
-
-<span class="c"># diferencia</span>
-<span class="n">t</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">t1s</span><span class="o">-</span><span class="n">t2s</span><span class="p">)</span>
-
-<span class="c"># cálculos de hora, minuto y segundos</span>
-<span class="n">h</span> <span class="o">=</span> <span class="n">t</span><span class="o">//</span><span class="mi">3600</span>
-<span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">t</span><span class="o">-</span><span class="n">h</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">//</span><span class="mi">60</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">t</span><span class="o">-</span><span class="n">h</span><span class="o">*</span><span class="mi">3600</span><span class="o">-</span><span class="n">m</span><span class="o">*</span><span class="mi">60</span>
-
-<span class="c"># impresión en pantalla</span>
-<span class="k">print</span> <span class="p">(</span><span class="s">&#39;Diferencia de tiempo:&#39;</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="s">&#39;hs&#39;</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="s">&#39;min&#39;</span><span class="p">,</span><span class="n">s</span><span class="p">,</span> <span class="s">&#39;seg&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">(</span><span class="s">&#39;Diferencia de tiempo:&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;hs&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;min&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;seg&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 </div>
 
 
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
@@ -843,7 +785,7 @@ tiempo sean ingresadas por un usuario.</p>
 <li><a class="reference internal" href="#elementos-de-un-programa">Elementos de un programa</a><ul>
 <li><a class="reference internal" href="#numeros-y-expresiones">Números y expresiones</a></li>
 <li><a class="reference internal" href="#cadenas-de-carateres">Cadenas de carateres</a></li>
-<li><a class="reference internal" href="#comentarios">Comentarios</a></li>
+<li><a class="reference internal" href="#comentarios-en-el-codigo">Comentarios en el código</a></li>
 <li><a class="reference internal" href="#variables">Variables</a></li>
 <li><a class="reference internal" href="#lectura-de-datos">Lectura de datos</a></li>
 <li><a class="reference internal" href="#escritura-de-datos">Escritura de datos</a><ul>
@@ -851,12 +793,10 @@ tiempo sean ingresadas por un usuario.</p>
 <li><a class="reference internal" href="#usando-comodines">Usando comodines</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#operadores-relacionales-y-logicos">Operadores relacionales y lógicos</a></li>
 <li><a class="reference internal" href="#funciones">Funciones</a></li>
 <li><a class="reference internal" href="#modulos">Módulos</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ejercicios">Ejercicios</a></li>
 </ul>
 </li>
 </ul>
@@ -865,14 +805,16 @@ tiempo sean ingresadas por un usuario.</p>
   <p class="topless"><a href="index.html"
                         title="capítulo anterior">Introducción al Desarrollo de Software</a></p>
   <h4>Próximo tema</h4>
-  <p class="topless"><a href="Unidad02.html"
-                        title="próximo capítulo">Tipos básicos</a></p>
-  <h3>Esta página</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/Unidad01.txt"
-           rel="nofollow">Mostrar el código</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <p class="topless"><a href="Unidad01-ejercicios.html"
+                        title="próximo capítulo">Ejercicios</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Unidad01.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -889,24 +831,24 @@ tiempo sean ingresadas por un usuario.</p>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              >índice</a></li>
         <li class="right" >
-          <a href="Unidad02.html" title="Tipos básicos"
+          <a href="Unidad01-ejercicios.html" title="Ejercicios"
              >siguiente</a> |</li>
         <li class="right" >
           <a href="index.html" title="Introducción al Desarrollo de Software"
              >anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2015, Emiliano López.
-      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
     </div>
   </body>
 </html>

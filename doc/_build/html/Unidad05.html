@@ -6,9 +6,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Clases y objetos &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
+    <title>Introducción a la Programación Orientada a Objetos &mdash; documentación de Introducción al desarrollo de software - 1.0</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -24,55 +24,465 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="documentación de Introducción al desarrollo de software - 1.0" href="index.html" />
-    <link rel="next" title="This is a Title" href="example.html" />
-    <link rel="prev" title="Funciones, archivos, diccionarios" href="Unidad04.html" /> 
+    <link rel="next" title="Ejercicios" href="Unidad05-ejercicios.html" />
+    <link rel="prev" title="Ejercicios" href="Unidad04-ejercicios.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="example.html" title="This is a Title"
+          <a href="Unidad05-ejercicios.html" title="Ejercicios"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad04.html" title="Funciones, archivos, diccionarios"
+          <a href="Unidad04-ejercicios.html" title="Ejercicios"
              accesskey="P">anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
-  <div class="section" id="clases-y-objetos">
-<h1>Clases y objetos<a class="headerlink" href="#clases-y-objetos" title="Enlazar permanentemente con este título">¶</a></h1>
+  <h1 id="tocheading"><p>Tabla de Contenidos</p>
+</h1><div id="toc"></div><div class="code python highlight-python"><div class="highlight"><pre>%%javascript
+$.getScript(&#39;https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js&#39;)
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>&lt;IPython.core.display.Javascript object&gt;
+</pre></div>
+</div>
+<div class="section" id="introduccion-a-la-programacion-orientada-a-objetos">
+<h1>Introducción a la Programación Orientada a Objetos<a class="headerlink" href="#introduccion-a-la-programacion-orientada-a-objetos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Python es un lenguaje de Programación Orientado a Objetos, lo que
+significa que puede manipular construcciones llamadas objetos. Se puede
+pensar en un objeto como una única estructura que contiene tanto datos
+como funciones, solo que las funciones en este contexto son llamadas
+<em>métodos</em>. En definitiva, los objetos son una manera de organizar datos
+y de relacionarlos con el código apropiado para manejarlo.</p>
+<p>La Programación Orientada a Objetos introduce terminología, y una gran
+parte es simplemente darle un nuevo nombre a cosas que ya estuvimos
+usando.</p>
+<p>Si bien Python nos provee un gran número de tipos ya definidos (int,
+float, str, dict, list, etc.), en muchas situaciones utilizar solamente
+estos tipos resultará insuficiente. En estas situaciones queremos poder
+crear nuestros propios tipos, que almacenen la información relevante
+para el problema a resolver y contengan las funciones para operar con
+esa información.</p>
+<p>Supongamos un programa que gestiona jugadores de fútbol de un club,
+independientemente de los detalles de implementación, contar con un tipo
+de dato <em>jugador</em> que permita cargar los datos personales y
+profesionales nos brinda la posibilidad de tener un código mas legible y
+organizado. Por ejemplo, para cargar los datos de un nuevo jugador el
+código podría ser del siguiente modo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">pipa</span> <span class="o">=</span> <span class="n">Jugador</span><span class="p">(</span><span class="s">&#39;Lucas Alario&#39;</span><span class="p">,</span> <span class="s">&#39;8-10-1992&#39;</span><span class="p">,</span> <span class="s">&#39;Delantero&#39;</span><span class="p">)</span>
+<span class="n">pipa</span><span class="o">.</span><span class="n">AgregarClub</span><span class="p">(</span><span class="s">&#39;Colon&#39;</span><span class="p">)</span>
+<span class="n">pipa</span><span class="o">.</span><span class="n">AgregarClub</span><span class="p">(</span><span class="s">&#39;River&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Club Actual: &quot;</span><span class="p">,</span> <span class="n">pipa</span><span class="o">.</span><span class="n">ClubActual</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Del ejemplo previo destacamos:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">pipa</span> <span class="pre">=</span> <span class="pre">Jugador(...)</span></code> crea una nueva instancia de la clase
+<code class="docutils literal"><span class="pre">Jugador</span></code> y asigna este objeto a la variable local <code class="docutils literal"><span class="pre">pipa</span></code>, una
+estructura que contiene un conjunto de datos (nombre, fecha de
+nacimiento y posición) denominados atributos (o propiedades) y
+métodos (funciones asociadas al objeto)</li>
+</ul>
+<div class="section" id="atributos-y-metodos">
+<h2>Atributos y métodos<a class="headerlink" href="#atributos-y-metodos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Veamos el modo de declarar este nuevo tipo <code class="docutils literal"><span class="pre">Jugador</span></code> con sus atributos
+y métodos.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Jugador</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Clase Jugador&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">fechaNac</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">posicion</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fechaNac</span> <span class="o">=</span> <span class="n">fechaNac</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">posicion</span> <span class="o">=</span> <span class="n">posicion</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clubes</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">setNuevoClub</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">club</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;agrega club a la lista de clubes&#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">club</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">getClubActual</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;retorna último club&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clubes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">pipa</span> <span class="o">=</span> <span class="n">Jugador</span><span class="p">(</span><span class="s">&#39;Lucas Alario&#39;</span><span class="p">,</span> <span class="s">&#39;08-10-1992&#39;</span><span class="p">,</span> <span class="s">&#39;Delantero&#39;</span><span class="p">)</span>
+
+<span class="n">pipa</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Colon&#39;</span><span class="p">)</span>
+<span class="n">pipa</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;River&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Club Actual: &quot;</span><span class="p">,</span> <span class="n">pipa</span><span class="o">.</span><span class="n">getClubActual</span><span class="p">())</span>
+
+<span class="n">d10s</span> <span class="o">=</span> <span class="n">Jugador</span><span class="p">(</span><span class="s">&#39;El Diego&#39;</span><span class="p">,</span> <span class="s">&#39;30-10-1960&#39;</span><span class="p">,</span> <span class="s">&#39;Enganche&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Club Actual:  River
+</pre></div>
+</div>
+<p>La clase anterior define la estructura de aquellos objetos que sean de
+tipo <code class="docutils literal"><span class="pre">Jugador()</span></code>. De los tres métodos que se observan, hay uno que
+merece especial atención:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">__init__</span></code>: este método se denomina constructor, ya que está
+directamente asociado a la declaración e inicialización de un objeto.
+Esto es, en la el fragmento de código
+<code class="docutils literal"><span class="pre">pipa</span> <span class="pre">=</span> <span class="pre">Jugador('Lucas</span> <span class="pre">Alario',</span> <span class="pre">'8-10-1992',</span> <span class="pre">'Delantero')</span></code> se lo
+invoca automáticamente. Los argumentos se corresponden con
+<code class="docutils literal"><span class="pre">nombre</span></code>, <code class="docutils literal"><span class="pre">fechaNac</span></code> y <code class="docutils literal"><span class="pre">posicion</span></code> respectivamente. El primer
+argumento, <code class="docutils literal"><span class="pre">self</span></code>, hace referencia al mismo objeto y es utilizado
+para definir sus atributos dentro del constructor.</li>
+</ul>
+<p>Los métodos restantes no son más que funciones pertenecientes al objeto:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">setNuevoClub()</span></code>: agrega un club donde jugó</li>
+<li><code class="docutils literal"><span class="pre">getClubActual()</span></code>: retorna el último club</li>
+</ul>
+<p>Los datos relativos al club se cargan en una lista almacenada en el
+atributo <code class="docutils literal"><span class="pre">clubes</span></code>. El uso de métodos para modificar atributos es
+denominado <strong>encapsulamiento</strong>. Es común encontrar métodos cuyos nombres
+empiecen con &#8220;set&#8221;, en aquellos casos donde los mismos realizan
+modificaciones sobre los datos, y métodos cuyos nombres empiezan con
+&#8220;get&#8221;, los cuales son utilizados para retornan datos. Esto es opcional,
+dado que podemos ponerle el nombre que se nos ocurra, pero es una buena
+costumbre llamarlos de este modo, al igual que el hecho de respetar el
+encapsulamiento (esto es, siempre modificar y obtener los datos,
+mediante el úso de un método propio del objeto).</p>
+</div>
+<div class="section" id="metodos-especiales">
+<h2>Métodos especiales<a class="headerlink" href="#metodos-especiales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Así como el constructor <code class="docutils literal"><span class="pre">__init__</span></code>, existen otros métodos especiales
+que, si están definidos en nuestra clase, Python los llamará por
+nosotros cuando se lo utilice en determinadas situaciones. Veamos
+algunos.</p>
+<div class="section" id="impresion">
+<h3>Impresión<a class="headerlink" href="#impresion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si está definido el método <code class="docutils literal"><span class="pre">__str__</span></code> dentro de la clase, entonces será
+invocado automáticamente cada vez que se utilice la función <code class="docutils literal"><span class="pre">print()</span></code>
+con el objeto como argumento. Veamos la implementación:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">salida</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span>
+    <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span> <span class="o">+</span> <span class="s">&#39;=&#39;</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+    <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;Club: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">getClubActual</span><span class="p">()</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+    <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;Posición: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicion</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+    <span class="k">return</span> <span class="n">salida</span>
+</pre></div>
+</div>
+<p>Luego, al imprimirlo en pantalla obtendremos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">pipa</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Lucas Alario
+============
+Club: River
+Posición: Delantero
+</pre></div>
+</div>
+<p>Esto incluso es equivalente a hacer</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">pipa</span><span class="o">.</span><span class="n">__str__</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Lucas Alario
+============
+Club: River
+Posición: Delantero
+</pre></div>
+</div>
+</div>
+<div class="section" id="comparacion">
+<h3>Comparación<a class="headerlink" href="#comparacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para resolver las comparaciones entre jugadores, será necesario definir
+algunos métodos especiales que permiten comparar objetos. En particular,
+cuando se quiere que los objetos puedan ser ordenados, los métodos que
+se debe definir son:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">__lt__</span></code> menor que,</li>
+<li><code class="docutils literal"><span class="pre">__le__</span></code> menor o igual,</li>
+<li><code class="docutils literal"><span class="pre">__eq__</span></code> igual,</li>
+<li><code class="docutils literal"><span class="pre">__ne__</span></code> distinto,</li>
+<li><code class="docutils literal"><span class="pre">__gt__</span></code> mayor que,</li>
+<li><code class="docutils literal"><span class="pre">__ge__</span></code> mayor o igual</li>
+</ul>
+<p>Para dos objetos x, y:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">x&lt;y</span></code> llama a <code class="docutils literal"><span class="pre">x.__lt__(y)</span></code>,</li>
+<li><code class="docutils literal"><span class="pre">x&lt;=y</span></code> llama a <code class="docutils literal"><span class="pre">x.__le__(y)</span></code>,</li>
+<li><code class="docutils literal"><span class="pre">x==y</span></code> llama a <code class="docutils literal"><span class="pre">x.__eq__(y)</span></code>,</li>
+<li><code class="docutils literal"><span class="pre">x!=y</span></code> llama a <code class="docutils literal"><span class="pre">x.__ne__(y)</span></code>,</li>
+<li><code class="docutils literal"><span class="pre">x&gt;y</span></code> llama a <code class="docutils literal"><span class="pre">x.__gt__(y)</span></code>,</li>
+<li><code class="docutils literal"><span class="pre">x&gt;=y</span></code> llama a <code class="docutils literal"><span class="pre">x.__ge__(y)</span></code>.</li>
+</ul>
+<p>Para el ejemplo que estamos desarrollando, solamente programaremos el
+método <code class="docutils literal"><span class="pre">__lt__</span></code>, ya que al no ser un jugador menor que otro, nos
+retorna el complemento. En la comparación rearmaremos la fecha en el
+formato aaaammmdd ya que al convertirla a un entero podremos comprarla
+como un simple número, donde uno mas grande significa que el jugador es
+mas joven y, mas adulto, en caso contrario.</p>
+<p>La implementación sería:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">otro</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;si self es menor a otro&#39;&#39;&#39;</span>
+    <span class="n">dd1</span><span class="p">,</span> <span class="n">mm1</span><span class="p">,</span> <span class="n">aaaa1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fechaNac</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">aaaammdd1</span> <span class="o">=</span> <span class="n">aaaa1</span> <span class="o">+</span> <span class="n">mm1</span> <span class="o">+</span> <span class="n">dd1</span>
+
+    <span class="n">dd2</span><span class="p">,</span> <span class="n">mm2</span><span class="p">,</span> <span class="n">aaaa2</span> <span class="o">=</span> <span class="n">otro</span><span class="o">.</span><span class="n">fechaNac</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">aaaammdd2</span> <span class="o">=</span> <span class="n">aaaa2</span> <span class="o">+</span> <span class="n">mm2</span> <span class="o">+</span> <span class="n">dd2</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">aaaammdd1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">aaaammdd2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Luego, lo usamos:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">d10s</span> <span class="o">=</span> <span class="n">Jugador</span><span class="p">(</span><span class="s">&#39;El Diego&#39;</span><span class="p">,</span> <span class="s">&#39;30-10-1960&#39;</span><span class="p">,</span> <span class="s">&#39;Enganche&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pipa</span><span class="o">&gt;</span><span class="n">d10s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="algebraicos">
+<h3>Algebraicos<a class="headerlink" href="#algebraicos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Existen métodos especiales para todos los operadores matemáticos, de
+modo que al operar dos objetos, por ejemplo sumarlos, se invoca al
+método específico y se realiza la operación. Esto es también denominado
+sobrecarga de operadores, ya que se le asigna una función específica a
+un operador para un determinado objeto.</p>
+<p>Para el ejemplo visto usaremos el monto del pase, así que agreguemos el
+atributo <em>valor</em> a la clase e incorporemos el método especial
+<code class="docutils literal"><span class="pre">__add__</span></code> de modo que al sumar objetos de tipo <code class="docutils literal"><span class="pre">Jugador()</span></code> se sumen
+estos campos.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">otro</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">valor</span> <span class="o">+</span> <span class="n">otro</span><span class="o">.</span><span class="n">valor</span>
+</pre></div>
+</div>
+<p>Si ahora sumamos dos jugadores, obtendremos la suma de sus valores.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># asignamos valor a cada jugador</span>
+<span class="n">pipa</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="mi">1130000</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="mi">9000000</span>
+
+<span class="c"># sumamos dos jugadores</span>
+<span class="n">monto</span> <span class="o">=</span> <span class="n">pipa</span> <span class="o">+</span> <span class="n">d10s</span>
+<span class="k">print</span><span class="p">(</span><span class="n">monto</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Del mismo modo se implementan los métodos especiales para los siguientes
+operadores binarios</p>
+<div class="highlight-python"><div class="highlight"><pre>Operador            Método
+
+ +          __add__(self, other)
+ -          __sub__(self, other)
+ *          __mul__(self, other)
+ //         __floordiv__(self, other)
+ /          __div__(self, other)
+ %          __mod__(self, other)
+ **         __pow__(self, other[, modulo])
+ &lt;&lt;         __lshift__(self, other)
+ &gt;&gt;         __rshift__(self, other)
+ &amp;          __and__(self, other)
+ ^          __xor__(self, other)
+ |          __or__(self, other)
+</pre></div>
+</div>
+<p>Existen muchos otros métodos especiales como los de asignaciones
+extendidas y operadores unarios.</p>
+</div>
+</div>
+<div class="section" id="herencia-y-polimorfismo">
+<h2>Herencia y polimorfismo<a class="headerlink" href="#herencia-y-polimorfismo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La herencia es un mecanismo de la programación orientada a objetos que
+sirve para crear clases nuevas a partir de otras preexistentes. Se
+heredan atributos y comportamientos y, partir de ella se crea una clase
+derivada con sus particularidades.</p>
+<p>Por ejemplo, a partir de una clase <code class="docutils literal"><span class="pre">Jugador</span></code> podemos construir la
+clase <code class="docutils literal"><span class="pre">Capitan</span></code> que extiende a <code class="docutils literal"><span class="pre">Jugador</span></code> y agrega como atributo una
+lista de fechas de partidos que tuvo ese rol. Se puede ver como un caso
+particular de la clase jugador, dado que tendrá los mismos atributos y
+métodos que un objecto de la clase <code class="docutils literal"><span class="pre">Jugador</span></code>, y a su vez tendrá
+algunos atributos y/ó métodos extras.</p>
+<p>Para indicar el nombre de la clase base, se la pone entre paréntesis a
+continuación del nombre de la clase. Veamos el modo de implementarla:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Capitan</span><span class="p">(</span><span class="n">Jugador</span><span class="p">):</span>
+    <span class="s">&quot;Clase que representa al capitan.&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">fechaNac</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">posicion</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">capitan</span><span class="o">=</span><span class="p">[]):</span>
+        <span class="s">&quot;Constructor de Capitan&quot;</span>
+        <span class="c"># llama al constructor de Jugador</span>
+        <span class="n">Jugador</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">fechaNac</span><span class="p">,</span> <span class="n">posicion</span><span class="p">)</span>
+        <span class="c"># nuevo atributo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">capitan</span> <span class="o">=</span> <span class="n">capitan</span>
+
+    <span class="k">def</span> <span class="nf">setCapitania</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fecha</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">capitan</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fecha</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En la implementación del método constructor (<code class="docutils literal"><span class="pre">__init__</span></code>) de
+<code class="docutils literal"><span class="pre">Capitan</span></code> se invoca al contructor de <code class="docutils literal"><span class="pre">Jugador</span></code>, luego, se agrega el
+atributo <code class="docutils literal"><span class="pre">capitan</span></code> y un método nuevo, <code class="docutils literal"><span class="pre">setCapitania</span></code>, que solamente
+existe en esta clase.</p>
+<p>El hecho de heredar todas las características de la clase base hace que
+su uso sea practicamente el mismo:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="n">pulga</span> <span class="o">=</span> <span class="n">Capitan</span><span class="p">(</span><span class="s">&#39;Lionel Messi&#39;</span><span class="p">,</span> <span class="s">&#39;24-06-1987&#39;</span><span class="p">,</span> <span class="s">&#39;Enganche&#39;</span><span class="p">)</span>
+<span class="n">pulga</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Barcelona&#39;</span><span class="p">)</span>
+<span class="n">pulga</span><span class="o">.</span><span class="n">setCapitania</span><span class="p">(</span><span class="s">&#39;26-07-2008&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pulga</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ahora bien, sería bueno diferenciar el método de impresión, ya que al
+imprimir en pantalla un jugador que es de tipo Capitan, muestre la
+última fecha de su capitanía. Modificar un método heredado es lo que se
+denomina <strong>Polimorfismo</strong>. Veamos la diferencia:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">salida</span> <span class="o">=</span> <span class="n">Jugador</span><span class="o">.</span><span class="n">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;Última capitanía: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">capitan</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+    <span class="k">return</span> <span class="n">salida</span>
+</pre></div>
+</div>
+<p>En la implementación del método <code class="docutils literal"><span class="pre">__str__</span></code> se invoca al de la clase
+base, y se agrega una línea más referida a la capitanía.</p>
+<p>El presente capítulo ha sido una introducción a la POO presentada en
+forma de tutorial, a continuación se expone el código completo de lo
+desarrollado durante la unidad.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Jugador</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Clase Jugador&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">fechaNac</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">posicion</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">clubes</span><span class="o">=</span><span class="p">[],</span> <span class="n">valor</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fechaNac</span> <span class="o">=</span> <span class="n">fechaNac</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">posicion</span> <span class="o">=</span> <span class="n">posicion</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clubes</span> <span class="o">=</span> <span class="n">clubes</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span>
+
+    <span class="k">def</span> <span class="nf">setNuevoClub</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">club</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;agrega club a la lista de clubes&#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">club</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">getClubActual</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;retorna último club&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">clubes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">salida</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span>
+        <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span> <span class="o">+</span> <span class="s">&#39;=&#39;</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+        <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;Club: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">getClubActual</span><span class="p">()</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+        <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;Posición: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">posicion</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+        <span class="k">return</span> <span class="n">salida</span>
+
+    <span class="k">def</span> <span class="nf">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">otro</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;si self es menor a otro&#39;&#39;&#39;</span>
+        <span class="n">dd1</span><span class="p">,</span> <span class="n">mm1</span><span class="p">,</span> <span class="n">aaaa1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fechaNac</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+        <span class="n">aaaammdd1</span> <span class="o">=</span> <span class="n">aaaa1</span> <span class="o">+</span> <span class="n">mm1</span> <span class="o">+</span> <span class="n">dd1</span>
+
+        <span class="n">dd2</span><span class="p">,</span> <span class="n">mm2</span><span class="p">,</span> <span class="n">aaaa2</span> <span class="o">=</span> <span class="n">otro</span><span class="o">.</span><span class="n">fechaNac</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+        <span class="n">aaaammdd2</span> <span class="o">=</span> <span class="n">aaaa2</span> <span class="o">+</span> <span class="n">mm2</span> <span class="o">+</span> <span class="n">dd2</span>
+
+        <span class="k">return</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">aaaammdd1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">aaaammdd2</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">otro</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">valor</span> <span class="o">+</span> <span class="n">otro</span><span class="o">.</span><span class="n">valor</span>
+
+<span class="k">class</span> <span class="nc">Capitan</span><span class="p">(</span><span class="n">Jugador</span><span class="p">):</span>
+    <span class="s">&quot;Clase que representa al capitan.&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">fechaNac</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">posicion</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">capitan</span><span class="o">=</span><span class="p">[]):</span>
+        <span class="s">&quot;Constructor de Capitan&quot;</span>
+        <span class="c"># llama al constructor de Jugador</span>
+        <span class="n">Jugador</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">fechaNac</span><span class="p">,</span> <span class="n">posicion</span><span class="p">)</span>
+        <span class="c"># nuevo atributo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">capitan</span> <span class="o">=</span> <span class="n">capitan</span>
+    <span class="k">def</span> <span class="nf">setCapitania</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fecha</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">capitan</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fecha</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;sobreescribe la clase heredada&#39;&#39;&#39;</span>
+        <span class="n">salida</span> <span class="o">=</span> <span class="n">Jugador</span><span class="o">.</span><span class="n">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">salida</span> <span class="o">+=</span> <span class="s">&#39;Última capitanía: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">capitan</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+        <span class="k">return</span> <span class="n">salida</span>
+
+
+<span class="n">pipa</span> <span class="o">=</span> <span class="n">Jugador</span><span class="p">(</span><span class="s">&#39;Lucas Alario&#39;</span><span class="p">,</span> <span class="s">&#39;08-10-1992&#39;</span><span class="p">,</span> <span class="s">&#39;Delantero&#39;</span><span class="p">)</span>
+<span class="n">pipa</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Colon&#39;</span><span class="p">)</span>
+<span class="n">pipa</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;River&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pipa</span><span class="p">)</span>
+
+<span class="n">d10s</span> <span class="o">=</span> <span class="n">Jugador</span><span class="p">(</span><span class="s">&#39;El Diego&#39;</span><span class="p">,</span> <span class="s">&#39;30-10-1960&#39;</span><span class="p">,</span> <span class="s">&#39;Enganche&#39;</span><span class="p">)</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Argentino Jr.&#39;</span><span class="p">)</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Boca&#39;</span><span class="p">)</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Barcelona&#39;</span><span class="p">)</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Nápoles&#39;</span><span class="p">)</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Sevilla&#39;</span><span class="p">)</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&quot;Newell&#39;s&quot;</span><span class="p">)</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&quot;Boca&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">d10s</span><span class="p">)</span>
+
+<span class="n">pipa</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="mi">1130000</span>
+<span class="n">d10s</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="mi">9000000</span>
+<span class="n">monto</span> <span class="o">=</span> <span class="n">pipa</span> <span class="o">+</span> <span class="n">d10s</span>
+
+<span class="n">pulga</span> <span class="o">=</span> <span class="n">Capitan</span><span class="p">(</span><span class="s">&#39;Lionel Messi&#39;</span><span class="p">,</span> <span class="s">&#39;24-06-1987&#39;</span><span class="p">,</span> <span class="s">&#39;Enganche&#39;</span><span class="p">)</span>
+<span class="n">pulga</span><span class="o">.</span><span class="n">setNuevoClub</span><span class="p">(</span><span class="s">&#39;Barcelona&#39;</span><span class="p">)</span>
+<span class="n">pulga</span><span class="o">.</span><span class="n">setCapitania</span><span class="p">(</span><span class="s">&#39;28-03-1981&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pulga</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>Lucas Alario
+============
+Club: River
+Posición: Delantero
+
+El Diego
+========
+Club: Boca
+Posición: Enganche
+
+Lionel Messi
+============
+Club: Barcelona
+Posición: Enganche
+Última capitanía: 28-03-1981
+</pre></div>
+</div>
+<p>Se recomienda profundizar este tema en el capítulo <em>Un primer vistazo a
+las clases (pag. 61)</em> del Tutorial de Python.</p>
+</div>
 </div>
 
 
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introducción a la Programación Orientada a Objetos</a><ul>
+<li><a class="reference internal" href="#atributos-y-metodos">Atributos y métodos</a></li>
+<li><a class="reference internal" href="#metodos-especiales">Métodos especiales</a><ul>
+<li><a class="reference internal" href="#impresion">Impresión</a></li>
+<li><a class="reference internal" href="#comparacion">Comparación</a></li>
+<li><a class="reference internal" href="#algebraicos">Algebraicos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#herencia-y-polimorfismo">Herencia y polimorfismo</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Tema anterior</h4>
-  <p class="topless"><a href="Unidad04.html"
-                        title="capítulo anterior">Funciones, archivos, diccionarios</a></p>
+  <p class="topless"><a href="Unidad04-ejercicios.html"
+                        title="capítulo anterior">Ejercicios</a></p>
   <h4>Próximo tema</h4>
-  <p class="topless"><a href="example.html"
-                        title="próximo capítulo">This is a Title</a></p>
-  <h3>Esta página</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/Unidad05.txt"
-           rel="nofollow">Mostrar el código</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <p class="topless"><a href="Unidad05-ejercicios.html"
+                        title="próximo capítulo">Ejercicios</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Unidad05.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -89,24 +499,24 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Índice General"
              >índice</a></li>
         <li class="right" >
-          <a href="example.html" title="This is a Title"
+          <a href="Unidad05-ejercicios.html" title="Ejercicios"
              >siguiente</a> |</li>
         <li class="right" >
-          <a href="Unidad04.html" title="Funciones, archivos, diccionarios"
+          <a href="Unidad04-ejercicios.html" title="Ejercicios"
              >anterior</a> |</li>
-        <li><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Introducción al desarrollo de software - 1.0</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2015, Emiliano López.
-      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
     </div>
   </body>
 </html>
