@@ -45,9 +45,8 @@ Números
 Los números como vimos pueden ser enteros, reales (también denominados
 de coma flotante) ó complejos. ### Enteros Los números enteros son
 aquellos números positivos o negativos que no tienen decimales (además
-del cero). En Python se pueden representar mediante el tipo int (de
-integer, entero) o el tipo long (largo). La única diferencia es que el
-tipo long permite almacenar números más grandes. Por ejemplo:
+del cero). En Python se representan mediante el tipo int (de integer,
+entero). Por ejemplo:
 
 .. code:: python
 
@@ -60,20 +59,6 @@ tipo long permite almacenar números más grandes. Por ejemplo:
 .. parsed-literal::
 
     int
-
-
-
-.. code:: python
-
-    b = 28L
-    type(b)
-
-
-
-
-.. parsed-literal::
-
-    long
 
 
 
@@ -235,7 +220,7 @@ algunos ejemplos:
 .. code:: python
 
     c = 10 > 2
-    print c
+    print (c)
 
 
 .. parsed-literal::
@@ -313,7 +298,7 @@ Veamos otro ejemplo, ahora con cadenas de texto:
 .. code:: python
 
     d = "Una cosa" == "Otra cosa"
-    print d
+    print (d)
 
 
 .. parsed-literal::
@@ -329,7 +314,7 @@ es False
 .. code:: python
 
     d = "Una cosa" == "una cosa"
-    print d
+    print (d)
 
 
 .. parsed-literal::
@@ -342,7 +327,7 @@ Solo cuando ambas cadenas son iguales, la comparación devuelve verdadero
 .. code:: python
 
     d = "Una cosa" == "Una cosa"
-    print d
+    print (d)
 
 
 .. parsed-literal::
@@ -371,7 +356,7 @@ lógicas.
 .. code:: python
 
     resultado = 24 > 3*7
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -382,7 +367,7 @@ lógicas.
 .. code:: python
 
     resultado = False == True
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -395,7 +380,7 @@ lógicas.
     a = 2*8
     b = 3*8
     resultado = (a < b)
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -410,7 +395,7 @@ que es falsa tiene el valor 0.
 
     a = True
     resultado = a == 1
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -422,7 +407,7 @@ que es falsa tiene el valor 0.
 
     b = False
     resultado = b == 0
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -473,7 +458,7 @@ Veamos algunos ejemplos
     b = 16
     c = 6
     resultado = (a < b) and (a > c)
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -490,7 +475,7 @@ resultado es verdadero.
     b = 16
     c = 6
     resultado = (a < b) and (a < c)
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -509,7 +494,7 @@ Veamos algunos ejemplos con el operador ***or***
     b = 16
     c = 6
     resultado = (a < b) or (a < c)
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -528,7 +513,7 @@ Por último, veamos un ejemplo con el operador ***not***
     a = 9
     b = 16
     resultado = not(a > b)
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -549,7 +534,7 @@ Veamos un ejemplo un poco mas complicado
     a = 9
     b = 16
     resultado = (not(a > b)) and (not(b < c))
-    print resultado
+    print (resultado)
 
 
 .. parsed-literal::
@@ -587,12 +572,3 @@ Referencias utilizadas en esta unidad:
 
 -  ***Python para todos***, Raúl González Duque,
    http://mundogeek.net/tutorial-python
-
-
-
-
-.. parsed-literal::
-
-    <IPython.core.display.Javascript object>
-
-

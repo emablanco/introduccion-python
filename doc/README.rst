@@ -28,7 +28,11 @@ Desde estos links se pueden visualizar estáticamente:
 Modificar el material
 ----------------------
 
-Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:
+Apunte principal
+''''''''''''''''
+Correr el notebook de ipython3 (versión IPython 3.1.0) bajo el directorio que se encuentran los .ipynb haciendo: ipython3 notebook
+
+Modificar sobre el notebook (por ej, Unidad01.ipynb) y, luego de guardar, se debe:
 
 * Convertir al formato rst haciendo
 
@@ -51,6 +55,14 @@ Una vez modificado un notebook (por ej, Unidad01.ipynb) se debe:
 
 Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
 
+Slides
+''''''
+.. code-block:: bash
+
+    ipython3 nbconvert SlidesU1-01.ipynb --to slides --post serve
+    
+Sin el último parámetro las guarda como html
+
 Licencia
 --------
 
@@ -72,4 +84,5 @@ Gran parte del material utilizado fue basado en los siguientes recursos:
 - An introduction to computer science. John Zelle
 - https://github.com/mgaitan/curso-python-cientifico
 - Beginning Python. From Novice to Professional. Second Edition. Magnus Lie Hetland
-- 
+- The Python Language Reference: https://docs.python.org/3/reference/index.html#reference-index
+- The Hitchhiker’s Guide to Python! http://docs.python-guide.org/en/latest/
