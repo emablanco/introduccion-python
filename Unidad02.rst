@@ -1,13 +1,43 @@
+================================================
+Tecnicatura Universitaria en Software Libre
+================================================
+--------------------------------------
+Introducción al Desarrollo de Software
+--------------------------------------
 
-Tipos básicos
-=============
+:Docente: Emiliano López
+:Tutor: Maximiliano Boscovich
+
+.. header:: 
+  Introducción al Desarrollo de Software
+
+.. contents:: Contenidos
+
+
+.. sectnum::
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+.. |date| date::
+.. |time| date:: %H:%M
+
+Este documento fue generado el |date| |time|
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+Unidad 2: Tipos básicos
+=======================
 
 Como vimos en la Unidad 1, las variables pueden contener diferentes
 tipos de datos, y al ser distintos, son tratados de manera diferente por
 Python (por ejemplo no podemos sumar un número con una letra).
 
 Hemos visto 2 de los 3 tipos básicos que utiliza python, los cuales se
-dividen en: \* **Números** \* **Cadenas de texto** \* **Booleanos**
+dividen en: \* **Números** \* **Cadenas de caracteres** \* **Lógicos**
 
 Números
 -------
@@ -96,17 +126,18 @@ forma:
 
 
 
-Cadenas de texto
-----------------
+Cadenas de caracteres
+---------------------
 
 Tal como hemos visto en la unidad anterior, las cadenas (string en
-inglés ó str) no son más que texto encerrado entre comillas simples
-(‘cadena’), dobles (“cadena”) ó triples('''Cadenas multilíneas'''). Por
+inglés o str) no son más que texto encerrado entre comillas simples
+('cadena'), dobles ("cadena") ó triples('''Cadenas multilíneas'''). Por
 ejemplo:
 
 .. code:: python
 
-    a = 'El futuro mostrará los resultados y juzgará a cada uno de acuerdo a sus logros (Nikola Tesla)'
+    a = 'El futuro mostrará los resultados y juzgará a cada uno de \
+        acuerdo a sus logros (Nikola Tesla)'
     type(a)
 
 
@@ -120,7 +151,8 @@ ejemplo:
 
 .. code:: python
 
-    b = "En realidad no me preocupa que quieran robar mis ideas, me preocupa que ellos no las tengan (Nikola Tesla)"
+    b = "En realidad no me preocupa que quieran robar mis ideas, \
+        me preocupa que ellos no las tengan (Nikola Tesla)"
     type(b)
 
 
@@ -134,11 +166,12 @@ ejemplo:
 
 .. code:: python
 
-    c = '''Un instrumento de poco costo y no más grande que un reloj, permitirá a su portador escuchar en 
-    cualquier parte, ya sea en el mar o en la tierra, música, canciones o un discurso de un líder político, 
-    dictado en cualquier otro sitio distante. Del mismo modo, cualquier dibujo o impresión podrá ser 
-    transferida de un lugar a otro (Nikola Tesla, ~ año 1891).
-    '''
+    c = '''Un instrumento de poco costo y no más grande que un reloj, \
+        permitirá a su portador escuchar en cualquier parte, ya sea en\
+        el mar o en la tierra, música, canciones o un discurso de un \
+        líder político, dictado en cualquier otro sitio distante. Del\
+        mismo modo, cualquier dibujo o impresión podrá ser \
+        transferida de un lugar a otro (Nikola Tesla, ~ año 1891).'''
     type(c)
 
 
@@ -150,11 +183,11 @@ ejemplo:
 
 
 
-Booleanos
----------
+Lógicos
+-------
 
-Por último, nos queda el tipo básico booleano. Una variable de tipo
-booleano sólo puede tener dos valores: True (cierto) y False (falso).
+Por último, nos queda el tipo básico lógico, comunmente denominado booleano. Una variable de tipo
+booleano sólo puede tener dos valores: True (verdadero) y False (falso).
 Estos valores son especialmente importantes para las expresiones
 condicionales y los bucles, como veremos más adelante. Pero veamos
 algunos ejemplos:
@@ -389,23 +422,25 @@ Operadores lógicos
 ~~~~~~~~~~~~~~~~~~
 
 Además de los operadores relacionales, tenemos los operadores lógicos.
-Existen 3 tipos de operadores lógicos: ****and (y), or (ó), y not
-(no)****. Por ejemplo:
+Existen 3 tipos de operadores lógicos: and (y), or (ó), y not
+(no). Por ejemplo:
 
-*x > 0 **and** x < 10*
+    x > 0 and x < 10
 
-es verdadero sólo si *x* es mayor que 0 ***y*** menor que 10.
+es verdadero sólo si *x* es mayor que 0 **Y también** es menor que 10.
 
-*n%2 == 0 **or** n %3 == 0*
+    n%2 == 0 or n %3 == 0
 
 es verdadero si cualquiera de las condiciones es verdadera, o sea, si el
-número es divisible por 2 o por 3. O sea, podemos leer la línea anterior
-como *n divido 2 es igual a 0 ***ó*** n dividido 3 es igual a 0*.
+número es divisible por 2 **o** por 3. O sea, podemos leer la línea anterior
+como **n** divido 2 es igual a 0 **ó** n dividido 3 es igual a 0.
 
 Finalmente, el operador **not** niega una expresión booleana, de forma
 que
 
-****not***\ (x > y)* es cierto si *(x > y)* es falso, o sea, si x es
+    not (x > y) 
+
+es verdadero si la expresión es falsa, o sea, si x es
 menor o igual que y.
 
 En resumen tenemos los siguientes operadores lógicos
@@ -536,9 +571,3 @@ Se debe tener un especial cuidado con el orden en que se utilizan los
 operadores. Para asegurarnos de que estamos aplicando los operadores a
 una expresión particular, siempre es recomendable utilizar paréntesis
 para demarcar la expresión sobre la que deseamos operar.
-
-Referencias utilizadas en esta unidad:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  ***Python para todos***, Raúl González Duque,
-   http://mundogeek.net/tutorial-python

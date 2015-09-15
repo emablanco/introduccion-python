@@ -1,6 +1,36 @@
+================================================
+Tecnicatura Universitaria en Software Libre
+================================================
+--------------------------------------
+Introducción al Desarrollo de Software
+--------------------------------------
 
-Funciones y archivos
-====================
+:Docente: Emiliano López
+:Tutor: Maximiliano Boscovich
+
+.. header:: 
+  Introducción al Desarrollo de Software - Unidad 4
+
+.. contents:: Contenidos
+
+
+.. sectnum::
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+.. |date| date::
+.. |time| date:: %H:%M
+
+Este documento fue generado el |date| |time|
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+Unidad 4: Funciones y archivos
+==============================
 
 Funciones
 ---------
@@ -221,7 +251,8 @@ respectivamente.
 
 .. parsed-literal::
 
-    ['Luis Alberto Spinetta', 'Chango Spasiuk', 'Norberto Napolitano', 'Charly García']
+    ['Luis Alberto Spinetta', 'Chango Spasiuk', 'Norberto Napolitano', 
+    'Charly García']
 
 
 El primer argumento, ``musico``, es una cadena de caracteres que

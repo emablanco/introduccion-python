@@ -1,6 +1,36 @@
+================================================
+Tecnicatura Universitaria en Software Libre
+================================================
+--------------------------------------
+Introducción al Desarrollo de Software
+--------------------------------------
 
-Estructuras de datos y control de flujo
-=======================================
+:Docente: Emiliano López
+:Tutor: Maximiliano Boscovich
+
+.. header:: 
+  Introducción al Desarrollo de Software - Unidad 3
+
+.. contents:: Contenidos
+
+
+.. sectnum::
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+.. |date| date::
+.. |time| date:: %H:%M
+
+Este documento fue generado el |date| |time|
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+Unidad 3: Estructuras de datos y control de flujo
+=================================================
 
 Si un programa no fuera más que una lista de órdenes a ejecutar de forma
 secuencial, una por una, no tendría mucha utilidad. Es por ello que en
@@ -53,8 +83,8 @@ se ejecutarán si se cumple la condición de que la variable temperatura
 contenga un valor que este entre 10 y 29, para el caso donde temperatura
 sea menor a 10 o mayor a 29, el programa no hará nada.
 
-.. figure:: files/img/u3/ej_sentencia_if.png
-   :alt: 
+.. figure:: img/u3/ej_sentencia_if.png
+    :width: 1300 px
 
 Una característica saliente para este tipo de comparaciones en Python es
 la de asemejar al lenguaje natural, por lo que podemos implementar la
@@ -108,8 +138,6 @@ temperatura. Por lo que en este punto podemos decir que el código se
 bifurca en dos caminos diferentes dependiendo de una condición (que en
 este caso es el valor de la variable temperatura).
 
-.. figure:: files/img/u3/ej_sentencia_if_else.png
-   :alt: 
 
 En este caso también tenemos que prestar atención a la indentación
 utilizada. La sentencia *else* se escribe al mismo nivel que la
@@ -146,8 +174,8 @@ ejecutará, la bifurcación se produce solamente entre las sentencias que
 estan dentro del if y el else, lo restante se seguirá ejecutando de
 manera secuencial.
 
-.. figure:: files/img/u3/ej_sentencia_if_else_completa.png
-   :alt: 
+.. figure:: img/u3/ej_sentencia_if_else_completa.png
+   :width: 1200 px 
 
 Estructura de selección múltiple *if..elif..else*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -437,7 +465,7 @@ Veamos el pseudocódigo del algoritmo mencionado:
 
     Inicializar variable suma para sumar los números
     Inicializar variable cant para contar los números
-    Inicializar variable mas_datos donde se almacenará la respuesta del usuario (si/no)
+    Inicializar variable mas_datos para almacenar respuesta del usuario (si/no)
     Mientras la variable mas_datos sea si:
         Leer en x el nuevo valor numérico
         Sumarlo a la variable suma
@@ -1245,7 +1273,8 @@ manual y mediante iteración:
     referencia = { "libro1":{"titulo":"El tutorial de Python", 
                              "fecha":"2013", 
                              "autor":"Guido van Rossum"},
-                   "libro2":{"titulo":"Aprenda a Pensar Como un Programador con Python",
+                   "libro2":{"titulo":"Aprenda a Pensar Como un \
+                                Programador con Python",
                              "fecha":"2002",
                              "autor":"Allen Downey"},
                    "libro3":{"titulo":"Inmersión en Python 3",
@@ -1327,65 +1356,26 @@ Métodos
 A continuación se describen brevemente algunos de los métodos más
 utilizados:
 
-clear()
 
-::
+- `clear()` Elimina todos los items
 
-    Elimina todos los items
+- `copy()` Retorna una copia superficial del diccionario
 
-copy()
+- `get(key[, default])` Retorna el valor de la clave key si existe, sino el valor default. Si no se proporciona un valor default, entonces retorna None.
 
-::
+- `items()` Retorna el par de valores del item clave, valor.
 
-    Retorna una copia superficial del diccionario
+- `keys()` Retorna las claves.
 
-get(key[, default])
+- `pop(key[, default])` Si la clave key está presente en el diccionario la elimina y retorna su valor, sino retorna default. Si no se proporciona un valor default y la clave no existe se produce un error (KeyError).
 
-::
+- `popitem()` Elimina y retorna un par (clave, valor) arbitrario.
 
-    Retorna el valor de la clave key si existe, sino el valor default. Si no se proporciona un valor default, entonces retorna None.
+- `setdefault(key[, default])` Si la clave key está presente en el diccionario retorna su valor. Si no, inserta la clave con un valor de default y retorna default
 
-items()
+- `update([other])` Actualiza los items de un diccionario en otro. Es útil para concatenar diccionarios.
 
-::
-
-    Retorna el par de valores del item clave, valor.
-
-keys()
-
-::
-
-    Retorna las claves.
-
-pop(key[, default])
-
-::
-
-    Si la clave key está presente en el diccionario la elimina y retorna su valor, sino retorna default. Si no se proporciona un valor default y la clave no existe se produce un error (KeyError).
-
-popitem()
-
-::
-
-    Elimina y retorna un par (clave, valor) arbitrario.
-
-setdefault(key[, default])
-
-::
-
-    Si la clave key está presente en el diccionario retorna su valor. Si no, inserta la clave con un valor de default y retorna default
-
-update([other])
-
-::
-
-    Actualiza los items de un diccionario en otro. Es útil para concatenar diccionarios.
-
-values()
-
-::
-
-    Retorna los valores del diccionario.
+- `values()` Retorna los valores del diccionario.
 
 Los diccionarios pueden ser comparados por su igualdad si y solo si
 tienen los mismos items. Otras comparaciones (‘<’, ‘<=’, ‘>=’, ‘>’) no
@@ -1466,7 +1456,8 @@ puede ser usado para crear una lista que conste de tuplas de dos pares
 
     Lista de items
     ==============
-    [('Dolina', '4584129'), ('Fontanarrosa', '32456'), ('JPFeinman', '1523443'), ('Spasiuk', '65748'), ('Marado', '1552123')]
+    [('Dolina', '4584129'), ('Fontanarrosa', '32456'), ('JPFeinman', '1523443'), 
+    ('Spasiuk', '65748'), ('Marado', '1552123')]
     
     Lista de claves
     ===============
@@ -1494,7 +1485,8 @@ con los nombres y otra con los teléfonos. Las funciones a utilizar son
 
 .. parsed-literal::
 
-    {'JPFeinman': '1523443', 'Fontanarrosa': '32456', 'Dolina': '4584129', 'Spasiuk': '65748', 'Marado': '1552123'}
+    {'JPFeinman': '1523443', 'Fontanarrosa': '32456', 'Dolina': '4584129', 
+     'Spasiuk': '65748', 'Marado': '1552123'}
 
 
 Cadenas de caracteres
@@ -1570,41 +1562,17 @@ Métodos
 Las cadenas también cuentan con métodos que realizan una función
 específica, a continuación vemos los más usuales:
 
-``find``
+- ``find`` Busca una subcadena dentro de otra.
 
-::
+- ``lower`` y ``upper`` Retorna la cadena en minúsculas 
 
-    Busca una subcadena dentro de otra.
+- ``replace`` Retorna una cadena donde todas las ocurrencias de una cadena son reemplazadas por otra
 
-``lower`` y ``upper``
+- ``split`` Separa una cadena según un caracter separador y retorna una lista con los elementos separados.
 
-::
+- ``strip`` Retorna una cadena donde los espacios en blanco al inicio y al final de la cadena son eliminados, pero no los interiores. 
 
-    Retorna la cadena en minúsculas 
-
-``replace``
-
-::
-
-    Retorna una cadena donde todas las ocurrencias de una cadena son reemplazadas por otra
-
-``split``
-
-::
-
-    Separa una cadena según un caracter separador y retorna una lista con los elementos separados.
-
-``strip``
-
-::
-
-    Retorna una cadena donde los espacios en blanco al inicio y al final de la cadena son eliminados, pero no los interiores. 
-
-``join``
-
-::
-
-    Es el inverso de split. Une elementos de una lista en una cadena de caracteres usando un caracter de separación.
+- ``join`` Es el inverso de split. Une elementos de una lista en una cadena de caracteres usando un caracter de separación.
 
 Apliquemos algunos de estos métodos:
 

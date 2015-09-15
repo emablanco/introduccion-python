@@ -23,7 +23,7 @@ Introducción al Desarrollo de Software
 .. |date| date::
 .. |time| date:: %H:%M
 
-Este documento fue creado el |date| |time|
+Este documento fue generado el |date| |time|
 
 .. raw:: pdf
 

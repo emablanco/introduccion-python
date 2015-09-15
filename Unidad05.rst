@@ -1,6 +1,36 @@
+================================================
+Tecnicatura Universitaria en Software Libre
+================================================
+--------------------------------------
+Introducción al Desarrollo de Software
+--------------------------------------
 
-Introducción a la Programación Orientada a Objetos
-==================================================
+:Docente: Emiliano López
+:Tutor: Maximiliano Boscovich
+
+.. header:: 
+  Introducción al Desarrollo de Software - Unidad 5
+
+.. contents:: Contenidos
+
+
+.. sectnum::
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+.. |date| date::
+.. |time| date:: %H:%M
+
+Este documento fue generado el |date| |time|
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+Unidad 5: Introducción a la Programación Orientada a Objetos
+============================================================
 
 Python es un lenguaje de Programación Orientado a Objetos, lo que
 significa que puede manipular construcciones llamadas objetos. Se puede
@@ -337,7 +367,8 @@ desarrollado durante la unidad.
 
     class Jugador(object):
         """Clase Jugador"""
-        def __init__(self, nombre=None, fechaNac=None, posicion=None, clubes=[], valor=None):
+        def __init__(self, nombre=None, fechaNac=None, posicion=None, \
+            clubes=[], valor=None):
             self.nombre = nombre
             self.fechaNac = fechaNac
             self.posicion = posicion
