@@ -32,38 +32,60 @@ Este documento fue generado el |date| |time|
 Unidad 3: Estructuras de datos y control de flujo
 =================================================
 
-Si un programa no fuera más que una lista de órdenes a ejecutar de forma
-secuencial, una por una, no tendría mucha utilidad. Es por ello que en
-la mayoría de los lenguajes de programación existen lo que se denominan
-estructuras de control. Estas estructuras permiten que, ante
-determinadas condiciones, un programa se comporte de diferentes maneras.
+Con lo aprendido hasta la unidad previa, la ejecución de un programa no es más que una 
+lista de órdenes a ejecutar de forma **secuencial**. Independientemente de los datos de entrada
+el camino del programa es indefectiblemente el mismo.
 
-Supongamos que queremos hacer un programa que nos haga ciertas preguntas
-y en base a las respuestas determine si nos conviene ir al trabajo en
-bicicleta o en auto. Este programa prodría considerar inicialmente la
-temperatura ambiente, la hora y la distancia. Estos indicadores
-(variables), determinarán si el programa se debe comportar de una forma
-u de otra para de este modo recomendarnos una cosa (el uso de la
-bicicleta) u otra (el auto).
+En cada ejecución se ejecutarán siempre las mismas instrucciones, en forma secuencial, 
+una tras otra. Esta limitante quita flexibilidad a los programas ya que no es posible 
+tener caminos alternativos de ejecución y, cada instrucción se ejecuta una única vez.
+
+Para solucionar esta limitación existen las estructuras de control de flujo 
+que permiten por un lado **condicionar** las acciones a ejecutarse y, por el otro,
+**repetir** una serie de instruccioes.
+
+El teorema de la programación estructurada nos dice que todo algoritmo computacional
+puede ser resuelto utilizando tres estructuras:
+
+- Secuencial
+- Condicional
+- Repetitiva
 
 Estructuras condicionales
 -------------------------
 
-La primer estructura de control que veremos son los condicionales, los
-cuales nos permiten comprobar condiciones y hacer que se ejecute un
-fragmento de código u otro, dependiendo de esta condición. Aquí es donde
-cobra su importancia el tipo booleano que aprendimos en la sección
-anterior sobre los tipos básicos.
+La primer estructura de control que veremos son los condicionales cuya 
+función principal es la de evaluar ciertas condiciones y en base al 
+resultado ejecutar un fragmento de programa u otro. Aquí es donde
+cobra su importancia el tipo lógico que aprendimos en la sección
+anterior (Unidad 2: Tipos básicos) ya que el resultado de las condiciones
+a evaluar pueden ser Verdadero (``True``) o Falso (``False``).
 
 Sentencia *if*
 ~~~~~~~~~~~~~~
 
-La forma más simple de un estamento condicional es un ***if*** (del
-inglés si) seguido de la condición a evaluar, dos puntos (:) y en la
-siguiente línea e indentado(con sangría), el código a ejecutar en caso
-de que se cumpla dicha condición. Por ejemplo, si consideramos lo
-anterior, y hacemos que el programa por ahora solo considere la
-temperatura, podríamos hacer lo siguiente:
+La forma más simple de un estamento condicional es un ``if`` (*si*) 
+seguido de la condición a evaluar y dos puntos (:). A partir
+de la siguiente línea se escribe el código a ejecutar en caso que se 
+cumpla dicha condición, indicando este bloque de sentencias con una sangría.
+
+.. code:: python
+
+    if condicion:
+        accion1    # bloque de 
+        ...        # sentencias
+        accionN    # a ejecutar
+
+
+
+Supongamos que un programa que hace ciertas preguntas
+y en base a las respuestas nos informe si conviene ir al trabajo en
+bicicleta o en auto. Este programa prodría considerar la
+temperatura, la hora y la distancia y en base a estas variables
+tener un comportamiento diferenciado.
+
+Si inicialmente consideramos solo la temperatura, 
+podríamos hacer lo siguiente:
 
 .. code:: python
 
@@ -74,20 +96,16 @@ temperatura, podríamos hacer lo siguiente:
 
 .. parsed-literal::
 
-    Deberías ser amable con el medio ambiente e ir en bicicleta
+    Está lindo para bici!
 
 
-Esta sentencia se lee como: si (if) temperatura mayor a 10 y menor a 30,
-entonces ejecutar: print('Está lindo para bici!'). Estas sentencias solo
-se ejecutarán si se cumple la condición de que la variable temperatura
-contenga un valor que este entre 10 y 29, para el caso donde temperatura
-sea menor a 10 o mayor a 29, el programa no hará nada.
-
-.. figure:: img/u3/ej_sentencia_if.png
-    :width: 1300 px
+Esta sentencia se lee: Si la temperatura es mayor a 10 y menor a 30, entonces
+ejecutar: print('Está lindo para bici!'). Estas sentencias se ejecutarán 
+solamente al cumplirse la condición, es decir, cuando la variable temperatura
+contenga un valor entre 10 y 30. En otro caso, el programa no mostrará nada.
 
 Una característica saliente para este tipo de comparaciones en Python es
-la de asemejar al lenguaje natural, por lo que podemos implementar la
+la de asemejarse al lenguaje natural, por lo que podemos implementar la
 comparación previa haciendo:
 
 .. code:: python
@@ -97,29 +115,30 @@ comparación previa haciendo:
 
 **¿Qué acciones se ejecutan al cumplirse la condición?**
 
-Una cuestión muy importante es indentar tal como se ha hecho en el
-ejemplo, es decir, aseguraros de dejar una sangría en las líneas debajo
-de los 2 puntos (:) que se deben ejecutar en caso que la condición de la
-pregunta se cumpla.
+Todo lenguaje de programación tiene en su sintaxis un modo de identificar las acciones
+que forman parte de un bloque, así como en C++ y Java se utilizan llaves en Python es la sangría.
 
-Todo lenguaje de programación tiene en su sintaxis un modo de
-identificar las acciones que forman parte de un bloque, en Python esto
-es a partir de la sangría.
+Es importante indentar el bloque de acciones tal como se ha hecho en el ejemplo, 
+es decir, dejar una sangría en las líneas debajo de los dos puntos (:).
 
 Sentencia *if..else*
 ~~~~~~~~~~~~~~~~~~~~
 
-Nuestro interés inicial era que el programa nos dijera si podemos ir en
-auto o en bicicleta, y el ejemplo anterior solo nos dice algo cuando
-podemos ir en bici, pero no dice o hace nada cuando la condición no se
-cumple. Para estos casos existe un condicional llamado \ ***else***\ 
-(del inglés si no), que se usa conjuntamente con if y que sirve para
-ejecutar ciertas instrucciones en caso de que la condición de la
-sentencia if no se cumpla. Por ejemplo:
+El problema inicialmente planteado consiste en determinar si ir al trabajo
+en vehículo o bicicleta, sin embargo el programa anterior imprime en pantalla 
+solamente cuando podemos ir en bici,  y en caso que la condición fuera falsa, 
+no mostraba ningún mensaje alusivo.
+
+Para completar este problema es necesario que existan dos caminos alternativos de 
+ejecución, uno para cuando la condición sea verdadera y otro para cuando sea falsa.
+
+Para estos casos existe la sentencia ``else`` (*sino*), que se usa conjuntamente 
+con ``if`` y que sirve para ejecutar ciertas instrucciones en caso de que la condición de la
+evaluada no se cumpla. Completando el ejemplo:
 
 .. code:: python
 
-    if (temperatura > 10) and (temperatura < 30):
+    if 10 < temperatura < 30:
         print('Está lindo para ir en bici')
     else:
         print('Te recomiendo ir en cole')
@@ -130,67 +149,54 @@ sentencia if no se cumpla. Por ejemplo:
     Está lindo para ir en bici
 
 
-Esto se lee como *si temperatura es mayor o igual a 10 y temperatura es
-menor que 30, entonces mostrar el mensaje 'Está lindo para ir en bici',
-sino mostrar el mensaje 'Te recomiendo ir en cole'*. Siempre se
-ejecutará una opción u otra, dependiendo del valor de la variable
+Esto se lee como *si temperatura es mayor a 10 y menor que 30, entonces mostrar el mensaje 'Está lindo para ir en bici', sino mostrar el mensaje 'Te recomiendo ir en cole'*. Siempre se
+ejecutará una de las dos opciones, dependiendo del valor de la variable
 temperatura. Por lo que en este punto podemos decir que el código se
-bifurca en dos caminos diferentes dependiendo de una condición (que en
-este caso es el valor de la variable temperatura).
+bifurca en dos caminos diferentes dependiendo de una condición.
 
 
 En este caso también tenemos que prestar atención a la indentación
-utilizada. La sentencia *else* se escribe al mismo nivel que la
-sentencia *if*, y las sentencias que se deben ejecutar en caso de no se
+utilizada bajo la sentencia ``else`` se escribe al mismo nivel que la
+sentencia ``if``, y las sentencias que se deben ejecutar en caso de no se
 cumpla la condición if, deben ir indentadas también.
 
 Una versión más completa del programa podría ser la siguiente:
 
 .. code:: python
 
-    temperatura = int(input('Ingrese la temperatura en ºC:'))
+    temperatura = int(input('Ingrese la temperatura en ºC: '))
     
-    if (temperatura > 10) and (temperatura < 30):
+    if 10 < temperatura < 30:
         print('Está lindo para ir en bici')
     else:
         print('Te recomiendo ir en cole')
-        
     print('Que tenga buen día!')
 
 
 .. parsed-literal::
 
-    Ingrese la temperatura en ºC:12
-    Deberías ser amable con el medio ambiente e ir en bicicleta
+    Ingrese la temperatura en ºC: 12
+    Está lindo para ir en bici
     Que tenga buen día!
 
-
-En este caso consultamos por la temperatura, pidiendole al usuario que
-la ingrese por teclado (para esto utilizamos la función *input* que
-vimos en la Unidad 1). Luego mostramos en patalla lo que corresponda
-según el valor ingresado, y por último mostramos el mensaje 'Que tenga
-buen día!'. Es importante mencionar que la última sentencia siempre se
+Es importante mencionar que la última sentencia siempre se
 ejecutará, la bifurcación se produce solamente entre las sentencias que
-estan dentro del if y el else, lo restante se seguirá ejecutando de
-manera secuencial.
-
-.. figure:: img/u3/ej_sentencia_if_else_completa.png
-   :width: 1200 px 
+estan dentro del ``if`` y el ``else``, el mensaje 'Que tenga buen día!' se mostrará
+independientemente del camino que haya tomado la ejecución del programa.
 
 Estructura de selección múltiple *if..elif..else*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-En los dos casos previos la secuencia de ejecución del programa tiene
-solamente dos alternativas, si la condición es verdadera (``True``) o si
-es falsa (``False``), incluso puede no existir un camino por la
-alternativa falsa, tal como se planteó en el primer ejemplo.
+En los casos previos la secuencia de ejecución del programa tiene
+solamente dos alternativas, el bloque de acciones cuando la condición 
+es verdadera (``True``) o cuando es falsa (``False``), incluso puede 
+no existir un camino por la alternativa falsa, tal como se planteó en el primer ejemplo.
 
 Las estructuras de selección múltiple sirven para evaluar mas de una
 condición y por ende posibilitar varios caminos de ejecución del
-programa. En Python, la forma de esta estructura es del siguiente modo:
+programa. En Python, la forma es la siguiente:
 
 .. code:: python
-
 
     if condicion1:
         acciones
@@ -284,24 +290,24 @@ y veamos como usar estructuras anidadas:
 
 .. code:: python
 
-    temperatura = int(input('Ingrese la temperatura en ºC:'))
-    distancia = int(input('Ingrese la distancia a recorrer en km:'))
+    temperatura = int(input('Ingrese la temperatura en ºC: '))
+    distancia = int(input('Ingrese la distancia a recorrer en km: '))
     
-    if (temperatura > 10) and (temperatura < 30):
-        if (distancia <= 15):
-            print('Está lindo para ir en bici')
+    if 10 < temperatura < 30:
+        if distancia <= 15:
+            print('Lindo clima para ir en bici')
         else:
-            print('Está lindo, pero es lejos, le recomiendo ir en auto')
+            print('Es lejos, te recomiendo cole')
     else:
-        print('La temperatura no es agradable, le recomiendo ir en auto.')
+        print('No está agradable, recomiendo cole')
         
     print('Que tenga buen día!')
 
 
 .. parsed-literal::
 
-    Ingrese la temperatura en ºC:15
-    Ingrese la distancia a recorrer en km:1
+    Ingrese la temperatura en ºC: 15
+    Ingrese la distancia a recorrer en km: 1
     Está lindo para ir en bici
     Que tenga buen día!
 
@@ -731,7 +737,7 @@ ahora usando ``for``:
 
 .. code:: python
 
-    for vez in range(5)
+    for vez in range(5):
         temperatura = int(input('Ingrese la temperatura en ºC:'))
         if (temperatura > 16):
             print('Vas caminando')
