@@ -1017,31 +1017,31 @@ previamente definida.
 
 .. parsed-literal::
 
-    ('Columna', 0)
+    Columna 0
     12.2
     3.14
     10.8
-    ()
-    ('Columna', 1)
+    
+    Columna 1
     33.3
     2.1
     0.1
-    ()
-    ('Columna', 2)
+    
+    Columna 2
     12.1
     9.8
     0.2
-    ()
-    ('Columna', 3)
+    
+    Columna 3
     0.3
     28.1
     22.1
-    ()
-    ('Columna', 4)
+    
+    Columna 4
     1.21
     19.9
     9.38
-    ()
+    
 
 
 Operaciones
@@ -1134,13 +1134,13 @@ métodos. Se propone profundizar sobre los métodos disponibles con la
 lectura del *Tutorial de Python* (pág. 26, *Más sobre listas*)
 
 -  ``list.append(x)`` Agrega un ítem al final de la lista. Equivale a
-   ``a[len(a):] = [x]``
+   ``list[len(list):] = [x]``
 -  ``list.extend(L)`` Extiende la lista agregándole todos los ítems de
-   la lista dada. Equivale a ``a[len(a):] = L``
+   la lista dada. Equivale a ``list[len(list):] = L``
 -  ``list.insert(i,x)`` Inserta un ítem en una posición dada. El primer
    argumento es el índice del ítem delante del cual se insertará, por lo
-   tanto ``a.insert(0, x)`` inserta al principio de la lista, y
-   ``a.insert(len(a),x)`` ``equivale a a.append(x)``
+   tanto ``list.insert(0, x)`` inserta al principio de la lista, y
+   ``list.insert(len(list),x)`` ``equivale a list.append(x)``
 -  ``list.remove(x)`` Quita el primer ítem de la lista cuyo valor sea x.
    Es un error si no existe tal ítem
 -  ``list.pop([,i])`` Quita el ítem en la posición dada de la lista, y
@@ -1150,7 +1150,7 @@ lectura del *Tutorial de Python* (pág. 26, *Más sobre listas*)
    deberías escribir corchetes en esa posición. Verás esta notación con
    frecuencia en la Referencia de la Biblioteca de Python.)
 -  ``list.clear()`` Quita todos los elementos de la lista. Equivalente a
-   ``del a[:]``
+   ``del list[:]``
 -  ``list.index(x)`` Devuelve el índice en la lista del primer ítem cuyo
    valor sea x. Es un error si no existe tal ítem
 -  ``list.count(x)`` Devuelve el número de veces que x aparece en la
@@ -1158,7 +1158,7 @@ lectura del *Tutorial de Python* (pág. 26, *Más sobre listas*)
 -  ``list.sort()`` Ordena los ítems de la lista in situ
 -  ``list.reverse()`` Invierte los elementos de la lista in situ
 -  ``list.copy()`` Devuelve una copia superficial de la lista.
-   Equivalente a ``a[:]``
+   Equivalente a ``list[:]``
 
 Una manera de quitar un ítem de una lista dado su índice en lugar de su
 valor es la instrucción ``del``, que también puede usarse para quitar
@@ -1181,11 +1181,11 @@ Hemos visto que las listas son útiles cuando se quiere agrupar valores
 en una estructura y acceder a cada uno de ellos a través del un valor
 numérico, un índice.
 
-Otro tipo de estructura, que nos permite referirnos a un determinado
-valor a través de un nombre es un diccionario. Muchas veces este tipo de
+Otro tipo de estructura que nos permite referirnos a un determinado
+valor a través de un nombre o clave es un diccionario. Muchas veces este tipo de
 estructura es más apropiado que una lista.
 
-El nombre *diccionario* da una idea sobre el propósito de esta
+El nombre *diccionario* da una idea sobre el propósito de la
 estructura ya que uno puede realizar fácilmente una búsqueda a partir de
 una palabra específica (*clave*) para obtener su definición (*valor*).
 
@@ -1198,8 +1198,19 @@ el modo de crear diccionarios.
     agenda = {'Marado':'1552123', 'JPFeinman':'1523443', 'Dolina':'4584129',
               'Spasiuk':'65748', 'Fontanarrosa':'32456'}
 
+El acceso a un valor se realiza a partir de su clave, por ejemplo:
 
-Los *diccionarios* consisten en pares (llamados *items*) de *claves* y
+.. code:: python
+
+    print(agenda['Marado'])
+    print(agenda['Fontanarrosa'])
+
+.. parsed-literal::
+
+    1552123
+    32456
+    
+Los *diccionarios* consisten en pares llamados *items* formados por *claves* y
 sus *valores* correspondientes. En este ejemplo, los nombres son las
 claves y los números de teléfono son los valores. Cada clave es separada
 de su valor por los dos puntos (:), los items son separados por comas, y
@@ -1267,9 +1278,7 @@ Analicemos un breve ejemplo de un diccionario que está conformado del
 siguiente modo:
 
 -  Cuenta con tres items
--  El valor de cada item es otro diccionario que a su vez contiene:
-
-   -  Tres items con las claves *titulo*, *fecha* y *autor*
+-  El valor de cada item es otro diccionario que a su vez contiene tres items con las claves *titulo*, *fecha* y *autor*
 
 A continuación veamos la implementación de esta estructura, la impresión
 manual y mediante iteración:
