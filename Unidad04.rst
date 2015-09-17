@@ -35,10 +35,9 @@ Unidad 4: Funciones y archivos
 Funciones
 ---------
 
-Las funciones son subprogramas que pueden ser invocados para realizar
-una tarea específica, siendo capaz de recibir información (datos de
-entrada) desde donde son llamados y a su vez de retornar algún valor
-(datos de salida).
+Las funciones son subprogramas para realizar una tarea específica, 
+siendo capaces de recibir y retornar información (datos de
+entrada y salida) desde donde fueron son invocados.
 
 Cuando una función es invocada, el programa principal transfiere el
 control a la función hasta que finalice su ejecución, volviendo luego al
