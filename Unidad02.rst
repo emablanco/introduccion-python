@@ -33,20 +33,26 @@ Unidad 2: Tipos básicos
 =======================
 
 Como vimos en la Unidad 1, las variables pueden contener diferentes
-tipos de datos, y al ser distintos, son tratados de manera diferente por
-Python (por ejemplo no podemos sumar un número con una letra).
+tipos de datos, que son tratados de manera diferente por
+Python, por ejemplo no podemos sumar un número con una letra.
 
-Hemos visto 2 de los 3 tipos básicos que utiliza python, los cuales se
-dividen en: \* **Números** \* **Cadenas de caracteres** \* **Lógicos**
+Anteriormente vimos 2 de los 3 tipos básicos que utiliza python:
 
-Números
--------
+- Numericos 
+- Cadenas de caracteres
+- Lógicos
 
-Los números como vimos pueden ser enteros, reales (también denominados
-de coma flotante) ó complejos. ### Enteros Los números enteros son
-aquellos números positivos o negativos que no tienen decimales (además
-del cero). En Python se representan mediante el tipo int (de integer,
-entero). Por ejemplo:
+Numericos
+---------
+
+Los números pueden ser enteros, reales (también denominados
+de punto flotante) ó complejos. 
+
+Enteros
+~~~~~~
+
+Los números enteros son aquellos números positivos o negativos que no tienen decimales (además
+del cero). En Python se representan mediante el tipo int (de integer, entero). Por ejemplo:
 
 .. code:: python
 
@@ -353,8 +359,9 @@ El tipo como hemos visto, es booleano:
 
 
 
-También podemos comparar números, expresiones algebráicas y expresiones
-lógicas.
+También podemos comparar números, expresiones lógicas y expresiones algebráicas:
+
+**Números**
 
 .. code:: python
 
@@ -366,6 +373,7 @@ lógicas.
 
     True
 
+**Expresiones lógicas**
 
 .. code:: python
 
@@ -377,6 +385,7 @@ lógicas.
 
     False
 
+**Expresiones algebráicas**
 
 .. code:: python
 
@@ -400,21 +409,13 @@ que es falsa tiene el valor 0.
     resultado = a == 1
     print (resultado)
 
-
-.. parsed-literal::
-
-    True
-
-
-.. code:: python
-
     b = False
     resultado = b == 0
     print (resultado)
 
-
 .. parsed-literal::
 
+    True
     True
 
 
@@ -422,7 +423,7 @@ Operadores lógicos
 ~~~~~~~~~~~~~~~~~~
 
 Además de los operadores relacionales, tenemos los operadores lógicos.
-Existen 3 tipos de operadores lógicos: and (y), or (ó), y not
+Existen 3 tipos de operadores lógicos: and (y), or (o), y not
 (no). Por ejemplo:
 
     x > 0 and x < 10
