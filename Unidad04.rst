@@ -35,20 +35,19 @@ Unidad 4: Funciones y archivos
 Funciones
 ---------
 
-Las funciones son subprogramas para realizar una tarea específica, 
-siendo capaces de recibir y retornar información (datos de
-entrada y salida) desde donde fueron son invocados.
+Las funciones son subprogramas que realizan una tarea específica, 
+capaces de recibir y retornar información (datos de
+entrada y salida) desde donde fueron son invocadas.
 
 Cuando una función es invocada, el programa principal transfiere el
 control a la función hasta que finalice su ejecución, volviendo luego al
 punto desde donde fue llamada.
 
 En los programas desarrollados anteriormente hicimos uso de la función
-``len()``, que recibe como información de entrada una secuencia (lista o
-una cadena de caracteres por ejemplo) y retorna un valor numérico entero
-que representa la cantidad de elementos (o de caracteres). ``len()`` es
-una de las tantas funciones prefedinidas por el lenguaje Python en la
-biblioteca estándar y, en la presente sección veremos cómo definir
+``len()``, cuyo valor de retorno es un valor numérico entero
+que representa la cantidad de elementos de la secuencia que recibió como entrada. 
+``len()`` es una de las tantas funciones predefinidas por el lenguaje Python en la
+biblioteca estándar. En la presente sección veremos la manera de definir
 nuestras propias funciones.
 
 El uso de funciones en el desarrollo de programas tiene un conjunto de
@@ -105,7 +104,7 @@ ejemplo de un programa que define y utiliza una función denominada
 
 Analicemos en detalle la secuencia de ejecución:
 
--  Desde el programa principal se invoca a la función enviándo la
+-  Desde el programa principal se invoca a la función enviando la
    variable ``a`` como parámetro
 -  La función recibe la entrada haciendo una copia de ``a`` en la
    variable ``x``
@@ -183,13 +182,12 @@ los valores.
     {'Kliksberg': '23444', 'Stiglitz': '54556', 'Zaffaroni': '66554'}
 
 
-El lector atento abrá notado que en todas las funciones debajo de su
+El lector atento habrá notado que en todas las funciones debajo de su
 definición existe un texto encerrado entre comillas triples (como por
 ejemplo ``"""Retorna el doble de x"""``). Esto es un comentario que se
-utiliza para documentar brevemente, y con nuestras palabras, que es lo
+utiliza para documentar brevemente lo
 que realiza dicha función. Su uso es opcional, pero es muy recomendable,
-dado que puede ser de mucha utilidad tanto para nostros como para otros
-desarrolladores.
+dado que puede ser de mucha utilidad para describir el modo de funcionamiento de la función.
 
 Variables globales y locales
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -216,12 +214,12 @@ Veamos un ejemplo y su comportamiento:
     Norberto Napolitano
 
 
-Observamos que la variable no fué modificada o al menos no se ve
+Observamos que la variable no fue modificada o al menos no se ve
 reflejado desde el programa principal. Esto sucede debido a que la
 variable ``n`` es copiada en la variable ``nombre`` y todo cambio que se
 realice en el interior de ``trata_de_cambiar`` será local, es decir, su
 ámbito de validez se limita a la función, de manera tal que tanto
-``Spinetta`` como ``Napolitano`` son irremplazables.
+``Spinetta`` como ``Napolitano`` son irreemplazables.
 
 No obstante, existen estructuras de datos que al ser modificadas dentro
 la función su cambio se verá reflejado en el programa principal. La
@@ -315,7 +313,7 @@ comportamiento puede diferir.
 
 Para solucionar este tipo de problemas y sacar provecho del uso de
 funciones existen los módulos, cuya utilidad es la de contener varias
-funciones que realicen algún tipo de tarea afin.
+funciones que realicen algún tipo de tarea afín.
 
 Por ejemplo, una serie de funciones para cálculo matemático sería útil
 que estén contenidas en un mismo módulo, otras funciones para
@@ -404,7 +402,7 @@ salida para nuestros programas a través de archivos de texto.
 Incorporar el uso de archivos a un programa generalmente requiere las
 siguientes acciones:
 
--  Abrir el archivo: la apertura de un achivo se realiza a partir de la
+-  Abrir el archivo: la apertura de un archivo se realiza a partir de la
    primitiva ``open`` y consiste en asociar un elemento del programa con
    un archivo en particular.
 -  Elegir el modo de apertura: un archivo puede abrirse para lectura
@@ -551,7 +549,7 @@ excesivamente grandes. Veamos un ejemplo:
     ['enero 30\n', 'febrero 60\n', 'marzo 55\n']
 
 
-Ahora bien, podemos procesar los datos que son leidos del archivo.
+Ahora bien, podemos procesar los datos que son leídos del archivo.
 Hagamos el cálculo de un promedio con los valores numéricos de cada mes,
 para esto debemos extraer de la cadena de caracteres solamente aquellos
 valores que siguen a la cadena de caracteres correspondiente al mes.
