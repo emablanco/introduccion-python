@@ -38,15 +38,15 @@ Python, por ejemplo no podemos sumar un número con una letra.
 
 Anteriormente vimos 2 de los 3 tipos básicos que utiliza python:
 
-- Numericos 
+- Numéricos 
 - Cadenas de caracteres
 - Lógicos
 
-Numericos
+Numéricos
 ---------
 
 Los números pueden ser enteros, reales (también denominados
-de punto flotante) ó complejos. 
+de punto flotante) o complejos. 
 
 Enteros
 ~~~~~~~
@@ -137,7 +137,7 @@ Cadenas de caracteres
 
 Tal como hemos visto en la unidad anterior, las cadenas (string en
 inglés o str) no son más que texto encerrado entre comillas simples
-('cadena'), dobles ("cadena") ó triples('''Cadenas multilíneas'''). Por
+('cadena'), dobles ("cadena") o triples('''Cadenas multilíneas'''). Por
 ejemplo:
 
 .. code:: python
@@ -192,8 +192,8 @@ ejemplo:
 Lógicos
 -------
 
-Por último, nos queda el tipo básico lógico, comunmente denominado booleano. Una variable de tipo
-booleano sólo puede tener dos valores: True (verdadero) y False (falso).
+Por último, nos queda el tipo básico lógico, comúnmente denominado booleano. Una variable de tipo
+booleano sólo puede tener dos valores: ``True`` (verdadero) y ``False`` (falso).
 Estos valores son especialmente importantes para las expresiones
 condicionales y los bucles, como veremos más adelante. Pero veamos
 algunos ejemplos:
@@ -240,9 +240,9 @@ algunos ejemplos:
 En este último ejemplo vemos algo particular, hemos asignado a la
 variable **c** el resultado de una expresión lógica (10 > 2). Python en
 este caso opera con la misma y asigna a la variable **c** el resultado
-de dicha operación, la cual en este caso es verdadera (True), dado que
+de dicha operación, la cual en este caso es verdadera (``True``), dado que
 10 es mayor que 2. Al tratarse se una operación lógica, el resultado
-siempre será de tipo booleando (bool), es decir, será verdadero o será
+siempre será de tipo booleando (``bool``), es decir, será verdadero o será
 falso.
 
 .. code:: python
@@ -285,8 +285,8 @@ Por ejemplo:
 
 
 En este caso el operando A es 10 y el B es 4, el resultado de aplicar el
-operador ">" a los operandos A y B en este caso es True (cierto) dado
-qeu 10 es mayor que 4.
+operador ">" a los operandos A y B en este caso es ``True`` (verdadero) dado
+que 10 es mayor que 4.
 
 La lista completa de operadores que podemos utilizar en python es:
 
@@ -307,7 +307,7 @@ Veamos otro ejemplo, ahora con cadenas de texto:
 .. code:: python
 
     d = "Una cosa" == "Otra cosa"
-    print (d)
+    print(d)
 
 
 .. parsed-literal::
@@ -317,13 +317,13 @@ Veamos otro ejemplo, ahora con cadenas de texto:
 
 En este caso el operador == se utiliza para comparar si son iguales los
 operandos. Esta comparación se hace caracter a caracter, por lo que al
-ser diferentes las cadenas, el resultado es False. Lo siquiente también
-es False
+ser diferentes las cadenas, el resultado es ``False``. Lo siguiente también
+es ``False``
 
 .. code:: python
 
     d = "Una cosa" == "una cosa"
-    print (d)
+    print(d)
 
 
 .. parsed-literal::
@@ -359,7 +359,7 @@ El tipo como hemos visto, es booleano:
 
 
 
-También podemos comparar números, expresiones lógicas y expresiones algebráicas:
+También podemos comparar números, expresiones lógicas y expresiones algebraicas:
 
 **Números**
 
@@ -385,7 +385,7 @@ También podemos comparar números, expresiones lógicas y expresiones algebrái
 
     False
 
-**Expresiones algebráicas**
+**Expresiones algebraicas**
 
 .. code:: python
 
@@ -423,7 +423,7 @@ Operadores lógicos
 ~~~~~~~~~~~~~~~~~~
 
 Además de los operadores relacionales, tenemos los operadores lógicos.
-Existen 3 tipos de operadores lógicos: and (y), or (o), y not
+Existen 3 tipos de operadores lógicos: ``and`` (y), ``or`` (o), y ``not``
 (no). Por ejemplo:
 
     x > 0 and x < 10
@@ -434,9 +434,9 @@ es verdadero sólo si *x* es mayor que 0 **Y también** es menor que 10.
 
 es verdadero si cualquiera de las condiciones es verdadera, o sea, si el
 número es divisible por 2 **o** por 3. O sea, podemos leer la línea anterior
-como **n** divido 2 es igual a 0 **ó** n dividido 3 es igual a 0.
+como **n** divido 2 es igual a 0 **o** n dividido 3 es igual a 0.
 
-Finalmente, el operador **not** niega una expresión booleana, de forma
+Finalmente, el operador ``not`` niega una expresión booleana, de forma
 que
 
     not (x > y) 
@@ -472,7 +472,7 @@ Veamos algunos ejemplos
     True
 
 
-En este caso, como ambas operaciones devuelven True (verdadero), el
+En este caso, como ambas operaciones devuelven ``True`` (verdadero), el
 resultado es verdadero.
 
 .. code:: python
@@ -492,7 +492,7 @@ resultado es verdadero.
 Por el contrario, si una de las condiciones devuelve False, el resultado
 será False.
 
-Veamos algunos ejemplos con el operador ***or***
+Veamos algunos ejemplos con el operador ``or``
 
 .. code:: python
 
@@ -500,7 +500,7 @@ Veamos algunos ejemplos con el operador ***or***
     b = 16
     c = 6
     resultado = (a < b) or (a < c)
-    print (resultado)
+    print(resultado)
 
 
 .. parsed-literal::
@@ -512,7 +512,7 @@ En este caso la primer operación es verdadera y la segunda es falsa,
 pero como estamos utilizando el operador ***or***, la variable resultado
 tendrá como valor True.
 
-Por último, veamos un ejemplo con el operador ***not***
+Por último, veamos un ejemplo con el operador ``not``
 
 .. code:: python
 
@@ -528,7 +528,7 @@ Por último, veamos un ejemplo con el operador ***not***
 
 
 En este ejemplo *a* es menor que *b*, por lo que la expresión es falsa.
-Sin embargo al utilizarse el operador ***not*** estamos cambiando el
+Sin embargo al utilizarse el operador ``not`` estamos cambiando el
 resultado por su opuesto (en este caso True). La expresión podría leer
 como "no es cierto que a es mayor que b", lo cual es una expresión
 cierta, y por lo tanto el valor correspondiente es True.
@@ -548,7 +548,7 @@ Veamos un ejemplo un poco mas complicado
     True
 
 
-Desglocemos un poco este ejemplo:
+Desglosemos un poco este ejemplo:
 
 En este caso la expresión (a > b) es falsa, al igual que (b < c), por lo
 que podríamos ver a lo anterior como
@@ -557,7 +557,7 @@ que podríamos ver a lo anterior como
 
     resultado = (not(False)) and (not(False))
 
-Dijimos que el operador ***not*** cambia el resultado de una expresión
+Dijimos que el operador ``not`` cambia el resultado de una expresión
 booleana por su opuesto, por lo que si seguimos desarrollando esta línea
 tenemos:
 
@@ -566,7 +566,7 @@ tenemos:
     resultado = (True) and (True)
 
 Como ambas expresiones son verdaderas, el valor de la variable
-*resultado* será *True*.
+*resultado* será ``True``.
 
 Se debe tener un especial cuidado con el orden en que se utilizan los
 operadores. Para asegurarnos de que estamos aplicando los operadores a
