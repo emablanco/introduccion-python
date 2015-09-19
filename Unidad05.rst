@@ -137,7 +137,7 @@ modificaciones sobre los datos, y métodos cuyos nombres empiezan con
 dado que podemos ponerle el nombre que se nos ocurra, pero es una buena
 costumbre llamarlos de este modo, al igual que el hecho de respetar el
 encapsulamiento (esto es, siempre modificar y obtener los datos,
-mediante el úso de un método propio del objeto).
+mediante el uso de un método propio del objeto).
 
 Métodos especiales
 ------------------
@@ -308,8 +308,8 @@ Por ejemplo, a partir de una clase ``Jugador`` podemos construir la
 clase ``Capitan`` que extiende a ``Jugador`` y agrega como atributo una
 lista de fechas de partidos que tuvo ese rol. Se puede ver como un caso
 particular de la clase jugador, dado que tendrá los mismos atributos y
-métodos que un objecto de la clase ``Jugador``, y a su vez tendrá
-algunos atributos y/ó métodos extras.
+métodos que un objeto de la clase ``Jugador``, y a su vez tendrá
+algunos atributos y/o métodos extras.
 
 Para indicar el nombre de la clase base, se la pone entre paréntesis a
 continuación del nombre de la clase. Veamos el modo de implementarla:
