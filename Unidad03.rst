@@ -42,7 +42,7 @@ tener caminos alternativos de ejecución y, cada instrucción se ejecuta una ún
 
 Para solucionar esta limitación existen las estructuras de control de flujo 
 que permiten por un lado **condicionar** las acciones a ejecutarse y, por el otro,
-**repetir** una serie de instruccioes.
+**repetir** una serie de instrucciones.
 
 El teorema de la programación estructurada nos dice que todo algoritmo computacional
 puede ser resuelto utilizando tres estructuras:
@@ -80,7 +80,7 @@ cumpla dicha condición, indicando este bloque de sentencias con una sangría.
 
 Supongamos que un programa que hace ciertas preguntas
 y en base a las respuestas nos informe si conviene ir al trabajo en
-bicicleta o en auto. Este programa prodría considerar la
+bicicleta o en auto. Este programa podría considerar la
 temperatura, la hora y la distancia y en base a estas variables
 tener un comportamiento diferenciado.
 
@@ -158,7 +158,7 @@ bifurca en dos caminos diferentes dependiendo de una condición.
 En este caso también tenemos que prestar atención a la indentación
 utilizada bajo la sentencia ``else`` se escribe al mismo nivel que la
 sentencia ``if``, y las sentencias que se deben ejecutar en caso de no se
-cumpla la condición if, deben ir indentadas también.
+cumpla la condición ``if``, deben ir indentadas también.
 
 Una versión más completa del programa podría ser la siguiente:
 
@@ -181,7 +181,7 @@ Una versión más completa del programa podría ser la siguiente:
 
 Es importante mencionar que la última sentencia siempre se
 ejecutará, la bifurcación se produce solamente entre las sentencias que
-estan dentro del ``if`` y el ``else``, el mensaje 'Que tenga buen día!' se mostrará
+están dentro del ``if`` y el ``else``, el mensaje 'Que tenga buen día!' se mostrará
 independientemente del camino que haya tomado la ejecución del programa.
 
 Estructura de selección múltiple *if..elif..else*
@@ -254,7 +254,7 @@ cualitativa según la siguiente escala:
     Calificación:  Distinguido
 
 
-Como se observa, cada expresión condicional planteada es exluyente de
+Como se observa, cada expresión condicional planteada es excluyente de
 las demás, por lo que no puede cumplir con mas de una a la vez. Ahora,
 podría existir un planteo donde se cumplan más de una condición y la
 pregunta obvia es, ¿qué sucede en ese caso?
@@ -283,7 +283,7 @@ no sea demasiado larga como para ir en bicicleta.
 Para estos casos, se pueden utilizar estructuras anidadas, es decir, en
 el bloque de código que se ejecutará en caso de cumplirse o no una
 determina condición, podemos poner una nueva estructura de control, por
-ejemplo un nuevo *if*.
+ejemplo un nuevo ``if``.
 
 Reescribamos el código anterior para que considere esta nueva condición,
 y veamos como usar estructuras anidadas:
@@ -329,12 +329,12 @@ Estructuras repetitivas
 Ahora podemos dotar a nuestros programas de mayor complejidad,
 combinando y anidando las estructuras condicionales vistas. Sin embargo,
 aún tenemos una limitante, cada instrucción tendrá vida al momento de
-ser ejecutada e inmediamente después no se ejecutará más hasta que se el
+ser ejecutada e inmediatamente después no se ejecutará más hasta que se el
 programa se invoque nuevamente.
 
 Imaginemos que debemos consultar la pregunta de la temperatura a cientos
 de miles de personas, deberíamos ejecutar cientos de miles de veces el
-programa, iniciandolo y esperando su finalización para repetir el
+programa, iniciándolo y esperando su finalización para repetir el
 proceso una y otra vez. Se hace evidente la ausencia de una estructura
 que permita repetir cuantas veces se requiera una determinada acción,
 aquí es donde entran en acción las estructuras repetitivas.
@@ -342,12 +342,12 @@ aquí es donde entran en acción las estructuras repetitivas.
 Sentencia *while*
 ~~~~~~~~~~~~~~~~~
 
-El *while* permite repetir una serie de acciones mientras que una
+El ``while`` permite repetir una serie de acciones mientras que una
 determinada expresión (o condición) se cumpla, en caso contrario, se
 finaliza la repetición.
 
 Una expresión se cumple cuando arroja un resultado verdadero, que en
-Python es ``True``. La estructura del *while* es la siguiente:
+Python es ``True``. La estructura del ``while`` es la siguiente:
 
 .. code:: python
 
@@ -404,7 +404,7 @@ Ahora bien, cuando finaliza la ejecución de la instrucción
 ``vez <= 5`` cuyo resultado puede ser cierto o no (``True`` o
 ``False``). Si el resultado es ``True``, entonces el ciclo continuará
 con las acciones contenidas, re-evaluando la expresión en cada
-itereación y finalizando cuando sea ``False``, es decir, cuando la
+iteración y finalizando cuando sea ``False``, es decir, cuando la
 variable ``vez`` ya no sea menor o igual que 5.
 
 Ahora que ya hemos desmenuzado el inofensivo código previo, podemos
@@ -444,7 +444,7 @@ con dos características destacables:
 -  En cada iteración el valor a ser evaluado en la expresión debe
    modificarse
 
-El primer item evita obtener un mensaje de error, ya que no es posible
+El primer ítem evita obtener un mensaje de error, ya que no es posible
 evaluar una expresión con un valor que aún no ha sido definido, es
 decir, que no tiene asignado algún valor válido.
 
@@ -476,7 +476,7 @@ Veamos el pseudocódigo del algoritmo mencionado:
         Leer en x el nuevo valor numérico
         Sumarlo a la variable suma
         Contarlo
-        Pregutar al usuario si sigue ingresando números
+        Preguntar al usuario si sigue ingresando números
     Mostrar en pantalla el promedio
 
 Ahora veamos lo directa que es la traducción del algoritmo al lenguaje
@@ -552,7 +552,7 @@ ingresar al ciclo y en la última instrucción para dar al usuario una
 idea de continuidad viendo una y otra vez el mismo comportamiento.
 
 Para el ejemplo expuesto, la limitación esta dada para aquellos casos
-donde se ingresen valores negativos para ser incluídos en el cálculo del
+donde se ingresen valores negativos para ser incluidos en el cálculo del
 promedio. Sin embargo, Python provee herramientas que permiten salvar
 este inconveniente.
 
@@ -589,9 +589,9 @@ El problema consiste en:
 
 El valor leído en *x* no se convierte en un número entero, sino que se
 lo mantiene como *str* hasta el momento de sumarlo a la variable *suma*
-utilizando la función *eval()*. Cuando el usuario presione enter el
-caracter en *x* será igual al caracter vacío y no ingresará al ciclo
-*while*.
+utilizando la función ``eval()``. Cuando el usuario presione *enter* el
+caracter en *x* será vacío y no ingresará al ciclo
+``while``.
 
 Sentencia *for*
 ~~~~~~~~~~~~~~~
@@ -617,8 +617,8 @@ contenga la *secuencia*, y en cada iteración la variable *var*
 almacenará uno a uno sus valores.
 
 El significado de secuencia para Python puede variar desde cadenas de
-caracteres a listas de valores de tipos de datos ya vistos, simplifando
-la definición, podemos definir una secuencia como todo tipo o estructura
+caracteres a listas de valores de tipos de datos ya vistos, en forma simplificada 
+podemos definir una secuencia como todo tipo o estructura
 de datos formada por elementos por los que se puede iterar.
 
 Veamos un ejemplo, donde mostramos los caracteres de una cadena.
@@ -846,7 +846,7 @@ Como se observa en el ciclo iterativo previo, las listas son
 perfectamente iterables en el ``for``, ya que al igual que una cadena de
 caracteres, es una secuencia de valores, la diferencia radica que en una
 cadena los valores son caracteres mientras que en una lista pueden ser
-de cualquier tipo y son llamados elementos o items.
+de cualquier tipo y son llamados elementos o ítems.
 
 Otro detalle es que una lista puede contener elementos de diferente
 tipo, incluso otra lista. Veamos una lista que combine elementos de
@@ -911,8 +911,8 @@ Veamos los resultados que arroja aplicado a la lista *popurri*.
 
 
 Otra alternativa para iterar sobre una lista es combinando la función
-range que vimos anteriormente y la cantidad de elementos de la lista, de
-manera que podemos acceder a los items a partir de su índice:
+``range`` que vimos anteriormente y la cantidad de elementos de la lista, de
+manera que podemos acceder a los ítems a partir de su índice:
 
 .. code:: python
 
@@ -943,7 +943,7 @@ equipo B juegue con el A.
 imprimir uno a uno los rivales subsiguientes, es decir, imprimimos el
 primer equipo con el segundo, luego con el tercero y finalmente con el
 cuarto. Luego, al pasar al segundo equipo de la lista, no debemos
-imprimir el primero, porque ya fué rival, sino que los restantes y así
+imprimir el primero, porque ya fue rival, sino que los restantes y así
 sucesivamente.
 
 .. code:: python
@@ -1210,12 +1210,12 @@ El acceso a un valor se realiza a partir de su clave, por ejemplo:
     1552123
     32456
     
-Los *diccionarios* consisten en pares llamados *items* formados por *claves* y
+Los *diccionarios* consisten en pares llamados *ítems* formados por *claves* y
 sus *valores* correspondientes. En este ejemplo, los nombres son las
 claves y los números de teléfono son los valores. Cada clave es separada
-de su valor por los dos puntos (:), los items son separados por comas, y
+de su valor por los dos puntos (:), los ítems son separados por comas, y
 toda la estructura es encerrada entre llaves. Un diccionario vacío, sin
-items, se escribe con solo dos llaves: ``{}``.
+ítems, se escribe con solo dos llaves: ``{}``.
 
 Las claves, debido a que funcionan como índices, no pueden ser
 repetidas.
@@ -1277,8 +1277,8 @@ pueden estar formados por otros diccionarios (o inclusive listas).
 Analicemos un breve ejemplo de un diccionario que está conformado del
 siguiente modo:
 
--  Cuenta con tres items
--  El valor de cada item es otro diccionario que a su vez contiene tres items con las claves *titulo*, *fecha* y *autor*
+-  Cuenta con tres ítems
+-  El valor de cada ítem es otro diccionario que a su vez contiene tres ítems con las claves *titulo*, *fecha* y *autor*
 
 A continuación veamos la implementación de esta estructura, la impresión
 manual y mediante iteración:
@@ -1297,7 +1297,7 @@ manual y mediante iteración:
                              "autor":"Mark Pilgrim"}
                   }
     # acceso a los valores de titulo de cada libro
-    print("Titulos")
+    print("Títulos")
     print("=======")
     print(referencia["libro1"]["titulo"])
     print(referencia["libro2"]["titulo"])
@@ -1315,7 +1315,7 @@ manual y mediante iteración:
 
 .. parsed-literal::
 
-    Titulos
+    Títulos
     =======
     El tutorial de Python
     Aprenda a Pensar Como un Programador con Python
@@ -1356,7 +1356,7 @@ común, existen ciertas distinciones importantes:
 -  Tipos de claves: Las claves de los diccionarios no deben ser enteros
    (aunque pueden serlo). Deben ser tipos de datos inmutables (números
    flotantes, cadenas de caracteres o tuplas)
--  Agregado automático: En un diccionario se crea un item
+-  Agregado automático: En un diccionario se crea un ítem
    automáticamente al asignar un valor a una clave inexistente, en una
    lista no se puede agregar un valor en un índice que esté fuera del
    rango.
@@ -1372,13 +1372,13 @@ A continuación se describen brevemente algunos de los métodos más
 utilizados:
 
 
-- `clear()` Elimina todos los items
+- `clear()` Elimina todos los ítems
 
 - `copy()` Retorna una copia superficial del diccionario
 
 - `get(key[, default])` Retorna el valor de la clave key si existe, sino el valor default. Si no se proporciona un valor default, entonces retorna None.
 
-- `items()` Retorna el par de valores del item clave, valor.
+- `items()` Retorna el par de valores del ítem clave, valor.
 
 - `keys()` Retorna las claves.
 
@@ -1388,12 +1388,12 @@ utilizados:
 
 - `setdefault(key[, default])` Si la clave key está presente en el diccionario retorna su valor. Si no, inserta la clave con un valor de default y retorna default
 
-- `update([other])` Actualiza los items de un diccionario en otro. Es útil para concatenar diccionarios.
+- `update([other])` Actualiza los ítems de un diccionario en otro. Es útil para concatenar diccionarios.
 
 - `values()` Retorna los valores del diccionario.
 
 Los diccionarios pueden ser comparados por su igualdad si y solo si
-tienen los mismos items. Otras comparaciones (‘<’, ‘<=’, ‘>=’, ‘>’) no
+tienen los mismos ítems. Otras comparaciones (‘<’, ‘<=’, ‘>=’, ‘>’) no
 son permitidas.
 
 Para profundizar sobre diccionarios se recomienda la lectura del
@@ -1440,11 +1440,11 @@ Es posible crear listas a partir de diccionarios usando los métodos
 lista que consiste solamente en las claves del diccionario, mientras que
 ``values()`` produce una lista que contiene los valores. ``items()``
 puede ser usado para crear una lista que conste de tuplas de dos pares
-(clave, valor). Utilicemos el diccionario agenda creado anteriomente:
+(clave, valor). Utilicemos el diccionario agenda creado anteriormente:
 
 .. code:: python
 
-    print("Lista de items")
+    print("Lista de ítems")
     print("==============")
     items_vista = agenda.items()
     items = list(items_vista)
@@ -1469,7 +1469,7 @@ puede ser usado para crear una lista que conste de tuplas de dos pares
 
 .. parsed-literal::
 
-    Lista de items
+    Lista de ítems
     ==============
     [('Dolina', '4584129'), ('Fontanarrosa', '32456'), ('JPFeinman', '1523443'), 
     ('Spasiuk', '65748'), ('Marado', '1552123')]
@@ -1489,7 +1489,7 @@ De listas a diccionarios
 Ahora realizaremos el proceso inverso, para armar un diccionario a
 partir de dos listas. Ya en el ejemplo previo obtuvimos dos listas, una
 con los nombres y otra con los teléfonos. Las funciones a utilizar son
-3: zip(), list() y dict(). Veamos:
+3: ``zip()``, ``list()`` y ``dict()``. Veamos:
 
 .. code:: python
 
@@ -1587,7 +1587,7 @@ específica, a continuación vemos los más usuales:
 
 - ``strip`` Retorna una cadena donde los espacios en blanco al inicio y al final de la cadena son eliminados, pero no los interiores. 
 
-- ``join`` Es el inverso de split. Une elementos de una lista en una cadena de caracteres usando un caracter de separación.
+- ``join`` Es el inverso de ``split``. Une elementos de una lista en una cadena de caracteres usando un caracter de separación.
 
 Apliquemos algunos de estos métodos:
 
