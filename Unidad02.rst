@@ -49,7 +49,7 @@ Los números pueden ser enteros, reales (también denominados
 de punto flotante) ó complejos. 
 
 Enteros
-~~~~~~
+~~~~~~~
 
 Los números enteros son aquellos números positivos o negativos que no tienen decimales (además
 del cero). En Python se representan mediante el tipo int (de integer, entero). Por ejemplo:
