@@ -63,7 +63,7 @@ Python (http://www.python.org).
 ¿Por qué Python?
 ~~~~~~~~~~~~~~~~
 
-Python es un lenguaje de programación multiproposito, poderoso y fácil
+Python es un lenguaje de programación multipropósito, poderoso y fácil
 de aprender. Es del tipo interpretado, lo que significa que los
 programas no necesitan ser compilados, en su lugar, simplemente
 requieren que el equipo donde van a ser ejecutados cuente con un
@@ -72,7 +72,7 @@ interprete de python instalado.
 Es un lenguaje que cuenta con estructuras de datos eficientes y de alto
 nivel. Su elegante sintaxis y su tipado dinámico hacen de éste un
 lenguaje ideal para el desarrollo rápido de aplicaciones en diversas
-áreas como ser:
+áreas como:
 
 -  Aplicaciones WEB
 -  Aplicaciones científicas
@@ -85,7 +85,7 @@ Otra de las grandes virtudes de python, es que su interprete puede
 ejecutarse en la mayoría de los sistemas operativos utilizados en la
 actualidad (GNU/Linux, Microsoft Windows, Mac OSX, etc.).
 
-Dada su versatilidad y simplicidad, Python es utilizado por companías
+Dada su versatilidad y simplicidad, Python es utilizado por compañías
 como Google, Youtube, Netflix, Yahoo, NSA, NASA, Canonical, IBM, entre
 otras tantas.
 
@@ -171,7 +171,7 @@ python que debe realizar la multiplicación entre 2 y 5. El interprete
 analiza la instrucción ingresada (2\*5), y contesta con el resultado (10
 en este caso).
 
-Hagamos otros calculos para entrar en calor
+Hagamos otros cálculos para entrar en calor
 
 .. code:: python
 
@@ -210,8 +210,8 @@ similar a la siguiente:
 
 Otra alternativa muy interesante son los notebooks de ipython, una
 interfaz que permite programar utilizando el navegador web como entorno.
-No entraremos en detalle ya que posteriormente analizaremos su
-funcionamiento. Se debe ejecutar en una terminal ``ipython3 notebook`` y
+Si bien no entraremos en detalles sobre su uso, para lanzar la aplicación se debe
+ejecutar desde una consola el comando ``ipython3 notebook``, 
 esto abrirá el navegador por defecto con el entorno cargado.
 
 Entorno integrado de desarrollo (IDE)
@@ -219,7 +219,7 @@ Entorno integrado de desarrollo (IDE)
 
 Un IDE es un entorno que nos facilita las tareas a la hora de programar.
 Consiste en la integración de un editor de texto con características de
-resaltado de sintaxis, autocompletado -entre otras-, y el intérprete de
+resaltado de sintaxis, auto-completado -entre otras-, y el intérprete de
 Python. Existen cientos de entornos muy buenos, como por ejemplo
 `Spyder <https://github.com/spyder-ide/spyder>`__,
 `PyCharm <https://www.jetbrains.com/pycharm>`__ o
@@ -257,7 +257,7 @@ de cocina, por ejemplo:
 
 En esta receta se ven una serie de instrucciones que deben ser seguidas
 en un determinado orden, en algunos casos contamos con ingredientes,
-intrucciones, decisiones y acciones que se repiten. No muy distinto a un
+instrucciones, decisiones y acciones que se repiten. No muy distinto a un
 programa de computación, comencemos con algunos *ingredientes* simples
 de Python y veamos lo que podemos hacer con ellos.
 
@@ -265,19 +265,19 @@ El primer programa
 ~~~~~~~~~~~~~~~~~~
 
 El acercamiento inicial a un lenguaje de programación suele ser con el
-archiconocido programa "Hola mundo". Consiste simmplemente en un
+popular programa "Hola mundo", que consiste en un
 programa que muestra en pantalla ese mensaje.
 
-Renunciando a cualquier pretención de originalidad comenzaremos del
+Renunciando a cualquier pretensión de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 *print()* pasando el mensaje de despedida entre comillas, a continuación
 la instrucción.
 
 .. code:: python
 
-    print("Adios mundo cruel!")
+    print("Adiós mundo cruel!")
 
-Podemos probar la intrucción directamente desde el intérprete, creando
+Podemos probar la instrucción directamente desde el intérprete, creando
 con un editor de texto plano un archivo guardado como ``chau.py`` y
 luego ejecutándolo desde la terminal haciendo ``python3 chau.py``, o
 bien utilizando un IDE y haciendo todo desde ahí mismo.
@@ -374,7 +374,7 @@ estándar. Veamos unos ejemplos.
     In [12]: 4%2
     Out[12]: 0
 
-El caso de la potencia, también nos sirve para calcular raices. Veamos
+El caso de la potencia, también nos sirve para calcular raíces. Veamos
 una potencia al cubo y luego una raíz cuadrada, equivalente a una
 potencia a la 1/2.
 
@@ -401,8 +401,8 @@ Veamos:
     In [16]: type(4)
     Out[16]: int
 
-Cadenas de carateres
-~~~~~~~~~~~~~~~~~~~~
+Cadenas de caracteres
+~~~~~~~~~~~~~~~~~~~~~
 
 Además de números, es posible manipular texto. Las cadenas son
 secuencias de caracteres encerradas en comillas simples ('...') o dobles
@@ -460,7 +460,7 @@ Variables
 
 Las variables son contenedores para almacenar información. Por ejemplo,
 para elevar un número al cubo podemos utilizar 3 variables, para la base
-(*num1*), para el exponenete (*num2*) y para almacenar el *resultado*:
+(*num1*), para el exponente (*num2*) y para almacenar el *resultado*:
 
 .. code:: python
 
@@ -539,7 +539,7 @@ La lectura de datos desde el teclado se realiza utilizando la sentencia
 .. code:: python
 
     nombre = input("¿Cómo es su nombre, maestro? ")
-    print "Hola, " + nombre + "!"
+    print("Hola, " + nombre + "!")
 
 El comportamiento es:
 
@@ -626,7 +626,7 @@ ecuación matemática con el siguiente código:
 A diferencia del ejemplo visto anteriormente, donde la suma de dos
 cadenas era una operación perfectamente válida, ahora nos encontramos
 con operaciones entre diferentes tipos pero incompatibles. En este caso,
-podemos convertir la entrada en un número flotante para opearar con
+podemos convertir la entrada en un número flotante para operar con
 normalidad:
 
 .. code:: python
@@ -673,7 +673,7 @@ comas.
 
 .. code:: python
 
-    print(cad,pi,'aproximadamente')
+    print(cad, pi, 'aproximadamente')
 
 
 .. parsed-literal::
@@ -688,9 +688,9 @@ separador deseado, por ejemplo:
 
 .. code:: python
 
-    print(cad,pi,'aproximadamente', sep=';')
-    print(cad,pi,'aproximadamente', sep=',')
-    print(cad,pi,'aproximadamente', sep=':-)')
+    print(cad, pi,'aproximadamente', sep=';')
+    print(cad, pi,'aproximadamente', sep=',')
+    print(cad, pi,'aproximadamente', sep=':-)')
 
 
 .. parsed-literal::
@@ -702,7 +702,7 @@ separador deseado, por ejemplo:
 
 Como vemos, en cada ejecución la impresión se realiza en diferentes
 renglones, este es el comportamiento por defecto, que puede ser
-modificando agregando el parámetro ***end=" "***. Reflejemos esto con un
+modificando agregando el parámetro ``end=" "``. Reflejemos esto con un
 ejemplo:
 
 .. code:: python
@@ -783,7 +783,7 @@ Algunas variantes de lo visto se explica en la siguiente lista:
 
 Con lo visto hasta aquí tenemos suficientes alternativas para mostrar en
 pantalla información de diferentes tipos. Existen una alternativa para
-imprimir en pantalla utilizando el método format, el lector interesado
+imprimir en pantalla utilizando el método ``format``, el lector interesado
 puede indagar más al respecto en
 http://docs.python.org.ar/tutorial/3/inputoutput.html , en el capítulo
 Entrada y Salida del tutorial de Python oficial
@@ -814,8 +814,8 @@ El uso de funciones nativas en Python es directo, veamos algunas:
 
 
 El ejemplo previo hicimos uso de dos funciones, por un lado la función
-***print()***, presentada ya desde el primer programa y una nueva
-función, ***len()***, que recibe como dato de entrada una cadena de
+``print()``, presentada ya desde el primer programa y una nueva
+función, ``len()``, que recibe como dato de entrada una cadena de
 caracteres y calcula la cantidad de caracteres de la misma y lo retorna
 de manera tal que lo podemos asignar a una variable (num\_letras).
 
@@ -829,9 +829,9 @@ Módulos
 ~~~~~~~
 
 Python posee cientos de funciones que se organizan o agrupan en módulos.
-Veamos un ejemplo para calcular la raiz cuadrada, el seno y coseno de un
-número haciendo uso de las funciones *sqrt()*, *sin()* y *cos()*, todas
-ubicadas bajo el módulo math.
+Veamos un ejemplo para calcular la raíz cuadrada, el seno y coseno de un
+número haciendo uso de las funciones ``sqrt()``, ``sin()`` y ``cos()``, todas
+ubicadas bajo el módulo ``math``.
 
 .. code:: python
 
@@ -839,14 +839,14 @@ ubicadas bajo el módulo math.
     
     nro = 2
     raiz = math.sqrt(nro)
-    print("La raiz de %d es %.4f" %(nro,raiz))
+    print("La raíz de %d es %.4f" %(nro,raiz))
     print("El seno de %d es %.4f" %(nro,math.sin(nro)))
     print("El coseno de %d es %.4f" %(nro,math.cos(nro)))
 
 
 .. parsed-literal::
 
-    La raiz de 2 es 1.4142
+    La raíz de 2 es 1.4142
     El seno de 2 es 0.9093
     El coseno de 2 es -0.4161
 
