@@ -1,7 +1,7 @@
 %PDF-1.4
 %“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
 1 0 obj
-<< /F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R >>
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R >>
 endobj
 2 0 obj
 << /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
@@ -13,27 +13,21 @@ endobj
 << /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
 endobj
 5 0 obj
-<< /BaseFont /Courier-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
-endobj
-6 0 obj
-<< /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font >>
-endobj
-7 0 obj
-<< /Contents 11 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 10 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+<< /Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
   /Type /Page >>
 endobj
-8 0 obj
-<< /Outlines 12 0 R /PageLabels 13 0 R /PageMode /UseNone /Pages 10 0 R /Type /Catalog >>
+6 0 obj
+<< /Outlines 10 0 R /PageLabels 11 0 R /PageMode /UseNone /Pages 8 0 R /Type /Catalog >>
 endobj
-9 0 obj
-<< /Author () /CreationDate (D:20150915142047+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+7 0 obj
+<< /Author () /CreationDate (D:20150919025912+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
   /Title (Unidad 1: Ejercicios) >>
 endobj
-10 0 obj
-<< /Count 1 /Kids [ 7 0 R ] /Type /Pages >>
+8 0 obj
+<< /Count 1 /Kids [ 5 0 R ] /Type /Pages >>
 endobj
-11 0 obj
-<< /Length 12425 >>
+9 0 obj
+<< /Length 2644 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
@@ -46,11 +40,53 @@ Q
 q
 1 0 0 1 62.69291 707.0236 cm
 q
-BT 1 0 0 1 0 14 Tm 1.275318 Tw 12 TL /F1 10 Tf 0 0 0 rg (1- Realice un programa que permita al usuario ingresar una temperatura en grados cent\355grados y que) Tj T* 0 Tw (muestre su equivalente en grados fahrenheit.) Tj T* ET
+BT 1 0 0 1 0 14 Tm 1.462209 Tw 12 TL /F1 10 Tf 0 0 0 rg (1. Realice un programa donde se pregunte el nombre y edad de una persona y luego se muestre un) Tj T* 0 Tw (cordial saludo. Por ejemplo:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 661.8236 cm
+1 0 0 1 62.69291 637.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F3 10 Tf 12 TL (Ingrese su nombre: Carlos) Tj T* (Ingrese su edad: 98) Tj T*  T* (Hola Carlos, 98 a\361os no es nada, est\341s hecho un pibe!) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 593.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.43811 Tw (2- Realice un programa donde se ingrese el nombre y edad de dos personas en variables separadas) Tj T* 0 Tw 1.755318 Tw (\(nom1, edad1, nom2, edad2\). Luego, intercambie la edad de las personas y muestre el resultado en) Tj T* 0 Tw (pantalla. Posteriormente indague otras maneras de intercambiar el contenido de variables en Python.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 551.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 2.240651 Tw (3- Realice un programa que permita ingresar por teclado dos valores referidos al kilometraje de un) Tj T* 0 Tw .847485 Tw (autom\363vil antes y despu\351s de un viaje. Con los dos valores ingresados muestre en pantalla la cantidad) Tj T* 0 Tw (total de kil\363metros recorridos, as\355 como tambi\351n ese valor convertido a metros y cent\355metros.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 521.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.275318 Tw (4- Realice un programa que permita al usuario ingresar una temperatura en grados cent\355grados y que) Tj T* 0 Tw (muestre su equivalente en grados fahrenheit. El programa debe mostrar como el siguiente:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 476.6236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -71,316 +107,44 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 629.8236 cm
+1 0 0 1 62.69291 444.6236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.060574 Tw (2- Realice un programa que permita al usuario ingresar su nombre y que luego lo muestre repetido en) Tj T* 0 Tw (pantalla tantas vees como cantidad de letras posea el nombre.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 587.8236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.829318 Tw (3- Ingrese el nombre y edad de dos personas en variables separadas \(nom1, edad1, nom2, edad2\).) Tj T* 0 Tw 3.864269 Tw (Luego, intercambie la edad y muestre el resultado en pantalla. Indague de qu\351 manera puede) Tj T* 0 Tw (intercambiar el contenido de variables en Python.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 545.8236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 2.204431 Tw (4- La simple tarea de realizar la cocci\363n de un huevo pasado por agua tiene sus secretos. Con la) Tj T* 0 Tw .606651 Tw (ecuaci\363n a continuaci\363n se puede conocer el tiempo en alcanzar el punto exacto. Programe la ecuaci\363n) Tj T* 0 Tw (para valores de bla bla bla) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 503.8236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.535984 Tw (5- Lea por teclado el valor del cuenta kil\363metros de un automovil, posteriormente, permita ingresar el) Tj T* 0 Tw .64186 Tw (nuevo valor luego de realizar un viaje y muestre en pantalla los kil\363metros recorridos, as\355 como tambi\351n) Tj T* 0 Tw (ese valor en metros, cent\355metros, yardas y pies.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 437.8236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 50 Tm /F1 10 Tf 12 TL .187485 Tw (6- Las ben\351volas compan\355as telef\363nicas cobran la tarifa de cada llamada del siguiente modo: un valor fijo) Tj T* 0 Tw .98561 Tw (de $0.80 cuando se establece la llamada, luego, fracciona por tiempo, donde el primer minuto tiene un) Tj T* 0 Tw 1.194985 Tw (valor de $1.30 y los subsiguientes de $1.45. Realice un programa que permita ingresar la duraci\363n de) Tj T* 0 Tw .788488 Tw (una llamada y que muestre luego el costo total de la misma, a la que se le debe agregar un porcentaje) Tj T* 0 Tw (del 20% correspondiente a impuestos.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 395.8236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.88284 Tw (7- Un atleta realiza sus entrenamientos para una marat\363n \(42.195km\) y desea conocer su velocidad) Tj T* 0 Tw 1.046136 Tw (promedio. Desarrolle un programa donde se ingrese el tiempo transcurrido en tres variables diferentes:) Tj T* 0 Tw (horas, minutos y segundos. Luego, muestre la velocidad promedio en km/h y km/seg.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 353.8236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.224104 Tw (8- En el siguiente programa se calcula la diferencia de tiempo entre dos marcas de tiempo. Analice el) Tj T* 0 Tw .69881 Tw (c\363digo del programa y explique las acciones que se llevan a cabo. Luego, modifiquelo para que las dos) Tj T* 0 Tw (marcas de tiempo sean ingresadas por un usuario.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 116.6236 cm
-q
-q
-1 0 0 1 0 0 cm
-q
-1 0 0 1 6.6 6.6 cm
-q
-.662745 .662745 .662745 RG
-.5 w
-.960784 .960784 .862745 rg
-n -6 -6 468.6898 228 re B*
-Q
-q
-.960784 .960784 .862745 rg
-n 0 204.75 132 12 re f*
-.960784 .960784 .862745 rg
-n 0 192.75 30 12 re f*
-.960784 .960784 .862745 rg
-n 30 192.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 36 192.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 60 192.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 66 192.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 96 192.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 108 192.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 120 192.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 132 192.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 144 192.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 150 192.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 0 180.75 30 12 re f*
-.960784 .960784 .862745 rg
-n 30 180.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 36 180.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 60 180.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 66 180.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 96 180.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 108 180.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 120 180.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 132 180.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 138 180.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 150 180.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 0 156.75 204 12 re f*
-.960784 .960784 .862745 rg
-n 0 144.75 18 12 re f*
-.960784 .960784 .862745 rg
-n 24 144.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 36 144.75 30 12 re f*
-.960784 .960784 .862745 rg
-n 66 144.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 72 144.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 84 144.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 90 144.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 108 144.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 120 144.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 144 144.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 150 144.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 168 144.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 180 144.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 0 132.75 18 12 re f*
-.960784 .960784 .862745 rg
-n 24 132.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 36 132.75 30 12 re f*
-.960784 .960784 .862745 rg
-n 66 132.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 72 132.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 84 132.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 90 132.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 108 132.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 120 132.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 144 132.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 150 132.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 168 132.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 180 132.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 0 108.75 72 12 re f*
-.960784 .960784 .862745 rg
-n 0 96.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 12 96.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 24 96.75 18 12 re f*
-.960784 .960784 .862745 rg
-n 42 96.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 48 96.75 18 12 re f*
-.960784 .960784 .862745 rg
-n 66 96.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 72 96.75 18 12 re f*
-.960784 .960784 .862745 rg
-n 90 96.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 0 72.75 222 12 re f*
-.960784 .960784 .862745 rg
-n 0 60.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 12 60.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 24 60.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 30 60.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 42 60.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 0 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 12 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 24 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 30 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 36 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 42 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 48 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 54 48.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 78 48.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 84 48.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 96 48.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 0 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 12 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 24 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 30 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 36 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 42 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 48 36.75 24 12 re f*
-.960784 .960784 .862745 rg
-n 72 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 78 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 84 36.75 6 12 re f*
-.960784 .960784 .862745 rg
-n 90 36.75 12 12 re f*
-.960784 .960784 .862745 rg
-n 0 12.75 138 12 re f*
-.960784 .960784 .862745 rg
-n 0 .75 30 12 re f*
-.960784 .960784 .862745 rg
-n 36 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 42 .75 138 12 re f*
-.960784 .960784 .862745 rg
-n 180 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 192 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 198 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 210 .75 24 12 re f*
-.960784 .960784 .862745 rg
-n 234 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 246 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 252 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 264 .75 30 12 re f*
-.960784 .960784 .862745 rg
-n 294 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 300 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 306 .75 6 12 re f*
-.960784 .960784 .862745 rg
-n 318 .75 30 12 re f*
-.960784 .960784 .862745 rg
-n 348 .75 6 12 re f*
-BT 1 0 0 1 0 206 Tm 12 TL /F4 10 Tf .25098 .501961 .501961 rg (# dos marcas de tiempo) Tj /F3 10 Tf 0 0 0 rg  T* 0 0 0 rg (hora1) Tj 0 0 0 rg (,) Tj 0 0 0 rg (min1) Tj 0 0 0 rg (,) Tj 0 0 0 rg (seg1) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (14) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (58) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (59) Tj 0 0 0 rg  T* 0 0 0 rg (hora2) Tj 0 0 0 rg (,) Tj 0 0 0 rg (min2) Tj 0 0 0 rg (,) Tj 0 0 0 rg (seg2) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (16) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (0) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (0) Tj 0 0 0 rg  T*  T* /F4 10 Tf .25098 .501961 .501961 rg (# conversi\363n del tiempo a segundos) Tj /F3 10 Tf 0 0 0 rg  T* 0 0 0 rg (t1s) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (hora1) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (60) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (60) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (min1) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (60) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (seg1) Tj 0 0 0 rg  T* 0 0 0 rg (t2s) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (hora2) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (60) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (60) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (min2) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (60) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (seg2) Tj 0 0 0 rg  T*  T* /F4 10 Tf .25098 .501961 .501961 rg (# diferencia) Tj /F3 10 Tf 0 0 0 rg  T* 0 0 0 rg (t) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 .501961 0 rg (abs) Tj 0 0 0 rg (\() Tj 0 0 0 rg (t1s) Tj .4 .4 .4 rg (-) Tj 0 0 0 rg (t2s) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T*  T* /F4 10 Tf .25098 .501961 .501961 rg (# c\341lculos de hora, minuto y segundos) Tj /F3 10 Tf 0 0 0 rg  T* 0 0 0 rg (h) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (t) Tj .4 .4 .4 rg (//) Tj .4 .4 .4 rg (3600) Tj 0 0 0 rg  T* 0 0 0 rg (m) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (\() Tj 0 0 0 rg (t) Tj .4 .4 .4 rg (-) Tj 0 0 0 rg (h) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (3600) Tj 0 0 0 rg (\)) Tj .4 .4 .4 rg (//) Tj .4 .4 .4 rg (60) Tj 0 0 0 rg  T* 0 0 0 rg (s) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (t) Tj .4 .4 .4 rg (-) Tj 0 0 0 rg (h) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (3600) Tj .4 .4 .4 rg (-) Tj 0 0 0 rg (m) Tj .4 .4 .4 rg (*) Tj .4 .4 .4 rg (60) Tj 0 0 0 rg  T*  T* /F4 10 Tf .25098 .501961 .501961 rg (# impresi\363n en pantalla) Tj /F3 10 Tf 0 0 0 rg  T* /F5 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (\() Tj .729412 .129412 .129412 rg ('Diferencia de tiempo:') Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (h) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('hs') Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (m) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('min') Tj 0 0 0 rg (,) Tj 0 0 0 rg (s) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('seg') Tj 0 0 0 rg (\)) Tj T* ET
-Q
-Q
-Q
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.060574 Tw (5- Realice un programa que permita al usuario ingresar su nombre y que luego lo muestre repetido en) Tj T* 0 Tw (pantalla tantas veces como cantidad de letras posea el nombre.) Tj T* ET
 Q
 Q
  
 endstream
 endobj
-12 0 obj
+10 0 obj
 << /Count 0 /Type /Outlines >>
 endobj
-13 0 obj
-<< /Nums [ 0 14 0 R ] >>
+11 0 obj
+<< /Nums [ 0 12 0 R ] >>
 endobj
-14 0 obj
+12 0 obj
 << /S /D /St 1 >>
 endobj
 xref
-0 15
+0 13
 0000000000 65535 f
 0000000075 00000 n
-0000000149 00000 n
-0000000259 00000 n
-0000000374 00000 n
-0000000482 00000 n
-0000000598 00000 n
-0000000711 00000 n
-0000000920 00000 n
-0000001028 00000 n
-0000001258 00000 n
-0000001321 00000 n
-0000013804 00000 n
-0000013854 00000 n
-0000013898 00000 n
+0000000129 00000 n
+0000000239 00000 n
+0000000354 00000 n
+0000000462 00000 n
+0000000669 00000 n
+0000000776 00000 n
+0000001006 00000 n
+0000001068 00000 n
+0000003768 00000 n
+0000003818 00000 n
+0000003862 00000 n
 trailer
 << /ID 
  % ReportLab generated PDF document -- digest (http://www.reportlab.com)
- [(\332\221\265\344t;\230Poxy\035\351\365Z\257) (\332\221\265\344t;\230Poxy\035\351\365Z\257)]
- /Info 9 0 R /Root 8 0 R /Size 15 >>
+ [(ZJ\036~\336\221\000k\350\015^\275e\345\357R) (ZJ\036~\336\221\000k\350\015^\275e\345\357R)]
+ /Info 7 0 R /Root 6 0 R /Size 13 >>
 startxref
-13935
+3899
 %%EOF
