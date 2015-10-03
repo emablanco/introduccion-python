@@ -1,6 +1,9 @@
 Introducción al Desarrollo de Software
 ======================================
 
+:Autor: Emiliano López - emiliano.lopez@gmail.com
+:Colaborador: Maximiliano Boscovich 
+
 Objetivo General
 ----------------
 
@@ -18,60 +21,43 @@ Contenidos mínimos
 Organización del material
 -------------------------
 
-Desde estos links se pueden visualizar estáticamente:
+La documentación está escrita en RestructuredText. Inicialmente fué escrita desde ``ipython3 notebook`` y luego convertidos a rst usando el comando ``ipython3 nbconvert Unidad01.ipynb --to rst``, pero **ahora** se trabaja directamente sobre los rst. Las versiones a tener en cuenta son las rst.
 
-* `Unidad 1 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad01.ipynb>`_ Conceptos básicos
-* `Unidad 2 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad02.ipynb>`_ Control de flujo
-* `Unidad 3 <http://nbviewer.ipython.org/urls/gitlab.com/emilopez/dev01/raw/master/Unidad03.ipynb>`_ Funciones
-* Unidad 4...
+Las versiones iniciales se almacenaron en el directorio ipynb.
+
 
 Modificar el material
 ----------------------
 
 Apunte principal
 ''''''''''''''''
-Correr el notebook de ipython3 (versión IPython 3.1.0) bajo el directorio que se encuentran los .ipynb haciendo: ipython3 notebook
 
-Modificar sobre el notebook (por ej, Unidad01.ipynb) y, luego de guardar, se debe:
+1. Modificar los rst y luego, usando ``rst2pdf``
 
-* Convertir al formato rst haciendo
-
-.. code-block:: bash
-
-	 ipython3 nbconvert Unidad01.ipynb --to rst
-
-Ahora hay dos opciones:
-
-1. USANDO SPHINX: Generar todo el apunte en un único pdf
-
-    * Mover el archivo generado (Unidad01.rst) al directorio doc 
+2. Generar un pdf por unidad
 
     .. code-block:: bash
 
-	    mv Unidad01.rst doc/
+        rst2pdf Unidad01.rst
 
-    * Regenerar la documentación, estando bajo el directorio doc hacer
-
-    .. code-block:: bash
-
-	    make html
-	    make latexpdf
-
-    Estos pasos actualizarán la documentación estática almacenada bajo doc/_build
-
-2. USANDO RST2PDF: genera un pdf por unidad (la salida es mas atractiva)
+Ahora hay que unir con la carátula PDF de provista por la carrera (bajo el directorio caratulas), usamos ``pdftk``:
 
     .. code-block:: bash
 
-	    rst2pdf Unidad01.rst
+        pdftk caratulas/U1.pdf Unidad01.pdf output Unidad01-ConCaratula.pdf
+
+Finalmente, pisar Unidad01.pdf con la generada que incluye la carátula y almacenar en directorio pdfs
 
 Slides
 ''''''
+
+Para cada unidad hay slides que fueron usadas como soporte para generar los videostutoriales. Los slides fueron hechos usando ipython3 notebook y mostrándolos con ipython3 usando el siguiente comando:
+
 .. code-block:: bash
 
     ipython3 nbconvert SlidesU1-01.ipynb --to slides --post serve
     
-Sin el último parámetro las guarda como html
+(Sin el último parámetro las guarda como html pero sin la animación)
 
 Licencia
 --------
