@@ -10,20 +10,21 @@ Unidad 3: Ejercicios
         print("Es vocal!")
         
 Realice un programa que permita ingresar una palabra y finalmente informe la cantidad 
-de vocales.
+de vocales que posee.
 
-2. Utilice una estructura repetitiva ``for`` para iterar sobre las letras de
-   una palabra y muestre en pantalla su versión encriptada. Para
-   encriptarla imprima en pantalla el reemplazo de una letra con un
-   número según lo siguiente: a->4, b->8, e->3, f->7, t->2, g->9, i->1,
-   o->0.
+2. Utilice una estructura repetitiva ``for`` para iterar sobre las letras de una palabra 
+y muestre en pantalla su versión encriptada. Para encriptarla imprima en pantalla el 
+reemplazo de una letra con un número según lo siguiente: a->4, b->8, e->3, f->7, t->2, 
+g->9, i->1, o->0.
 
 3. Realice un programa que lea las calificaciones de un curso y muestre el promedio y 
 la nota mas alta. La lectura de notas finaliza cuando se ingresa un valor negativo.
 
+4. Agregue al programa previo la funcionalidad siguiente: debe mostrar la cantidad de 
+alumnos cuya calificación es superior al promedio.
 
 5. Se lee una cadena de caracteres por teclado y se pide que la traduzca
-   a código morse utilizando el siguiente diccionario como base:
+a código morse utilizando el siguiente diccionario como base:
 
 .. code:: python
 

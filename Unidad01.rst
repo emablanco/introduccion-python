@@ -41,24 +41,43 @@ Motivación
 ----------
 
 Gran parte de las tecnologías utilizadas en la actualidad tienen algo en
-común, y es que por lo general basan su lógica en algún tipo de
-programa. Saber programar nos permite comprender su funcionamiento y con
+común, y es que por lo general basan su funcionamiento en algún tipo de
+programa. Que una computadora tenga la flexibilidad de ser utilizada para 
+jugar, predecir el comportamiento climático o gestionar un sanatorio 
+depende exclusivamente de los programas que ejecuta.
+
+Saber programar nos permite intervenir sobre parte de esta realidad 
+desde una postura activa, comprender su funcionamiento y con
 esto nos abre un gran abanico de posibilidades, limitadas únicamente por
 nuestra imaginación. Pensemos por un momento en todas las aplicaciones
 que usamos a diario en el teléfono celular, en la PC, en la tablet, etc.
 Saber que si necesitamos algo en concreto seremos capaces de crearlo
 nosotros mismos es pura libertad.
 
-Lo más importante de todo, es que no es necesario ser un genio para
-poder programar, simplemente tenemos que aprender un conjunto de reglas
-básicas, saber como aplicarlas y tener muchas ganas de crear cosas
-nuevas. Además, programar es muy divertido, al contrario de lo que mucha
-gente podría pensar en un principio. Es como un gran rompecabezas en el
-que debemos encajar ciertas piezas de una forma específica para
-conseguir el resultado deseado.
+Lo más importante es que todos podemos programar, simplemente 
+tenemos que aprender un conjunto de reglas básicas, saber como aplicarlas 
+y tener muchas ganas de crear cosas nuevas. Además, programar es muy divertido, 
+al contrario de lo que mucha gente podría pensar en un principio. 
+Es como un gran rompecabezas en el que debemos encajar ciertas piezas de una 
+forma específica para conseguir el resultado deseado.
 
-A lo largo de esta materia utilizaremos como lenguaje de programación a
-Python (http://www.python.org).
+Aprender a programar implica conocer por un lado cierta lógica y por el otro
+una determinada sintaxis. En este curso haremos énfasis en adquirir el pensamiento
+lógico utilizando Python como lenguaje de programación por lo que aprenderemos
+su sintaxis.
+
+Del mismo modo que un enófilo se convierte en un experto en vinos probándolos, 
+a programar se aprende programando y leyendo código. Aquí es donde la sintaxis
+se vuelve relevante y puede facilitarnos la vida o definitivamente complicarla.
+
+Esta es la principal razón por la que hemos decidido utilizar como primer lenguaje 
+de programación Python, además que existen una gran cantidad de programas 
+desarrollados en este lenguaje, desde herramientas para servidores, hasta 
+programas para usuarios finales, pasando por aplicaciones empresariales, 
+herramientas de desarrollo, plataformas web, juegos de todo tipo, y muchísimas
+aplicaciones software libre, por lo que se puede obtener y estudiar el código 
+con el que están hechas.
+
 
 ¿Por qué Python?
 ~~~~~~~~~~~~~~~~
@@ -67,7 +86,18 @@ Python es un lenguaje de programación multipropósito, poderoso y fácil
 de aprender. Es del tipo interpretado, lo que significa que los
 programas no necesitan ser compilados, en su lugar, simplemente
 requieren que el equipo donde van a ser ejecutados cuente con un
-interprete de python instalado.
+interprete instalado.
+
+Python es un lenguaje de programación de tipado dinámico 
+y multiplataforma, cuya filosofía hace hincapié en una sintaxis que 
+favorezca un código legible. Es también multiparadigma, ya que soporta 
+orientación a objetos, programación imperativa y programación funcional. 
+
+Es sencillo de aprender, y muchos programadores Python reconocen un sustancial 
+aumento en su productividad además de sentir que el lenguaje mismo los 
+incentiva al desarrollo de código de mayor calidad. Está disponible en 
+múltiples plataformas, desde una PC hasta teléfonos celulares, y muchos 
+sitios de Internet utilizan Python como soporte de sus servicios.
 
 Es un lenguaje que cuenta con estructuras de datos eficientes y de alto
 nivel. Su elegante sintaxis y su tipado dinámico hacen de éste un
@@ -93,11 +123,8 @@ Instalando Python
 -----------------
 
 Actualmente existen dos versiones de Python comúnmente utilizadas, la
-versión 2 y 3, ambas son completamente funcionales y muy utilizadas. En
+versión 2 y 3, ambas son completamente funcionales. En
 este curso nos basaremos en la versión 3.
-
-**Ver como funcionaría miniconda en windows y linux:**
-http://conda.pydata.org/miniconda.html
 
 Windows
 ~~~~~~~
@@ -107,7 +134,7 @@ siguientes pasos:
 
 -  Apuntar el navegador a: https://www.python.org/downloads/windows/
 -  Ir al link de la última versión disponible (por ej: latest python 3
-   relase)
+   release)
 -  En la sección Files, descargar el instalador correspondiente a su
    arquitectura (64/32 bits), por ej:
    https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi
@@ -122,7 +149,7 @@ contemos con el intérprete instalado, incluso en sus dos versiones. En
 caso de no ser así, para instalarlo utilizando los administradores de
 paquetes debemos ejecutar los siguientes comandos desde una terminal:
 
-Para sistemas basados en Debian (como Ubuntu o sus derivados):
+Para sistemas basados en Debian (o sus derivados):
 
 .. code:: bash
 
@@ -166,8 +193,8 @@ siguiente:
     10
     >>> 
 
-Como vemos, si ingresamos 2\*5, le estamos diciendo al interprete de
-python que debe realizar la multiplicación entre 2 y 5. El interprete
+Como vemos, si ingresamos 2\*5, le estamos diciendo al interprete 
+que debe realizar la multiplicación entre 2 y 5. El interprete
 analiza la instrucción ingresada (2\*5), y contesta con el resultado (10
 en este caso).
 
@@ -270,8 +297,7 @@ programa que muestra en pantalla ese mensaje.
 
 Renunciando a cualquier pretensión de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
-*print()* pasando el mensaje de despedida entre comillas, a continuación
-la instrucción.
+*print()* pasando entre los paréntesis el mensaje de despedida entre comillas.
 
 .. code:: python
 
@@ -388,7 +414,7 @@ potencia a la 1/2.
 
 Los datos numéricos obtenidos en las operaciones previas se clasifican
 en reales y enteros, en python se los clasifica como float e int
-respectivamente, además existe el tipo complex, para números complejos.
+respectivamente, además existe el tipo ``complex``, para números complejos.
 
 Utilizando la función type() podemos identificar el tipo de dato.
 Veamos:
@@ -407,7 +433,7 @@ Cadenas de caracteres
 Además de números, es posible manipular texto. Las cadenas son
 secuencias de caracteres encerradas en comillas simples ('...') o dobles
 ("..."), el tipo de datos es denominado *str* (string). Sin adentrarnos
-en detalles, que posteriormente veremos, aquí trataremos lo
+en detalles que posteriormente veremos, aquí trataremos lo
 indispensable para poder desarrollar los primeros programas. Veamos unos
 ejemplos:
 
@@ -794,10 +820,10 @@ Funciones
 ~~~~~~~~~
 
 Las funciones son programas o subprogramas que realizan una determinada
-acción y pueden ser invocados desde otro programa. En los capítulos
-posteriores trabajaremos intensamente con funciones creando propias, sin
-embargo en esta sección, con el fin de comprender su uso, presentaremos
-algunas pocas de las que nos provee Python.
+acción y que pueden ser invocados desde otro programa. En los capítulos
+posteriores trabajaremos en mayor profundidad, en esta sección solamente
+presentaremos algunas de las muchas que nos provee Python en su biblioteca
+estándar.
 
 El uso de funciones nativas en Python es directo, veamos algunas:
 
@@ -819,11 +845,6 @@ función, ``len()``, que recibe como dato de entrada una cadena de
 caracteres y calcula la cantidad de caracteres de la misma y lo retorna
 de manera tal que lo podemos asignar a una variable (num\_letras).
 
-ver ejemplo 2-3 pág 38 de Begining Python from novice to professional
-2nd edition.
-
-Estos subprogramas pueden están vinculadas, de modo que se organizan en
-módulos.
 
 Módulos
 ~~~~~~~
