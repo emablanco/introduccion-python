@@ -228,7 +228,7 @@ div.output_prompt {
 <li>operaciones entre variables de distinto tipo</li>
 </ul>
 </li>
-<li>¿Cómo obtener ayuda a través de <code>help()</code> y <code>dir()</code> en modo interactivo?</li>
+<li>¿Cómo obtener ayuda a través de <strong><code>help()</code></strong> y <strong><code>dir()</code></strong> en modo interactivo?</li>
 </ul>
 
 </div>
@@ -244,7 +244,7 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h2><ul>
 <li>Son contenedores para almacenar datos</li>
-<li>Puede contener distintos tipos de datos</li>
+<li>Pueden contener distintos tipos de datos</li>
 <li>Asignamos valores a través del signo =</li>
 </ul>
 
@@ -344,7 +344,6 @@ programar
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">a</span> <span class="o">=</span> <span class="mf">3.141592</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">33</span>
-<span class="n">c</span> <span class="o">=</span> <span class="s">&#39;programar&#39;</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
@@ -372,10 +371,11 @@ programar
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">d</span> <span class="o">=</span> <span class="s">&#39; es divertido&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">c</span> <span class="o">=</span> <span class="s">&#39;programar&#39;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s">&#39; es divertido&#39;</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">c</span> <span class="o">+</span> <span class="n">d</span><span class="p">)</span>
 </pre></div>
@@ -438,8 +438,8 @@ programar
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Obtener-ayuda-del-int&#233;rprete">Obtener ayuda del int&#233;rprete<a class="anchor-link" href="#Obtener-ayuda-del-int&#233;rprete">&#182;</a></h2><ul>
-<li>Con la función dir() obtenemos los métodos disponibles para el tipo de dato</li>
-<li>Con help() obtenemos ayuda del uso de una determinada función</li>
+<li>Con la función <strong><code>dir()</code></strong> obtenemos los métodos disponibles para el tipo de dato</li>
+<li>Con <strong><code>help()</code></strong> obtenemos ayuda del uso de una determinada función</li>
 </ul>
 
 </div>
@@ -761,6 +761,66 @@ False
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Cambia c ????</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>programar
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment" data-fragment-index="16">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">cmayus</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cmayus</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>PROGRAMAR
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment" data-fragment-index="17">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -792,7 +852,7 @@ len(...)
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="16">
+    </div><div class="fragment" data-fragment-index="18">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
