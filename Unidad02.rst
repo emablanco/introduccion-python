@@ -256,7 +256,8 @@ falso.
 
     bool
 
-
+Operadores
+----------
 
 Operadores relacionales
 ~~~~~~~~~~~~~~~~~~~~~~~
