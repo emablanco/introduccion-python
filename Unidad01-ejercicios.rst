@@ -38,21 +38,13 @@ La conversión está dada por la siguiente relación °F = (9/5 * °C) + 32
 luego lo muestre repetido en pantalla tantas veces como cantidad de
 letras posea el nombre.
 
-6- Las benévolas compañías telefónicas cobran la tarifa de cada llamada
-del siguiente modo: un valor fijo de $0.80 cuando se establece la
-llamada, luego, fracciona por tiempo, donde el primer minuto tiene un
-valor de $1.30 y los subsiguientes de $1.45. Realice un programa que
-permita ingresar la duración de una llamada en minutos y que muestre luego el costo
-total de la misma, a la que se le debe agregar un porcentaje del 20%
-correspondiente a impuestos.
-
-7- Un atleta realiza sus entrenamientos para una maratón (42.195km) y
+6- Un atleta realiza sus entrenamientos para una maratón (42.195km) y
 desea conocer su velocidad promedio. Desarrolle un programa donde se
 ingrese el tiempo transcurrido en tres variables diferentes: horas,
 minutos y segundos. Luego, muestre la velocidad promedio en km/h y
 km/seg.
 
-8- Hace unos cuantos años, Don Pitágoras dijo que el cuadrado de la
+7- Hace unos cuantos años, Don Pitágoras dijo que el cuadrado de la
 hipotenusa era igual a la suma de los cuadrados de los catetos.
 
 .. figure:: img/u1-ejercicios/teorema-pitagoras.jpg
@@ -62,11 +54,11 @@ hipotenusa era igual a la suma de los cuadrados de los catetos.
 29.15 , la del cateto A 25, y la del cateto B es de 15. Realice un
 programa que permita validar esto.
 
-9- Modifique el código anterior, para que (ahora que sabe que es
+8- Modifique el código anterior, para que (ahora que sabe que es
 cierto) le pregunte al usuario por los valores de los catetos A y B, y
 luego realice el cálculo de la hipotenusa y lo devuelva por pantalla.
 
-10- Un grupo de amigos se reúnen a ver un clásico de fútbol entre el
+9- Un grupo de amigos se reúnen a ver un clásico de fútbol entre el
 equipo A y el equipo B, y establecen como regla que los hinchas del
 equipo que pierda deberán pagar la totalidad de las cervezas consumidas
 durante el partido, como así también el costo de picada consumida en la
@@ -94,11 +86,11 @@ cada hincha en caso de un empate:
     monto_a_pagar = costo_total/int(equipo_a)
     print('Si el equipo A pierde, sus hinchas deben pagar: $', monto_a_pagar)
 
-11- Modifique el código del ejercicio anterior para que haciendo uso del módulo
+10- Modifique el código del ejercicio anterior para que haciendo uso del módulo
 *statistics* de la biblioteca estándar de python, devuelva el valor promedio que se paga (mean), 
 la mediana(median) y varianza (variance).
 
-12- Modifique el código anterior, para que en vez de pedir que se
+11- Modifique el código anterior, para que en vez de pedir que se
 ingresen los 3 valores por teclado, genere estos de manera aleatoria. El
 programa deberá devolver la media, mediana y varianza, junto a los 3
 valores que se generaron aleatoriamente.

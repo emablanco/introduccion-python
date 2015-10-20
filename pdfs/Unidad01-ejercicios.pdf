@@ -39,14 +39,14 @@ endobj
 << /Outlines 16 0 R /PageLabels 17 0 R /PageMode /UseNone /Pages 13 0 R /Type /Catalog >>
 endobj
 12 0 obj
-<< /Author () /CreationDate (D:20151020103354+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+<< /Author () /CreationDate (D:20151020103956+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
   /Title (Unidad 1: Ejercicios) >>
 endobj
 13 0 obj
 << /Count 2 /Kids [ 6 0 R 10 0 R ] /Type /Pages >>
 endobj
 14 0 obj
-<< /Length 5361 >>
+<< /Length 5471 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
@@ -163,31 +163,24 @@ BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.060574 Tw (5- Realice un programa que permi
 Q
 Q
 q
-1 0 0 1 62.69291 354.6236 cm
+1 0 0 1 62.69291 378.6236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 50 Tm /F1 10 Tf 12 TL .187485 Tw (6- Las ben\351volas compa\361\355as telef\363nicas cobran la tarifa de cada llamada del siguiente modo: un valor fijo) Tj T* 0 Tw .98561 Tw (de $0.80 cuando se establece la llamada, luego, fracciona por tiempo, donde el primer minuto tiene un) Tj T* 0 Tw 1.194985 Tw (valor de $1.30 y los subsiguientes de $1.45. Realice un programa que permita ingresar la duraci\363n de) Tj T* 0 Tw .645227 Tw (una llamada en minutos y que muestre luego el costo total de la misma, a la que se le debe agregar un) Tj T* 0 Tw (porcentaje del 20% correspondiente a impuestos.) Tj T* ET
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.88284 Tw (6- Un atleta realiza sus entrenamientos para una marat\363n \(42.195km\) y desea conocer su velocidad) Tj T* 0 Tw 1.046136 Tw (promedio. Desarrolle un programa donde se ingrese el tiempo transcurrido en tres variables diferentes:) Tj T* 0 Tw (horas, minutos y segundos. Luego, muestre la velocidad promedio en km/h y km/seg.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 312.6236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.88284 Tw (7- Un atleta realiza sus entrenamientos para una marat\363n \(42.195km\) y desea conocer su velocidad) Tj T* 0 Tw 1.046136 Tw (promedio. Desarrolle un programa donde se ingrese el tiempo transcurrido en tres variables diferentes:) Tj T* 0 Tw (horas, minutos y segundos. Luego, muestre la velocidad promedio en km/h y km/seg.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 282.6236 cm
+1 0 0 1 62.69291 348.6236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .478409 Tw (8- Hace unos cuantos a\361os, Don Pit\341goras dijo que el cuadrado de la hipotenusa era igual a la suma de) Tj T* 0 Tw (los cuadrados de los catetos.) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .478409 Tw (7- Hace unos cuantos a\361os, Don Pit\341goras dijo que el cuadrado de la hipotenusa era igual a la suma de) Tj T* 0 Tw (los cuadrados de los catetos.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 276.6236 cm
+1 0 0 1 62.69291 342.6236 cm
 Q
 q
-1 0 0 1 62.69291 161.347 cm
+1 0 0 1 62.69291 227.347 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
@@ -201,38 +194,38 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 161.347 cm
+1 0 0 1 62.69291 227.347 cm
 Q
 q
-1 0 0 1 62.69291 131.347 cm
+1 0 0 1 62.69291 197.347 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .697608 Tw (\277Ser\341 cierto esto?. Supongamos que el valor de la hipotenusa \(C\) es de 29.15 , la del cateto A 25, y la) Tj T* 0 Tw (del cateto B es de 15. Realice un programa que permita validar esto.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 101.347 cm
+1 0 0 1 62.69291 167.347 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.092765 Tw (9- Modifique el c\363digo anterior, para que \(ahora que sabe que es cierto\) le pregunte al usuario por los) Tj T* 0 Tw (valores de los catetos A y B, y luego realice el c\341lculo de la hipotenusa y lo devuelva por pantalla.) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.092765 Tw (8- Modifique el c\363digo anterior, para que \(ahora que sabe que es cierto\) le pregunte al usuario por los) Tj T* 0 Tw (valores de los catetos A y B, y luego realice el c\341lculo de la hipotenusa y lo devuelva por pantalla.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 89.34703 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 62 Tm /F1 10 Tf 12 TL .312262 Tw (9- Un grupo de amigos se re\372nen a ver un cl\341sico de f\372tbol entre el equipo A y el equipo B, y establecen) Tj T* 0 Tw .117485 Tw (como regla que los hinchas del equipo que pierda deber\341n pagar la totalidad de las cervezas consumidas) Tj T* 0 Tw .629431 Tw (durante el partido, como as\355 tambi\351n el costo de picada consumida en la previa. En caso de empate los) Tj T* 0 Tw 1.582339 Tw (costos se dividen por igual. El siguiente c\363digo refleja esta situaci\363n, pero solo contempla 2 de los 3) Tj T* 0 Tw .494651 Tw (casos posibles. Modif\355quelo para que tambi\351n informe cuanto tendr\355a que pagar cada hincha en caso de) Tj T* 0 Tw (un empate:) Tj T* ET
 Q
 Q
  
 endstream
 endobj
 15 0 obj
-<< /Length 7813 >>
+<< /Length 7033 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 693.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 62 Tm /F1 10 Tf 12 TL .059535 Tw (10- Un grupo de amigos se re\372nen a ver un cl\341sico de f\372tbol entre el equipo A y el equipo B, y establecen) Tj T* 0 Tw .117485 Tw (como regla que los hinchas del equipo que pierda deber\341n pagar la totalidad de las cervezas consumidas) Tj T* 0 Tw .629431 Tw (durante el partido, como as\355 tambi\351n el costo de picada consumida en la previa. En caso de empate los) Tj T* 0 Tw 1.582339 Tw (costos se dividen por igual. El siguiente c\363digo refleja esta situaci\363n, pero solo contempla 2 de los 3) Tj T* 0 Tw .494651 Tw (casos posibles. Modif\355quelo para que tambi\351n informe cuanto tendr\355a que pagar cada hincha en caso de) Tj T* 0 Tw (un empate:) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 479.8236 cm
+1 0 0 1 62.69291 559.8236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -386,16 +379,16 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 435.8236 cm
+1 0 0 1 62.69291 515.8236 cm
 q
-BT 1 0 0 1 0 26 Tm .466235 Tw 12 TL /F1 10 Tf 0 0 0 rg (11- Modifique el c\363digo del ejercicio anterior para que haciendo uso del m\363dulo ) Tj /F6 10 Tf (statistics ) Tj /F1 10 Tf (de la biblioteca) Tj T* 0 Tw 1.763555 Tw (est\341ndar de python, devuelva el valor promedio que se paga \(mean\), la mediana\(median\) y varianza) Tj T* 0 Tw (\(variance\).) Tj T* ET
+BT 1 0 0 1 0 26 Tm .466235 Tw 12 TL /F1 10 Tf 0 0 0 rg (10- Modifique el c\363digo del ejercicio anterior para que haciendo uso del m\363dulo ) Tj /F6 10 Tf (statistics ) Tj /F1 10 Tf (de la biblioteca) Tj T* 0 Tw 1.763555 Tw (est\341ndar de python, devuelva el valor promedio que se paga \(mean\), la mediana\(median\) y varianza) Tj T* 0 Tw (\(variance\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 393.8236 cm
+1 0 0 1 62.69291 473.8236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.432209 Tw (12- Modifique el c\363digo anterior, para que en vez de pedir que se ingresen los 3 valores por teclado,) Tj T* 0 Tw .118735 Tw (genere estos de manera aleatoria. El programa deber\341 devolver la media, mediana y varianza, junto a los) Tj T* 0 Tw (3 valores que se generaron aleatoriamente.) Tj T* ET
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.432209 Tw (11- Modifique el c\363digo anterior, para que en vez de pedir que se ingresen los 3 valores por teclado,) Tj T* 0 Tw .118735 Tw (genere estos de manera aleatoria. El programa deber\341 devolver la media, mediana y varianza, junto a los) Tj T* 0 Tw (3 valores que se generaron aleatoriamente.) Tj T* ET
 Q
 Q
  
@@ -430,16 +423,16 @@ xref
 0000032168 00000 n
 0000032399 00000 n
 0000032469 00000 n
-0000037887 00000 n
-0000045757 00000 n
-0000045807 00000 n
-0000045860 00000 n
-0000045897 00000 n
+0000037997 00000 n
+0000045087 00000 n
+0000045137 00000 n
+0000045190 00000 n
+0000045227 00000 n
 trailer
 << /ID 
  % ReportLab generated PDF document -- digest (http://www.reportlab.com)
- [(S\366\373\356\374,39\260&\341\326%\016\216\201) (S\366\373\356\374,39\260&\341\326%\016\216\201)]
+ [(\023[\254}\266\340-\033\364\362\213\205}\327e\257) (\023[\254}\266\340-\033\364\362\213\205}\327e\257)]
  /Info 12 0 R /Root 11 0 R /Size 20 >>
 startxref
-45934
+45264
 %%EOF
