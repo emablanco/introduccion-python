@@ -142,8 +142,7 @@ ejemplo:
 
 .. code:: python
 
-    a = 'El futuro mostrará los resultados y juzgará a cada uno de \
-        acuerdo a sus logros (Nikola Tesla)'
+    a = 'Si supiera que el mundo se acaba mañana, yo, hoy todavía, plantaría un árbol(Martin Luther King).'
     type(a)
 
 
@@ -157,8 +156,7 @@ ejemplo:
 
 .. code:: python
 
-    b = "En realidad no me preocupa que quieran robar mis ideas, \
-        me preocupa que ellos no las tengan (Nikola Tesla)"
+    b = "La simplicidad es la máxima sofisticación (Leonardo Da Vinci)."
     type(b)
 
 
@@ -332,7 +330,7 @@ es ``False``
     False
 
 
-Solo cuando ambas cadenas son iguales, la comparación devuelve verdadero
+Solo cuando ambas cadenas son exactamente iguales, la comparación devuelve verdadero
 
 .. code:: python
 
@@ -532,7 +530,7 @@ En este ejemplo *a* es menor que *b*, por lo que la expresión es falsa.
 Sin embargo al utilizarse el operador ``not`` estamos cambiando el
 resultado por su opuesto (en este caso True). La expresión podría leer
 como "no es cierto que a es mayor que b", lo cual es una expresión
-cierta, y por lo tanto el valor correspondiente es True.
+cierta, y por lo tanto el valor correspondiente es ``True``.
 
 Veamos un ejemplo un poco mas complicado
 
@@ -559,7 +557,7 @@ que podríamos ver a lo anterior como
     resultado = (not(False)) and (not(False))
 
 Dijimos que el operador ``not`` cambia el resultado de una expresión
-booleana por su opuesto, por lo que si seguimos desarrollando esta línea
+lógica por su opuesto, por lo que si seguimos desarrollando esta línea
 tenemos:
 
 .. code:: python
