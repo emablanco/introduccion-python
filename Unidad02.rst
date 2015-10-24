@@ -170,7 +170,8 @@ ejemplo:
 
 .. code:: python
 
-    a = 'Si supiera que el mundo se acaba mañana, yo, hoy todavía, plantaría un árbol (Martin Luther King).'
+    a = 'Si supiera que el mundo se acaba mañana, yo, hoy todavía, \
+        plantaría un árbol (Martin Luther King).'
     type(a)
 
 
