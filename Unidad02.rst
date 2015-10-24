@@ -165,7 +165,7 @@ Cadenas de caracteres
 
 Tal como hemos visto en la unidad anterior, las cadenas (string en
 inglés o str) no son más que texto encerrado entre comillas simples
-('cadena'), dobles ("cadena") o triples('''Cadenas multilíneas'''). Por
+('cadena'), dobles ("cadena") o triples ('''Cadenas multilíneas'''). Por
 ejemplo:
 
 .. code:: python
