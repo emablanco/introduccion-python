@@ -51,8 +51,8 @@ de punto flotante) o complejos.
 Enteros
 ~~~~~~~
 
-Los números enteros son aquellos números positivos o negativos que no tienen decimales (además
-del cero). En Python se representan mediante el tipo int (de integer, entero). Por ejemplo:
+Los números enteros son aquellos que no tienen decimales (ya sean positivos o negativos además
+del cero). En Python se representan mediante el tipo ``int`` (de integer, entero). Por ejemplo:
 
 .. code:: python
 
@@ -72,7 +72,7 @@ Reales
 ~~~~~~
 
 Los números reales son los que tienen decimales. En Python se expresan
-mediante el tipo float.
+mediante el tipo ``float`` y se los denomina flotantes.
 
 Para representar un número real en Python se escribe primero la parte
 entera, seguido de un punto y por último la parte decimal. Por ejemplo:
@@ -89,7 +89,7 @@ exponente) para indicar un exponente en base 10. Por ejemplo:
     real = 0.6e-3
 
 
-Lo que sería equivalente a 0.6 x 10-3 = 0.6 x 0.001 = 0.0006
+Lo que sería equivalente a 0.6 x 10(-3) = 0.6 x 0.001 = 0.0006
 
 .. code:: python
 
@@ -108,14 +108,9 @@ Lo que sería equivalente a 0.6 x 10-3 = 0.6 x 0.001 = 0.0006
 Complejos
 ~~~~~~~~~
 
-Los números complejos son aquellos que tienen parte imaginaria. Si no
-conocías de su existencia, es más que probable que nunca lo vayas a
-necesitar, de hecho la mayor parte de los lenguajes de programación
-carecen de este tipo, aunque sea muy utilizado por ingenieros y
-científicos en general.
+Los números complejos son aquellos que tienen parte imaginaria. La mayor parte de los lenguajes de programación carecen de este tipo, aunque sea muy utilizado por ingenieros y científicos en general.
 
-En el caso de que necesites utilizar números complejos, debes saber que
-son llamados complex en Python, y que se representan de la siguiente
+En Python son llamados ``complex`` , y que se representan de la siguiente
 forma:
 
 .. code:: python
@@ -142,7 +137,7 @@ ejemplo:
 
 .. code:: python
 
-    a = 'Si supiera que el mundo se acaba mañana, yo, hoy todavía, plantaría un árbol(Martin Luther King).'
+    a = 'Si supiera que el mundo se acaba mañana, yo, hoy todavía, plantaría un árbol (Martin Luther King).'
     type(a)
 
 
@@ -170,12 +165,14 @@ ejemplo:
 
 .. code:: python
 
-    c = '''Un instrumento de poco costo y no más grande que un reloj, \
-        permitirá a su portador escuchar en cualquier parte, ya sea en\
-        el mar o en la tierra, música, canciones o un discurso de un \
-        líder político, dictado en cualquier otro sitio distante. Del\
-        mismo modo, cualquier dibujo o impresión podrá ser \
-        transferida de un lugar a otro (Nikola Tesla, ~ año 1891).'''
+    c = '''Como le gusta el baile 
+        al hijo de cuca
+        no le gusta el trabajo
+        al hijo de cuca
+        el vive de la calle
+        el hijo de cuca
+        no le importa un comino
+        al hijo de cuca   (Pocho La Pantera, ~ año 1994).'''
     type(c)
 
 
@@ -190,11 +187,10 @@ ejemplo:
 Lógicos
 -------
 
-Por último, nos queda el tipo básico lógico, comúnmente denominado booleano. Una variable de tipo
-booleano sólo puede tener dos valores: ``True`` (verdadero) y ``False`` (falso).
-Estos valores son especialmente importantes para las expresiones
-condicionales y los bucles, como veremos más adelante. Pero veamos
-algunos ejemplos:
+Por último, nos queda el tipo básico *lógico*, comúnmente denominado booleano. Una variable de tipo ``bool`` sólo puede tener dos valores posibles: ``True`` (verdadero) o ``False`` (falso).
+Estos valores son especialmente importantes ya que provienen de operaciones relacionales o lógicas imprescindibles en todo algoritmo computacional. 
+
+Antes de adentrarnos en las operaciones que nos arrojan este tipo de valores, veamos algunos ejemplos de variables lógicas:
 
 .. code:: python
 
@@ -227,7 +223,7 @@ algunos ejemplos:
 .. code:: python
 
     c = 10 > 2
-    print (c)
+    print(c)
 
 
 .. parsed-literal::
@@ -238,10 +234,9 @@ algunos ejemplos:
 En este último ejemplo vemos algo particular, hemos asignado a la
 variable **c** el resultado de una expresión lógica (10 > 2). Python en
 este caso opera con la misma y asigna a la variable **c** el resultado
-de dicha operación, la cual en este caso es verdadera (``True``), dado que
+de dicha operación, que resulta verdadera (``True``), dado que
 10 es mayor que 2. Al tratarse se una operación lógica, el resultado
-siempre será de tipo booleando (``bool``), es decir, será verdadero o será
-falso.
+siempre será de tipo ``bool``.
 
 .. code:: python
 
@@ -260,13 +255,14 @@ Operadores
 Operadores relacionales
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Como vimos en el ejemplo anterior, los valores booleanos son además el
-resultado de expresiones que utilizan operadores relacionales
-(comparaciones entre valores).
+Como vimos en el ejemplo anterior, los valores ``bool`` son además el
+resultado de expresiones que utilizan operadores relacionales, es decir,  comparaciones entre valores.
 
-Estos operadores, siempre se utilizan de la siguiente manera:
+Este tipo de expresiones pueden ser analizadas como una pregunta cuya respuesta consiste en una de dos posibilidades: verdadera o falsa. 
 
-operando\_A (operador) operando\_B
+Los operadores relacionales se utilizan de la siguiente manera:
+
+OperandoA *Operador* OperandoB
 
 Por ejemplo:
 
@@ -284,7 +280,7 @@ Por ejemplo:
 
 
 En este caso el operando A es 10 y el B es 4, el resultado de aplicar el
-operador ">" a los operandos A y B en este caso es ``True`` (verdadero) dado
+operador ">" a los operandos es en este caso ``True`` dado
 que 10 es mayor que 4.
 
 La lista completa de operadores que podemos utilizar en python es:
@@ -301,6 +297,14 @@ La lista completa de operadores que podemos utilizar en python es:
 | >          | ¿es a mayor que b?      | 5 > 3     | True        |
 +------------+-------------------------+-----------+-------------+
 
+Además, los de mayor (``>``) y menor (``<``) se pueden combinar con el igual (``=``) para realizar lo siguiente:
+
++------------+---------------------------------+-----------+-------------+
+| <=         | ¿es a menor o igual que b?      | 5 <= 5    | True        |
++------------+---------------------------------+-----------+-------------+
+| >=         | ¿es a mayor o igual que b?      | 2 >= 3    | False       |
++------------+---------------------------------+-----------+-------------+
+
 Veamos otro ejemplo, ahora con cadenas de texto:
 
 .. code:: python
@@ -314,7 +318,7 @@ Veamos otro ejemplo, ahora con cadenas de texto:
     False
 
 
-En este caso el operador == se utiliza para comparar si son iguales los
+En este caso el operador ``==`` se utiliza para comparar si son iguales los
 operandos. Esta comparación se hace caracter a caracter, por lo que al
 ser diferentes las cadenas, el resultado es ``False``. Lo siguiente también
 es ``False``
@@ -330,7 +334,7 @@ es ``False``
     False
 
 
-Solo cuando ambas cadenas son exactamente iguales, la comparación devuelve verdadero
+Solo cuando ambas cadenas son exactamente iguales, la comparación da como resultado un valor verdadero
 
 .. code:: python
 
@@ -343,7 +347,7 @@ Solo cuando ambas cadenas son exactamente iguales, la comparación devuelve verd
     True
 
 
-El tipo como hemos visto, es booleano:
+El tipo como hemos visto, es ``bool``:
 
 .. code:: python
 
@@ -358,7 +362,7 @@ El tipo como hemos visto, es booleano:
 
 
 
-También podemos comparar números, expresiones lógicas y expresiones algebraicas:
+Además de cadenas también podemos comparar números y valores lógicos:
 
 **Números**
 
@@ -372,7 +376,7 @@ También podemos comparar números, expresiones lógicas y expresiones algebraic
 
     True
 
-**Expresiones lógicas**
+**Valores lógicos**
 
 .. code:: python
 
@@ -384,23 +388,8 @@ También podemos comparar números, expresiones lógicas y expresiones algebraic
 
     False
 
-**Expresiones algebraicas**
 
-.. code:: python
-
-    a = 2*8
-    b = 3*8
-    resultado = (a < b)
-    print (resultado)
-
-
-.. parsed-literal::
-
-    True
-
-
-En Python, una expresión que es cierta tiene el valor 1, y una expresión
-que es falsa tiene el valor 0.
+En Python, como en otros lenguajes, una expresión que es verdadera tiene el valor 1, y una expresión que es falsa tiene el valor 0. Es decir, ``True`` es equivalente a 1 y ``False`` a 0.
 
 .. code:: python
 
@@ -421,19 +410,27 @@ que es falsa tiene el valor 0.
 Operadores lógicos
 ~~~~~~~~~~~~~~~~~~
 
-Además de los operadores relacionales, tenemos los operadores lógicos.
-Existen 3 tipos de operadores lógicos: ``and`` (y), ``or`` (o), y ``not``
-(no). Por ejemplo:
+Los operadores lógicos se utilizan para combinar expresiones que arrojan valores de tipo ``bool``. Al igual que los operadores relacionales, el resultado de estas operaciones son ``True`` o ``False``.
 
-    x > 0 and x < 10
+Existen 3 tipos de operadores lógicos: ``and`` (y), ``or`` (o), y ``not`` (no). Veamos su uso en algunos ejemplos.
 
-es verdadero sólo si *x* es mayor que 0 **Y también** es menor que 10.
+Usamos ``and`` para combinar dos operaciones relacionales:
 
-    n%2 == 0 or n %3 == 0
+.. code:: python
 
-es verdadero si cualquiera de las condiciones es verdadera, o sea, si el
-número es divisible por 2 **o** por 3. O sea, podemos leer la línea anterior
-como **n** divido 2 es igual a 0 **o** n dividido 3 es igual a 0.
+    (x > 0) and (x < 10)
+
+es verdadero sólo si *x* es mayor que 0 **y a la vez** es menor que 10. Ahora usemos el operador ``or``:
+
+.. code:: python
+
+    (n % 2 == 0) or (n % 3 == 0)
+
+es verdadero si alguna de las condiciones es verdadera, es decir, si el
+número es divisible por 2 **o** es divisible por 3. Podemos leer la línea anterior como **n** divido 2 es igual a cero **o** n dividido 3 es igual a cero.
+
+Teniendo en cuenta que el operador ``%`` da como resultado el resto de la división. El resto de la división es cero cuando el dividendo y el divisor son múltiplos.
+
 
 Finalmente, el operador ``not`` niega una expresión booleana, de forma
 que
@@ -471,7 +468,7 @@ Veamos algunos ejemplos
     True
 
 
-En este caso, como ambas operaciones devuelven ``True`` (verdadero), el
+En este caso, como ambas operaciones devuelven ``True``, el
 resultado es verdadero.
 
 .. code:: python
@@ -509,7 +506,7 @@ Veamos algunos ejemplos con el operador ``or``
 
 En este caso la primer operación es verdadera y la segunda es falsa,
 pero como estamos utilizando el operador ***or***, la variable resultado
-tendrá como valor True.
+tendrá como valor ``True``.
 
 Por último, veamos un ejemplo con el operador ``not``
 
@@ -532,7 +529,7 @@ resultado por su opuesto (en este caso True). La expresión podría leer
 como "no es cierto que a es mayor que b", lo cual es una expresión
 cierta, y por lo tanto el valor correspondiente es ``True``.
 
-Veamos un ejemplo un poco mas complicado
+Veamos un ejemplo un poco mas complejo:
 
 .. code:: python
 
