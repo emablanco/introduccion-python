@@ -1,4 +1,4 @@
-================================================
+﻿================================================
 Tecnicatura Universitaria en Software Libre
 ================================================
 --------------------------------------
@@ -143,7 +143,7 @@ Complejos
 
 Los números complejos son aquellos que tienen parte imaginaria. La mayor parte de los lenguajes de programación carecen de este tipo, aunque sea muy utilizado por ingenieros y científicos en general.
 
-En Python son llamados ``complex`` , y que se representan de la siguiente
+En Python son llamados ``complex`` , y se representan de la siguiente
 forma:
 
 .. code:: python
@@ -269,7 +269,7 @@ En este último ejemplo vemos algo particular, hemos asignado a la
 variable **c** el resultado de una expresión lógica (10 > 2). Python en
 este caso opera con la misma y asigna a la variable **c** el resultado
 de dicha operación, que resulta verdadera (``True``), dado que
-10 es mayor que 2. Al tratarse se una operación lógica, el resultado
+10 es mayor que 2. Al tratarse de una operación lógica, el resultado
 siempre será de tipo ``bool``.
 
 .. code:: python
@@ -461,7 +461,7 @@ es verdadero sólo si *x* es mayor que 0 **y a la vez** es menor que 10. Ahora u
     (n % 2 == 0) or (n % 3 == 0)
 
 es verdadero si alguna de las condiciones es verdadera, es decir, si el
-número es divisible por 2 **o** es divisible por 3. Podemos leer la línea anterior como **n** divido 2 es igual a cero **o** n dividido 3 es igual a cero.
+número es divisible por 2 **o** es divisible por 3. Podemos leer la línea anterior como el resto de dividir **n** por 2 es igual a cero **o** el resto de dividir n por 3 es igual a cero.
 
 Teniendo en cuenta que el operador ``%`` da como resultado el resto de la división. El resto de la división es cero cuando el dividendo y el divisor son múltiplos.
 
@@ -469,10 +469,12 @@ Teniendo en cuenta que el operador ``%`` da como resultado el resto de la divisi
 Finalmente, el operador ``not`` niega una expresión booleana, de forma
 que
 
+.. code:: python
+
     not (x > y) 
 
-es verdadero si la expresión es falsa, o sea, si x es
-menor o igual que y.
+
+es verdadero si la expresión es falsa, o sea, si x es menor o igual que y.
 
 En resumen tenemos los siguientes operadores lógicos
 
