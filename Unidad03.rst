@@ -40,9 +40,16 @@ En cada ejecución se ejecutarán siempre las mismas instrucciones, en forma sec
 una tras otra. Esta limitante quita flexibilidad a los programas ya que no es posible 
 tener caminos alternativos de ejecución y, cada instrucción se ejecuta una única vez.
 
-Para solucionar esta limitación existen las estructuras de control de flujo 
-que permiten por un lado **condicionar** las acciones a ejecutarse y, por el otro,
-**repetir** una serie de instrucciones.
+Pensemos en un ejemplo muy simple, donde se deben ingresar miles de datos de personas, 
+sería impracticable incluir miles de sentencias para leer su nombre y edad. 
+Del mismo modo, si quisiéramos calcular el promedio de altura de aquellas personas que 
+superan los 18 años necesitamos *preguntar* por este dato y en base al valor ingresado
+realizar el procesamiento necesario para obtener el resultado.
+
+Con este pequeño ejemplo, vemos la necesidad de contar con algo más que la estructura
+secuencial aprendida previamente, por lo que para solucionar esta limitación existen 
+las estructuras de control de flujo que permiten por un lado **condicionar** las acciones
+a ejecutarse y, por el otro, **repetir** una serie de instrucciones.
 
 El teorema de la programación estructurada nos dice que todo algoritmo computacional
 puede ser resuelto utilizando tres estructuras:
@@ -50,6 +57,9 @@ puede ser resuelto utilizando tres estructuras:
 - Secuencial
 - Condicional
 - Repetitiva
+
+En la presente unidad, agregaremos a la estructura secuencial ya vista, estructuras 
+condicionales y repetitivas.
 
 Estructuras condicionales
 -------------------------
