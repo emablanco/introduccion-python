@@ -1,0 +1,164 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+6 0 obj
+<< /Outlines 10 0 R /PageLabels 11 0 R /PageMode /UseNone /Pages 8 0 R /Type /Catalog >>
+endobj
+7 0 obj
+<< /Author () /CreationDate (D:20151026165845+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (Unidad 2: Ejercicios) >>
+endobj
+8 0 obj
+<< /Count 1 /Kids [ 5 0 R ] /Type /Pages >>
+endobj
+9 0 obj
+<< /Length 3062 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 139.3549 0 Td (Unidad 2: Ejercicios) Tj T* -139.3549 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 707.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.027633 Tw 12 TL /F1 10 Tf 0 0 0 rg (1- Realice un programa que permita ingresar 2 valores por teclado, y que luego muestre si el segundo) Tj T* 0 Tw (valor es mayor que el primero. Por ejemplo:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 637.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F3 10 Tf 12 TL (Ingrese el primer valor: 3) Tj T* (Ingrese el segundo valor: 3.1415) Tj T*  T* (Resultado: True) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 593.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 2.41186 Tw (2- Modifique el programa anterior para que ahora consulte por 3 valores, y luego multiplique los 2) Tj T* 0 Tw 1.323516 Tw (primeros y devuelva si el resultado de esa multiplicaci\363n es mayor que el valor ingresado en el tercer) Tj T* 0 Tw (lugar. Por ejemplo:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 512.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (Ingrese el primer valor: 5) Tj T* (Ingrese el segundo valor: 5) Tj T* (Ingrese el tercer valor: 24) Tj T*  T* (Resultado: True) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 468.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 2.537318 Tw (3- Si multiplicamos dos n\372meros enteros, el resultado seguir\341 siendo un entero. Pasa lo mismo si) Tj T* 0 Tw .608651 Tw (dividimos 2 n\372meros enteros?. Realice un programa que verifique y de respuesta a esto, utilizando para) Tj T* 0 Tw (ello la funci\363n type\(\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 402.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F1 10 Tf 12 TL 2.139398 Tw (4- Se realizaron elecciones primarias en la Argentina, y se pretende saber si un partido, el cual se) Tj T* 0 Tw 1.125318 Tw (presentaba con lista \372nica, participar\341 de las elecciones generales o no. Para esto, dicho partido debe) Tj T* 0 Tw 1.001098 Tw (obtener al menos el 1.5% del total de los votos v\341lidos. Realice un programa que le permita al usuario) Tj T* 0 Tw .844987 Tw (ingresar por teclado la totalidad de los votos v\341lidos, y la cantidad de votos que obtuvo dicho partido, y) Tj T* 0 Tw (que luego informe si participara o no de las elecciones generales. Por ejemplo:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 333.4236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F3 10 Tf 12 TL (Cantidad de votos validos: 315698854) Tj T* (Cantidad de votos obtenidos: 5369521) Tj T* (Porcentaje de votos: 1.7008363926465189) Tj T* (Participa en las generales: True) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+10 0 obj
+<< /Count 0 /Type /Outlines >>
+endobj
+11 0 obj
+<< /Nums [ 0 12 0 R ] >>
+endobj
+12 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 13
+0000000000 65535 f
+0000000075 00000 n
+0000000129 00000 n
+0000000239 00000 n
+0000000354 00000 n
+0000000462 00000 n
+0000000669 00000 n
+0000000776 00000 n
+0000001006 00000 n
+0000001068 00000 n
+0000004186 00000 n
+0000004236 00000 n
+0000004280 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(K\000\310\2271\265\035\333j<7\030|\033vy) (K\000\310\2271\265\035\333j<7\030|\033vy)]
+ /Info 7 0 R /Root 6 0 R /Size 13 >>
+startxref
+4317
+%%EOF
