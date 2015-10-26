@@ -1,4 +1,4 @@
-Unidad 1: Ejercicios
+﻿Unidad 1: Ejercicios
 --------------------
 
 1. Realice un programa donde se pregunte el nombre y edad de una persona
@@ -50,9 +50,7 @@ hipotenusa era igual a la suma de los cuadrados de los catetos.
 .. figure:: img/u1-ejercicios/teorema-pitagoras.jpg
    :width: 700 px
 
-¿Será cierto esto?. Supongamos que el valor de la hipotenusa (C) es de
-29.15 , la del cateto A 25, y la del cateto B es de 15. Realice un
-programa que permita validar esto.
+¿Será cierto esto?. Supongamos que el valor de la hipotenusa (C) es 5, el del cateto A es 3, y el del cateto B es 4. Realice un programa que permita validar esto. 
 
 8- Modifique el código anterior, para que (ahora que sabe que es
 cierto) le pregunte al usuario por los valores de los catetos A y B, y
@@ -86,9 +84,7 @@ cada hincha en caso de un empate:
     monto_a_pagar = costo_total/int(equipo_a)
     print('Si el equipo A pierde, sus hinchas deben pagar: $', monto_a_pagar)
 
-10- Modifique el código del ejercicio anterior para que haciendo uso del módulo
-*statistics* de la biblioteca estándar de python, devuelva el valor promedio que se paga (mean), 
-la mediana(median) y varianza (variance).
+10- Realice un programa que permita ingresar 3 valores (valor1, valor2,valor3) y luego muestre, haciendo uso del módulo *statistics* de la biblioteca estándar de python, el valor de la media(mean), mediana(median) y varianza(variance) del conjunto.
 
 11- Modifique el código anterior, para que en vez de pedir que se
 ingresen los 3 valores por teclado, genere estos de manera aleatoria. El
