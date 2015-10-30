@@ -361,15 +361,16 @@ Estructuras repetitivas
 Ahora podemos dotar a nuestros programas de mayor complejidad,
 combinando y anidando las estructuras condicionales vistas. Sin embargo,
 aún tenemos una limitante, cada instrucción tendrá vida al momento de
-ser ejecutada e inmediatamente después no se ejecutará más hasta que se el
-programa se invoque nuevamente.
+su ejecución y no se ejecutará más hasta que se el programa se invoque nuevamente.
 
 Imaginemos que debemos consultar la pregunta de la temperatura a cientos
 de miles de personas, deberíamos ejecutar cientos de miles de veces el
 programa, iniciándolo y esperando su finalización para repetir el
-proceso una y otra vez. Se hace evidente la ausencia de una estructura
-que permita repetir cuantas veces se requiera una determinada acción,
-aquí es donde entran en acción las estructuras repetitivas.
+proceso una y otra vez. 
+
+Con este inconveniente se hace evidente la necesidad de una estructura
+que permita repetir cuantas veces se requiera una determinada instrucción o 
+bloque de instrucciones, aquí es donde entran en acción las estructuras repetitivas.
 
 Sentencia *while*
 ~~~~~~~~~~~~~~~~~
@@ -379,7 +380,7 @@ determinada expresión (o condición) se cumpla, en caso contrario, se
 finaliza la repetición.
 
 Una expresión se cumple cuando arroja un resultado verdadero, que en
-Python es ``True``. La estructura del ``while`` es la siguiente:
+Python es ``True``. La forma del ``while`` es la siguiente:
 
 .. code:: python
 
@@ -390,8 +391,11 @@ Python es ``True``. La estructura del ``while`` es la siguiente:
         accionN
 
 Tal como se explicó previamente, las acciones que se repiten en cada
-iteración son aquellas que tienen sangría, lo que indica que son partes
+iteración son aquellas que tienen sangría, lo que indica que son parte
 del ciclo *while*.
+
+En función del modo en que se controla la cantidad de repeticiones del
+ciclo se los clasifica en bucles condicionales, interactivos o centinelas. 
 
 Bucles condicionales
 ^^^^^^^^^^^^^^^^^^^^
