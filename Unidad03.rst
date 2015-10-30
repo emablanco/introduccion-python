@@ -311,27 +311,22 @@ En el siguiente programa, ¿qué mensaje se muestra en pantalla?
 Estructuras anidadas
 ~~~~~~~~~~~~~~~~~~~~
 
-Retomando el ejemplo del programa anterior, supongamos ahora que también
-queremos considerar la distancia que se debe recorrer. En este caso
-deberíamos preguntar por la distancia, pero también por la temperatura.
-Para que en los casos donde la temperatura sea agradable, la distancia
-no sea demasiado larga como para ir en bicicleta.
+Retomando el ejemplo del programa anterior, consideremos ahora la distancia 
+que se debe recorrer además de la temperatura.
 
-Para estos casos, se pueden utilizar estructuras anidadas, es decir, en
-el bloque de código que se ejecutará en caso de cumplirse o no una
-determina condición, podemos poner una nueva estructura de control, por
-ejemplo un nuevo ``if``.
+Para estos casos, se pueden utilizar *estructuras anidadas*, es decir, 
+una nueva estructura de control incluida dentro del bloque que se ejecuta 
+al cumplirse la primer condición.
 
-Reescribamos el código anterior para que considere esta nueva condición,
-y veamos como usar estructuras anidadas:
+Reescribamos el código previo utilizando estructuras anidadas:
 
 .. code:: python
 
     temperatura = int(input('Ingrese la temperatura en ºC: '))
     distancia = int(input('Ingrese la distancia a recorrer en km: '))
     
-    if 10 < temperatura < 30:
-        if distancia <= 15:
+    if 10 < temperatura < 30:   #1er condicional
+        if distancia <= 15:     #2do condicional
             print('Lindo clima para ir en bici')
         else:
             print('Es lejos, te recomiendo cole')
@@ -349,16 +344,16 @@ y veamos como usar estructuras anidadas:
     Que tenga buen día!
 
 
-En este caso si se cumple la condición de que la variable temperatura
-contiene un valor entre 10 y 29, se pasa a considerar el valor de la
-variable distancia; si esta es menor o igual a 15, se muestra el mensaje
-*'Está lindo para ir en bici'*, en caso contrario, se muestra el mensaje
-*'Está lindo, pero es lejos, le recomiendo ir en auto'*. Por otro lado,
-si el valor de la variable temperatura no esta entre 10 y 29, se seguirá
-mostrando el mensaje *'La temperatura no es agradable, le recomiendo ir
-en auto'*. Lo mismo sucede con la última sentencia, la cual mostrará el
-mensaje *'Que tenga buen día!'* independientemente del valor de las
-variables *temperatura* y *distancia*
+En caso de cumplirse el primer condicional pasa a considerarse 
+el valor de la variable distancia con el segundo condicional, 
+mostrando en pantalla *Lindo clima para ir en bici* si el resultado
+es verdadero y *Es lejos, te recomiendo cole*, si es falso. 
+
+Por otro lado, si el primer condicional no se cumple (la temperatura no esta 
+entre 10 y 29) se muestra el mensaje *No está agradable, recomiendo cole*.
+
+La última sentencia, mostrará el mensaje *Que tenga buen día!* 
+independientemente del valor de las variables *temperatura* y *distancia*.
 
 Estructuras repetitivas
 -----------------------
