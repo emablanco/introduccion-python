@@ -29,6 +29,39 @@ Este documento fue generado el |date| |time|
 
    PageBreak oneColumn
 
+**LICENCIA CC BY-SA 4.0**
+
+.. figure:: img/LICENCIA-CC.png
+   :alt: 
+   :width: 300 px
+
+Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
+
+A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__ :
+
+**Usted es libre para:**
+
+- Compartir — copiar y redistribuir el material en cualquier medio o formato
+- Adaptar — remezclar, transformar y crear a partir del material    
+
+Para cualquier propósito, incluso comercialmente
+
+El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia
+
+**Bajo los siguientes términos:**
+
+- Atribución — Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
+
+- CompartirIgual — Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
+
+\* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
+
+\** En 4.0, debe indicar si ha modificado el material y mantener una indicación de las modificaciones anteriores
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
 Unidad 3: Estructuras de datos y control de flujo
 =================================================
 
@@ -58,16 +91,16 @@ puede ser resuelto utilizando tres estructuras:
 - Condicional
 - Repetitiva
 
-En la presente unidad, agregaremos a la estructura secuencial ya vista, estructuras 
+En la presente unidad, agregaremos a la ya vista estructura secuencial, estructuras 
 condicionales y repetitivas.
 
 Estructuras condicionales
 -------------------------
 
-La primer estructura de control que veremos son los condicionales cuya 
-función principal es la de evaluar ciertas condiciones y en base al 
-resultado ejecutar un fragmento de programa u otro. Aquí es donde
-cobra su importancia el tipo lógico que aprendimos en la sección
+La primer estructura de control que veremos son los condicionales. Su
+función principal es evaluar ciertas condiciones y en base al 
+resultado llevar a cabo la ejecución de un fragmento de programa u otro. 
+Aquí es donde cobra importancia el tipo lógico que aprendimos en la sección
 anterior (Unidad 2: Tipos básicos) ya que el resultado de las condiciones
 a evaluar pueden ser Verdadero (``True``) o Falso (``False``).
 
@@ -77,7 +110,8 @@ Sentencia *if*
 La forma más simple de un estamento condicional es un ``if`` (*si*) 
 seguido de la condición a evaluar y dos puntos (:). A partir
 de la siguiente línea se escribe el código a ejecutar en caso que se 
-cumpla dicha condición, indicando este bloque de sentencias con una sangría.
+cumpla dicha condición (su resultado sea ``True``), indicando este bloque
+de sentencias con una sangría.
 
 .. code:: python
 
@@ -88,14 +122,14 @@ cumpla dicha condición, indicando este bloque de sentencias con una sangría.
 
 
 
-Supongamos que un programa que hace ciertas preguntas
+Pensemos en un programa que hace ciertas preguntas
 y en base a las respuestas nos informe si conviene ir al trabajo en
 bicicleta o en auto. Este programa podría considerar la
 temperatura, la hora y la distancia y en base a estas variables
 tener un comportamiento diferenciado.
 
-Si inicialmente consideramos solo la temperatura, 
-podríamos hacer lo siguiente:
+Iniciemos con el caso más simple, teniendo en cuenta solamente la temperatura
+para decidir el camino del programa:
 
 .. code:: python
 
@@ -109,38 +143,47 @@ podríamos hacer lo siguiente:
     Está lindo para bici!
 
 
-Esta sentencia se lee: Si la temperatura es mayor a 10 y menor a 30, entonces
-ejecutar: print('Está lindo para bici!'). Estas sentencias se ejecutarán 
+Esta sentencia se lee: Si la temperatura es mayor a 10 y menor a 30 imprimir
+en pantalla *Está lindo para bici!*. Estas mensaje se mostrará
 solamente al cumplirse la condición, es decir, cuando la variable temperatura
 contenga un valor entre 10 y 30. En otro caso, el programa no mostrará nada.
 
-Una característica saliente para este tipo de comparaciones en Python es
-la de asemejarse al lenguaje natural, por lo que podemos implementar la
-comparación previa haciendo:
+Una característica saliente de Python para este tipo de comparaciones es
+la de asemejarse al lenguaje natural (en inglés) y soportar comparaciones
+similares al lenguaje matemático por lo que podemos implementar una forma 
+equivalente a la comparación previa haciendo:
 
 .. code:: python
 
     if 10 < temperatura < 30:
         print('Está lindo para bici!')
 
-**¿Qué acciones se ejecutan al cumplirse la condición?**
 
 Todo lenguaje de programación tiene en su sintaxis un modo de identificar las acciones
-que forman parte de un bloque, así como en C++ y Java se utilizan llaves en Python es la sangría.
+que forman parte de un bloque, por ejemplo, en C++ y Java se utilizan llaves para encerrar
+las sentencias que se deben ejecutar en caso que el resultado de la comparación sea verdadero, 
+aquí, en Python, se utiliza la sangría.
 
 Es importante indentar el bloque de acciones tal como se ha hecho en el ejemplo, 
-es decir, dejar una sangría en las líneas debajo de los dos puntos (:).
+es decir, dejar una sangría en las líneas debajo de los dos puntos (:). 
+Si quisiéramos mostrar varios mensajes sería del siguiente modo:
+
+ .. code:: python
+
+    if 10 < temperatura < 30:
+        print('Está lindo para bici!')
+        print('Pedalear un rato hace bien!')
 
 Sentencia *if..else*
 ~~~~~~~~~~~~~~~~~~~~
 
-El problema inicialmente planteado consiste en determinar si ir al trabajo
+El problema inicialmente planteado consiste en determinar el modo de ir al trabajo,
 en vehículo o bicicleta, sin embargo el programa anterior imprime en pantalla 
-solamente cuando podemos ir en bici,  y en caso que la condición fuera falsa, 
-no mostraba ningún mensaje alusivo.
+solamente cuando sugiere ir en bici y, en caso que la condición fuera falsa, 
+no se mostraba mensaje alusivo alguno.
 
 Para completar este problema es necesario que existan dos caminos alternativos de 
-ejecución, uno para cuando la condición sea verdadera y otro para cuando sea falsa.
+ejecución, uno para la condición verdadera y otro para cuando sea falsa.
 
 Para estos casos existe la sentencia ``else`` (*sino*), que se usa conjuntamente 
 con ``if`` y que sirve para ejecutar ciertas instrucciones en caso de que la condición de la
@@ -154,21 +197,15 @@ evaluada no se cumpla. Completando el ejemplo:
         print('Te recomiendo ir en cole')
 
 
-.. parsed-literal::
-
-    Está lindo para ir en bici
-
-
-Esto se lee como *si temperatura es mayor a 10 y menor que 30, entonces mostrar el mensaje 'Está lindo para ir en bici', sino mostrar el mensaje 'Te recomiendo ir en cole'*. Siempre se
-ejecutará una de las dos opciones, dependiendo del valor de la variable
+Esto se lee como *si temperatura es mayor a 10 y menor que 30, entonces mostrar el mensaje 
+'Está lindo para ir en bici', sino es así, mostrar el mensaje 'Te recomiendo ir en cole'*. 
+Siempre se ejecutará una de las dos opciones, dependiendo del valor de la variable
 temperatura. Por lo que en este punto podemos decir que el código se
 bifurca en dos caminos diferentes dependiendo de una condición.
 
-
 En este caso también tenemos que prestar atención a la indentación
-utilizada bajo la sentencia ``else`` se escribe al mismo nivel que la
-sentencia ``if``, y las sentencias que se deben ejecutar en caso de no se
-cumpla la condición ``if``, deben ir indentadas también.
+utilizada bajo la sentencia ``else``, se escribe al mismo nivel que la
+sentencia ``if``.
 
 Una versión más completa del programa podría ser la siguiente:
 
@@ -183,12 +220,6 @@ Una versión más completa del programa podría ser la siguiente:
     print('Que tenga buen día!')
 
 
-.. parsed-literal::
-
-    Ingrese la temperatura en ºC: 12
-    Está lindo para ir en bici
-    Que tenga buen día!
-
 Es importante mencionar que la última sentencia siempre se
 ejecutará, la bifurcación se produce solamente entre las sentencias que
 están dentro del ``if`` y el ``else``, el mensaje 'Que tenga buen día!' se mostrará
@@ -199,8 +230,9 @@ Estructura de selección múltiple *if..elif..else*
 
 En los casos previos la secuencia de ejecución del programa tiene
 solamente dos alternativas, el bloque de acciones cuando la condición 
-es verdadera (``True``) o cuando es falsa (``False``), incluso puede 
-no existir un camino por la alternativa falsa, tal como se planteó en el primer ejemplo.
+es verdadera (``True``) o cuando es falsa (``False``), incluso, 
+tal como se planteó en el primer ejemplo,  puede no existir un camino por 
+la alternativa falsa.
 
 Las estructuras de selección múltiple sirven para evaluar mas de una
 condición y por ende posibilitar varios caminos de ejecución del
@@ -258,12 +290,6 @@ cualitativa según la siguiente escala:
     print("Calificación: ", calif)
 
 
-.. parsed-literal::
-
-    Ingrese la nota (0..100): 98
-    Calificación:  Distinguido
-
-
 Como se observa, cada expresión condicional planteada es excluyente de
 las demás, por lo que no puede cumplir con mas de una a la vez. Ahora,
 podría existir un planteo donde se cumplan más de una condición y la
@@ -280,6 +306,7 @@ En el siguiente programa, ¿qué mensaje se muestra en pantalla?
         print("opción 2")
     elif val > 83:
         print("opción 3")
+
 
 Estructuras anidadas
 ~~~~~~~~~~~~~~~~~~~~
