@@ -400,13 +400,15 @@ ciclo se los clasifica en bucles condicionales, interactivos o centinelas.
 Bucles condicionales
 ^^^^^^^^^^^^^^^^^^^^
 
-Veamos un ejemplo donde se le pregunte el valor de temperatura a 5
-personas y sugiera ir caminando si el clima es agradable (mayor a 16°C)
+Veamos un ejemplo donde se pregunte el valor de temperatura a cinco
+personas y sugiera ir caminando si el clima es agradable (mayor a 16 °C)
 o en caso contrario en vehículo. Tomemos una estrategia para resolver el
-problema:
+problema en tres pasos:
 
 1. Leemos una temperatura que se ingresa por teclado
-2. Escribimos en pantalla un mensaje según la temperatura
+2. Escribimos en pantalla un mensaje según la condición planteada:
+    - *Ir caminando* si la temperatura es mayor a 16 °C.
+    - *Ir en vehículo* en caso contrario.
 3. Repetir los dos pasos previos un total de cinco veces
 
 **Pasos 1 y 2**
@@ -421,30 +423,32 @@ problema:
 
 **Paso 3**
 
-Debemos englobar los pasos previos en una estructura que repita 5 veces.
+Debemos incluir los pasos previos en una estructura que repita 5 veces.
 Pensemos lo anterior como un único bloque denominado *Pasos1y2*, y una
-manera de controlar cinco repeticiones. Para ésto, usamos una variable
-con un valor inicial conocido (1) que incrementamos en una unidad luego
+manera de controlar cinco repeticiones. Para esto, usamos una variable
+con un valor inicial conocido que incrementamos en una unidad luego
 de cada ejecución del bloque que denominamos *Pasos1y2*. La estructura
 de nuestro programa podría ser la siguiente:
 
 .. code:: python
 
-    vez = 1
-    while vez <= 5:
-        Pasos1y2
-        vez = vez + 1
+    vez = 1             # valor inicial conocido
+    while vez <= 5:     # condicional para repetir
+        Pasos1y2        # bloque Pasos1y2
+        vez = vez + 1   # incremento
 
-Ahora bien, cuando finaliza la ejecución de la instrucción
-``vez = vez + 1`` la estructura iterativa evalúa nuevamente la expresión
-``vez <= 5`` cuyo resultado puede ser cierto o no (``True`` o
-``False``). Si el resultado es ``True``, entonces el ciclo continuará
+Al finalizar la ejecución de la instrucción ``vez = vez + 1`` 
+la estructura iterativa evalúa nuevamente la expresión
+``vez <= 5`` cuyo resultado puede ser cierto o falso (``True`` o
+``False``). 
+
+Si el resultado es ``True``, entonces el ciclo continuará
 con las acciones contenidas, re-evaluando la expresión en cada
 iteración y finalizando cuando sea ``False``, es decir, cuando la
 variable ``vez`` ya no sea menor o igual que 5.
 
 Ahora que ya hemos desmenuzado el inofensivo código previo, podemos
-pasar a la versión final del pequeño programa.
+pasar a la versión final del programa y ver su comportamiento.
 
 .. code:: python
 
@@ -472,17 +476,17 @@ pasar a la versión final del pequeño programa.
     Vas caminando
 
 
-Este tipo de bucle, donde la cantidad de iteraciones depende de una
-condición es denominado como **bucles o lazos condicionales** y cuenta
+Este tipo de ciclo repetitivo, donde la cantidad de iteraciones depende de una
+condición es denominado **bucles condicionales** y cuenta
 con dos características destacables:
 
--  El valor a ser evaluado en la expresión debe estar definido
+-  El valor a ser evaluado en la expresión debe estar previamente definido
 -  En cada iteración el valor a ser evaluado en la expresión debe
    modificarse
 
-El primer ítem evita obtener un mensaje de error, ya que no es posible
-evaluar una expresión con un valor que aún no ha sido definido, es
-decir, que no tiene asignado algún valor válido.
+Lo referido en el primer ítem evita obtener un mensaje de error, ya que no es posible
+evaluar una expresión con una variable que aún no fue definida, es
+decir, que no tiene asignado valor alguno.
 
 La segunda característica evita tener un **bucle infinito** y por ende
 un programa que nunca finalice. Este tipo de errores es más difícil de
@@ -491,16 +495,16 @@ detectar, ya que a priori el ejemplo parecería correcto.
 Bucles interactivos
 ^^^^^^^^^^^^^^^^^^^
 
-Otro tipo bucle para el que la estructura *while* se adapta fácilmente
-es aquellos donde la repetición depende de un valor que ingresa el
+El ciclo *while* se adapta fácilmente para aquellos casos 
+donde la repetición depende de un valor que ingresa el
 usuario, es decir, para aquellos programas donde la condición de corte o
-repetición sea interactiva. Veamos un ejemplo en el que se calcula el
-promedio a partir del ingreso por parte del usuario de valores numéricos
-enteros.
+de repetición sea interactiva. Veamos un ejemplo en el que se calcula el
+promedio de valores numéricos ingresados por el usuario.
 
-Pensemos una posible estrategia para su solución: el programa le
-solicitará ingresar un nuevo valor numérico mientras que el usuario
-ingrese *si*, a su vez deberá ir sumando estos valores y contándolos.
+Pensemos una posible estrategia para su solución: el programa solicitará 
+un nuevo valor numérico mientras que el usuario responda *si* a una pregunta,
+a su vez sumará y contará los valores numéricos ingresados.
+
 Veamos el pseudocódigo del algoritmo mencionado:
 
 ::
@@ -516,7 +520,7 @@ Veamos el pseudocódigo del algoritmo mencionado:
     Mostrar en pantalla el promedio
 
 Ahora veamos lo directa que es la traducción del algoritmo al lenguaje
-Python:
+Python y su ejecución:
 
 .. code:: python
 
@@ -570,7 +574,7 @@ pseudocódigo, sin detalles, sería similar al siguiente:
         Leer en x el nuevo valor numérico
     Mostrar en pantalla el promedio
 
-Veamos la implementación del amigable programa en Python:
+Veamos la implementación del programa en Python:
 
 .. code:: python
 
@@ -583,22 +587,23 @@ Veamos la implementación del amigable programa en Python:
         x = int(input('Ingrese valor (negativo para salir)'))
     print('El promedio de valores es', suma/cant)
 
-Se debe ser cuidadoso en mantener exactamente el mismo mensaje previo a
-ingresar al ciclo y en la última instrucción para dar al usuario una
+Se debe tener el cuidado de mantener exactamente el mismo mensaje previo a
+ingresar al ciclo y en la última instrucción,  para dar al usuario una
 idea de continuidad viendo una y otra vez el mismo comportamiento.
 
-Para el ejemplo expuesto, la limitación esta dada para aquellos casos
-donde se ingresen valores negativos para ser incluidos en el cálculo del
-promedio. Sin embargo, Python provee herramientas que permiten salvar
-este inconveniente.
+En el ejemplo expuesto, la limitación surge cuando se requiera
+promediar valores negativos. Sin embargo, Python provee herramientas
+que permiten salvar este inconveniente. 
 
-El problema consiste en:
+Veamos la estrategia para una posible solución:
 
 1. Solicitar al usuario ingrese el valor numérico o que presione *enter*
    para salir
-2. Evaluar en la expresión de corte para iterar mientras que el valor
+2. Evaluar en la expresión de corte e iterar mientras el valor
    ingresado no sea vacío
 3. Realizar los cálculos
+
+Traduzcamos esta estrategia a código Python y veamos su comportamiento:
 
 .. code:: python
 
@@ -626,15 +631,15 @@ El problema consiste en:
 El valor leído en *x* no se convierte en un número entero, sino que se
 lo mantiene como *str* hasta el momento de sumarlo a la variable *suma*
 utilizando la función ``eval()``. Cuando el usuario presione *enter* el
-caracter en *x* será vacío y no ingresará al ciclo
-``while``.
+caracter en *x* será vacío y no ingresará al ciclo ``while``.
 
 Sentencia *for*
 ~~~~~~~~~~~~~~~
 
 La sentencia *for* provee otro modo de realizar bucles repetitivos en
-Python. Si bien la elección de un bucle u otro muchas veces dependerá
-del gusto o preferencia del programador, para ciertos casos suele ser
+la mayoría de los lenguajes de programación y por supuesto en Python. 
+Si bien la elección de un bucle u otro muchas veces dependerá
+del gusto del programador, para ciertos casos suele ser
 más cómoda una estructura que otra.
 
 Veamos la sintaxis básica del bucle for:
@@ -653,11 +658,11 @@ contenga la *secuencia*, y en cada iteración la variable *var*
 almacenará uno a uno sus valores.
 
 El significado de secuencia para Python puede variar desde cadenas de
-caracteres a listas de valores de tipos de datos ya vistos, en forma simplificada 
-podemos definir una secuencia como todo tipo o estructura
-de datos formada por elementos por los que se puede iterar.
+caracteres a listas de valores, en forma simplificada 
+podemos definir una secuencia como toda *estructura
+de datos formada por elementos por los que se puede iterar*.
 
-Veamos un ejemplo, donde mostramos los caracteres de una cadena.
+Veamos un ejemplo donde mostramos los caracteres de una cadena.
 
 .. code:: python
 
@@ -680,7 +685,7 @@ Veamos un ejemplo, donde mostramos los caracteres de una cadena.
 
 
 Al analizar el ejemplo vemos que la variable *palabra* que contiene una
-**cadena de caracteres, funciona como una secuencia**, y la variable
+cadena de caracteres, funciona como una secuencia, y la variable
 *letra* en cada iteración toma automáticamente el caracter subsiguiente.
 
 Iteraciones sobre secuencias numéricas
@@ -704,10 +709,12 @@ valores:
 
 
 Cuando utilizamos la función ``range()`` con un único argumento como
-dato, para el ejemplo previo el número 3, nos genera una secuencia de 3
-valores, comenzando desde 0 y avanzando de a un valor, es decir, con
-paso 1. Sin embargo, podemos cambiar este comportamiento indicando el
-valor inicial y final haciendo ``range(inicio,fin)``, por ejemplo, se se
+dato, por ejemplo *tres*, nos genera una secuencia de tres
+valores, comenzando desde cero y avanzando de a un valor por vez, es decir, con
+paso uno. 
+
+Es posible cambiar este comportamiento indicando el
+valor inicial y final haciendo ``range(inicio, fin)``, por ejemplo, se se
 desea iterar por valores numéricos entre 10 y 14:
 
 .. code:: python
@@ -781,7 +788,7 @@ ahora usando ``for``:
             print('Mucho frío, en vehículo')
 
 Como vemos, nos despreocupamos de la inicialización de la variable *vez*
-y de controlar su incremento, ya que esto se realiza automáticamente,
+y de controlar su incremento, ya que esto se realiza automáticamente en el ``for``,
 por lo que para ciclos que conocemos de antemano la cantidad de
 iteraciones suele ser más simple y directo que el ``while``.
 
