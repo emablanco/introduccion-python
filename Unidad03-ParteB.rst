@@ -407,7 +407,15 @@ de un conjunto de elementos de la lista . Veamos unos ejemplos.
     >>> letras[:]
     ['a', 'b', 'c', 'd', 'e', 'f']
 
-Podemos reemplazar varios elementos a la vez:
+Una manera de visualizar más fácilmente una rebanada es pensar que los índices 
+de las listas corresponden al límite de cada elemento, como se observa en el siguiente
+diagrama:
+
+.. figure:: img/u3/lista_slice.png
+   :alt: 
+   :width: 1200 px
+
+Siguiendo ese concepto, podemos reemplazar varios elementos a la vez:
 
 .. code:: python
 
@@ -416,7 +424,7 @@ Podemos reemplazar varios elementos a la vez:
     >>> print(letras)
     ['a', 'x', 'y', 'd', 'e', 'f']
 
-Además, puede eliminar elementos de una lista asignándoles la lista
+Además, se pueden eliminar varios elementos asignándoles la lista
 vacía:
 
 .. code:: python
@@ -426,8 +434,8 @@ vacía:
     >>> letras
     ['a', 'd', 'e', 'f']
 
-También se puede añadir elementos a la lista insertándolos en una porción
-vacía en la posición deseada:
+También es posible añadir elementos insertándolos en una porción
+vacía, en la posición deseada:
 
 .. code:: python
 
@@ -438,13 +446,6 @@ vacía en la posición deseada:
     >>> letras[4:4] = ['e']
     >>> print(letras)
     ['a', 'b', 'c', 'd', 'e', 'f']
-
-Una manera de visualizar más fácilmente una rebanada es pensar los índices 
-de las listas corresponden al límite de cada posición:
-
-.. figure:: img/u3/lista_slice.png
-   :alt: 
-   :width: 300 px
 
 
 Métodos
