@@ -390,9 +390,10 @@ Rebanadas (slices)
 
 Para acceder a los elementos de una lista se puede usar como índice
 cualquier expresión entera, por lo que ``tempC[1+1]`` o
-``matriz[2*0+1][2*2]`` son operaciones perfectamente válidas. Además, se
-pueden extraer conjuntos de elementos de la lista a partir de porciones
-o rebanadas (slices). Veamos unos ejemplos.
+``matriz[2*0+1][2*2]`` son operaciones perfectamente válidas. 
+
+Además, existen expresiones que permiten extraer o modificar rebanadas o recortes  
+de un conjunto de elementos de la lista . Veamos unos ejemplos.
 
 .. code:: python
 
@@ -425,7 +426,7 @@ vacía:
     >>> letras
     ['a', 'd', 'e', 'f']
 
-Y se puede añadir elementos a la lista insertándolos en una porción
+También se puede añadir elementos a la lista insertándolos en una porción
 vacía en la posición deseada:
 
 .. code:: python
@@ -441,6 +442,9 @@ vacía en la posición deseada:
 Una manera de visualizar más fácilmente una rebanada es pensar los índices 
 de las listas corresponden al límite de cada posición:
 
+.. figure:: img/u3/lista_slice.png
+   :alt: 
+   :width: 300 px
 
 
 Métodos
