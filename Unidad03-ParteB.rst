@@ -74,11 +74,11 @@ temperaturas que han superado la media.
 Si utilizamos variables, deberíamos leer los 120 valores para calcular
 el promedio y reingresar nuevamente las temperaturas mensuales para
 corroborar aquellas que superaron la media. Claramente el usuario de
-este programa no estará muy feliz de tener que tipear nuevamente la
+este programa no estará muy feliz de tener que reingresar la
 totalidad de los datos.
 
-Para este tipo de problemas y muchos otros más existe una estructuras
-más compleja y de gran utilidad denominada **lista**.
+Para este tipo de problemas y muchos otros más existen estructuras
+de datos más complejas que las variables y de gran utilidad.
 
 Listas
 ~~~~~~
