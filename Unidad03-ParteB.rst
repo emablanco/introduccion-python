@@ -77,8 +77,12 @@ corroborar aquellas que superaron la media. Claramente el usuario de
 este programa no estará muy feliz de tener que reingresar la
 totalidad de los datos.
 
-Para este tipo de problemas y muchos otros más existen estructuras
-de datos más complejas que las variables y de gran utilidad.
+Para este tipo de problemas y muchos otros existen estructuras
+de datos más complejas que las variables y de gran utilidad. 
+
+En el presente capítulo haremos énfasis en dos de las estructuras 
+comúnmente utilizadas como las *listas*, *diccionarios* y *tuplas* y, veremos
+con mayor detalle las *cadenas de caracteres*, ya presentadas en capítulos previos.
 
 Listas
 ~~~~~~
@@ -237,12 +241,12 @@ manera que podemos acceder a los ítems a partir de su índice:
 
 
 La función ``len()`` retornó la cantidad de elementos de la lista
-*tempC*, ese resultado, almacenado en n, fué utilizado como el valor
+*tempC*, ese resultado, almacenado en ``n``, fue utilizado como el valor
 para la función ``range()`` que generó una secuencia numérica (una
 lista!!!) que va desde 0 hasta ``n-1``.
 
 Veamos otro ejemplo de una lista de cadenas de caracteres. Tenemos
-algunos equipos de fútbol santafesino de primera división y queremos
+algunos equipos de fútbol Santafesino de primera división y queremos
 imprimir el fixture con todas las combinaciones de los partidos de ida,
 es decir, si el equipo A ya jugó con el B, no tendremos en cuenta que el
 equipo B juegue con el A.
@@ -279,7 +283,7 @@ Listas bidimensionales
 
 Una lista unidimensional es aquella donde se utiliza un único índice
 para acceder a sus elementos, en el caso que utilicemos dos índices la
-lista es bidimensional y se la denomina matriz.
+lista es bidimensional y se suele denominar matriz.
 
 Veamos un caso de una lista bidimensional de tres filas y cinco columnas
 (3x5)
@@ -306,7 +310,7 @@ Veamos el modo de definirla:
 
 El acceso a cada dato se realiza utilizando los dos índices, donde el
 primero hace referencia a la fila y el segundo a la columna. Así, si se
-accede al segundo elemento (1) de la tercer fila sería (2):
+accede al segundo elemento (columna 1) de la tercer fila sería (fila 2):
 ``matriz[2][1]``.
 
 El recorrido de una matriz se simplifica utilizando ciclos repetitivos
@@ -392,47 +396,52 @@ o rebanadas (slices). Veamos unos ejemplos.
 
 .. code:: python
 
-    >>> lista = [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
-    >>> lista[1:3]
-    [’b’, ’c’]
-    >>> lista[:4]
-    [’a’, ’b’, ’c’, ’d’]
-    >>> lista[3:]
-    [’d’, ’e’, ’f’]
-    >>> lista[:]
-    [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
+    >>> letras = ['a', 'b', 'c', 'd', 'e', 'f']
+    >>> letras[1:3]
+    ['b', 'c']
+    >>> letras[:4]
+    ['a', 'b', 'c', 'd']
+    >>> letras[3:]
+    ['d', 'e', 'f']
+    >>> letras[:]
+    ['a', 'b', 'c', 'd', 'e', 'f']
 
 Podemos reemplazar varios elementos a la vez:
 
 .. code:: python
 
-    >>> lista = [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
-    >>> lista[1:3] = [’x’, ’y’]
-    >>> print lista
-    [’a’, ’x’, ’y’, ’d’, ’e’, ’f’]
+    >>> letras = ['a', 'b', 'c', 'd', 'e', 'f']
+    >>> letras[1:3] = ['x', 'y']
+    >>> print(letras)
+    ['a', 'x', 'y', 'd', 'e', 'f']
 
 Además, puede eliminar elementos de una lista asignándoles la lista
 vacía:
 
 .. code:: python
 
-    >>> lista = [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
-    >>> lista[1:3] = []
-    >>> lista
-    [’a’, ’d’, ’e’, ’f’]
+    >>> letras = ['a', 'b', 'c', 'd', 'e', 'f']
+    >>> letras[1:3] = []
+    >>> letras
+    ['a', 'd', 'e', 'f']
 
 Y se puede añadir elementos a la lista insertándolos en una porción
 vacía en la posición deseada:
 
 .. code:: python
 
-    >>> lista = [’a’, ’d’, ’f’]
-    >>> lista[1:1] = [’b’, ’c’]
-    >>> print lista
-    [’a’, ’b’, ’c’, ’d’, ’f’]
-    >>> lista[4:4] = [’e’]
-    >>> print lista
-    [’a’, ’b’, ’c’, ’d’, ’e’, ’f’]
+    >>> letras = ['a', 'd', 'f']
+    >>> letras[1:1] = ['b', 'c']
+    >>> print(letras)
+    ['a', 'b', 'c', 'd', 'f']
+    >>> letras[4:4] = ['e']
+    >>> print(letras)
+    ['a', 'b', 'c', 'd', 'e', 'f']
+
+Una manera de visualizar más fácilmente una rebanada es pensar los índices 
+de las listas corresponden al límite de cada posición:
+
+
 
 Métodos
 ^^^^^^^
@@ -701,7 +710,7 @@ utilizados:
 - `values()` Retorna los valores del diccionario.
 
 Los diccionarios pueden ser comparados por su igualdad si y solo si
-tienen los mismos ítems. Otras comparaciones (‘<’, ‘<=’, ‘>=’, ‘>’) no
+tienen los mismos ítems. Otras comparaciones (<, <=, >=, >) no
 son permitidas.
 
 Para profundizar sobre diccionarios se recomienda la lectura del
