@@ -46,17 +46,17 @@ punto desde donde fue llamada.
 En los programas desarrollados anteriormente hicimos uso de la función
 ``len()``, cuyo valor de retorno es un valor numérico entero
 que representa la cantidad de elementos de la secuencia que recibió como entrada. 
-``len()`` es una de las tantas funciones predefinidas por el lenguaje Python en la
-biblioteca estándar. En la presente sección veremos la manera de definir
+``len()`` es una de las tantas funciones predefinidas en la
+biblioteca estándar de Python. En la presente sección veremos la manera de definir
 nuestras propias funciones.
 
 El uso de funciones en el desarrollo de programas tiene un conjunto de
-ventajas, dentro de las que se destacan:
+ventajas dentro de las que se destacan:
 
 -  Subdividir un problema complejo en problemas mas simples: divide y
    vencerás.
 -  Mejoran la legibilidad del código, los programas modulares son más
-   fáciles de mantener y entender.
+   fáciles de entender y mantener.
 -  Posibilitan la reusabilidad del código, llamar funciones desde
    distintos programas.
 
@@ -107,14 +107,23 @@ Analicemos en detalle la secuencia de ejecución:
 -  Desde el programa principal se invoca a la función enviando la
    variable ``a`` como parámetro
 -  La función recibe la entrada haciendo una copia de ``a`` en la
-   variable ``x``
--  La función ejecuta sus acciones y vuelve el control al programa
-   principal
+   variable ``x``. No importa el identificador de la variable en el
+   programa principal, en la función siempre ingresará almacenado
+   en ``x``.
+-  La función ejecuta sus acciones hasta finalizar 
+   y vuelve el control al programa principal
 -  El programa principal continúa la ejecución hasta finalizar
 
-Como vemos, la función no ha retornado valor alguno al programa
-principal, modifiquemos la función de manera que en vez de imprimir en
-pantalla el doble del valor, lo retorne al programa principal.
+.. figure:: img/u4/funciones1.png
+   :alt: 
+   :width: 1100 px
+
+Como vemos, no hubo intercambio de información entre el programa principal
+y la función, sino que el flujo de datos fue unidireccional, 
+se enviaron datos desde el programa principal hacia la función.
+
+Modifiquemos la función de manera que en vez de imprimir en pantalla desde la función, 
+lo retorne al programa principal.
 
 .. code:: python
 
@@ -149,6 +158,10 @@ como ``x`` dentro de la función. Destaquemos las diferencias:
 -  El nombre de la función contiene el resultado y es asignado a la
    variable ``doble``
 -  Finaliza el programa
+
+.. figure:: img/u4/funciones2.png
+   :alt: 
+   :width: 1100 px
 
 Si bien parece trivial, es importante que el nombre de la función sea
 acorde a las acciones que realiza e identifique su comportamiento, por
