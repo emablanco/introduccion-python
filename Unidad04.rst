@@ -196,30 +196,33 @@ los valores.
 
 
 El lector atento habrá notado que en todas las funciones debajo de su
-definición existe un texto encerrado entre comillas triples (como por
-ejemplo ``"""Retorna el doble de x"""``). Esto es un comentario que se
-utiliza para documentar brevemente lo
+definición existe un texto encerrado entre triples comillas -simples o dobles- 
+(como por ejemplo ``"""Retorna el doble de x"""``). 
+
+Este texto funciona como un comentario que se utiliza para documentar brevemente lo
 que realiza dicha función. Su uso es opcional, pero es muy recomendable,
 dado que puede ser de mucha utilidad para describir el modo de funcionamiento de la función.
 
 Variables globales y locales
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Hemos visto que las funciones reciben un conjunto de valores a través de
-sus parámetros, sin embargo no fueron modificados dentro de la función.
-La pregunta que surge es: ¿Podemos cambiarlos? ¿Qué sucede si los
-modificamos?
+Hemos visto que las funciones son capaces de recibir uno o varios valores a través de
+sus parámetros como así también retornar al programa principal información almacenada
+en su nombre.
 
-Veamos un ejemplo y su comportamiento:
+En cualquiera de estos casos, los valores recibidos no fueron modificados dentro de la función.
+La pregunta que surge es: ¿Podemos cambiarlos? ¿Qué sucede si los modificamos?
+
+Veamos un ejemplo y analicemos su comportamiento:
 
 .. code:: python
 
-    def trata_de_cambiar(nombre):
+    def no_cambiemos(nombre):
         nombre = 'Luis Alberto Spinetta'
     
-    n = 'Norberto Napolitano'
-    trata_de_cambiar(n)
-    print(n)
+    nom = 'Norberto Napolitano'
+    no_cambiemos(nom)
+    print(nom)
 
 
 .. parsed-literal::
@@ -227,34 +230,38 @@ Veamos un ejemplo y su comportamiento:
     Norberto Napolitano
 
 
-Observamos que la variable no fue modificada o al menos no se ve
-reflejado desde el programa principal. Esto sucede debido a que la
-variable ``n`` es copiada en la variable ``nombre`` y todo cambio que se
-realice en el interior de ``trata_de_cambiar`` será local, es decir, su
+La variable ``nom`` ingresa a la función como ``nombre`` y si bien
+se realiza una asignación dentro de la función, vemos que no fue alterado 
+su contenido o al menos no se ve reflejado desde el programa principal. 
+
+Esto sucede debido a que el contenido de la variable ``nom`` es copiada 
+en la variable ``nombre`` y todo cambio que se realice en el interior de
+la función ``no_cambiemos`` será local, es decir, su
 ámbito de validez se limita a la función, de manera tal que tanto
 ``Spinetta`` como ``Napolitano`` son irreemplazables.
 
-No obstante, existen estructuras de datos que al ser modificadas dentro
-la función su cambio se verá reflejado en el programa principal. La
-única condición para que sea posible este comportamiento es que la
-estructura a ser modificada como argumentos sea *mutable*, tal es el
+Contrariamente al ejemplo previo, existen estructuras de datos que al ser 
+modificadas dentro la función reflejan también lo hacen en el programa principal. 
+
+La única condición para que sea posible este comportamiento es que la
+estructura a ser modificada sea *mutable*, tal es el
 caso de los diccionarios y listas.
 
 Veamos un caso donde definimos una función que recibe dos argumentos,
-una cadena de caracteres y una lista, de tipo *inmutable* y *mutable*
+una lista y una cadena de caracteres, de tipo *mutable* e *inmutable* 
 respectivamente.
 
 .. code:: python
 
-    def todo_cambia(musico, listam):
+    def modifica(musico, listam):
         listam.append(musico)
     
     artistas = []
     
-    todo_cambia('Luis Alberto Spinetta', artistas)
-    todo_cambia('Chango Spasiuk',artistas)
-    todo_cambia('Norberto Napolitano',artistas)
-    todo_cambia('Charly García',artistas)
+    modifica('Luis Alberto Spinetta', artistas)
+    modifica('Chango Spasiuk',artistas)
+    modifica('Norberto Napolitano',artistas)
+    modifica('Charly García',artistas)
     
     print(artistas)
 
@@ -270,10 +277,9 @@ contiene el nombre de un artista y el segundo argumento, ``listam``, es
 una lista donde se agrega el músico.
 
 Es importante notar que el ejemplo es equivalente al anterior, la
-diferencia radica únicamente en que el argumento que es modificado en la
+diferencia radica en que el argumento que es modificado en la
 función es la misma lista del programa principal, no una copia,
-independientemente que en el programa principal utilice un identificador
-diferente al de la función.
+independientemente que se utilice un identificador diferente.
 
 Ahora bien, existen casos donde es necesario modificar una variable del
 programa principal desde una función sin que sea recibida a través de
