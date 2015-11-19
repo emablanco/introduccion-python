@@ -273,10 +273,10 @@ respectivamente.
 
 
 El primer argumento, ``musico``, es una cadena de caracteres que
-contiene el nombre de un artista y el segundo argumento, ``listam``, es
-una lista donde se agrega el músico.
+contiene el nombre de un artista y, ``listam`` es una lista donde 
+se agrega el músico.
 
-Es importante notar que el ejemplo es equivalente al anterior, la
+El ejemplo es equivalente al anterior, la
 diferencia radica en que el argumento que es modificado en la
 función es la misma lista del programa principal, no una copia,
 independientemente que se utilice un identificador diferente.
@@ -292,16 +292,16 @@ cuando el número que recibe por argumentos es par:
 
 .. code:: python
 
-    def contar(num):
+    def contar_pares(num):
         global pares
         if num % 2 == 0:
             pares = pares + 1
     
     pares = 0
     
-    contar(2)
-    contar(5)
-    contar(8)
+    contar_pares(2)
+    contar_pares(5)
+    contar_pares(8)
     
     print(pares)
 
@@ -314,7 +314,7 @@ cuando el número que recibe por argumentos es par:
 Algunos detalles a destacar sobre variables globales:
 
 -  Se debe anteponer a la variable la palabra reservada ``global``
--  Toda modificación repercutirá en el programa principal
+-  Toda modificación repercutirá en el estado de la variable del programa principal
 
 El uso de variables globales es una práctica que generalmente debe ser
 evitada. En la mayoría de los casos es preferible utilizar un parámetro
@@ -324,10 +324,10 @@ Agrupando el código en módulos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Hemos visto como organizar mejor el código a través de funciones, sin
-embargo, una de las ventajas de utilizar funciones propias es evitar la
+embargo, una de las ventajas de utilizar funciones propias es evitar su
 reescritura. Carece de sentido tener que reprogramar una misma función
-por cada programa y, por otro lado, con el paso del tiempo es muy
-probable que no todas las versiones sean idénticas y por ende, su
+por cada programa sumado a que con el paso del tiempo es muy
+probable que no todas las versiones sean idénticas y por ende su
 comportamiento puede diferir.
 
 Para solucionar este tipo de problemas y sacar provecho del uso de
@@ -336,12 +336,12 @@ funciones que realicen algún tipo de tarea afín.
 
 Por ejemplo, una serie de funciones para cálculo matemático sería útil
 que estén contenidas en un mismo módulo, otras funciones para
-procesamiento de sonido en un módulo destinado a tal fin, o bien, una
-serie de funciones destinadas a almacenar todas las funciones relativas
+procesamiento de sonido en un módulo destinado a tal fin, o bien
+un módulo destinado a almacenar todas las funciones relativas
 a un determinado proyecto.
 
 Para comprender la implementación veamos un módulo trivial, que contenga
-saludos en diferentes idiomas. Almacenamos en el archivo ``saludo.py``
+saludos en diferentes idiomas/. Almacenamos en el archivo ``saludo.py``
 las siguientes funciones:
 
 .. code:: python
@@ -375,17 +375,17 @@ hacemos lo siguiente:
 
     import saludo
 
-    n = input('Ingrese su nombre: ')
-    saludo.italiano(n)
-    saludo.guarani(n)
+    nom = input('Ingrese su nombre: ')
+    saludo.italiano(nom)
+    saludo.guarani(nom)
 
 Como observamos, el módulo es importado a través del nombre del archivo
 (sin la extensión *.py*) y luego, se invocan las funciones utilizando el
 nombre del módulo y la función separado por un punto (.).
 
-De esta manera, tenemos acceso a la totalidad de las funciones definidas
-bajo el módulo, pero, para el caso que únicamente se utilice una función
-específica, es posible especificarlo en la cláusula import del siguiente
+De esta manera, tenemos acceso a las funciones definidas
+bajo el módulo, para el caso que únicamente se utilice una función
+específica, es posible especificarlo en la cláusula ``import`` del siguiente
 modo:
 
 .. code:: python
@@ -398,18 +398,15 @@ modo:
 
 De esta manera, es posible invocar solamente las funciones importadas.
 
-La biblioteca estándar
-----------------------
-
-Se recomienda la lectura del capítulo *Pequeño paseo por la Biblioteca
-Estándar. Parte I* (pag. 72) del Tutorial de Python.
+Para profundizar sobre el uso de módulos se recomienda la lectura 
+del capítulo *Módulos* (pag. 36) del Tutorial de Python.
 
 Archivos
 --------
 
 Hasta aquí hemos trabajado con información almacenada en estructuras de
 datos, ya sea a partir de la lectura interactiva (utilizando la función
-``input``) o cargada estáticamente en el mismo código del programa y, la
+``input``) o cargada estáticamente en el mismo código del programa y la
 salida ha sido siempre a través de la impresión en pantalla (utilizando
 la función ``print``).
 
@@ -444,7 +441,7 @@ Lectura
 Vamos a realizar la lectura de este archivo e imprimir por pantalla su
 contenido. Dos de los métodos más comunes son:
 
--  readline(): lee de a una línea por vez
+-  readline(): lee de a una línea por vez cada vez que es invocada
 -  readlines(): lee todo el contenido del archivo y lo retorna en una
    lista
 
@@ -482,15 +479,15 @@ realizar combinando lo anterior con un ciclo repetitivo ``while``:
 .. code:: python
 
     # Apertura del archivo en modo lectura
-    f = open('ejemplos/u4/archi01.txt', 'r')
+    archivo = open('ejemplos/u4/archi01.txt', 'r')
     
     # Lee la primer línea
-    r = f.readline()
-    while r:
-        print(r)
+    linea = archivo.readline()
+    while linea:
+        print(linea)
         # lee la sgte
-        r = f.readline()
-    f.close()
+        linea = archivo.readline()
+    archivo.close()
 
 
 .. parsed-literal::
@@ -503,38 +500,21 @@ realizar combinando lo anterior con un ciclo repetitivo ``while``:
     
 
 
-En este caso, la función ``readline`` retornara ``False`` cuando se
-llegue al final del archivo, y por lo tanto se saldrá del ciclo
-``while``. Otro método más directo y elegante -en general preferido-
+En este caso, la función ``readline`` retorna ``False`` cuando se
+llega al final del archivo, y por lo tanto terminará el ciclo ``while``. 
+Otro método más directo y elegante -en general preferido-
 para realizar un comportamiento equivalente (agregado desde la versión
 de Python 2.2) es iterar sobre los mismos archivos, esto es:
 
 .. code:: python
 
     # Apertura en modo lectura (por defecto)
-    f = open('ejemplos/u4/archi01.txt')
+    archivo = open('ejemplos/u4/archi01.txt')
     
-    for r in f:
-        print(r)
-    f.close()
+    for linea in archivo:
+        print(linea)
 
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    IOError                                   Traceback (most recent call last)
-
-    <ipython-input-2-048e5e9434f7> in <module>()
-          1 # Apertura en modo lectura (por defecto)
-    ----> 2 f = open('ejemplos/u4/archi01.txt')
-          3 
-          4 for r in f:
-          5     print(r)
-
-
-    IOError: [Errno 2] No such file or directory: 'ejemplos/u4/archi01.txt'
+    archivo.close()
 
 
 El método ``readlines()`` lee el contenido completo del archivo
@@ -547,18 +527,18 @@ excesivamente grandes. Veamos un ejemplo:
 .. code:: python
 
     # Apertura del archivo en modo lectura
-    f = open('ejemplos/u4/archi01.txt', 'r')
+    archivo = open('ejemplos/u4/archi01.txt', 'r')
     
     # Lee todo el achivo
-    todo = f.readlines()
+    lineas = archivo.readlines()
     
     # 1er linea
-    print(todo[0])
+    print(lineas[0])
     
     # lista con todo el contenido
-    print(todo)
+    print(lineas)
     
-    f.close()
+    archivo.close()
 
 
 .. parsed-literal::
@@ -570,29 +550,30 @@ excesivamente grandes. Veamos un ejemplo:
 
 Ahora bien, podemos procesar los datos que son leídos del archivo.
 Hagamos el cálculo de un promedio con los valores numéricos de cada mes,
-para esto debemos extraer de la cadena de caracteres solamente aquellos
+para esto debemos extraer del renglón solamente aquellos
 valores que siguen a la cadena de caracteres correspondiente al mes.
 Para esto haremos uso de la función ``split()``:
 
 .. code:: python
 
     # Apertura del archivo en modo lectura
-    f = open('ejemplos/u4/archi01.txt', 'r')
+    archivo = open('ejemplos/u4/archi01.txt', 'r')
     
     # Lee todo el achivo
-    todo = f.readlines()
+    lineas = archivo.readlines()
     
     # para promedio
-    acum = 0
-    cont = 0
+    suma = 0
+    cant = 0
     
-    for r in todo:
-        mes, val = r.split()    # separo por espacio
-        acum = acum + int(val)  # sumo convirtiendo a entero
-        cont = cont + 1         # cuento los valores
+    # itera sobre lista lineas
+    for linea in lineas:
+        mes, val = linea.split()    # separo por espacio
+        suma = suma + int(val)      # sumo convirtiendo a entero
+        cant = cant + 1             # cuento los valores
         
-    f.close()
-    promedio = acum/cont
+    archivo.close()
+    promedio = suma/cant
     print('Promedio: ', promedio)
 
 
@@ -616,17 +597,19 @@ Veamos un ejemplo de ``write``:
 .. code:: python
 
     # Crea archivo en modo escritura
-    f = open('ejemplos/u4/archi02.txt', 'w')
+    archivo = open('ejemplos/u4/archi02.txt', 'w')
     
-    # Lee todo el achivo
-    r1 = 'nace una flor\n'
-    f.write(r1)
-    r1 = 'todos los dias\n'
-    f.write(r1)
-    r1 = 'sale el sol\n'
-    f.write(r1)
+    # Contenido a almacenar en archivo
+    linea1 = 'nace una flor\n'
+    linea2 = 'todos los dias\n'
+    linea3 = 'sale el sol\n'
+
+    # Escritura en archivo de cada linea
+    archivo.write(linea1)    
+    archivo.write(linea2)
+    archivo.write(linea3)
     
-    f.close()
+    archivo.close()
 
 El programa creó el archivo y luego escribió los tres renglones. Se debe
 notar que al final de cada cadena se utilizó el caracter especial ``\n``
@@ -638,13 +621,13 @@ Ahora veremos un ejemplo haciendo uso del método ``writelines()``:
 .. code:: python
 
     # Crea archivo en modo escritura
-    f = open('ejemplos/u4/archi03.txt', 'w')
+    archivo = open('ejemplos/u4/archi03.txt', 'w')
     
-    # Lee todo el achivo
+    # lista con los elementos a escribir
     L = ['nace una flor\n', 'todos los dias\n', 'sale el sol\n']
-    f.writelines(L)
+    archivo.writelines(L)
     
-    f.close()
+    archivo.close()
 
 Como se observa, al igual que en el método anterior se debe agregar el
 caracter especial de retorno de línea al finalizar cada cadena. Se debe
@@ -655,18 +638,18 @@ atención para evitar la pérdida de datos involuntaria.
 En aquellos casos donde sea necesario agregar contenido a un archivo ya
 existente entonces se debe utilizar el modo de apertura ``a``
 (proveniente de Append). Veamos un ejemplo en el que se agregan unas
-líneas de datos al archivo ``archi01.txt``.
+líneas de datos al archivo ya utilizado ``archi01.txt``.
 
 .. code:: python
 
     # Abre archivo en modo append
-    f = open('ejemplos/u4/archi01.txt', 'a')
+    archivo = open('ejemplos/u4/archi01.txt', 'a')
     
-    # Lee todo el achivo
+    # lista con los elementos a escribir
     L = ['abril 33\n', 'mayo 21\n', 'junio 88\n']
-    f.writelines(L)
+    archivo.writelines(L)
     
-    f.close()
+    archivo.close()
 
 Finalmente el archivo quedará con el siguiente contenido:
 
@@ -679,7 +662,11 @@ Finalmente el archivo quedará con el siguiente contenido:
     mayo 21
     junio 88
 
-Es muy importante recordar que siempre debemos cerrar el archivo una vez
+Es importante recordar que debemos cerrar el archivo una vez
 que hemos trabajado con el mismo (función ``close()``),
 independientemente de si lo hemos utilizado para lectura o para
 escritura.
+
+Algunos de los temas expresados en la presente sección son explicados con mayor detalle
+en el capítulo *Leyendo y escribiendo archivos* (pag. 49) del Tutorial de Python.
+
