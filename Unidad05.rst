@@ -214,18 +214,12 @@ Luego, al imprimir directamente el objeto en pantalla obtendremos lo siguiente:
     Club: River
     Posición: Delantero
 
-Esto incluso es equivalente a hacer
+Esto es equivalente a invocar directamente el método especial del siguiente modo:
 
 .. code:: python
-
+    
     pipa.__str__()
 
-::
-
-    Lucas Alario
-    ============
-    Club: River
-    Posición: Delantero
 
 Comparación
 ~~~~~~~~~~~
@@ -244,18 +238,20 @@ se debe definir son:
 
 Para dos objetos x, y:
 
--  ``x<y`` llama a ``x.__lt__(y)``,
--  ``x<=y`` llama a ``x.__le__(y)``,
--  ``x==y`` llama a ``x.__eq__(y)``,
--  ``x!=y`` llama a ``x.__ne__(y)``,
--  ``x>y`` llama a ``x.__gt__(y)``,
--  ``x>=y`` llama a ``x.__ge__(y)``.
+-  ``x < y`` llama a ``x.__lt__(y)``,
+-  ``x <= y`` llama a ``x.__le__(y)``,
+-  ``x == y`` llama a ``x.__eq__(y)``,
+-  ``x != y`` llama a ``x.__ne__(y)``,
+-  ``x > y`` llama a ``x.__gt__(y)``,
+-  ``x >= y`` llama a ``x.__ge__(y)``.
 
 Para el ejemplo que estamos desarrollando, solamente programaremos el
 método ``__lt__``, ya que al no ser un jugador menor que otro, nos
-retorna el complemento. En la comparación rearmaremos la fecha en el
-formato aaaammmdd ya que al convertirla a un entero podremos comprarla
-como un simple número, donde uno mas grande significa que el jugador es
+retorna el complemento. 
+
+En la comparación formatearemos la fecha en el formato *aaaammmdd*
+ya que al convertirla a un entero podremos comprarla como un simple número, 
+donde uno mas grande significa que el jugador es
 mas joven y, mas adulto, en caso contrario.
 
 La implementación sería:
@@ -277,7 +273,8 @@ Luego, lo usamos:
 .. code:: python
 
     d10s = Jugador('El Diego', '30-10-1960', 'Enganche')
-    print(pipa>d10s)
+
+    print(pipa > d10s)
 
 Algebraicos
 ~~~~~~~~~~~
@@ -286,12 +283,12 @@ Existen métodos especiales para todos los operadores matemáticos, de
 modo que al operar dos objetos, por ejemplo sumarlos, se invoca al
 método específico y se realiza la operación. Esto es también denominado
 sobrecarga de operadores, ya que se le asigna una función específica a
-un operador para un determinado objeto.
+un operador cuando es utilizado con objetos como operandos.
 
-Para el ejemplo visto usaremos el monto del pase, así que agreguemos el
-atributo *valor* a la clase e incorporemos el método especial
+Para el ejemplo visto usaremos el monto del pase, así que se debe
+agregar el atributo *valor* a la clase e incorporar el método especial
 ``__add__`` de modo que al sumar objetos de tipo ``Jugador()`` se sumen
-estos campos.
+estos campos. 
 
 .. code:: python
 
@@ -301,14 +298,18 @@ estos campos.
 Si ahora sumamos dos jugadores, obtendremos la suma de sus valores.
 
 .. code:: python
+    
+    # otro jugador
+    higuain = Jugador('Gonzalo Higuaín', '10-12-1987', 'Desconocido')
 
     # asignamos valor a cada jugador
     pipa.valor = 1130000
     d10s.valor = 9000000
+    higuain.valor = 1.20
 
-    # sumamos dos jugadores
-    monto = pipa + d10s
-    print(monto)
+    # sumamos los jugadores
+    valor_equipo = pipa + d10s + higuain
+    print(valor_equipo)
 
 Del mismo modo se implementan los métodos especiales para los siguientes
 operadores binarios
@@ -344,13 +345,14 @@ derivada con sus particularidades.
 
 Por ejemplo, a partir de una clase ``Jugador`` podemos construir la
 clase ``Capitan`` que extiende a ``Jugador`` y agrega como atributo una
-lista de fechas de partidos que tuvo ese rol. Se puede ver como un caso
-particular de la clase jugador, dado que tendrá los mismos atributos y
-métodos que un objeto de la clase ``Jugador``, y a su vez tendrá
-algunos atributos y/o métodos extras.
+lista de fechas de partidos que tuvo ese rol. 
 
-Para indicar el nombre de la clase base, se la pone entre paréntesis a
-continuación del nombre de la clase. Veamos el modo de implementarla:
+Se puede ver como un caso particular de la clase jugador, 
+dado que tendrá los mismos atributos y métodos que un objeto de la clase 
+``Jugador``, y a su vez tendrá algunos atributos y/o métodos extras.
+
+El nombre de la clase base va entre los paréntesis de la definición de la nueva clase. 
+Veamos el modo de implementarla:
 
 .. code:: python
 
@@ -368,12 +370,12 @@ continuación del nombre de la clase. Veamos el modo de implementarla:
             self.capitan.append(fecha)
 
 En la implementación del método constructor (``__init__``) de
-``Capitan`` se invoca al contructor de ``Jugador``, luego, se agrega el
+``Capitan`` se invoca al constructor de ``Jugador``, luego, se agrega el
 atributo ``capitan`` y un método nuevo, ``setCapitania``, que solamente
 existe en esta clase.
 
 El hecho de heredar todas las características de la clase base hace que
-su uso sea practicamente el mismo:
+su uso sea prácticamente el mismo:
 
 .. code:: python
 
@@ -382,10 +384,10 @@ su uso sea practicamente el mismo:
     pulga.setCapitania('26-07-2008')
     print(pulga)
 
-Ahora bien, sería bueno diferenciar el método de impresión, ya que al
-imprimir en pantalla un jugador que es de tipo Capitan, muestre la
-última fecha de su capitanía. Modificar un método heredado es lo que se
-denomina **Polimorfismo**. Veamos la diferencia:
+Diferenciemos ahora el método de impresión, de modo que al
+imprimir en pantalla un jugador de tipo ``Capitan``, muestre la
+última fecha de su capitanía. Para esto se debe modificar un método 
+heredado, esta cualidad se denomina **Polimorfismo**. Veamos su implementación:
 
 .. code:: python
 
