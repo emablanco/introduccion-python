@@ -29,10 +29,43 @@ Este documento fue generado el |date| |time|
 
    PageBreak oneColumn
 
+**LICENCIA CC BY-SA 4.0**
+
+.. figure:: img/LICENCIA-CC.png
+   :alt: 
+   :width: 300 px
+
+Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
+
+A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__ :
+
+**Usted es libre para:**
+
+- Compartir — copiar y redistribuir el material en cualquier medio o formato
+- Adaptar — remezclar, transformar y crear a partir del material    
+
+Para cualquier propósito, incluso comercialmente
+
+El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia
+
+**Bajo los siguientes términos:**
+
+- Atribución — Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
+
+- Compartir Igual — Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
+
+\* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
+
+\** En 4.0, debe indicar si ha modificado el material y mantener una indicación de las modificaciones anteriores
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
 Unidad 5: Introducción a la Programación Orientada a Objetos
 ============================================================
 
-Python es un lenguaje de Programación Orientado a Objetos, lo que
+Python es un lenguaje de Programación Orientado a Objetos (POO), lo que
 significa que puede manipular construcciones llamadas objetos. Se puede
 pensar en un objeto como una única estructura que contiene tanto datos
 como funciones, solo que las funciones en este contexto son llamadas
@@ -44,17 +77,18 @@ parte es simplemente darle un nuevo nombre a cosas que ya estuvimos
 usando.
 
 Si bien Python nos provee un gran número de tipos ya definidos (int,
-float, str, dict, list, etc.), en muchas situaciones utilizar solamente
-estos tipos resultará insuficiente. En estas situaciones queremos poder
-crear nuestros propios tipos, que almacenen la información relevante
-para el problema a resolver y contengan las funciones para operar con
-esa información.
+float, str, dict, list, etc.), en muchas situaciones resultarán insuficientes, 
+por lo que será necesario crear nuestros propios tipos, 
+que almacenen la información relevante para el problema a resolver
+y contengan las funciones para operar con esa información.
 
 Supongamos un programa que gestiona jugadores de fútbol de un club,
 independientemente de los detalles de implementación, contar con un tipo
 de dato *jugador* que permita cargar los datos personales y
 profesionales nos brinda la posibilidad de tener un código mas legible y
-organizado. Por ejemplo, para cargar los datos de un nuevo jugador el
+organizado. 
+
+Por ejemplo, para cargar los datos de un nuevo jugador el
 código podría ser del siguiente modo:
 
 .. code:: python
@@ -64,13 +98,14 @@ código podría ser del siguiente modo:
     pipa.AgregarClub('River')
     print("Club Actual: ", pipa.ClubActual())
 
-Del ejemplo previo destacamos:
+Del fragmento de código previo podemos destacar:
 
 -  ``pipa = Jugador(...)`` crea una nueva instancia de la clase
-   ``Jugador`` y asigna este objeto a la variable local ``pipa``, una
-   estructura que contiene un conjunto de datos (nombre, fecha de
-   nacimiento y posición) denominados atributos (o propiedades) y
-   métodos (funciones asociadas al objeto)
+   ``Jugador`` y le asigna este objeto al identificador ``pipa``. 
+
+-   La nueva estructura contiene un conjunto de datos denominados atributos
+    o propiedades (nombre, fecha de nacimiento y posición) y un conjunto de funciones
+    asociadas al objeto denominados métodos (``AgregarClub()``, ``ClubActual()``)
 
 Atributos y métodos
 -------------------
@@ -102,7 +137,7 @@ y métodos.
     pipa.setNuevoClub('River')
     print("Club Actual: ", pipa.getClubActual())
     
-    d10s = Jugador('El Diego', '30-10-1960', 'Enganche')
+    d10s = Jugador('EL Diego', '30-10-1960', 'Enganche')
 
 
 .. parsed-literal::
@@ -114,29 +149,32 @@ La clase anterior define la estructura de aquellos objetos que sean de
 tipo ``Jugador()``. De los tres métodos que se observan, hay uno que
 merece especial atención:
 
--  ``__init__``: este método se denomina constructor, ya que está
-   directamente asociado a la declaración e inicialización de un objeto.
-   Esto es, en la el fragmento de código
-   ``pipa = Jugador('Lucas Alario', '8-10-1992', 'Delantero')`` se lo
-   invoca automáticamente. Los argumentos se corresponden con
-   ``nombre``, ``fechaNac`` y ``posicion`` respectivamente. El primer
-   argumento, ``self``, hace referencia al mismo objeto y es utilizado
-   para definir sus atributos dentro del constructor.
+-   ``__init__``: este método se denomina constructor, ya que está
+    directamente asociado a la declaración e inicialización de un objeto.
+    Esto es, en la el fragmento de código
+    ``pipa = Jugador('Lucas Alario', '8-10-1992', 'Delantero')`` se lo
+    invoca implícitamente (automáticamente). 
 
-Los métodos restantes no son más que funciones pertenecientes al objeto:
+    Los argumentos se corresponden con ``nombre``, ``fechaNac`` y ``posicion``. 
+    El primer argumento, ``self``, hace referencia al mismo objeto y es utilizado
+    para definir sus atributos dentro del constructor.
+
+Los métodos restantes son funciones asociadas al objeto, :
 
 -  ``setNuevoClub()``: agrega un club donde jugó
 -  ``getClubActual()``: retorna el último club
 
 Los datos relativos al club se cargan en una lista almacenada en el
 atributo ``clubes``. El uso de métodos para modificar atributos es
-denominado **encapsulamiento**. Es común encontrar métodos cuyos nombres
-empiecen con "set", en aquellos casos donde los mismos realizan
-modificaciones sobre los datos, y métodos cuyos nombres empiezan con
-"get", los cuales son utilizados para retornan datos. Esto es opcional,
-dado que podemos ponerle el nombre que se nos ocurra, pero es una buena
-costumbre llamarlos de este modo, al igual que el hecho de respetar el
-encapsulamiento (esto es, siempre modificar y obtener los datos,
+denominado **encapsulamiento**. 
+
+Es común encontrar métodos cuyos nombres empiecen con la palabra *set*, 
+en aquellos casos donde se realizan modificaciones sobre los atributos
+del objeto, y métodos cuyos nombres comienzan con la palabra *get* para retornan 
+propiedades de los objetos.
+
+Si bien es una convención opcional es recomendable llamarlos de este modo, 
+al igual que respetar el encapsulamiento (esto es, modificar y obtener los datos, 
 mediante el uso de un método propio del objeto).
 
 Métodos especiales
@@ -163,7 +201,7 @@ con el objeto como argumento. Veamos la implementación:
             salida += 'Posición: ' + self.posicion + '\n'
             return salida
 
-Luego, al imprimirlo en pantalla obtendremos:
+Luego, al imprimir directamente el objeto en pantalla obtendremos lo siguiente:
 
 .. code:: python
 
