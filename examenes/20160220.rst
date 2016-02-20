@@ -1,0 +1,40 @@
+Examen Final - Introducción al Desarrollo de Software - 20/02/2016
+
+Ejercicio 1. Realice un programa que permita ingresar por teclado las calificaciones y nombres
+de un curso hasta que se ingrese un valor negativo. Muestre un mensaje en pantalla que
+indique el promedio del curso y el alumno con la mejor calificación.
+
+Ejercicio 2. Almacene en una *lista* el nombre y apellido de N personas que
+son ingresados por teclado. Inicialmente se solicita la cantidad de personas
+a ser ingresadas y posteriormente los nombres y apellidos separados
+con coma (por ej: Marcos Daniel, Bertolino Iruretagoyena).
+
+Luego, el programa debe mostrar por pantalla de lo siguiente:
+ a- La lista original
+ b- Ordenada alfabeticamente
+ c- En sentido inverso
+ d- El apellido en mayúsculas
+
+Para la impresión de a, b y c debe implementar una función llamada *imprimir* que reciba la lista
+y la muestre en pantalla de a una persona por renglón.
+
+Ejercicio 3. Un archivo de texto temp.txt contiene información sobre temperaturas
+expresadas en grados centigrados o fareheit, indicado la unidad en un segundo campo
+con la letra C o F respectivamente. Realice un programa que genere dos nuevos archivos 
+llamados tempC.txt y tempF.txt donde se almacene la temperatura en la unidad correspondiente.
+Por ejemplo:
+
+
+temp.txt    tempC.txt     tempC.txt
+========    =========     =========
+ 40.3 C      40.3 C        104.54 F
+ 50 F        10 C          50 F
+ 43 F        6.11 C        43 F
+ 20 C        20 C          68 F
+
+Las ecuaciones de conversión son F = (9/5)*C + 32; C = (F - 32)*(5/9)
+
+
+ 
+
+
