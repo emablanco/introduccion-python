@@ -11,7 +11,7 @@ con coma (por ej: Marcos Daniel, Bertolino Iruretagoyena).
 
 Luego, el programa debe mostrar por pantalla de lo siguiente:
  a- La lista original
- b- Ordenada alfabeticamente
+ b- Ordenada alfabéticamente
  c- En sentido inverso
  d- El apellido en mayúsculas
 
@@ -19,7 +19,7 @@ Para la impresión de a, b y c debe implementar una función llamada *imprimir* 
 y la muestre en pantalla de a una persona por renglón.
 
 Ejercicio 3. Un archivo de texto temp.txt contiene información sobre temperaturas
-expresadas en grados centigrados o fareheit, indicado la unidad en un segundo campo
+expresadas en grados centígrados o fahreheit, indicado la unidad en un segundo campo
 con la letra C o F respectivamente. Realice un programa que genere dos nuevos archivos 
 llamados tempC.txt y tempF.txt donde se almacene la temperatura en la unidad correspondiente.
 Por ejemplo:

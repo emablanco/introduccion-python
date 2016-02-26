@@ -23,7 +23,7 @@ forig = open("temp.txt")
 tempC = open("tempC.txt", 'w')
 tempF = open("tempF.txt", 'w')
 
-for i in forig.readlines():
+for i in forig:
     val, uni = i.split(" ")
     if "C" in uni:
         C = float(val)
