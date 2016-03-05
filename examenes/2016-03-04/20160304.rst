@@ -1,0 +1,41 @@
+Examen 05-03-2016 - Introducción al desarrollo de software - Tecnicatura en SL - FICH/UNL
+ 
+Ejercicio 1: Un hospital estudia la inflamación de los pacientes que han sido sometidos a un nuevo tratamieto para la artritis y necesitan analizar los resultados obtenidos. Los datos son almacenados en un archivo donde cada renglón contiene información de un único paciente, las columnas representan los días sucesivos y los valores numéricos representan el nivel de inflamación. Una muestra de las primeras filas del archivo se observan a continuación:
+
+0,0,1,3,1,2,4,7,8,3,3,3,10,5,7,4,7,7,12,18,6,13,11,11,7,7,4,6,8,8,4,4,5,7,3,4,2,3,0,0
+0,1,2,1,2,1,3,2,2,6,10,11,5,9,4,4,7,16,8,6,18,4,12,5,12,7,11,5,11,3,3,5,4,4,5,5,1,1,0,1
+0,1,1,3,3,2,6,2,5,9,5,7,4,5,4,15,5,11,9,10,19,14,12,17,7,12,11,7,4,2,10,5,4,2,2,3,2,2,1,1
+0,0,2,0,4,2,2,1,6,7,10,7,9,13,8,8,15,10,10,7,17,4,4,7,6,15,6,4,9,11,3,5,6,3,3,4,2,3,2,1
+0,1,1,3,3,1,3,5,2,4,4,7,6,5,3,10,8,10,6,17,9,14,9,7,13,9,12,6,7,7,9,6,3,2,2,4,2,0,1,1
+
+Se solicita que realice un programa que lea el contenido del archivo tratamiento.txt y muestre por pantalla la inflamación promedio y máxima de cada paciente.
+
+Ejercicio 2: Realice un programa que permita ingresar los datos de alumnos de una facultad. Por cada alumno se ingresa: nombre, apellido, genero, edad, carrera. El ingreso de dato finaliza cuando se ingresa la edad -1. Se solicita que informe: a) La cantidad mujeres se inscribieron en la carrera de informática y su promedio de edad. b) La cantidad de hombres de entre 17 y 20 años de edad inscriptos en química. 
+
+Ejercicio 3: Se ingresan por teclado una serie de 5 valores de temperaturas pronosticados para una semana. Se solicita que ingrese estos valores en una lista y utilice una función que retorne el tipo de alerta a emitir segun lo siguiente:
+    - Verde: en ningún día de los siguientes cinco consecutivos, sea superada las temperatura de 30.
+    - Amarillo: que 1 o 2 de los siguientes cinco días consecutivos, sea superada la temperatura de 30 grados
+    - Naranja: se espera que 3 o 4 de los siguientes cinco días consecutivos se supere la temperatura de 30 grados
+    - Rojo: cuando se espera que en cada uno de los cinco días se supere los 30 grados
+
+Una vez retornado el tipo de alerta el programa debe dar un mensaje alusivo.
+
+Ejercicio 4: El módulo turtle (provisto en la biblioteca estandar de python) permite realizar dibujos de manera muy sencilla,  usando solo algunos de su métodos y un poco de imaginación se pueden realizar figuras complejas. Algunos de los métodos son:
+* forward(distancia): permite avanzar 'distancia' desde el punto de origen en el ángulo predeterminado.
+* right(grados): permite rotar en sentido horario el número de grados.
+* left(grados): permite rotar en sentido antihorario el número de grados.
+
+Por ejemplo el siguiente código permite dibujar un cuadrado sencillo, con 50 unidades de lado:
+
+import turtle 
+
+manuelita = turtle.Turtle()
+
+for i in range(4):
+    manuelita.forward(50)
+    manuelita.right(90)
+    
+turtle.done()
+
+Realice un programa que permita dibujar dos triángulos equiláteros, uno al lado del otro. Recuerde que los triángulos equiláteros se caracterizan por tener todos sus lados y ángulos iguales y que la suma de todos los ángulos internos de un triángulo es siempre 180º.
+
