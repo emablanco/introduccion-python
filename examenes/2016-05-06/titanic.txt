@@ -1,0 +1,28 @@
+Ashby John,57,M,1,0,1
+Bailey Percy Andrew,18,M,1,0,1
+Bainbrigge Charles Robert,23,M,1,0,1
+Helen Loraine Alison,2,F,3,1,1
+Alice Catherine Cleaver,22,F,3,1,1
+Kornelia Theodosia Andrews,62,F,3,1,1
+Thomas Andrews,39,M,3,0,1
+Harry Aderson,47,M,3,1,1
+John Bertram Brady,41,M,3,0,1
+Bernard Brand,34,M,3,0,1
+Emil Brandeis,48,F,3,0,1
+Malvina Helen Cornell,55,F,3,1,1
+John Bertram Crafton,59,M,3,1,1
+Edward Gifford Crosby,70,M,3,0,1
+Catherine Elizabeth Crosby,64,F,3,1,1
+Harriette Rebecca Crosby,39,F,3,1,1
+Florence Briggs Cumings,35,F,3,1,1
+Peter Dennis Daly,51,M,3,1,1
+Robert Williams Daniel,27,M,3,1,1
+Thornton Davidson,31,M,3,0,1
+Orian Davidson,27,F,3,1,1
+Albert Adrian Dick,31,M,3,1,1
+Vera Dick,17,F,3,1,1
+Washington Dodge,52,M,3,1,1
+Ruth Dodge,34,F,3,1,1
+Washington Dodge Jr,4,M,3,1,1
+Walter Donald Douglas,50,M,3,0,1
+William Crothers Dulles,39,M,3,0,1
