@@ -6,11 +6,17 @@ Created on Fri May  6 20:30:52 2016
 """
 
 def listaReducida(lista):
+    '''opcion 1'''
     redu = lista.copy()
     redu.pop(0)
     redu.pop(-1)
     return redu
 
+def listaReducida2(lista):
+    '''opcion 2, mas simple'''
+    return lista[1:-1]
+
 edades = [12, 32, 54, 65, 76, 87, 98, 111]
 print(edades)
 print(listaReducida(edades))
+print(listaReducida2(edades))
