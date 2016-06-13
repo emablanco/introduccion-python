@@ -5,11 +5,15 @@ Tecnicatura Universitaria en Software Libre
 Introducción al Desarrollo de Software
 --------------------------------------
 
-:Docente: Emiliano López
-:Tutor: Maximiliano Boscovich
+:Autor: Emiliano López - elopez@fich.unl.edu.ar
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
 
 .. header:: 
-  Introducción al Desarrollo de Software
+  Tecnicatura Universitaria en Software Libre  |  Introducción al Desarrollo de Software
+
+.. footer::
+    ###Page### / ###Total###
 
 .. contents:: Contenidos
 
@@ -20,10 +24,9 @@ Introducción al Desarrollo de Software
 
    PageBreak oneColumn
 
-.. |date| date::
+.. |date| date:: %d/%m/%Y
 .. |time| date:: %H:%M
 
-Este documento fue generado el |date| |time|
 
 .. raw:: pdf
 
@@ -37,12 +40,12 @@ Este documento fue generado el |date| |time|
 
 Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
 
-A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__ :
+A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__:
 
 **Usted es libre para:**
 
-- Compartir — copiar y redistribuir el material en cualquier medio o formato
-- Adaptar — remezclar, transformar y crear a partir del material    
+- Compartir - copiar y redistribuir el material en cualquier medio o formato
+- Adaptar - remezclar, transformar y crear a partir del material    
 
 Para cualquier propósito, incluso comercialmente
 
@@ -50,9 +53,9 @@ El licenciante no puede revocar estas libertades en tanto usted siga los términ
 
 **Bajo los siguientes términos:**
 
-- Atribución — Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
+- Atribución - Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
 
-- CompartirIgual — Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
+- Compartir Igual - Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
 
 \* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
 
@@ -148,16 +151,20 @@ Otra de las grandes virtudes de python, es que su interprete puede
 ejecutarse en la mayoría de los sistemas operativos utilizados en la
 actualidad (GNU/Linux, Microsoft Windows, Mac OSX, etc.).
 
-Dada su versatilidad y simplicidad, Python es utilizado por compañías
-como Google, Youtube, Netflix, Yahoo, NSA, NASA, Canonical, IBM, entre
-otras tantas.
+Dada su versatilidad, simplicidad y su gran potencia, Python es un lenguaje en 
+continuo crecimiento por lo que cuenta con un gran apoyo de la comunidad, además 
+es utilizado por compañías como Google, Youtube, Netflix, Yahoo, NSA, NASA, Canonical, 
+IBM, entre otras tantas.
 
-Instalando Python
------------------
+Instalación
+-----------
 
-Actualmente existen dos versiones de Python comúnmente utilizadas, la
-versión 2 y 3, ambas son completamente funcionales. En
-este curso nos basaremos en la versión 3.
+Actualmente, Python cuenta con dos ramas de desarrollo, la correspondiente a la
+versión 2.x y 3.x. Si bien ambas son completamente funcionales, para cualquier 
+desarrollo es recomendable utilizar alguna versión de la rama 3.x. 
+
+En el presente curso nos basaremos en la última versión disponible de la **rama 3.x**.
+A continuación detallamos el modo de instalar el intérprete de python.
 
 Windows
 ~~~~~~~
@@ -279,21 +286,39 @@ Entorno integrado de desarrollo (IDE)
 
 Un IDE es un entorno que nos facilita las tareas a la hora de programar.
 Consiste en la integración de un editor de texto con características de
-resaltado de sintaxis, auto-completado -entre otras-, y el intérprete de
+resaltado de sintaxis, auto-completado, inspector del contenido de las variables, 
+análisis de sintaxis y, entre otras funcionalidades, el intérprete de
 Python. Existen cientos de entornos muy buenos, como por ejemplo
 `Spyder <https://github.com/spyder-ide/spyder>`__,
 `PyCharm <https://www.jetbrains.com/pycharm>`__ o
-`Ninja-IDE <http://ninja-ide.org>`__. Para el presente curso, nos
-basaremos en Ninja-IDE, software libre que ha sido desarrollado por la
-comunidad de Python Argentina, `PyAr <http://python.org.ar>`__.
+`Ninja-IDE <http://ninja-ide.org>`__.  Si bien en el presente curso nos basaremos en **Spyder3**, 
+el usuario puede optar por aquella IDE que le resulte de su preferencia.
 
-.. figure:: img/u1/ninja-ide.png
-   :alt: 
-   :width: 1100 px
+.. figure:: img/u1/spyder-ide.png
+    :width: 1300 px
+    
+    IDE spyder3
+
+Para instalar spyder3 en su sistema operativo GNU/Linux debe ejecutar el siguiente comando:
+
+.. code:: bash
+
+    $sudo apt-get install spyder3
+
+En cambio, para instalarlo en un Windows, primeramente debe haber 
+instalado el intérprete de python3 como se indicó previamente y luego descargar el instalador 
+de spyder correspondiente a su arquitectura (32 o 64 bits) en los siguientes enlaces:
+
+- `Spyder para 64 bits <spyder-2.3.8.win-amd64-py3.4.exe>`__    
+- `Spyder para 32 bits <spyder-2.3.8.win32-py3.4.exe>`__    
+
+
 
 Una lista bastante completa sobre las IDEs disponibles pueden
 encontrarse en la `wiki oficial de
 Python <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`__
+
+
 
 Algoritmos computacionales
 --------------------------
@@ -352,9 +377,8 @@ El intérprete interactivo de Python es una gran ayuda para realizar
 pruebas y experimentar en tiempo real sobre el lenguaje. Sin embargo,
 cuando cerramos el intérprete perdemos lo escrito, por lo que no es una
 solución para escribir programas mas largos y con mayores complejidades.
-Por otro lado, tampoco resulta poco práctico abrir el IDE para correr un
-script Python. Entonces, para un programa guardado con el nombre
-hola\_mundo.py, lo podemos ejecutar de las siguientes maneras:
+Entonces, para un programa guardado con el nombre
+*hola\_mundo.py*, lo podemos ejecutar de las siguientes maneras:
 
 Desde la línea de comandos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -394,6 +418,20 @@ nombre del programa antecediendo "./" (punto barra, sin comillas):
 
     $./hola_mundo.py
     Adiós mundo cruel
+
+Desde el IDE
+~~~~~~~~~~~~
+
+La mayoría de los IDE cuentan con un botón específico que realiza la ejecución del programa.
+En la siguiente figura se observan los componentes de *spyder3*, donde se observa el botón 
+correspondiente para lanzar la ejecución, el panel donde se observan los resultados, 
+la sección principal donde se escribe el código y una sección de ayuda.
+
+.. figure:: img/u1/spyder-ide-labeled.png
+    :width: 1300 px
+    
+    IDE spyder3: botón de ejecución, sección del código, ayuda y resultados.
+
 
 Elementos de un programa
 ------------------------
@@ -843,11 +881,8 @@ Algunas variantes de lo visto se explica en la siguiente lista:
 Con lo visto hasta aquí tenemos suficientes alternativas para mostrar en
 pantalla información de diferentes tipos. Existen una alternativa para
 imprimir en pantalla utilizando el método ``format``, el lector interesado
-puede indagar más al respecto en
-http://docs.python.org.ar/tutorial/3/inputoutput.html , en el capítulo
-Entrada y Salida del tutorial de Python oficial
-http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf ó también en
-http://www.python-course.eu/python3\_formatted\_output.php
+puede indagar más al respecto en el capítulo
+`Entrada y Salida <http://docs.python.org.ar/tutorial/3/inputoutput.html>`__ del `tutorial de Python oficial <http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf>`__ o también en el `curso online <http://www.python-course.eu/python3_formatted_output.php>`__ de Python3.
 
 Funciones
 ~~~~~~~~~
