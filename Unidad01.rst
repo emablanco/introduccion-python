@@ -306,11 +306,11 @@ Para instalar spyder3 en su sistema operativo GNU/Linux debe ejecutar el siguien
     $sudo apt-get install spyder3
 
 En cambio, para instalarlo en un Windows, primeramente debe haber 
-instalado el intérprete de python3 como se indicó previamente y luego descargar el instalador 
+instalado el intérprete de python3, específicamente la versión 3.4,  como se indicó previamente y luego descargar el instalador 
 de spyder correspondiente a su arquitectura (32 o 64 bits) en los siguientes enlaces:
 
-- `Spyder para 64 bits <spyder-2.3.8.win-amd64-py3.4.exe>`__    
-- `Spyder para 32 bits <spyder-2.3.8.win32-py3.4.exe>`__    
+- `Spyder para 64 bits <https://bitbucket.org/spyder-ide/spyderlib/downloads/spyder-2.3.8.win-amd64-py3.4.exe>`__    
+- `Spyder para 32 bits <https://bitbucket.org/spyder-ide/spyderlib/downloads/spyder-2.3.8.win32-py3.4.exe>`__    
 
 
 
