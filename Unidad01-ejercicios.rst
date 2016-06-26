@@ -1,8 +1,24 @@
-﻿Unidad 1: Ejercicios
---------------------
+===========================================
+Introducción al Desarrollo de Software
+===========================================
 
-1. Realice un programa donde se pregunte el nombre y edad de una persona
-   y luego se muestre un cordial saludo. Por ejemplo:
+Guía práctica N°1
+-----------------
+
+:Autor: Emiliano López - elopez@fich.unl.edu.ar
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
+
+.. |date| date:: %d/%m/%Y
+.. |time| date:: %H:%M
+
+.. header:: 
+   Tecnicatura Universitaria en Software Libre
+
+.. footer::
+    ###Page### / ###Total###
+
+1- Realice un programa donde se pregunte el nombre y edad de una persona y luego se muestre un cordial saludo. Por ejemplo:
 
 ::
 
@@ -44,19 +60,7 @@ ingrese el tiempo transcurrido en tres variables diferentes: horas,
 minutos y segundos. Luego, muestre la velocidad promedio en km/h y
 km/seg.
 
-7- Hace unos cuantos años, Don Pitágoras dijo que el cuadrado de la
-hipotenusa era igual a la suma de los cuadrados de los catetos.
-
-.. figure:: img/u1-ejercicios/teorema-pitagoras.jpg
-   :width: 700 px
-
-¿Será cierto esto?. Supongamos que el valor de la hipotenusa (C) es 5, el del cateto A es 3, y el del cateto B es 4. Realice un programa que permita validar esto. 
-
-8- Modifique el código anterior, para que (ahora que sabe que es
-cierto) le pregunte al usuario por los valores de los catetos A y B, y
-luego realice el cálculo de la hipotenusa y lo devuelva por pantalla.
-
-9- Un grupo de amigos se reúnen a ver un clásico de fútbol entre el
+7- Un grupo de amigos se reúnen a ver un clásico de fútbol entre el
 equipo A y el equipo B, y establecen como regla que los hinchas del
 equipo que pierda deberán pagar la totalidad de las cervezas consumidas
 durante el partido, como así también el costo de picada consumida en la
@@ -84,9 +88,6 @@ cada hincha en caso de un empate:
     monto_a_pagar = costo_total/int(equipo_a)
     print('Si el equipo A pierde, sus hinchas deben pagar: $', monto_a_pagar)
 
-10- Realice un programa que permita ingresar 3 valores (valor1, valor2,valor3) y luego muestre, haciendo uso del módulo *statistics* de la biblioteca estándar de python, el valor de la media(mean), mediana(median) y varianza(variance) del conjunto.
+8- Realice un programa que permita ingresar 3 valores (valor1, valor2,valor3) y luego muestre, haciendo uso del módulo *statistics* de la biblioteca estándar de python, el valor de la media (mean), mediana (median) y varianza (variance) del conjunto.
 
-11- Modifique el código anterior, para que en vez de pedir que se
-ingresen los 3 valores por teclado, genere estos de manera aleatoria. El
-programa deberá devolver la media, mediana y varianza, junto a los 3
-valores que se generaron aleatoriamente.
+9- Modifique el código anterior, para que en vez de pedir que se ingresen los 3 valores por teclado, genere estos de manera aleatoria. El programa deberá devolver la media, mediana y varianza, junto a los 3 valores que se generaron aleatoriamente.
