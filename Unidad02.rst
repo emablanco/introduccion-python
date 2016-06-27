@@ -5,11 +5,15 @@ Tecnicatura Universitaria en Software Libre
 Introducción al Desarrollo de Software
 --------------------------------------
 
-:Docente: Emiliano López
-:Tutor: Maximiliano Boscovich
+:Autor: Emiliano López - elopez@fich.unl.edu.ar
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
 
 .. header:: 
-  Introducción al Desarrollo de Software
+  Tecnicatura Universitaria en Software Libre  |  Introducción al Desarrollo de Software
+
+.. footer::
+    ###Page### / ###Total###
 
 .. contents:: Contenidos
 
@@ -20,10 +24,9 @@ Introducción al Desarrollo de Software
 
    PageBreak oneColumn
 
-.. |date| date::
+.. |date| date:: %d/%m/%Y
 .. |time| date:: %H:%M
 
-Este documento fue generado el |date| |time|
 
 .. raw:: pdf
 
@@ -37,12 +40,12 @@ Este documento fue generado el |date| |time|
 
 Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
 
-A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__ :
+A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__:
 
 **Usted es libre para:**
 
-- Compartir — copiar y redistribuir el material en cualquier medio o formato
-- Adaptar — remezclar, transformar y crear a partir del material    
+- Compartir - copiar y redistribuir el material en cualquier medio o formato
+- Adaptar - remezclar, transformar y crear a partir del material    
 
 Para cualquier propósito, incluso comercialmente
 
@@ -50,9 +53,9 @@ El licenciante no puede revocar estas libertades en tanto usted siga los términ
 
 **Bajo los siguientes términos:**
 
-- Atribución — Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
+- Atribución - Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
 
-- CompartirIgual — Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
+- Compartir Igual - Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
 
 \* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
 
@@ -460,8 +463,7 @@ es verdadero sólo si *x* es mayor que 0 **y a la vez** es menor que 10. Ahora u
 
     (n % 2 == 0) or (n % 3 == 0)
 
-es verdadero si alguna de las condiciones es verdadera, es decir, si el
-número es divisible por 2 **o** es divisible por 3. Podemos leer la línea anterior como el resto de dividir **n** por 2 es igual a cero **o** el resto de dividir n por 3 es igual a cero.
+es verdadero si alguna de las condiciones es verdadera, es decir, si el número es divisible por 2 **o** es divisible por 3. Podemos leer la línea anterior como el resto de dividir **n** por 2 es igual a cero **o** el resto de dividir **n** por 3 es igual a cero.
 
 Teniendo en cuenta que el operador ``%`` da como resultado el resto de la división. El resto de la división es cero cuando el dividendo y el divisor son múltiplos.
 
@@ -580,7 +582,7 @@ Veamos un ejemplo un poco mas complejo:
     True
 
 
-Desglosemos un poco este ejemplo:
+Analicemos detalladamente el ejemplo:
 
 En este caso la expresión (a > b) es falsa, al igual que (b < c), por lo
 que podríamos ver a lo anterior como
@@ -602,5 +604,4 @@ Como ambas expresiones son verdaderas, el valor de la variable
 
 Se debe tener un especial cuidado con el orden en que se utilizan los
 operadores. Para asegurarnos de que estamos aplicando los operadores a
-una expresión particular, siempre es recomendable utilizar paréntesis
-para demarcar la expresión sobre la que deseamos operar.
+una expresión particular, es recomendable utilizar paréntesis.
