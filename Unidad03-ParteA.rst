@@ -5,11 +5,15 @@ Tecnicatura Universitaria en Software Libre
 Introducción al Desarrollo de Software
 --------------------------------------
 
-:Docente: Emiliano López
-:Tutor: Maximiliano Boscovich
+:Autor: Emiliano López - elopez@fich.unl.edu.ar
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
 
 .. header:: 
-  Introducción al Desarrollo de Software - Unidad 3 - Parte A
+    Introducción al Desarrollo de Software
+
+.. footer::
+    ###Page### / ###Total###
 
 .. contents:: Contenidos
 
@@ -20,10 +24,9 @@ Introducción al Desarrollo de Software
 
    PageBreak oneColumn
 
-.. |date| date::
+.. |date| date:: %d/%m/%Y
 .. |time| date:: %H:%M
 
-Este documento fue generado el |date| |time|
 
 .. raw:: pdf
 
@@ -37,12 +40,12 @@ Este documento fue generado el |date| |time|
 
 Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
 
-A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__ :
+A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__:
 
 **Usted es libre para:**
 
-- Compartir — copiar y redistribuir el material en cualquier medio o formato
-- Adaptar — remezclar, transformar y crear a partir del material    
+- Compartir - copiar y redistribuir el material en cualquier medio o formato
+- Adaptar - remezclar, transformar y crear a partir del material    
 
 Para cualquier propósito, incluso comercialmente
 
@@ -50,9 +53,9 @@ El licenciante no puede revocar estas libertades en tanto usted siga los términ
 
 **Bajo los siguientes términos:**
 
-- Atribución — Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
+- Atribución - Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
 
-- Compartir Igual — Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
+- Compartir Igual - Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
 
 \* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
 
@@ -69,17 +72,14 @@ Con lo aprendido hasta la unidad previa, la ejecución de un programa no es más
 lista de órdenes a ejecutar de forma **secuencial**. Independientemente de los datos de entrada
 el camino del programa es indefectiblemente el mismo.
 
-En cada ejecución se ejecutarán siempre las mismas instrucciones, en forma secuencial, 
+Se ejecutarán siempre las mismas instrucciones, en forma secuencial, 
 una tras otra. Esta limitante quita flexibilidad a los programas ya que no es posible 
 tener caminos alternativos de ejecución y, cada instrucción se ejecuta una única vez.
 
 Pensemos en un ejemplo muy simple, donde se deben ingresar miles de datos de personas, 
 sería impracticable incluir miles de sentencias para leer su nombre y edad. 
-Del mismo modo, si quisiéramos calcular el promedio de altura de aquellas personas que 
-superan los 18 años necesitamos *preguntar* por este dato y en base al valor ingresado
-realizar el procesamiento necesario para obtener el resultado.
 
-Con este pequeño ejemplo, vemos la necesidad de contar con algo más que la estructura
+Con este ejemplo sencillo, vemos la necesidad de contar con algo más que la ejecución
 secuencial aprendida previamente, por lo que para solucionar esta limitación existen 
 las estructuras de control de flujo que permiten por un lado **condicionar** las acciones
 a ejecutarse y, por el otro, **repetir** una serie de instrucciones.
@@ -143,8 +143,8 @@ para decidir el camino del programa:
     Está lindo para bici!
 
 
-Esta sentencia se lee: Si la temperatura es mayor a 10 y menor a 30 imprimir
-en pantalla *Está lindo para bici!*. Estas mensaje se mostrará
+Esta sentencia se lee: Si la temperatura es mayor a 10 y también menor a 30 imprimir
+en pantalla *Está lindo para bici!*. Este mensaje se mostrará
 solamente al cumplirse la condición, es decir, cuando la variable temperatura
 contenga un valor entre 10 y 30. En otro caso, el programa no mostrará nada.
 
@@ -162,10 +162,12 @@ equivalente a la comparación previa haciendo:
 Todo lenguaje de programación tiene en su sintaxis un modo de identificar las acciones
 que forman parte de un bloque, por ejemplo, en C++ y Java se utilizan llaves para encerrar
 las sentencias que se deben ejecutar en caso que el resultado de la comparación sea verdadero, 
-aquí, en Python, se utiliza la sangría.
+aquí, en Python, se **utiliza la sangría**.
 
 Es importante indentar el bloque de acciones tal como se ha hecho en el ejemplo, 
-es decir, dejar una sangría en las líneas debajo de los dos puntos (:). 
+es decir, dejar una sangría en las líneas debajo de los dos puntos (:) para indicar todas aquellas
+instrucciones que se deben ejecutar en caso que la condición evaluada sea verdadera.
+ 
 Si quisiéramos mostrar varios mensajes sería del siguiente modo:
 
  .. code:: python
@@ -178,12 +180,14 @@ Sentencia *if..else*
 ~~~~~~~~~~~~~~~~~~~~
 
 El problema inicialmente planteado consiste en determinar el modo de ir al trabajo,
-en vehículo o bicicleta, sin embargo el programa anterior imprime en pantalla 
+en vehículo o bicicleta, sin embargo el programa imprime en pantalla 
 solamente cuando sugiere ir en bici y, en caso que la condición fuera falsa, 
-no se mostraba mensaje alusivo alguno.
+no se muestra mensaje alguno. 
 
-Para completar este problema es necesario que existan dos caminos alternativos de 
-ejecución, uno para la condición verdadera y otro para cuando sea falsa.
+Lo novedoso es que se agregó una posibilidad de no ejecución de ciertas acciones, sin embargo, 
+para completar este problema es necesario que existan dos caminos alternativos de 
+ejecución, uno para la condición verdadera y otro para cuando sea falsa, de este modo, algunas de las 
+instrucciones se ejecutará, pero no ambas.
 
 Para estos casos existe la sentencia ``else`` (*sino*), que se usa conjuntamente 
 con ``if`` y que sirve para ejecutar ciertas instrucciones en caso de que la condición de la
@@ -197,7 +201,7 @@ evaluada no se cumpla. Completando el ejemplo:
         print('Te recomiendo ir en cole')
 
 
-Esto se lee como *si temperatura es mayor a 10 y menor que 30, entonces mostrar el mensaje 
+Esto se lee como *si temperatura es mayor a 10 y además menor que 30, entonces mostrar el mensaje 
 'Está lindo para ir en bici', sino es así, mostrar el mensaje 'Te recomiendo ir en cole'*. 
 Siempre se ejecutará una de las dos opciones, dependiendo del valor de la variable
 temperatura. Por lo que en este punto podemos decir que el código se
@@ -311,8 +315,8 @@ En el siguiente programa, ¿qué mensaje se muestra en pantalla?
 Estructuras anidadas
 ~~~~~~~~~~~~~~~~~~~~
 
-Retomando el ejemplo del programa anterior, consideremos ahora la distancia 
-que se debe recorrer además de la temperatura.
+Retomando el ejemplo del programa anterior, consideremos además de la temperatura la distancia 
+que se debe recorrer.
 
 Para estos casos, se pueden utilizar *estructuras anidadas*, es decir, 
 una nueva estructura de control incluida dentro del bloque que se ejecuta 
@@ -347,7 +351,7 @@ Reescribamos el código previo utilizando estructuras anidadas:
 En caso de cumplirse el primer condicional pasa a considerarse 
 el valor de la variable distancia con el segundo condicional, 
 mostrando en pantalla *Lindo clima para ir en bici* si el resultado
-es verdadero y *Es lejos, te recomiendo cole*, si es falso. 
+es verdadero y, *Es lejos, te recomiendo cole*, si es falso. 
 
 Por otro lado, si el primer condicional no se cumple (la temperatura no esta 
 entre 10 y 29) se muestra el mensaje *No está agradable, recomiendo cole*.
@@ -366,21 +370,22 @@ su ejecución y no se ejecutará más hasta que se el programa se invoque nuevam
 Imaginemos que debemos consultar la pregunta de la temperatura a cientos
 de miles de personas, deberíamos ejecutar cientos de miles de veces el
 programa, iniciándolo y esperando su finalización para repetir el
-proceso una y otra vez. 
+proceso una y otra vez, o bien, copiando cientos de miles de veces el código
+del programa. 
 
-Con este inconveniente se hace evidente la necesidad de una estructura
+Con este inconveniente se hace evidente la necesidad de una estructura 
 que permita repetir cuantas veces se requiera una determinada instrucción o 
 bloque de instrucciones, aquí es donde entran en acción las estructuras repetitivas.
 
 Sentencia *while*
 ~~~~~~~~~~~~~~~~~
 
-El ``while`` permite repetir una serie de acciones mientras que una
+El ``while`` permite repetir una serie de acciones **mientras** que una
 determinada expresión (o condición) se cumpla, en caso contrario, se
 finaliza la repetición.
 
 Una expresión se cumple cuando arroja un resultado verdadero, que en
-Python es ``True``. La forma del ``while`` es la siguiente:
+Python es ``True``. La forma genérica del ``while`` es la siguiente:
 
 .. code:: python
 
