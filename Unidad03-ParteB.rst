@@ -1,15 +1,16 @@
-================================================
-Tecnicatura Universitaria en Software Libre
-================================================
 --------------------------------------
 Introducción al Desarrollo de Software
 --------------------------------------
 
-:Docente: Emiliano López
-:Tutor: Maximiliano Boscovich
+:Autor: Emiliano López - elopez@fich.unl.edu.ar
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
 
 .. header:: 
-  Introducción al Desarrollo de Software - Unidad 3 - Parte B
+    Introducción al Desarrollo de Software
+
+.. footer::
+    ###Page### / ###Total###
 
 .. contents:: Contenidos
 
@@ -20,10 +21,9 @@ Introducción al Desarrollo de Software
 
    PageBreak oneColumn
 
-.. |date| date::
+.. |date| date:: %d/%m/%Y
 .. |time| date:: %H:%M
 
-Este documento fue generado el |date| |time|
 
 .. raw:: pdf
 
@@ -37,12 +37,12 @@ Este documento fue generado el |date| |time|
 
 Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
 
-A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__ :
+A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__:
 
 **Usted es libre para:**
 
-- Compartir — copiar y redistribuir el material en cualquier medio o formato
-- Adaptar — remezclar, transformar y crear a partir del material    
+- Compartir - copiar y redistribuir el material en cualquier medio o formato
+- Adaptar - remezclar, transformar y crear a partir del material    
 
 Para cualquier propósito, incluso comercialmente
 
@@ -50,9 +50,9 @@ El licenciante no puede revocar estas libertades en tanto usted siga los términ
 
 **Bajo los siguientes términos:**
 
-- Atribución — Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
+- Atribución - Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
 
-- Compartir Igual — Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
+- Compartir Igual - Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
 
 \* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
 
@@ -65,50 +65,31 @@ El licenciante no puede revocar estas libertades en tanto usted siga los términ
 Unidad 3 - Parte B: Estructuras de datos
 ========================================
 
-Hasta aquí todo dato procesado, manipulado y operado ha sido almacenado
-en variables, sin embargo, para ciertos problemas no son suficientes.
-Supongamos un caso donde leemos una serie de temperaturas mensuales
-durante los últimos 10 años y que posteriormente queremos saber las
-temperaturas que han superado la media.
+Hasta aquí todo dato procesado, manipulado y operado ha sido almacenado en variables, sin embargo, para ciertos problemas no son suficientes. Supongamos un caso donde leemos una serie de temperaturas mensuales durante los últimos 10 años y que posteriormente queremos saber las temperaturas que han superado la media.
 
-Si utilizamos variables, deberíamos leer los 120 valores para calcular
-el promedio y reingresar nuevamente las temperaturas mensuales para
-corroborar aquellas que superaron la media. Claramente el usuario de
-este programa no estará muy feliz de tener que reingresar la
-totalidad de los datos.
+Si utilizamos variables, deberíamos leer los 120 valores para calcular el promedio y reingresar nuevamente las temperaturas mensuales para corroborar aquellas que superaron la media. Claramente el usuario de este programa no estará muy feliz de tener que reingresar la totalidad de los datos.
 
-Para este tipo de problemas y muchos otros existen estructuras
-de datos más complejas que las variables y de gran utilidad. 
+Para este tipo de problemas y muchos otros existen estructuras de datos más flexibles que las variables, que funcionan como contenedores de información.
 
-En el presente capítulo haremos énfasis en dos de las estructuras 
-comúnmente utilizadas como las *listas*, *diccionarios* y *tuplas* y, veremos
-con mayor detalle las *cadenas de caracteres*, ya presentadas en capítulos previos.
+En el presente capítulo haremos énfasis en dos de las estructuras comúnmente utilizadas como las *listas*, *diccionarios* y *tuplas* y, veremos con mayor detalle las *cadenas de caracteres*, ya presentadas en capítulos previos.
 
 Listas
 ~~~~~~
 
-A diferencia de una variable que contiene un dato por vez, una lista
-puede almacenar varios en forma simultánea en diferentes posiciones, por
-lo que para referirnos a uno de ellos necesitamos especificarle el
-índice. Por ejemplo, en la siguiente lista denominada *tempC* hay
-almacenados tres valores numéricos flotantes, el primero está en la
+A diferencia de una variable que contiene un único dato por vez, una lista puede almacenar varios en forma simultánea en diferentes posiciones, por lo que para referirnos a uno de ellos necesitamos especificarle el índice o posición. Por ejemplo, en la siguiente lista denominada *tempC* hay almacenados tres valores numéricos flotantes, el primero está en la
 posición 0, el segundo en la posición 1 y, el tercero en la posición 2:
 
-+--------+--------+--------+
-| 12.2   | 33.3   | 12.1   |
-+========+========+========+
-| 0      | 1      | 2      |
-+--------+--------+--------+
+.. figure:: img/u3/lista_def.png
+    :width: 1300 px
+    
+    Lista que contiene 3 valores
 
-Para **declarar e inicializar** una lista vacía y otra con esos tres
-valores haremos:
+Para **declarar** la lista tempC con esos tres valores:
 
 .. code:: python
 
-    # Lista vacia
-    vacia = []
-    # Lista con 3 valores flotantes
-    tempC = [12.2, 33.3, 12.1]
+    tempC = [12.2, 33.3, 12.1]  # Lista con 3 valores flotantes
+    vacia = []                  # Lista sin elementos
 
 Para acceder a un elemento específico, debemos utilizar el identificador
 de la lista, seguido del índice entre corchetes (cualquier expresión
@@ -145,7 +126,7 @@ entera), veamos un ejemplo donde realizamos las siguientes acciones:
 
 .. parsed-literal::
 
-    2do elemento: 100
+    2do elemento: 33.3
     2do elemento modificado: 100
     Lista:
     12.2
@@ -154,15 +135,9 @@ entera), veamos un ejemplo donde realizamos las siguientes acciones:
     La temperatura 100 superó la media
 
 
-Como se observa en el ciclo iterativo previo, las listas son
-perfectamente iterables en el ``for``, ya que al igual que una cadena de
-caracteres, es una secuencia de valores, la diferencia radica que en una
-cadena los valores son caracteres mientras que en una lista pueden ser
-de cualquier tipo y son llamados elementos o ítems.
+Como se observa, las listas son fácilmente iterables utilizando el ciclo ``for``, ya que al igual que una cadena de caracteres, es una secuencia de valores, la diferencia radica que en una cadena los valores son únicamente caracteres mientras que en una lista pueden ser de cualquier otro tipo.
 
-Otro detalle es que una lista puede contener elementos de diferente
-tipo, incluso otra lista. Veamos una lista que combine elementos de
-distintos tipos:
+Otra característica importante es que una lista puede contener elementos de diferente tipo, **incluso otra lista**. Veamos una lista que combine elementos de distintos tipos:
 
 .. code:: python
 
@@ -186,11 +161,7 @@ distintos tipos:
     5to elemento:  [12.2, 100, 12.1]
 
 
-Ahora bien, seguramente el lector estará intrigado sobre el acceso a un
-elemento en particular de la lista *tempC*, ubicada en la 5ta posición
-de la lista *popurri*. En *popurri[4]* se referencia el elemento en
-cuestión, que es una lista, por lo que agregando un índice más
-accedemos, veamos el código:
+Ahora bien, seguramente el lector estará intrigado sobre el acceso a un elemento en particular de la lista *tempC*, ubicada en la 5ta posición de la lista *popurri*. En *popurri[4]* se referencia el elemento en cuestión, que es una lista, por lo que agregando un índice más accedemos a cada uno de sus elementos, veamos el código:
 
 .. code:: python
 
@@ -205,10 +176,14 @@ accedemos, veamos el código:
     100
     12.1
 
+En la siguiente figura se observa la estructura de esta lista.
 
-Una de las funcionalidades que nos provee Python para obtener
-información sobre la cantidad de elementos de las listas es ``len()``.
-Veamos los resultados que arroja aplicado a la lista *popurri*.
+.. figure:: img/u3/lista_popurri.png
+    :width: 1300 px
+    
+    Lista con elementos de distintos tipos
+
+Una de las funcionalidades que nos provee Python para obtener información sobre la cantidad de elementos de las listas es ``len()``. Veamos los resultados que arroja aplicado a la lista *popurri*.
 
 .. code:: python
 
@@ -222,9 +197,7 @@ Veamos los resultados que arroja aplicado a la lista *popurri*.
     3
 
 
-Otra alternativa para iterar sobre una lista es combinando la función
-``range`` que vimos anteriormente y la cantidad de elementos de la lista, de
-manera que podemos acceder a los ítems a partir de su índice:
+Otra alternativa para iterar sobre una lista es combinando la función ``range`` que vimos anteriormente y la cantidad de elementos de la lista, de manera que podemos acceder a los elementos a partir de su índice:
 
 .. code:: python
 
@@ -240,53 +213,38 @@ manera que podemos acceder a los ítems a partir de su índice:
     Temperatura 2 : 12.1
 
 
-La función ``len()`` retornó la cantidad de elementos de la lista
-*tempC*, ese resultado, almacenado en ``n``, fue utilizado como el valor
-para la función ``range()`` que generó una secuencia numérica (una
-lista!!!) que va desde 0 hasta ``n-1``.
+La función ``len()`` retornó la cantidad de elementos de la lista *tempC*, ese resultado, almacenado en ``n``, fue utilizado como el valor para la función ``range()`` que generó una secuencia numérica (una lista!!!) que va desde 0 hasta ``n-1``.
 
-Veamos otro ejemplo de una lista de cadenas de caracteres. Tenemos
-algunos equipos de fútbol Santafesino de primera división y queremos
-imprimir el fixture con todas las combinaciones de los partidos de ida,
-es decir, si el equipo A ya jugó con el B, no tendremos en cuenta que el
-equipo B juegue con el A.
-
-**Analicemos la estrategia:** Por cada equipo de la lista debemos
-imprimir uno a uno los rivales subsiguientes, es decir, imprimimos el
-primer equipo con el segundo, luego con el tercero y finalmente con el
-cuarto. Luego, al pasar al segundo equipo de la lista, no debemos
-imprimir el primero, porque ya fue rival, sino que los restantes y así
-sucesivamente.
+En el caso previo mostramos la posición de cada elemento, pero es posible iterar sobre la lista de una manera mucho mas directa:
 
 .. code:: python
 
-    equipos = ["Colón", "A. Rafaela", "Central", "Newell"]
-    n = len(equipos)
-    for i in range(n):
-        for j in range(i+1,n):
-            print(equipos[i],"vs",equipos[j])
-        
+    for val in tempC:
+        print("Temperatura:",val)
 
 
 .. parsed-literal::
 
-    Colón vs A. Rafaela
-    Colón vs Central
-    Colón vs Newell
-    A. Rafaela vs Central
-    A. Rafaela vs Newell
-    Central vs Newell
+    Temperatura: 12.2
+    Temperatura: 33.3
+    Temperatura: 12.1
+
+En este caso, cada elemento de la lista ``tempC`` se va asignando a la variable ``val`` en forma sucesiva, de manera que en cada iteración ``val`` contendrá uno a uno los elementos de la lista ``tempC``.
+
+Las listas permiten **agregar elementos nuevos** en tiempo de ejecución utilizando el método ``append()``. Veamos un ejemplo donde el usuario ingresa 10 nombres para agregar en una lista:
+
+.. code:: python
+
+    lista = []          # lista inicialmente vacia
+    for i in range(10):
+        nom = input("Nombre: ")
+        lista.append(nom)
 
 
 Listas bidimensionales
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Una lista unidimensional es aquella donde se utiliza un único índice
-para acceder a sus elementos, en el caso que utilicemos dos índices la
-lista es bidimensional y se suele denominar matriz.
-
-Veamos un caso de una lista bidimensional de tres filas y cinco columnas
-(3x5)
+Una lista bidimensional puede ser vista como una matriz, es decir, cada elemento se encuentra almacenado en una determinada fila y columna, por lo que para accederlo son necesarios dos índices. Veamos un caso de una lista bidimensional de tres filas y cinco columnas (3x5)
 
 +---------+--------+--------+--------+--------+--------+
 |         | 0      | 1      | 2      | 3      | 4      |
@@ -310,7 +268,7 @@ Veamos el modo de definirla:
 
 El acceso a cada dato se realiza utilizando los dos índices, donde el
 primero hace referencia a la fila y el segundo a la columna. Así, si se
-accede al segundo elemento (columna 1) de la tercer fila sería (fila 2):
+accede al segundo elemento (columna 1) de la tercer fila (fila 2):
 ``matriz[2][1]``.
 
 El recorrido de una matriz se simplifica utilizando ciclos repetitivos
@@ -353,7 +311,24 @@ previamente definida.
     1.21
     19.9
     9.38
-    
+
+
+Otro modo de recorrer una matriz es iterando directamente sobre sus elementos es:
+
+.. code:: python
+
+    for fila in matriz:
+        for elemento in fila:
+            print(elemento, ' ', end='')
+        print()
+
+En este caso, el ``for`` externo asigna en cada ciclo una fila diferente y, el ``for`` anidado itera sobre cada elemento de esa fila. Veamos la salida que produce:
+
+.. parsed-literal::
+
+    12.2  33.3  12.1  0.3  1.21  
+    3.14  2.1  9.8  28.1  19.9  
+    10.8  0.1  0.2  22.1  9.38
 
 
 Operaciones
@@ -825,21 +800,19 @@ con los nombres y otra con los teléfonos. Las funciones a utilizar son
     {'JPFeinman': '1523443', 'Fontanarrosa': '32456', 'Dolina': '4584129', 
      'Spasiuk': '65748', 'Marado': '1552123'}
 
+.. raw:: pdf
+
+   PageBreak oneColumn
 
 Cadenas de caracteres
 ~~~~~~~~~~~~~~~~~~~~~
 
-Una cadena es una secuencia de caracteres. Las hemos usado para mostrar
-mensajes, pero sus usos son mucho más amplios que sólo ése, a
-continuación las veremos mas en profundidad.
+Una cadena es una secuencia de caracteres. Las hemos usado para mostrar mensajes pero sus usos son mucho más amplios, a continuación las veremos en mayor detalle.
 
 Es importante destacar:
 
--  Las cadenas son inmutables: una vez creadas no podemos modificarlas
-   accediendo manualmente a sus caracteres.
--  El acceso a sus caracteres es igual al de los elementos de una lista.
-   El primer caracter se encuentra en la posición cero y soporta el
-   indexado y las rebanadas o porciones tal como las listas.
+-  Las cadenas son inmutables: una vez creadas no podemos modificarlas accediendo manualmente a sus caracteres.
+-  El acceso a sus caracteres es igual al de los elementos de una lista: el primer caracter se encuentra en la posición cero y se puede acceder a sus caracteres utilizando rebanadas o porciones.
 
 Veamos la siguiente cadena:
 
@@ -878,7 +851,7 @@ símbolos: >, >=, <, <=, ==, !=. Veamos un ejemplo:
 
 .. code:: python
 
-    palabra = input("Ingresá una palabra: ")
+    palabra = input("Ingrese una palabra: ")
     if palabra < w:
         print("Tu palabra, "+palabra+ ", va antes que " + w)
     elif palabra > w:
@@ -889,7 +862,7 @@ símbolos: >, >=, <, <=, ==, !=. Veamos un ejemplo:
 
 .. parsed-literal::
 
-    Ingresá una palabra: cadenas
+    Ingrese una palabra: cadenas
     Tu palabra, cadenas, va antes que libertad
 
 
