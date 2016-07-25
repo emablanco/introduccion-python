@@ -874,9 +874,9 @@ específica, a continuación vemos los más usuales:
 
 - ``find`` Busca una subcadena dentro de otra.
 
-- ``lower`` y ``upper`` Retorna la cadena en minúsculas 
+- ``lower`` y ``upper`` Retorna la cadena en minúsculas y mayúsculas respectivamente.
 
-- ``replace`` Retorna una cadena donde todas las ocurrencias de una cadena son reemplazadas por otra
+- ``replace`` Retorna una cadena donde todas las ocurrencias de una cadena son reemplazadas por otra.
 
 - ``split`` Separa una cadena según un caracter separador y retorna una lista con los elementos separados.
 
