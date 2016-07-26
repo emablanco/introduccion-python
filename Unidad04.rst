@@ -1,15 +1,16 @@
-================================================
-Tecnicatura Universitaria en Software Libre
-================================================
 --------------------------------------
 Introducción al Desarrollo de Software
 --------------------------------------
 
-:Docente: Emiliano López
-:Tutor: Maximiliano Boscovich
+:Autor: Emiliano López - elopez@fich.unl.edu.ar
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
 
 .. header:: 
-  Introducción al Desarrollo de Software - Unidad 4
+    Introducción al Desarrollo de Software
+
+.. footer::
+    ###Page### / ###Total###
 
 .. contents:: Contenidos
 
@@ -20,10 +21,9 @@ Introducción al Desarrollo de Software
 
    PageBreak oneColumn
 
-.. |date| date::
+.. |date| date:: %d/%m/%Y
 .. |time| date:: %H:%M
 
-Este documento fue generado el |date| |time|
 
 .. raw:: pdf
 
@@ -37,12 +37,12 @@ Este documento fue generado el |date| |time|
 
 Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
 
-A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__ :
+A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__:
 
 **Usted es libre para:**
 
-- Compartir — copiar y redistribuir el material en cualquier medio o formato
-- Adaptar — remezclar, transformar y crear a partir del material    
+- Compartir - copiar y redistribuir el material en cualquier medio o formato
+- Adaptar - remezclar, transformar y crear a partir del material    
 
 Para cualquier propósito, incluso comercialmente
 
@@ -50,9 +50,9 @@ El licenciante no puede revocar estas libertades en tanto usted siga los términ
 
 **Bajo los siguientes términos:**
 
-- Atribución — Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
+- Atribución - Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
 
-- Compartir Igual — Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
+- Compartir Igual - Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
 
 \* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
 
@@ -210,22 +210,23 @@ los valores.
 .. code:: python
 
     def arma_agenda(lista_nom, lista_tel):
-        '''recibe 2 listas y retorna un diccionario'''
+        """recibe 2 listas y retorna un diccionario"""
         d = {}
         for nom, tel in zip(lista_nom, lista_tel):
             d[nom] = tel
         return d
     
     # Programa principal
-    n = ['Kliksberg', 'Stiglitz', 'Zaffaroni']
-    t = ['23444', '54556', '66554']
-    agenda = arma_agenda(n,t)
+    n = ['Kliksberg', 'Stiglitz', 'Zaffaroni', 'Galeano']
+    t = ['23444', '54556', '66554', '12121']
+    agenda = arma_agenda(n, t)
     print(agenda)
 
 
 .. parsed-literal::
 
-    {'Kliksberg': '23444', 'Stiglitz': '54556', 'Zaffaroni': '66554'}
+    {'Kliksberg': '23444', 'Stiglitz': '54556', 'Zaffaroni': '66554', 
+    'Galeano': '12121'}
 
 
 El lector atento habrá notado que en todas las funciones debajo de su
@@ -263,26 +264,15 @@ Veamos un ejemplo y analicemos su comportamiento:
     Norberto Napolitano
 
 
-La variable ``nom`` ingresa a la función como ``nombre`` y si bien
-se realiza una asignación dentro de la función, vemos que no fue alterado 
-su contenido o al menos no se ve reflejado desde el programa principal. 
+La variable ``nom`` ingresa a la función como ``nombre`` y si bien se realiza una asignación dentro de la función, vemos que no fue alterado su contenido o al menos no se ve reflejado desde el programa principal. 
 
-Esto sucede debido a que el contenido de la variable ``nom`` es copiada 
-en la variable ``nombre`` y todo cambio que se realice en el interior de
-la función ``no_cambiemos`` será local, es decir, su
-ámbito de validez se limita a la función, de manera tal que tanto
-``Spinetta`` como ``Napolitano`` son irreemplazables.
+Esto sucede debido a que el contenido de la variable ``nom`` es copiada en la variable ``nombre`` y todo cambio que se realice en el interior de la función ``no_cambiemos`` será local, es decir, su ámbito de validez se limita a la función, de manera tal que tanto ``Spinetta`` como ``Napolitano`` son irreemplazables.
 
-Contrariamente al ejemplo previo, existen estructuras de datos que al ser 
-modificadas dentro la función reflejan también lo hacen en el programa principal. 
+Contrariamente al ejemplo previo, existen estructuras de datos que al ser modificadas dentro la función reflejan este cambio también en el programa principal. 
 
-La única condición para que sea posible este comportamiento es que la
-estructura a ser modificada sea *mutable*, tal es el
-caso de los diccionarios y listas.
+La única condición para que sea posible este comportamiento es que la estructura a ser modificada sea *mutable*, tal es el caso de los diccionarios y listas.
 
-Veamos un caso donde definimos una función que recibe dos argumentos,
-una lista y una cadena de caracteres, de tipo *mutable* e *inmutable* 
-respectivamente.
+Veamos un caso donde definimos una función que recibe dos argumentos, una lista y una cadena de caracteres, de tipo *mutable* e *inmutable* respectivamente.
 
 .. code:: python
 
@@ -349,9 +339,7 @@ Algunos detalles a destacar sobre variables globales:
 -  Se debe anteponer a la variable la palabra reservada ``global``
 -  Toda modificación repercutirá en el estado de la variable del programa principal
 
-El uso de variables globales es una práctica que generalmente debe ser
-evitada. En la mayoría de los casos es preferible utilizar un parámetro
-y que la función retorne en su nombre el valor modificado.
+El uso de variables globales es una práctica que generalmente debe ser evitada. En la mayoría de los casos es preferible utilizar un parámetro y que la función retorne en su nombre el valor modificado.
 
 Agrupando el código en módulos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -367,15 +355,9 @@ Para solucionar este tipo de problemas y sacar provecho del uso de
 funciones existen los módulos, cuya utilidad es la de contener varias
 funciones que realicen algún tipo de tarea afín.
 
-Por ejemplo, una serie de funciones para cálculo matemático sería útil
-que estén contenidas en un mismo módulo, otras funciones para
-procesamiento de sonido en un módulo destinado a tal fin, o bien
-un módulo destinado a almacenar todas las funciones relativas
-a un determinado proyecto.
+Por ejemplo, una serie de funciones para cálculo matemático sería útil que estén contenidas en un mismo módulo, en otro aquellas para procesamiento de sonido, o bien uno destinado a almacenar todas las funciones relativas a un determinado proyecto.
 
-Para comprender la implementación veamos un módulo trivial, que contenga
-saludos en diferentes idiomas/. Almacenamos en el archivo ``saludo.py``
-las siguientes funciones:
+Para comprender la implementación veamos un módulo trivial, que contenga saludos en diferentes idiomas. Almacenamos en el archivo ``saludo.py`` las siguientes funciones:
 
 .. code:: python
 
@@ -412,14 +394,9 @@ hacemos lo siguiente:
     saludo.italiano(nom)
     saludo.guarani(nom)
 
-Como observamos, el módulo es importado a través del nombre del archivo
-(sin la extensión *.py*) y luego, se invocan las funciones utilizando el
-nombre del módulo y la función separado por un punto (.).
+Como observamos, el módulo es importado a través del nombre del archivo (sin la extensión *.py*) y luego se invocan las funciones utilizando el nombre del módulo y la función separados por un punto (.), esto es,  ``modulo.funcion``.
 
-De esta manera, tenemos acceso a las funciones definidas
-bajo el módulo, para el caso que únicamente se utilice una función
-específica, es posible especificarlo en la cláusula ``import`` del siguiente
-modo:
+De esta manera, fácilmente accedemos a las funciones definidas bajo el módulo. Para el caso que se utilice únicamente una función es posible especificarlo en la cláusula ``import`` del siguiente modo: ``from moduloX import funcionA, funcionB``, cuyo significado es *del módulo X importar la función A y B*. Apliquemos esto al ejemplo previo:
 
 .. code:: python
 
@@ -429,38 +406,27 @@ modo:
     italiano(n)
     guarani(n)
 
-De esta manera, es posible invocar solamente las funciones importadas.
+De esta manera, es posible invocar solamente las funciones importadas. Para profundizar sobre el uso de módulos se recomienda la lectura del capítulo *Módulos* (pag. 36) del Tutorial de Python.
 
-Para profundizar sobre el uso de módulos se recomienda la lectura 
-del capítulo *Módulos* (pag. 36) del Tutorial de Python.
+.. raw:: pdf
+
+   PageBreak oneColumn
 
 Archivos
 --------
 
-Hasta aquí hemos trabajado con información almacenada en estructuras de
-datos, ya sea a partir de la lectura interactiva (utilizando la función
-``input``) o cargada estáticamente en el mismo código del programa y la
-salida ha sido siempre a través de la impresión en pantalla (utilizando
-la función ``print``).
+Hasta aquí hemos trabajado con información almacenada en estructuras de datos, ya sea a partir de la lectura interactiva (utilizando la función ``input``) o cargada estáticamente en el mismo código del programa y la salida ha sido siempre a través de la impresión en pantalla (utilizando la función ``print``).
 
-La limitación de este modo de trabajo es que la información no se
-almacena de modo persistente. Para resolver este inconveniente veremos
-en la presente sección la manera de utilizar información de entrada y
-salida para nuestros programas a través de archivos de texto.
+La limitación de este modo de trabajo es que la información no se almacena de modo persistente. Para resolver este inconveniente veremos en la presente sección la manera de utilizar información de entrada y salida para nuestros programas a través de archivos de texto.
 
-Incorporar el uso de archivos a un programa generalmente requiere las
-siguientes acciones:
+Incorporar el uso de archivos a un programa generalmente requiere las siguientes acciones:
 
--  Abrir el archivo: la apertura de un archivo se realiza a partir de la
-   primitiva ``open`` y consiste en asociar un elemento del programa con
-   un archivo en particular.
--  Elegir el modo de apertura: un archivo puede abrirse para lectura
-   (r), escritura (w), agregado (a), binario (b), lectura/escritura (+)
+-  Abrir el archivo: la apertura de un archivo se realiza a partir de la primitiva ``open`` y consiste en asociar un elemento del programa con un archivo en particular.
+-  Elegir el modo de apertura: un archivo puede abrirse para lectura (r), escritura (w), agregado (a), binario (b), lectura/escritura (+)
 -  Leer ó escribir en el archivo
 -  Cerrar el archivo
 
-Trabajemos con un archivo de texto, por ejemplo ``archi01.txt``, con el
-siguiente contenido:
+Trabajemos con un archivo de texto, por ejemplo ``archi01.txt``, con el siguiente contenido:
 
 ::
 
@@ -474,9 +440,8 @@ Lectura
 Vamos a realizar la lectura de este archivo e imprimir por pantalla su
 contenido. Dos de los métodos más comunes son:
 
--  readline(): lee de a una línea por vez cada vez que es invocada
--  readlines(): lee todo el contenido del archivo y lo retorna en una
-   lista
+-  ``readline()``: lee de a una línea por vez cada vez que es invocada
+-  ``readlines()``: lee todo el contenido del archivo y lo retorna en una lista
 
 Veamos como sería el funcionamiento del primer caso:
 
@@ -502,25 +467,19 @@ Veamos como sería el funcionamiento del primer caso:
     enero 30
     
     febrero 60
-    
 
-
-Probablemente sea más práctico realizar la lectura línea por línea en un
-ciclo iterativo hasta que se llegue al final del archivo. Esto se puede
-realizar combinando lo anterior con un ciclo repetitivo ``while``:
+Probablemente sea más práctico realizar la lectura línea por línea en un ciclo iterativo hasta que se llegue al final del archivo. Esto se puede realizar combinando lo anterior con un ciclo repetitivo ``while``:
 
 .. code:: python
 
-    # Apertura del archivo en modo lectura
+    # Abre archivo para lectura
     archivo = open('ejemplos/u4/archi01.txt', 'r')
     
-    # Lee la primer línea
-    linea = archivo.readline()
+    linea = archivo.readline()      # Lee 1er línea
     while linea:
         print(linea)
-        # lee la sgte
-        linea = archivo.readline()
-    archivo.close()
+        linea = archivo.readline()  # lee la sgte
+    archivo.close()                 # cierra archivo
 
 
 .. parsed-literal::
@@ -532,12 +491,9 @@ realizar combinando lo anterior con un ciclo repetitivo ``while``:
     marzo 55
     
 
+En este caso, la función ``readline`` retorna ``False`` cuando se llega al final del archivo, y por lo tanto terminará el ciclo ``while``.  
 
-En este caso, la función ``readline`` retorna ``False`` cuando se
-llega al final del archivo, y por lo tanto terminará el ciclo ``while``. 
-Otro método más directo y elegante -en general preferido-
-para realizar un comportamiento equivalente (agregado desde la versión
-de Python 2.2) es iterar sobre los mismos archivos, esto es:
+Otro método más directo y elegante -en general preferido- para realizar un comportamiento equivalente (agregado desde la versión de Python 2.2) es iterar sobre los mismos archivos, esto es:
 
 .. code:: python
 
@@ -546,16 +502,13 @@ de Python 2.2) es iterar sobre los mismos archivos, esto es:
     
     for linea in archivo:
         print(linea)
-
     archivo.close()
 
+De este vemos que archivo es una secuencia directamente iterable, al igual que una cadena de caracteres, lista, diccionario, etc. Esto es una gran ventaja en Python, ya que todo tipo de dato que sea una secuencia puede ser iterada automáticamente en un ciclo ``for``.
 
-El método ``readlines()`` lee el contenido completo del archivo
-retornando una lista con su contenido, donde cada elemento corresponde a
-un renglón del archivo.
+Otro método que lee el contenido completo del archivo retornándolo en una lista es  ``readlines()``, donde cada elemento de la lista corresponde a un renglón del archivo.
 
-Este método es más directo y suele ser útil para archivos que no son
-excesivamente grandes. Veamos un ejemplo:
+Este método es más directo y suele ser útil para archivos que no son excesivamente grandes. Veamos un ejemplo:
 
 .. code:: python
 
@@ -570,7 +523,6 @@ excesivamente grandes. Veamos un ejemplo:
     
     # lista con todo el contenido
     print(lineas)
-    
     archivo.close()
 
 
@@ -581,11 +533,7 @@ excesivamente grandes. Veamos un ejemplo:
     ['enero 30\n', 'febrero 60\n', 'marzo 55\n']
 
 
-Ahora bien, podemos procesar los datos que son leídos del archivo.
-Hagamos el cálculo de un promedio con los valores numéricos de cada mes,
-para esto debemos extraer del renglón solamente aquellos
-valores que siguen a la cadena de caracteres correspondiente al mes.
-Para esto haremos uso de la función ``split()``:
+Ahora bien, podemos procesar los datos que son leídos del archivo. Hagamos el cálculo de un promedio con los valores numéricos de cada mes, para esto debemos extraer del renglón solamente aquellos valores que siguen a la cadena de caracteres correspondiente al mes. Para esto haremos uso de la función ``split()``:
 
 .. code:: python
 
@@ -601,7 +549,7 @@ Para esto haremos uso de la función ``split()``:
     
     # itera sobre lista lineas
     for linea in lineas:
-        mes, val = linea.split()    # separo por espacio
+        mes, val = linea.split()    # separo por espacio y desempaqueto
         suma = suma + int(val)      # sumo convirtiendo a entero
         cant = cant + 1             # cuento los valores
         
@@ -614,6 +562,9 @@ Para esto haremos uso de la función ``split()``:
 
     Promedio:  48.333333333333336
 
+.. note::
+
+    El último caracter de una renglón de un archivo de texto es un ``<enter>``, por eso,  tal como se ve en los ejemplos previos, al imprimir una línea leída se muestra un renglón en blanco. Esto se debe a que un ``<enter>`` corresponde a lo leído en el archivo y el otro al que agrega la función ``print()``. La solución a este comportamiento viene de la mano del método ``strip()``, que elimina el último caracter no visible como el ``<enter>``.
 
 Escritura
 ~~~~~~~~~
@@ -621,9 +572,8 @@ Escritura
 Para escribir datos en un archivo, inicialmente se lo abre para
 escritura, luego se pueden utilizar dos métodos:
 
--  write(r): escribe el contenido de r en un renglón del archivo
--  writelines(L): escribe el contenido completo de la lista L en el
-   archivo
+-  ``write(r)``: escribe el contenido de ``r`` en un renglón del archivo
+-  ``writelines(L)``: escribe el contenido completo de la lista ``L`` en el archivo
 
 Veamos un ejemplo de ``write``:
 
@@ -644,10 +594,8 @@ Veamos un ejemplo de ``write``:
     
     archivo.close()
 
-El programa creó el archivo y luego escribió los tres renglones. Se debe
-notar que al final de cada cadena se utilizó el caracter especial ``\n``
-que se traduce en un salto de línea, sino cada texto se hubiese escrito
-a continuación.
+El programa creó el archivo y luego escribió los tres renglones. Se debe notar que al final de cada cadena se utilizó el caracter especial ``\n``
+que se traduce en un salto de línea, sino cada texto se hubiese escrito a continuación.
 
 Ahora veremos un ejemplo haciendo uso del método ``writelines()``:
 
@@ -662,16 +610,9 @@ Ahora veremos un ejemplo haciendo uso del método ``writelines()``:
     
     archivo.close()
 
-Como se observa, al igual que en el método anterior se debe agregar el
-caracter especial de retorno de línea al finalizar cada cadena. Se debe
-tener en cuenta que de no existir el archivo es creado pero, es borrado
-su contenido en caso contrario, por lo que debe prestarte especial
-atención para evitar la pérdida de datos involuntaria.
+Como se observa, al igual que en el método anterior se debe agregar el caracter especial de retorno de línea al finalizar cada cadena. De no existir el archivo es creado pero, es borrado su contenido en caso contrario, por lo que debe prestarte especial atención para evitar la pérdida de datos involuntaria.
 
-En aquellos casos donde sea necesario agregar contenido a un archivo ya
-existente entonces se debe utilizar el modo de apertura ``a``
-(proveniente de Append). Veamos un ejemplo en el que se agregan unas
-líneas de datos al archivo ya utilizado ``archi01.txt``.
+En aquellos casos donde sea necesario agregar contenido a un archivo ya existente entonces se debe utilizar el modo de apertura ``a`` (proveniente de Append). Veamos un ejemplo en el que se agregan unas líneas de datos al archivo ya utilizado ``archi01.txt``.
 
 .. code:: python
 
@@ -695,11 +636,7 @@ Finalmente el archivo quedará con el siguiente contenido:
     mayo 21
     junio 88
 
-Es importante recordar que debemos cerrar el archivo una vez
-que hemos trabajado con el mismo (función ``close()``),
-independientemente de si lo hemos utilizado para lectura o para
-escritura.
+Es importante recordar que debemos cerrar el archivo una vez que hemos trabajado con el mismo (función ``close()``), independientemente de si lo hemos utilizado para lectura o para escritura.
 
-Algunos de los temas expresados en la presente sección son explicados con mayor detalle
-en el capítulo *Leyendo y escribiendo archivos* (pag. 49) del Tutorial de Python.
+Algunos de los temas expresados en la presente sección son explicados con mayor detalle en el capítulo *Leyendo y escribiendo archivos* (pag. 49) del Tutorial de Python.
 
