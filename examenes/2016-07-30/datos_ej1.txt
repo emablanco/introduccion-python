@@ -1,0 +1,27 @@
+Pablo Zabaleta,30,200,0,1
+Ezequiel Garay,23,230,0,1
+Federico Fernández,10,455,0,1
+Marcos Rojo,12,600,0,1
+Hugo Campagnaro,22,800,0,1
+José María Basanta,34,100,0,1
+Nicolás Otamendi,90,123,0,1
+Lisandro López,0,0,0,1
+Martín Demichelis,90,789,0,1
+Gabriel Mercado,90,678,0,1
+Javier Mascherano,90,756,0,1
+Fernando Gago,0,0,0,1
+Ever Banega,80,456,0,1
+Lucas Biglia,78,765,0,1
+Angel Di María,60,567,1,1
+Maxi Rodríguez,65,765,0,1
+Augusto Fernández,67,567,0,1
+José Sosa,87,756,0,1
+Ricardo Álvarez,45,456,0,1
+Enzo Pérez,65,546,0,1
+Fabián Rinaudo,76,456,0,1
+Lionel Messi,66,905,3,1
+Sergio Agüero,56,6,654,1,1
+Gonzalo Higuaín,90,234,0,1
+Ezequiel Lavezzi,60,234,0,1
+Rodrigo Palacio,30,432,0,1
+Franco Di Santo,23,543,0,1

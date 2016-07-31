@@ -1,0 +1,14 @@
+Introducción al desarrollo de software - Examen 02-07-2016
+
+Ejercicio 1 (15 Pts). Realice un programa donde el usuario debe adivinar un número generado al azar. El programa debe permitir el ingreso del valor e informarle si el valor que debe ingresar es mayor o menor, la finalización es cuando se adivina el número. Ayuda: indague sobre el módulo random para generar números aleatorios. 
+
+Ejercicio 2 (20 Pts). Se leen por teclado un conjuntos de nombres de alumnos cuya carga finalizan cuando se ingresa "xyz". Se solicita que ingrese todos los valores en una lista y que posteriormente permita al usuario ingresar el nombre que desea eliminar. Finalmente muestre la lista modificada. 
+
+Ejercicio 3 (30 Pts). Programe una función que reciba tres argumentos: un valor numérico correspondiente a una distancia, una cadena de caracter correspondiente a la unidad de la medida, y otra que significa la unidad a la que se debe convertir. Las unidades de conversión pueden ser "yarda" o "metro", la relación de conversión es 1 metro = 1 yarda / 1.0936, y por lo tanto tenemos que 1 yarda = 1 metro * 1.0936. Invoque la función desde el programa principal convirtiendo de una unidad a otra.
+
+Ejercicio 4 (35 Pts). En el archivo de texto datos_ej1.txt se tiene información sobre los jugadores de la selección de fútbol para un determinado partido. Por cada línea del archivo se encuentran separado por comas los siguientes datos:
+Nombre y apellido, minutos en cancha, cantidad de metros corridos, cantidad de goles y un campo mas de control.
+
+Se le solicita que:
+- Informe en pantalla la cantidad de jugadores que realizaron goles
+- Programe una función que retorne el jugador con mayor rendimiento, calculado por (cant_goles+1)*mts_corridos/minutos_jugados y haga uso desde el programa principal para mostrar en pantalla el nombre.
