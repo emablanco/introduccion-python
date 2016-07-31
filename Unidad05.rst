@@ -65,31 +65,15 @@ El licenciante no puede revocar estas libertades en tanto usted siga los términ
 Unidad 5: Introducción a la Programación Orientada a Objetos
 ============================================================
 
-Python es un lenguaje de Programación Orientado a Objetos (POO), lo que
-significa que puede manipular construcciones llamadas objetos. Se puede
-pensar en un objeto como una única estructura que contiene tanto datos
-como funciones, solo que las funciones en este contexto son llamadas
-*métodos*. En definitiva, los objetos son una manera de organizar datos
-y de relacionarlos con el código apropiado para manejarlo.
+Python es un lenguaje de Programación Orientado a Objetos (POO), lo que significa que puede manipular construcciones llamadas objetos. Se puede pensar en un objeto como una única estructura que contiene tanto datos como funciones, solo que las funciones en este contexto son llamadas *métodos*. En definitiva, los objetos son una manera de organizar datos y de relacionarlos con el código apropiado para manejarlo.
 
-La Programación Orientada a Objetos introduce terminología, y una gran
-parte es simplemente darle un nuevo nombre a cosas que ya estuvimos
-usando.
+La Programación Orientada a Objetos introduce terminología, y una gran parte es simplemente darle un nuevo nombre a lo que ya estuvimos usando.
 
-Si bien Python nos provee un gran número de tipos ya definidos (int,
-float, str, dict, list, etc.), en muchas situaciones resultarán insuficientes, 
-por lo que será necesario crear nuestros propios tipos, 
-que almacenen la información relevante para el problema a resolver
-y contengan las funciones para operar con esa información.
+Si bien Python nos provee un gran número de tipos ya definidos (int, float, str, dict, list, etc.), en muchas situaciones resultarán insuficientes, por lo que será necesario crear nuestros propios tipos, que almacenen la información relevante para el problema a resolver y contengan las funciones para operar con esa información.
 
-Supongamos un programa que gestiona jugadores de fútbol de un club,
-independientemente de los detalles de implementación, contar con un tipo
-de dato *jugador* que permita cargar los datos personales y
-profesionales nos brinda la posibilidad de tener un código mas legible y
-organizado. 
+Supongamos un programa que gestiona jugadores de fútbol de un club, independientemente de los detalles de implementación, contar con un tipo de dato *jugador* que permita cargar los datos personales y profesionales nos brinda la posibilidad de tener un código mas legible y organizado. 
 
-Por ejemplo, para cargar los datos de un nuevo jugador el
-código podría ser del siguiente modo:
+Por ejemplo, para cargar los datos de un nuevo jugador el código podría ser del siguiente modo:
 
 .. code:: python
 
@@ -100,12 +84,9 @@ código podría ser del siguiente modo:
 
 Del fragmento de código previo podemos destacar:
 
--  ``pipa = Jugador(...)`` crea una nueva instancia de la clase
-   ``Jugador`` y le asigna este objeto al identificador ``pipa``. 
+-  A la variable *pipa* se le asigna un tipo de dato ``Jugador`` que contiene tres atributos: nombre, fecha de nacimiento y posición. 
 
--   La nueva estructura contiene un conjunto de datos denominados atributos
-    o propiedades (nombre, fecha de nacimiento y posición) y un conjunto de funciones
-    asociadas al objeto denominados métodos (``AgregarClub()``, ``ClubActual()``)
+-  Además cuenta con dos funciones funciones asociadas, denominados métodos: ``AgregarClub()`` y ``ClubActual()``.
 
 Atributos y métodos
 -------------------
