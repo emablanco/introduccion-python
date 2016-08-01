@@ -353,19 +353,21 @@ Se recomienda profundizar este tema en el capítulo *Un primer vistazo a las cla
 Usando módulos externos
 -----------------------
 
-Una de las ventajas de la programación orientada a objetos es que permite organizar en una forma mas clara el código de un programa lo que facilita la comprensión para su uso, por este motivo la inmensa mayoría de módulos externos utilizan este paradigma.  En la presente sección aplicaremos los conceptos aprendidos previamente haciendo uso del módulo para procesamiento de imágenes denominado *PIL (Python Imagin Library)*.
+Una de las ventajas de la POO es que permite organizar en una forma mas clara el código de un programa lo que facilita la comprensión para su uso, por este motivo la inmensa mayoría de módulos externos utilizan este paradigma. 
+
+Hemos visto previamente los conceptos básicos de la POO y su correspondiente implementación, por lo que en la presente sección identificaremos lo aprendido utilizando bibliotecas externas ya que una parte fundamental del aprendizaje del desarrollo de software implica poder utilizar códigos de terceros.
+
+Procesamiento de imágenes
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Aplicaremos los conceptos aprendidos haciendo uso del módulo para procesamiento de imágenes denominado *PIL (Python Imagin Library)* que nos permite analizar y manipular imágenes utilizando el paradigma de orientación a objetos. 
 
 .. Note:: Instalando Pillow
 
     Aquí utilizamos la versión de PIL denominada **Pillow**, para instalarla basta ejecutar bajo la línea de comandos: ``pip3 install pillow``. Para detalles de su instalación puede acceder a la documentación oficial en: http://pillow.readthedocs.io/en/3.0.x/installation.html
 
-Este módulo nos permite analizar y manipular imágenes utilizando el paradigma de orientación a objetos que ha sido descripto con anterioridad. Dentro de las operaciones que realizaremos podemos destacar:
-
-- abrir y guardar archivos de imágenes
-- analizar el tamaño y otras propiedades
-- modificar el brillo
-- separar los colores
-- modificar la coloración
+Métodos y atributos de PIL
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python 
 
