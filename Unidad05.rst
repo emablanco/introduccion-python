@@ -366,13 +366,32 @@ Aplicaremos los conceptos aprendidos haciendo uso del módulo para procesamiento
 
     Aquí utilizamos la versión de PIL denominada **Pillow**, para instalarla basta ejecutar bajo la línea de comandos: ``pip3 install pillow``. Para detalles de su instalación puede acceder a la documentación oficial en: http://pillow.readthedocs.io/en/3.0.x/installation.html
 
+¿Qué es una imagen?
+~~~~~~~~~~~~~~~~~~~
+
+Una imagen es un archivo que almacena información de dos tipos: por un lado los píxeles y por el otro información relativa a la imagen (metadatos) como por ejemplo, el ancho y el alto.
+
+Los píxeles se encuentran en una grilla tipo matriz, donde cada uno tiene una posición que se determina por la fila y columna.
+
+
 Métodos y atributos de PIL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+En el ejemplo a continuación hacemos uso del método ``open``, perteneciente al objeto ``Image``, y del atributo ``size``, que contiene dos valores (en realidad es una tupla), el ancho y alto de la imagen, correspondientes al las columnas y filas respectivamente. 
+
 .. code:: python 
 
-    from PIL import Image               # importamos Image
-    iarchi = input("Archivo: ")         # lee nombre del archivo
-    img = Image.open(iarchi)            # Método open
-    print('Ancho:', img.width)          # Atributos:
-    print('Alto:', img.height)          #    width y height
+    from PIL import Image             # de PIL importa el objeto Image
+    img = Image.open("hornocal.jpg")  # Método open
+    ancho, alto = img.size            # Atributo size: ancho y alto
+    print("Ancho: ", ancho)
+    print("Alto: ", alto)
+    print("Cantidad de píxeles: ", ancho*alto)
+
+::
+
+    Ancho:  600
+    Alto:  122
+    Cantidad de píxeles:  73200
+
+El método ``open`` es una función que recibe como argumentos la ruta de la imagen por abrir, en el caso previo se refiere a la imagen *hornocal.jpg* que está ubicada en el mismo directorio del programa.
