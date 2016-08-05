@@ -373,16 +373,21 @@ Una imagen es un archivo que almacena información de dos tipos: por un lado los
 
 Los píxeles se encuentran en una grilla tipo matriz, donde cada uno tiene una posición que se determina por la fila y columna.
 
+.. figure:: img/u5/madres.jpg
+    :width: 800 px
+    
+    Imagen de 630x402
 
-Métodos y atributos de PIL
-~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-En el ejemplo a continuación hacemos uso del método ``open``, perteneciente al objeto ``Image``, y del atributo ``size``, que contiene dos valores (en realidad es una tupla), el ancho y alto de la imagen, correspondientes al las columnas y filas respectivamente. 
+Métodos y atributos
+~~~~~~~~~~~~~~~~~~~
+
+En el ejemplo a continuación hacemos uso del método ``open``, perteneciente al objeto ``Image``, y del atributo ``size``, que contiene dos valores (en realidad es una tupla), el ancho y alto de la imagen, correspondientes a la cantidad de columnas y filas respectivamente. 
 
 .. code:: python 
 
     from PIL import Image             # de PIL importa el objeto Image
-    img = Image.open("hornocal.jpg")  # Método open
+    img = Image.open("madres.jpg")    # Método open
     ancho, alto = img.size            # Atributo size: ancho y alto
     print("Ancho: ", ancho)
     print("Alto: ", alto)
@@ -390,8 +395,98 @@ En el ejemplo a continuación hacemos uso del método ``open``, perteneciente al
 
 ::
 
-    Ancho:  600
-    Alto:  122
-    Cantidad de píxeles:  73200
+    Ancho:  630
+    Alto:  402
+    Cantidad de píxeles:  253260
 
-El método ``open`` es una función que recibe como argumentos la ruta de la imagen por abrir, en el caso previo se refiere a la imagen *hornocal.jpg* que está ubicada en el mismo directorio del programa.
+El método ``open`` es una función que recibe como argumento la ruta de la imagen por abrir, en el caso previo se refiere a la imagen *madres.jpg* que está ubicada en el mismo directorio del programa.
+
+Método getpixel()
+'''''''''''''''''
+
+El método encargado de obtener el valor de un determinado píxel de la imagen es ``getpixel((x, y))``, donde *x* e *y* corresponden a la columna y fila respectivamente. A continuación hacemos uso de este método donde se recorren todos los píxeles de la imagen y se muestra el valor numérico de cada uno.
+
+
+.. code:: python
+
+    from PIL import Image
+    img = Image.open('madres.jpg')
+    ancho, alto = img.size 
+    for y in range(alto):
+      for x in range(ancho):
+        pixel = img.getpixel((x, y))
+        print(x, ',', y, ':', pixel)
+      print()
+
+Método putpixel()
+'''''''''''''''''
+Como la imagen en este caso es en escala de grises, los valores de los píxeles van desde 0 a 255, a continuación calculamos el negativo y modificamos el objeto en cuestión para luego guardarlo en otro archivo.
+
+.. code:: python
+
+    from PIL import Image
+    img = Image.open('madres.jpg')
+    ancho, alto = img.size 
+    for y in range(alto):
+        for x in range(ancho):
+            img.putpixel((x, y), 255 - img.getpixel((x, y)))
+    img.save("negativo.png")
+
+De modo similar, es posible agregar brillo a una imagen incrementando el valor numérico del píxel. Veamos el siguiente ejemplo: 
+
+.. code:: python
+
+    for y in range(alto):
+        for x in range(ancho):
+            valor = img.getpixel((x, y))
+            img.putpixel((x, y), valor + 100)
+    img.save('mas_brillo.png')
+
+
+Método split()
+''''''''''''''
+
+Una imagen a color, de tipo RGB (del inglés Red, Green, Blue, que significa rojo, verde y azul), es una estructura algo más compleja que la de escala de grises vista anteriormente. La diferencia radica en que cada píxel tiene tres componentes: rojo, verde y azul.
+
+.. figure:: img/u5/hornocal.jpg
+    :width: 1500 px
+    
+    Imagen RGB de 600x122
+
+En el ejemplo a continuación separamos los componentes utilizando el método ``split()`` y obtenemos como resultado tres objetos de tipo imagen, que luego almacenamos en archivos diferentes. Cada una de las imágenes resultantes será en escala de grises.
+
+.. code:: python
+
+    from PIL import Image
+    img = Image.open('hornocal.jpg')
+    rojo, verde, azul = img.split()
+    rojo.save('rojo.png')
+    verde.save('verde.png')
+    azul.save('azul.png')
+
+Método merge()
+''''''''''''''
+
+El método ``merge()`` realiza la acción contraria a ``split()``, es decir, a partir de tres objetos en escala de grises forma una imagen RGB. Siguiendo el ejemplo previo, realzaremos el rojo sumando un valor fijo, similar al ejemplo del brillo, y luego formaremos la imagen RGB.
+
+.. code:: python
+
+    from PIL import Image
+
+    img = Image.open('hornocal.jpg')
+    rojo, verde, azul = img.split()
+    ancho, alto = rojo.size 
+
+    for y in range(alto):
+        for x in range(ancho):
+            valor = rojo.getpixel((x, y))
+            rojo.putpixel((x, y), valor + 100)
+    rojiza = Image.merge('RGB', (rojo, verde, azul))
+    rojiza.save("rojo_realzado.png")
+
+El resultado es la imagen que se observa a continuación.
+
+.. figure:: img/u5/rojo_realzado.png
+    :width: 1500 px
+    
+    Imagen RGB de 600x122 con rojo realzado 
