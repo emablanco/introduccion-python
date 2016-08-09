@@ -350,17 +350,19 @@ Se recomienda profundizar este tema en el capítulo *Un primer vistazo a las cla
 
    PageBreak oneColumn
 
-Usando módulos externos
------------------------
+Usando módulos externos orientados a objetos
+--------------------------------------------
 
 Una de las ventajas de la POO es que permite organizar en una forma mas clara el código de un programa lo que facilita la comprensión para su uso, por este motivo la inmensa mayoría de módulos externos utilizan este paradigma. 
 
-Hemos visto previamente los conceptos básicos de la POO y su correspondiente implementación, por lo que en la presente sección identificaremos lo aprendido utilizando bibliotecas externas ya que una parte fundamental del aprendizaje del desarrollo de software implica poder utilizar códigos de terceros.
+Hemos visto previamente los conceptos básicos de la POO y su correspondiente implementación, por lo que en la presente sección identificaremos lo aprendido utilizando bibliotecas externas, ya que una parte fundamental del aprendizaje del desarrollo de software implica poder reutilizar códigos de terceros.
+
+En los siguientes ejemplos utilizaremos herramientas básicas comúnmente realizadas para el procesamiento de imágenes.
 
 Procesamiento de imágenes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Aplicaremos los conceptos aprendidos haciendo uso del módulo para procesamiento de imágenes denominado *PIL (Python Imagin Library)* que nos permite analizar y manipular imágenes utilizando el paradigma de orientación a objetos. 
+Aplicaremos los conceptos aprendidos haciendo uso del módulo para procesamiento de imágenes denominado *PIL (Python Imaging Library)* que nos permite analizar y manipular imágenes utilizando el paradigma de orientación a objetos. 
 
 .. Note:: Instalando Pillow
 
@@ -369,29 +371,30 @@ Aplicaremos los conceptos aprendidos haciendo uso del módulo para procesamiento
 ¿Qué es una imagen?
 ~~~~~~~~~~~~~~~~~~~
 
-Una imagen es un archivo que almacena información de dos tipos: por un lado los píxeles y por el otro información relativa a la imagen (metadatos) como por ejemplo, el ancho y el alto.
+Una imagen es un archivo que almacena dos tipos de información: por un lado los píxeles y, por el otro, información relativa a la imagen, denominados metadatos, como por ejemplo, el ancho y el alto de la imagen.
 
-Los píxeles se encuentran en una grilla tipo matriz, donde cada uno tiene una posición que se determina por la fila y columna.
+Los píxeles se encuentran en una grilla tipo matriz, donde cada uno tiene una posición que se determina por la fila y columna. En el siguiente ejemplo vemos una imagen de 630 píxeles de ancho por 402 de alto.
 
 .. figure:: img/u5/madres.jpg
     :width: 800 px
     
-    Imagen de 630x402
+    Imagen de 630x402 (foto ARGRA)
 
 
 Métodos y atributos
 ~~~~~~~~~~~~~~~~~~~
 
-En el ejemplo a continuación hacemos uso del método ``open``, perteneciente al objeto ``Image``, y del atributo ``size``, que contiene dos valores (en realidad es una tupla), el ancho y alto de la imagen, correspondientes a la cantidad de columnas y filas respectivamente. 
+En el ejemplo a continuación hacemos uso del método ``open``, perteneciente al objeto ``Image``, y del atributo ``size``, que contiene dos valores (en realidad es una tupla) referidos al ancho y alto de la imagen, correspondientes a la cantidad de columnas y filas respectivamente. 
 
 .. code:: python 
 
     from PIL import Image             # de PIL importa el objeto Image
-    img = Image.open("madres.jpg")    # Método open
-    ancho, alto = img.size            # Atributo size: ancho y alto
+    img = Image.open("madres.jpg")    # método open() abre la imagen
+    ancho, alto = img.size            # atributo size retorna ancho y alto
     print("Ancho: ", ancho)
     print("Alto: ", alto)
     print("Cantidad de píxeles: ", ancho*alto)
+    img.show()                        # método show() muestra la imagen
 
 ::
 
@@ -420,27 +423,19 @@ El método encargado de obtener el valor de un determinado píxel de la imagen e
 
 Método putpixel()
 '''''''''''''''''
-Como la imagen en este caso es en escala de grises, los valores de los píxeles van desde 0 a 255, a continuación calculamos el negativo y modificamos el objeto en cuestión para luego guardarlo en otro archivo.
-
-.. code:: python
-
-    from PIL import Image
-    img = Image.open('madres.jpg')
-    ancho, alto = img.size 
-    for y in range(alto):
-        for x in range(ancho):
-            img.putpixel((x, y), 255 - img.getpixel((x, y)))
-    img.save("negativo.png")
-
-De modo similar, es posible agregar brillo a una imagen incrementando el valor numérico del píxel. Veamos el siguiente ejemplo: 
+Como la imagen en este caso es en escala de grises, los valores de los píxeles van desde 0 a 255, a continuación agregamos brillo incrementando el valor numérico del píxel. Veamos el siguiente ejemplo: 
 
 .. code:: python
 
     for y in range(alto):
         for x in range(ancho):
-            valor = img.getpixel((x, y))
-            img.putpixel((x, y), valor + 100)
+            img.putpixel((x, y), img.getpixel((x, y)) + 100)
     img.save('mas_brillo.png')
+
+.. figure:: img/u5/mas_brillo.png
+    :width: 800 px
+    
+    Imagen con brillo agregado
 
 
 Método split()
