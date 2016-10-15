@@ -1,22 +1,8 @@
-===========================================
-Introducción al Desarrollo de Software
-===========================================
-
-Guía práctica N°1
------------------
+Guía de ejercitación N°1
+------------------------
 
 :Autor: Emiliano López - elopez@fich.unl.edu.ar
-:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
-:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
 
-.. |date| date:: %d/%m/%Y
-.. |time| date:: %H:%M
-
-.. header:: 
-   Tecnicatura Universitaria en Software Libre
-
-.. footer::
-    ###Page### / ###Total###
 
 1- Realice un programa donde se pregunte el nombre y edad de una persona y luego se muestre un cordial saludo. Por ejemplo:
 

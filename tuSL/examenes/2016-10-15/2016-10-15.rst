@@ -1,0 +1,9 @@
+Ejercicio 1 (25 puntos): Programe una función que reciba como argumento la temperatura del aire y la velocidad del viento y retorne la sensación térmica dada por la siguiente ecuación: sensacion_termica = 13.12 + 0,6215*T - 11,37*V^0,16 +0,3965*T*V^0,16. 
+Haga uso de esta función desde el programa principal para una T que varía de a 1°C entre -10 y 10 °C, y para una velocidad de viento que va desde 5 a 50 km/h, con una variación de 1km/h.
+
+Ejercicio 2 (30 puntos): En el archivo importaciones2015-2016SFe.csv se encuentra un reporte del Gobierno de la Provincia de Santa Fe donde se informa cuánto variaron los volúmenes de importaciones entre el año 2015 y 2016.  Los campos consisten en Rubro, Producto, Unidad, cantidades desde Enero al 20 de Septiembre 2015 y cantidades desde Enero al 20 de Septiembre 2016 y se encuentran separados por un punto y coma.
+Se solicita que realice un programa que lea el contenido del archivo e informe: a) El producto que más incrementó su volumen de importación. b) El incremento de kilos del producto "Zanahorias".
+
+Ejercicio 3 (20 puntos): Se leen por teclado un conjuntos de nombres de futbolistas cuya carga finaliza cuando se ingresa "ZZZ". Se solicita que cargue los valores ingresados en una lista y que posteriormente la muestre por pantalla según lo siguiente: a) Ordenada alfabéticamente, b) en sentido inverso, c) mezclada al azar y, d) la lista original con los nombres en mayúsculas.
+
+Ejercicio 4 (25): El juego "Generala" consiste en tirar cinco dados y establecer el  puntaje de la jugada. De las posibles, la escalera se da cuando suceden algunas de las tres progresiones: 1-2-3-4-5, 2-3-4-5-6 y 3-4-5-6-1. Realice un programa que tire los 5 dados al azar y determine si se produjo una escalera.
