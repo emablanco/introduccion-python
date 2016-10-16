@@ -1,0 +1,412 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 5 0 R /F4 6 0 R /F5 8 0 R /F6 9 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /A << /S /URI /Type /Action /URI (mailto:elopez@fich.unl.edu.ar) >> /Border [ 0 0 0 ] /Rect [ 238.7073 683.8486 351.3693 697.8486 ] /Subtype /Link /Type /Annot >>
+endobj
+5 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /BaseFont /Courier-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+7 0 obj
+<< /Annots [ 4 0 R ] /Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+8 0 obj
+<< /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font >>
+endobj
+9 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F6 /Subtype /Type1 /Type /Font >>
+endobj
+10 0 obj
+<< /Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+11 0 obj
+<< /Outlines 16 0 R /PageLabels 17 0 R /PageMode /UseNone /Pages 13 0 R /Type /Catalog >>
+endobj
+12 0 obj
+<< /Author () /CreationDate (D:20161012104339+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (Gu\355a de ejercitaci\363n N\2601) >>
+endobj
+13 0 obj
+<< /Count 2 /Kids [ 7 0 R 10 0 R ] /Type /Pages >>
+endobj
+14 0 obj
+<< /Length 5963 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 736.2236 cm
+q
+.239216 .541176 .439216 rg
+BT 1 0 0 1 0 4.8 Tm /F2 24 Tf 28.8 TL 104.5115 0 Td (Gu\355a de ejercitaci\363n N\2601) Tj T* -104.5115 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 679.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL 40.05037 0 Td (Autor:) Tj T* -40.05037 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+BT 1 0 0 1 0 3 Tm 14 TL /F1 11 Tf 0 0 0 rg (Emiliano L\363pez - ) Tj 0 0 .501961 rg (elopez@fich.unl.edu.ar) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 645.2236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .636529 Tw (1- Realice un programa donde se pregunte el nombre y edad de una persona y luego se muestre) Tj T* 0 Tw (un cordial saludo. Por ejemplo:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 568.0236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 482.863 68 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 45 Tm /F3 11 Tf 14 TL (Ingrese su nombre: Carlos) Tj T* (Ingrese su edad: 98) Tj T*  T* (Hola Carlos, 98 a\361os no es nada, est\341s hecho un pibe!) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 504.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 45 Tm /F1 11 Tf 14 TL 3.127466 Tw (2- Realice un programa donde se ingrese el nombre y edad de dos personas en variables) Tj T* 0 Tw .380071 Tw (separadas \(nom1, edad1, nom2, edad2\). Luego, intercambie la edad de las personas y muestre el) Tj T* 0 Tw 2.652727 Tw (resultado en pantalla. Posteriormente indague otras maneras de intercambiar el contenido de) Tj T* 0 Tw (variables en Python.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 442.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 45 Tm /F1 11 Tf 14 TL .276999 Tw (3- Realice un programa que permita ingresar por teclado dos valores referidos al kilometraje de un) Tj T* 0 Tw 1.782533 Tw (autom\363vil antes y despu\351s de un viaje. Con los dos valores ingresados muestre en pantalla la) Tj T* 0 Tw 3.799846 Tw (cantidad total de kil\363metros recorridos, as\355 como tambi\351n ese valor convertido a metros y) Tj T* 0 Tw (cent\355metros.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 408.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .688071 Tw (4- Realice un programa que permita al usuario ingresar una temperatura en grados cent\355grados y) Tj T* 0 Tw (que muestre su equivalente en grados fahrenheit. El programa debe mostrar como el siguiente:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 358.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 482.863 40 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F3 11 Tf 14 TL (Ingrese temperatura en \260C: 33.8) Tj T* (Conversi\363n a Fahrenheit: 92.84) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 336.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (La conversi\363n est\341 dada por la siguiente relaci\363n \260F = \(9/5 * \260C\) + 32) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 302.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .144187 Tw (5- Realice un programa que permita al usuario ingresar su nombre y que luego lo muestre repetido) Tj T* 0 Tw (en pantalla tantas veces como cantidad de letras posea el nombre.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 240.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 45 Tm /F1 11 Tf 14 TL 3.515538 Tw (6- Un atleta realiza sus entrenamientos para una marat\363n \(42.195km\) y desea conocer su) Tj T* 0 Tw 2.842333 Tw (velocidad promedio. Desarrolle un programa donde se ingrese el tiempo transcurrido en tres) Tj T* 0 Tw .599692 Tw (variables diferentes: horas, minutos y segundos. Luego, muestre la velocidad promedio en km/h y) Tj T* 0 Tw (km/seg.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 150.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 73 Tm /F1 11 Tf 14 TL 1.475952 Tw (7- Un grupo de amigos se re\372nen a ver un cl\341sico de f\372tbol entre el equipo A y el equipo B, y) Tj T* 0 Tw 1.453999 Tw (establecen como regla que los hinchas del equipo que pierda deber\341n pagar la totalidad de las) Tj T* 0 Tw 1.560999 Tw (cervezas consumidas durante el partido, como as\355 tambi\351n el costo de picada consumida en la) Tj T* 0 Tw 3.208866 Tw (previa. En caso de empate los costos se dividen por igual. El siguiente c\363digo refleja esta) Tj T* 0 Tw 1.298571 Tw (situaci\363n, pero solo contempla 2 de los 3 casos posibles. Modif\355quelo para que tambi\351n informe) Tj T* 0 Tw (cuanto tendr\355a que pagar cada hincha en caso de un empate:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 87.62362 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 482.863 54 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 29.625 118.8 14 re f*
+.960784 .960784 .862745 rg
+n 0 15.625 52.8 14 re f*
+.960784 .960784 .862745 rg
+n 59.4 15.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 72.6 15.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 105.6 15.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 112.2 15.625 237.6 14 re f*
+.960784 .960784 .862745 rg
+n 349.8 15.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 0 1.625 52.8 14 re f*
+.960784 .960784 .862745 rg
+n 59.4 1.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 72.6 1.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 105.6 1.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 112.2 1.625 237.6 14 re f*
+.960784 .960784 .862745 rg
+n 349.8 1.625 6.6 14 re f*
+BT 1 0 0 1 0 31 Tm 14 TL /F4 11 Tf 0 .533333 0 rg (# Datos de entrada) Tj /F3 11 Tf 0 0 0 rg  T* 0 0 0 rg (equipo_a) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .666667 .133333 1 rg (input) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Cantidad de hinchas del equipo A: ') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (equipo_b) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .666667 .133333 1 rg (input) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Cantidad de hinchas del equipo B: ') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+15 0 obj
+<< /Length 6121 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 569.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 493.8 194 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 169.625 79.2 14 re f*
+.960784 .960784 .862745 rg
+n 85.8 169.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 99 169.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 132 169.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 138.6 169.625 145.2 14 re f*
+.960784 .960784 .862745 rg
+n 283.8 169.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 0 155.625 92.4 14 re f*
+.960784 .960784 .862745 rg
+n 99 155.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 112.2 155.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 145.2 155.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 151.8 155.625 204.6 14 re f*
+.960784 .960784 .862745 rg
+n 356.4 155.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 0 127.625 112.2 14 re f*
+.960784 .960784 .862745 rg
+n 0 113.625 72.6 14 re f*
+.960784 .960784 .862745 rg
+n 79.2 113.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 92.4 113.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 125.4 113.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 132 113.625 79.2 14 re f*
+.960784 .960784 .862745 rg
+n 211.2 113.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 224.4 113.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 237.6 113.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 270.6 113.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 277.2 113.625 92.4 14 re f*
+.960784 .960784 .862745 rg
+n 369.6 113.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 0 85.625 250.8 14 re f*
+.960784 .960784 .862745 rg
+n 0 71.625 85.8 14 re f*
+.960784 .960784 .862745 rg
+n 92.4 71.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 105.6 71.625 72.6 14 re f*
+.960784 .960784 .862745 rg
+n 178.2 71.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 184.8 71.625 19.8 14 re f*
+.960784 .960784 .862745 rg
+n 204.6 71.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 211.2 71.625 52.8 14 re f*
+.960784 .960784 .862745 rg
+n 264 71.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 0 57.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 33 57.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 39.6 57.625 336.6 14 re f*
+.960784 .960784 .862745 rg
+n 376.2 57.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 389.4 57.625 85.8 14 re f*
+.960784 .960784 .862745 rg
+n 475.2 57.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 0 29.625 250.8 14 re f*
+.960784 .960784 .862745 rg
+n 0 15.625 85.8 14 re f*
+.960784 .960784 .862745 rg
+n 92.4 15.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 105.6 15.625 72.6 14 re f*
+.960784 .960784 .862745 rg
+n 178.2 15.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 184.8 15.625 19.8 14 re f*
+.960784 .960784 .862745 rg
+n 204.6 15.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 211.2 15.625 52.8 14 re f*
+.960784 .960784 .862745 rg
+n 264 15.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 0 1.625 33 14 re f*
+.960784 .960784 .862745 rg
+n 33 1.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 39.6 1.625 336.6 14 re f*
+.960784 .960784 .862745 rg
+n 376.2 1.625 6.6 14 re f*
+.960784 .960784 .862745 rg
+n 389.4 1.625 85.8 14 re f*
+.960784 .960784 .862745 rg
+n 475.2 1.625 6.6 14 re f*
+BT 1 0 0 1 0 171 Tm 14 TL /F3 11 Tf 0 0 0 rg (costo_picada) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .666667 .133333 1 rg (input) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Costo de la picada: ') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (costo_cervezas) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .666667 .133333 1 rg (input) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Costo total de las cervezas: ') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T*  T* /F4 11 Tf 0 .533333 0 rg (# Sumo los costos) Tj /F3 11 Tf 0 0 0 rg  T* 0 0 0 rg (costo_total) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .666667 .133333 1 rg (float) Tj 0 0 0 rg (\() Tj 0 0 0 rg (costo_picada) Tj 0 0 0 rg (\)) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj .666667 .133333 1 rg (float) Tj 0 0 0 rg (\() Tj 0 0 0 rg (costo_cervezas) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T*  T* /F4 11 Tf 0 .533333 0 rg (# Para el caso en que gane el equipo A) Tj /F3 11 Tf 0 0 0 rg  T* 0 0 0 rg (monto_a_pagar) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (costo_total) Tj .4 .4 .4 rg (/) Tj .666667 .133333 1 rg (int) Tj 0 0 0 rg (\() Tj 0 0 0 rg (equipo_b) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* /F5 11 Tf .666667 .133333 1 rg (print) Tj /F3 11 Tf 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Si el equipo B pierde, sus hinchas deben pagar: $') Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (monto_a_pagar) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T*  T* /F4 11 Tf 0 .533333 0 rg (# Para el caso en que gane el equipo B) Tj /F3 11 Tf 0 0 0 rg  T* 0 0 0 rg (monto_a_pagar) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (costo_total) Tj .4 .4 .4 rg (/) Tj .666667 .133333 1 rg (int) Tj 0 0 0 rg (\() Tj 0 0 0 rg (equipo_a) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* /F5 11 Tf .666667 .133333 1 rg (print) Tj /F3 11 Tf 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Si el equipo A pierde, sus hinchas deben pagar: $') Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (monto_a_pagar) Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 519.8236 cm
+q
+BT 1 0 0 1 0 31 Tm 1.825769 Tw 14 TL /F1 11 Tf 0 0 0 rg (8- Realice un programa que permita ingresar 3 valores \(valor1, valor2,valor3\) y luego muestre,) Tj T* 0 Tw .028 Tw (haciendo uso del m\363dulo ) Tj /F6 11 Tf (statistics ) Tj /F1 11 Tf (de la biblioteca est\341ndar de python, el valor de la media \(mean\),) Tj T* 0 Tw (mediana \(median\) y varianza \(variance\) del conjunto.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 471.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 31 Tm /F1 11 Tf 14 TL .092111 Tw (9- Modifique el c\363digo anterior, para que en vez de pedir que se ingresen los 3 valores por teclado,) Tj T* 0 Tw 1.728461 Tw (genere estos de manera aleatoria. El programa deber\341 devolver la media, mediana y varianza,) Tj T* 0 Tw (junto a los 3 valores que se generaron aleatoriamente.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+16 0 obj
+<< /Count 0 /Type /Outlines >>
+endobj
+17 0 obj
+<< /Nums [ 0 18 0 R 1 19 0 R ] >>
+endobj
+18 0 obj
+<< /S /D /St 1 >>
+endobj
+19 0 obj
+<< /S /D /St 2 >>
+endobj
+xref
+0 20
+0000000000 65535 f
+0000000075 00000 n
+0000000159 00000 n
+0000000269 00000 n
+0000000384 00000 n
+0000000568 00000 n
+0000000676 00000 n
+0000000792 00000 n
+0000001019 00000 n
+0000001132 00000 n
+0000001250 00000 n
+0000001460 00000 n
+0000001569 00000 n
+0000001813 00000 n
+0000001883 00000 n
+0000007903 00000 n
+0000014081 00000 n
+0000014131 00000 n
+0000014184 00000 n
+0000014221 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(\2578\275Q\016O=[K\332>u\266\024\250\275) (\2578\275Q\016O=[K\332>u\266\024\250\275)]
+ /Info 12 0 R /Root 11 0 R /Size 20 >>
+startxref
+14258
+%%EOF
