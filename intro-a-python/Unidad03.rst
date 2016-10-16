@@ -268,7 +268,7 @@ las demás, por lo que no puede cumplir con mas de una a la vez. Ahora,
 podría existir un planteo donde se cumplan más de una condición y la
 pregunta obvia es, ¿qué sucede en ese caso?
 
-En el siguiente programa, ¿qué mensaje se muestra en pantalla?
+Analicemos el siguiente programa, ¿qué mensaje se muestra en pantalla?
 
 .. code:: python
 
@@ -285,11 +285,8 @@ Estructuras anidadas
 ~~~~~~~~~~~~~~~~~~~~
 
 Retomando el ejemplo del programa anterior, consideremos además de la temperatura la distancia 
-que se debe recorrer.
-
-Para estos casos, se pueden utilizar *estructuras anidadas*, es decir, 
-una nueva estructura de control incluida dentro del bloque que se ejecuta 
-al cumplirse la primer condición.
+que se debe recorrer. Para estos casos, se pueden utilizar *estructuras anidadas*, es decir, 
+una nueva estructura de control incluida dentro del bloque que se ejecuta al cumplirse la primer condición.
 
 Reescribamos el código previo utilizando estructuras anidadas:
 
@@ -372,7 +369,7 @@ En función del modo en que se controla la cantidad de repeticiones del
 ciclo se los clasifica en bucles condicionales, interactivos o centinelas. 
 
 Bucles condicionales
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 Veamos un ejemplo donde se pregunte el valor de temperatura a cinco
 personas y sugiera ir caminando si el clima es agradable (mayor a 16 °C)
@@ -467,7 +464,7 @@ un programa que nunca finalice. Este tipo de errores es más difícil de
 detectar, ya que a priori el ejemplo parecería correcto.
 
 Bucles interactivos
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 El ciclo *while* se adapta fácilmente para aquellos casos 
 donde la repetición depende de un valor que ingresa el
@@ -527,7 +524,7 @@ la única alternativa, sin embargo, en otros se puede utilizar los bucles
 centinelas que se describen a continuación.
 
 Bucles centinelas
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 Otro tipo de bucles denominados centinelas, son aquellos donde la
 condición de corte tiene que ver con un valor que se diferencia del
@@ -1201,7 +1198,7 @@ el modo de crear diccionarios.
 
 .. code:: python
 
-    agenda = {'Marado':'1552123', 'JPFeinman':'1523443', 'Dolina':'4584129',
+    agenda = {'Marado':'1552123', 'Dolina':'4584129',
               'Spasiuk':'65748', 'Fontanarrosa':'32456'}
 
 El acceso a un valor se realiza a partir de su clave, por ejemplo:
