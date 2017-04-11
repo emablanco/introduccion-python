@@ -34,11 +34,8 @@ Introducción a la Programación con Python
 
    PageBreak oneColumn
 
-Unidad 4: Funciones y archivos
-==============================
-
 Funciones
----------
+=========
 
 Las funciones son subprogramas que realizan una tarea específica, 
 capaces de recibir y retornar información (datos de
@@ -58,12 +55,9 @@ nuestras propias funciones.
 El uso de funciones en el desarrollo de programas tiene un conjunto de
 ventajas dentro de las que se destacan:
 
--  Subdividir un problema complejo en problemas mas simples: divide y
-   vencerás.
--  Mejoran la legibilidad del código, los programas modulares son más
-   fáciles de entender y mantener.
--  Posibilitan la reusabilidad del código, llamar funciones desde
-   distintos programas.
+-  Subdividir un problema complejo en problemas mas simples, divide y vencerás.
+-  Mejorar la legibilidad, los programas modulares son más fáciles de entender y mantener.
+-  Reutilizar el código, llamar funciones desde distintos programas evitando reescribir código.
 
 Definición y uso
 ~~~~~~~~~~~~~~~~
@@ -297,14 +291,12 @@ cuando el número que recibe por argumentos es par:
     contar_pares(2)
     contar_pares(5)
     contar_pares(8)
-    
     print(pares)
 
 
 .. parsed-literal::
 
     2
-
 
 Algunos detalles a destacar sobre variables globales:
 
@@ -313,46 +305,37 @@ Algunos detalles a destacar sobre variables globales:
 
 El uso de variables globales es una práctica que generalmente debe ser evitada. En la mayoría de los casos es preferible utilizar un parámetro y que la función retorne en su nombre el valor modificado.
 
-Agrupando el código en módulos
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Módulos
+~~~~~~~
 
-Hemos visto como organizar mejor el código a través de funciones, sin
-embargo, una de las ventajas de utilizar funciones propias es evitar su
-reescritura. Carece de sentido tener que reprogramar una misma función
-por cada programa sumado a que con el paso del tiempo es muy
-probable que no todas las versiones sean idénticas y por ende su
-comportamiento puede diferir.
+Hemos mejorado el código reorganizándolo a través de funciones, sin embargo, una de las ventajas de crear nuestras propias funciones es evitar su reescritura. Carece de sentido reprogramar una misma función por cada programa,  teniendo en cuenta que es probable que no todas las versiones sean idénticas y por ende su comportamiento difiera, generando un verdadero caos para quien desarrolla el software.
 
-Para solucionar este tipo de problemas y sacar provecho del uso de
-funciones existen los módulos, cuya utilidad es la de contener varias
-funciones que realicen algún tipo de tarea afín.
-
-Por ejemplo, una serie de funciones para cálculo matemático sería útil que estén contenidas en un mismo módulo, en otro aquellas para procesamiento de sonido, o bien uno destinado a almacenar todas las funciones relativas a un determinado proyecto.
+Para solucionar este tipo de problemas existen los módulos, cuya utilidad es la de contener varias funciones que realicen algún tipo de tarea afín. Por ejemplo, una serie de funciones para cálculo matemático sería útil que estén contenidas en un mismo módulo, en otro aquellas para procesamiento de sonido, o bien uno destinado a almacenar todas las funciones relativas a un determinado proyecto.
 
 Para comprender la implementación veamos un módulo trivial, que contenga saludos en diferentes idiomas. Almacenamos en el archivo ``saludo.py`` las siguientes funciones:
 
 .. code:: python
 
     def espanol(nom):
-        print('Hola', nom)
+        return 'Hola ' + nom
 
     def quechua(nom):
-        print('Napaykullayki', nom)
+        return 'Napaykullayki'  + nom
         
     def italiano(nom):
-        print('Ciao', nom)
+        return 'Ciao' + nom
 
     def guarani(nom):
         '''Buen dia, cómo estas?'''
-        print("Mba'éichapa ndepyhareve", nom)
+        return "Mba'éichapa ndepyhareve" + nom
 
     def aymara(nom):
         '''¿cómo estás?'''
-        print('Kamisaraki', nom)
+        return 'Kamisaraki' + nom
         
     def maya(nom):
         '''¿cómo estás?'''
-        print('Biix yanilech?', nom)
+        return 'Biix yanilech?' + nom
 
 Luego, creamos el programa desde donde será importado el módulo e
 invocadas las funciones que contiene. Por ejemplo, en ``charlando.py``
@@ -361,10 +344,9 @@ hacemos lo siguiente:
 .. code:: python
 
     import saludo
-
     nom = input('Ingrese su nombre: ')
-    saludo.italiano(nom)
-    saludo.guarani(nom)
+    print(saludo.italiano(nom))
+    print(saludo.guarani(nom))
 
 Como observamos, el módulo es importado a través del nombre del archivo (sin la extensión *.py*) y luego se invocan las funciones utilizando el nombre del módulo y la función separados por un punto (.), esto es,  ``modulo.funcion``.
 
@@ -373,10 +355,9 @@ De esta manera, fácilmente accedemos a las funciones definidas bajo el módulo.
 .. code:: python
 
     from saludo import italiano, guarani
-
     n = input('Ingrese su nombre: ')
-    italiano(n)
-    guarani(n)
+    print(italiano(n))
+    print(guarani(n))
 
 De esta manera, es posible invocar solamente las funciones importadas. Para profundizar sobre el uso de módulos se recomienda la lectura del capítulo *Módulos* (pag. 36) del Tutorial de Python.
 
@@ -385,7 +366,7 @@ De esta manera, es posible invocar solamente las funciones importadas. Para prof
    PageBreak oneColumn
 
 Archivos
---------
+========
 
 Hasta aquí hemos trabajado con información almacenada en estructuras de datos, ya sea a partir de la lectura interactiva (utilizando la función ``input``) o cargada estáticamente en el mismo código del programa y la salida ha sido siempre a través de la impresión en pantalla (utilizando la función ``print``).
 
@@ -437,7 +418,6 @@ Veamos como sería el funcionamiento del primer caso:
 .. parsed-literal::
 
     enero 30
-    
     febrero 60
 
 Probablemente sea más práctico realizar la lectura línea por línea en un ciclo iterativo hasta que se llegue al final del archivo. Esto se puede realizar combinando lo anterior con un ciclo repetitivo ``while``:
@@ -457,9 +437,7 @@ Probablemente sea más práctico realizar la lectura línea por línea en un cic
 .. parsed-literal::
 
     enero 30
-    
     febrero 60
-    
     marzo 55
     
 
@@ -536,7 +514,7 @@ Ahora bien, podemos procesar los datos que son leídos del archivo. Hagamos el c
 
 .. note::
 
-    El último caracter de una renglón de un archivo de texto es un ``<enter>``, por eso,  tal como se ve en los ejemplos previos, al imprimir una línea leída se muestra un renglón en blanco. Esto se debe a que un ``<enter>`` corresponde a lo leído en el archivo y el otro al que agrega la función ``print()``. La solución a este comportamiento viene de la mano del método ``strip()``, que elimina el último caracter no visible como el ``<enter>``.
+    El último caracter de una renglón de un archivo de texto es un ``<enter>``, por eso, al imprimir una línea leída se muestra un renglón en blanco. Esto se debe a que un ``<enter>`` corresponde a lo leído en el archivo y el otro al que agrega la función ``print()``. La solución a este comportamiento viene de la mano del método ``strip()``, que elimina el último caracter no visible como el ``<enter>``.
 
 Escritura
 ~~~~~~~~~

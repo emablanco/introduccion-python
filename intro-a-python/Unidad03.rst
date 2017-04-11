@@ -526,7 +526,7 @@ centinelas que se describen a continuación.
 Bucles centinelas
 ~~~~~~~~~~~~~~~~~
 
-Otro tipo de bucles denominados centinelas, son aquellos donde la
+Los bucles centinelas son aquellos donde la
 condición de corte tiene que ver con un valor que se diferencia del
 patrón que se ingresará y, será útil para discernir el momento en que
 corresponda continuar o bien finalizar la repetición.
@@ -534,7 +534,7 @@ corresponda continuar o bien finalizar la repetición.
 Para el caso del cálculo del promedio, suponiendo que todos los valores
 serán siempre positivos podríamos tomar la estrategia de controlar que
 el valor ingresado sea mayor a cero para continuar la iteración. El
-pseudocódigo, sin detalles, sería similar al siguiente:
+pseudocódigo, obviando los detalles, sería similar al siguiente:
 
 ::
 
@@ -603,6 +603,40 @@ El valor leído en *x* no se convierte en un número entero, sino que se
 lo mantiene como *str* hasta el momento de sumarlo a la variable *suma*
 utilizando la función ``eval()``. Cuando el usuario presione *enter* el
 caracter en *x* será vacío y no ingresará al ciclo ``while``.
+
+Bucles infinitos y break
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+En todos los casos previos la finalización de la repetición se da por la condición 
+dada en el ``while``, sin embargo, es muy común utilizar ciclos con una condición
+``True`` constante y quebrar la iteración utilizando la sentencia ``break``.
+
+La estructura general de estos ciclos es del siguiente modo:
+
+.. code:: python
+
+    while True:
+        acciones...
+        if ALGUNA_CONDICION:
+            break
+
+Cuando se ejecuta la sentencia ``break`` se finaliza el ciclo iterativo que lo contiene.
+La ventaja de este ciclo respecto a los anteriores es que permite ejecutar sentencias
+antes del corte del ciclo. En el ejemplo siguiente tenemos la estructura de un juego
+simplificado donde la finalización se da ante dos condiciones, al ganar o al perder, 
+y previo al break se informa con un mensaje alusivo.
+
+.. code:: python
+
+    while True:
+        acciones...
+        if CONDICION_GANA:
+            print("Felicitaciones, ganaste!")
+            break
+
+        if CONDICION_PIERDE:
+            print("Perdiste!!")
+            break
 
 Sentencia *for*
 ~~~~~~~~~~~~~~~
@@ -768,6 +802,10 @@ muy potente y flexible, más aún al ser combinadas con otro tipo de
 estructuras de datos como cadenas de caracteres y listas, que veremos en
 secciones posteriores.
 
+.. raw:: pdf
+
+   PageBreak oneColumn
+
 Estructuras de datos
 ====================
 
@@ -782,15 +820,14 @@ En el presente capítulo haremos énfasis en dos de las estructuras comúnmente 
 Listas
 ------
 
-A diferencia de una variable que contiene un único dato por vez, una lista puede almacenar varios en forma simultánea en diferentes posiciones, por lo que para referirnos a uno de ellos necesitamos especificarle el índice o posición. Por ejemplo, en la siguiente lista denominada *tempC* hay almacenados tres valores numéricos flotantes, el primero está en la
-posición 0, el segundo en la posición 1 y, el tercero en la posición 2:
+A diferencia de una variable que contiene un único dato por vez, una lista puede almacenar varios datos en forma simultánea en diferentes posiciones, por lo que para referirnos a uno de ellos necesitamos especificarle el índice o posición. Por ejemplo, en la siguiente lista denominada ``tempC`` hay almacenados tres valores numéricos flotantes, el primero está en la posición 0, el segundo en la posición 1 y, el tercero en la posición 2:
 
 .. figure:: img/u3/lista_def.png
     :width: 1300 px
     
     Lista que contiene 3 valores
 
-Para **declarar** la lista tempC con esos tres valores:
+Para inicializar la lista ``tempC`` con esos tres valores:
 
 .. code:: python
 
@@ -804,7 +841,7 @@ entera), veamos un ejemplo donde realizamos las siguientes acciones:
 1. Imprimir en pantalla el segundo valor (la posición 1 porque empezamos
    a contar desde 0)
 2. Asignarle un nuevo valor que lo reemplace y volver a imprimirlo
-3. Mostrar todo el contenido de la lista usando un bucle *for*
+3. Mostrar el contenido de la lista usando un bucle *for*
 4. Mostrar aquellas temperaturas que superaron el promedio
 
 .. code:: python
@@ -819,15 +856,15 @@ entera), veamos un ejemplo donde realizamos las siguientes acciones:
     # Lista completa y calculo de promedio
     print("Lista:")
     media = 0.0
-    for i in tempC:
-        print(i)
-        media = media + i
+    for t in tempC:
+        print(t)
+        media = media + t
     media = media/3
     
     # Elementos que superan el promedio
-    for i in tempC:
-        if i > media:
-            print("La temperatura", i, "superó la media")
+    for t in tempC:
+        if t > media:
+            print("La temperatura", t, "superó la media")
 
 
 .. parsed-literal::
@@ -841,9 +878,7 @@ entera), veamos un ejemplo donde realizamos las siguientes acciones:
     La temperatura 100 superó la media
 
 
-Como se observa, las listas son fácilmente iterables utilizando el ciclo ``for``, ya que al igual que una cadena de caracteres, es una secuencia de valores, la diferencia radica que en una cadena los valores son únicamente caracteres mientras que en una lista pueden ser de cualquier otro tipo.
-
-Otra característica importante es que una lista puede contener elementos de diferente tipo, **incluso otra lista**. Veamos una lista que combine elementos de distintos tipos:
+Como se observa, las listas son fácilmente iterables utilizando el ciclo ``for``, ya que al igual que una cadena de caracteres, es una secuencia de valores, la diferencia radica que en una cadena los valores son únicamente caracteres mientras que en una lista pueden ser de cualquier otro tipo, **incluso otra lista**. Veamos una lista que combine elementos de distintos tipos:
 
 .. code:: python
 
@@ -867,7 +902,7 @@ Otra característica importante es que una lista puede contener elementos de dif
     5to elemento:  [12.2, 100, 12.1]
 
 
-Ahora bien, seguramente el lector estará intrigado sobre el acceso a un elemento en particular de la lista *tempC*, ubicada en la 5ta posición de la lista *popurri*. En *popurri[4]* se referencia el elemento en cuestión, que es una lista, por lo que agregando un índice más accedemos a cada uno de sus elementos, veamos el código:
+Ahora bien, seguramente el lector estará intrigado sobre el acceso a un elemento en particular de la lista ``tempC``, ubicada en la 5ta posición de la lista ``popurri``. En ``popurri[4]`` se referencia el elemento en cuestión, que es una lista, por lo que agregando un índice más accedemos a cada uno de sus elementos, veamos el código:
 
 .. code:: python
 
@@ -919,14 +954,14 @@ Otra alternativa para iterar sobre una lista es combinando la función ``range``
     Temperatura 2 : 12.1
 
 
-La función ``len()`` retornó la cantidad de elementos de la lista *tempC*, ese resultado, almacenado en ``n``, fue utilizado como el valor para la función ``range()`` que generó una secuencia numérica (una lista!!!) que va desde 0 hasta ``n-1``.
+La función ``len()`` retornó la cantidad de elementos de la lista ``tempC``, ese resultado, almacenado en ``n``, fue utilizado como el valor para la función ``range()`` que generó una secuencia numérica (una lista!!!) que va desde 0 hasta ``n-1``.
 
 En el caso previo mostramos la posición de cada elemento, pero es posible iterar sobre la lista de una manera mucho mas directa:
 
 .. code:: python
 
-    for val in tempC:
-        print("Temperatura:",val)
+    for t in tempC:
+        print("Temperatura:",t)
 
 
 .. parsed-literal::
@@ -935,16 +970,20 @@ En el caso previo mostramos la posición de cada elemento, pero es posible itera
     Temperatura: 33.3
     Temperatura: 12.1
 
-En este caso, cada elemento de la lista ``tempC`` se va asignando a la variable ``val`` en forma sucesiva, de manera que en cada iteración ``val`` contendrá uno a uno los elementos de la lista ``tempC``.
+En este caso, cada elemento de la lista se asigna a la variable ``t`` en forma sucesiva, de manera que en cada iteración ``t`` contendrá uno a uno los elementos de la lista ``tempC``.
 
 Las listas permiten **agregar elementos nuevos** en tiempo de ejecución utilizando el método ``append()``. Veamos un ejemplo donde el usuario ingresa 10 nombres para agregar en una lista:
 
 .. code:: python
 
-    lista = []          # lista inicialmente vacia
+    nombres = []          # lista inicialmente vacia
     for i in range(10):
-        nom = input("Nombre: ")
-        lista.append(nom)
+        un_nombre = input("Nombre: ")
+        nombres.append(un_nombre)
+
+.. note::
+
+    El término secuencia es el nombre genérico utilizado para toda estructura de datos que permita acceder a sus elementos a través de un índice comenzando en cero (por ej. nombres[0]) y con un tamaño conocido (``len(nombres)``). Esta denominación es común en Python desde sus comienzos y aplica para listas, tuplas, cadenas de caracteres, etc.
 
 
 Listas bidimensionales
@@ -1028,7 +1067,7 @@ Otro modo de recorrer una matriz es iterando directamente sobre sus elementos es
             print(elemento, ' ', end='')
         print()
 
-En este caso, el ``for`` externo asigna en cada ciclo una fila diferente y, el ``for`` anidado itera sobre cada elemento de esa fila. Veamos la salida que produce:
+En este caso, el ``for`` externo asigna en cada ciclo una fila diferente y el ``for`` anidado itera sobre cada elemento de esa fila. Veamos la salida que produce:
 
 .. parsed-literal::
 
@@ -1069,12 +1108,9 @@ siguientes operaciones:
 Rebanadas (slices)
 ~~~~~~~~~~~~~~~~~~
 
-Para acceder a los elementos de una lista se puede usar como índice
-cualquier expresión entera, por lo que ``tempC[1+1]`` o
-``matriz[2*0+1][2*2]`` son operaciones perfectamente válidas. 
+Para acceder a los elementos de una lista se puede usar como índice cualquier expresión entera, por lo que ``tempC[1+1]`` o ``matriz[2*0+1][2*2]`` son operaciones perfectamente válidas. 
 
-Además, existen expresiones que permiten extraer o modificar rebanadas o recortes  
-de un conjunto de elementos de la lista . Veamos unos ejemplos.
+Además, existen expresiones que permiten extraer o modificar rebanadas o recortes de un conjunto de elementos de la lista . Veamos unos ejemplos.
 
 .. code:: python
 
@@ -1128,6 +1164,13 @@ vacía, en la posición deseada:
     >>> print(letras)
     ['a', 'b', 'c', 'd', 'e', 'f']
 
+.. note::
+    
+    El ``slicing`` es una cualidad común de todas las secuencias en Python. La razón de la exclusión del último valor tiene sus ventajas:
+
+    - Es fácil de ver la longitud cuando solamente se indica la posición de final, ``letras[:4]``, tiene 4 elementos.
+    - Es fácil de calcular la longitud cuando se da el rango con el inicio y fin, ``letras[1:3]``, tiene 2 (fin-inicio) elementos.
+    - Es fácil dividir una secuencia en dos partes sin solape, ``letras[:4]`` y ``letras[4:]`` nos da la secuencia completa de letras.
 
 Métodos
 ~~~~~~~
@@ -1177,16 +1220,77 @@ secciones de una lista o vaciar la lista completa. Por ejemplo:
     a
     [1, 66.25, 1234.5]
 
+Listas por comprensión
+~~~~~~~~~~~~~~~~~~~~~~
+
+Una forma rápida de construir una secuencia (en este caso una lista) es utilizando una lista por comprensión (en inglés *list comprehensions* o en forma corta *list-comps*). En un ejemplo previo agregamos diez nombres en una lista utilizando el siguiente código: 
+
+.. code:: python
+
+    nombres = []          # lista inicialmente vacia
+    for i in range(10):
+        un_nombre = input("Nombre: ")
+        nombres.append(un_nombre)
+
+En este caso, utilizamos cuatro líneas de código, sin embargo, usando *list-comps* se podría lograr el mismo efecto reduciendo el código a lo siguiente: 
+
+.. code:: python
+
+    nombres = [input("Nombre: ") for i in range(10)]
+
+Ahora veamos un ejemplo donde generamos una nueva lista con aquellos nombres que tienen la letra "n". Para este caso debemos incorporar un ``if "n" in nombre``:
+
+.. code:: python
+
+    nombres_con_n = [nom for nom in nombres if "n" in nom]
+
+.. note::
+    
+    Las listas son un tipo flexible y fácil de usar pero dependiendo de los requerimientos existen mejores opciones. Si se necesita almacenar millones de valores de punto flotante una lista no es la mejor alternativa, para esto existe el tipo ``array`` de la biblioteca estándar o la biblioteca externa ``NumPy``, que maneja arreglos numéricos sumamente eficientes.
+
+Tuplas
+------
+
+Las tuplas son secuencias, al igual que las listas. Generalmente son descriptas como listas inmutables, es decir, una vez creadas no pueden ser modificadas (al igual que las cadenas de caracteres).
+
+Una tupla consiste de un número de valores separados por comas, que pueden ingresarse con o sin paréntesis, por ejemplo:
+
+.. code:: python
+
+    tu = 28, 21, 'hola!'                        # sin paréntesis
+    coordenadas = (-31.6251956,-60.7108061)     # con paréntesis
+    print(tu[0])
+    print(tu)
+    print(coordenadas)
+
+    28
+    (28, 21, 'hola!')
+    (-31.6251956,-60.7108061)
+
+El desempaquetado consiste en asignar en variables a cada elemento de la secuencia, veamos el siguiente ejemplo:
+
+.. code:: python
+
+    latitud, longitud = coordenadas
+
+Además es posible hacer un desempaquetado selectivo, asignando solamente aquellos elementos de la secuencia que nos interesen, por ejemplo para una tupla ``fecha = ("28","marzo","1981")`` desempaquetamos almacenando únicamente el último valor en una variable ``anio``
+    
+.. code:: python
+
+    _,_, anio = fecha
+
+Es importante destacar que el desempaquetado no es exclusivo de las tuplas sino que es propio de todas las estructuras de datos que son secuencias.
+
+Para mayor detalle sobre esta estructura se recomienda leer el Tutorial de Python, *Tuplas y secuencias*, pag. 31.
+
+
 Diccionarios
 ------------
 
-Hemos visto que las listas son útiles cuando se quiere agrupar valores
-en una estructura y acceder a cada uno de ellos a través del un valor
-numérico, un índice.
+Hemos visto que las listas son útiles cuando se quiere agrupar datos
+en una estructura y acceder a cada uno de ellos a través de su índice.
 
-Otro tipo de estructura que nos permite referirnos a un determinado
-valor a través de un nombre o clave es un diccionario. Muchas veces este tipo de
-estructura es más apropiado que una lista.
+Otro tipo de estructura que nos permite referirnos a un determinado valor a través de un nombre o clave es un diccionario. Muchas veces este tipo de estructura es más apropiado que una lista.
 
 El nombre *diccionario* da una idea sobre el propósito de la
 estructura ya que uno puede realizar fácilmente una búsqueda a partir de
@@ -1220,55 +1324,43 @@ de su valor por los dos puntos (:), los ítems son separados por comas, y
 toda la estructura es encerrada entre llaves. Un diccionario vacío, sin
 ítems, se escribe con solo dos llaves: ``{}``.
 
-Las claves, debido a que funcionan como índices, no pueden ser
-repetidas.
+Las claves, debido a que funcionan como índices, no pueden ser repetidas. Veamos las formas más comunes de iterar sobre un diccionario:
 
-Veamos las formas más comunes de iterar sobre un diccionario:
+
+Iterar sobre las claves
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
 
-    # Imprime claves
-    print("Claves")
-    print("======")
     for nom in agenda:
         print(nom)
-    print()
-    
-    print("Valores")
-    print("=======")
-    # Imprime valores
-    for tel in agenda.values():
-        print(tel)
-    print()
-    
-    print("Clave y valor")
-    print("=============")
-    # Imprime items: clave valor
-    for nom, tel in agenda.items():
-        print(nom,tel)
 
-
-.. parsed-literal::
-
-    Claves
-    ======
-    JPFeinman
     Spasiuk
     Marado
     Dolina
     Fontanarrosa
-    
-    Valores
-    =======
-    1523443
+
+Iterar sobre los valores
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+    for tel in agenda.values():
+        print(tel)
+
     65748
     1552123
     4584129
     32456
-    
-    Clave y valor
-    =============
-    JPFeinman 1523443
+
+Iterar sobre los items
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+    for nom, tel in agenda.items():
+        print(nom, tel)
+
     Spasiuk 65748
     Marado 1552123
     Dolina 4584129
@@ -1399,38 +1491,20 @@ Los diccionarios pueden ser comparados por su igualdad si y solo si
 tienen los mismos ítems. Otras comparaciones (<, <=, >=, >) no
 son permitidas.
 
-Para profundizar sobre diccionarios se recomienda la lectura del
-*Tutorial de Python* (pág. 32, *Diccionarios*).
 
-Tuplas
-------
+Igualdad entre diccionarios
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Las tuplas son secuencias, al igual que las listas. La única diferencia
-es que no pueden ser modificadas, son inmutables (al igual que las
-cadenas de caracteres).
-
-La sintaxis de las tuplas es simple, al separar varios valores con
-comas, automáticamente se crea una tupla.
+¿Cuándo un diccionario es igual a otro? Aclaremos esta intrigante pregunta analizando el siguiente resultado:
 
 .. code:: python
 
-    t = 28, 21, 'hola!'
-    print(t[0])
-    print(t)
-    
-    # desempaquetado de una tupla
-    x, y, z = t
-
-
-
-.. parsed-literal::
-
-    28
-    (28, 21, 'hola!')
-
-
-Para mayor detalle sobre esta estructura se recomienda leer el Tutorial
-de Python, *Tuplas y secuencias*, pag. 30.
+    >>> a = dict(uno=1, dos=2, tres=3)
+    >>> b = {'uno': 1, 'dos': 2, 'tres': 3}
+    >>> c = dict([('dos', 2), ('uno', 1), ('tres', 3)])
+    >>> d = dict({'tres': 3, 'uno': 1, 'dos': 2})
+    >>> a == b == c == d 
+    True
 
 Conversión entre listas y diccionarios
 --------------------------------------
@@ -1474,16 +1548,16 @@ puede ser usado para crear una lista que conste de tuplas de dos pares
 
     Lista de ítems
     ==============
-    [('Dolina', '4584129'), ('Fontanarrosa', '32456'), ('JPFeinman', '1523443'), 
+    [('Dolina', '4584129'), ('Fontanarrosa', '32456'), 
     ('Spasiuk', '65748'), ('Marado', '1552123')]
     
     Lista de claves
     ===============
-    ['Dolina', 'Fontanarrosa', 'JPFeinman', 'Spasiuk', 'Marado']
+    ['Dolina', 'Fontanarrosa', 'Spasiuk', 'Marado']
     
     Lista de valores
     ===============
-    ['4584129', '32456', '1523443', '65748', '1552123']
+    ['4584129', '32456', '65748', '1552123']
 
 
 De listas a diccionarios
@@ -1503,7 +1577,7 @@ con los nombres y otra con los teléfonos. Las funciones a utilizar son
 
 .. parsed-literal::
 
-    {'JPFeinman': '1523443', 'Fontanarrosa': '32456', 'Dolina': '4584129', 
+    {'Fontanarrosa': '32456', 'Dolina': '4584129', 
      'Spasiuk': '65748', 'Marado': '1552123'}
 
 .. raw:: pdf
@@ -1513,12 +1587,12 @@ con los nombres y otra con los teléfonos. Las funciones a utilizar son
 Cadenas de caracteres
 ---------------------
 
-Una cadena es una secuencia de caracteres. Las hemos usado para mostrar mensajes pero sus usos son mucho más amplios, a continuación las veremos en mayor detalle.
+Una cadena es una secuencia de caracteres. Hasta aquí solamente las utilizamos para mostrar mensajes pero sus usos son mucho más amplios, a continuación las veremos en mayor detalle.
 
 Es importante destacar:
 
 -  Las cadenas son inmutables: una vez creadas no podemos modificarlas accediendo manualmente a sus caracteres.
--  El acceso a sus caracteres es igual al de los elementos de una lista: el primer caracter se encuentra en la posición cero y se puede acceder a sus caracteres utilizando rebanadas o porciones.
+-  El acceso a sus caracteres es igual al de los elementos de una lista: el primer caracter se encuentra en la posición cero y se puede acceder a sus caracteres utilizando rebanadas o porciones (slices).
 
 Veamos la siguiente cadena:
 
@@ -1552,7 +1626,7 @@ uso con cadenas de caracteres: operador suma (+) y el multiplicación
     libertad libertad libertad 
 
 
-Las cadenas de caracteres pueden ser comparadas entre si mediante los
+Las cadenas de caracteres pueden ser comparadas mediante los
 símbolos: >, >=, <, <=, ==, !=. Veamos un ejemplo:
 
 .. code:: python

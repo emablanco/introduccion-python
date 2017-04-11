@@ -1,0 +1,18 @@
+Ejercicio 1 (30 puntos): En el archivo de texto datos_ej1.txt se tiene información sobre los jugadores de la selección de fútbol para un determinado partido. Por cada línea del archivo se encuentran separado por comas los siguientes datos:
+Nombre y apellido, minutos en cancha, cantidad de metros corridos, cantidad de goles y un campo mas de control.
+
+Se le solicita que:
+- Informe en pantalla la cantidad de jugadores que realizaron goles
+- Muestre en pantalla el nombre del jugador con mayor rendimiento, calculado por (cant_goles+1)*mts_corridos/minutos_jugados
+
+Ejercicio 2 (30 puntos): En el juego de cartas "El truco", la jugada del envido consiste en calcular la cantidad de puntos que suman dos cartas del mismo palo (basto, oro, espada y copa). El cálculo se realiza teniendo en cuenta que dos cartas del mismo palo significan 20 puntos, pero además se suma el valor de cada una salvo para las cartas 10, 11 y 12 cuyo valor es de cero. Por ejemplo:
+
+- el 1 y el 7 de espada suman 28 puntos,
+- el 12 y el 5 de basto suman 25 puntos
+
+Según lo explicado, programe una función denominada calcular_envido() que reciba 4 valores (palo y número de dos cartas) y retorne el puntaje del cálculo del envido. Tenga en cuenta que para realizar el cálculo ambas deben ser del mismo palo, sino debe retornar cero. Haga uso de esta función desde el programa principal para mostrar la cantidad de puntos para diferentes cartas.
+
+Ejercicio 3 (20 puntos): Realice un programa donde el usuario debe adivinar un número generado al azar. El programa debe permitir el ingreso del valor e informarle si el valor que debe ingresar es mayor o menor, la finalización es cuando se adivina el número. Ayuda: indague sobre el módulo random para generar números aleatorios. 
+
+Ejercicio 4 (20): Realice un programa que almacene en una lista, denominada carton, cinco valores numéricos correspondiente a los números del bingo de un jugador. Cree además otra lista denominada bolillero con 100 valores numéricos (0 al 99) mezclada en en forma aleatoria. Con estas dos estructuras simule el juego del bingo, donde se van sacando las bolillas una a una y que muestre un mensaje cuando el jugador acierta todos sus números y finaliza el juego.
+

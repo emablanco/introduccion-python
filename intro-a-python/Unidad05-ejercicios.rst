@@ -1,8 +1,7 @@
+Guía de ejercitación N°5
+------------------------
 
-Unidad 5: Ejercicios
---------------------
-
-1 . Realice un programa orientado a objetos para gestionar cds de música. El programa debe permitir cargar los siguientes datos de por cd:
+1. Realice un programa orientado a objetos para gestionar cds de música. El programa debe permitir cargar los siguientes datos de por cd:
 
 - Nombre del CD
 - Artista o grupo
@@ -38,3 +37,5 @@ El uso de la clase Coleccion podría ser:
     listarock = misCDs.getxGenero('Rock')
     cd_largo = misCDs.getMayorDuracion()
     print(cd_largo.getNombreCD())
+
+2. La biblioteca `pandas <http://pandas.pydata.org/>`_ es utilizada ampliamente para realizar cálculos y visualización de datos de modo similar al que ofrecen las planillas de cálculo. Instale y haga uso de la biblioteca pandas para procesar un archivo de una planilla de cálculos y grafique algunas de sus columnas de datos.

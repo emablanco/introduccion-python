@@ -1,0 +1,17 @@
+1- Para un programa que calcula el promedio de edad de estudiantes hasta que se ingrese la edad 0, con qué estructura repetitiva lo plantearía:
+[ ] - while
+[ ] - for
+
+2- En el siguiente fragmento de programa, ¿qué mensaje se imprime en pantalla?
+
+
+temperatura = 15
+distancia = 15
+
+if 10 < temperatura < 30:
+    if distancia <= 15:
+        print('Está lindo para ir en bici')
+    else:
+        print('Es lejos, te recomiendo cole')
+else:
+    print('Te recomiendo cole')

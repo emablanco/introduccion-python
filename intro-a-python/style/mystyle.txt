@@ -518,6 +518,7 @@
     code:
       parent: literal
       fontName: stdMono
+      fontSize: 10.5
       leftIndent: 0
       spaceBefore: 8
       spaceAfter: 8

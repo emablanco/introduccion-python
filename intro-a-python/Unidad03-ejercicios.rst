@@ -1,46 +1,43 @@
+Guía de ejercitación N°3: control de flujo
+------------------------------------------
 
-Unidad 3: Ejercicios
---------------------
+:Autor: Emiliano López - elopez@fich.unl.edu.ar
 
-1. Con el siguiente fragmento de programa se puede determinar si una letra es vocal:
+1. Con el siguiente fragmento de programa se puede determinar si el caracter almacenado en 
+la variable ``letra`` es una vocal:
 
 .. code:: python
 
     if letra in ("aeiou"):
         print("Es vocal!")
         
-Realice un programa que permita ingresar una palabra y finalmente informe la cantidad 
-de vocales que posee. Una vez finalizado el ejercicio, se lo desafía a extenderlo para 
-que contabilice la repetición de cada vocal.
+Utilizando el fragmento previo realice un programa que permita ingresar una palabra e 
+informe la cantidad de vocales que posee. 
 
-2. Utilice una estructura repetitiva ``for`` para iterar sobre las letras de una palabra 
+2. Basado en el ejercicio anterior, extiéndalo para que contabilice la repetición de cada vocal.
+Si por ejemplo se ingresa la palabra "divididos" debería mostrar que la vocal *i* se repite 3 veces y la *o* una.
+
+3. Utilice una estructura repetitiva ``for`` para iterar sobre las letras de una palabra 
 y muestre en pantalla su versión encriptada. Para encriptarla imprima en pantalla el 
 reemplazo de una letra con un número según lo siguiente: a->4, b->8, e->3, f->7, t->2, 
-g->9, i->1, o->0. 
+g->9, i->1, o->0. Si por ejemplo se ingresa la cadena "fontanarosa" debería mostrar *70n24n4r0s4*.
 
-3. Realice un programa que lea las calificaciones de un curso y muestre el promedio y 
+4. Realice un programa que lea las calificaciones de un curso y muestre el promedio y 
 la nota mas alta. La lectura de notas finaliza cuando se ingresa un valor negativo.
 
-4. Agregue al programa previo la funcionalidad siguiente: debe mostrar la cantidad de 
-alumnos cuya calificación es superior al promedio.
+5. Utilizando lo visto hasta aquí (variables, while y for), de qué manera podría modificar
+el ejercicio previo para mostrar cuántos alumnos superaron el promedio.
 
-5. Almacene 10 nombres de personas en una lista que son ingresados por teclado. Muestre
-por pantalla la lista original, ordenada, en sentido inverso, y pase a mayúsculas la primer
-letra. Además, permita ingresar un nombre que sea eliminado de la lista y muestre el resultado
-de la eliminación o un mensaje alusivo si no fue posible la eliminación.
+6. Se ingresan por teclado la edad de 20 personas. Muestre en pantalla las edades de las 
+dos personas mayores. 
 
-6. NO INCLUIDO: Se lee una cadena de caracteres por teclado y se pide que la traduzca
-a código morse utilizando el siguiente diccionario como base:
 
-.. code:: python
 
-    morse = { "A" : ".-", "B" : "-...", "C" : "-.-.", "D" : "-..", 
-        "E" : ".", "F" : "..-.", "G" : "--.", "H" : "....", "I" : "..", 
-        "J" : ".---", "K" : "-.-", "L" : ".-..", "M" : "--", "N" : "-.", 
-        "O" : "---", "P" : ".--.", "Q" : "--.-", "R" : ".-.", "S" : "...", 
-        "T" : "-", "U" : "..-", "V" : "...-", "W" : ".--", "X" : "-..-", 
-        "Y" : "-.--", "Z" : "--..", "0" : "-----", "1" : ".----", 
-        "2" : "..---", "3" : "...--", "4" : "....-", "5" : ".....", 
-        "6" : "-....", "7" : "--...", "8" : "---..", "9" : "----.", 
-        "." : ".-.-.-", "," : "--..--"
-    }
+7. Modifique el programa anterior para que en lugar de ingresar las edades sean generadas en forma aleatoria.
+
+8. Programe el cálculo de la sensación térmica a partir de diferentes valores de temperatura del aire y velocidad del viento.
+Utilice la siguiente ecuación para el cálculo:
+
+sensacion_termica = 13.12 + 0,6215*T - 11,37*V^0,16 +0,3965*T*V^0,16.
+
+Haga uso de esta ecuación para una T que varía entre 5 y 10°C, y para una velocidad de viento que va desde 40 a 50 km/h, ambos valores varían de a una unidad.
