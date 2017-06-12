@@ -1,21 +1,21 @@
-﻿================================================
-Tecnicatura Universitaria en Software Libre
-================================================
---------------------------------------
-Introducción al Desarrollo de Software
---------------------------------------
+=========================================
+Introducción a la Programación con Python
+=========================================
 
 :Autor: Emiliano López - elopez@fich.unl.edu.ar
-:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
-:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/intro-a-python>`__]
+
+.. raw:: pdf
+
+   PageBreak oneColumn
 
 .. header:: 
-  Tecnicatura Universitaria en Software Libre  |  Introducción al Desarrollo de Software
+  Introducción a la Programación con Python - Unidad II
 
 .. footer::
     ###Page### / ###Total###
 
-.. contents:: Contenidos
+.. contents:: Unidad II: Tipos de datos
 
 
 .. sectnum::
@@ -32,74 +32,35 @@ Introducción al Desarrollo de Software
 
    PageBreak oneColumn
 
-**LICENCIA CC BY-SA 4.0**
-
-.. figure:: img/LICENCIA-CC.png
-   :alt: 
-   :width: 300 px
-
-Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
-
-A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__:
-
-**Usted es libre para:**
-
-- Compartir - copiar y redistribuir el material en cualquier medio o formato
-- Adaptar - remezclar, transformar y crear a partir del material    
-
-Para cualquier propósito, incluso comercialmente
-
-El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia
-
-**Bajo los siguientes términos:**
-
-- Atribución - Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
-
-- Compartir Igual - Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
-
-\* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
-
-\** En 4.0, debe indicar si ha modificado el material y mantener una indicación de las modificaciones anteriores
+.. include:: licencia.rst
 
 .. raw:: pdf
 
    PageBreak oneColumn
 
-Unidad 2: Tipos básicos
-=======================
+Introducción
+------------
 
-Como vimos en la Unidad 1, las variables pueden contener diferentes
-tipos de datos, que son tratados de manera diferente por
-Python, por ejemplo no podemos sumar un número con una letra.
+Como vimos en la Unidad previa, las variables pueden contener diferentes tipos de datos: numéricos (enteros o flotantes), cadenas de caracteres (contenido encerrados con comillas) y lógicos (``True`` y ``False``). Si bien hasta ahora fue transparente el tipo de dato que manejábamos, es útil conocerlo ya que cada uno tiene asociadas ciertas funcionalidades. Por ejemplo, vimos que multiplicar un número entero por una cadena de caracteres es una operación permitida y no así una suma. 
 
-Anteriormente vimos 2 de los 3 tipos básicos que utiliza python:
+A continuación veremos en mayor profundidad los tipos de datos incorporados en Python programando los ejemplos directamente sobre el intérprete mejorado ipython.
 
-- Numéricos 
-- Cadenas de caracteres
-- Lógicos
+Tipos de datos Numéricos
+------------------------
 
-Numéricos
----------
-
-Los números pueden ser enteros, reales (también denominados
-de punto flotante) o complejos. 
+Los números pueden ser enteros, reales (también denominados de punto flotante) o complejos. 
 
 Enteros
 ~~~~~~~
 
 Los números enteros son aquellos que no tienen decimales (ya sean positivos o negativos además
-del cero). En Python se representan mediante el tipo ``int`` (de integer, entero). Por ejemplo:
+del cero). En Python se representan mediante el tipo ``int`` (del inglés, integer) que puede ser
+consultado a través de la función ``type()``. Por ejemplo:
 
 .. code:: python
 
     a = 4
     type(a)
-
-
-
-
-.. parsed-literal::
-
     int
 
 
@@ -117,7 +78,7 @@ entera, seguido de un punto y por último la parte decimal. Por ejemplo:
 
     real = 6.2231
 
-También se puede utilizar notación científica, y añadir una e (de
+También se puede utilizar notación científica, y añadir una ``e`` (de
 exponente) para indicar un exponente en base 10. Por ejemplo:
 
 .. code:: python
@@ -131,12 +92,6 @@ Lo que sería equivalente a 0.6 x 10(-3) = 0.6 x 0.001 = 0.0006
 
     real = 8.21
     type(real)
-
-
-
-
-.. parsed-literal::
-
     float
 
 
@@ -144,21 +99,14 @@ Lo que sería equivalente a 0.6 x 10(-3) = 0.6 x 0.001 = 0.0006
 Complejos
 ~~~~~~~~~
 
-Los números complejos son aquellos que tienen parte imaginaria. La mayor parte de los lenguajes de programación carecen de este tipo, aunque sea muy utilizado por ingenieros y científicos en general.
+Los números complejos son aquellos que están formados por una parte real y otra imaginaria. La mayor parte de los lenguajes de programación carecen de este tipo, aunque sea muy utilizado por ingenieros y científicos en general.
 
-En Python son llamados ``complex`` , y se representan de la siguiente
-forma:
+En Python son llamados ``complex`` , y se representan de la siguiente forma:
 
 .. code:: python
 
     c= 4 + 5j
     type(c)
-
-
-
-
-.. parsed-literal::
-
     complex
 
 
@@ -167,21 +115,14 @@ Cadenas de caracteres
 ---------------------
 
 Tal como hemos visto en la unidad anterior, las cadenas (string en
-inglés o str) no son más que texto encerrado entre comillas simples
-('cadena'), dobles ("cadena") o triples ('''Cadenas multilíneas'''). Por
-ejemplo:
+inglés o str) no son más que texto encerrado entre comillas simples, dobles o triples 
+('cadena', "cadena",'''Cadenas multilíneas'''). Por ejemplo:
 
 .. code:: python
 
     a = 'Si supiera que el mundo se acaba mañana, yo, hoy todavía, \
         plantaría un árbol (Martin Luther King).'
     type(a)
-
-
-
-
-.. parsed-literal::
-
     str
 
 
@@ -190,12 +131,6 @@ ejemplo:
 
     b = "La simplicidad es la máxima sofisticación (Leonardo Da Vinci)."
     type(b)
-
-
-
-
-.. parsed-literal::
-
     str
 
 
@@ -211,12 +146,6 @@ ejemplo:
         no le importa un comino
         al hijo de cuca   (Pocho La Pantera, ~ año 1994).'''
     type(c)
-
-
-
-
-.. parsed-literal::
-
     str
 
 
@@ -224,8 +153,8 @@ ejemplo:
 Lógicos
 -------
 
-Por último, nos queda el tipo básico *lógico*, comúnmente denominado booleano. Una variable de tipo ``bool`` sólo puede tener dos valores posibles: ``True`` (verdadero) o ``False`` (falso).
-Estos valores son especialmente importantes ya que provienen de operaciones relacionales o lógicas imprescindibles en todo algoritmo computacional. 
+Por último, el tipo *lógico*, comúnmente denominado booleano. Una variable de tipo ``bool`` sólo puede tener dos valores posibles: ``True`` (verdadero) o ``False`` (falso). Estos valores son especialmente importantes ya que provienen de operaciones relacionales o lógicas, imprescindibles en todo algoritmo computacional. Toda operación de comparación, independientemente del tipo de dato que se esté operando, arroja un resultado lógico.
+
 
 Antes de adentrarnos en las operaciones que nos arrojan este tipo de valores, veamos algunos ejemplos de variables lógicas:
 
@@ -233,57 +162,27 @@ Antes de adentrarnos en las operaciones que nos arrojan este tipo de valores, ve
 
     a = True
     type(a)
-
-
-
-
-.. parsed-literal::
-
     bool
-
-
 
 .. code:: python
 
     b = False
     type(b)
-
-
-
-
-.. parsed-literal::
-
     bool
 
-
+En el siguiente ejemplo se asigna a la variable **c** el resultado de una operación relacional (10 > 2) que resulta verdadera (``True``), dado que 10 es mayor que 2. 
 
 .. code:: python
 
     c = 10 > 2
     print(c)
-
-
-.. parsed-literal::
-
     True
 
-
-En este último ejemplo vemos algo particular, hemos asignado a la
-variable **c** el resultado de una expresión lógica (10 > 2). Python en
-este caso opera con la misma y asigna a la variable **c** el resultado
-de dicha operación, que resulta verdadera (``True``), dado que
-10 es mayor que 2. Al tratarse de una operación lógica, el resultado
-siempre será de tipo ``bool``.
+Al tratarse de una operación lógica, el resultado siempre será de tipo ``bool``.
 
 .. code:: python
 
     type(c)
-
-
-
-
-.. parsed-literal::
-
     bool
 
 Operadores
@@ -292,26 +191,15 @@ Operadores
 Operadores relacionales
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Como vimos en el ejemplo anterior, los valores ``bool`` son además el
-resultado de expresiones que utilizan operadores relacionales, es decir,  comparaciones entre valores.
+Como vimos en el ejemplo anterior, los valores ``bool`` son además el resultado de expresiones que utilizan operadores relacionales, es decir,  comparaciones entre valores. Este tipo de expresiones pueden ser analizadas como una pregunta cuya respuesta consiste en una de dos posibilidades: verdadera o falsa. 
 
-Este tipo de expresiones pueden ser analizadas como una pregunta cuya respuesta consiste en una de dos posibilidades: verdadera o falsa. 
-
-Los operadores relacionales se utilizan de la siguiente manera:
-
-OperandoA *Operador* OperandoB
+Los operadores relacionales se utilizan de la siguiente manera: OperandoA *Operador* OperandoB
 
 Por ejemplo:
 
 .. code:: python
 
     10 > 4
-
-
-
-
-.. parsed-literal::
-
     True
 
 
@@ -319,6 +207,10 @@ Por ejemplo:
 En este caso el operando A es 10 y el B es 4, el resultado de aplicar el
 operador ">" a los operandos es en este caso ``True`` dado
 que 10 es mayor que 4.
+
+.. raw:: pdf
+
+   PageBreak oneColumn
 
 La lista completa de operadores que podemos utilizar en python es:
 
@@ -342,16 +234,15 @@ Además, los de mayor (``>``) y menor (``<``) se pueden combinar con el igual (`
 | >=         | ¿es a mayor o igual que b?      | 2 >= 3    | False       |
 +------------+---------------------------------+-----------+-------------+
 
-Veamos otro ejemplo, ahora con cadenas de texto:
+Veamos una serie de operaciones relacionales entre cadenas de texto, números y valores lógicos.
+
+Entre cadenas de caracteres
+'''''''''''''''''''''''''''
 
 .. code:: python
 
     d = "Una cosa" == "Otra cosa"
     print(d)
-
-
-.. parsed-literal::
-
     False
 
 
@@ -364,10 +255,6 @@ es ``False``
 
     d = "Una cosa" == "una cosa"
     print(d)
-
-
-.. parsed-literal::
-
     False
 
 
@@ -377,52 +264,32 @@ Solo cuando ambas cadenas son exactamente iguales, la comparación da como resul
 
     d = "Una cosa" == "Una cosa"
     print (d)
-
-
-.. parsed-literal::
-
     True
 
 
-El tipo como hemos visto, es ``bool``:
+Veamos el tipo:
 
 .. code:: python
 
     type(d)
-
-
-
-
-.. parsed-literal::
-
     bool
 
-
-
-Además de cadenas también podemos comparar números y valores lógicos:
-
-**Números**
+Entre números
+'''''''''''''
 
 .. code:: python
 
     resultado = 24 > 3*7
     print (resultado)
-
-
-.. parsed-literal::
-
     True
 
-**Valores lógicos**
+Entre valores lógicos
+''''''''''''''''''''''
 
 .. code:: python
 
     resultado = False == True
     print (resultado)
-
-
-.. parsed-literal::
-
     False
 
 
@@ -457,7 +324,7 @@ Usamos ``and`` para combinar dos operaciones relacionales:
 
     (x > 0) and (x < 10)
 
-es verdadero sólo si *x* es mayor que 0 **y a la vez** es menor que 10. Ahora usemos el operador ``or``:
+El resultado arrojado por la operación es verdadero sólo si *x* es mayor que 0 **y a la vez** es menor que 10. Ahora usemos el operador ``or``:
 
 .. code:: python
 
@@ -465,11 +332,10 @@ es verdadero sólo si *x* es mayor que 0 **y a la vez** es menor que 10. Ahora u
 
 es verdadero si alguna de las condiciones es verdadera, es decir, si el número es divisible por 2 **o** es divisible por 3. Podemos leer la línea anterior como el resto de dividir **n** por 2 es igual a cero **o** el resto de dividir **n** por 3 es igual a cero.
 
-Teniendo en cuenta que el operador ``%`` da como resultado el resto de la división. El resto de la división es cero cuando el dividendo y el divisor son múltiplos.
+Teniendo en cuenta que el operador ``%`` da como resultado el resto de la división (denominado como operador módulo). El resto de la división es cero cuando el dividendo y el divisor son múltiplos.
 
 
-Finalmente, el operador ``not`` niega una expresión booleana, de forma
-que
+Finalmente, el operador ``not`` niega una expresión booleana, es decir, que cambia el resultado de la operación, si era ``True`` será ``False`` y si era ``False``, será ``True``, de forma que:
 
 .. code:: python
 
@@ -499,10 +365,6 @@ Veamos algunos ejemplos
     c = 6
     resultado = (a < b) and (a > c)
     print (resultado)
-
-
-.. parsed-literal::
-
     True
 
 
@@ -516,10 +378,6 @@ resultado es verdadero.
     c = 6
     resultado = (a < b) and (a < c)
     print (resultado)
-
-
-.. parsed-literal::
-
     False
 
 
@@ -535,10 +393,6 @@ Veamos algunos ejemplos con el operador ``or``
     c = 6
     resultado = (a < b) or (a < c)
     print(resultado)
-
-
-.. parsed-literal::
-
     True
 
 
@@ -554,10 +408,6 @@ Por último, veamos un ejemplo con el operador ``not``
     b = 16
     resultado = not(a > b)
     print (resultado)
-
-
-.. parsed-literal::
-
     True
 
 
@@ -575,10 +425,6 @@ Veamos un ejemplo un poco mas complejo:
     b = 16
     resultado = (not(a > b)) and (not(b < c))
     print (resultado)
-
-
-.. parsed-literal::
-
     True
 
 

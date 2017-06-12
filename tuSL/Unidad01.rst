@@ -1,21 +1,21 @@
-================================================
-Tecnicatura Universitaria en Software Libre
-================================================
---------------------------------------
-Introducción al Desarrollo de Software
---------------------------------------
+=========================================
+Introducción a la Programación con Python
+=========================================
 
 :Autor: Emiliano López - elopez@fich.unl.edu.ar
-:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
-:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01>`__]
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/intro-a-python>`__]
+
+.. raw:: pdf
+
+   PageBreak oneColumn
 
 .. header:: 
-  Tecnicatura Universitaria en Software Libre  |  Introducción al Desarrollo de Software
+  Introducción a la Programación con Python - Unidad I
 
 .. footer::
     ###Page### / ###Total###
 
-.. contents:: Contenidos
+.. contents:: Unidad I: Introducción
 
 
 .. sectnum::
@@ -32,107 +32,80 @@ Introducción al Desarrollo de Software
 
    PageBreak oneColumn
 
-**LICENCIA CC BY-SA 4.0**
-
-.. figure:: img/LICENCIA-CC.png
-   :alt: 
-   :width: 300 px
-
-Introducción al desarrollo de software por Emiliano López se distribuye bajo una **Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional**.
-
-A continuación una traducción de la licencia que podría diferir de la `original <http://creativecommons.org/licenses/by-sa/4.0/>`__:
-
-**Usted es libre para:**
-
-- Compartir - copiar y redistribuir el material en cualquier medio o formato
-- Adaptar - remezclar, transformar y crear a partir del material    
-
-Para cualquier propósito, incluso comercialmente
-
-El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia
-
-**Bajo los siguientes términos:**
-
-- Atribución - Usted debe darle crédito a esta obra de manera adecuada (ver \*), proporcionando un enlace a la licencia, e indicando si se han realizado cambios (ver \**). Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
-
-- Compartir Igual - Si usted mezcla, transforma o crea nuevo material a partir de esta obra, usted podrá distribuir su contribución siempre que utilice la misma licencia que la obra original. 
-
-\* Si se suministran, usted debe dar el nombre del creador y de las partes atribuidas, un aviso de derechos de autor, una nota de licencia, un aviso legal, y un enlace al material. Las licencias CC anteriores a la versión 4.0 requieren que usted provea el título del material si se incluye, y pueden tener otras ligeras diferencias.
-
-\** En 4.0, debe indicar si ha modificado el material y mantener una indicación de las modificaciones anteriores
+.. include:: licencia.rst
 
 .. raw:: pdf
 
    PageBreak oneColumn
 
-Unidad 1: Introducción
-======================
-
-En el presente capítulo introduciremos los conceptos necesarios para
-desarrollar los primeros algoritmos computacionales. Además, se explican
-las herramientas necesarias para llevar a cabo el desarrollo y sus
-diferentes alternativas.
-
 Motivación
 ----------
 
-Gran parte de las tecnologías utilizadas en la actualidad tienen algo en
-común, y es que por lo general basan su funcionamiento en algún tipo de
-programa. Que una computadora tenga la flexibilidad de ser utilizada para 
-jugar, predecir el comportamiento climático o gestionar un sanatorio 
-depende exclusivamente de los programas que ejecuta.
+Gran parte de las tecnologías utilizadas en la actualidad basan su funcionamiento 
+en algún tipo de programa. Que una computadora tenga la flexibilidad de ser utilizada 
+para jugar, predecir el comportamiento climático o gestionar un sanatorio depende 
+exclusivamente de los programas que ejecuta, desde esta perspectiva programar nos 
+permite intervenir sobre parte de la realidad desde una postura activa y,
+comprender su funcionamiento nos abre un abanico de posibilidades ilimitadas. 
 
-Saber programar nos permite intervenir sobre parte de esta realidad 
-desde una postura activa, comprender su funcionamiento y con
-esto nos abre un gran abanico de posibilidades, limitadas únicamente por
-nuestra imaginación. Pensemos por un momento en todas las aplicaciones
-que usamos a diario en el teléfono celular, en la PC, en la tablet, etc.
-Saber que si necesitamos algo en concreto seremos capaces de crearlo
-nosotros mismos es pura libertad.
+Programar no sólo nos permite crear, sino también resolver problemas
+que de otro modo serían imposibles. Procesar miles o millones de datos, 
+relacionarlos, analizarlos, graficarlos, etc, pasa de ser una gesta heroica 
+-comparable a escalar el Aconcagua descalzo- a escribir unas cuantas líneas de código.
 
 Lo más importante es que todos podemos programar, simplemente 
 tenemos que aprender un conjunto de reglas básicas, saber como aplicarlas 
-y tener muchas ganas de crear cosas nuevas. Además, programar es muy divertido, 
-al contrario de lo que mucha gente podría pensar en un principio. 
-Es como un gran rompecabezas en el que debemos encajar ciertas piezas de una 
+y tener muchas ganas de crear. Además, programar es muy divertido, 
+y, al contrario de lo que muchos podrían pensar en un principio, es como un gran 
+rompecabezas en el que debemos encajar ciertas piezas de una 
 forma específica para conseguir el resultado deseado.
 
-Aprender a programar implica conocer por un lado cierta lógica y por el otro
-una determinada sintaxis. En este curso haremos énfasis en adquirir el pensamiento
-lógico utilizando Python como lenguaje de programación por lo que aprenderemos
-su sintaxis.
+Aprender a programar implica conocer cierta lógica y una determinada sintaxis. 
+En este curso haremos énfasis en adquirir el pensamiento lógico utilizando **Python** 
+como lenguaje de programación por lo que aprenderemos su sintaxis.
 
 Del mismo modo que un enófilo se convierte en un experto en vinos probándolos, 
 a programar se aprende programando y leyendo código. Aquí es donde la sintaxis
 se vuelve relevante y puede facilitarnos la vida o definitivamente complicarla.
 
-Esta es la principal razón por la que hemos decidido utilizar como primer lenguaje 
-de programación Python, además que existen una gran cantidad de programas 
+Esta es la principal razón por la que hemos decidido utilizar Python como primer lenguaje 
+de programación, sumado a que existen una gran cantidad de programas 
 desarrollados en este lenguaje, desde herramientas para servidores, hasta 
 programas para usuarios finales, pasando por aplicaciones empresariales, 
 herramientas de desarrollo, plataformas web, juegos de todo tipo, y muchísimas
-aplicaciones software libre, por lo que se puede obtener y estudiar el código 
-con el que están hechas.
+aplicaciones software libre, disponibles para analizar su código.
 
+¿Cómo se programa?
+------------------
+
+En términos generales, programar consiste en dos tareas básicas:
+
+- Escribir en un archivo de texto el código de las instrucciones, denominado **código fuente**. 
+- Ejecutar otro programa (en nuestro caso será Python) alimentándolo con el código previo.
+
+Cada una de estas tareas puede hacerse por separado pero en general son realizadas dentro de un entorno que 
+integra el proceso de desarrollo de software. Estos entornos se denominan IDE (del inglés Integrated Development Environment)
+y facilitan enormemente las tareas comúnmente llevadas a cabo como la depuración de errores, elementos de ayuda, entre otros.
+
+Python es un software que interpreta aquello que programemos y nos arroja su resultado. De aquí en más utilizamos el término
+**intérprete** y Python como sinónimos.
 
 ¿Por qué Python?
-~~~~~~~~~~~~~~~~
+----------------
 
-Python es un lenguaje de programación multipropósito, poderoso y fácil
-de aprender. Es del tipo interpretado, lo que significa que los
-programas no necesitan ser compilados, en su lugar, simplemente
-requieren que el equipo donde van a ser ejecutados cuente con un
-interprete instalado.
+Python es un lenguaje de programación multipropósito, flexible, poderoso y fácil
+de aprender. Es del tipo interpretado, lo que significa que donde se pueda instalar
+el intérprete podremos ejecutar nuestros programas.
 
-Python es un lenguaje de programación de tipado dinámico 
-y multiplataforma, cuya filosofía hace hincapié en una sintaxis que 
-favorezca un código legible. Es también multiparadigma, ya que soporta 
-orientación a objetos, programación imperativa y programación funcional. 
+Python se distribuye como software de código abierto (licencia PSF). 
+Su filosofía hace hincapié en una sintaxis que favorezca un código legible. 
+Es también multiparadigma, ya que soporta orientación a objetos, programación 
+imperativa y programación funcional. 
 
 Es sencillo de aprender, y muchos programadores Python reconocen un sustancial 
 aumento en su productividad además de sentir que el lenguaje mismo los 
-incentiva al desarrollo de código de mayor calidad. Está disponible en 
-múltiples plataformas, desde una PC hasta teléfonos celulares, y muchos 
+incentiva al desarrollo de código de mayor calidad. Está disponible 
+para múltiples arquitecturas, desde una PC hasta teléfonos celulares, y muchos 
 sitios de Internet utilizan Python como soporte de sus servicios.
 
 Es un lenguaje que cuenta con estructuras de datos eficientes y de alto
@@ -147,7 +120,7 @@ lenguaje ideal para el desarrollo rápido de aplicaciones en diversas
 -  Juegos
 -  Etc.
 
-Otra de las grandes virtudes de python, es que su interprete puede
+Otra de las grandes virtudes es que su intérprete puede
 ejecutarse en la mayoría de los sistemas operativos utilizados en la
 actualidad (GNU/Linux, Microsoft Windows, Mac OSX, etc.).
 
@@ -156,76 +129,95 @@ continuo crecimiento por lo que cuenta con un gran apoyo de la comunidad, ademá
 es utilizado por compañías como Google, Youtube, Netflix, Yahoo, NSA, NASA, Canonical, 
 IBM, entre otras tantas.
 
+Desde los últimos años existe un constante crecimiento en el uso de Python como lenguaje
+para enseñar programación en las universidades. En el siguiente gráfico se observan
+los lenguajes elegidos en los cursos introductorios de universidades extranjeras.
+
+.. figure:: img/u1/Top39-700.4.png
+    :width: 1200 px
+
 Instalación
 -----------
 
-Actualmente, Python cuenta con dos ramas de desarrollo, la correspondiente a la
-versión 2.x y 3.x. Si bien ambas son completamente funcionales, para cualquier 
-desarrollo es recomendable utilizar alguna versión de la rama 3.x. 
+Python cuenta con dos ramas simultáneas de desarrollo, la 2.x y 3.x. Si bien ambas son completamente 
+funcionales, es recomendable utilizar alguna versión de la rama 3.x. La última versión disponible 
+del intérprete para cada rama es la 2.7.12 y la 3.5.2.
 
-En el presente curso nos basaremos en la última versión disponible de la **rama 3.x**.
-A continuación detallamos el modo de instalar el intérprete de python.
+En el presente curso utilizaremos la versión **3.x** cuya instalación realizaremos a partir del paquete Anaconda.
+Anaconda incluye -además del intérprete de Python- varias herramientas que simplifican el proceso de instalación.
+Se debe descargar el instalador correspondiente al sistema operativo (Windows, Linux o Mac) y a la 
+arquitectura del hardware (64 o 32 bits) del sitio web `www.continuum.io/downloads <https://www.continuum.io/downloads>`__, 
+tal como se observa en la siguiente captura.
 
-Windows
-~~~~~~~
+.. figure:: img/u1/anaconda_web_installer.png
+    :width: 1300 px
+    
+    Descarga del paquete Anaconda que contiene Python
 
-Para instalar Python en una máquina con Windows, debemos seguir los
-siguientes pasos:
+La instalación debe realizarse haciendo sucesivos clicks en el botón *Next*, dejando tildadas las opciones por defecto
+hasta que finalice el proceso. Una vez terminada la instalación, en el botón inicio encontrará un menú denominado 
+Anaconda con varios programas incluidos, en la siguiente figura se muestra el resultado de una instalación bajo Windows 7.
 
--  Apuntar el navegador a: https://www.python.org/downloads/windows/
--  Ir al link de la última versión disponible (por ej: latest python 3
-   release)
--  En la sección Files, descargar el instalador correspondiente a su
-   arquitectura (64/32 bits), por ej:
-   https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi
--  Ejecutar el instalador (por ej: python-3.4.3.msi) aceptando las
-   opciones por defecto
+.. figure:: img/u1/anaconda_menu.png
+    :width: 700 px
+    
+    Menú creado luego de instalar Anaconda
 
-GNU/Linux
-~~~~~~~~~
 
-En la mayoría de las distribuciones GNU/Linux, es muy probable que ya
-contemos con el intérprete instalado, incluso en sus dos versiones. En
-caso de no ser así, para instalarlo utilizando los administradores de
-paquetes debemos ejecutar los siguientes comandos desde una terminal:
+Para el caso de sistemas GNU/Linux, una vez descargado el instalador se debe ejecutar desde la consola el siguiente comando, aceptando todas las opciones por defecto:
 
-Para sistemas basados en Debian (o sus derivados):
+.. code:: bash 
+    
+    bash Anaconda3-4.2.0-Linux-x86_64.sh
 
-.. code:: bash
-
-    sudo apt-get install python3
-
-Para sistemas que utilizan yum como sistema de paquetes (Fedora, CentOS,
-RedHat)
-
-.. code:: bash
-
-    sudo yum install *python*
 
 Entornos de programación
 ------------------------
 
+Entorno integrado de desarrollo (IDE)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Un IDE es un entorno que nos facilita las tareas a la hora de programar.
+Consiste en la integración de un editor de texto con características de
+resaltado de sintaxis, auto-completado, inspector del contenido de las variables, 
+análisis de sintaxis y, entre otras funcionalidades, el intérprete de
+Python. Existen cientos de entornos muy buenos, como por ejemplo
+`Spyder <https://github.com/spyder-ide/spyder>`__,
+`PyCharm <https://www.jetbrains.com/pycharm>`__ o
+`Ninja-IDE <http://ninja-ide.org>`__.  Si bien en el presente curso nos basaremos en **Spyder**, 
+el usuario puede optar por aquella IDE que le resulte de su preferencia.
+
+Con la instalación previa de Anaconda, se incluye Spyder. En la siguiente figura se lo observa en funcionamiento, 
+
+.. figure:: img/u1/spyder-ide.png
+    :width: 1300 px
+    
+    IDE Spyder
+
+Una lista bastante completa sobre las IDEs disponibles pueden
+encontrarse en la `wiki oficial de
+Python <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`__
+
 El intérprete interactivo
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ya con el intérprete de Python instalado, podemos comenzar a programar.
-Si ejecutamos en una terminal ``python3``, ingresaremos al intérprete en
-modo interactivo y veremos una salida similar a la siguiente:
+Python permite obtener respuesta de cada instrucción ejecutada de modo interactivo. 
+Esta modalidad de uso suele ser útil para corroborar el funcionamiento de ciertas
+acciones en forma aislada. 
+
+Para ingresar al modo interactivo, debe ingresarse desde la línea de comandos el comando ``python`` y, 
+dependiendo del sistema operativo veremos una salida similar a la siguiente:
 
 .. code:: python
 
-    Python 3.4.2 (default, Oct  8 2014, 10:45:20) 
-    [GCC 4.9.1] on linux
+    C:\Users\Emiliano>python
+    Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) 
+    [MSC v.1 900 64 bit (AMD64)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
-    >>>
 
-Con esto, el interprete de python esta listo para empezar a interpretar
-las instrucciones (las cuales llamaremos sentencias) que forman parte de
-nuestro programa, por lo que podemos decir que ya estamos listos para
-empezar a programar. Pero vayamos de lo más sencillo a lo más complejo,
-y lo mejor para comenzar es realizando ciertos cálculos matemáticos
-sencillos, y corroborando su resultado. Por ejemplo, escribamos lo
-siguiente:
+Con esto, python esta listo para recibir instrucciones, que en este contexto son llamadas sentencias.
+Vamos a comenzar es realizando ciertos cálculos matemáticos sencillos, y corroborando su resultado. 
+Por ejemplo, escribamos lo siguiente:
 
 .. code:: python
 
@@ -233,9 +225,9 @@ siguiente:
     10
     >>> 
 
-Como vemos, si ingresamos 2\*5, le estamos diciendo al interprete 
-que debe realizar la multiplicación entre 2 y 5. El interprete
-analiza la instrucción ingresada (2\*5), y contesta con el resultado (10
+Como vemos, si ingresamos 2\*5, le estamos diciendo al intérprete 
+que debe realizar la multiplicación entre 2 y 5, el proceso consiste en
+analizar la instrucción ingresada (2\*5), y contestar con el resultado (10
 en este caso).
 
 Hagamos otros cálculos para entrar en calor
@@ -250,90 +242,52 @@ Hagamos otros cálculos para entrar en calor
     0.2
     >>> 
 
+Para salir se debe escribir el comando ``exit()`` o simplemente cerrar la ventana.
+
 IPython, el intérprete interactivo mejorado
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `IPython <http://ipython.org>`__ es una interfaz mejorada del intérprete
-nativo. Se lo puede utilizar en modo consola o a través de una interfaz
-web. La instalación en sistemas basados en Debian GNU/Linux es similar a
-la de python: ``apt-get install ipython3``.
+nativo, incluida en Anaconda.
 
-La ejecución de ipython desde una terminal nos arroja una pantalla
-similar a la siguiente:
+La ejecución de ipython también se realiza desde una terminal, que dependiendo del 
+sistema operativo nos arroja una pantalla similar a la siguiente:
 
 .. code:: python
 
-    emiliano@pynandi:~ $ ipython3
-    Python 3.4.2 (default, Oct  8 2014, 10:45:20) 
+    C:\Users\Emiliano>ipython
+    Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) 
+    [MSC v.1 900 64 bit (AMD64)]
     Type "copyright", "credits" or "license" for more information.
 
-    IPython 2.3.0 -- An enhanced Interactive Python.
+    IPython 5.1.0 -- An enhanced Interactive Python.
     ?         -> Introduction and overview of IPython's features.
     %quickref -> Quick reference.
     help      -> Python's own help system.
     object?   -> Details about 'object', use 'object??' for extra details.
-
     In [1]: 
 
-Otra alternativa muy interesante son los notebooks de ipython, una
-interfaz que permite programar utilizando el navegador web como entorno.
-Si bien no entraremos en detalles sobre su uso, para lanzar la aplicación se debe
-ejecutar desde una consola el comando ``ipython3 notebook``, 
-esto abrirá el navegador por defecto con el entorno cargado.
+Del mismo modo que el intérprete nativo es posible ingresar sentencias para ser ejecutadas.
 
-Entorno integrado de desarrollo (IDE)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Un IDE es un entorno que nos facilita las tareas a la hora de programar.
-Consiste en la integración de un editor de texto con características de
-resaltado de sintaxis, auto-completado, inspector del contenido de las variables, 
-análisis de sintaxis y, entre otras funcionalidades, el intérprete de
-Python. Existen cientos de entornos muy buenos, como por ejemplo
-`Spyder <https://github.com/spyder-ide/spyder>`__,
-`PyCharm <https://www.jetbrains.com/pycharm>`__ o
-`Ninja-IDE <http://ninja-ide.org>`__.  Si bien en el presente curso nos basaremos en **Spyder3**, 
-el usuario puede optar por aquella IDE que le resulte de su preferencia.
-
-.. figure:: img/u1/spyder-ide.png
-    :width: 1300 px
-    
-    IDE spyder3
-
-Para instalar spyder3 en su sistema operativo GNU/Linux debe ejecutar el siguiente comando:
-
-.. code:: bash
-
-    $sudo apt-get install spyder3
-
-En cambio, para instalarlo en un Windows, primeramente debe haber 
-instalado el intérprete de python3, específicamente la versión 3.4,  como se indicó previamente y luego descargar el instalador 
-de spyder correspondiente a su arquitectura (32 o 64 bits) en los siguientes enlaces:
-
-- `Spyder para 64 bits <https://bitbucket.org/spyder-ide/spyderlib/downloads/spyder-2.3.8.win-amd64-py3.4.exe>`__    
-- `Spyder para 32 bits <https://bitbucket.org/spyder-ide/spyderlib/downloads/spyder-2.3.8.win32-py3.4.exe>`__    
-
-
-
-Una lista bastante completa sobre las IDEs disponibles pueden
-encontrarse en la `wiki oficial de
-Python <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`__
-
-
+Otra alternativa muy interesante son los notebooks de ipython, una interfaz que permite 
+programar utilizando el navegador web como entorno. Si bien no entraremos en detalles 
+sobre su uso, para lanzar la aplicación se debe ejecutar desde una consola el 
+comando ``ipython notebook``, lo que abrirá el navegador web por defecto con el entorno cargado.
 
 Algoritmos computacionales
 --------------------------
 
 En forma simplificada, un programa o software es un conjunto de
-instrucciones que la computadora puede ejecutar. Este procedimiento
-formado por un conjunto de instrucciones es lo que denominamos algoritmo
-computacional. Una analogía a un algoritmo computacional es una receta
-de cocina, por ejemplo:
+instrucciones que la computadora -intérprete mediante- puede ejecutar. 
+Estas instrucciones es lo que denominamos algoritmo computacional caracterizado por
+ser finito, general y preciso. Una analogía comúnmente utilizada sobre un algoritmo 
+computacional, es decir un programa, es una receta de cocina, por ejemplo:
 
 ::
 
     Prender el fuego
     Salar la carne
-    Controlar cada 5 minutos hasta que haya brasas
+    Controlar cada 5 minutos hasta haya brasas
     Poner la carne a la parrilla
     Cocinar hasta que esté la carne, controlar cada 5 minutos
     Dar vuelta la carne
@@ -355,7 +309,7 @@ programa que muestra en pantalla ese mensaje.
 
 Renunciando a cualquier pretensión de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
-*print()* pasando entre los paréntesis el mensaje de despedida entre comillas.
+*print()* escribiendo entre los paréntesis el mensaje de despedida entre comillas.
 
 .. code:: python
 
@@ -363,7 +317,7 @@ mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
 
 Podemos probar la instrucción directamente desde el intérprete, creando
 con un editor de texto plano un archivo guardado como ``chau.py`` y
-luego ejecutándolo desde la terminal haciendo ``python3 chau.py``, o
+luego ejecutándolo desde la terminal haciendo ``python chau.py``, o
 bien utilizando un IDE y haciendo todo desde ahí mismo.
 
 Ahora bien, es muchísimo más lo que podemos hacer programando además de
@@ -376,7 +330,7 @@ Modos de ejecutar tus programas
 El intérprete interactivo de Python es una gran ayuda para realizar
 pruebas y experimentar en tiempo real sobre el lenguaje. Sin embargo,
 cuando cerramos el intérprete perdemos lo escrito, por lo que no es una
-solución para escribir programas mas largos y con mayores complejidades.
+solución para escribir programas largos y complejos.
 Entonces, para un programa guardado con el nombre
 *hola\_mundo.py*, lo podemos ejecutar de las siguientes maneras:
 
@@ -388,36 +342,7 @@ y nombre del archivo:
 
 .. code:: bash
 
-    $python3 hola_mundo.py
-
-Como un script
-~~~~~~~~~~~~~~
-
-Es posible ejecutarlo sin invocar al intérprete desde la línea de
-comandos, para esto, se debe incluir al principio del programa la
-siguiente línea:
-
-.. code:: python
-
-    #!/usr/bin/env python3
-
-Con esa línea, estaremos especificando en el mismo programa la ruta del
-intérprete que debe ejecutarlo. Antes de poder ejecutarlo, debemos
-otorgarle permisos de ejecución con el comando del sistema operativo
-chmod:
-
-.. code:: bash
-
-    $chmod +x hola_mundo.py
-
-Una vez realizado lo anterior, es posible ejecutarlo desde la terminal,
-como cualquier ejecutable del sistema operativo, llamándolo con el
-nombre del programa antecediendo "./" (punto barra, sin comillas):
-
-.. code:: bash
-
-    $./hola_mundo.py
-    Adiós mundo cruel
+    python hola_mundo.py
 
 Desde el IDE
 ~~~~~~~~~~~~
@@ -436,7 +361,7 @@ la sección principal donde se escribe el código y una sección de ayuda.
 Elementos de un programa
 ------------------------
 
-A continuación veremos los ingredientes fundamentales de un lenguaje de
+A continuación veremos los elementos fundamentales de un lenguaje de
 programación como Python, para llevar a cabo los ejemplos utilizaremos
 el intérprete interactivo mejorado ipython.
 
@@ -484,10 +409,10 @@ potencia a la 1/2.
     Out[14]: 1.4142135623730951
 
 Los datos numéricos obtenidos en las operaciones previas se clasifican
-en reales y enteros, en python se los clasifica como float e int
+en reales y enteros, en python se los clasifica ``float`` e ``int``
 respectivamente, además existe el tipo ``complex``, para números complejos.
 
-Utilizando la función type() podemos identificar el tipo de dato.
+Utilizando la función ``type()`` podemos identificar el tipo de dato.
 Veamos:
 
 .. code:: python
@@ -503,15 +428,15 @@ Cadenas de caracteres
 
 Además de números, es posible manipular texto. Las cadenas son
 secuencias de caracteres encerradas en comillas simples ('...') o dobles
-("..."), el tipo de datos es denominado *str* (string). Sin adentrarnos
+("..."), el tipo de datos es denominado ``str`` (string). Sin adentrarnos
 en detalles que posteriormente veremos, aquí trataremos lo
 indispensable para poder desarrollar los primeros programas. Veamos unos
-ejemplos:
+ejemplos usando el intérprete interactivo python:
 
 .. code:: python
 
-    >>> 'huevos y pan'         # comillas simples
-    'huevos y pan'
+    >>> 'de la papa al puré'         # comillas simples
+    'de la papa al puré'
 
 Los operadores algebraicos para la suma y multiplicación tienen efecto
 sobre las cadenas:
@@ -521,10 +446,10 @@ sobre las cadenas:
     >>> 'eco '*4               # La multiplicación repite la cadena
     'eco eco eco eco '
 
-    >>>'yo y '+ 'mi otro yo'   # La suma concatena dos o mas cadenas
-    'yo y mi otro yo'
+    >>>'yo y '+ 'mi alter ego'   # La suma concatena dos o mas cadenas
+    'yo y mi alter ego'
 
-Es posible utilizar cadenas de más de una línea, anteponiendo **triples
+Es posible utilizar cadenas de más de una línea, usando **tres
 comillas** simples o dobles al inicio y al final, por ejemplo (fragmento
 del poema de Fortunato Ramos *Yo jamás fui un niño*):
 
@@ -555,33 +480,41 @@ comillas, ya sean simples o dobles.
 Variables
 ~~~~~~~~~
 
-Las variables son contenedores para almacenar información. Por ejemplo,
-para elevar un número al cubo podemos utilizar 3 variables, para la base
+Las variables vinculan datos con etiquetas, por ejemplo, en la sentencia ``a = 8``, estamos 
+asociando al valor ``8`` una etiqueta ``a``, de manera que podemos referirnos a lo largo del 
+programa con ``a``, sin importar a qué valor hace referencia. 
+
+Una analogía muy utilizada en la bibliografía (aunque no muy correcta en Python) es la de 
+asimilar una variable a una caja contenedora. Para el ejemplo del párrafo previo, el identificador
+``a`` es la caja y el valor numérico es lo que contiene.
+
+Por ejemplo, para elevar un número al cubo podemos utilizar 3 variables, para la base
 (*num1*), para el exponente (*num2*) y para almacenar el *resultado*:
 
 .. code:: python
 
-    num1 = 5                   # num1 toma valor 5.
-    num2 = 3                   # num2 toma 3.    
+    num1 = 5                   # num1 referencia el valor 5.
+    num2 = 3                   # num2 referencia al 3.    
     resultado = num1**num2     # resultado toma num1 elevado a num2. 
     print('El resultado es', resultado)
 
-El operador igual (=) sirve para asignar lo que está a su derecha, a la
-variable que se encuentra a su izquierda. Implementemos la siguiente
-ecuación para dos valores de *x*, 0.1 y 0.2.
+El operador igual (=) es quien realiza esta asociación entre lo que está a su derecha 
+con la variable que se encuentra a su izquierda. 
+
+Implementemos la siguiente ecuación para dos valores de *x*, 0.1 y 0.2.
 
 .. math:: y = (x-4)^2-3
 
 .. code:: python
 
-    x1 = 0.1                              
-    y1 = (x1-4)**2-3
+    x = 0.1                              
+    y = (x-4)**2-3
+    print(x,y)
 
-    x2 = 0.2                              
-    y2 = (x2-4)**2-3
+    x = 0.2                              
+    y = (x-4)**2-3
 
-    print(x1,y1)
-    print(x2,y2)
+    print(x,y)
 
 Veremos la siguiente salida por pantalla:
 
@@ -590,8 +523,7 @@ Veremos la siguiente salida por pantalla:
     0.1 12.209999999999999
     0.2 11.44
 
-Otros ejemplos utilizando variables que contengan **cadenas de
-caracteres**:
+Otros ejemplos utilizando variables que referencien **cadenas de caracteres**:
 
 .. code:: python
 
@@ -602,7 +534,7 @@ caracteres**:
 
     print(cadena3)
 
-Los nombres de las variables (identificador o etiqueta) pueden estar
+Los nombres de las variables (identificador) pueden estar
 formados por letras, dígitos y guiones bajos, teniendo en cuenta ciertas
 restricciones, no pueden comenzar con un número y ni ser algunas de las
 siguientes palabras reservadas:
@@ -667,13 +599,13 @@ sumar dos números:
 
 Claramente la suma de los valores ingresados no da el resultado
 observado. El inconveniente se debe a que ambos valores son tomados como
-cadenas de caracteres y la operación de suma entre cadenas de caracteres
-produce la concatenación de las mismas. Es necesaria convertir la cadena
+cadenas de caracteres y la operación de suma entre cadenas
+produce su la concatenación. Es necesaria convertir la cadena
 de caracteres (str) a un valor numérico, ya sea entero o real (int o
 float).
 
-Para convertir datos de diferentes tipo se utilizan las funciones int(),
-float() o str(). Modificando el caso anterior:
+Para convertir datos de diferentes tipo se utilizan las funciones ``int()``,
+``float()`` o ``str()``. Entonces, modificando el caso anterior:
 
 .. code:: python
 
@@ -707,9 +639,9 @@ ecuación matemática con el siguiente código:
 ::
 
 
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------
 
-    TypeError                                 Traceback (most recent call last)
+    TypeError                            Traceback (most recent call last)
 
     <ipython-input-3-3baa5c95d16e> in <module>()
           1 x = input("Ingrese x = ")
@@ -722,7 +654,7 @@ ecuación matemática con el siguiente código:
 
 A diferencia del ejemplo visto anteriormente, donde la suma de dos
 cadenas era una operación perfectamente válida, ahora nos encontramos
-con operaciones entre diferentes tipos pero incompatibles. En este caso,
+con operaciones entre diferentes tipos pero **incompatibles**. En este caso,
 podemos convertir la entrada en un número flotante para operar con
 normalidad:
 
@@ -740,9 +672,9 @@ normalidad:
 
 
 Es posible combinar distintos tipos de datos haciendo la conversión
-correspondiente, en el último ejemplo, tanto *x* como *y* son de tipo
+correspondiente. En el último ejemplo, tanto *x* como *y* son de tipo
 *float* y es posible concatenarlos a una cadena de caracteres haciendo
-la conversión correspondiente, utilizando la función *str()*:
+la conversión correspondiente con la función *str()*:
 
 .. code:: python
 
@@ -780,7 +712,7 @@ comas.
 
 Por defecto, la separación que se obtiene entre cada argumento es un
 espacio en blanco, sin embargo, se puede cambiar este comportamiento
-agregando como argumento ***sep=' '*** y entre las comillas incluir el
+agregando como argumento ``sep=' '`` y entre las comillas incluir el
 separador deseado, por ejemplo:
 
 .. code:: python
@@ -889,7 +821,7 @@ Funciones
 
 Las funciones son programas o subprogramas que realizan una determinada
 acción y que pueden ser invocados desde otro programa. En los capítulos
-posteriores trabajaremos en mayor profundidad, en esta sección solamente
+posteriores trabajaremos en mayor profundidad, en esta sección
 presentaremos algunas de las muchas que nos provee Python en su biblioteca
 estándar.
 
@@ -942,7 +874,18 @@ ubicadas bajo el módulo ``math``.
 
 Del ejemplo previo, hemos visto como indicarle a Python que importe -o
 haga uso de- un módulo en particular y de algunas de sus funciones
-incluidas.
+incluidas. También es posible importar funciones específicas de un módulo, 
+en el siguiente ejemplo importamos únicamente la función ``sqrt`` y ``sin`` del módulo ``math``, 
 
-En capítulos posteriores veremos en profundidad distintos modos de
-importar módulos e invocar sus funciones.
+.. code:: python
+
+    from math import sqrt, sin
+    nro = 2
+    raiz = sqrt(nro)
+    print("La raíz de %d es %.4f" %(nro,raiz))
+    print("El seno de %d es %.4f" %(nro,sin(nro)))
+
+Observamos que de este modo no hace falta reescribir el módulo para invocar a las funciones.
+En capítulos posteriores veremos en profundidad distintos modos de importar módulos e invocar sus funciones.
+
+
