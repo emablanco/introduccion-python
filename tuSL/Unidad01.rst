@@ -1,8 +1,9 @@
-=========================================
-Introducción a la Programación con Python
-=========================================
+======================================
+Introducción al desarrollo de software
+======================================
 
 :Autor: Emiliano López - elopez@fich.unl.edu.ar
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
 :Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/intro-a-python>`__]
 
 .. raw:: pdf
@@ -10,7 +11,7 @@ Introducción a la Programación con Python
    PageBreak oneColumn
 
 .. header:: 
-  Introducción a la Programación con Python - Unidad I
+  Introducción al desarrollo de software - Unidad I
 
 .. footer::
     ###Page### / ###Total###
@@ -747,6 +748,39 @@ ejemplo:
     1 2 3
     4
 
+Usando str.format()
+^^^^^^^^^^^^^^^^^^^
+
+Un modo de dar formato a las cadenas es a través del método ``str.format()``. 
+Su uso más básico se observa en el siguiente ejemplo:
+
+.. code:: python
+
+    >>> print("Su nombre es {} y tiene {} años".format("Richard", 64))
+    Su nombre es Richard y tiene 65 años
+
+Es posible utilizar un número para identificar el argumento:
+
+.. code:: python
+
+    >>> print("{0} y {1}".format("Queso", "Dulce"))
+    Queso y Dulce
+    >>> print("{1} y {0}".format("Queso", "Dulce"))
+    Dulce y Queso
+
+Otro modo es usando nombres en las llaves:
+
+.. code:: python
+
+    >>> print("La {comida} esta {adjetivo}".format(comida="lasagna", 
+        adjetivo="muy salada"))
+    La lasagna esta muy salada
+
+Existen muchas variantes para mejorar la salida de un programa, aquí solamente 
+vemos las más populares y novedosas. Los comodines es un modo de formateo en
+desuso pero que ha sido muy utilizado en versiones previas de python, a continuación
+una breve explicación.
+
 
 Usando comodines
 ^^^^^^^^^^^^^^^^
@@ -832,10 +866,6 @@ El uso de funciones nativas en Python es directo, veamos algunas:
     frase = 'simple es mejor que complejo'
     num_letras = len(frase)
     print(num_letras)
-
-
-.. parsed-literal::
-
     28
 
 
