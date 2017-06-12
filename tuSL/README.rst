@@ -34,11 +34,11 @@ Apunte principal
 
 1. Modificar los rst y luego, usando ``rst2pdf``
 
-2. Generar un pdf por unidad
+2. Generar un pdf por unidad usando el estilo mystile.txt
 
     .. code-block:: bash
 
-        rst2pdf Unidad01.rst
+        rst2pdf -s style/mystyle.txt Unidad01.rst
 
 Ahora hay que unir con la carátula PDF de provista por la carrera (bajo el directorio caratulas), usamos ``pdftk``:
 
