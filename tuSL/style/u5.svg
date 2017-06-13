@@ -20,10 +20,13 @@
    enable-background="new 0 0 595.28 841.89"
    xml:space="preserve"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="carátula TUSL color final.svg"><metadata
+   sodipodi:docname="u5.svg"
+   inkscape:export-filename="/home/emiliano/data/docencia/tuSL/dev01/tuSL/style/u5.png"
+   inkscape:export-xdpi="211.8"
+   inkscape:export-ydpi="211.8"><metadata
      id="metadata462"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs460"><clipPath
        id="SVGID_2_-3"><use
          xlink:href="#SVGID_1_"
@@ -59,8 +62,8 @@
      id="namedview458"
      showgrid="false"
      inkscape:zoom="1.1212866"
-     inkscape:cx="81.060715"
-     inkscape:cy="364.62361"
+     inkscape:cx="422.54047"
+     inkscape:cy="380.16055"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -88,14 +91,16 @@
        fill="#F6F6F6" /><rect
        y="121.308"
        clip-path="url(#SVGID_2_)"
-       fill="#3E8A70"
        width="595.281"
        height="599.636"
-       id="rect13" /><polygon
-       clip-path="url(#SVGID_2_)"
+       id="rect13"
        fill="#3E8A70"
+       style="fill:#800000;fill-opacity:1" /><polygon
+       clip-path="url(#SVGID_2_)"
        points="0.638,121.729 0.638,368.984 595.281,121.992 595.281,121.729  "
-       id="polygon15" /><g
+       id="polygon15"
+       fill="#3E8A70"
+       style="fill:#800000;fill-opacity:1" /><g
        clip-path="url(#SVGID_2_)"
        id="g126"><text
          transform="matrix(1,0,0,1.0035,117.6118,308.4624)"
@@ -213,7 +218,7 @@
        id="path362"
        d="m 266.537,401.996 c -1.146,0 -2.188,0.453 -2.956,1.188 l 0,-11.296 c -14.555,0.185 -26.319,11.948 -26.502,26.504 l 10.477,0 c -0.286,-0.615 -0.446,-1.301 -0.446,-2.024 0,-2.659 2.155,-4.815 4.814,-4.815 2.658,0 4.814,2.156 4.814,4.815 0,0.723 -0.161,1.409 -0.449,2.024 l 7.292,0 0,-9.029 c 0.768,0.736 1.81,1.188 2.956,1.188 2.363,0 4.277,-1.916 4.277,-4.277 -0.001,-2.362 -1.915,-4.278 -4.277,-4.278"
        clip-path="url(#SVGID_25_)" /><path
-       style="fill:none;stroke:#3e8a70;stroke-width:2;stroke-miterlimit:10"
+       style="fill:none;stroke:#800000;stroke-width:2;stroke-miterlimit:10;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path364"
        d="m 266.537,401.996 c -1.146,0 -2.188,0.453 -2.956,1.188 l 0,-11.296 c -14.555,0.185 -26.319,11.948 -26.502,26.504 l 10.477,0 c -0.286,-0.615 -0.446,-1.301 -0.446,-2.024 0,-2.659 2.155,-4.815 4.814,-4.815 2.658,0 4.814,2.156 4.814,4.815 0,0.723 -0.161,1.409 -0.449,2.024 l 7.292,0 0,-9.029 c 0.768,0.736 1.81,1.188 2.956,1.188 2.363,0 4.277,-1.916 4.277,-4.277 -0.001,-2.362 -1.915,-4.278 -4.277,-4.278 z"
@@ -224,7 +229,7 @@
        id="path366"
        d="m 290.782,418.392 c -0.186,-14.604 -12.022,-26.397 -26.644,-26.508 l 0,10.215 c 0.706,-0.406 1.524,-0.641 2.399,-0.641 2.659,0 4.813,2.156 4.813,4.816 0,2.658 -2.154,4.813 -4.813,4.813 -0.875,0 -1.693,-0.235 -2.399,-0.641 l 0,7.946 9.15,0 c -0.733,0.767 -1.183,1.807 -1.183,2.952 0,2.36 1.915,4.277 4.277,4.277 2.363,0 4.277,-1.917 4.277,-4.277 0,-1.145 -0.451,-2.185 -1.184,-2.952 l 11.307,0 z"
        clip-path="url(#SVGID_25_)" /><path
-       style="fill:none;stroke:#3e8a70;stroke-width:2;stroke-miterlimit:10"
+       style="fill:none;stroke:#800000;stroke-width:2;stroke-miterlimit:10;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path368"
        d="m 290.782,418.392 c -0.186,-14.604 -12.022,-26.397 -26.644,-26.508 l 0,10.215 c 0.706,-0.406 1.524,-0.641 2.399,-0.641 2.659,0 4.813,2.156 4.813,4.816 0,2.658 -2.154,4.813 -4.813,4.813 -0.875,0 -1.693,-0.235 -2.399,-0.641 l 0,7.946 9.15,0 c -0.733,0.767 -1.183,1.807 -1.183,2.952 0,2.36 1.915,4.277 4.277,4.277 2.363,0 4.277,-1.917 4.277,-4.277 0,-1.145 -0.451,-2.185 -1.184,-2.952 l 11.307,0 z"
@@ -235,7 +240,7 @@
        id="path370"
        d="m 261.213,426.76 c 0.86,0 1.668,0.226 2.368,0.621 l 0,-8.432 -8.248,0 c 0.545,-0.718 0.868,-1.612 0.868,-2.582 0,-2.363 -1.916,-4.277 -4.278,-4.277 -2.362,0 -4.277,1.914 -4.277,4.277 0,0.97 0.324,1.864 0.868,2.582 l -11.438,0 c 0.114,14.62 11.903,26.455 26.505,26.643 l 0,-9.83 c -0.7,0.396 -1.508,0.625 -2.368,0.625 -2.66,0 -4.814,-2.156 -4.814,-4.816 0,-2.657 2.154,-4.811 4.814,-4.811"
        clip-path="url(#SVGID_25_)" /><path
-       style="fill:none;stroke:#3e8a70;stroke-width:2;stroke-miterlimit:10"
+       style="fill:none;stroke:#800000;stroke-width:2;stroke-miterlimit:10;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path372"
        d="m 261.213,426.76 c 0.86,0 1.668,0.226 2.368,0.621 l 0,-8.432 -8.248,0 c 0.545,-0.718 0.868,-1.612 0.868,-2.582 0,-2.363 -1.916,-4.277 -4.278,-4.277 -2.362,0 -4.277,1.914 -4.277,4.277 0,0.97 0.324,1.864 0.868,2.582 l -11.438,0 c 0.114,14.62 11.903,26.455 26.505,26.643 l 0,-9.83 c -0.7,0.396 -1.508,0.625 -2.368,0.625 -2.66,0 -4.814,-2.156 -4.814,-4.816 0,-2.657 2.154,-4.811 4.814,-4.811 z"
@@ -246,7 +251,7 @@
        id="path374"
        d="m 280.556,418.949 c 0.407,0.705 0.639,1.523 0.639,2.395 0,2.658 -2.154,4.813 -4.813,4.813 -2.659,0 -4.815,-2.155 -4.815,-4.813 0,-0.872 0.233,-1.69 0.639,-2.395 l -8.068,0 0,9.504 c -0.765,-0.72 -1.793,-1.158 -2.925,-1.158 -2.363,0 -4.278,1.914 -4.278,4.275 0,2.363 1.915,4.278 4.278,4.278 1.132,0 2.16,-0.441 2.925,-1.157 l 0,10.9 c 14.667,-0.111 26.534,-11.977 26.646,-26.643 l -10.228,0 z"
        clip-path="url(#SVGID_25_)" /><path
-       style="fill:none;stroke:#3e8a70;stroke-width:2;stroke-miterlimit:10"
+       style="fill:none;stroke:#800000;stroke-width:2;stroke-miterlimit:10;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path376"
        d="m 280.556,418.949 c 0.407,0.705 0.639,1.523 0.639,2.395 0,2.658 -2.154,4.813 -4.813,4.813 -2.659,0 -4.815,-2.155 -4.815,-4.813 0,-0.872 0.233,-1.69 0.639,-2.395 l -8.068,0 0,9.504 c -0.765,-0.72 -1.793,-1.158 -2.925,-1.158 -2.363,0 -4.278,1.914 -4.278,4.275 0,2.363 1.915,4.278 4.278,4.278 1.132,0 2.16,-0.441 2.925,-1.157 l 0,10.9 c 14.667,-0.111 26.534,-11.977 26.646,-26.643 l -10.228,0 z"
@@ -312,7 +317,7 @@
          transform="translate(117.6118,545.687)"
          font-size="16"
          id="text404"
-         style="font-size:16px;fill:#ffffff;font-family:ITCFranklinGothicStd-Med">Unidad 1</text>
+         style="font-size:16px;fill:#ffffff;font-family:ITCFranklinGothicStd-Med">Unidad N° 5</text>
 </g><g
        clip-path="url(#SVGID_2_)"
        id="g406"><text
@@ -333,7 +338,7 @@
          transform="translate(117.6118,564.8872)"
          font-size="16"
          id="text416"
-         style="font-size:16px;fill:#ffffff;font-family:ITCFranklinGothicStd-Book">Introducción</text>
+         style="font-size:16px;fill:#ffffff;font-family:ITCFranklinGothicStd-Book">Introducción a la programación orientada a objetos</text>
 </g><g
        clip-path="url(#SVGID_2_)"
        id="g418"><text

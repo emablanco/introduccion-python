@@ -142,11 +142,11 @@ Instalación
 
 Python cuenta con dos ramas simultáneas de desarrollo, la 2.x y 3.x. Si bien ambas son completamente 
 funcionales, es recomendable utilizar alguna versión de la rama 3.x. La última versión disponible 
-del intérprete para cada rama es la 2.7.12 y la 3.5.2.
+del intérprete para cada rama es la 2.7.13 y la 3.6.1.
 
 En el presente curso utilizaremos la versión **3.x** cuya instalación realizaremos a partir del paquete Anaconda.
 Anaconda incluye -además del intérprete de Python- varias herramientas que simplifican el proceso de instalación.
-Se debe descargar el instalador correspondiente al sistema operativo (Windows, Linux o Mac) y a la 
+Se debe descargar el instalador correspondiente al sistema operativo (GNU/Linux, Windows o Mac) y a la 
 arquitectura del hardware (64 o 32 bits) del sitio web `www.continuum.io/downloads <https://www.continuum.io/downloads>`__, 
 tal como se observa en la siguiente captura.
 
@@ -169,7 +169,7 @@ Para el caso de sistemas GNU/Linux, una vez descargado el instalador se debe eje
 
 .. code:: bash 
     
-    bash Anaconda3-4.2.0-Linux-x86_64.sh
+    bash Anaconda3-4.4.0-Linux-x86_64.sh
 
 
 Entornos de programación
@@ -206,7 +206,7 @@ Python permite obtener respuesta de cada instrucción ejecutada de modo interact
 Esta modalidad de uso suele ser útil para corroborar el funcionamiento de ciertas
 acciones en forma aislada. 
 
-Para ingresar al modo interactivo, debe ingresarse desde la línea de comandos el comando ``python`` y, 
+Para ingresar al modo interactivo, se debe escribir en la consola el comando ``python`` y, 
 dependiendo del sistema operativo veremos una salida similar a la siguiente:
 
 .. code:: python
@@ -215,6 +215,9 @@ dependiendo del sistema operativo veremos una salida similar a la siguiente:
     Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) 
     [MSC v.1 900 64 bit (AMD64)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
+
+Dependiendo del sistema operativo y si ya se contaba con una versión de python de la rama 2.x, es 
+probable que para invocar al intérprete interactivo sea necesario utilizar el comando ``python3``.
 
 Con esto, python esta listo para recibir instrucciones, que en este contexto son llamadas sentencias.
 Vamos a comenzar es realizando ciertos cálculos matemáticos sencillos, y corroborando su resultado. 
@@ -310,7 +313,7 @@ programa que muestra en pantalla ese mensaje.
 
 Renunciando a cualquier pretensión de originalidad comenzaremos del
 mismo modo, pero despidiéndonos. Para esto utilizaremos la instrucción
-*print()* escribiendo entre los paréntesis el mensaje de despedida entre comillas.
+*print()* escribiendo el mensaje de despedida entre comillas.
 
 .. code:: python
 
@@ -349,14 +352,14 @@ Desde el IDE
 ~~~~~~~~~~~~
 
 La mayoría de los IDE cuentan con un botón específico que realiza la ejecución del programa.
-En la siguiente figura se observan los componentes de *spyder3*, donde se observa el botón 
+En la siguiente figura se observan los componentes de *spyder*, donde se observa el botón 
 correspondiente para lanzar la ejecución, el panel donde se observan los resultados, 
 la sección principal donde se escribe el código y una sección de ayuda.
 
 .. figure:: img/u1/spyder-ide-labeled.png
     :width: 1300 px
     
-    IDE spyder3: botón de ejecución, sección del código, ayuda y resultados.
+    IDE spyder: botón de ejecución, sección del código, ayuda y resultados.
 
 
 Elementos de un programa
@@ -429,8 +432,8 @@ Cadenas de caracteres
 
 Además de números, es posible manipular texto. Las cadenas son
 secuencias de caracteres encerradas en comillas simples ('...') o dobles
-("..."), el tipo de datos es denominado ``str`` (string). Sin adentrarnos
-en detalles que posteriormente veremos, aquí trataremos lo
+("..."), el tipo de datos es denominado ``str`` (abreviación de string). 
+Sin adentrarnos en detalles que posteriormente veremos, aquí trataremos lo
 indispensable para poder desarrollar los primeros programas. Veamos unos
 ejemplos usando el intérprete interactivo python:
 
@@ -472,11 +475,11 @@ uso solamente está destinado a quien lea el código, como texto
 explicativo para orientar sobre lo que se realiza.
 
 Los comentarios pueden ser de una única o múltiples líneas. Para el
-primer caso se utiliza el símbolo numeral. Lo que continúa a la derecha
-de su uso no es ejecutado.
+primer caso se utiliza el símbolo numeral (#). Lo que continúa a su derecha
+es ignorado.
 
 Los comentarios de múltiples líneas se deben escribir entre triples
-comillas, ya sean simples o dobles.
+comillas, ya sean simples o dobles (''' o """).
 
 Variables
 ~~~~~~~~~
@@ -843,6 +846,7 @@ Algunas variantes de lo visto se explica en la siguiente lista:
 -  %s: una cadena
 -  %-20s: una cadena alineada a la izquierda en un campo de 20
    caracteres de ancho
+
 
 Con lo visto hasta aquí tenemos suficientes alternativas para mostrar en
 pantalla información de diferentes tipos. Existen una alternativa para
