@@ -1,0 +1,281 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+5 0 obj
+<< /Outlines 9 0 R /PageLabels 10 0 R /PageMode /UseNone /Pages 7 0 R /Type /Catalog >>
+endobj
+6 0 obj
+<< /Author () /CreationDate (D:20161129162049+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (Gu\355a de ejercitaci\363n adicional) >>
+endobj
+7 0 obj
+<< /Count 1 /Kids [ 4 0 R ] /Type /Pages >>
+endobj
+8 0 obj
+<< /Length 4357 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 736.2236 cm
+q
+.239216 .541176 .439216 rg
+BT 1 0 0 1 0 4.8 Tm /F2 24 Tf 28.8 TL 72.6275 0 Td (Gu\355a de ejercitaci\363n adicional) Tj T* -72.6275 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 690.2236 cm
+Q
+q
+1 0 0 1 62.69291 690.2236 cm
+Q
+q
+1 0 0 1 62.69291 523.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 150 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 4.826 0 Td (1.) Tj T* -4.826 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 122 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 31 Tm /F2 11 Tf 14 TL .150461 Tw (Se ingresan por teclado una serie de 5 valores de temperaturas pronosticados para una) Tj T* 0 Tw 1.841571 Tw (semana. Se solicita que ingrese estos valores en una lista y utilice una funci\363n que) Tj T* 0 Tw (retorne el tipo de alerta a emitir segun lo siguiente:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 112 Tm  T* ET
+q
+1 0 0 1 20 116 cm
+Q
+q
+1 0 0 1 20 116 cm
+Q
+q
+1 0 0 1 20 88 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 11 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 17 Tm 4.154727 Tw 14 TL /F1 11 Tf 0 0 0 rg (Verde: en ning\372n d\355a de los siguientes cinco consecutivos, sea superada las) Tj T* 0 Tw (temperatura de 30.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 82 cm
+Q
+q
+1 0 0 1 20 54 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 11 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL 2.905461 Tw (Amarillo: que 1 o 2 de los siguientes cinco d\355as consecutivos, sea superada la) Tj T* 0 Tw (temperatura de 30 grados) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 20 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 11 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .601866 Tw (Naranja: se espera que 3 o 4 de los siguientes cinco d\355as consecutivos se supere la) Tj T* 0 Tw (temperatura de 30 grados) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 14 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (Rojo: cuando se espera que en cada uno de los cinco d\355as se supere los 30 grados) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 517.2236 cm
+Q
+q
+1 0 0 1 62.69291 461.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 4.826 0 Td (2.) Tj T* -4.826 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 45 Tm /F1 11 Tf 14 TL .585625 Tw (El juego "Generala" consiste en tirar cinco dados y establecer el puntaje de la jugada. De las) Tj T* 0 Tw 2.604083 Tw (posibles, la escalera se da cuando suceden algunas de las tres progresiones: 1-2-3-4-5,) Tj T* 0 Tw 1.841 Tw (2-3-4-5-6 y 3-4-5-6-1. Realice un programa que tire los 5 dados al azar y determine si se) Tj T* 0 Tw (produjo una escalera.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 455.2236 cm
+Q
+q
+1 0 0 1 62.69291 427.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 11 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 4.826 0 Td (3.) Tj T* -4.826 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .958937 Tw (Se ingresa el valor y palo de 3 cartas de truco. Calcule el puntaje correspondiente para una) Tj T* 0 Tw (jugada de envido.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 421.2236 cm
+Q
+q
+1 0 0 1 62.69291 379.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 25 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 4.826 0 Td (4.) Tj T* -4.826 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 31 Tm /F1 11 Tf 14 TL .290266 Tw (Genere una lista con 5 valores num\351ricos al azar. Luego, inserte entre cada elemento el valor) Tj T* 0 Tw .196157 Tw (promedio de sus vecinos, por ejemplo, si la lista inicial es [1, 2, 3, 4, 5] deber\355a quedar [1, 1.5,) Tj T* 0 Tw (2, 2.5, 3, 3.5 ,4, 4.5 ,5].) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 379.2236 cm
+Q
+ 
+endstream
+endobj
+9 0 obj
+<< /Count 0 /Type /Outlines >>
+endobj
+10 0 obj
+<< /Nums [ 0 11 0 R ] >>
+endobj
+11 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 12
+0000000000 65535 f
+0000000075 00000 n
+0000000119 00000 n
+0000000229 00000 n
+0000000344 00000 n
+0000000551 00000 n
+0000000657 00000 n
+0000000903 00000 n
+0000000965 00000 n
+0000005378 00000 n
+0000005427 00000 n
+0000005471 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(\273\006%=\200\366*\367\314V\201\374\206\354\267\352) (\273\006%=\200\366*\367\314V\201\374\206\354\267\352)]
+ /Info 6 0 R /Root 5 0 R /Size 12 >>
+startxref
+5508
+%%EOF

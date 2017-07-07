@@ -1,0 +1,527 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /A << /S /URI /Type /Action /URI (http://pandas.pydata.org/) >> /Border [ 0 0 0 ] /Rect [ 152.1509 178.8486 192.1119 192.8486 ] /Subtype /Link /Type /Annot >>
+endobj
+7 0 obj
+<< /Annots [ 6 0 R ] /Contents 11 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 10 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+8 0 obj
+<< /Outlines 12 0 R /PageLabels 13 0 R /PageMode /UseNone /Pages 10 0 R /Type /Catalog >>
+endobj
+9 0 obj
+<< /Author () /CreationDate (D:20161129161509+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (Gu\355a de ejercitaci\363n N\2605) >>
+endobj
+10 0 obj
+<< /Count 1 /Kids [ 7 0 R ] /Type /Pages >>
+endobj
+11 0 obj
+<< /Length 12275 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 736.2236 cm
+q
+.239216 .541176 .439216 rg
+BT 1 0 0 1 0 4.8 Tm /F2 24 Tf 28.8 TL 104.5115 0 Td (Gu\355a de ejercitaci\363n N\2605) Tj T* -104.5115 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 690.2236 cm
+Q
+q
+1 0 0 1 62.69291 690.2236 cm
+Q
+q
+1 0 0 1 62.69291 662.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 11 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 4.826 0 Td (1.) Tj T* -4.826 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 17 Tm 1.698922 Tw 14 TL /F1 11 Tf 0 0 0 rg (Realice un programa orientado a objetos para gestionar cds de m\372sica. El programa debe) Tj T* 0 Tw (permitir cargar los siguientes datos de por cd:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 662.2236 cm
+Q
+q
+1 0 0 1 62.69291 656.2236 cm
+Q
+q
+1 0 0 1 62.69291 656.2236 cm
+Q
+q
+1 0 0 1 62.69291 642.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (Nombre del CD) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 636.2236 cm
+Q
+q
+1 0 0 1 62.69291 622.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (Artista o grupo) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 616.2236 cm
+Q
+q
+1 0 0 1 62.69291 602.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (G\351nero) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 596.2236 cm
+Q
+q
+1 0 0 1 62.69291 582.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (A\361o de publicaci\363n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 576.2236 cm
+Q
+q
+1 0 0 1 62.69291 562.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (Duraci\363n en minutos) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 556.2236 cm
+Q
+q
+1 0 0 1 62.69291 542.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 10.15 0 Td (\177) Tj T* -10.15 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (Lista de canciones) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 542.2236 cm
+Q
+q
+1 0 0 1 62.69291 522.2236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (El uso para cargar los datos de un cd debe ser similar al siguiente:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 375.0236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 482.863 138 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 114.1875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 114.1875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 37.8 114.1875 12.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 50.4 114.1875 12.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 101.5875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 101.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 101.5875 69.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 94.5 101.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 100.8 101.5875 50.4 12.6 re f*
+.960784 .960784 .862745 rg
+n 151.2 101.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 88.9875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 88.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 88.9875 63 12.6 re f*
+.960784 .960784 .862745 rg
+n 88.2 88.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 94.5 88.9875 107.1 12.6 re f*
+.960784 .960784 .862745 rg
+n 201.6 88.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 76.3875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 76.3875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 76.3875 56.7 12.6 re f*
+.960784 .960784 .862745 rg
+n 81.9 76.3875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 88.2 76.3875 37.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 126 76.3875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 63.7875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 63.7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 63.7875 50.4 12.6 re f*
+.960784 .960784 .862745 rg
+n 75.6 63.7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 81.9 63.7875 25.2 12.6 re f*
+.960784 .960784 .862745 rg
+n 107.1 63.7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 51.1875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 51.1875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 51.1875 69.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 94.5 51.1875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 100.8 51.1875 44.1 12.6 re f*
+.960784 .960784 .862745 rg
+n 144.9 51.1875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 38.5875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 38.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 38.5875 63 12.6 re f*
+.960784 .960784 .862745 rg
+n 88.2 38.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 94.5 38.5875 201.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 296.1 38.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 25.9875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 25.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 25.9875 63 12.6 re f*
+.960784 .960784 .862745 rg
+n 88.2 25.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 94.5 25.9875 107.1 12.6 re f*
+.960784 .960784 .862745 rg
+n 201.6 25.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 .7875 31.5 12.6 re f*
+.960784 .960784 .862745 rg
+n 31.5 .7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 37.8 .7875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 56.7 .7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 63 .7875 69.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 132.3 .7875 18.9 12.6 re f*
+BT 1 0 0 1 0 115.5 Tm 12.6 TL /F3 10.5 Tf 0 0 0 rg (cd1) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (CD) Tj 0 0 0 rg (\(\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (setNombreCD) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Artaud') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (setArtista) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Pescado Rabioso') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (setGenero) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Rock') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (setFecha) Tj 0 0 0 rg (\() Tj .4 .4 .4 rg (1973) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (setDuracion) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('36:56') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (addCancion) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Todas las hojas son del viento') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (addCancion) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Cementerio Club') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T*  T* /F4 10.5 Tf .666667 .133333 1 rg (print) Tj /F3 10.5 Tf 0 0 0 rg (\() Tj 0 0 0 rg (cd1) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (getNombreCD) Tj 0 0 0 rg (\(\)\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 325.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 31 Tm /F1 11 Tf 14 TL 2.028199 Tw (Una vez definido la clase para el tipo CD cree otra clase denominada Coleccion que consista) Tj T* 0 Tw 2.016937 Tw (simplemente en una lista de objetos CD y dos m\351todos que permitan buscar el CD de mayor) Tj T* 0 Tw (duraci\363n o listar todos los de un determinado g\351nero musical.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 305.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (El uso de la clase Coleccion podr\355a ser:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 208.2236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 482.863 87.6 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 63.7875 37.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 44.1 63.7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 56.7 63.7875 56.7 12.6 re f*
+.960784 .960784 .862745 rg
+n 113.4 63.7875 12.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 51.1875 37.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 37.8 51.1875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 44.1 51.1875 31.5 12.6 re f*
+.960784 .960784 .862745 rg
+n 75.6 51.1875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 81.9 51.1875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 100.8 51.1875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 38.5875 37.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 37.8 38.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 44.1 38.5875 31.5 12.6 re f*
+.960784 .960784 .862745 rg
+n 75.6 38.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 81.9 38.5875 18.9 12.6 re f*
+.960784 .960784 .862745 rg
+n 100.8 38.5875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 25.9875 56.7 12.6 re f*
+.960784 .960784 .862745 rg
+n 63 25.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 75.6 25.9875 37.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 113.4 25.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 119.7 25.9875 63 12.6 re f*
+.960784 .960784 .862745 rg
+n 182.7 25.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 189 25.9875 37.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 226.8 25.9875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 13.3875 50.4 12.6 re f*
+.960784 .960784 .862745 rg
+n 56.7 13.3875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 69.3 13.3875 37.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 107.1 13.3875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 113.4 13.3875 100.8 12.6 re f*
+.960784 .960784 .862745 rg
+n 214.2 13.3875 12.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 0 .7875 31.5 12.6 re f*
+.960784 .960784 .862745 rg
+n 31.5 .7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 37.8 .7875 50.4 12.6 re f*
+.960784 .960784 .862745 rg
+n 88.2 .7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 94.5 .7875 69.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 163.8 .7875 18.9 12.6 re f*
+BT 1 0 0 1 0 65.1 Tm 12.6 TL /F3 10.5 Tf 0 0 0 rg (misCDs) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (Coleccion) Tj 0 0 0 rg (\(\)) Tj 0 0 0 rg  T* 0 0 0 rg (misCDs) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (addCD) Tj 0 0 0 rg (\() Tj 0 0 0 rg (cd1) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (misCDs) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (addCD) Tj 0 0 0 rg (\() Tj 0 0 0 rg (cd2) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (listarock) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (misCDs) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (getxGenero) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ('Rock') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (cd_largo) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (misCDs) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (getMayorDuracion) Tj 0 0 0 rg (\(\)) Tj 0 0 0 rg  T* /F4 10.5 Tf .666667 .133333 1 rg (print) Tj /F3 10.5 Tf 0 0 0 rg (\() Tj 0 0 0 rg (cd_largo) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (getNombreCD) Tj 0 0 0 rg (\(\)\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 194.2236 cm
+Q
+q
+1 0 0 1 62.69291 194.2236 cm
+Q
+q
+1 0 0 1 62.69291 138.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 4.826 0 Td (2.) Tj T* -4.826 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 45 Tm .822999 Tw 14 TL /F1 11 Tf 0 0 0 rg (La biblioteca ) Tj 0 0 .501961 rg (pandas ) Tj 0 0 0 rg (es utilizada ampliamente para realizar c\341lculos y visualizaci\363n de datos) Tj T* 0 Tw 1.647812 Tw (de modo similar al que ofrecen las planillas de c\341lculo. Instale y haga uso de la biblioteca) Tj T* 0 Tw 2.842571 Tw (pandas para procesar un archivo de una planilla de c\341lculos y grafique algunas de sus) Tj T* 0 Tw (columnas de datos.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 138.2236 cm
+Q
+ 
+endstream
+endobj
+12 0 obj
+<< /Count 0 /Type /Outlines >>
+endobj
+13 0 obj
+<< /Nums [ 0 14 0 R ] >>
+endobj
+14 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 15
+0000000000 65535 f
+0000000075 00000 n
+0000000139 00000 n
+0000000249 00000 n
+0000000364 00000 n
+0000000472 00000 n
+0000000585 00000 n
+0000000765 00000 n
+0000000992 00000 n
+0000001100 00000 n
+0000001343 00000 n
+0000001406 00000 n
+0000013739 00000 n
+0000013789 00000 n
+0000013833 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(*$\242\364\327\302\364a!eL\354\323%\004\370) (*$\242\364\327\302\364a!eL\354\323%\004\370)]
+ /Info 9 0 R /Root 8 0 R /Size 15 >>
+startxref
+13870
+%%EOF

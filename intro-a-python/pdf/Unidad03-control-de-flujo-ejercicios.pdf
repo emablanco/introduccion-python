@@ -1,0 +1,243 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /A << /S /URI /Type /Action /URI (mailto:elopez@fich.unl.edu.ar) >> /Border [ 0 0 0 ] /Rect [ 238.7073 683.8486 351.3693 697.8486 ] /Subtype /Link /Type /Annot >>
+endobj
+5 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+7 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font >>
+endobj
+8 0 obj
+<< /Annots [ 4 0 R ] /Contents 12 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+9 0 obj
+<< /Outlines 13 0 R /PageLabels 14 0 R /PageMode /UseNone /Pages 11 0 R /Type /Catalog >>
+endobj
+10 0 obj
+<< /Author () /CreationDate (D:20161024102624+03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (Gu\355a de ejercitaci\363n N\2603: control de flujo) >>
+endobj
+11 0 obj
+<< /Count 1 /Kids [ 8 0 R ] /Type /Pages >>
+endobj
+12 0 obj
+<< /Length 5606 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 736.2236 cm
+q
+.239216 .541176 .439216 rg
+BT 1 0 0 1 0 4.8 Tm /F2 24 Tf 28.8 TL 10.5035 0 Td (Gu\355a de ejercitaci\363n N\2603: control de flujo) Tj T* -10.5035 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 679.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL 40.05037 0 Td (Autor:) Tj T* -40.05037 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+BT 1 0 0 1 0 3 Tm 14 TL /F1 11 Tf 0 0 0 rg (Emiliano L\363pez - ) Tj 0 0 .501961 rg (elopez@fich.unl.edu.ar) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 645.2236 cm
+q
+BT 1 0 0 1 0 17 Tm 1.049199 Tw 14 TL /F1 11 Tf 0 0 0 rg (1. Con el siguiente fragmento de programa se puede determinar si el caracter almacenado en la) Tj T* 0 Tw (variable ) Tj /F3 11 Tf 0 0 0 rg (letra ) Tj /F1 11 Tf 0 0 0 rg (es una vocal:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 598.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 482.863 37.2 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 13.3875 12.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 18.9 13.3875 31.5 12.6 re f*
+.960784 .960784 .862745 rg
+n 56.7 13.3875 12.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 75.6 13.3875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 81.9 13.3875 44.1 12.6 re f*
+.960784 .960784 .862745 rg
+n 126 13.3875 12.6 12.6 re f*
+.960784 .960784 .862745 rg
+n 25.2 .7875 31.5 12.6 re f*
+.960784 .960784 .862745 rg
+n 56.7 .7875 6.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 63 .7875 69.3 12.6 re f*
+.960784 .960784 .862745 rg
+n 132.3 .7875 6.3 12.6 re f*
+BT 1 0 0 1 0 14.7 Tm 12.6 TL /F4 10.5 Tf .666667 .133333 1 rg (if) Tj /F5 10.5 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (letra) Tj 0 0 0 rg ( ) Tj /F4 10.5 Tf .666667 .133333 1 rg (in) Tj /F5 10.5 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ("aeiou") Tj 0 0 0 rg (\):) Tj 0 0 0 rg  T* (    ) Tj /F4 10.5 Tf .666667 .133333 1 rg (print) Tj /F5 10.5 Tf 0 0 0 rg (\() Tj .733333 .266667 .266667 rg ("Es vocal!") Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 562.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .864071 Tw (Utilizando el fragmento previo realice un programa que permita ingresar una palabra e informe la) Tj T* 0 Tw (cantidad de vocales que posee.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 514.8236 cm
+q
+BT 1 0 0 1 0 31 Tm 1.129866 Tw 14 TL /F1 11 Tf 0 0 0 rg (2. Basado en el ejercicio anterior, exti\351ndalo para que contabilice la repetici\363n de cada vocal. Si) Tj T* 0 Tw .225052 Tw (por ejemplo se ingresa la palabra "divididos" deber\355a mostrar que la vocal ) Tj /F3 11 Tf (i ) Tj /F1 11 Tf (se repite 3 veces y la ) Tj /F3 11 Tf (o) Tj T* 0 Tw /F1 11 Tf (una.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 452.8236 cm
+q
+BT 1 0 0 1 0 45 Tm 1.939937 Tw 14 TL /F1 11 Tf 0 0 0 rg (3. Utilice una estructura repetitiva ) Tj /F3 11 Tf 0 0 0 rg (for ) Tj /F1 11 Tf 0 0 0 rg (para iterar sobre las letras de una palabra y muestre en) Tj T* 0 Tw .513642 Tw (pantalla su versi\363n encriptada. Para encriptarla imprima en pantalla el reemplazo de una letra con) Tj T* 0 Tw 1.9365 Tw (un n\372mero seg\372n lo siguiente: a-) Tj (>) Tj (4, b-) Tj (>) Tj (8, e-) Tj (>) Tj (3, f-) Tj (>) Tj (7, t-) Tj (>) Tj (2, g-) Tj (>) Tj (9, i-) Tj (>) Tj (1, o-) Tj (>) Tj (0. Si por ejemplo se) Tj T* 0 Tw (ingresa la cadena "fontanarosa" deber\355a mostrar ) Tj /F3 11 Tf (70n24n4r0s4) Tj /F1 11 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 418.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .230222 Tw (4. Realice un programa que lea las calificaciones de un curso y muestre el promedio y la nota mas) Tj T* 0 Tw (alta. La lectura de notas finaliza cuando se ingresa un valor negativo.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 384.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .298187 Tw (5. Utilizando lo visto hasta aqu\355 \(variables, while y for\), de qu\351 manera podr\355a modificar el ejercicio) Tj T* 0 Tw (previo para mostrar cu\341ntos alumnos superaron el promedio.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 350.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL 1.498411 Tw (6. Se ingresan por teclado la edad de 20 personas. Muestre en pantalla las edades de las dos) Tj T* 0 Tw (personas mayores.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 344.8236 cm
+Q
+q
+1 0 0 1 62.69291 344.8236 cm
+Q
+q
+1 0 0 1 62.69291 316.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 11 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL 4.826 0 Td (7.) Tj T* -4.826 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .746285 Tw (Modifique el programa anterior para que en lugar de ingresar las edades sean generadas en) Tj T* 0 Tw (forma aleatoria.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 316.8236 cm
+Q
+q
+1 0 0 1 62.69291 282.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL 1.213466 Tw (8. Programe el c\341lculo de la sensaci\363n t\351rmica a partir de diferentes valores de temperatura del) Tj T* 0 Tw (aire y velocidad del viento. Utilice la siguiente ecuaci\363n para el c\341lculo:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 262.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 11 Tf 14 TL (sensacion_termica = 13.12 + 0,6215*T - 11,37*V^0,16 +0,3965*T*V^0,16.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 228.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17 Tm /F1 11 Tf 14 TL .883894 Tw (Haga uso de esta ecuaci\363n para una T que var\355a entre 5 y 10\260C, y para una velocidad de viento) Tj T* 0 Tw (que va desde 40 a 50 km/h, ambos valores var\355an de a una unidad.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+13 0 obj
+<< /Count 0 /Type /Outlines >>
+endobj
+14 0 obj
+<< /Nums [ 0 15 0 R ] >>
+endobj
+15 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 16
+0000000000 65535 f
+0000000075 00000 n
+0000000149 00000 n
+0000000259 00000 n
+0000000374 00000 n
+0000000558 00000 n
+0000000676 00000 n
+0000000789 00000 n
+0000000897 00000 n
+0000001124 00000 n
+0000001232 00000 n
+0000001494 00000 n
+0000001557 00000 n
+0000007220 00000 n
+0000007270 00000 n
+0000007314 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(s\325\3609\343p\010#\006\343\355q7\321\321\035) (s\325\3609\343p\010#\006\343\355q7\321\321\035)]
+ /Info 10 0 R /Root 9 0 R /Size 16 >>
+startxref
+7351
+%%EOF
