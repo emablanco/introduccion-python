@@ -48,7 +48,7 @@ El programa debe mostrar como el siguiente:
         Ingrese temperatura en °C: 33.8
         Conversión a Fahrenheit: 92.84
 
-La conversión está dada por la siguiente relación °F = (9/5 * °C) + 32   
+La conversión está dada por la siguiente relación F = (9/5 * C) + 32   
 
 5- Realice un programa que permita al usuario ingresar su nombre y que
 luego lo muestre repetido en pantalla tantas veces como cantidad de

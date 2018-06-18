@@ -1,16 +1,17 @@
-=========================================
-Introducción a la Programación con Python
-=========================================
+======================================
+Introducción al desarrollo de software
+======================================
 
 :Autor: Emiliano López - elopez@fich.unl.edu.ar
-:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/intro-a-python>`__]
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/tree/master/tuSL>`__]
 
 .. raw:: pdf
 
    PageBreak oneColumn
 
 .. header:: 
-  Introducción a la Programación con Python - Unidad II
+  Introducción al desarrollo de software - Unidad II
 
 .. footer::
     ###Page### / ###Total###

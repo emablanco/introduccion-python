@@ -1,12 +1,13 @@
-=========================================
-Introducción a la Programación con Python
-=========================================
+======================================
+Introducción al desarrollo de software
+======================================
 
 :Autor: Emiliano López - elopez@fich.unl.edu.ar
-:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/intro-a-python>`__]
+:Colaborador: Maximiliano Boscovich - maximiliano@boscovich.com.ar
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/tree/master/tuSL>`__]
 
 .. header:: 
-  Introducción a la Programación con Python - Unidad IV
+  Introducción al desarrollo de software - Unidad IV  
 
 .. footer::
     ###Page### / ###Total###
@@ -183,16 +184,15 @@ los valores.
         return d
     
     # Programa principal
-    n = ['Kliksberg', 'Stiglitz', 'Zaffaroni', 'Galeano']
-    t = ['23444', '54556', '66554', '12121']
+    n = ['Kliksberg', 'Stiglitz', 'Galeano']
+    t = ['23444', '54556', '12121']
     agenda = arma_agenda(n, t)
     print(agenda)
 
 
 .. parsed-literal::
 
-    {'Kliksberg': '23444', 'Stiglitz': '54556', 'Zaffaroni': '66554', 
-    'Galeano': '12121'}
+    {'Kliksberg': '23444', 'Stiglitz': '54556', 'Galeano': '12121'}
 
 
 El lector atento habrá notado que en todas las funciones debajo de su
@@ -217,11 +217,11 @@ Veamos un ejemplo y analicemos su comportamiento:
 
 .. code:: python
 
-    def no_cambiemos(nombre):
+    def no_cambia(nombre):
         nombre = 'Luis Alberto Spinetta'
     
     nom = 'Norberto Napolitano'
-    no_cambiemos(nom)
+    no_cambia(nom)
     print(nom)
 
 
@@ -232,7 +232,7 @@ Veamos un ejemplo y analicemos su comportamiento:
 
 La variable ``nom`` ingresa a la función como ``nombre`` y si bien se realiza una asignación dentro de la función, vemos que no fue alterado su contenido o al menos no se ve reflejado desde el programa principal. 
 
-Esto sucede debido a que el contenido de la variable ``nom`` es copiada en la variable ``nombre`` y todo cambio que se realice en el interior de la función ``no_cambiemos`` será local, es decir, su ámbito de validez se limita a la función, de manera tal que tanto ``Spinetta`` como ``Napolitano`` son irreemplazables.
+Esto sucede debido a que el contenido de la variable ``nom`` es copiada en la variable ``nombre`` y todo cambio que se realice en el interior de la función ``no_cambia`` será local, es decir, su ámbito de validez se limita a la función, de manera tal que tanto ``Spinetta`` como ``Napolitano`` son irreemplazables.
 
 Contrariamente al ejemplo previo, existen estructuras de datos que al ser modificadas dentro la función reflejan este cambio también en el programa principal. 
 

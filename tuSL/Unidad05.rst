@@ -3,10 +3,10 @@ Introducción a la Programación con Python
 =========================================
 
 :Autor: Emiliano López - elopez@fich.unl.edu.ar
-:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/intro-a-python>`__]
+:Fecha: |date| |time| - [`última versión disponible <https://gitlab.com/emilopez/dev01/tree/master/tuSL>`__]
 
 .. header:: 
-  Introducción a la Programación con Python - Unidad V
+  Introducción al desarrollo de software - Unidad V  
 
 .. footer::
     ###Page### / ###Total###
