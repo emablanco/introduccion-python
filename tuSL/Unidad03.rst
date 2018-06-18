@@ -1,3 +1,6 @@
+.. image:: caratulas/U3.pdf
+	:scale: 80%
+
 ======================================
 Introducción al desarrollo de software
 ======================================

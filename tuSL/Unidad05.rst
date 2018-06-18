@@ -1,3 +1,6 @@
+.. image:: caratulas/U5.pdf
+	:scale: 80%
+
 =========================================
 Introducción a la Programación con Python
 =========================================
