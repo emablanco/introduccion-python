@@ -763,7 +763,7 @@ Su uso más básico se observa en el siguiente ejemplo:
 .. code:: python
 
     >>> print("Su nombre es {} y tiene {} años".format("Richard", 64))
-    Su nombre es Richard y tiene 65 años
+    Su nombre es Richard y tiene 64 años
 
 Es posible utilizar un número para identificar el argumento:
 
