@@ -7,7 +7,7 @@ expresada en grados centígrados (ºC) e imprima en pantalla la misma
 temperatura en grados Fahrenheit (ºF). Tenga en cuenta que la formula de
 conversión de Celsius a Fahrenheit es la siguiente:
 
-.. math:: F = (9C/5.0) + 32
+.. math:: F = (9/5.0)C + 32
 
 2 . Escriba un programa que lea un archivo con temperaturas expresadas
 en grados centigrados, y que luego genere otro archivo que contenga
@@ -18,7 +18,7 @@ entrada, utilice el siguiente:
 
     10 ºC
     12.5 ºC
-    14.2 ºC 
+    14.2 ºC
     16.6 ºC
     18.2 ºC
     20.1 ºC
@@ -41,7 +41,7 @@ Utilice el siguiente archivo de temperaturas de entradas:
 
     50 ºF
     12.5 ºC
-    287.35 ºK 
+    287.35 ºK
     16.6 ºC
     291.35 ºK
     20.1 ºC

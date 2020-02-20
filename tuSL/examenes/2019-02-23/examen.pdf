@@ -1,0 +1,1483 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 7 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 12 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Courier-Oblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+8 0 obj
+<<
+/Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 14 0 R /PageLabels 15 0 R /PageMode /UseNone /Pages 11 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20190222165015+03'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20190222165015+03'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title () /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+12 0 obj
+<<
+/Length 15457
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 753.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Examen de Introducci\363n al Desarrollo de Software - TuSL - FICH / UNL. 23-02-2019.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 747.0236 cm
+Q
+q
+1 0 0 1 62.69291 747.0236 cm
+Q
+q
+1 0 0 1 62.69291 675.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\277Cu\341les de las siguientes primitivas de control utilizar\355a para leer repetidamente por tecaldo?) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 51 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 36 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (for) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (if) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (is) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 669.0236 cm
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Escriba un programa que permita ingresar 5 numeros por teclado y muestre la suma de ellos) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 651.0236 cm
+Q
+q
+1 0 0 1 62.69291 523.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 112.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (3.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 100.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.064983 Tw (Marque en el siguiente programa las funciones invocadas que no forman parte de la biblioteca) Tj T* 0 Tw (est\341ndar de python) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 94.2 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 425.6898 96 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 72 42 12 re f*
+.960784 .960784 .862745 rg
+n 48 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 72 30 12 re f*
+.960784 .960784 .862745 rg
+n 90 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 72 102 12 re f*
+.960784 .960784 .862745 rg
+n 198 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 60 90 12 re f*
+.960784 .960784 .862745 rg
+n 96 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 108 60 36 12 re f*
+.960784 .960784 .862745 rg
+n 144 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 150 60 42 12 re f*
+.960784 .960784 .862745 rg
+n 192 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 48 30 12 re f*
+.960784 .960784 .862745 rg
+n 30 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 48 162 12 re f*
+.960784 .960784 .862745 rg
+n 198 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 204 48 36 12 re f*
+.960784 .960784 .862745 rg
+n 240 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 246 48 90 12 re f*
+.960784 .960784 .862745 rg
+n 336 48 12 12 re f*
+.960784 .960784 .862745 rg
+n 0 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 18 36 42 12 re f*
+.960784 .960784 .862745 rg
+n 66 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 84 36 54 12 re f*
+.960784 .960784 .862745 rg
+n 138 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 144 36 90 12 re f*
+.960784 .960784 .862745 rg
+n 234 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 24 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 54 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 24 138 12 re f*
+.960784 .960784 .862745 rg
+n 198 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 24 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 54 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 0 120 12 re f*
+.960784 .960784 .862745 rg
+n 180 0 6 12 re f*
+BT 1 0 0 1 0 74 Tm 12 TL /F3 10 Tf 0 0 0 rg (mensaje) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 .501961 0 rg (input) Tj 0 0 0 rg (\() Tj .729412 .129412 .129412 rg ("Ingrese mensaje") Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg (mensaje_cifrado) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (cifrar) Tj 0 0 0 rg (\() Tj 0 0 0 rg (mensaje) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj .729412 .129412 .129412 rg ("El mensaje cifrado es: {}") Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (format) Tj 0 0 0 rg (\() Tj 0 0 0 rg (mensaje_cifrado) Tj 0 0 0 rg (\)\)) Tj 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (if) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (mensaje) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (==) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (descifrar) Tj 0 0 0 rg (\() Tj 0 0 0 rg (mensaje_cifrado) Tj 0 0 0 rg (\):) Tj 0 0 0 rg  T* (    ) Tj /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj .729412 .129412 .129412 rg ("Mensaje descifrado OK") Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (else) Tj /F3 10 Tf 0 0 0 rg (:) Tj 0 0 0 rg  T* (    ) Tj /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj .729412 .129412 .129412 rg ("Error al descifrar") Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 517.8236 cm
+Q
+q
+1 0 0 1 62.69291 474.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 28.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (4.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 28.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Si el siguiente fragmento de c\363digo se ejecuta sin error, \277de qu\351 tipo de dato es la variable M?) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 22.2 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 425.6898 24 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 48 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 0 48 12 re f*
+.960784 .960784 .862745 rg
+n 108 0 6 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj 0 0 0 rg (M) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg (" veces") Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 468.6236 cm
+Q
+q
+1 0 0 1 62.69291 413.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 40.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (5.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 40.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\277Qu\351 resultado produce la sentencia siguiente?) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 34.2 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 425.6898 36 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 42 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 72 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 96 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 102 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 138 0 12 12 re f*
+BT 1 0 0 1 0 14 Tm 12 TL /F3 10 Tf 0 0 0 rg (nombre) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ("Lucy") Tj 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj 0 0 0 rg (nombre) Tj .4 .4 .4 rg (*) Tj 0 .501961 0 rg (len) Tj 0 0 0 rg (\() Tj 0 0 0 rg (nombre) Tj 0 0 0 rg (\)\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 407.4236 cm
+Q
+q
+1 0 0 1 62.69291 299.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (6.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Escriba el programa que dar\355a la siguiente salida utilizando un ciclo for:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 87 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 84 cm
+Q
+q
+1 0 0 1 20 84 cm
+Q
+q
+1 0 0 1 20 72 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 66 cm
+Q
+q
+1 0 0 1 20 54 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (22) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 36 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (333) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (4444) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (55555) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 293.4236 cm
+Q
+q
+1 0 0 1 62.69291 221.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (7.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\277Qu\351 estructura de control utilizar\355a para bifurcar la ejecuci\363n de un programa?) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 51 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 36 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (secuencial) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (condicional) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (repetitiva) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 215.4236 cm
+Q
+q
+1 0 0 1 62.69291 112.2236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 88.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (8.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 88.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Marque en el siguiente programa estructuras condicionales y repetitivas) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 82.2 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 425.6898 84 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 60 24 12 re f*
+.960784 .960784 .862745 rg
+n 30 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 42 60 18 12 re f*
+.960784 .960784 .862745 rg
+n 60 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 60 30 12 re f*
+.960784 .960784 .862745 rg
+n 96 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 102 60 102 12 re f*
+.960784 .960784 .862745 rg
+n 204 60 12 12 re f*
+.960784 .960784 .862745 rg
+n 0 48 12 12 re f*
+.960784 .960784 .862745 rg
+n 18 48 24 12 re f*
+.960784 .960784 .862745 rg
+n 48 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 72 48 12 12 re f*
+.960784 .960784 .862745 rg
+n 90 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 36 24 12 re f*
+.960784 .960784 .862745 rg
+n 54 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 72 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 18 12 re f*
+.960784 .960784 .862745 rg
+n 24 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 24 12 12 re f*
+.960784 .960784 .862745 rg
+n 54 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 84 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 114 24 12 12 re f*
+.960784 .960784 .862745 rg
+n 24 12 12 12 re f*
+.960784 .960784 .862745 rg
+n 42 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 12 12 12 re f*
+.960784 .960784 .862745 rg
+n 96 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 102 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 48 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 78 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 84 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 0 6 12 re f*
+BT 1 0 0 1 0 62 Tm 12 TL /F3 10 Tf 0 0 0 rg (cant) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 .501961 0 rg (int) Tj 0 0 0 rg (\() Tj 0 .501961 0 rg (input) Tj 0 0 0 rg (\() Tj .729412 .129412 .129412 rg ("Ingrese valor: ") Tj 0 0 0 rg (\)\)) Tj 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (if) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (cant) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (%) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (==) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (0) Tj 0 0 0 rg (:) Tj 0 0 0 rg  T* (    ) Tj 0 0 0 rg (cant) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+=) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (1) Tj 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (for) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (i) Tj 0 0 0 rg ( ) Tj /F4 10 Tf .666667 .133333 1 rg (in) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 .501961 0 rg (range) Tj 0 0 0 rg (\() Tj 0 0 0 rg (cant) Tj 0 0 0 rg (\):) Tj 0 0 0 rg  T* (    ) Tj /F4 10 Tf 0 .501961 0 rg (if) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (i) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (%) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (==) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (0) Tj 0 0 0 rg (:) Tj 0 0 0 rg  T* (        ) Tj /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj 0 0 0 rg (i) Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 106.2236 cm
+Q
+q
+1 0 0 1 62.69291 88.22362 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (9.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Programe un ciclo iterativo para mostrar cada una de las siguientes secuencias:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+13 0 obj
+<<
+/Length 9627
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 717.6661 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 34.35748 Tm  T* ET
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 36 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (a.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1, 2, 3, 4, 5) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (b.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5, 4, 3, 2, 1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 6.22 0 Td (c.) Tj T* -6.22 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2, 4, 6, 8, 10) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 711.6661 cm
+Q
+q
+1 0 0 1 62.69291 474.4661 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 222.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL .1 0 Td (10.) Tj T* -0.1 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 222.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Dadas las siguientes secuencias) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 216.2 cm
+Q
+q
+1 0 0 1 23 216.2 cm
+Q
+q
+1 0 0 1 23 204.2 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (a.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5, 10, 15, 20, 25, 30) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 198.2 cm
+Q
+q
+1 0 0 1 23 186.2 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (b.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1, 5, 10, 15, 25, 30) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 180.2 cm
+Q
+q
+1 0 0 1 23 168.2 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 6.22 0 Td (c.) Tj T* -6.22 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (0, 5, 10, 15, 20, 33) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 168.2 cm
+Q
+q
+1 0 0 1 23 150.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (indique con que fragmento de c\363digo se corresponden) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 445.6898 144 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 120 138 12 re f*
+.960784 .960784 .862745 rg
+n 0 108 18 12 re f*
+.960784 .960784 .862745 rg
+n 24 108 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 108 12 12 re f*
+.960784 .960784 .862745 rg
+n 54 108 30 12 re f*
+.960784 .960784 .862745 rg
+n 84 108 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 108 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 108 6 12 re f*
+.960784 .960784 .862745 rg
+n 102 108 12 12 re f*
+.960784 .960784 .862745 rg
+n 114 108 6 12 re f*
+.960784 .960784 .862745 rg
+n 120 108 6 12 re f*
+.960784 .960784 .862745 rg
+n 126 108 12 12 re f*
+.960784 .960784 .862745 rg
+n 24 96 30 12 re f*
+.960784 .960784 .862745 rg
+n 54 96 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 96 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 96 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 84 138 12 re f*
+.960784 .960784 .862745 rg
+n 0 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 6 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 12 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 60 30 12 re f*
+.960784 .960784 .862745 rg
+n 36 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 42 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 48 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 60 12 12 re f*
+.960784 .960784 .862745 rg
+n 66 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 48 30 12 re f*
+.960784 .960784 .862745 rg
+n 54 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 54 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 138 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 24 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 12 12 12 re f*
+.960784 .960784 .862745 rg
+n 54 12 30 12 re f*
+.960784 .960784 .862745 rg
+n 84 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 102 12 12 12 re f*
+.960784 .960784 .862745 rg
+n 114 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 126 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 132 12 12 12 re f*
+.960784 .960784 .862745 rg
+n 24 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 54 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 0 6 12 re f*
+BT 1 0 0 1 0 122 Tm 12 TL /F5 10 Tf .25098 .501961 .501961 rg (# a\)-------------------) Tj /F3 10 Tf 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (for) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (i) Tj 0 0 0 rg ( ) Tj /F4 10 Tf .666667 .133333 1 rg (in) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 .501961 0 rg (range) Tj 0 0 0 rg (\() Tj .4 .4 .4 rg (0) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (30) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (5) Tj 0 0 0 rg (\):) Tj 0 0 0 rg  T* (    ) Tj /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj 0 0 0 rg (i) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* /F5 10 Tf .25098 .501961 .501961 rg (# b\)-------------------) Tj /F3 10 Tf 0 0 0 rg  T* 0 0 0 rg (i) Tj .4 .4 .4 rg (=) Tj .4 .4 .4 rg (5) Tj 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (while) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (i) Tj .4 .4 .4 rg (<) Tj (=) Tj .4 .4 .4 rg (30) Tj 0 0 0 rg (:) Tj 0 0 0 rg  T* (    ) Tj /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj 0 0 0 rg (i) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* (    ) Tj 0 0 0 rg (i) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+=) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (5) Tj 0 0 0 rg  T* /F5 10 Tf .25098 .501961 .501961 rg (# c\)-------------------) Tj /F3 10 Tf 0 0 0 rg  T* /F4 10 Tf 0 .501961 0 rg (for) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (i) Tj 0 0 0 rg ( ) Tj /F4 10 Tf .666667 .133333 1 rg (in) Tj /F3 10 Tf 0 0 0 rg ( ) Tj 0 .501961 0 rg (range) Tj 0 0 0 rg (\() Tj .4 .4 .4 rg (1) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (33) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (\):) Tj 0 0 0 rg  T* (    ) Tj /F4 10 Tf 0 .501961 0 rg (print) Tj /F3 10 Tf 0 0 0 rg (\() Tj 0 0 0 rg (i) Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 468.4661 cm
+Q
+q
+1 0 0 1 62.69291 432.4661 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL .1 0 Td (11.) Tj T* -0.1 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 6.225529 Tw 12 TL /F1 10 Tf 0 0 0 rg (Suponga que un programa denominado ) Tj /F3 10 Tf 0 0 0 rg (sonido.py) Tj /F1 10 Tf 0 0 0 rg ( contiene 2 funciones denominadas) Tj T* 0 Tw 2.034147 Tw /F3 10 Tf 0 0 0 rg (filtrarRuido) Tj /F1 10 Tf 0 0 0 rg ( y ) Tj /F3 10 Tf 0 0 0 rg (agregarRuido) Tj /F1 10 Tf 0 0 0 rg (. Si desde su programa, que se encuentra almacenado en el) Tj T* 0 Tw (mismo directorio, quisiera hacer uso de estas funciones, \277c\363mo deber\355an importarse?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 426.4661 cm
+Q
+q
+1 0 0 1 62.69291 402.4661 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL .1 0 Td (12.) Tj T* -0.1 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .27936 Tw (Programe dos funciones que reciben una lista de n\372meros y para el caso de filtrarRuido debe restar) Tj T* 0 Tw (un valor fijo, y en agregarRuido debe sumarlo, ambas deben retornar la lista modificada.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 396.4661 cm
+Q
+q
+1 0 0 1 62.69291 336.4661 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL .1 0 Td (13.) Tj T* -0.1 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 33 cm
+q
+BT 1 0 0 1 0 14 Tm .338555 Tw 12 TL /F1 10 Tf 0 0 0 rg (El programa almacenado en el archivo ) Tj /F3 10 Tf 0 0 0 rg (ej13.py) Tj /F1 10 Tf 0 0 0 rg ( debe escribir en un archivo mil n\372meros aleatorios) Tj T* 0 Tw (entre el 20 y el 100. Sin embargo, tiene un error por el cual no funciona.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (a.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Explique qu\351 significa el error que da el programa al ser ejecutado) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (b.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Modifique el programa de manera tal que funcione correctamente) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 330.4661 cm
+Q
+q
+1 0 0 1 62.69291 294.4661 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL .1 0 Td (14.) Tj T* -0.1 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.31528 Tw (El juego "La Generala" consiste en tirar cinco dados y establecer el puntaje de la jugada. De las) Tj T* 0 Tw 1.369213 Tw (posibles, la escalera se da cuando suceden algunas de las dos secuencias: 1-2-3-4-5, 2-3-4-5-6.) Tj T* 0 Tw (Realice un programa que tire los 5 dados al azar y determine si se produjo una escalera.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 294.4661 cm
+Q
+ 
+endstream
+endobj
+14 0 obj
+<<
+/Count 0 /Type /Outlines
+>>
+endobj
+15 0 obj
+<<
+/Nums [ 0 16 0 R 1 17 0 R ]
+>>
+endobj
+16 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+17 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000073 00000 n 
+0000000144 00000 n 
+0000000251 00000 n 
+0000000363 00000 n 
+0000000468 00000 n 
+0000000578 00000 n 
+0000000783 00000 n 
+0000000896 00000 n 
+0000001101 00000 n 
+0000001206 00000 n 
+0000001464 00000 n 
+0000001530 00000 n 
+0000017040 00000 n 
+0000026719 00000 n 
+0000026766 00000 n 
+0000026816 00000 n 
+0000026850 00000 n 
+trailer
+<<
+/ID 
+[<5c952c98968cf09dfaec1f559e69524e><5c952c98968cf09dfaec1f559e69524e>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 18
+>>
+startxref
+26884
+%%EOF
